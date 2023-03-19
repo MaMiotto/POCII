@@ -12,17 +12,19 @@ Step 3: Build [CFGgrind](https://github.com/rimsa/CFGgrind) following its Readme
 
 So you have this final structure:
 
-POCII
-├── README.md
-├── jotai-benchmarks
-│   ├── LICENSE.md
-│   ├── README.md
-│   ├── assets
-│   ├── benchmarks
-    ...
-├── valgrind-3.20.0
-│   ├── .in_place
-│   ├── autom4te.cache
-│   ├── auxprogs
-│   ├── cachegrind
-    ...
+POCII <br />
+├── README.md <br />
+├── jotai-benchmarks <br />
+│   ├── LICENSE.md <br />
+│   ├── README.md <br />
+│   ├── assets <br />
+│   ├── benchmarks <br />
+    ... <br />
+├── valgrind-3.20.0 <br />
+│   ├── .in_place <br />
+│   ├── autom4te.cache <br />
+│   ├── auxprogs <br />
+│   ├── cachegrind <br />
+    ... <br />
+├── .gitattributes <br />
+├── .gitignore <br />
