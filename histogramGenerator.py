@@ -7,9 +7,13 @@ def main():
 
 def compileFilesFrom(folderPathPrograms, folderPathBinaries):
 	files = getFilesFrom(folderPathPrograms)
+	print("Encontrados " + str(len(files)) + " arquivos")
 	createFolderIfNotExist(folderPathBinaries)
+	count = 0
 	for fileName in files:
+		count = count + 1
 		if fileName not in filesNotCompilable():
+			print("Compilando arquivo " + fileName + " -> " + str(count) + " / " + str(len(files)))
 			regularCompilation(fileName, folderPathPrograms, folderPathBinaries)
 
 def filesNotCompilable():
@@ -21,8 +25,10 @@ def createFolderIfNotExist(folderPath):
 		os.makedirs(folderPath)
 
 def regularCompilation(fileName, folderPathPrograms, folderPathBinaries):
-	os.system("clang " + folderPathPrograms + "/" + fileName)
-	os.system("cp " + "./a.out " + folderPathBinaries + "/" + fileName[:-2] + "-regular.out")
+	osResult = os.system("clang -Wno-everything " + folderPathPrograms + "/" + fileName)
+	print("Result: " + str(osResult) + " | " + fileName + " to " + fileName[:-2] + "-regular.out")
+	if osResult == 0:
+		os.system("cp " + "./a.out " + folderPathBinaries + "/" + fileName[:-2] + "-regular.out")
 
 def getFilesFrom(folderPath):
 	return next(os.walk(folderPath), (None, None, []))[2]
@@ -40,7 +46,10 @@ def generateDotFilesFrom(folderPathBinaries, folderCfgFiles):
 	files = getFilesFrom(folderPathBinaries)
 	createFolderIfNotExist(folderCfgFiles)
 	for fileName in files:
-		generateDotFile(fileName, folderPathBinaries, folderCfgFiles)
+		try:
+			generateDotFile(fileName, folderPathBinaries, folderCfgFiles)
+		except Exception as e: 
+			print(e)
 
 def generateDotFile(fileName, folderPathBinaries, folderPathCfgs):
 	os.system(" valgrind --tool=cfggrind --cfg-outfile=test.cfg --instrs-map=test.map --cfg-dump=bubble " + folderPathBinaries + "/" + fileName + " 0")
