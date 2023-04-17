@@ -2,9 +2,15 @@ import os
 
 def main():
 	files = getFilesFrom("./jotai-benchmarks/benchmarks/anghaLeaves")
-	for fileName in files:
+	fixFiler(files, "./jotai-benchmarks/benchmarks/anghaLeaves")
+	files = getFilesFrom("./jotai-benchmarks/benchmarks/anghaMath")
+	fixFiler(files, "./jotai-benchmarks/benchmarks/anghaMath")
+	
+
+def fixFiler(fileNameList, folderPath):
+	for fileName in fileNameList:
 		if fileName not in ["a.out"]:
-			file = open ("./jotai-benchmarks/benchmarks/anghaLeaves/" + fileName , 'r+')
+			file = open (folderPath + "/" + fileName , 'r+')
 			content = file.read()
 			content = content.replace("int16_t", "myint16_t")
 			content = content.replace("int8_t", "myint8_t")
