@@ -1,3 +1,13 @@
+"""
+	Cleaning code
+	This code replaces some typedef names for different names, in order to
+	scape the error: 'typedef redefinition with different types'
+
+	It uses no input, so to run it just do
+	python3 fixingCodeBugs.py
+
+"""
+
 import os
 
 def main():

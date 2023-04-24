@@ -1,3 +1,13 @@
+"""
+	This code reads from Jotai Benchmarks files, compiles those codes, 
+	then generate the assembly instructions mapping, and control flow graph for each one of them.
+	To do so, the 'jotai-benchmarks' folder should be next to the 'python scripts' folder.
+
+	It uses no input, so to run it just do
+	python3 histogramGenerator.py
+
+"""
+
 import os
 import subprocess
 
