@@ -1,0 +1,98 @@
+digraph "0x1096e0" {
+  label = "0x1096e0 (/mnt/c/Users/mathe/OneDrive/Área de Trabalho/TCC/POCII/binaries/extr_darwin-xnubsdkernuipc_mbuf.c_m_adj_Final-regular.out::main(0))"
+  labelloc = "t"
+  node[shape=record]
+
+  Entry [label="",width=0.3,height=0.3,shape=circle,fillcolor=black,style=filled]
+  "0x1096e0" [label="{
+     0x1096e0 [32]\l
+     | [instrs]\l
+     &nbsp;&nbsp;0x1096e0 \<+1\>: ???\l
+     &nbsp;&nbsp;0x1096e1 \<+3\>: ???\l
+     &nbsp;&nbsp;0x1096e4 \<+4\>: ???\l
+     &nbsp;&nbsp;0x1096e8 \<+7\>: ???\l
+     &nbsp;&nbsp;0x1096ef \<+3\>: ???\l
+     &nbsp;&nbsp;0x1096f2 \<+4\>: ???\l
+     &nbsp;&nbsp;0x1096f6 \<+4\>: ???\l
+     &nbsp;&nbsp;0x1096fa \<+6\>: ???\l
+  }"]
+  "0x109711" [label="{
+     0x109711 [13]\l
+     | [instrs]\l
+     &nbsp;&nbsp;0x109711 \<+4\>: ???\l
+     &nbsp;&nbsp;0x109715 \<+4\>: ???\l
+     &nbsp;&nbsp;0x109719 \<+5\>: ???\l
+     | [calls]\l
+     &nbsp;&nbsp;0x109060 \{1\} (unknown)\l
+  }"]
+  "0x109700" [label="{
+     0x109700\l
+  }", style=dashed]
+  "0x10971e" [label="{
+     0x10971e [14]\l
+     | [instrs]\l
+     &nbsp;&nbsp;0x10971e \<+3\>: ???\l
+     &nbsp;&nbsp;0x109721 \<+3\>: ???\l
+     &nbsp;&nbsp;0x109724 \<+2\>: ???\l
+     &nbsp;&nbsp;0x109726 \<+6\>: ???\l
+  }"]
+  "0x109769" [label="{
+     0x109769\l
+  }", style=dashed]
+  "0x10972c" [label="{
+     0x10972c [26]\l
+     | [instrs]\l
+     &nbsp;&nbsp;0x10972c \<+5\>: ???\l
+     &nbsp;&nbsp;0x109731 \<+7\>: ???\l
+     &nbsp;&nbsp;0x109738 \<+4\>: ???\l
+     &nbsp;&nbsp;0x10973c \<+5\>: ???\l
+     &nbsp;&nbsp;0x109741 \<+5\>: ???\l
+     | [calls]\l
+     &nbsp;&nbsp;0x109480 \{1\} (/mnt/c/Users/mathe/OneDrive/Área de Trabalho/TCC/POCII/binaries/extr_darwin-xnubsdkernuipc_mbuf.c_m_adj_Final-regular.out::_allocate_mp)\l
+  }"]
+  Exit [label="",width=0.3,height=0.3,shape=circle,fillcolor=black,style=filled,peripheries=2]
+  "0x109746" [label="{
+     0x109746 [16]\l
+     | [instrs]\l
+     &nbsp;&nbsp;0x109746 \<+4\>: ???\l
+     &nbsp;&nbsp;0x10974a \<+4\>: ???\l
+     &nbsp;&nbsp;0x10974e \<+3\>: ???\l
+     &nbsp;&nbsp;0x109751 \<+5\>: ???\l
+     | [calls]\l
+     &nbsp;&nbsp;0x109230 \{1\} (/mnt/c/Users/mathe/OneDrive/Área de Trabalho/TCC/POCII/binaries/extr_darwin-xnubsdkernuipc_mbuf.c_m_adj_Final-regular.out::m_adj)\l
+  }"]
+  "0x109756" [label="{
+     0x109756 [14]\l
+     | [instrs]\l
+     &nbsp;&nbsp;0x109756 \<+4\>: ???\l
+     &nbsp;&nbsp;0x10975a \<+5\>: ???\l
+     &nbsp;&nbsp;0x10975f \<+5\>: ???\l
+     | [calls]\l
+     &nbsp;&nbsp;0x109680 \{1\} (/mnt/c/Users/mathe/OneDrive/Área de Trabalho/TCC/POCII/binaries/extr_darwin-xnubsdkernuipc_mbuf.c_m_adj_Final-regular.out::_delete_mp)\l
+  }"]
+  "0x109764" [label="{
+     0x109764 [5]\l
+     | [instrs]\l
+     &nbsp;&nbsp;0x109764 \<+5\>: ???\l
+  }"]
+  "0x10976e" [label="{
+     0x10976e [16]\l
+     | [instrs]\l
+     &nbsp;&nbsp;0x10976e \<+7\>: ???\l
+     &nbsp;&nbsp;0x109775 \<+3\>: ???\l
+     &nbsp;&nbsp;0x109778 \<+4\>: ???\l
+     &nbsp;&nbsp;0x10977c \<+1\>: ???\l
+     &nbsp;&nbsp;0x10977d \<+1\>: ???\l
+  }"]
+  Entry -> "0x1096e0" [label=" 1"]
+  "0x1096e0" -> "0x109711" [label=" 1"]
+  "0x1096e0" -> "0x109700" [label=" 0"]
+  "0x109711" -> "0x10971e" [label=" 1"]
+  "0x10971e" -> "0x109769" [label=" 0"]
+  "0x10971e" -> "0x10972c" [label=" 1"]
+  "0x10976e" -> Exit [label=" 1"]
+  "0x10972c" -> "0x109746" [label=" 1"]
+  "0x109746" -> "0x109756" [label=" 1"]
+  "0x109756" -> "0x109764" [label=" 1"]
+  "0x109764" -> "0x10976e" [label=" 1"]
+}

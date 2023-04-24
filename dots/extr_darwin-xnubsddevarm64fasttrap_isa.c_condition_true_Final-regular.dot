@@ -1,0 +1,90 @@
+digraph "0x109410" {
+  label = "0x109410 (/mnt/c/Users/mathe/OneDrive/Área de Trabalho/TCC/POCII/binaries/extr_darwin-xnubsddevarm64fasttrap_isa.c_condition_true_Final-regular.out::main(0))"
+  labelloc = "t"
+  node[shape=record]
+
+  Entry [label="",width=0.3,height=0.3,shape=circle,fillcolor=black,style=filled]
+  "0x109410" [label="{
+     0x109410 [32]\l
+     | [instrs]\l
+     &nbsp;&nbsp;0x109410 \<+1\>: ???\l
+     &nbsp;&nbsp;0x109411 \<+3\>: ???\l
+     &nbsp;&nbsp;0x109414 \<+4\>: ???\l
+     &nbsp;&nbsp;0x109418 \<+7\>: ???\l
+     &nbsp;&nbsp;0x10941f \<+3\>: ???\l
+     &nbsp;&nbsp;0x109422 \<+4\>: ???\l
+     &nbsp;&nbsp;0x109426 \<+4\>: ???\l
+     &nbsp;&nbsp;0x10942a \<+6\>: ???\l
+  }"]
+  "0x109441" [label="{
+     0x109441 [13]\l
+     | [instrs]\l
+     &nbsp;&nbsp;0x109441 \<+4\>: ???\l
+     &nbsp;&nbsp;0x109445 \<+4\>: ???\l
+     &nbsp;&nbsp;0x109449 \<+5\>: ???\l
+     | [calls]\l
+     &nbsp;&nbsp;0x109040 \{1\} (unknown)\l
+  }"]
+  "0x109430" [label="{
+     0x109430\l
+  }", style=dashed]
+  "0x10944e" [label="{
+     0x10944e [17]\l
+     | [instrs]\l
+     &nbsp;&nbsp;0x10944e \<+3\>: ???\l
+     &nbsp;&nbsp;0x109451 \<+3\>: ???\l
+     &nbsp;&nbsp;0x109454 \<+3\>: ???\l
+     &nbsp;&nbsp;0x109457 \<+2\>: ???\l
+     &nbsp;&nbsp;0x109459 \<+6\>: ???\l
+  }"]
+  "0x109486" [label="{
+     0x109486 [25]\l
+     | [instrs]\l
+     &nbsp;&nbsp;0x109486 \<+7\>: ???\l
+     &nbsp;&nbsp;0x10948d \<+7\>: ???\l
+     &nbsp;&nbsp;0x109494 \<+3\>: ???\l
+     &nbsp;&nbsp;0x109497 \<+3\>: ???\l
+     &nbsp;&nbsp;0x10949a \<+5\>: ???\l
+     | [calls]\l
+     &nbsp;&nbsp;0x109210 \{1\} (/mnt/c/Users/mathe/OneDrive/Área de Trabalho/TCC/POCII/binaries/extr_darwin-xnubsddevarm64fasttrap_isa.c_condition_true_Final-regular.out::condition_true)\l
+  }"]
+  "0x10945f" [label="{
+     0x10945f\l
+  }", style=dashed]
+  "0x10949f" [label="{
+     0x10949f [20]\l
+     | [instrs]\l
+     &nbsp;&nbsp;0x10949f \<+3\>: ???\l
+     &nbsp;&nbsp;0x1094a2 \<+3\>: ???\l
+     &nbsp;&nbsp;0x1094a5 \<+7\>: ???\l
+     &nbsp;&nbsp;0x1094ac \<+2\>: ???\l
+     &nbsp;&nbsp;0x1094ae \<+5\>: ???\l
+     | [calls]\l
+     &nbsp;&nbsp;0x109030 \{1\} (unknown)\l
+  }"]
+  "0x1094b3" [label="{
+     0x1094b3 [5]\l
+     | [instrs]\l
+     &nbsp;&nbsp;0x1094b3 \<+5\>: ???\l
+  }"]
+  "0x109521" [label="{
+     0x109521 [16]\l
+     | [instrs]\l
+     &nbsp;&nbsp;0x109521 \<+7\>: ???\l
+     &nbsp;&nbsp;0x109528 \<+3\>: ???\l
+     &nbsp;&nbsp;0x10952b \<+4\>: ???\l
+     &nbsp;&nbsp;0x10952f \<+1\>: ???\l
+     &nbsp;&nbsp;0x109530 \<+1\>: ???\l
+  }"]
+  Exit [label="",width=0.3,height=0.3,shape=circle,fillcolor=black,style=filled,peripheries=2]
+  Entry -> "0x109410" [label=" 1"]
+  "0x109410" -> "0x109441" [label=" 1"]
+  "0x109410" -> "0x109430" [label=" 0"]
+  "0x109441" -> "0x10944e" [label=" 1"]
+  "0x10944e" -> "0x109486" [label=" 1"]
+  "0x10944e" -> "0x10945f" [label=" 0"]
+  "0x109486" -> "0x10949f" [label=" 1"]
+  "0x10949f" -> "0x1094b3" [label=" 1"]
+  "0x1094b3" -> "0x109521" [label=" 1"]
+  "0x109521" -> Exit [label=" 1"]
+}
