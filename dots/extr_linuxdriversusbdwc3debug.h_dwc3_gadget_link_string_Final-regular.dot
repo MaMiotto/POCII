@@ -1,0 +1,94 @@
+digraph "0x109340" {
+  label = "0x109340 (/mnt/c/Users/mathe/OneDrive/Área de Trabalho/TCC/POCII/binaries/extr_linuxdriversusbdwc3debug.h_dwc3_gadget_link_string_Final-regular.out::main(0))"
+  labelloc = "t"
+  node[shape=record]
+
+  Entry [label="",width=0.3,height=0.3,shape=circle,fillcolor=black,style=filled]
+  "0x109340" [label="{
+     0x109340 [32]\l
+     | [instrs]\l
+     &nbsp;&nbsp;0x109340 \<+1\>: ???\l
+     &nbsp;&nbsp;0x109341 \<+3\>: ???\l
+     &nbsp;&nbsp;0x109344 \<+4\>: ???\l
+     &nbsp;&nbsp;0x109348 \<+7\>: ???\l
+     &nbsp;&nbsp;0x10934f \<+3\>: ???\l
+     &nbsp;&nbsp;0x109352 \<+4\>: ???\l
+     &nbsp;&nbsp;0x109356 \<+4\>: ???\l
+     &nbsp;&nbsp;0x10935a \<+6\>: ???\l
+  }"]
+  "0x109371" [label="{
+     0x109371 [13]\l
+     | [instrs]\l
+     &nbsp;&nbsp;0x109371 \<+4\>: ???\l
+     &nbsp;&nbsp;0x109375 \<+4\>: ???\l
+     &nbsp;&nbsp;0x109379 \<+5\>: ???\l
+     | [calls]\l
+     &nbsp;&nbsp;0x109040 \{1\} (unknown)\l
+  }"]
+  "0x109360" [label="{
+     0x109360\l
+  }", style=dashed]
+  "0x10937e" [label="{
+     0x10937e [14]\l
+     | [instrs]\l
+     &nbsp;&nbsp;0x10937e \<+3\>: ???\l
+     &nbsp;&nbsp;0x109381 \<+3\>: ???\l
+     &nbsp;&nbsp;0x109384 \<+2\>: ???\l
+     &nbsp;&nbsp;0x109386 \<+6\>: ???\l
+  }"]
+  "0x1093cb" [label="{
+     0x1093cb\l
+  }", style=dashed]
+  "0x10938c" [label="{
+     0x10938c [20]\l
+     | [instrs]\l
+     &nbsp;&nbsp;0x10938c \<+5\>: ???\l
+     &nbsp;&nbsp;0x109391 \<+7\>: ???\l
+     &nbsp;&nbsp;0x109398 \<+3\>: ???\l
+     &nbsp;&nbsp;0x10939b \<+5\>: ???\l
+     | [calls]\l
+     &nbsp;&nbsp;0x109210 \{1\} (/mnt/c/Users/mathe/OneDrive/Área de Trabalho/TCC/POCII/binaries/extr_linuxdriversusbdwc3debug.h_dwc3_gadget_link_string_Final-regular.out::dwc3_gadget_link_string)\l
+  }"]
+  Exit [label="",width=0.3,height=0.3,shape=circle,fillcolor=black,style=filled,peripheries=2]
+  "0x1093a0" [label="{
+     0x1093a0 [38]\l
+     | [instrs]\l
+     &nbsp;&nbsp;0x1093a0 \<+4\>: ???\l
+     &nbsp;&nbsp;0x1093a4 \<+4\>: ???\l
+     &nbsp;&nbsp;0x1093a8 \<+3\>: ???\l
+     &nbsp;&nbsp;0x1093ab \<+5\>: ???\l
+     &nbsp;&nbsp;0x1093b0 \<+1\>: ???\l
+     &nbsp;&nbsp;0x1093b1 \<+2\>: ???\l
+     &nbsp;&nbsp;0x1093b3 \<+2\>: ???\l
+     &nbsp;&nbsp;0x1093b5 \<+3\>: ???\l
+     &nbsp;&nbsp;0x1093b8 \<+7\>: ???\l
+     &nbsp;&nbsp;0x1093bf \<+2\>: ???\l
+     &nbsp;&nbsp;0x1093c1 \<+5\>: ???\l
+     | [calls]\l
+     &nbsp;&nbsp;0x109030 \{1\} (unknown)\l
+  }"]
+  "0x1093c6" [label="{
+     0x1093c6 [5]\l
+     | [instrs]\l
+     &nbsp;&nbsp;0x1093c6 \<+5\>: ???\l
+  }"]
+  "0x1093d0" [label="{
+     0x1093d0 [16]\l
+     | [instrs]\l
+     &nbsp;&nbsp;0x1093d0 \<+7\>: ???\l
+     &nbsp;&nbsp;0x1093d7 \<+3\>: ???\l
+     &nbsp;&nbsp;0x1093da \<+4\>: ???\l
+     &nbsp;&nbsp;0x1093de \<+1\>: ???\l
+     &nbsp;&nbsp;0x1093df \<+1\>: ???\l
+  }"]
+  Entry -> "0x109340" [label=" 1"]
+  "0x109340" -> "0x109371" [label=" 1"]
+  "0x109340" -> "0x109360" [label=" 0"]
+  "0x109371" -> "0x10937e" [label=" 1"]
+  "0x10937e" -> "0x1093cb" [label=" 0"]
+  "0x10937e" -> "0x10938c" [label=" 1"]
+  "0x1093d0" -> Exit [label=" 1"]
+  "0x10938c" -> "0x1093a0" [label=" 1"]
+  "0x1093a0" -> "0x1093c6" [label=" 1"]
+  "0x1093c6" -> "0x1093d0" [label=" 1"]
+}

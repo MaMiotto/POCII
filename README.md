@@ -2,6 +2,10 @@
  
 This is my final work for the computer science course. The idea of this project is to create a database with histograms from differents binary files of the same program (but compiled with different optimizations), so they can be used to train a malware detector. 
 
+## Structure
+
+This project consist on several folders with the same amount of files in each one. Those files consist on the same program in different stages on the process of generating the histograms. The programs are from [Jotai Benchmarks](https://github.com/lac-dcc/jotai-benchmarks/), so I didn't create a folder for the code version. You can have it by cloning their github project.
+
 ## Running
 
 To execute this program, you first need to set up the Jotai Benchmarks and the CFGgrind enviroments in this same folder.
