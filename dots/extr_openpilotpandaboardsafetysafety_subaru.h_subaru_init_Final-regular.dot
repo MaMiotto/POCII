@@ -1,0 +1,76 @@
+digraph "0x109220" {
+  label = "0x109220 (/mnt/c/Users/mathe/OneDrive/Área de Trabalho/TCC/POCII/binaries/extr_openpilotpandaboardsafetysafety_subaru.h_subaru_init_Final-regular.out::main(0))"
+  labelloc = "t"
+  node[shape=record]
+
+  Entry [label="",width=0.3,height=0.3,shape=circle,fillcolor=black,style=filled]
+  "0x109220" [label="{
+     0x109220 [32]\l
+     | [instrs]\l
+     &nbsp;&nbsp;0x109220 \<+1\>: ???\l
+     &nbsp;&nbsp;0x109221 \<+3\>: ???\l
+     &nbsp;&nbsp;0x109224 \<+4\>: ???\l
+     &nbsp;&nbsp;0x109228 \<+7\>: ???\l
+     &nbsp;&nbsp;0x10922f \<+3\>: ???\l
+     &nbsp;&nbsp;0x109232 \<+4\>: ???\l
+     &nbsp;&nbsp;0x109236 \<+4\>: ???\l
+     &nbsp;&nbsp;0x10923a \<+6\>: ???\l
+  }"]
+  "0x109251" [label="{
+     0x109251 [13]\l
+     | [instrs]\l
+     &nbsp;&nbsp;0x109251 \<+4\>: ???\l
+     &nbsp;&nbsp;0x109255 \<+4\>: ???\l
+     &nbsp;&nbsp;0x109259 \<+5\>: ???\l
+     | [calls]\l
+     &nbsp;&nbsp;0x109040 \{1\} (unknown)\l
+  }"]
+  "0x109240" [label="{
+     0x109240\l
+  }", style=dashed]
+  "0x10925e" [label="{
+     0x10925e [17]\l
+     | [instrs]\l
+     &nbsp;&nbsp;0x10925e \<+3\>: ???\l
+     &nbsp;&nbsp;0x109261 \<+3\>: ???\l
+     &nbsp;&nbsp;0x109264 \<+3\>: ???\l
+     &nbsp;&nbsp;0x109267 \<+2\>: ???\l
+     &nbsp;&nbsp;0x109269 \<+6\>: ???\l
+  }"]
+  "0x109296" [label="{
+     0x109296 [15]\l
+     | [instrs]\l
+     &nbsp;&nbsp;0x109296 \<+7\>: ???\l
+     &nbsp;&nbsp;0x10929d \<+3\>: ???\l
+     &nbsp;&nbsp;0x1092a0 \<+5\>: ???\l
+     | [calls]\l
+     &nbsp;&nbsp;0x109210 \{1\} (/mnt/c/Users/mathe/OneDrive/Área de Trabalho/TCC/POCII/binaries/extr_openpilotpandaboardsafetysafety_subaru.h_subaru_init_Final-regular.out::subaru_init)\l
+  }"]
+  "0x10926f" [label="{
+     0x10926f\l
+  }", style=dashed]
+  "0x1092a5" [label="{
+     0x1092a5 [5]\l
+     | [instrs]\l
+     &nbsp;&nbsp;0x1092a5 \<+5\>: ???\l
+  }"]
+  "0x1092d7" [label="{
+     0x1092d7 [16]\l
+     | [instrs]\l
+     &nbsp;&nbsp;0x1092d7 \<+7\>: ???\l
+     &nbsp;&nbsp;0x1092de \<+3\>: ???\l
+     &nbsp;&nbsp;0x1092e1 \<+4\>: ???\l
+     &nbsp;&nbsp;0x1092e5 \<+1\>: ???\l
+     &nbsp;&nbsp;0x1092e6 \<+1\>: ???\l
+  }"]
+  Exit [label="",width=0.3,height=0.3,shape=circle,fillcolor=black,style=filled,peripheries=2]
+  Entry -> "0x109220" [label=" 1"]
+  "0x109220" -> "0x109251" [label=" 1"]
+  "0x109220" -> "0x109240" [label=" 0"]
+  "0x109251" -> "0x10925e" [label=" 1"]
+  "0x10925e" -> "0x109296" [label=" 1"]
+  "0x10925e" -> "0x10926f" [label=" 0"]
+  "0x109296" -> "0x1092a5" [label=" 1"]
+  "0x1092a5" -> "0x1092d7" [label=" 1"]
+  "0x1092d7" -> Exit [label=" 1"]
+}

@@ -1,0 +1,96 @@
+digraph "0x1093d0" {
+  label = "0x1093d0 (/mnt/c/Users/mathe/OneDrive/Área de Trabalho/TCC/POCII/binaries/extr_reactosdriversfilesystemsbtrfsflushthread.c_add_parents_to_cache_Final-regular.out::main(0))"
+  labelloc = "t"
+  node[shape=record]
+
+  Entry [label="",width=0.3,height=0.3,shape=circle,fillcolor=black,style=filled]
+  "0x1093d0" [label="{
+     0x1093d0 [32]\l
+     | [instrs]\l
+     &nbsp;&nbsp;0x1093d0 \<+1\>: ???\l
+     &nbsp;&nbsp;0x1093d1 \<+3\>: ???\l
+     &nbsp;&nbsp;0x1093d4 \<+4\>: ???\l
+     &nbsp;&nbsp;0x1093d8 \<+7\>: ???\l
+     &nbsp;&nbsp;0x1093df \<+3\>: ???\l
+     &nbsp;&nbsp;0x1093e2 \<+4\>: ???\l
+     &nbsp;&nbsp;0x1093e6 \<+4\>: ???\l
+     &nbsp;&nbsp;0x1093ea \<+6\>: ???\l
+  }"]
+  "0x109401" [label="{
+     0x109401 [13]\l
+     | [instrs]\l
+     &nbsp;&nbsp;0x109401 \<+4\>: ???\l
+     &nbsp;&nbsp;0x109405 \<+4\>: ???\l
+     &nbsp;&nbsp;0x109409 \<+5\>: ???\l
+     | [calls]\l
+     &nbsp;&nbsp;0x109060 \{1\} (unknown)\l
+  }"]
+  "0x1093f0" [label="{
+     0x1093f0\l
+  }", style=dashed]
+  "0x10940e" [label="{
+     0x10940e [14]\l
+     | [instrs]\l
+     &nbsp;&nbsp;0x10940e \<+3\>: ???\l
+     &nbsp;&nbsp;0x109411 \<+3\>: ???\l
+     &nbsp;&nbsp;0x109414 \<+2\>: ???\l
+     &nbsp;&nbsp;0x109416 \<+6\>: ???\l
+  }"]
+  "0x10944f" [label="{
+     0x10944f\l
+  }", style=dashed]
+  "0x10941c" [label="{
+     0x10941c [19]\l
+     | [instrs]\l
+     &nbsp;&nbsp;0x10941c \<+5\>: ???\l
+     &nbsp;&nbsp;0x109421 \<+4\>: ???\l
+     &nbsp;&nbsp;0x109425 \<+5\>: ???\l
+     &nbsp;&nbsp;0x10942a \<+5\>: ???\l
+     | [calls]\l
+     &nbsp;&nbsp;0x109270 \{1\} (/mnt/c/Users/mathe/OneDrive/Área de Trabalho/TCC/POCII/binaries/extr_reactosdriversfilesystemsbtrfsflushthread.c_add_parents_to_cache_Final-regular.out::_allocate_t)\l
+  }"]
+  Exit [label="",width=0.3,height=0.3,shape=circle,fillcolor=black,style=filled,peripheries=2]
+  "0x10942f" [label="{
+     0x10942f [13]\l
+     | [instrs]\l
+     &nbsp;&nbsp;0x10942f \<+4\>: ???\l
+     &nbsp;&nbsp;0x109433 \<+4\>: ???\l
+     &nbsp;&nbsp;0x109437 \<+5\>: ???\l
+     | [calls]\l
+     &nbsp;&nbsp;0x109230 \{1\} (/mnt/c/Users/mathe/OneDrive/Área de Trabalho/TCC/POCII/binaries/extr_reactosdriversfilesystemsbtrfsflushthread.c_add_parents_to_cache_Final-regular.out::add_parents_to_cache)\l
+  }"]
+  "0x10943c" [label="{
+     0x10943c [14]\l
+     | [instrs]\l
+     &nbsp;&nbsp;0x10943c \<+4\>: ???\l
+     &nbsp;&nbsp;0x109440 \<+5\>: ???\l
+     &nbsp;&nbsp;0x109445 \<+5\>: ???\l
+     | [calls]\l
+     &nbsp;&nbsp;0x109370 \{1\} (/mnt/c/Users/mathe/OneDrive/Área de Trabalho/TCC/POCII/binaries/extr_reactosdriversfilesystemsbtrfsflushthread.c_add_parents_to_cache_Final-regular.out::_delete_t)\l
+  }"]
+  "0x10944a" [label="{
+     0x10944a [5]\l
+     | [instrs]\l
+     &nbsp;&nbsp;0x10944a \<+5\>: ???\l
+  }"]
+  "0x109454" [label="{
+     0x109454 [16]\l
+     | [instrs]\l
+     &nbsp;&nbsp;0x109454 \<+7\>: ???\l
+     &nbsp;&nbsp;0x10945b \<+3\>: ???\l
+     &nbsp;&nbsp;0x10945e \<+4\>: ???\l
+     &nbsp;&nbsp;0x109462 \<+1\>: ???\l
+     &nbsp;&nbsp;0x109463 \<+1\>: ???\l
+  }"]
+  Entry -> "0x1093d0" [label=" 1"]
+  "0x1093d0" -> "0x109401" [label=" 1"]
+  "0x1093d0" -> "0x1093f0" [label=" 0"]
+  "0x109401" -> "0x10940e" [label=" 1"]
+  "0x10940e" -> "0x10944f" [label=" 0"]
+  "0x10940e" -> "0x10941c" [label=" 1"]
+  "0x109454" -> Exit [label=" 1"]
+  "0x10941c" -> "0x10942f" [label=" 1"]
+  "0x10942f" -> "0x10943c" [label=" 1"]
+  "0x10943c" -> "0x10944a" [label=" 1"]
+  "0x10944a" -> "0x109454" [label=" 1"]
+}

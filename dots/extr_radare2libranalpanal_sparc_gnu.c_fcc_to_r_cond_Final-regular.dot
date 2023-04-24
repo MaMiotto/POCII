@@ -1,0 +1,88 @@
+digraph "0x1092e0" {
+  label = "0x1092e0 (/mnt/c/Users/mathe/OneDrive/Área de Trabalho/TCC/POCII/binaries/extr_radare2libranalpanal_sparc_gnu.c_fcc_to_r_cond_Final-regular.out::main(0))"
+  labelloc = "t"
+  node[shape=record]
+
+  Entry [label="",width=0.3,height=0.3,shape=circle,fillcolor=black,style=filled]
+  "0x1092e0" [label="{
+     0x1092e0 [32]\l
+     | [instrs]\l
+     &nbsp;&nbsp;0x1092e0 \<+1\>: ???\l
+     &nbsp;&nbsp;0x1092e1 \<+3\>: ???\l
+     &nbsp;&nbsp;0x1092e4 \<+4\>: ???\l
+     &nbsp;&nbsp;0x1092e8 \<+7\>: ???\l
+     &nbsp;&nbsp;0x1092ef \<+3\>: ???\l
+     &nbsp;&nbsp;0x1092f2 \<+4\>: ???\l
+     &nbsp;&nbsp;0x1092f6 \<+4\>: ???\l
+     &nbsp;&nbsp;0x1092fa \<+6\>: ???\l
+  }"]
+  "0x109311" [label="{
+     0x109311 [13]\l
+     | [instrs]\l
+     &nbsp;&nbsp;0x109311 \<+4\>: ???\l
+     &nbsp;&nbsp;0x109315 \<+4\>: ???\l
+     &nbsp;&nbsp;0x109319 \<+5\>: ???\l
+     | [calls]\l
+     &nbsp;&nbsp;0x109040 \{1\} (unknown)\l
+  }"]
+  "0x109300" [label="{
+     0x109300\l
+  }", style=dashed]
+  "0x10931e" [label="{
+     0x10931e [17]\l
+     | [instrs]\l
+     &nbsp;&nbsp;0x10931e \<+3\>: ???\l
+     &nbsp;&nbsp;0x109321 \<+3\>: ???\l
+     &nbsp;&nbsp;0x109324 \<+3\>: ???\l
+     &nbsp;&nbsp;0x109327 \<+2\>: ???\l
+     &nbsp;&nbsp;0x109329 \<+6\>: ???\l
+  }"]
+  "0x109356" [label="{
+     0x109356 [17]\l
+     | [instrs]\l
+     &nbsp;&nbsp;0x109356 \<+7\>: ???\l
+     &nbsp;&nbsp;0x10935d \<+5\>: ???\l
+     &nbsp;&nbsp;0x109362 \<+5\>: ???\l
+     | [calls]\l
+     &nbsp;&nbsp;0x109210 \{1\} (/mnt/c/Users/mathe/OneDrive/Área de Trabalho/TCC/POCII/binaries/extr_radare2libranalpanal_sparc_gnu.c_fcc_to_r_cond_Final-regular.out::fcc_to_r_cond)\l
+  }"]
+  "0x10932f" [label="{
+     0x10932f\l
+  }", style=dashed]
+  "0x109367" [label="{
+     0x109367 [20]\l
+     | [instrs]\l
+     &nbsp;&nbsp;0x109367 \<+3\>: ???\l
+     &nbsp;&nbsp;0x10936a \<+3\>: ???\l
+     &nbsp;&nbsp;0x10936d \<+7\>: ???\l
+     &nbsp;&nbsp;0x109374 \<+2\>: ???\l
+     &nbsp;&nbsp;0x109376 \<+5\>: ???\l
+     | [calls]\l
+     &nbsp;&nbsp;0x109030 \{1\} (unknown)\l
+  }"]
+  "0x10937b" [label="{
+     0x10937b [5]\l
+     | [instrs]\l
+     &nbsp;&nbsp;0x10937b \<+5\>: ???\l
+  }"]
+  "0x1093d9" [label="{
+     0x1093d9 [16]\l
+     | [instrs]\l
+     &nbsp;&nbsp;0x1093d9 \<+7\>: ???\l
+     &nbsp;&nbsp;0x1093e0 \<+3\>: ???\l
+     &nbsp;&nbsp;0x1093e3 \<+4\>: ???\l
+     &nbsp;&nbsp;0x1093e7 \<+1\>: ???\l
+     &nbsp;&nbsp;0x1093e8 \<+1\>: ???\l
+  }"]
+  Exit [label="",width=0.3,height=0.3,shape=circle,fillcolor=black,style=filled,peripheries=2]
+  Entry -> "0x1092e0" [label=" 1"]
+  "0x1092e0" -> "0x109311" [label=" 1"]
+  "0x1092e0" -> "0x109300" [label=" 0"]
+  "0x109311" -> "0x10931e" [label=" 1"]
+  "0x10931e" -> "0x109356" [label=" 1"]
+  "0x10931e" -> "0x10932f" [label=" 0"]
+  "0x109356" -> "0x109367" [label=" 1"]
+  "0x109367" -> "0x10937b" [label=" 1"]
+  "0x10937b" -> "0x1093d9" [label=" 1"]
+  "0x1093d9" -> Exit [label=" 1"]
+}

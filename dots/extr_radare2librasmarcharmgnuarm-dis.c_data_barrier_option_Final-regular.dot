@@ -1,0 +1,94 @@
+digraph "0x109320" {
+  label = "0x109320 (/mnt/c/Users/mathe/OneDrive/Área de Trabalho/TCC/POCII/binaries/extr_radare2librasmarcharmgnuarm-dis.c_data_barrier_option_Final-regular.out::main(0))"
+  labelloc = "t"
+  node[shape=record]
+
+  Entry [label="",width=0.3,height=0.3,shape=circle,fillcolor=black,style=filled]
+  "0x109320" [label="{
+     0x109320 [32]\l
+     | [instrs]\l
+     &nbsp;&nbsp;0x109320 \<+1\>: ???\l
+     &nbsp;&nbsp;0x109321 \<+3\>: ???\l
+     &nbsp;&nbsp;0x109324 \<+4\>: ???\l
+     &nbsp;&nbsp;0x109328 \<+7\>: ???\l
+     &nbsp;&nbsp;0x10932f \<+3\>: ???\l
+     &nbsp;&nbsp;0x109332 \<+4\>: ???\l
+     &nbsp;&nbsp;0x109336 \<+4\>: ???\l
+     &nbsp;&nbsp;0x10933a \<+6\>: ???\l
+  }"]
+  "0x109351" [label="{
+     0x109351 [13]\l
+     | [instrs]\l
+     &nbsp;&nbsp;0x109351 \<+4\>: ???\l
+     &nbsp;&nbsp;0x109355 \<+4\>: ???\l
+     &nbsp;&nbsp;0x109359 \<+5\>: ???\l
+     | [calls]\l
+     &nbsp;&nbsp;0x109040 \{1\} (unknown)\l
+  }"]
+  "0x109340" [label="{
+     0x109340\l
+  }", style=dashed]
+  "0x10935e" [label="{
+     0x10935e [17]\l
+     | [instrs]\l
+     &nbsp;&nbsp;0x10935e \<+3\>: ???\l
+     &nbsp;&nbsp;0x109361 \<+3\>: ???\l
+     &nbsp;&nbsp;0x109364 \<+3\>: ???\l
+     &nbsp;&nbsp;0x109367 \<+2\>: ???\l
+     &nbsp;&nbsp;0x109369 \<+6\>: ???\l
+  }"]
+  "0x109385" [label="{
+     0x109385 [15]\l
+     | [instrs]\l
+     &nbsp;&nbsp;0x109385 \<+7\>: ???\l
+     &nbsp;&nbsp;0x10938c \<+3\>: ???\l
+     &nbsp;&nbsp;0x10938f \<+5\>: ???\l
+     | [calls]\l
+     &nbsp;&nbsp;0x109210 \{1\} (/mnt/c/Users/mathe/OneDrive/Área de Trabalho/TCC/POCII/binaries/extr_radare2librasmarcharmgnuarm-dis.c_data_barrier_option_Final-regular.out::data_barrier_option)\l
+  }"]
+  "0x10936f" [label="{
+     0x10936f\l
+  }", style=dashed]
+  "0x109394" [label="{
+     0x109394 [38]\l
+     | [instrs]\l
+     &nbsp;&nbsp;0x109394 \<+4\>: ???\l
+     &nbsp;&nbsp;0x109398 \<+4\>: ???\l
+     &nbsp;&nbsp;0x10939c \<+3\>: ???\l
+     &nbsp;&nbsp;0x10939f \<+5\>: ???\l
+     &nbsp;&nbsp;0x1093a4 \<+1\>: ???\l
+     &nbsp;&nbsp;0x1093a5 \<+2\>: ???\l
+     &nbsp;&nbsp;0x1093a7 \<+2\>: ???\l
+     &nbsp;&nbsp;0x1093a9 \<+3\>: ???\l
+     &nbsp;&nbsp;0x1093ac \<+7\>: ???\l
+     &nbsp;&nbsp;0x1093b3 \<+2\>: ???\l
+     &nbsp;&nbsp;0x1093b5 \<+5\>: ???\l
+     | [calls]\l
+     &nbsp;&nbsp;0x109030 \{1\} (unknown)\l
+  }"]
+  "0x1093ba" [label="{
+     0x1093ba [5]\l
+     | [instrs]\l
+     &nbsp;&nbsp;0x1093ba \<+5\>: ???\l
+  }"]
+  "0x1093fe" [label="{
+     0x1093fe [16]\l
+     | [instrs]\l
+     &nbsp;&nbsp;0x1093fe \<+7\>: ???\l
+     &nbsp;&nbsp;0x109405 \<+3\>: ???\l
+     &nbsp;&nbsp;0x109408 \<+4\>: ???\l
+     &nbsp;&nbsp;0x10940c \<+1\>: ???\l
+     &nbsp;&nbsp;0x10940d \<+1\>: ???\l
+  }"]
+  Exit [label="",width=0.3,height=0.3,shape=circle,fillcolor=black,style=filled,peripheries=2]
+  Entry -> "0x109320" [label=" 1"]
+  "0x109320" -> "0x109351" [label=" 1"]
+  "0x109320" -> "0x109340" [label=" 0"]
+  "0x109351" -> "0x10935e" [label=" 1"]
+  "0x10935e" -> "0x109385" [label=" 1"]
+  "0x10935e" -> "0x10936f" [label=" 0"]
+  "0x109385" -> "0x109394" [label=" 1"]
+  "0x109394" -> "0x1093ba" [label=" 1"]
+  "0x1093ba" -> "0x1093fe" [label=" 1"]
+  "0x1093fe" -> Exit [label=" 1"]
+}
