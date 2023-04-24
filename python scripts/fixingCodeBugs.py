@@ -1,10 +1,10 @@
 import os
 
 def main():
-	files = getFilesFrom("./jotai-benchmarks/benchmarks/anghaLeaves")
-	fixFiler(files, "./jotai-benchmarks/benchmarks/anghaLeaves")
-	files = getFilesFrom("./jotai-benchmarks/benchmarks/anghaMath")
-	fixFiler(files, "./jotai-benchmarks/benchmarks/anghaMath")
+	files = getFilesFrom("../jotai-benchmarks/benchmarks/anghaLeaves")
+	fixFiler(files, "../jotai-benchmarks/benchmarks/anghaLeaves")
+	files = getFilesFrom("../jotai-benchmarks/benchmarks/anghaMath")
+	fixFiler(files, "../jotai-benchmarks/benchmarks/anghaMath")
 	
 
 def fixFiler(fileNameList, folderPath):

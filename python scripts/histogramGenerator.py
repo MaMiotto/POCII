@@ -2,10 +2,10 @@ import os
 import subprocess
 
 def main():
-	compileFilesFrom("./jotai-benchmarks/benchmarks/anghaLeaves", "./binaries")
-	compileFilesFrom("./jotai-benchmarks/benchmarks/anghaMath", "./binaries")
+	compileFilesFrom("../jotai-benchmarks/benchmarks/anghaLeaves", "../binaries")
+	compileFilesFrom("../jotai-benchmarks/benchmarks/anghaMath", "../binaries")
 	generateCFGgrindMapsFrom("./binaries", "./maps")
-	generateDotFilesFrom("./binaries", "./cfg", "./maps", "./dots")
+	generateDotFilesFrom("../binaries", "../cfg", "../maps", "../dots")
 
 def compileFilesFrom(folderPathPrograms, folderPathBinaries):
 	files = getFilesFrom(folderPathPrograms)
