@@ -1,16 +1,16 @@
 # POCII
  
-This is my final work for the computer science course. The idea of this project is to create a database with histograms from differents binary files of the same program (but compiled with different optimizations), so they can be used to train a malware detector.
+This is my final work for the computer science course. The idea of this project is to create a database with histograms from differents binary files of the same program (but compiled with different optimizations), so they can be used to train a malware detector. 
 
 ## Running
 
 To execute this program, you first need to set up the Jotai Benchmarks and the CFGgrind enviroments in this same folder.
 
-Step 1: Clone this project
-Step 2: Clone [Jotai Benchmarks](https://github.com/lac-dcc/jotai-benchmarks/)
-Step 3: Build [CFGgrind](https://github.com/rimsa/CFGgrind) following its Readme instructions
+Step 1: Clone this project<br />
+Step 2: Clone [Jotai Benchmarks](https://github.com/lac-dcc/jotai-benchmarks/)<br />
+Step 3: Build [CFGgrind](https://github.com/rimsa/CFGgrind) following its Readme instructions<br /><br />
 
-So you have this final structure:
+So you have this final structure:<br /><br />
 
 POCII <br />
 ├── README.md <br />
