@@ -32,20 +32,21 @@ POCII <br />
 │   ├── README.md <br />
 │   ├── assets <br />
 │   ├── benchmarks <br />
-    ... <br />
 ├── valgrind-3.20.0 <br />
 │   ├── .in_place <br />
 │   ├── autom4te.cache <br />
 │   ├── auxprogs <br />
 │   ├── cachegrind <br />
-    ... <br />
 ├── ...<br />
 
 Step 4 (Optional): In order to compile all Jotai Benchmarks on windows, using the Windows Subsystem for Linux (WSL), I had a problem with its variable names (typedef redefinition error). So I made a script to change all those names. If you're facing a similar issue, just do this:
 
 ```
-python3 fixingCodeBugs.py
+$> python3 fixingCodeBugs.py
 ```
 
 Step 5: Run the histogram generator code, in order to generate all the binaries, cfg, map and dot files.
 
+```
+$> python3 fixingCodeBugs.py
+```
