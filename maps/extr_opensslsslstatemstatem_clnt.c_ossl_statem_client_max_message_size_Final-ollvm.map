@@ -1,0 +1,1687 @@
+0x401000:4:endbr64
+0x401004:4:sub $0x8,%rsp
+0x401008:7:mov 0x3fe9(%rip),%rax
+0x40100f:3:test %rax,%rax
+0x401012:2:je 0000000000401016 <_init+0x16>
+0x401014:2:call *%rax
+0x401016:4:add $0x8,%rsp
+0x40101a:1:ret
+0x401020:6:push 0x3fe2(%rip)
+0x401026:6:jmp *0x3fe4(%rip)
+0x40102c:4:nopl 0x0(%rax)
+0x401030:6:jmp *0x3fe2(%rip)
+0x401036:5:push $0x0
+0x40103b:5:jmp 0000000000401020 <_init+0x20>
+0x401040:6:jmp *0x3fda(%rip)
+0x401046:5:push $0x1
+0x40104b:5:jmp 0000000000401020 <_init+0x20>
+0x401050:6:jmp *0x3fd2(%rip)
+0x401056:5:push $0x2
+0x40105b:5:jmp 0000000000401020 <_init+0x20>
+0x401060:6:jmp *0x3fca(%rip)
+0x401066:5:push $0x3
+0x40106b:5:jmp 0000000000401020 <_init+0x20>
+0x401070:4:endbr64
+0x401074:2:xor %ebp,%ebp
+0x401076:3:mov %rdx,%r9
+0x401079:1:pop %rsi
+0x40107a:3:mov %rsp,%rdx
+0x40107d:4:and $0xfffffffffffffff0,%rsp
+0x401081:1:push %rax
+0x401082:1:push %rsp
+0x401083:3:xor %r8d,%r8d
+0x401086:2:xor %ecx,%ecx
+0x401088:7:mov $0x4022f0,%rdi
+0x40108f:6:call *0x3f5b(%rip)
+0x401095:1:hlt
+0x401096:10:cs nopw 0x0(%rax,%rax,1)
+0x4010a0:4:endbr64
+0x4010a4:1:ret
+0x4010a5:10:cs nopw 0x0(%rax,%rax,1)
+0x4010af:1:nop
+0x4010b0:5:mov $0x405048,%eax
+0x4010b5:6:cmp $0x405048,%rax
+0x4010bb:2:je 00000000004010d0 <deregister_tm_clones+0x20>
+0x4010bd:5:mov $0x0,%eax
+0x4010c2:3:test %rax,%rax
+0x4010c5:2:je 00000000004010d0 <deregister_tm_clones+0x20>
+0x4010c7:5:mov $0x405048,%edi
+0x4010cc:2:jmp *%rax
+0x4010ce:2:xchg %ax,%ax
+0x4010d0:1:ret
+0x4010d1:11:data16 cs nopw 0x0(%rax,%rax,1)
+0x4010dc:4:nopl 0x0(%rax)
+0x4010e0:5:mov $0x405048,%esi
+0x4010e5:7:sub $0x405048,%rsi
+0x4010ec:3:mov %rsi,%rax
+0x4010ef:4:shr $0x3f,%rsi
+0x4010f3:4:sar $0x3,%rax
+0x4010f7:3:add %rax,%rsi
+0x4010fa:3:sar %rsi
+0x4010fd:2:je 0000000000401110 <register_tm_clones+0x30>
+0x4010ff:5:mov $0x0,%eax
+0x401104:3:test %rax,%rax
+0x401107:2:je 0000000000401110 <register_tm_clones+0x30>
+0x401109:5:mov $0x405048,%edi
+0x40110e:2:jmp *%rax
+0x401110:1:ret
+0x401111:11:data16 cs nopw 0x0(%rax,%rax,1)
+0x40111c:4:nopl 0x0(%rax)
+0x401120:4:endbr64
+0x401124:7:cmpb $0x0,0x3f1d(%rip)
+0x40112b:2:jne 0000000000401140 <__do_global_dtors_aux+0x20>
+0x40112d:1:push %rbp
+0x40112e:3:mov %rsp,%rbp
+0x401131:5:call 00000000004010b0 <deregister_tm_clones>
+0x401136:7:movb $0x1,0x3f0b(%rip)
+0x40113d:1:pop %rbp
+0x40113e:1:ret
+0x40113f:1:nop
+0x401140:1:ret
+0x401141:11:data16 cs nopw 0x0(%rax,%rax,1)
+0x40114c:4:nopl 0x0(%rax)
+0x401150:4:endbr64
+0x401154:2:jmp 00000000004010e0 <register_tm_clones>
+0x401156:10:cs nopw 0x0(%rax,%rax,1)
+0x401160:1:push %rbp
+0x401161:3:mov %rsp,%rbp
+0x401164:1:push %rbx
+0x401165:4:sub $0x28,%rsp
+0x401169:7:mov 0x405060,%eax
+0x401170:7:mov 0x4050a0,%ecx
+0x401177:2:mov %eax,%edx
+0x401179:6:sub $0x7880114f,%edx
+0x40117f:3:sub $0x1,%edx
+0x401182:6:add $0x7880114f,%edx
+0x401188:3:imul %edx,%eax
+0x40118b:3:and $0x1,%eax
+0x40118e:3:cmp $0x0,%eax
+0x401191:4:sete %sil
+0x401195:4:and $0x1,%sil
+0x401199:4:mov %sil,-0xe(%rbp)
+0x40119d:3:cmp $0xa,%ecx
+0x4011a0:4:setl %sil
+0x4011a4:4:and $0x1,%sil
+0x4011a8:4:mov %sil,-0xd(%rbp)
+0x4011ac:7:movl $0xa97b7cc4,-0x14(%rbp)
+0x4011b3:3:mov -0x14(%rbp),%eax
+0x4011b6:2:mov %eax,%ecx
+0x4011b8:6:sub $0xa97b7cc4,%ecx
+0x4011be:3:mov %eax,-0x18(%rbp)
+0x4011c1:3:mov %ecx,-0x1c(%rbp)
+0x4011c4:6:je 0000000000401216 <next_i+0xb6>
+0x4011ca:5:jmp 00000000004011cf <next_i+0x6f>
+0x4011cf:3:mov -0x18(%rbp),%eax
+0x4011d2:5:sub $0xcdff13a0,%eax
+0x4011d7:3:mov %eax,-0x20(%rbp)
+0x4011da:6:je 0000000000401277 <next_i+0x117>
+0x4011e0:5:jmp 00000000004011e5 <next_i+0x85>
+0x4011e5:3:mov -0x18(%rbp),%eax
+0x4011e8:5:sub $0x17739ce,%eax
+0x4011ed:3:mov %eax,-0x24(%rbp)
+0x4011f0:6:je 000000000040132c <next_i+0x1cc>
+0x4011f6:5:jmp 00000000004011fb <next_i+0x9b>
+0x4011fb:3:mov -0x18(%rbp),%eax
+0x4011fe:5:sub $0x4d6af182,%eax
+0x401203:3:mov %eax,-0x28(%rbp)
+0x401206:6:je 0000000000401322 <next_i+0x1c2>
+0x40120c:5:jmp 0000000000401211 <next_i+0xb1>
+0x401211:5:jmp 000000000040134e <next_i+0x1ee>
+0x401216:5:mov $0x17739ce,%eax
+0x40121b:5:mov $0xcdff13a0,%ecx
+0x401220:2:mov $0x1,%dl
+0x401222:4:mov -0xe(%rbp),%sil
+0x401226:4:mov -0xd(%rbp),%dil
+0x40122a:3:mov %sil,%r8b
+0x40122d:4:xor $0xff,%r8b
+0x401231:3:mov %dil,%r9b
+0x401234:4:xor $0xff,%r9b
+0x401238:3:xor $0x1,%dl
+0x40123b:3:mov %r8b,%r10b
+0x40123e:4:and $0xff,%r10b
+0x401242:3:and %dl,%sil
+0x401245:3:mov %r9b,%r11b
+0x401248:4:and $0xff,%r11b
+0x40124c:3:and %dl,%dil
+0x40124f:3:or %sil,%r10b
+0x401252:3:or %dil,%r11b
+0x401255:3:xor %r11b,%r10b
+0x401258:3:or %r9b,%r8b
+0x40125b:4:xor $0xff,%r8b
+0x40125f:3:or $0x1,%dl
+0x401262:3:and %dl,%r8b
+0x401265:3:or %r8b,%r10b
+0x401268:4:test $0x1,%r10b
+0x40126c:3:cmovne %ecx,%eax
+0x40126f:3:mov %eax,-0x14(%rbp)
+0x401272:5:jmp 000000000040134e <next_i+0x1ee>
+0x401277:5:mov $0x17739ce,%eax
+0x40127c:5:mov $0x4d6af182,%ecx
+0x401281:5:mov $0x19,%edx
+0x401286:2:xor %esi,%esi
+0x401288:3:mov %rsp,%rdi
+0x40128b:4:add $0xfffffffffffffff0,%rdi
+0x40128f:3:mov %rdi,%rsp
+0x401292:6:movl $0x0,(%rdi)
+0x401298:3:mov (%rdi),%r8d
+0x40129b:3:mov %esi,%r9d
+0x40129e:3:sub %r8d,%r9d
+0x4012a1:3:mov %esi,%r8d
+0x4012a4:4:sub $0x1,%r8d
+0x4012a8:3:add %r8d,%r9d
+0x4012ab:3:sub %r9d,%esi
+0x4012ae:2:mov %esi,(%rdi)
+0x4012b0:3:mov %eax,-0x2c(%rbp)
+0x4012b3:2:mov %esi,%eax
+0x4012b5:3:mov %edx,-0x30(%rbp)
+0x4012b8:1:cltd
+0x4012b9:3:mov -0x30(%rbp),%esi
+0x4012bc:2:idiv %esi
+0x4012be:3:movslq %edx,%rdi
+0x4012c1:7:mov 0x403010(,%rdi,4),%edx
+0x4012c8:3:mov %edx,-0xc(%rbp)
+0x4012cb:7:mov 0x405060,%edx
+0x4012d2:8:mov 0x4050a0,%r8d
+0x4012da:3:mov %edx,%r9d
+0x4012dd:7:sub $0x4cb61499,%r9d
+0x4012e4:4:sub $0x1,%r9d
+0x4012e8:7:add $0x4cb61499,%r9d
+0x4012ef:4:imul %r9d,%edx
+0x4012f3:3:and $0x1,%edx
+0x4012f6:3:cmp $0x0,%edx
+0x4012f9:4:sete %r10b
+0x4012fd:4:cmp $0xa,%r8d
+0x401301:4:setl %r11b
+0x401305:3:mov %r10b,%bl
+0x401308:3:and %r11b,%bl
+0x40130b:3:xor %r11b,%r10b
+0x40130e:3:or %r10b,%bl
+0x401311:3:test $0x1,%bl
+0x401314:3:mov -0x2c(%rbp),%edx
+0x401317:3:cmovne %ecx,%edx
+0x40131a:3:mov %edx,-0x14(%rbp)
+0x40131d:5:jmp 000000000040134e <next_i+0x1ee>
+0x401322:3:mov -0xc(%rbp),%eax
+0x401325:4:lea -0x8(%rbp),%rsp
+0x401329:1:pop %rbx
+0x40132a:1:pop %rbp
+0x40132b:1:ret
+0x40132c:2:xor %eax,%eax
+0x40132e:3:mov %rsp,%rcx
+0x401331:4:add $0xfffffffffffffff0,%rcx
+0x401335:3:mov %rcx,%rsp
+0x401338:6:movl $0x0,(%rcx)
+0x40133e:2:mov (%rcx),%edx
+0x401340:3:sub $0x1,%eax
+0x401343:2:sub %eax,%edx
+0x401345:2:mov %edx,(%rcx)
+0x401347:7:movl $0xcdff13a0,-0x14(%rbp)
+0x40134e:5:jmp 00000000004011b3 <next_i+0x53>
+0x401353:13:data16 data16 data16 cs nopw 0x0(%rax,%rax,1)
+0x401360:1:push %rbp
+0x401361:3:mov %rsp,%rbp
+0x401364:8:movss 0x1c98(%rip),%xmm0
+0x40136c:7:movl $0x0,-0x4(%rbp)
+0x401373:3:mov -0x4(%rbp),%eax
+0x401376:2:neg %eax
+0x401378:5:mov $0x1,%ecx
+0x40137d:2:sub %eax,%ecx
+0x40137f:3:mov %ecx,-0x4(%rbp)
+0x401382:3:movslq %ecx,%rdx
+0x401385:7:imul $0x51eb851f,%rdx,%rdx
+0x40138c:3:mov %rdx,%rsi
+0x40138f:4:shr $0x3f,%rsi
+0x401393:2:mov %esi,%eax
+0x401395:4:sar $0x23,%rdx
+0x401399:2:mov %edx,%edi
+0x40139b:2:add %eax,%edi
+0x40139d:2:mov %edi,%edx
+0x40139f:3:lea (%rdx,%rdx,4),%eax
+0x4013a2:2:mov %eax,%edx
+0x4013a4:3:lea (%rdx,%rdx,4),%eax
+0x4013a7:2:sub %eax,%ecx
+0x4013a9:3:movslq %ecx,%rdx
+0x4013ac:7:mov 0x403010(,%rdx,4),%eax
+0x4013b3:2:mov %eax,%edx
+0x4013b5:5:cvtsi2ss %rdx,%xmm1
+0x4013ba:4:divss %xmm0,%xmm1
+0x4013be:3:movaps %xmm1,%xmm0
+0x4013c1:1:pop %rbp
+0x4013c2:1:ret
+0x4013c3:13:data16 data16 data16 cs nopw 0x0(%rax,%rax,1)
+0x4013d0:1:push %rbp
+0x4013d1:3:mov %rsp,%rbp
+0x4013d4:4:sub $0x10,%rsp
+0x4013d8:10:movabs $0x403074,%rdi
+0x4013e2:10:movabs $0x403077,%rsi
+0x4013ec:2:mov $0x0,%al
+0x4013ee:5:call 0000000000401040 <printf@plt>
+0x4013f3:3:mov %eax,-0x4(%rbp)
+0x4013f6:4:add $0x10,%rsp
+0x4013fa:1:pop %rbp
+0x4013fb:1:ret
+0x4013fc:4:nopl 0x0(%rax)
+0x401400:1:push %rbp
+0x401401:3:mov %rsp,%rbp
+0x401404:2:push %r15
+0x401406:2:push %r14
+0x401408:2:push %r13
+0x40140a:2:push %r12
+0x40140c:1:push %rbx
+0x40140d:7:sub $0xf8,%rsp
+0x401414:7:mov 0x405078,%eax
+0x40141b:7:mov 0x4050c8,%ecx
+0x401422:2:mov %eax,%edx
+0x401424:6:sub $0xb3c8b6e3,%edx
+0x40142a:3:sub $0x1,%edx
+0x40142d:6:add $0xb3c8b6e3,%edx
+0x401433:3:imul %edx,%eax
+0x401436:3:and $0x1,%eax
+0x401439:3:cmp $0x0,%eax
+0x40143c:4:sete %sil
+0x401440:4:and $0x1,%sil
+0x401444:4:mov %sil,-0x42(%rbp)
+0x401448:3:cmp $0xa,%ecx
+0x40144b:4:setl %sil
+0x40144f:4:and $0x1,%sil
+0x401453:4:mov %sil,-0x41(%rbp)
+0x401457:7:movl $0xc1495fe7,-0x48(%rbp)
+0x40145e:4:mov %rdi,-0x50(%rbp)
+0x401462:3:mov -0x48(%rbp),%eax
+0x401465:2:mov %eax,%ecx
+0x401467:6:sub $0x8919fb9e,%ecx
+0x40146d:3:mov %eax,-0x54(%rbp)
+0x401470:3:mov %ecx,-0x58(%rbp)
+0x401473:6:je 0000000000401af2 <ossl_statem_client_max_message_size+0x6f2>
+0x401479:5:jmp 000000000040147e <ossl_statem_client_max_message_size+0x7e>
+0x40147e:3:mov -0x54(%rbp),%eax
+0x401481:5:sub $0x89fe2f40,%eax
+0x401486:3:mov %eax,-0x5c(%rbp)
+0x401489:6:je 0000000000401b6a <ossl_statem_client_max_message_size+0x76a>
+0x40148f:5:jmp 0000000000401494 <ossl_statem_client_max_message_size+0x94>
+0x401494:3:mov -0x54(%rbp),%eax
+0x401497:5:sub $0x8c706aa3,%eax
+0x40149c:3:mov %eax,-0x60(%rbp)
+0x40149f:6:je 0000000000401ad4 <ossl_statem_client_max_message_size+0x6d4>
+0x4014a5:5:jmp 00000000004014aa <ossl_statem_client_max_message_size+0xaa>
+0x4014aa:3:mov -0x54(%rbp),%eax
+0x4014ad:5:sub $0x8f7a0a9d,%eax
+0x4014b2:3:mov %eax,-0x64(%rbp)
+0x4014b5:6:je 0000000000401e65 <ossl_statem_client_max_message_size+0xa65>
+0x4014bb:5:jmp 00000000004014c0 <ossl_statem_client_max_message_size+0xc0>
+0x4014c0:3:mov -0x54(%rbp),%eax
+0x4014c3:5:sub $0x8fa895a5,%eax
+0x4014c8:3:mov %eax,-0x68(%rbp)
+0x4014cb:6:je 0000000000401b4c <ossl_statem_client_max_message_size+0x74c>
+0x4014d1:5:jmp 00000000004014d6 <ossl_statem_client_max_message_size+0xd6>
+0x4014d6:3:mov -0x54(%rbp),%eax
+0x4014d9:5:sub $0x9072f04a,%eax
+0x4014de:3:mov %eax,-0x6c(%rbp)
+0x4014e1:6:je 0000000000402267 <ossl_statem_client_max_message_size+0xe67>
+0x4014e7:5:jmp 00000000004014ec <ossl_statem_client_max_message_size+0xec>
+0x4014ec:3:mov -0x54(%rbp),%eax
+0x4014ef:5:sub $0x914406dc,%eax
+0x4014f4:3:mov %eax,-0x70(%rbp)
+0x4014f7:6:je 0000000000401bc4 <ossl_statem_client_max_message_size+0x7c4>
+0x4014fd:5:jmp 0000000000401502 <ossl_statem_client_max_message_size+0x102>
+0x401502:3:mov -0x54(%rbp),%eax
+0x401505:5:sub $0x928c0365,%eax
+0x40150a:3:mov %eax,-0x74(%rbp)
+0x40150d:6:je 0000000000401c64 <ossl_statem_client_max_message_size+0x864>
+0x401513:5:jmp 0000000000401518 <ossl_statem_client_max_message_size+0x118>
+0x401518:3:mov -0x54(%rbp),%eax
+0x40151b:5:sub $0x9f2825f7,%eax
+0x401520:3:mov %eax,-0x78(%rbp)
+0x401523:6:je 0000000000401ab6 <ossl_statem_client_max_message_size+0x6b6>
+0x401529:5:jmp 000000000040152e <ossl_statem_client_max_message_size+0x12e>
+0x40152e:3:mov -0x54(%rbp),%eax
+0x401531:5:sub $0x9ff37df4,%eax
+0x401536:3:mov %eax,-0x7c(%rbp)
+0x401539:6:je 00000000004021ef <ossl_statem_client_max_message_size+0xdef>
+0x40153f:5:jmp 0000000000401544 <ossl_statem_client_max_message_size+0x144>
+0x401544:3:mov -0x54(%rbp),%eax
+0x401547:5:sub $0xa4db3c2f,%eax
+0x40154c:3:mov %eax,-0x80(%rbp)
+0x40154f:6:je 00000000004022b6 <ossl_statem_client_max_message_size+0xeb6>
+0x401555:5:jmp 000000000040155a <ossl_statem_client_max_message_size+0x15a>
+0x40155a:3:mov -0x54(%rbp),%eax
+0x40155d:5:sub $0xb29e4bd0,%eax
+0x401562:6:mov %eax,-0x84(%rbp)
+0x401568:6:je 00000000004022d1 <ossl_statem_client_max_message_size+0xed1>
+0x40156e:5:jmp 0000000000401573 <ossl_statem_client_max_message_size+0x173>
+0x401573:3:mov -0x54(%rbp),%eax
+0x401576:5:sub $0xb397e2da,%eax
+0x40157b:6:mov %eax,-0x88(%rbp)
+0x401581:6:je 0000000000402156 <ossl_statem_client_max_message_size+0xd56>
+0x401587:5:jmp 000000000040158c <ossl_statem_client_max_message_size+0x18c>
+0x40158c:3:mov -0x54(%rbp),%eax
+0x40158f:5:sub $0xba73100d,%eax
+0x401594:6:mov %eax,-0x8c(%rbp)
+0x40159a:6:je 0000000000401fd5 <ossl_statem_client_max_message_size+0xbd5>
+0x4015a0:5:jmp 00000000004015a5 <ossl_statem_client_max_message_size+0x1a5>
+0x4015a5:3:mov -0x54(%rbp),%eax
+0x4015a8:5:sub $0xc00aba45,%eax
+0x4015ad:6:mov %eax,-0x90(%rbp)
+0x4015b3:6:je 0000000000401cd8 <ossl_statem_client_max_message_size+0x8d8>
+0x4015b9:5:jmp 00000000004015be <ossl_statem_client_max_message_size+0x1be>
+0x4015be:3:mov -0x54(%rbp),%eax
+0x4015c1:5:sub $0xc1495fe7,%eax
+0x4015c6:6:mov %eax,-0x94(%rbp)
+0x4015cc:6:je 0000000000401947 <ossl_statem_client_max_message_size+0x547>
+0x4015d2:5:jmp 00000000004015d7 <ossl_statem_client_max_message_size+0x1d7>
+0x4015d7:3:mov -0x54(%rbp),%eax
+0x4015da:5:sub $0xc3903cff,%eax
+0x4015df:6:mov %eax,-0x98(%rbp)
+0x4015e5:6:je 0000000000401b2e <ossl_statem_client_max_message_size+0x72e>
+0x4015eb:5:jmp 00000000004015f0 <ossl_statem_client_max_message_size+0x1f0>
+0x4015f0:3:mov -0x54(%rbp),%eax
+0x4015f3:5:sub $0xc6307b1a,%eax
+0x4015f8:6:mov %eax,-0x9c(%rbp)
+0x4015fe:6:je 0000000000401e2d <ossl_statem_client_max_message_size+0xa2d>
+0x401604:5:jmp 0000000000401609 <ossl_statem_client_max_message_size+0x209>
+0x401609:3:mov -0x54(%rbp),%eax
+0x40160c:5:sub $0xc702117d,%eax
+0x401611:6:mov %eax,-0xa0(%rbp)
+0x401617:6:je 0000000000402054 <ossl_statem_client_max_message_size+0xc54>
+0x40161d:5:jmp 0000000000401622 <ossl_statem_client_max_message_size+0x222>
+0x401622:3:mov -0x54(%rbp),%eax
+0x401625:5:sub $0xc981c6b4,%eax
+0x40162a:6:mov %eax,-0xa4(%rbp)
+0x401630:6:je 0000000000401df7 <ossl_statem_client_max_message_size+0x9f7>
+0x401636:5:jmp 000000000040163b <ossl_statem_client_max_message_size+0x23b>
+0x40163b:3:mov -0x54(%rbp),%eax
+0x40163e:5:sub $0xd4d4f0ff,%eax
+0x401643:6:mov %eax,-0xa8(%rbp)
+0x401649:6:je 00000000004020ba <ossl_statem_client_max_message_size+0xcba>
+0x40164f:5:jmp 0000000000401654 <ossl_statem_client_max_message_size+0x254>
+0x401654:3:mov -0x54(%rbp),%eax
+0x401657:5:sub $0xe08f1a34,%eax
+0x40165c:6:mov %eax,-0xac(%rbp)
+0x401662:6:je 0000000000401f32 <ossl_statem_client_max_message_size+0xb32>
+0x401668:5:jmp 000000000040166d <ossl_statem_client_max_message_size+0x26d>
+0x40166d:3:mov -0x54(%rbp),%eax
+0x401670:5:sub $0xe51983e1,%eax
+0x401675:6:mov %eax,-0xb0(%rbp)
+0x40167b:6:je 0000000000401ccc <ossl_statem_client_max_message_size+0x8cc>
+0x401681:5:jmp 0000000000401686 <ossl_statem_client_max_message_size+0x286>
+0x401686:3:mov -0x54(%rbp),%eax
+0x401689:5:sub $0xe70e8080,%eax
+0x40168e:6:mov %eax,-0xb4(%rbp)
+0x401694:6:je 000000000040229b <ossl_statem_client_max_message_size+0xe9b>
+0x40169a:5:jmp 000000000040169f <ossl_statem_client_max_message_size+0x29f>
+0x40169f:3:mov -0x54(%rbp),%eax
+0x4016a2:5:sub $0xe7217be8,%eax
+0x4016a7:6:mov %eax,-0xb8(%rbp)
+0x4016ad:6:je 0000000000401c00 <ossl_statem_client_max_message_size+0x800>
+0x4016b3:5:jmp 00000000004016b8 <ossl_statem_client_max_message_size+0x2b8>
+0x4016b8:3:mov -0x54(%rbp),%eax
+0x4016bb:5:sub $0xe7617e64,%eax
+0x4016c0:6:mov %eax,-0xbc(%rbp)
+0x4016c6:6:je 0000000000401e12 <ossl_statem_client_max_message_size+0xa12>
+0x4016cc:5:jmp 00000000004016d1 <ossl_statem_client_max_message_size+0x2d1>
+0x4016d1:3:mov -0x54(%rbp),%eax
+0x4016d4:5:sub $0xea6b0b2e,%eax
+0x4016d9:6:mov %eax,-0xc0(%rbp)
+0x4016df:6:je 0000000000402216 <ossl_statem_client_max_message_size+0xe16>
+0x4016e5:5:jmp 00000000004016ea <ossl_statem_client_max_message_size+0x2ea>
+0x4016ea:3:mov -0x54(%rbp),%eax
+0x4016ed:5:sub $0xecaf07bf,%eax
+0x4016f2:6:mov %eax,-0xc4(%rbp)
+0x4016f8:6:je 000000000040227e <ossl_statem_client_max_message_size+0xe7e>
+0x4016fe:5:jmp 0000000000401703 <ossl_statem_client_max_message_size+0x303>
+0x401703:3:mov -0x54(%rbp),%eax
+0x401706:5:sub $0xf7dbe51d,%eax
+0x40170b:6:mov %eax,-0xc8(%rbp)
+0x401711:6:je 0000000000401d61 <ossl_statem_client_max_message_size+0x961>
+0x401717:5:jmp 000000000040171c <ossl_statem_client_max_message_size+0x31c>
+0x40171c:3:mov -0x54(%rbp),%eax
+0x40171f:5:sub $0xfba6d36c,%eax
+0x401724:6:mov %eax,-0xcc(%rbp)
+0x40172a:6:je 0000000000401973 <ossl_statem_client_max_message_size+0x573>
+0x401730:5:jmp 0000000000401735 <ossl_statem_client_max_message_size+0x335>
+0x401735:3:mov -0x54(%rbp),%eax
+0x401738:5:sub $0x8856d4,%eax
+0x40173d:6:mov %eax,-0xd0(%rbp)
+0x401743:6:je 0000000000401ba6 <ossl_statem_client_max_message_size+0x7a6>
+0x401749:5:jmp 000000000040174e <ossl_statem_client_max_message_size+0x34e>
+0x40174e:3:mov -0x54(%rbp),%eax
+0x401751:5:sub $0x11ff7900,%eax
+0x401756:6:mov %eax,-0xd4(%rbp)
+0x40175c:6:je 0000000000401a98 <ossl_statem_client_max_message_size+0x698>
+0x401762:5:jmp 0000000000401767 <ossl_statem_client_max_message_size+0x367>
+0x401767:3:mov -0x54(%rbp),%eax
+0x40176a:5:sub $0x1ab68385,%eax
+0x40176f:6:mov %eax,-0xd8(%rbp)
+0x401775:6:je 0000000000401dd0 <ossl_statem_client_max_message_size+0x9d0>
+0x40177b:5:jmp 0000000000401780 <ossl_statem_client_max_message_size+0x380>
+0x401780:3:mov -0x54(%rbp),%eax
+0x401783:5:sub $0x21db184d,%eax
+0x401788:6:mov %eax,-0xdc(%rbp)
+0x40178e:6:je 0000000000401c0c <ossl_statem_client_max_message_size+0x80c>
+0x401794:5:jmp 0000000000401799 <ossl_statem_client_max_message_size+0x399>
+0x401799:3:mov -0x54(%rbp),%eax
+0x40179c:5:sub $0x283a9e93,%eax
+0x4017a1:6:mov %eax,-0xe0(%rbp)
+0x4017a7:6:je 0000000000401ea2 <ossl_statem_client_max_message_size+0xaa2>
+0x4017ad:5:jmp 00000000004017b2 <ossl_statem_client_max_message_size+0x3b2>
+0x4017b2:3:mov -0x54(%rbp),%eax
+0x4017b5:5:sub $0x299c4cae,%eax
+0x4017ba:6:mov %eax,-0xe4(%rbp)
+0x4017c0:6:je 0000000000401a7a <ossl_statem_client_max_message_size+0x67a>
+0x4017c6:5:jmp 00000000004017cb <ossl_statem_client_max_message_size+0x3cb>
+0x4017cb:3:mov -0x54(%rbp),%eax
+0x4017ce:5:sub $0x2a394a99,%eax
+0x4017d3:6:mov %eax,-0xe8(%rbp)
+0x4017d9:6:je 0000000000401ffc <ossl_statem_client_max_message_size+0xbfc>
+0x4017df:5:jmp 00000000004017e4 <ossl_statem_client_max_message_size+0x3e4>
+0x4017e4:3:mov -0x54(%rbp),%eax
+0x4017e7:5:sub $0x32599c19,%eax
+0x4017ec:6:mov %eax,-0xec(%rbp)
+0x4017f2:6:je 000000000040222c <ossl_statem_client_max_message_size+0xe2c>
+0x4017f8:5:jmp 00000000004017fd <ossl_statem_client_max_message_size+0x3fd>
+0x4017fd:3:mov -0x54(%rbp),%eax
+0x401800:5:sub $0x3643400e,%eax
+0x401805:6:mov %eax,-0xf0(%rbp)
+0x40180b:6:je 0000000000401be2 <ossl_statem_client_max_message_size+0x7e2>
+0x401811:5:jmp 0000000000401816 <ossl_statem_client_max_message_size+0x416>
+0x401816:3:mov -0x54(%rbp),%eax
+0x401819:5:sub $0x4a5317c3,%eax
+0x40181e:6:mov %eax,-0xf4(%rbp)
+0x401824:6:je 0000000000401fe1 <ossl_statem_client_max_message_size+0xbe1>
+0x40182a:5:jmp 000000000040182f <ossl_statem_client_max_message_size+0x42f>
+0x40182f:3:mov -0x54(%rbp),%eax
+0x401832:5:sub $0x4a82b628,%eax
+0x401837:6:mov %eax,-0xf8(%rbp)
+0x40183d:6:je 0000000000401b10 <ossl_statem_client_max_message_size+0x710>
+0x401843:5:jmp 0000000000401848 <ossl_statem_client_max_message_size+0x448>
+0x401848:3:mov -0x54(%rbp),%eax
+0x40184b:5:sub $0x5594b11f,%eax
+0x401850:6:mov %eax,-0xfc(%rbp)
+0x401856:6:je 00000000004020c6 <ossl_statem_client_max_message_size+0xcc6>
+0x40185c:5:jmp 0000000000401861 <ossl_statem_client_max_message_size+0x461>
+0x401861:3:mov -0x54(%rbp),%eax
+0x401864:5:sub $0x5a8972bc,%eax
+0x401869:6:mov %eax,-0x100(%rbp)
+0x40186f:6:je 00000000004021fb <ossl_statem_client_max_message_size+0xdfb>
+0x401875:5:jmp 000000000040187a <ossl_statem_client_max_message_size+0x47a>
+0x40187a:3:mov -0x54(%rbp),%eax
+0x40187d:5:sub $0x661afbd7,%eax
+0x401882:6:mov %eax,-0x104(%rbp)
+0x401888:6:je 0000000000401a50 <ossl_statem_client_max_message_size+0x650>
+0x40188e:5:jmp 0000000000401893 <ossl_statem_client_max_message_size+0x493>
+0x401893:3:mov -0x54(%rbp),%eax
+0x401896:5:sub $0x66422652,%eax
+0x40189b:6:mov %eax,-0x108(%rbp)
+0x4018a1:6:je 0000000000401cf3 <ossl_statem_client_max_message_size+0x8f3>
+0x4018a7:5:jmp 00000000004018ac <ossl_statem_client_max_message_size+0x4ac>
+0x4018ac:3:mov -0x54(%rbp),%eax
+0x4018af:5:sub $0x6f4a3f21,%eax
+0x4018b4:6:mov %eax,-0x10c(%rbp)
+0x4018ba:6:je 0000000000401a5c <ossl_statem_client_max_message_size+0x65c>
+0x4018c0:5:jmp 00000000004018c5 <ossl_statem_client_max_message_size+0x4c5>
+0x4018c5:3:mov -0x54(%rbp),%eax
+0x4018c8:5:sub $0x6f4aeefc,%eax
+0x4018cd:6:mov %eax,-0x110(%rbp)
+0x4018d3:6:je 0000000000401e4a <ossl_statem_client_max_message_size+0xa4a>
+0x4018d9:5:jmp 00000000004018de <ossl_statem_client_max_message_size+0x4de>
+0x4018de:3:mov -0x54(%rbp),%eax
+0x4018e1:5:sub $0x72fcd96b,%eax
+0x4018e6:6:mov %eax,-0x114(%rbp)
+0x4018ec:6:je 0000000000401e8b <ossl_statem_client_max_message_size+0xa8b>
+0x4018f2:5:jmp 00000000004018f7 <ossl_statem_client_max_message_size+0x4f7>
+0x4018f7:3:mov -0x54(%rbp),%eax
+0x4018fa:5:sub $0x748ad9c5,%eax
+0x4018ff:6:mov %eax,-0x118(%rbp)
+0x401905:6:je 0000000000401ddc <ossl_statem_client_max_message_size+0x9dc>
+0x40190b:5:jmp 0000000000401910 <ossl_statem_client_max_message_size+0x510>
+0x401910:3:mov -0x54(%rbp),%eax
+0x401913:5:sub $0x76656bb8,%eax
+0x401918:6:mov %eax,-0x11c(%rbp)
+0x40191e:6:je 0000000000401d0e <ossl_statem_client_max_message_size+0x90e>
+0x401924:5:jmp 0000000000401929 <ossl_statem_client_max_message_size+0x529>
+0x401929:3:mov -0x54(%rbp),%eax
+0x40192c:5:sub $0x7aefe2ab,%eax
+0x401931:6:mov %eax,-0x120(%rbp)
+0x401937:6:je 0000000000401b88 <ossl_statem_client_max_message_size+0x788>
+0x40193d:5:jmp 0000000000401942 <ossl_statem_client_max_message_size+0x542>
+0x401942:5:jmp 00000000004022e7 <ossl_statem_client_max_message_size+0xee7>
+0x401947:5:mov $0x32599c19,%eax
+0x40194c:5:mov $0xfba6d36c,%ecx
+0x401951:3:mov -0x42(%rbp),%dl
+0x401954:4:mov -0x41(%rbp),%sil
+0x401958:3:mov %dl,%dil
+0x40195b:3:and %sil,%dil
+0x40195e:3:xor %sil,%dl
+0x401961:3:or %dl,%dil
+0x401964:4:test $0x1,%dil
+0x401968:3:cmovne %ecx,%eax
+0x40196b:3:mov %eax,-0x48(%rbp)
+0x40196e:5:jmp 00000000004022e7 <ossl_statem_client_max_message_size+0xee7>
+0x401973:5:mov $0x32599c19,%eax
+0x401978:5:mov $0x661afbd7,%ecx
+0x40197d:2:mov $0x1,%dl
+0x40197f:3:mov %rsp,%rsi
+0x401982:4:add $0xfffffffffffffff0,%rsi
+0x401986:3:mov %rsi,%rsp
+0x401989:4:mov %rsi,-0x40(%rbp)
+0x40198d:3:mov %rsp,%rsi
+0x401990:4:add $0xfffffffffffffff0,%rsi
+0x401994:3:mov %rsi,%rsp
+0x401997:4:mov %rsi,-0x38(%rbp)
+0x40199b:3:mov %rsp,%rsi
+0x40199e:4:add $0xfffffffffffffff0,%rsi
+0x4019a2:3:mov %rsi,%rsp
+0x4019a5:4:mov -0x38(%rbp),%rdi
+0x4019a9:4:mov -0x50(%rbp),%r8
+0x4019ad:3:mov %r8,(%rdi)
+0x4019b0:4:mov -0x38(%rbp),%rdi
+0x4019b4:3:mov (%rdi),%rdi
+0x4019b7:4:add $0xc,%rdi
+0x4019bb:3:mov %rdi,(%rsi)
+0x4019be:3:mov (%rsi),%rsi
+0x4019c1:3:mov (%rsi),%r9d
+0x4019c4:4:mov %r9d,-0x2c(%rbp)
+0x4019c8:8:mov 0x405078,%r9d
+0x4019d0:8:mov 0x4050c8,%r10d
+0x4019d8:3:mov %r9d,%r11d
+0x4019db:7:add $0x6fb57a1e,%r11d
+0x4019e2:4:sub $0x1,%r11d
+0x4019e6:7:sub $0x6fb57a1e,%r11d
+0x4019ed:4:imul %r11d,%r9d
+0x4019f1:4:and $0x1,%r9d
+0x4019f5:4:cmp $0x0,%r9d
+0x4019f9:3:sete %bl
+0x4019fc:4:cmp $0xa,%r10d
+0x401a00:4:setl %r14b
+0x401a04:3:mov %bl,%r15b
+0x401a07:4:xor $0xff,%r15b
+0x401a0b:3:mov %r14b,%r12b
+0x401a0e:4:xor $0xff,%r12b
+0x401a12:3:xor $0x0,%dl
+0x401a15:3:mov %r15b,%r13b
+0x401a18:4:and $0x0,%r13b
+0x401a1c:2:and %dl,%bl
+0x401a1e:3:mov %r12b,%sil
+0x401a21:4:and $0x0,%sil
+0x401a25:3:and %dl,%r14b
+0x401a28:3:or %bl,%r13b
+0x401a2b:3:or %r14b,%sil
+0x401a2e:3:xor %sil,%r13b
+0x401a31:3:or %r12b,%r15b
+0x401a34:4:xor $0xff,%r15b
+0x401a38:3:or $0x0,%dl
+0x401a3b:3:and %dl,%r15b
+0x401a3e:3:or %r15b,%r13b
+0x401a41:4:test $0x1,%r13b
+0x401a45:3:cmovne %ecx,%eax
+0x401a48:3:mov %eax,-0x48(%rbp)
+0x401a4b:5:jmp 00000000004022e7 <ossl_statem_client_max_message_size+0xee7>
+0x401a50:7:movl $0x6f4a3f21,-0x48(%rbp)
+0x401a57:5:jmp 00000000004022e7 <ossl_statem_client_max_message_size+0xee7>
+0x401a5c:5:mov $0x299c4cae,%eax
+0x401a61:5:mov $0x8fa895a5,%ecx
+0x401a66:3:mov -0x2c(%rbp),%edx
+0x401a69:6:cmp $0x86,%edx
+0x401a6f:3:cmovl %ecx,%eax
+0x401a72:3:mov %eax,-0x48(%rbp)
+0x401a75:5:jmp 00000000004022e7 <ossl_statem_client_max_message_size+0xee7>
+0x401a7a:5:mov $0x11ff7900,%eax
+0x401a7f:5:mov $0x4a82b628,%ecx
+0x401a84:3:mov -0x2c(%rbp),%edx
+0x401a87:6:cmp $0x89,%edx
+0x401a8d:3:cmovl %ecx,%eax
+0x401a90:3:mov %eax,-0x48(%rbp)
+0x401a93:5:jmp 00000000004022e7 <ossl_statem_client_max_message_size+0xee7>
+0x401a98:5:mov $0x9f2825f7,%eax
+0x401a9d:5:mov $0x8919fb9e,%ecx
+0x401aa2:3:mov -0x2c(%rbp),%edx
+0x401aa5:6:cmp $0x8b,%edx
+0x401aab:3:cmovl %ecx,%eax
+0x401aae:3:mov %eax,-0x48(%rbp)
+0x401ab1:5:jmp 00000000004022e7 <ossl_statem_client_max_message_size+0xee7>
+0x401ab6:5:mov $0x8c706aa3,%eax
+0x401abb:5:mov $0x76656bb8,%ecx
+0x401ac0:3:mov -0x2c(%rbp),%edx
+0x401ac3:6:cmp $0x8c,%edx
+0x401ac9:3:cmovl %ecx,%eax
+0x401acc:3:mov %eax,-0x48(%rbp)
+0x401acf:5:jmp 00000000004022e7 <ossl_statem_client_max_message_size+0xee7>
+0x401ad4:5:mov $0xe7217be8,%eax
+0x401ad9:5:mov $0x66422652,%ecx
+0x401ade:3:mov -0x2c(%rbp),%edx
+0x401ae1:6:cmp $0x8c,%edx
+0x401ae7:3:cmove %ecx,%eax
+0x401aea:3:mov %eax,-0x48(%rbp)
+0x401aed:5:jmp 00000000004022e7 <ossl_statem_client_max_message_size+0xee7>
+0x401af2:5:mov $0xc6307b1a,%eax
+0x401af7:5:mov $0xc981c6b4,%ecx
+0x401afc:3:mov -0x2c(%rbp),%edx
+0x401aff:6:cmp $0x8a,%edx
+0x401b05:3:cmovl %ecx,%eax
+0x401b08:3:mov %eax,-0x48(%rbp)
+0x401b0b:5:jmp 00000000004022e7 <ossl_statem_client_max_message_size+0xee7>
+0x401b10:5:mov $0xc3903cff,%eax
+0x401b15:5:mov $0x5594b11f,%ecx
+0x401b1a:3:mov -0x2c(%rbp),%edx
+0x401b1d:6:cmp $0x87,%edx
+0x401b23:3:cmovl %ecx,%eax
+0x401b26:3:mov %eax,-0x48(%rbp)
+0x401b29:5:jmp 00000000004022e7 <ossl_statem_client_max_message_size+0xee7>
+0x401b2e:5:mov $0x748ad9c5,%eax
+0x401b33:5:mov $0x8f7a0a9d,%ecx
+0x401b38:3:mov -0x2c(%rbp),%edx
+0x401b3b:6:cmp $0x88,%edx
+0x401b41:3:cmovl %ecx,%eax
+0x401b44:3:mov %eax,-0x48(%rbp)
+0x401b47:5:jmp 00000000004022e7 <ossl_statem_client_max_message_size+0xee7>
+0x401b4c:5:mov $0x89fe2f40,%eax
+0x401b51:5:mov $0x8856d4,%ecx
+0x401b56:3:mov -0x2c(%rbp),%edx
+0x401b59:6:cmp $0x83,%edx
+0x401b5f:3:cmovl %ecx,%eax
+0x401b62:3:mov %eax,-0x48(%rbp)
+0x401b65:5:jmp 00000000004022e7 <ossl_statem_client_max_message_size+0xee7>
+0x401b6a:5:mov $0x7aefe2ab,%eax
+0x401b6f:5:mov $0x5a8972bc,%ecx
+0x401b74:3:mov -0x2c(%rbp),%edx
+0x401b77:6:cmp $0x84,%edx
+0x401b7d:3:cmovl %ecx,%eax
+0x401b80:3:mov %eax,-0x48(%rbp)
+0x401b83:5:jmp 00000000004022e7 <ossl_statem_client_max_message_size+0xee7>
+0x401b88:5:mov $0x2a394a99,%eax
+0x401b8d:5:mov $0xe7617e64,%ecx
+0x401b92:3:mov -0x2c(%rbp),%edx
+0x401b95:6:cmp $0x85,%edx
+0x401b9b:3:cmovl %ecx,%eax
+0x401b9e:3:mov %eax,-0x48(%rbp)
+0x401ba1:5:jmp 00000000004022e7 <ossl_statem_client_max_message_size+0xee7>
+0x401ba6:5:mov $0x914406dc,%eax
+0x401bab:5:mov $0x3643400e,%ecx
+0x401bb0:3:mov -0x2c(%rbp),%edx
+0x401bb3:6:cmp $0x81,%edx
+0x401bb9:3:cmovl %ecx,%eax
+0x401bbc:3:mov %eax,-0x48(%rbp)
+0x401bbf:5:jmp 00000000004022e7 <ossl_statem_client_max_message_size+0xee7>
+0x401bc4:5:mov $0x4a5317c3,%eax
+0x401bc9:5:mov $0x6f4aeefc,%ecx
+0x401bce:3:mov -0x2c(%rbp),%edx
+0x401bd1:6:cmp $0x82,%edx
+0x401bd7:3:cmovl %ecx,%eax
+0x401bda:3:mov %eax,-0x48(%rbp)
+0x401bdd:5:jmp 00000000004022e7 <ossl_statem_client_max_message_size+0xee7>
+0x401be2:5:mov $0xe7217be8,%eax
+0x401be7:5:mov $0xc00aba45,%ecx
+0x401bec:3:mov -0x2c(%rbp),%edx
+0x401bef:6:cmp $0x80,%edx
+0x401bf5:3:cmove %ecx,%eax
+0x401bf8:3:mov %eax,-0x48(%rbp)
+0x401bfb:5:jmp 00000000004022e7 <ossl_statem_client_max_message_size+0xee7>
+0x401c00:7:movl $0x21db184d,-0x48(%rbp)
+0x401c07:5:jmp 00000000004022e7 <ossl_statem_client_max_message_size+0xee7>
+0x401c0c:5:mov $0x9072f04a,%eax
+0x401c11:5:mov $0x928c0365,%ecx
+0x401c16:7:mov 0x405078,%edx
+0x401c1d:7:mov 0x4050c8,%esi
+0x401c24:2:mov %edx,%edi
+0x401c26:6:add $0x5a358c53,%edi
+0x401c2c:3:sub $0x1,%edi
+0x401c2f:6:sub $0x5a358c53,%edi
+0x401c35:3:imul %edi,%edx
+0x401c38:3:and $0x1,%edx
+0x401c3b:3:cmp $0x0,%edx
+0x401c3e:4:sete %r8b
+0x401c42:3:cmp $0xa,%esi
+0x401c45:4:setl %r9b
+0x401c49:3:mov %r8b,%r10b
+0x401c4c:3:and %r9b,%r10b
+0x401c4f:3:xor %r9b,%r8b
+0x401c52:3:or %r8b,%r10b
+0x401c55:4:test $0x1,%r10b
+0x401c59:3:cmovne %ecx,%eax
+0x401c5c:3:mov %eax,-0x48(%rbp)
+0x401c5f:5:jmp 00000000004022e7 <ossl_statem_client_max_message_size+0xee7>
+0x401c64:5:mov $0x9072f04a,%eax
+0x401c69:5:mov $0xe51983e1,%ecx
+0x401c6e:4:mov -0x40(%rbp),%rdx
+0x401c72:7:movq $0x0,(%rdx)
+0x401c79:7:mov 0x405078,%esi
+0x401c80:7:mov 0x4050c8,%edi
+0x401c87:3:mov %esi,%r8d
+0x401c8a:7:add $0x604d141d,%r8d
+0x401c91:4:sub $0x1,%r8d
+0x401c95:7:sub $0x604d141d,%r8d
+0x401c9c:4:imul %r8d,%esi
+0x401ca0:3:and $0x1,%esi
+0x401ca3:3:cmp $0x0,%esi
+0x401ca6:4:sete %r9b
+0x401caa:3:cmp $0xa,%edi
+0x401cad:4:setl %r10b
+0x401cb1:3:mov %r9b,%r11b
+0x401cb4:3:and %r10b,%r11b
+0x401cb7:3:xor %r10b,%r9b
+0x401cba:3:or %r9b,%r11b
+0x401cbd:4:test $0x1,%r11b
+0x401cc1:3:cmovne %ecx,%eax
+0x401cc4:3:mov %eax,-0x48(%rbp)
+0x401cc7:5:jmp 00000000004022e7 <ossl_statem_client_max_message_size+0xee7>
+0x401ccc:7:movl $0xea6b0b2e,-0x48(%rbp)
+0x401cd3:5:jmp 00000000004022e7 <ossl_statem_client_max_message_size+0xee7>
+0x401cd8:8:mov 0x405058,%rax
+0x401ce0:4:mov -0x40(%rbp),%rcx
+0x401ce4:3:mov %rax,(%rcx)
+0x401ce7:7:movl $0xea6b0b2e,-0x48(%rbp)
+0x401cee:5:jmp 00000000004022e7 <ossl_statem_client_max_message_size+0xee7>
+0x401cf3:8:mov 0x405090,%rax
+0x401cfb:4:mov -0x40(%rbp),%rcx
+0x401cff:3:mov %rax,(%rcx)
+0x401d02:7:movl $0xea6b0b2e,-0x48(%rbp)
+0x401d09:5:jmp 00000000004022e7 <ossl_statem_client_max_message_size+0xee7>
+0x401d0e:5:mov $0xecaf07bf,%eax
+0x401d13:5:mov $0xf7dbe51d,%ecx
+0x401d18:2:xor %edx,%edx
+0x401d1a:7:mov 0x405078,%esi
+0x401d21:7:mov 0x4050c8,%edi
+0x401d28:3:sub $0x1,%edx
+0x401d2b:3:mov %esi,%r8d
+0x401d2e:3:add %edx,%r8d
+0x401d31:4:imul %r8d,%esi
+0x401d35:3:and $0x1,%esi
+0x401d38:3:cmp $0x0,%esi
+0x401d3b:4:sete %r9b
+0x401d3f:3:cmp $0xa,%edi
+0x401d42:4:setl %r10b
+0x401d46:3:mov %r9b,%r11b
+0x401d49:3:and %r10b,%r11b
+0x401d4c:3:xor %r10b,%r9b
+0x401d4f:3:or %r9b,%r11b
+0x401d52:4:test $0x1,%r11b
+0x401d56:3:cmovne %ecx,%eax
+0x401d59:3:mov %eax,-0x48(%rbp)
+0x401d5c:5:jmp 00000000004022e7 <ossl_statem_client_max_message_size+0xee7>
+0x401d61:5:mov $0xecaf07bf,%eax
+0x401d66:5:mov $0x1ab68385,%ecx
+0x401d6b:4:mov -0x38(%rbp),%rdx
+0x401d6f:3:mov (%rdx),%rdx
+0x401d72:3:mov (%rdx),%rdx
+0x401d75:4:mov -0x40(%rbp),%rsi
+0x401d79:3:mov %rdx,(%rsi)
+0x401d7c:7:mov 0x405078,%edi
+0x401d83:8:mov 0x4050c8,%r8d
+0x401d8b:3:mov %edi,%r9d
+0x401d8e:7:add $0xe61c798f,%r9d
+0x401d95:4:sub $0x1,%r9d
+0x401d99:7:sub $0xe61c798f,%r9d
+0x401da0:4:imul %r9d,%edi
+0x401da4:3:and $0x1,%edi
+0x401da7:3:cmp $0x0,%edi
+0x401daa:4:sete %r10b
+0x401dae:4:cmp $0xa,%r8d
+0x401db2:4:setl %r11b
+0x401db6:3:mov %r10b,%bl
+0x401db9:3:and %r11b,%bl
+0x401dbc:3:xor %r11b,%r10b
+0x401dbf:3:or %r10b,%bl
+0x401dc2:3:test $0x1,%bl
+0x401dc5:3:cmovne %ecx,%eax
+0x401dc8:3:mov %eax,-0x48(%rbp)
+0x401dcb:5:jmp 00000000004022e7 <ossl_statem_client_max_message_size+0xee7>
+0x401dd0:7:movl $0xea6b0b2e,-0x48(%rbp)
+0x401dd7:5:jmp 00000000004022e7 <ossl_statem_client_max_message_size+0xee7>
+0x401ddc:8:mov 0x405050,%rax
+0x401de4:4:mov -0x40(%rbp),%rcx
+0x401de8:3:mov %rax,(%rcx)
+0x401deb:7:movl $0xea6b0b2e,-0x48(%rbp)
+0x401df2:5:jmp 00000000004022e7 <ossl_statem_client_max_message_size+0xee7>
+0x401df7:8:mov 0x405050,%rax
+0x401dff:4:mov -0x40(%rbp),%rcx
+0x401e03:3:mov %rax,(%rcx)
+0x401e06:7:movl $0xea6b0b2e,-0x48(%rbp)
+0x401e0d:5:jmp 00000000004022e7 <ossl_statem_client_max_message_size+0xee7>
+0x401e12:8:mov 0x4050b8,%rax
+0x401e1a:4:mov -0x40(%rbp),%rcx
+0x401e1e:3:mov %rax,(%rcx)
+0x401e21:7:movl $0xea6b0b2e,-0x48(%rbp)
+0x401e28:5:jmp 00000000004022e7 <ossl_statem_client_max_message_size+0xee7>
+0x401e2d:4:mov -0x38(%rbp),%rax
+0x401e31:3:mov (%rax),%rax
+0x401e34:3:mov (%rax),%rax
+0x401e37:4:mov -0x40(%rbp),%rcx
+0x401e3b:3:mov %rax,(%rcx)
+0x401e3e:7:movl $0xea6b0b2e,-0x48(%rbp)
+0x401e45:5:jmp 00000000004022e7 <ossl_statem_client_max_message_size+0xee7>
+0x401e4a:8:mov 0x405088,%rax
+0x401e52:4:mov -0x40(%rbp),%rcx
+0x401e56:3:mov %rax,(%rcx)
+0x401e59:7:movl $0xea6b0b2e,-0x48(%rbp)
+0x401e60:5:jmp 00000000004022e7 <ossl_statem_client_max_message_size+0xee7>
+0x401e65:5:mov $0x283a9e93,%eax
+0x401e6a:5:mov $0x72fcd96b,%ecx
+0x401e6f:4:mov -0x38(%rbp),%rdx
+0x401e73:3:mov (%rdx),%rdx
+0x401e76:3:mov 0x8(%rdx),%esi
+0x401e79:7:cmp 0x405080,%esi
+0x401e80:3:cmove %ecx,%eax
+0x401e83:3:mov %eax,-0x48(%rbp)
+0x401e86:5:jmp 00000000004022e7 <ossl_statem_client_max_message_size+0xee7>
+0x401e8b:4:mov -0x40(%rbp),%rax
+0x401e8f:7:movq $0x3,(%rax)
+0x401e96:7:movl $0xea6b0b2e,-0x48(%rbp)
+0x401e9d:5:jmp 00000000004022e7 <ossl_statem_client_max_message_size+0xee7>
+0x401ea2:5:mov $0xe70e8080,%eax
+0x401ea7:5:mov $0xe08f1a34,%ecx
+0x401eac:2:mov $0x1,%dl
+0x401eae:7:mov 0x405078,%esi
+0x401eb5:7:mov 0x4050c8,%edi
+0x401ebc:3:mov %esi,%r8d
+0x401ebf:7:add $0x4230c4f8,%r8d
+0x401ec6:4:sub $0x1,%r8d
+0x401eca:7:sub $0x4230c4f8,%r8d
+0x401ed1:4:imul %r8d,%esi
+0x401ed5:3:and $0x1,%esi
+0x401ed8:3:cmp $0x0,%esi
+0x401edb:4:sete %r9b
+0x401edf:3:cmp $0xa,%edi
+0x401ee2:4:setl %r10b
+0x401ee6:3:mov %r9b,%r11b
+0x401ee9:4:xor $0xff,%r11b
+0x401eed:3:mov %r10b,%bl
+0x401ef0:3:xor $0xff,%bl
+0x401ef3:3:xor $0x0,%dl
+0x401ef6:3:mov %r11b,%r14b
+0x401ef9:4:and $0x0,%r14b
+0x401efd:3:and %dl,%r9b
+0x401f00:3:mov %bl,%r15b
+0x401f03:4:and $0x0,%r15b
+0x401f07:3:and %dl,%r10b
+0x401f0a:3:or %r9b,%r14b
+0x401f0d:3:or %r10b,%r15b
+0x401f10:3:xor %r15b,%r14b
+0x401f13:3:or %bl,%r11b
+0x401f16:4:xor $0xff,%r11b
+0x401f1a:3:or $0x0,%dl
+0x401f1d:3:and %dl,%r11b
+0x401f20:3:or %r11b,%r14b
+0x401f23:4:test $0x1,%r14b
+0x401f27:3:cmovne %ecx,%eax
+0x401f2a:3:mov %eax,-0x48(%rbp)
+0x401f2d:5:jmp 00000000004022e7 <ossl_statem_client_max_message_size+0xee7>
+0x401f32:5:mov $0xe70e8080,%eax
+0x401f37:5:mov $0xba73100d,%ecx
+0x401f3c:2:mov $0x1,%dl
+0x401f3e:8:mov 0x4050a8,%rsi
+0x401f46:4:mov -0x40(%rbp),%rdi
+0x401f4a:3:mov %rsi,(%rdi)
+0x401f4d:8:mov 0x405078,%r8d
+0x401f55:8:mov 0x4050c8,%r9d
+0x401f5d:3:mov %r8d,%r10d
+0x401f60:7:sub $0xd20c6736,%r10d
+0x401f67:4:sub $0x1,%r10d
+0x401f6b:7:add $0xd20c6736,%r10d
+0x401f72:4:imul %r10d,%r8d
+0x401f76:4:and $0x1,%r8d
+0x401f7a:4:cmp $0x0,%r8d
+0x401f7e:4:sete %r11b
+0x401f82:4:cmp $0xa,%r9d
+0x401f86:3:setl %bl
+0x401f89:3:mov %r11b,%r14b
+0x401f8c:4:xor $0xff,%r14b
+0x401f90:3:mov %bl,%r15b
+0x401f93:4:xor $0xff,%r15b
+0x401f97:3:xor $0x1,%dl
+0x401f9a:3:mov %r14b,%r12b
+0x401f9d:4:and $0xff,%r12b
+0x401fa1:3:and %dl,%r11b
+0x401fa4:3:mov %r15b,%r13b
+0x401fa7:4:and $0xff,%r13b
+0x401fab:2:and %dl,%bl
+0x401fad:3:or %r11b,%r12b
+0x401fb0:3:or %bl,%r13b
+0x401fb3:3:xor %r13b,%r12b
+0x401fb6:3:or %r15b,%r14b
+0x401fb9:4:xor $0xff,%r14b
+0x401fbd:3:or $0x1,%dl
+0x401fc0:3:and %dl,%r14b
+0x401fc3:3:or %r14b,%r12b
+0x401fc6:4:test $0x1,%r12b
+0x401fca:3:cmovne %ecx,%eax
+0x401fcd:3:mov %eax,-0x48(%rbp)
+0x401fd0:5:jmp 00000000004022e7 <ossl_statem_client_max_message_size+0xee7>
+0x401fd5:7:movl $0xea6b0b2e,-0x48(%rbp)
+0x401fdc:5:jmp 00000000004022e7 <ossl_statem_client_max_message_size+0xee7>
+0x401fe1:8:mov 0x405050,%rax
+0x401fe9:4:mov -0x40(%rbp),%rcx
+0x401fed:3:mov %rax,(%rcx)
+0x401ff0:7:movl $0xea6b0b2e,-0x48(%rbp)
+0x401ff7:5:jmp 00000000004022e7 <ossl_statem_client_max_message_size+0xee7>
+0x401ffc:5:mov $0xa4db3c2f,%eax
+0x402001:5:mov $0xc702117d,%ecx
+0x402006:7:mov 0x405078,%edx
+0x40200d:7:mov 0x4050c8,%esi
+0x402014:2:mov %edx,%edi
+0x402016:6:add $0x9d48992d,%edi
+0x40201c:3:sub $0x1,%edi
+0x40201f:6:sub $0x9d48992d,%edi
+0x402025:3:imul %edi,%edx
+0x402028:3:and $0x1,%edx
+0x40202b:3:cmp $0x0,%edx
+0x40202e:4:sete %r8b
+0x402032:3:cmp $0xa,%esi
+0x402035:4:setl %r9b
+0x402039:3:mov %r8b,%r10b
+0x40203c:3:and %r9b,%r10b
+0x40203f:3:xor %r9b,%r8b
+0x402042:3:or %r8b,%r10b
+0x402045:4:test $0x1,%r10b
+0x402049:3:cmovne %ecx,%eax
+0x40204c:3:mov %eax,-0x48(%rbp)
+0x40204f:5:jmp 00000000004022e7 <ossl_statem_client_max_message_size+0xee7>
+0x402054:5:mov $0xa4db3c2f,%eax
+0x402059:5:mov $0xd4d4f0ff,%ecx
+0x40205e:2:xor %edx,%edx
+0x402060:8:mov 0x405098,%rsi
+0x402068:4:mov -0x40(%rbp),%rdi
+0x40206c:3:mov %rsi,(%rdi)
+0x40206f:8:mov 0x405078,%r8d
+0x402077:8:mov 0x4050c8,%r9d
+0x40207f:3:sub $0x1,%edx
+0x402082:3:mov %r8d,%r10d
+0x402085:3:add %edx,%r10d
+0x402088:4:imul %r10d,%r8d
+0x40208c:4:and $0x1,%r8d
+0x402090:4:cmp $0x0,%r8d
+0x402094:4:sete %r11b
+0x402098:4:cmp $0xa,%r9d
+0x40209c:3:setl %bl
+0x40209f:3:mov %r11b,%r14b
+0x4020a2:3:and %bl,%r14b
+0x4020a5:3:xor %bl,%r11b
+0x4020a8:3:or %r11b,%r14b
+0x4020ab:4:test $0x1,%r14b
+0x4020af:3:cmovne %ecx,%eax
+0x4020b2:3:mov %eax,-0x48(%rbp)
+0x4020b5:5:jmp 00000000004022e7 <ossl_statem_client_max_message_size+0xee7>
+0x4020ba:7:movl $0xea6b0b2e,-0x48(%rbp)
+0x4020c1:5:jmp 00000000004022e7 <ossl_statem_client_max_message_size+0xee7>
+0x4020c6:5:mov $0xb29e4bd0,%eax
+0x4020cb:5:mov $0xb397e2da,%ecx
+0x4020d0:2:mov $0x1,%dl
+0x4020d2:7:mov 0x405078,%esi
+0x4020d9:7:mov 0x4050c8,%edi
+0x4020e0:3:mov %esi,%r8d
+0x4020e3:7:sub $0x4b510a21,%r8d
+0x4020ea:4:sub $0x1,%r8d
+0x4020ee:7:add $0x4b510a21,%r8d
+0x4020f5:4:imul %r8d,%esi
+0x4020f9:3:and $0x1,%esi
+0x4020fc:3:cmp $0x0,%esi
+0x4020ff:4:sete %r9b
+0x402103:3:cmp $0xa,%edi
+0x402106:4:setl %r10b
+0x40210a:3:mov %r9b,%r11b
+0x40210d:4:xor $0xff,%r11b
+0x402111:3:mov %r10b,%bl
+0x402114:3:xor $0xff,%bl
+0x402117:3:xor $0x0,%dl
+0x40211a:3:mov %r11b,%r14b
+0x40211d:4:and $0x0,%r14b
+0x402121:3:and %dl,%r9b
+0x402124:3:mov %bl,%r15b
+0x402127:4:and $0x0,%r15b
+0x40212b:3:and %dl,%r10b
+0x40212e:3:or %r9b,%r14b
+0x402131:3:or %r10b,%r15b
+0x402134:3:xor %r15b,%r14b
+0x402137:3:or %bl,%r11b
+0x40213a:4:xor $0xff,%r11b
+0x40213e:3:or $0x0,%dl
+0x402141:3:and %dl,%r11b
+0x402144:3:or %r11b,%r14b
+0x402147:4:test $0x1,%r14b
+0x40214b:3:cmovne %ecx,%eax
+0x40214e:3:mov %eax,-0x48(%rbp)
+0x402151:5:jmp 00000000004022e7 <ossl_statem_client_max_message_size+0xee7>
+0x402156:5:mov $0xb29e4bd0,%eax
+0x40215b:5:mov $0x9ff37df4,%ecx
+0x402160:2:mov $0x1,%dl
+0x402162:2:xor %esi,%esi
+0x402164:8:mov 0x4050b0,%rdi
+0x40216c:4:mov -0x40(%rbp),%r8
+0x402170:3:mov %rdi,(%r8)
+0x402173:8:mov 0x405078,%r9d
+0x40217b:8:mov 0x4050c8,%r10d
+0x402183:3:sub $0x1,%esi
+0x402186:3:mov %r9d,%r11d
+0x402189:3:add %esi,%r11d
+0x40218c:4:imul %r11d,%r9d
+0x402190:4:and $0x1,%r9d
+0x402194:4:cmp $0x0,%r9d
+0x402198:3:sete %bl
+0x40219b:4:cmp $0xa,%r10d
+0x40219f:4:setl %r14b
+0x4021a3:3:mov %bl,%r15b
+0x4021a6:4:xor $0xff,%r15b
+0x4021aa:3:mov %r14b,%r12b
+0x4021ad:4:xor $0xff,%r12b
+0x4021b1:3:xor $0x1,%dl
+0x4021b4:3:mov %r15b,%r13b
+0x4021b7:4:and $0xff,%r13b
+0x4021bb:2:and %dl,%bl
+0x4021bd:3:mov %r12b,%sil
+0x4021c0:4:and $0xff,%sil
+0x4021c4:3:and %dl,%r14b
+0x4021c7:3:or %bl,%r13b
+0x4021ca:3:or %r14b,%sil
+0x4021cd:3:xor %sil,%r13b
+0x4021d0:3:or %r12b,%r15b
+0x4021d3:4:xor $0xff,%r15b
+0x4021d7:3:or $0x1,%dl
+0x4021da:3:and %dl,%r15b
+0x4021dd:3:or %r15b,%r13b
+0x4021e0:4:test $0x1,%r13b
+0x4021e4:3:cmovne %ecx,%eax
+0x4021e7:3:mov %eax,-0x48(%rbp)
+0x4021ea:5:jmp 00000000004022e7 <ossl_statem_client_max_message_size+0xee7>
+0x4021ef:7:movl $0xea6b0b2e,-0x48(%rbp)
+0x4021f6:5:jmp 00000000004022e7 <ossl_statem_client_max_message_size+0xee7>
+0x4021fb:8:mov 0x405068,%rax
+0x402203:4:mov -0x40(%rbp),%rcx
+0x402207:3:mov %rax,(%rcx)
+0x40220a:7:movl $0xea6b0b2e,-0x48(%rbp)
+0x402211:5:jmp 00000000004022e7 <ossl_statem_client_max_message_size+0xee7>
+0x402216:4:mov -0x40(%rbp),%rax
+0x40221a:3:mov (%rax),%rax
+0x40221d:4:lea -0x28(%rbp),%rsp
+0x402221:1:pop %rbx
+0x402222:2:pop %r12
+0x402224:2:pop %r13
+0x402226:2:pop %r14
+0x402228:2:pop %r15
+0x40222a:1:pop %rbp
+0x40222b:1:ret
+0x40222c:3:mov %rsp,%rax
+0x40222f:4:add $0xfffffffffffffff0,%rax
+0x402233:3:mov %rax,%rsp
+0x402236:3:mov %rsp,%rax
+0x402239:4:add $0xfffffffffffffff0,%rax
+0x40223d:3:mov %rax,%rsp
+0x402240:3:mov %rsp,%rcx
+0x402243:4:add $0xfffffffffffffff0,%rcx
+0x402247:3:mov %rcx,%rsp
+0x40224a:4:mov -0x50(%rbp),%rdx
+0x40224e:3:mov %rdx,(%rax)
+0x402251:3:mov (%rax),%rax
+0x402254:4:add $0xc,%rax
+0x402258:3:mov %rax,(%rcx)
+0x40225b:7:movl $0xfba6d36c,-0x48(%rbp)
+0x402262:5:jmp 00000000004022e7 <ossl_statem_client_max_message_size+0xee7>
+0x402267:4:mov -0x40(%rbp),%rax
+0x40226b:7:movq $0x0,(%rax)
+0x402272:7:movl $0x928c0365,-0x48(%rbp)
+0x402279:5:jmp 00000000004022e7 <ossl_statem_client_max_message_size+0xee7>
+0x40227e:4:mov -0x38(%rbp),%rax
+0x402282:3:mov (%rax),%rax
+0x402285:3:mov (%rax),%rax
+0x402288:4:mov -0x40(%rbp),%rcx
+0x40228c:3:mov %rax,(%rcx)
+0x40228f:7:movl $0xf7dbe51d,-0x48(%rbp)
+0x402296:5:jmp 00000000004022e7 <ossl_statem_client_max_message_size+0xee7>
+0x40229b:8:mov 0x4050a8,%rax
+0x4022a3:4:mov -0x40(%rbp),%rcx
+0x4022a7:3:mov %rax,(%rcx)
+0x4022aa:7:movl $0xe08f1a34,-0x48(%rbp)
+0x4022b1:5:jmp 00000000004022e7 <ossl_statem_client_max_message_size+0xee7>
+0x4022b6:8:mov 0x405098,%rax
+0x4022be:4:mov -0x40(%rbp),%rcx
+0x4022c2:3:mov %rax,(%rcx)
+0x4022c5:7:movl $0xc702117d,-0x48(%rbp)
+0x4022cc:5:jmp 00000000004022e7 <ossl_statem_client_max_message_size+0xee7>
+0x4022d1:8:mov 0x4050b0,%rax
+0x4022d9:4:mov -0x40(%rbp),%rcx
+0x4022dd:3:mov %rax,(%rcx)
+0x4022e0:7:movl $0xb397e2da,-0x48(%rbp)
+0x4022e7:5:jmp 0000000000401462 <ossl_statem_client_max_message_size+0x62>
+0x4022ec:4:nopl 0x0(%rax)
+0x4022f0:1:push %rbp
+0x4022f1:3:mov %rsp,%rbp
+0x4022f4:2:push %r15
+0x4022f6:2:push %r14
+0x4022f8:2:push %r13
+0x4022fa:2:push %r12
+0x4022fc:1:push %rbx
+0x4022fd:7:sub $0xc8,%rsp
+0x402304:7:movl $0x0,-0x34(%rbp)
+0x40230b:3:mov %edi,-0x38(%rbp)
+0x40230e:4:mov %rsi,-0x40(%rbp)
+0x402312:3:mov -0x38(%rbp),%edi
+0x402315:3:mov %edi,-0x30(%rbp)
+0x402318:7:movl $0xe3c071b4,-0x64(%rbp)
+0x40231f:3:mov -0x64(%rbp),%eax
+0x402322:2:mov %eax,%ecx
+0x402324:6:sub $0x83d9f501,%ecx
+0x40232a:3:mov %eax,-0x68(%rbp)
+0x40232d:3:mov %ecx,-0x6c(%rbp)
+0x402330:6:je 0000000000402692 <main+0x3a2>
+0x402336:5:jmp 000000000040233b <main+0x4b>
+0x40233b:3:mov -0x68(%rbp),%eax
+0x40233e:5:sub $0x86000e27,%eax
+0x402343:3:mov %eax,-0x70(%rbp)
+0x402346:6:je 0000000000402aa6 <main+0x7b6>
+0x40234c:5:jmp 0000000000402351 <main+0x61>
+0x402351:3:mov -0x68(%rbp),%eax
+0x402354:5:sub $0x917b7e5e,%eax
+0x402359:3:mov %eax,-0x74(%rbp)
+0x40235c:6:je 0000000000402a3f <main+0x74f>
+0x402362:5:jmp 0000000000402367 <main+0x77>
+0x402367:3:mov -0x68(%rbp),%eax
+0x40236a:5:sub $0x91b4154c,%eax
+0x40236f:3:mov %eax,-0x78(%rbp)
+0x402372:6:je 00000000004026ad <main+0x3bd>
+0x402378:5:jmp 000000000040237d <main+0x8d>
+0x40237d:3:mov -0x68(%rbp),%eax
+0x402380:5:sub $0x97b3283d,%eax
+0x402385:3:mov %eax,-0x7c(%rbp)
+0x402388:6:je 0000000000402571 <main+0x281>
+0x40238e:5:jmp 0000000000402393 <main+0xa3>
+0x402393:3:mov -0x68(%rbp),%eax
+0x402396:5:sub $0xb0bc9ebb,%eax
+0x40239b:3:mov %eax,-0x80(%rbp)
+0x40239e:6:je 0000000000402a27 <main+0x737>
+0x4023a4:5:jmp 00000000004023a9 <main+0xb9>
+0x4023a9:3:mov -0x68(%rbp),%eax
+0x4023ac:5:sub $0xc2bac96a,%eax
+0x4023b1:6:mov %eax,-0x84(%rbp)
+0x4023b7:6:je 0000000000402606 <main+0x316>
+0x4023bd:5:jmp 00000000004023c2 <main+0xd2>
+0x4023c2:3:mov -0x68(%rbp),%eax
+0x4023c5:5:sub $0xcb5e8ddc,%eax
+0x4023ca:6:mov %eax,-0x88(%rbp)
+0x4023d0:6:je 00000000004028b8 <main+0x5c8>
+0x4023d6:5:jmp 00000000004023db <main+0xeb>
+0x4023db:3:mov -0x68(%rbp),%eax
+0x4023de:5:sub $0xd6562f62,%eax
+0x4023e3:6:mov %eax,-0x8c(%rbp)
+0x4023e9:6:je 0000000000402a78 <main+0x788>
+0x4023ef:5:jmp 00000000004023f4 <main+0x104>
+0x4023f4:3:mov -0x68(%rbp),%eax
+0x4023f7:5:sub $0xe3c071b4,%eax
+0x4023fc:6:mov %eax,-0x90(%rbp)
+0x402402:6:je 000000000040253e <main+0x24e>
+0x402408:5:jmp 000000000040240d <main+0x11d>
+0x40240d:3:mov -0x68(%rbp),%eax
+0x402410:5:sub $0xef8a453f,%eax
+0x402415:6:mov %eax,-0x94(%rbp)
+0x40241b:6:je 0000000000402593 <main+0x2a3>
+0x402421:5:jmp 0000000000402426 <main+0x136>
+0x402426:3:mov -0x68(%rbp),%eax
+0x402429:5:sub $0xfcbaf161,%eax
+0x40242e:6:mov %eax,-0x98(%rbp)
+0x402434:6:je 000000000040273d <main+0x44d>
+0x40243a:5:jmp 000000000040243f <main+0x14f>
+0x40243f:3:mov -0x68(%rbp),%eax
+0x402442:5:sub $0x1326e8a9,%eax
+0x402447:6:mov %eax,-0x9c(%rbp)
+0x40244d:6:je 0000000000402559 <main+0x269>
+0x402453:5:jmp 0000000000402458 <main+0x168>
+0x402458:3:mov -0x68(%rbp),%eax
+0x40245b:5:sub $0x133a8af5,%eax
+0x402460:6:mov %eax,-0xa0(%rbp)
+0x402466:6:je 0000000000402686 <main+0x396>
+0x40246c:5:jmp 0000000000402471 <main+0x181>
+0x402471:3:mov -0x68(%rbp),%eax
+0x402474:5:sub $0x2cbbdd0c,%eax
+0x402479:6:mov %eax,-0xa4(%rbp)
+0x40247f:6:je 00000000004025ae <main+0x2be>
+0x402485:5:jmp 000000000040248a <main+0x19a>
+0x40248a:3:mov -0x68(%rbp),%eax
+0x40248d:5:sub $0x3d9182f2,%eax
+0x402492:6:mov %eax,-0xa8(%rbp)
+0x402498:6:je 0000000000402b93 <main+0x8a3>
+0x40249e:5:jmp 00000000004024a3 <main+0x1b3>
+0x4024a3:3:mov -0x68(%rbp),%eax
+0x4024a6:5:sub $0x3ed99181,%eax
+0x4024ab:6:mov %eax,-0xac(%rbp)
+0x4024b1:6:je 0000000000402a50 <main+0x760>
+0x4024b7:5:jmp 00000000004024bc <main+0x1cc>
+0x4024bc:3:mov -0x68(%rbp),%eax
+0x4024bf:5:sub $0x46cdca52,%eax
+0x4024c4:6:mov %eax,-0xb0(%rbp)
+0x4024ca:6:je 00000000004028ac <main+0x5bc>
+0x4024d0:5:jmp 00000000004024d5 <main+0x1e5>
+0x4024d5:3:mov -0x68(%rbp),%eax
+0x4024d8:5:sub $0x4e41c67b,%eax
+0x4024dd:6:mov %eax,-0xb4(%rbp)
+0x4024e3:6:je 00000000004028d7 <main+0x5e7>
+0x4024e9:5:jmp 00000000004024ee <main+0x1fe>
+0x4024ee:3:mov -0x68(%rbp),%eax
+0x4024f1:5:sub $0x59ae5065,%eax
+0x4024f6:6:mov %eax,-0xb8(%rbp)
+0x4024fc:6:je 0000000000402967 <main+0x677>
+0x402502:5:jmp 0000000000402507 <main+0x217>
+0x402507:3:mov -0x68(%rbp),%eax
+0x40250a:5:sub $0x762fee0d,%eax
+0x40250f:6:mov %eax,-0xbc(%rbp)
+0x402515:6:je 0000000000402a33 <main+0x743>
+0x40251b:5:jmp 0000000000402520 <main+0x230>
+0x402520:3:mov -0x68(%rbp),%eax
+0x402523:5:sub $0x7c9f23be,%eax
+0x402528:6:mov %eax,-0xc0(%rbp)
+0x40252e:6:je 0000000000402a63 <main+0x773>
+0x402534:5:jmp 0000000000402539 <main+0x249>
+0x402539:5:jmp 0000000000402bce <main+0x8de>
+0x40253e:5:mov $0x97b3283d,%eax
+0x402543:5:mov $0x1326e8a9,%ecx
+0x402548:3:mov -0x30(%rbp),%edx
+0x40254b:3:cmp $0x2,%edx
+0x40254e:3:cmovne %ecx,%eax
+0x402551:3:mov %eax,-0x64(%rbp)
+0x402554:5:jmp 0000000000402bce <main+0x8de>
+0x402559:5:call 00000000004013d0 <usage>
+0x40255e:7:movl $0x1,-0x34(%rbp)
+0x402565:7:movl $0x7c9f23be,-0x64(%rbp)
+0x40256c:5:jmp 0000000000402bce <main+0x8de>
+0x402571:4:mov -0x40(%rbp),%rax
+0x402575:4:mov 0x8(%rax),%rdi
+0x402579:5:call 0000000000401060 <atoi@plt>
+0x40257e:3:mov %eax,-0x44(%rbp)
+0x402581:3:mov -0x44(%rbp),%eax
+0x402584:3:mov %eax,-0x2c(%rbp)
+0x402587:7:movl $0xef8a453f,-0x64(%rbp)
+0x40258e:5:jmp 0000000000402bce <main+0x8de>
+0x402593:5:mov $0x762fee0d,%eax
+0x402598:5:mov $0x2cbbdd0c,%ecx
+0x40259d:3:mov -0x2c(%rbp),%edx
+0x4025a0:3:cmp $0x0,%edx
+0x4025a3:3:cmove %ecx,%eax
+0x4025a6:3:mov %eax,-0x64(%rbp)
+0x4025a9:5:jmp 0000000000402bce <main+0x8de>
+0x4025ae:5:mov $0xd6562f62,%eax
+0x4025b3:5:mov $0xc2bac96a,%ecx
+0x4025b8:7:mov 0x40507c,%edx
+0x4025bf:7:mov 0x405084,%esi
+0x4025c6:2:mov %edx,%edi
+0x4025c8:6:sub $0xae2d4d0e,%edi
+0x4025ce:3:sub $0x1,%edi
+0x4025d1:6:add $0xae2d4d0e,%edi
+0x4025d7:3:imul %edi,%edx
+0x4025da:3:and $0x1,%edx
+0x4025dd:3:cmp $0x0,%edx
+0x4025e0:4:sete %r8b
+0x4025e4:3:cmp $0xa,%esi
+0x4025e7:4:setl %r9b
+0x4025eb:3:mov %r8b,%r10b
+0x4025ee:3:and %r9b,%r10b
+0x4025f1:3:xor %r9b,%r8b
+0x4025f4:3:or %r8b,%r10b
+0x4025f7:4:test $0x1,%r10b
+0x4025fb:3:cmovne %ecx,%eax
+0x4025fe:3:mov %eax,-0x64(%rbp)
+0x402601:5:jmp 0000000000402bce <main+0x8de>
+0x402606:7:movl $0x1,-0x48(%rbp)
+0x40260d:4:movslq -0x48(%rbp),%rax
+0x402611:4:shl $0x4,%rax
+0x402615:3:mov %rax,%rdi
+0x402618:5:call 0000000000401050 <malloc@plt>
+0x40261d:5:mov $0xd6562f62,%ecx
+0x402622:5:mov $0x133a8af5,%edx
+0x402627:4:mov %rax,-0x50(%rbp)
+0x40262b:7:movl $0x0,-0x54(%rbp)
+0x402632:7:mov 0x40507c,%esi
+0x402639:8:mov 0x405084,%r8d
+0x402641:3:mov %esi,%r9d
+0x402644:7:sub $0x1ab198f,%r9d
+0x40264b:4:sub $0x1,%r9d
+0x40264f:7:add $0x1ab198f,%r9d
+0x402656:4:imul %r9d,%esi
+0x40265a:3:and $0x1,%esi
+0x40265d:3:cmp $0x0,%esi
+0x402660:4:sete %r10b
+0x402664:4:cmp $0xa,%r8d
+0x402668:4:setl %r11b
+0x40266c:3:mov %r10b,%bl
+0x40266f:3:and %r11b,%bl
+0x402672:3:xor %r11b,%r10b
+0x402675:3:or %r10b,%bl
+0x402678:3:test $0x1,%bl
+0x40267b:3:cmovne %edx,%ecx
+0x40267e:3:mov %ecx,-0x64(%rbp)
+0x402681:5:jmp 0000000000402bce <main+0x8de>
+0x402686:7:movl $0x83d9f501,-0x64(%rbp)
+0x40268d:5:jmp 0000000000402bce <main+0x8de>
+0x402692:5:mov $0x4e41c67b,%eax
+0x402697:5:mov $0x91b4154c,%ecx
+0x40269c:3:mov -0x54(%rbp),%edx
+0x40269f:3:cmp -0x48(%rbp),%edx
+0x4026a2:3:cmovl %ecx,%eax
+0x4026a5:3:mov %eax,-0x64(%rbp)
+0x4026a8:5:jmp 0000000000402bce <main+0x8de>
+0x4026ad:5:mov $0x86000e27,%eax
+0x4026b2:5:mov $0xfcbaf161,%ecx
+0x4026b7:2:mov $0x1,%dl
+0x4026b9:7:mov 0x40507c,%esi
+0x4026c0:7:mov 0x405084,%edi
+0x4026c7:3:mov %esi,%r8d
+0x4026ca:7:sub $0x74dae563,%r8d
+0x4026d1:4:sub $0x1,%r8d
+0x4026d5:7:add $0x74dae563,%r8d
+0x4026dc:4:imul %r8d,%esi
+0x4026e0:3:and $0x1,%esi
+0x4026e3:3:cmp $0x0,%esi
+0x4026e6:4:sete %r9b
+0x4026ea:3:cmp $0xa,%edi
+0x4026ed:4:setl %r10b
+0x4026f1:3:mov %r9b,%r11b
+0x4026f4:4:xor $0xff,%r11b
+0x4026f8:3:mov %r10b,%bl
+0x4026fb:3:xor $0xff,%bl
+0x4026fe:3:xor $0x0,%dl
+0x402701:3:mov %r11b,%r14b
+0x402704:4:and $0x0,%r14b
+0x402708:3:and %dl,%r9b
+0x40270b:3:mov %bl,%r15b
+0x40270e:4:and $0x0,%r15b
+0x402712:3:and %dl,%r10b
+0x402715:3:or %r9b,%r14b
+0x402718:3:or %r10b,%r15b
+0x40271b:3:xor %r15b,%r14b
+0x40271e:3:or %bl,%r11b
+0x402721:4:xor $0xff,%r11b
+0x402725:3:or $0x0,%dl
+0x402728:3:and %dl,%r11b
+0x40272b:3:or %r11b,%r14b
+0x40272e:4:test $0x1,%r14b
+0x402732:3:cmovne %ecx,%eax
+0x402735:3:mov %eax,-0x64(%rbp)
+0x402738:5:jmp 0000000000402bce <main+0x8de>
+0x40273d:5:call 0000000000401160 <next_i>
+0x402742:2:xor %ecx,%ecx
+0x402744:5:mov $0x2,%edx
+0x402749:6:mov %edx,-0xc4(%rbp)
+0x40274f:1:cltd
+0x402750:6:mov -0xc4(%rbp),%esi
+0x402756:2:idiv %esi
+0x402758:6:imul $0xfffffffe,%edx,%edx
+0x40275e:3:sub $0x1,%ecx
+0x402761:2:sub %ecx,%edx
+0x402763:6:mov %edx,-0xc8(%rbp)
+0x402769:5:call 0000000000401160 <next_i>
+0x40276e:6:mov -0xc8(%rbp),%ecx
+0x402774:3:imul %eax,%ecx
+0x402777:3:movslq %ecx,%rdi
+0x40277a:4:mov -0x50(%rbp),%r8
+0x40277e:4:movslq -0x54(%rbp),%r9
+0x402782:4:shl $0x4,%r9
+0x402786:3:add %r9,%r8
+0x402789:3:mov %rdi,(%r8)
+0x40278c:5:call 0000000000401160 <next_i>
+0x402791:2:xor %ecx,%ecx
+0x402793:5:mov $0x2,%edx
+0x402798:6:mov %edx,-0xcc(%rbp)
+0x40279e:1:cltd
+0x40279f:6:mov -0xcc(%rbp),%esi
+0x4027a5:2:idiv %esi
+0x4027a7:6:imul $0xfffffffe,%edx,%edx
+0x4027ad:3:sub $0x1,%ecx
+0x4027b0:2:sub %ecx,%edx
+0x4027b2:6:mov %edx,-0xd0(%rbp)
+0x4027b8:5:call 0000000000401160 <next_i>
+0x4027bd:6:mov -0xd0(%rbp),%ecx
+0x4027c3:3:imul %eax,%ecx
+0x4027c6:4:mov -0x50(%rbp),%rdi
+0x4027ca:4:movslq -0x54(%rbp),%r8
+0x4027ce:4:shl $0x4,%r8
+0x4027d2:3:add %r8,%rdi
+0x4027d5:3:mov %ecx,0x8(%rdi)
+0x4027d8:5:call 0000000000401160 <next_i>
+0x4027dd:2:xor %ecx,%ecx
+0x4027df:5:mov $0x2,%edx
+0x4027e4:6:mov %edx,-0xd4(%rbp)
+0x4027ea:1:cltd
+0x4027eb:6:mov -0xd4(%rbp),%esi
+0x4027f1:2:idiv %esi
+0x4027f3:6:imul $0xfffffffe,%edx,%edx
+0x4027f9:3:sub $0x1,%ecx
+0x4027fc:2:sub %ecx,%edx
+0x4027fe:6:mov %edx,-0xd8(%rbp)
+0x402804:5:call 0000000000401160 <next_i>
+0x402809:5:mov $0x86000e27,%ecx
+0x40280e:5:mov $0x46cdca52,%edx
+0x402813:3:mov $0x1,%r10b
+0x402816:2:xor %esi,%esi
+0x402818:7:mov -0xd8(%rbp),%r11d
+0x40281f:4:imul %eax,%r11d
+0x402823:4:mov -0x50(%rbp),%rdi
+0x402827:4:movslq -0x54(%rbp),%r8
+0x40282b:4:shl $0x4,%r8
+0x40282f:3:add %r8,%rdi
+0x402832:4:mov %r11d,0xc(%rdi)
+0x402836:7:mov 0x40507c,%eax
+0x40283d:8:mov 0x405084,%r11d
+0x402845:3:sub $0x1,%esi
+0x402848:2:mov %eax,%ebx
+0x40284a:2:add %esi,%ebx
+0x40284c:3:imul %ebx,%eax
+0x40284f:3:and $0x1,%eax
+0x402852:3:cmp $0x0,%eax
+0x402855:4:sete %r14b
+0x402859:4:cmp $0xa,%r11d
+0x40285d:4:setl %r15b
+0x402861:3:mov %r14b,%r12b
+0x402864:4:xor $0xff,%r12b
+0x402868:3:mov %r15b,%r13b
+0x40286b:4:xor $0xff,%r13b
+0x40286f:4:xor $0x1,%r10b
+0x402873:3:mov %r12b,%al
+0x402876:2:and $0xff,%al
+0x402878:3:and %r10b,%r14b
+0x40287b:3:mov %r13b,%sil
+0x40287e:4:and $0xff,%sil
+0x402882:3:and %r10b,%r15b
+0x402885:3:or %r14b,%al
+0x402888:3:or %r15b,%sil
+0x40288b:3:xor %sil,%al
+0x40288e:3:or %r13b,%r12b
+0x402891:4:xor $0xff,%r12b
+0x402895:4:or $0x1,%r10b
+0x402899:3:and %r10b,%r12b
+0x40289c:3:or %r12b,%al
+0x40289f:2:test $0x1,%al
+0x4028a1:3:cmovne %edx,%ecx
+0x4028a4:3:mov %ecx,-0x64(%rbp)
+0x4028a7:5:jmp 0000000000402bce <main+0x8de>
+0x4028ac:7:movl $0xcb5e8ddc,-0x64(%rbp)
+0x4028b3:5:jmp 0000000000402bce <main+0x8de>
+0x4028b8:3:mov -0x54(%rbp),%eax
+0x4028bb:5:add $0xf25596a4,%eax
+0x4028c0:3:add $0x1,%eax
+0x4028c3:5:sub $0xf25596a4,%eax
+0x4028c8:3:mov %eax,-0x54(%rbp)
+0x4028cb:7:movl $0x83d9f501,-0x64(%rbp)
+0x4028d2:5:jmp 0000000000402bce <main+0x8de>
+0x4028d7:5:mov $0x3d9182f2,%eax
+0x4028dc:5:mov $0x59ae5065,%ecx
+0x4028e1:2:mov $0x1,%dl
+0x4028e3:7:mov 0x40507c,%esi
+0x4028ea:7:mov 0x405084,%edi
+0x4028f1:3:mov %esi,%r8d
+0x4028f4:7:sub $0x3426712a,%r8d
+0x4028fb:4:sub $0x1,%r8d
+0x4028ff:7:add $0x3426712a,%r8d
+0x402906:4:imul %r8d,%esi
+0x40290a:3:and $0x1,%esi
+0x40290d:3:cmp $0x0,%esi
+0x402910:4:sete %r9b
+0x402914:3:cmp $0xa,%edi
+0x402917:4:setl %r10b
+0x40291b:3:mov %r9b,%r11b
+0x40291e:4:xor $0xff,%r11b
+0x402922:3:mov %r10b,%bl
+0x402925:3:xor $0xff,%bl
+0x402928:3:xor $0x1,%dl
+0x40292b:3:mov %r11b,%r14b
+0x40292e:4:and $0xff,%r14b
+0x402932:3:and %dl,%r9b
+0x402935:3:mov %bl,%r15b
+0x402938:4:and $0xff,%r15b
+0x40293c:3:and %dl,%r10b
+0x40293f:3:or %r9b,%r14b
+0x402942:3:or %r10b,%r15b
+0x402945:3:xor %r15b,%r14b
+0x402948:3:or %bl,%r11b
+0x40294b:4:xor $0xff,%r11b
+0x40294f:3:or $0x1,%dl
+0x402952:3:and %dl,%r11b
+0x402955:3:or %r11b,%r14b
+0x402958:4:test $0x1,%r14b
+0x40295c:3:cmovne %ecx,%eax
+0x40295f:3:mov %eax,-0x64(%rbp)
+0x402962:5:jmp 0000000000402bce <main+0x8de>
+0x402967:4:mov -0x50(%rbp),%rdi
+0x40296b:5:call 0000000000401400 <ossl_statem_client_max_message_size>
+0x402970:10:movabs $0x4030b6,%rdi
+0x40297a:4:mov %rax,-0x60(%rbp)
+0x40297e:4:mov -0x60(%rbp),%rsi
+0x402982:2:mov $0x0,%al
+0x402984:5:call 0000000000401040 <printf@plt>
+0x402989:4:mov -0x50(%rbp),%rsi
+0x40298d:3:mov %rsi,%rdi
+0x402990:6:mov %eax,-0xdc(%rbp)
+0x402996:5:call 0000000000401030 <free@plt>
+0x40299b:5:mov $0x3d9182f2,%eax
+0x4029a0:5:mov $0xb0bc9ebb,%ecx
+0x4029a5:2:mov $0x1,%dl
+0x4029a7:3:xor %r8d,%r8d
+0x4029aa:8:mov 0x40507c,%r9d
+0x4029b2:8:mov 0x405084,%r10d
+0x4029ba:4:sub $0x1,%r8d
+0x4029be:3:mov %r9d,%r11d
+0x4029c1:3:add %r8d,%r11d
+0x4029c4:4:imul %r11d,%r9d
+0x4029c8:4:and $0x1,%r9d
+0x4029cc:4:cmp $0x0,%r9d
+0x4029d0:3:sete %bl
+0x4029d3:4:cmp $0xa,%r10d
+0x4029d7:4:setl %r14b
+0x4029db:3:mov %bl,%r15b
+0x4029de:4:xor $0xff,%r15b
+0x4029e2:3:mov %r14b,%r12b
+0x4029e5:4:xor $0xff,%r12b
+0x4029e9:3:xor $0x1,%dl
+0x4029ec:3:mov %r15b,%r13b
+0x4029ef:4:and $0xff,%r13b
+0x4029f3:2:and %dl,%bl
+0x4029f5:3:mov %r12b,%sil
+0x4029f8:4:and $0xff,%sil
+0x4029fc:3:and %dl,%r14b
+0x4029ff:3:or %bl,%r13b
+0x402a02:3:or %r14b,%sil
+0x402a05:3:xor %sil,%r13b
+0x402a08:3:or %r12b,%r15b
+0x402a0b:4:xor $0xff,%r15b
+0x402a0f:3:or $0x1,%dl
+0x402a12:3:and %dl,%r15b
+0x402a15:3:or %r15b,%r13b
+0x402a18:4:test $0x1,%r13b
+0x402a1c:3:cmovne %ecx,%eax
+0x402a1f:3:mov %eax,-0x64(%rbp)
+0x402a22:5:jmp 0000000000402bce <main+0x8de>
+0x402a27:7:movl $0x3ed99181,-0x64(%rbp)
+0x402a2e:5:jmp 0000000000402bce <main+0x8de>
+0x402a33:7:movl $0x917b7e5e,-0x64(%rbp)
+0x402a3a:5:jmp 0000000000402bce <main+0x8de>
+0x402a3f:5:call 00000000004013d0 <usage>
+0x402a44:7:movl $0x3ed99181,-0x64(%rbp)
+0x402a4b:5:jmp 0000000000402bce <main+0x8de>
+0x402a50:7:movl $0x0,-0x34(%rbp)
+0x402a57:7:movl $0x7c9f23be,-0x64(%rbp)
+0x402a5e:5:jmp 0000000000402bce <main+0x8de>
+0x402a63:3:mov -0x34(%rbp),%eax
+0x402a66:7:add $0xc8,%rsp
+0x402a6d:1:pop %rbx
+0x402a6e:2:pop %r12
+0x402a70:2:pop %r13
+0x402a72:2:pop %r14
+0x402a74:2:pop %r15
+0x402a76:1:pop %rbp
+0x402a77:1:ret
+0x402a78:7:movl $0x1,-0x48(%rbp)
+0x402a7f:4:movslq -0x48(%rbp),%rax
+0x402a83:4:shl $0x4,%rax
+0x402a87:3:mov %rax,%rdi
+0x402a8a:5:call 0000000000401050 <malloc@plt>
+0x402a8f:4:mov %rax,-0x50(%rbp)
+0x402a93:7:movl $0x0,-0x54(%rbp)
+0x402a9a:7:movl $0xc2bac96a,-0x64(%rbp)
+0x402aa1:5:jmp 0000000000402bce <main+0x8de>
+0x402aa6:5:call 0000000000401160 <next_i>
+0x402aab:5:mov $0x2,%ecx
+0x402ab0:1:cltd
+0x402ab1:2:idiv %ecx
+0x402ab3:6:imul $0xfffffffe,%edx,%ecx
+0x402ab9:6:add $0xafc60fca,%ecx
+0x402abf:3:add $0x1,%ecx
+0x402ac2:6:sub $0xafc60fca,%ecx
+0x402ac8:6:mov %ecx,-0xe0(%rbp)
+0x402ace:5:call 0000000000401160 <next_i>
+0x402ad3:6:mov -0xe0(%rbp),%ecx
+0x402ad9:3:imul %eax,%ecx
+0x402adc:3:movslq %ecx,%rsi
+0x402adf:4:mov -0x50(%rbp),%rdi
+0x402ae3:4:movslq -0x54(%rbp),%r8
+0x402ae7:4:shl $0x4,%r8
+0x402aeb:3:add %r8,%rdi
+0x402aee:3:mov %rsi,(%rdi)
+0x402af1:5:call 0000000000401160 <next_i>
+0x402af6:5:mov $0x2,%ecx
+0x402afb:1:cltd
+0x402afc:2:idiv %ecx
+0x402afe:6:imul $0xfffffffe,%edx,%ecx
+0x402b04:6:add $0x922a6cd3,%ecx
+0x402b0a:3:add $0x1,%ecx
+0x402b0d:6:sub $0x922a6cd3,%ecx
+0x402b13:6:mov %ecx,-0xe4(%rbp)
+0x402b19:5:call 0000000000401160 <next_i>
+0x402b1e:6:mov -0xe4(%rbp),%ecx
+0x402b24:3:imul %eax,%ecx
+0x402b27:4:mov -0x50(%rbp),%rsi
+0x402b2b:4:movslq -0x54(%rbp),%rdi
+0x402b2f:4:shl $0x4,%rdi
+0x402b33:3:add %rdi,%rsi
+0x402b36:3:mov %ecx,0x8(%rsi)
+0x402b39:5:call 0000000000401160 <next_i>
+0x402b3e:2:xor %ecx,%ecx
+0x402b40:5:mov $0x2,%edx
+0x402b45:6:mov %edx,-0xe8(%rbp)
+0x402b4b:1:cltd
+0x402b4c:7:mov -0xe8(%rbp),%r9d
+0x402b53:3:idiv %r9d
+0x402b56:6:imul $0xfffffffe,%edx,%edx
+0x402b5c:3:sub $0x1,%ecx
+0x402b5f:2:sub %ecx,%edx
+0x402b61:6:mov %edx,-0xec(%rbp)
+0x402b67:5:call 0000000000401160 <next_i>
+0x402b6c:6:mov -0xec(%rbp),%ecx
+0x402b72:3:imul %eax,%ecx
+0x402b75:4:mov -0x50(%rbp),%rsi
+0x402b79:4:movslq -0x54(%rbp),%rdi
+0x402b7d:4:shl $0x4,%rdi
+0x402b81:3:add %rdi,%rsi
+0x402b84:3:mov %ecx,0xc(%rsi)
+0x402b87:7:movl $0xfcbaf161,-0x64(%rbp)
+0x402b8e:5:jmp 0000000000402bce <main+0x8de>
+0x402b93:4:mov -0x50(%rbp),%rdi
+0x402b97:5:call 0000000000401400 <ossl_statem_client_max_message_size>
+0x402b9c:10:movabs $0x4030b6,%rdi
+0x402ba6:4:mov %rax,-0x60(%rbp)
+0x402baa:4:mov -0x60(%rbp),%rsi
+0x402bae:2:mov $0x0,%al
+0x402bb0:5:call 0000000000401040 <printf@plt>
+0x402bb5:4:mov -0x50(%rbp),%rsi
+0x402bb9:3:mov %rsi,%rdi
+0x402bbc:6:mov %eax,-0xf0(%rbp)
+0x402bc2:5:call 0000000000401030 <free@plt>
+0x402bc7:7:movl $0x59ae5065,-0x64(%rbp)
+0x402bce:5:jmp 000000000040231f <main+0x2f>
+0x402bd4:4:endbr64
+0x402bd8:4:sub $0x8,%rsp
+0x402bdc:4:add $0x8,%rsp
+0x402be0:1:ret

@@ -1,0 +1,3576 @@
+0x401000:4:endbr64
+0x401004:4:sub $0x8,%rsp
+0x401008:7:mov 0x5fe9(%rip),%rax
+0x40100f:3:test %rax,%rax
+0x401012:2:je 0000000000401016 <_init+0x16>
+0x401014:2:call *%rax
+0x401016:4:add $0x8,%rsp
+0x40101a:1:ret
+0x401020:6:push 0x5fe2(%rip)
+0x401026:6:jmp *0x5fe4(%rip)
+0x40102c:4:nopl 0x0(%rax)
+0x401030:6:jmp *0x5fe2(%rip)
+0x401036:5:push $0x0
+0x40103b:5:jmp 0000000000401020 <_init+0x20>
+0x401040:6:jmp *0x5fda(%rip)
+0x401046:5:push $0x1
+0x40104b:5:jmp 0000000000401020 <_init+0x20>
+0x401050:4:endbr64
+0x401054:2:xor %ebp,%ebp
+0x401056:3:mov %rdx,%r9
+0x401059:1:pop %rsi
+0x40105a:3:mov %rsp,%rdx
+0x40105d:4:and $0xfffffffffffffff0,%rsp
+0x401061:1:push %rax
+0x401062:1:push %rsp
+0x401063:3:xor %r8d,%r8d
+0x401066:2:xor %ecx,%ecx
+0x401068:7:mov $0x4045f0,%rdi
+0x40106f:6:call *0x5f7b(%rip)
+0x401075:1:hlt
+0x401076:10:cs nopw 0x0(%rax,%rax,1)
+0x401080:4:endbr64
+0x401084:1:ret
+0x401085:10:cs nopw 0x0(%rax,%rax,1)
+0x40108f:1:nop
+0x401090:5:mov $0x407038,%eax
+0x401095:6:cmp $0x407038,%rax
+0x40109b:2:je 00000000004010b0 <deregister_tm_clones+0x20>
+0x40109d:5:mov $0x0,%eax
+0x4010a2:3:test %rax,%rax
+0x4010a5:2:je 00000000004010b0 <deregister_tm_clones+0x20>
+0x4010a7:5:mov $0x407038,%edi
+0x4010ac:2:jmp *%rax
+0x4010ae:2:xchg %ax,%ax
+0x4010b0:1:ret
+0x4010b1:11:data16 cs nopw 0x0(%rax,%rax,1)
+0x4010bc:4:nopl 0x0(%rax)
+0x4010c0:5:mov $0x407038,%esi
+0x4010c5:7:sub $0x407038,%rsi
+0x4010cc:3:mov %rsi,%rax
+0x4010cf:4:shr $0x3f,%rsi
+0x4010d3:4:sar $0x3,%rax
+0x4010d7:3:add %rax,%rsi
+0x4010da:3:sar %rsi
+0x4010dd:2:je 00000000004010f0 <register_tm_clones+0x30>
+0x4010df:5:mov $0x0,%eax
+0x4010e4:3:test %rax,%rax
+0x4010e7:2:je 00000000004010f0 <register_tm_clones+0x30>
+0x4010e9:5:mov $0x407038,%edi
+0x4010ee:2:jmp *%rax
+0x4010f0:1:ret
+0x4010f1:11:data16 cs nopw 0x0(%rax,%rax,1)
+0x4010fc:4:nopl 0x0(%rax)
+0x401100:4:endbr64
+0x401104:7:cmpb $0x0,0x5f2d(%rip)
+0x40110b:2:jne 0000000000401120 <__do_global_dtors_aux+0x20>
+0x40110d:1:push %rbp
+0x40110e:3:mov %rsp,%rbp
+0x401111:5:call 0000000000401090 <deregister_tm_clones>
+0x401116:7:movb $0x1,0x5f1b(%rip)
+0x40111d:1:pop %rbp
+0x40111e:1:ret
+0x40111f:1:nop
+0x401120:1:ret
+0x401121:11:data16 cs nopw 0x0(%rax,%rax,1)
+0x40112c:4:nopl 0x0(%rax)
+0x401130:4:endbr64
+0x401134:2:jmp 00000000004010c0 <register_tm_clones>
+0x401136:10:cs nopw 0x0(%rax,%rax,1)
+0x401140:1:push %rbp
+0x401141:3:mov %rsp,%rbp
+0x401144:1:push %rbx
+0x401145:4:sub $0x28,%rsp
+0x401149:2:xor %eax,%eax
+0x40114b:7:mov 0x40703c,%ecx
+0x401152:7:mov 0x407054,%edx
+0x401159:3:sub $0x1,%eax
+0x40115c:2:mov %ecx,%esi
+0x40115e:2:add %eax,%esi
+0x401160:3:imul %esi,%ecx
+0x401163:3:and $0x1,%ecx
+0x401166:3:cmp $0x0,%ecx
+0x401169:4:sete %dil
+0x40116d:4:and $0x1,%dil
+0x401171:4:mov %dil,-0xe(%rbp)
+0x401175:3:cmp $0xa,%edx
+0x401178:4:setl %dil
+0x40117c:4:and $0x1,%dil
+0x401180:4:mov %dil,-0xd(%rbp)
+0x401184:7:movl $0x30052083,-0x14(%rbp)
+0x40118b:3:mov -0x14(%rbp),%eax
+0x40118e:2:mov %eax,%ecx
+0x401190:6:sub $0x9daaf02c,%ecx
+0x401196:3:mov %eax,-0x18(%rbp)
+0x401199:3:mov %ecx,-0x1c(%rbp)
+0x40119c:6:je 000000000040124f <next_i+0x10f>
+0x4011a2:5:jmp 00000000004011a7 <next_i+0x67>
+0x4011a7:3:mov -0x18(%rbp),%eax
+0x4011aa:5:sub $0xb8336406,%eax
+0x4011af:3:mov %eax,-0x20(%rbp)
+0x4011b2:6:je 00000000004012e7 <next_i+0x1a7>
+0x4011b8:5:jmp 00000000004011bd <next_i+0x7d>
+0x4011bd:3:mov -0x18(%rbp),%eax
+0x4011c0:5:sub $0xc2951f74,%eax
+0x4011c5:3:mov %eax,-0x24(%rbp)
+0x4011c8:6:je 00000000004012f1 <next_i+0x1b1>
+0x4011ce:5:jmp 00000000004011d3 <next_i+0x93>
+0x4011d3:3:mov -0x18(%rbp),%eax
+0x4011d6:5:sub $0x30052083,%eax
+0x4011db:3:mov %eax,-0x28(%rbp)
+0x4011de:6:je 00000000004011ee <next_i+0xae>
+0x4011e4:5:jmp 00000000004011e9 <next_i+0xa9>
+0x4011e9:5:jmp 0000000000401313 <next_i+0x1d3>
+0x4011ee:5:mov $0xc2951f74,%eax
+0x4011f3:5:mov $0x9daaf02c,%ecx
+0x4011f8:2:mov $0x1,%dl
+0x4011fa:4:mov -0xe(%rbp),%sil
+0x4011fe:4:mov -0xd(%rbp),%dil
+0x401202:3:mov %sil,%r8b
+0x401205:4:xor $0xff,%r8b
+0x401209:3:mov %dil,%r9b
+0x40120c:4:xor $0xff,%r9b
+0x401210:3:xor $0x1,%dl
+0x401213:3:mov %r8b,%r10b
+0x401216:4:and $0xff,%r10b
+0x40121a:3:and %dl,%sil
+0x40121d:3:mov %r9b,%r11b
+0x401220:4:and $0xff,%r11b
+0x401224:3:and %dl,%dil
+0x401227:3:or %sil,%r10b
+0x40122a:3:or %dil,%r11b
+0x40122d:3:xor %r11b,%r10b
+0x401230:3:or %r9b,%r8b
+0x401233:4:xor $0xff,%r8b
+0x401237:3:or $0x1,%dl
+0x40123a:3:and %dl,%r8b
+0x40123d:3:or %r8b,%r10b
+0x401240:4:test $0x1,%r10b
+0x401244:3:cmovne %ecx,%eax
+0x401247:3:mov %eax,-0x14(%rbp)
+0x40124a:5:jmp 0000000000401313 <next_i+0x1d3>
+0x40124f:5:mov $0xc2951f74,%eax
+0x401254:5:mov $0xb8336406,%ecx
+0x401259:2:xor %edx,%edx
+0x40125b:5:mov $0x19,%esi
+0x401260:3:mov %rsp,%rdi
+0x401263:4:add $0xfffffffffffffff0,%rdi
+0x401267:3:mov %rdi,%rsp
+0x40126a:6:movl $0x0,(%rdi)
+0x401270:3:mov (%rdi),%r8d
+0x401273:3:mov %edx,%r9d
+0x401276:4:sub $0x1,%r9d
+0x40127a:3:sub %r9d,%r8d
+0x40127d:3:mov %r8d,(%rdi)
+0x401280:3:mov %eax,-0x2c(%rbp)
+0x401283:3:mov %r8d,%eax
+0x401286:3:mov %edx,-0x30(%rbp)
+0x401289:1:cltd
+0x40128a:2:idiv %esi
+0x40128c:3:movslq %edx,%rdi
+0x40128f:7:mov 0x405010(,%rdi,4),%edx
+0x401296:3:mov %edx,-0xc(%rbp)
+0x401299:7:mov 0x40703c,%edx
+0x4012a0:7:mov 0x407054,%esi
+0x4012a7:4:mov -0x30(%rbp),%r8d
+0x4012ab:4:sub $0x1,%r8d
+0x4012af:3:mov %edx,%r9d
+0x4012b2:3:add %r8d,%r9d
+0x4012b5:4:imul %r9d,%edx
+0x4012b9:3:and $0x1,%edx
+0x4012bc:3:cmp $0x0,%edx
+0x4012bf:4:sete %r10b
+0x4012c3:3:cmp $0xa,%esi
+0x4012c6:4:setl %r11b
+0x4012ca:3:mov %r10b,%bl
+0x4012cd:3:and %r11b,%bl
+0x4012d0:3:xor %r11b,%r10b
+0x4012d3:3:or %r10b,%bl
+0x4012d6:3:test $0x1,%bl
+0x4012d9:3:mov -0x2c(%rbp),%edx
+0x4012dc:3:cmovne %ecx,%edx
+0x4012df:3:mov %edx,-0x14(%rbp)
+0x4012e2:5:jmp 0000000000401313 <next_i+0x1d3>
+0x4012e7:3:mov -0xc(%rbp),%eax
+0x4012ea:4:lea -0x8(%rbp),%rsp
+0x4012ee:1:pop %rbx
+0x4012ef:1:pop %rbp
+0x4012f0:1:ret
+0x4012f1:2:xor %eax,%eax
+0x4012f3:3:mov %rsp,%rcx
+0x4012f6:4:add $0xfffffffffffffff0,%rcx
+0x4012fa:3:mov %rcx,%rsp
+0x4012fd:6:movl $0x0,(%rcx)
+0x401303:2:mov (%rcx),%edx
+0x401305:3:sub $0x1,%eax
+0x401308:2:sub %eax,%edx
+0x40130a:2:mov %edx,(%rcx)
+0x40130c:7:movl $0x9daaf02c,-0x14(%rbp)
+0x401313:5:jmp 000000000040118b <next_i+0x4b>
+0x401318:8:nopl 0x0(%rax,%rax,1)
+0x401320:1:push %rbp
+0x401321:3:mov %rsp,%rbp
+0x401324:8:movss 0x3cd8(%rip),%xmm0
+0x40132c:7:movl $0x0,-0x4(%rbp)
+0x401333:3:mov -0x4(%rbp),%eax
+0x401336:2:neg %eax
+0x401338:5:mov $0x1,%ecx
+0x40133d:2:sub %eax,%ecx
+0x40133f:3:mov %ecx,-0x4(%rbp)
+0x401342:3:movslq %ecx,%rdx
+0x401345:7:imul $0x51eb851f,%rdx,%rdx
+0x40134c:3:mov %rdx,%rsi
+0x40134f:4:shr $0x3f,%rsi
+0x401353:2:mov %esi,%eax
+0x401355:4:sar $0x23,%rdx
+0x401359:2:mov %edx,%edi
+0x40135b:2:add %eax,%edi
+0x40135d:2:mov %edi,%edx
+0x40135f:3:lea (%rdx,%rdx,4),%eax
+0x401362:2:mov %eax,%edx
+0x401364:3:lea (%rdx,%rdx,4),%eax
+0x401367:2:sub %eax,%ecx
+0x401369:3:movslq %ecx,%rdx
+0x40136c:7:mov 0x405010(,%rdx,4),%eax
+0x401373:2:mov %eax,%edx
+0x401375:5:cvtsi2ss %rdx,%xmm1
+0x40137a:4:divss %xmm0,%xmm1
+0x40137e:3:movaps %xmm1,%xmm0
+0x401381:1:pop %rbp
+0x401382:1:ret
+0x401383:13:data16 data16 data16 cs nopw 0x0(%rax,%rax,1)
+0x401390:1:push %rbp
+0x401391:3:mov %rsp,%rbp
+0x401394:4:sub $0x10,%rsp
+0x401398:10:movabs $0x405074,%rdi
+0x4013a2:10:movabs $0x405077,%rsi
+0x4013ac:2:mov $0x0,%al
+0x4013ae:5:call 0000000000401030 <printf@plt>
+0x4013b3:3:mov %eax,-0x4(%rbp)
+0x4013b6:4:add $0x10,%rsp
+0x4013ba:1:pop %rbp
+0x4013bb:1:ret
+0x4013bc:4:nopl 0x0(%rax)
+0x4013c0:1:push %rbp
+0x4013c1:3:mov %rsp,%rbp
+0x4013c4:2:push %r15
+0x4013c6:2:push %r14
+0x4013c8:2:push %r13
+0x4013ca:2:push %r12
+0x4013cc:1:push %rbx
+0x4013cd:7:sub $0x318,%rsp
+0x4013d4:7:mov 0x407048,%eax
+0x4013db:7:mov 0x407060,%ecx
+0x4013e2:2:mov %eax,%edx
+0x4013e4:6:sub $0x3bba5d90,%edx
+0x4013ea:3:sub $0x1,%edx
+0x4013ed:6:add $0x3bba5d90,%edx
+0x4013f3:3:imul %edx,%eax
+0x4013f6:3:and $0x1,%eax
+0x4013f9:3:cmp $0x0,%eax
+0x4013fc:4:sete %sil
+0x401400:4:and $0x1,%sil
+0x401404:4:mov %sil,-0x3a(%rbp)
+0x401408:3:cmp $0xa,%ecx
+0x40140b:4:setl %sil
+0x40140f:4:and $0x1,%sil
+0x401413:4:mov %sil,-0x39(%rbp)
+0x401417:7:movl $0x965439d4,-0x40(%rbp)
+0x40141e:3:mov %edi,-0x44(%rbp)
+0x401421:3:mov -0x40(%rbp),%eax
+0x401424:2:mov %eax,%ecx
+0x401426:6:sub $0x80092f52,%ecx
+0x40142c:3:mov %eax,-0x48(%rbp)
+0x40142f:3:mov %ecx,-0x4c(%rbp)
+0x401432:6:je 000000000040340f <get_scan_code_from_ascii+0x204f>
+0x401438:5:jmp 000000000040143d <get_scan_code_from_ascii+0x7d>
+0x40143d:3:mov -0x48(%rbp),%eax
+0x401440:5:sub $0x8102ae67,%eax
+0x401445:3:mov %eax,-0x50(%rbp)
+0x401448:6:je 0000000000403a4d <get_scan_code_from_ascii+0x268d>
+0x40144e:5:jmp 0000000000401453 <get_scan_code_from_ascii+0x93>
+0x401453:3:mov -0x48(%rbp),%eax
+0x401456:5:sub $0x81a332f1,%eax
+0x40145b:3:mov %eax,-0x54(%rbp)
+0x40145e:6:je 00000000004044ce <get_scan_code_from_ascii+0x310e>
+0x401464:5:jmp 0000000000401469 <get_scan_code_from_ascii+0xa9>
+0x401469:3:mov -0x48(%rbp),%eax
+0x40146c:5:sub $0x8428e348,%eax
+0x401471:3:mov %eax,-0x58(%rbp)
+0x401474:6:je 000000000040326b <get_scan_code_from_ascii+0x1eab>
+0x40147a:5:jmp 000000000040147f <get_scan_code_from_ascii+0xbf>
+0x40147f:3:mov -0x48(%rbp),%eax
+0x401482:5:sub $0x85a0a5c3,%eax
+0x401487:3:mov %eax,-0x5c(%rbp)
+0x40148a:6:je 0000000000403dc6 <get_scan_code_from_ascii+0x2a06>
+0x401490:5:jmp 0000000000401495 <get_scan_code_from_ascii+0xd5>
+0x401495:3:mov -0x48(%rbp),%eax
+0x401498:5:sub $0x86230d08,%eax
+0x40149d:3:mov %eax,-0x60(%rbp)
+0x4014a0:6:je 0000000000402e4f <get_scan_code_from_ascii+0x1a8f>
+0x4014a6:5:jmp 00000000004014ab <get_scan_code_from_ascii+0xeb>
+0x4014ab:3:mov -0x48(%rbp),%eax
+0x4014ae:5:sub $0x86bd3c45,%eax
+0x4014b3:3:mov %eax,-0x64(%rbp)
+0x4014b6:6:je 000000000040422c <get_scan_code_from_ascii+0x2e6c>
+0x4014bc:5:jmp 00000000004014c1 <get_scan_code_from_ascii+0x101>
+0x4014c1:3:mov -0x48(%rbp),%eax
+0x4014c4:5:sub $0x870dc3ea,%eax
+0x4014c9:3:mov %eax,-0x68(%rbp)
+0x4014cc:6:je 0000000000403403 <get_scan_code_from_ascii+0x2043>
+0x4014d2:5:jmp 00000000004014d7 <get_scan_code_from_ascii+0x117>
+0x4014d7:3:mov -0x48(%rbp),%eax
+0x4014da:5:sub $0x8722a812,%eax
+0x4014df:3:mov %eax,-0x6c(%rbp)
+0x4014e2:6:je 0000000000402f7e <get_scan_code_from_ascii+0x1bbe>
+0x4014e8:5:jmp 00000000004014ed <get_scan_code_from_ascii+0x12d>
+0x4014ed:3:mov -0x48(%rbp),%eax
+0x4014f0:5:sub $0x88f82337,%eax
+0x4014f5:3:mov %eax,-0x70(%rbp)
+0x4014f8:6:je 000000000040283a <get_scan_code_from_ascii+0x147a>
+0x4014fe:5:jmp 0000000000401503 <get_scan_code_from_ascii+0x143>
+0x401503:3:mov -0x48(%rbp),%eax
+0x401506:5:sub $0x8c7a89fa,%eax
+0x40150b:3:mov %eax,-0x74(%rbp)
+0x40150e:6:je 0000000000403eb8 <get_scan_code_from_ascii+0x2af8>
+0x401514:5:jmp 0000000000401519 <get_scan_code_from_ascii+0x159>
+0x401519:3:mov -0x48(%rbp),%eax
+0x40151c:5:sub $0x8c8f8004,%eax
+0x401521:3:mov %eax,-0x78(%rbp)
+0x401524:6:je 0000000000402cba <get_scan_code_from_ascii+0x18fa>
+0x40152a:5:jmp 000000000040152f <get_scan_code_from_ascii+0x16f>
+0x40152f:3:mov -0x48(%rbp),%eax
+0x401532:5:sub $0x8cf35306,%eax
+0x401537:3:mov %eax,-0x7c(%rbp)
+0x40153a:6:je 0000000000403a85 <get_scan_code_from_ascii+0x26c5>
+0x401540:5:jmp 0000000000401545 <get_scan_code_from_ascii+0x185>
+0x401545:3:mov -0x48(%rbp),%eax
+0x401548:5:sub $0x8d23c96a,%eax
+0x40154d:3:mov %eax,-0x80(%rbp)
+0x401550:6:je 0000000000402a9e <get_scan_code_from_ascii+0x16de>
+0x401556:5:jmp 000000000040155b <get_scan_code_from_ascii+0x19b>
+0x40155b:3:mov -0x48(%rbp),%eax
+0x40155e:5:sub $0x8d5cb1bd,%eax
+0x401563:6:mov %eax,-0x84(%rbp)
+0x401569:6:je 00000000004028af <get_scan_code_from_ascii+0x14ef>
+0x40156f:5:jmp 0000000000401574 <get_scan_code_from_ascii+0x1b4>
+0x401574:3:mov -0x48(%rbp),%eax
+0x401577:5:sub $0x8e4af87b,%eax
+0x40157c:6:mov %eax,-0x88(%rbp)
+0x401582:6:je 0000000000403174 <get_scan_code_from_ascii+0x1db4>
+0x401588:5:jmp 000000000040158d <get_scan_code_from_ascii+0x1cd>
+0x40158d:3:mov -0x48(%rbp),%eax
+0x401590:5:sub $0x8f9cab62,%eax
+0x401595:6:mov %eax,-0x8c(%rbp)
+0x40159b:6:je 0000000000404264 <get_scan_code_from_ascii+0x2ea4>
+0x4015a1:5:jmp 00000000004015a6 <get_scan_code_from_ascii+0x1e6>
+0x4015a6:3:mov -0x48(%rbp),%eax
+0x4015a9:5:sub $0x92714500,%eax
+0x4015ae:6:mov %eax,-0x90(%rbp)
+0x4015b4:6:je 0000000000402a17 <get_scan_code_from_ascii+0x1657>
+0x4015ba:5:jmp 00000000004015bf <get_scan_code_from_ascii+0x1ff>
+0x4015bf:3:mov -0x48(%rbp),%eax
+0x4015c2:5:sub $0x9372cb02,%eax
+0x4015c7:6:mov %eax,-0x94(%rbp)
+0x4015cd:6:je 0000000000402e6a <get_scan_code_from_ascii+0x1aaa>
+0x4015d3:5:jmp 00000000004015d8 <get_scan_code_from_ascii+0x218>
+0x4015d8:3:mov -0x48(%rbp),%eax
+0x4015db:5:sub $0x93fd9b72,%eax
+0x4015e0:6:mov %eax,-0x98(%rbp)
+0x4015e6:6:je 0000000000404290 <get_scan_code_from_ascii+0x2ed0>
+0x4015ec:5:jmp 00000000004015f1 <get_scan_code_from_ascii+0x231>
+0x4015f1:3:mov -0x48(%rbp),%eax
+0x4015f4:5:sub $0x9493c5b6,%eax
+0x4015f9:6:mov %eax,-0x9c(%rbp)
+0x4015ff:6:je 0000000000402990 <get_scan_code_from_ascii+0x15d0>
+0x401605:5:jmp 000000000040160a <get_scan_code_from_ascii+0x24a>
+0x40160a:3:mov -0x48(%rbp),%eax
+0x40160d:5:sub $0x95a84012,%eax
+0x401612:6:mov %eax,-0xa0(%rbp)
+0x401618:6:je 0000000000404526 <get_scan_code_from_ascii+0x3166>
+0x40161e:5:jmp 0000000000401623 <get_scan_code_from_ascii+0x263>
+0x401623:3:mov -0x48(%rbp),%eax
+0x401626:5:sub $0x960e3afd,%eax
+0x40162b:6:mov %eax,-0xa4(%rbp)
+0x401631:6:je 0000000000403196 <get_scan_code_from_ascii+0x1dd6>
+0x401637:5:jmp 000000000040163c <get_scan_code_from_ascii+0x27c>
+0x40163c:3:mov -0x48(%rbp),%eax
+0x40163f:5:sub $0x961d0f87,%eax
+0x401644:6:mov %eax,-0xa8(%rbp)
+0x40164a:6:je 0000000000403eda <get_scan_code_from_ascii+0x2b1a>
+0x401650:5:jmp 0000000000401655 <get_scan_code_from_ascii+0x295>
+0x401655:3:mov -0x48(%rbp),%eax
+0x401658:5:sub $0x965439d4,%eax
+0x40165d:6:mov %eax,-0xac(%rbp)
+0x401663:6:je 000000000040262c <get_scan_code_from_ascii+0x126c>
+0x401669:5:jmp 000000000040166e <get_scan_code_from_ascii+0x2ae>
+0x40166e:3:mov -0x48(%rbp),%eax
+0x401671:5:sub $0x9691a320,%eax
+0x401676:6:mov %eax,-0xb0(%rbp)
+0x40167c:6:je 0000000000402dad <get_scan_code_from_ascii+0x19ed>
+0x401682:5:jmp 0000000000401687 <get_scan_code_from_ascii+0x2c7>
+0x401687:3:mov -0x48(%rbp),%eax
+0x40168a:5:sub $0x97606577,%eax
+0x40168f:6:mov %eax,-0xb4(%rbp)
+0x401695:6:je 00000000004038fc <get_scan_code_from_ascii+0x253c>
+0x40169b:5:jmp 00000000004016a0 <get_scan_code_from_ascii+0x2e0>
+0x4016a0:3:mov -0x48(%rbp),%eax
+0x4016a3:5:sub $0x97729a45,%eax
+0x4016a8:6:mov %eax,-0xb8(%rbp)
+0x4016ae:6:je 00000000004028eb <get_scan_code_from_ascii+0x152b>
+0x4016b4:5:jmp 00000000004016b9 <get_scan_code_from_ascii+0x2f9>
+0x4016b9:3:mov -0x48(%rbp),%eax
+0x4016bc:5:sub $0x99e1c8a3,%eax
+0x4016c1:6:mov %eax,-0xbc(%rbp)
+0x4016c7:6:je 0000000000402d41 <get_scan_code_from_ascii+0x1981>
+0x4016cd:5:jmp 00000000004016d2 <get_scan_code_from_ascii+0x312>
+0x4016d2:3:mov -0x48(%rbp),%eax
+0x4016d5:5:sub $0x9acc7023,%eax
+0x4016da:6:mov %eax,-0xc0(%rbp)
+0x4016e0:6:je 0000000000404594 <get_scan_code_from_ascii+0x31d4>
+0x4016e6:5:jmp 00000000004016eb <get_scan_code_from_ascii+0x32b>
+0x4016eb:3:mov -0x48(%rbp),%eax
+0x4016ee:5:sub $0x9e5b73fc,%eax
+0x4016f3:6:mov %eax,-0xc4(%rbp)
+0x4016f9:6:je 00000000004032fb <get_scan_code_from_ascii+0x1f3b>
+0x4016ff:5:jmp 0000000000401704 <get_scan_code_from_ascii+0x344>
+0x401704:3:mov -0x48(%rbp),%eax
+0x401707:5:sub $0x9ed84f9c,%eax
+0x40170c:6:mov %eax,-0xc8(%rbp)
+0x401712:6:je 000000000040457e <get_scan_code_from_ascii+0x31be>
+0x401718:5:jmp 000000000040171d <get_scan_code_from_ascii+0x35d>
+0x40171d:3:mov -0x48(%rbp),%eax
+0x401720:5:sub $0x9eecd780,%eax
+0x401725:6:mov %eax,-0xcc(%rbp)
+0x40172b:6:je 00000000004032a3 <get_scan_code_from_ascii+0x1ee3>
+0x401731:5:jmp 0000000000401736 <get_scan_code_from_ascii+0x376>
+0x401736:3:mov -0x48(%rbp),%eax
+0x401739:5:sub $0x9f77863d,%eax
+0x40173e:6:mov %eax,-0xd0(%rbp)
+0x401744:6:je 0000000000403b5a <get_scan_code_from_ascii+0x279a>
+0x40174a:5:jmp 000000000040174f <get_scan_code_from_ascii+0x38f>
+0x40174f:3:mov -0x48(%rbp),%eax
+0x401752:5:sub $0xa11d401a,%eax
+0x401757:6:mov %eax,-0xd4(%rbp)
+0x40175d:6:je 00000000004034ff <get_scan_code_from_ascii+0x213f>
+0x401763:5:jmp 0000000000401768 <get_scan_code_from_ascii+0x3a8>
+0x401768:3:mov -0x48(%rbp),%eax
+0x40176b:5:sub $0xa3b9121f,%eax
+0x401770:6:mov %eax,-0xd8(%rbp)
+0x401776:6:je 000000000040380f <get_scan_code_from_ascii+0x244f>
+0x40177c:5:jmp 0000000000401781 <get_scan_code_from_ascii+0x3c1>
+0x401781:3:mov -0x48(%rbp),%eax
+0x401784:5:sub $0xa620257c,%eax
+0x401789:6:mov %eax,-0xdc(%rbp)
+0x40178f:6:je 0000000000403a9b <get_scan_code_from_ascii+0x26db>
+0x401795:5:jmp 000000000040179a <get_scan_code_from_ascii+0x3da>
+0x40179a:3:mov -0x48(%rbp),%eax
+0x40179d:5:sub $0xa62919a6,%eax
+0x4017a2:6:mov %eax,-0xe0(%rbp)
+0x4017a8:6:je 0000000000402d26 <get_scan_code_from_ascii+0x1966>
+0x4017ae:5:jmp 00000000004017b3 <get_scan_code_from_ascii+0x3f3>
+0x4017b3:3:mov -0x48(%rbp),%eax
+0x4017b6:5:sub $0xa6769a6e,%eax
+0x4017bb:6:mov %eax,-0xe4(%rbp)
+0x4017c1:6:je 0000000000404238 <get_scan_code_from_ascii+0x2e78>
+0x4017c7:5:jmp 00000000004017cc <get_scan_code_from_ascii+0x40c>
+0x4017cc:3:mov -0x48(%rbp),%eax
+0x4017cf:5:sub $0xa899a27f,%eax
+0x4017d4:6:mov %eax,-0xe8(%rbp)
+0x4017da:6:je 0000000000403908 <get_scan_code_from_ascii+0x2548>
+0x4017e0:5:jmp 00000000004017e5 <get_scan_code_from_ascii+0x425>
+0x4017e5:3:mov -0x48(%rbp),%eax
+0x4017e8:5:sub $0xac630abf,%eax
+0x4017ed:6:mov %eax,-0xec(%rbp)
+0x4017f3:6:je 0000000000402726 <get_scan_code_from_ascii+0x1366>
+0x4017f9:5:jmp 00000000004017fe <get_scan_code_from_ascii+0x43e>
+0x4017fe:3:mov -0x48(%rbp),%eax
+0x401801:5:sub $0xaf9bc58f,%eax
+0x401806:6:mov %eax,-0xf0(%rbp)
+0x40180c:6:je 0000000000402a83 <get_scan_code_from_ascii+0x16c3>
+0x401812:5:jmp 0000000000401817 <get_scan_code_from_ascii+0x457>
+0x401817:3:mov -0x48(%rbp),%eax
+0x40181a:5:sub $0xb0334821,%eax
+0x40181f:6:mov %eax,-0xf4(%rbp)
+0x401825:6:je 0000000000402d0b <get_scan_code_from_ascii+0x194b>
+0x40182b:5:jmp 0000000000401830 <get_scan_code_from_ascii+0x470>
+0x401830:3:mov -0x48(%rbp),%eax
+0x401833:5:sub $0xb0508af5,%eax
+0x401838:6:mov %eax,-0xf8(%rbp)
+0x40183e:6:je 0000000000402cd5 <get_scan_code_from_ascii+0x1915>
+0x401844:5:jmp 0000000000401849 <get_scan_code_from_ascii+0x489>
+0x401849:3:mov -0x48(%rbp),%eax
+0x40184c:5:sub $0xb0599ec1,%eax
+0x401851:6:mov %eax,-0xfc(%rbp)
+0x401857:6:je 000000000040274d <get_scan_code_from_ascii+0x138d>
+0x40185d:5:jmp 0000000000401862 <get_scan_code_from_ascii+0x4a2>
+0x401862:3:mov -0x48(%rbp),%eax
+0x401865:5:sub $0xb079ba10,%eax
+0x40186a:6:mov %eax,-0x100(%rbp)
+0x401870:6:je 00000000004044e4 <get_scan_code_from_ascii+0x3124>
+0x401876:5:jmp 000000000040187b <get_scan_code_from_ascii+0x4bb>
+0x40187b:3:mov -0x48(%rbp),%eax
+0x40187e:5:sub $0xb42461f6,%eax
+0x401883:6:mov %eax,-0x104(%rbp)
+0x401889:6:je 00000000004027a4 <get_scan_code_from_ascii+0x13e4>
+0x40188f:5:jmp 0000000000401894 <get_scan_code_from_ascii+0x4d4>
+0x401894:3:mov -0x48(%rbp),%eax
+0x401897:5:sub $0xb580ed7a,%eax
+0x40189c:6:mov %eax,-0x108(%rbp)
+0x4018a2:6:je 0000000000404510 <get_scan_code_from_ascii+0x3150>
+0x4018a8:5:jmp 00000000004018ad <get_scan_code_from_ascii+0x4ed>
+0x4018ad:3:mov -0x48(%rbp),%eax
+0x4018b0:5:sub $0xba3b5024,%eax
+0x4018b5:6:mov %eax,-0x10c(%rbp)
+0x4018bb:6:je 00000000004044b8 <get_scan_code_from_ascii+0x30f8>
+0x4018c1:5:jmp 00000000004018c6 <get_scan_code_from_ascii+0x506>
+0x4018c6:3:mov -0x48(%rbp),%eax
+0x4018c9:5:sub $0xbb42efd2,%eax
+0x4018ce:6:mov %eax,-0x110(%rbp)
+0x4018d4:6:je 0000000000402c18 <get_scan_code_from_ascii+0x1858>
+0x4018da:5:jmp 00000000004018df <get_scan_code_from_ascii+0x51f>
+0x4018df:3:mov -0x48(%rbp),%eax
+0x4018e2:5:sub $0xbb8c522c,%eax
+0x4018e7:6:mov %eax,-0x114(%rbp)
+0x4018ed:6:je 000000000040394a <get_scan_code_from_ascii+0x258a>
+0x4018f3:5:jmp 00000000004018f8 <get_scan_code_from_ascii+0x538>
+0x4018f8:3:mov -0x48(%rbp),%eax
+0x4018fb:5:sub $0xbbeec0ea,%eax
+0x401900:6:mov %eax,-0x118(%rbp)
+0x401906:6:je 0000000000404198 <get_scan_code_from_ascii+0x2dd8>
+0x40190c:5:jmp 0000000000401911 <get_scan_code_from_ascii+0x551>
+0x401911:3:mov -0x48(%rbp),%eax
+0x401914:5:sub $0xbe8b553a,%eax
+0x401919:6:mov %eax,-0x11c(%rbp)
+0x40191f:6:je 000000000040424e <get_scan_code_from_ascii+0x2e8e>
+0x401925:5:jmp 000000000040192a <get_scan_code_from_ascii+0x56a>
+0x40192a:3:mov -0x48(%rbp),%eax
+0x40192d:5:sub $0xc12db140,%eax
+0x401932:6:mov %eax,-0x120(%rbp)
+0x401938:6:je 0000000000403960 <get_scan_code_from_ascii+0x25a0>
+0x40193e:5:jmp 0000000000401943 <get_scan_code_from_ascii+0x583>
+0x401943:3:mov -0x48(%rbp),%eax
+0x401946:5:sub $0xc1cecb42,%eax
+0x40194b:6:mov %eax,-0x124(%rbp)
+0x401951:6:je 000000000040328d <get_scan_code_from_ascii+0x1ecd>
+0x401957:5:jmp 000000000040195c <get_scan_code_from_ascii+0x59c>
+0x40195c:3:mov -0x48(%rbp),%eax
+0x40195f:5:sub $0xc3e26185,%eax
+0x401964:6:mov %eax,-0x128(%rbp)
+0x40196a:6:je 0000000000402ab9 <get_scan_code_from_ascii+0x16f9>
+0x401970:5:jmp 0000000000401975 <get_scan_code_from_ascii+0x5b5>
+0x401975:3:mov -0x48(%rbp),%eax
+0x401978:5:sub $0xc5ca2915,%eax
+0x40197d:6:mov %eax,-0x12c(%rbp)
+0x401983:6:je 00000000004037e3 <get_scan_code_from_ascii+0x2423>
+0x401989:5:jmp 000000000040198e <get_scan_code_from_ascii+0x5ce>
+0x40198e:3:mov -0x48(%rbp),%eax
+0x401991:5:sub $0xc63931e7,%eax
+0x401996:6:mov %eax,-0x130(%rbp)
+0x40199c:6:je 000000000040427a <get_scan_code_from_ascii+0x2eba>
+0x4019a2:5:jmp 00000000004019a7 <get_scan_code_from_ascii+0x5e7>
+0x4019a7:3:mov -0x48(%rbp),%eax
+0x4019aa:5:sub $0xc8271b2f,%eax
+0x4019af:6:mov %eax,-0x134(%rbp)
+0x4019b5:6:je 0000000000404108 <get_scan_code_from_ascii+0x2d48>
+0x4019bb:5:jmp 00000000004019c0 <get_scan_code_from_ascii+0x600>
+0x4019c0:3:mov -0x48(%rbp),%eax
+0x4019c3:5:sub $0xc90eeec1,%eax
+0x4019c8:6:mov %eax,-0x138(%rbp)
+0x4019ce:6:je 0000000000404314 <get_scan_code_from_ascii+0x2f54>
+0x4019d4:5:jmp 00000000004019d9 <get_scan_code_from_ascii+0x619>
+0x4019d9:3:mov -0x48(%rbp),%eax
+0x4019dc:5:sub $0xca08272d,%eax
+0x4019e1:6:mov %eax,-0x13c(%rbp)
+0x4019e7:6:je 00000000004030e0 <get_scan_code_from_ascii+0x1d20>
+0x4019ed:5:jmp 00000000004019f2 <get_scan_code_from_ascii+0x632>
+0x4019f2:3:mov -0x48(%rbp),%eax
+0x4019f5:5:sub $0xca90db63,%eax
+0x4019fa:6:mov %eax,-0x140(%rbp)
+0x401a00:6:je 0000000000404010 <get_scan_code_from_ascii+0x2c50>
+0x401a06:5:jmp 0000000000401a0b <get_scan_code_from_ascii+0x64b>
+0x401a0b:3:mov -0x48(%rbp),%eax
+0x401a0e:5:sub $0xcca72a68,%eax
+0x401a13:6:mov %eax,-0x144(%rbp)
+0x401a19:6:je 000000000040375f <get_scan_code_from_ascii+0x239f>
+0x401a1f:5:jmp 0000000000401a24 <get_scan_code_from_ascii+0x664>
+0x401a24:3:mov -0x48(%rbp),%eax
+0x401a27:5:sub $0xcd4cdc3e,%eax
+0x401a2c:6:mov %eax,-0x148(%rbp)
+0x401a32:6:je 0000000000403af3 <get_scan_code_from_ascii+0x2733>
+0x401a38:5:jmp 0000000000401a3d <get_scan_code_from_ascii+0x67d>
+0x401a3d:3:mov -0x48(%rbp),%eax
+0x401a40:5:sub $0xcf6ef76b,%eax
+0x401a45:6:mov %eax,-0x14c(%rbp)
+0x401a4b:6:je 0000000000404435 <get_scan_code_from_ascii+0x3075>
+0x401a51:5:jmp 0000000000401a56 <get_scan_code_from_ascii+0x696>
+0x401a56:3:mov -0x48(%rbp),%eax
+0x401a59:5:sub $0xd49b55a6,%eax
+0x401a5e:6:mov %eax,-0x150(%rbp)
+0x401a64:6:je 00000000004027c2 <get_scan_code_from_ascii+0x1402>
+0x401a6a:5:jmp 0000000000401a6f <get_scan_code_from_ascii+0x6af>
+0x401a6f:3:mov -0x48(%rbp),%eax
+0x401a72:5:sub $0xd4b208e6,%eax
+0x401a77:6:mov %eax,-0x154(%rbp)
+0x401a7d:6:je 00000000004042d2 <get_scan_code_from_ascii+0x2f12>
+0x401a83:5:jmp 0000000000401a88 <get_scan_code_from_ascii+0x6c8>
+0x401a88:3:mov -0x48(%rbp),%eax
+0x401a8b:5:sub $0xd5fec630,%eax
+0x401a90:6:mov %eax,-0x158(%rbp)
+0x401a96:6:je 00000000004034f3 <get_scan_code_from_ascii+0x2133>
+0x401a9c:5:jmp 0000000000401aa1 <get_scan_code_from_ascii+0x6e1>
+0x401aa1:3:mov -0x48(%rbp),%eax
+0x401aa4:5:sub $0xd695722f,%eax
+0x401aa9:6:mov %eax,-0x15c(%rbp)
+0x401aaf:6:je 00000000004039b3 <get_scan_code_from_ascii+0x25f3>
+0x401ab5:5:jmp 0000000000401aba <get_scan_code_from_ascii+0x6fa>
+0x401aba:3:mov -0x48(%rbp),%eax
+0x401abd:5:sub $0xd76e4790,%eax
+0x401ac2:6:mov %eax,-0x160(%rbp)
+0x401ac8:6:je 0000000000403607 <get_scan_code_from_ascii+0x2247>
+0x401ace:5:jmp 0000000000401ad3 <get_scan_code_from_ascii+0x713>
+0x401ad3:3:mov -0x48(%rbp),%eax
+0x401ad6:5:sub $0xd7cdb942,%eax
+0x401adb:6:mov %eax,-0x164(%rbp)
+0x401ae1:6:je 00000000004042fe <get_scan_code_from_ascii+0x2f3e>
+0x401ae7:5:jmp 0000000000401aec <get_scan_code_from_ascii+0x72c>
+0x401aec:3:mov -0x48(%rbp),%eax
+0x401aef:5:sub $0xd9f49f16,%eax
+0x401af4:6:mov %eax,-0x168(%rbp)
+0x401afa:6:je 0000000000402b40 <get_scan_code_from_ascii+0x1780>
+0x401b00:5:jmp 0000000000401b05 <get_scan_code_from_ascii+0x745>
+0x401b05:3:mov -0x48(%rbp),%eax
+0x401b08:5:sub $0xdb91702d,%eax
+0x401b0d:6:mov %eax,-0x16c(%rbp)
+0x401b13:6:je 00000000004036b9 <get_scan_code_from_ascii+0x22f9>
+0x401b19:5:jmp 0000000000401b1e <get_scan_code_from_ascii+0x75e>
+0x401b1e:3:mov -0x48(%rbp),%eax
+0x401b21:5:sub $0xdc0ac16c,%eax
+0x401b26:6:mov %eax,-0x170(%rbp)
+0x401b2c:6:je 00000000004044a2 <get_scan_code_from_ascii+0x30e2>
+0x401b32:5:jmp 0000000000401b37 <get_scan_code_from_ascii+0x777>
+0x401b37:3:mov -0x48(%rbp),%eax
+0x401b3a:5:sub $0xde905bb0,%eax
+0x401b3f:6:mov %eax,-0x174(%rbp)
+0x401b45:6:je 00000000004042a6 <get_scan_code_from_ascii+0x2ee6>
+0x401b4b:5:jmp 0000000000401b50 <get_scan_code_from_ascii+0x790>
+0x401b50:3:mov -0x48(%rbp),%eax
+0x401b53:5:sub $0xe05281c8,%eax
+0x401b58:6:mov %eax,-0x178(%rbp)
+0x401b5e:6:je 0000000000404004 <get_scan_code_from_ascii+0x2c44>
+0x401b64:5:jmp 0000000000401b69 <get_scan_code_from_ascii+0x7a9>
+0x401b69:3:mov -0x48(%rbp),%eax
+0x401b6c:5:sub $0xe0748e08,%eax
+0x401b71:6:mov %eax,-0x17c(%rbp)
+0x401b77:6:je 00000000004027fe <get_scan_code_from_ascii+0x143e>
+0x401b7d:5:jmp 0000000000401b82 <get_scan_code_from_ascii+0x7c2>
+0x401b82:3:mov -0x48(%rbp),%eax
+0x401b85:5:sub $0xe1b6d767,%eax
+0x401b8a:6:mov %eax,-0x180(%rbp)
+0x401b90:6:je 0000000000402d92 <get_scan_code_from_ascii+0x19d2>
+0x401b96:5:jmp 0000000000401b9b <get_scan_code_from_ascii+0x7db>
+0x401b9b:3:mov -0x48(%rbp),%eax
+0x401b9e:5:sub $0xe73d3bbc,%eax
+0x401ba3:6:mov %eax,-0x184(%rbp)
+0x401ba9:6:je 0000000000402dc8 <get_scan_code_from_ascii+0x1a08>
+0x401baf:5:jmp 0000000000401bb4 <get_scan_code_from_ascii+0x7f4>
+0x401bb4:3:mov -0x48(%rbp),%eax
+0x401bb7:5:sub $0xe83ad7b9,%eax
+0x401bbc:6:mov %eax,-0x188(%rbp)
+0x401bc2:6:je 0000000000403c58 <get_scan_code_from_ascii+0x2898>
+0x401bc8:5:jmp 0000000000401bcd <get_scan_code_from_ascii+0x80d>
+0x401bcd:3:mov -0x48(%rbp),%eax
+0x401bd0:5:sub $0xeed98bb5,%eax
+0x401bd5:6:mov %eax,-0x18c(%rbp)
+0x401bdb:6:je 000000000040448c <get_scan_code_from_ascii+0x30cc>
+0x401be1:5:jmp 0000000000401be6 <get_scan_code_from_ascii+0x826>
+0x401be6:3:mov -0x48(%rbp),%eax
+0x401be9:5:sub $0xef171933,%eax
+0x401bee:6:mov %eax,-0x190(%rbp)
+0x401bf4:6:je 00000000004045aa <get_scan_code_from_ascii+0x31ea>
+0x401bfa:5:jmp 0000000000401bff <get_scan_code_from_ascii+0x83f>
+0x401bff:3:mov -0x48(%rbp),%eax
+0x401c02:5:sub $0xf0cf0464,%eax
+0x401c07:6:mov %eax,-0x194(%rbp)
+0x401c0d:6:je 00000000004032b9 <get_scan_code_from_ascii+0x1ef9>
+0x401c13:5:jmp 0000000000401c18 <get_scan_code_from_ascii+0x858>
+0x401c18:3:mov -0x48(%rbp),%eax
+0x401c1b:5:sub $0xf142892c,%eax
+0x401c20:6:mov %eax,-0x198(%rbp)
+0x401c26:6:je 00000000004031ac <get_scan_code_from_ascii+0x1dec>
+0x401c2c:5:jmp 0000000000401c31 <get_scan_code_from_ascii+0x871>
+0x401c31:3:mov -0x48(%rbp),%eax
+0x401c34:5:sub $0xf30f1fd1,%eax
+0x401c39:6:mov %eax,-0x19c(%rbp)
+0x401c3f:6:je 0000000000402e85 <get_scan_code_from_ascii+0x1ac5>
+0x401c45:5:jmp 0000000000401c4a <get_scan_code_from_ascii+0x88a>
+0x401c4a:3:mov -0x48(%rbp),%eax
+0x401c4d:5:sub $0xf3e8b053,%eax
+0x401c52:6:mov %eax,-0x1a0(%rbp)
+0x401c58:6:je 0000000000402d77 <get_scan_code_from_ascii+0x19b7>
+0x401c5e:5:jmp 0000000000401c63 <get_scan_code_from_ascii+0x8a3>
+0x401c63:3:mov -0x48(%rbp),%eax
+0x401c66:5:sub $0xf4c76df3,%eax
+0x401c6b:6:mov %eax,-0x1a4(%rbp)
+0x401c71:6:je 000000000040293f <get_scan_code_from_ascii+0x157f>
+0x401c77:5:jmp 0000000000401c7c <get_scan_code_from_ascii+0x8bc>
+0x401c7c:3:mov -0x48(%rbp),%eax
+0x401c7f:5:sub $0xf70a4573,%eax
+0x401c84:6:mov %eax,-0x1a8(%rbp)
+0x401c8a:6:je 00000000004032cf <get_scan_code_from_ascii+0x1f0f>
+0x401c90:5:jmp 0000000000401c95 <get_scan_code_from_ascii+0x8d5>
+0x401c95:3:mov -0x48(%rbp),%eax
+0x401c98:5:sub $0xf7945867,%eax
+0x401c9d:6:mov %eax,-0x1ac(%rbp)
+0x401ca3:6:je 0000000000402786 <get_scan_code_from_ascii+0x13c6>
+0x401ca9:5:jmp 0000000000401cae <get_scan_code_from_ascii+0x8ee>
+0x401cae:3:mov -0x48(%rbp),%eax
+0x401cb1:5:sub $0xf8a70942,%eax
+0x401cb6:6:mov %eax,-0x1b0(%rbp)
+0x401cbc:6:je 0000000000403f6a <get_scan_code_from_ascii+0x2baa>
+0x401cc2:5:jmp 0000000000401cc7 <get_scan_code_from_ascii+0x907>
+0x401cc7:3:mov -0x48(%rbp),%eax
+0x401cca:5:sub $0xfa4cf226,%eax
+0x401ccf:6:mov %eax,-0x1b4(%rbp)
+0x401cd5:6:je 0000000000403a59 <get_scan_code_from_ascii+0x2699>
+0x401cdb:5:jmp 0000000000401ce0 <get_scan_code_from_ascii+0x920>
+0x401ce0:3:mov -0x48(%rbp),%eax
+0x401ce3:5:sub $0xfeddaede,%eax
+0x401ce8:6:mov %eax,-0x1b8(%rbp)
+0x401cee:6:je 000000000040295a <get_scan_code_from_ascii+0x159a>
+0x401cf4:5:jmp 0000000000401cf9 <get_scan_code_from_ascii+0x939>
+0x401cf9:3:mov -0x48(%rbp),%eax
+0x401cfc:5:sub $0xe6b035,%eax
+0x401d01:6:mov %eax,-0x1bc(%rbp)
+0x401d07:6:je 00000000004045c0 <get_scan_code_from_ascii+0x3200>
+0x401d0d:5:jmp 0000000000401d12 <get_scan_code_from_ascii+0x952>
+0x401d12:3:mov -0x48(%rbp),%eax
+0x401d15:5:sub $0x2637f3d,%eax
+0x401d1a:6:mov %eax,-0x1c0(%rbp)
+0x401d20:6:je 0000000000402b5b <get_scan_code_from_ascii+0x179b>
+0x401d26:5:jmp 0000000000401d2b <get_scan_code_from_ascii+0x96b>
+0x401d2b:3:mov -0x48(%rbp),%eax
+0x401d2e:5:sub $0x363356e,%eax
+0x401d33:6:mov %eax,-0x1c4(%rbp)
+0x401d39:6:je 000000000040268d <get_scan_code_from_ascii+0x12cd>
+0x401d3f:5:jmp 0000000000401d44 <get_scan_code_from_ascii+0x984>
+0x401d44:3:mov -0x48(%rbp),%eax
+0x401d47:5:sub $0x4d79c6c,%eax
+0x401d4c:6:mov %eax,-0x1c8(%rbp)
+0x401d52:6:je 0000000000402b0a <get_scan_code_from_ascii+0x174a>
+0x401d58:5:jmp 0000000000401d5d <get_scan_code_from_ascii+0x99d>
+0x401d5d:3:mov -0x48(%rbp),%eax
+0x401d60:5:sub $0x54ea72a,%eax
+0x401d65:6:mov %eax,-0x1cc(%rbp)
+0x401d6b:6:je 0000000000403515 <get_scan_code_from_ascii+0x2155>
+0x401d71:5:jmp 0000000000401d76 <get_scan_code_from_ascii+0x9b6>
+0x401d76:3:mov -0x48(%rbp),%eax
+0x401d79:5:sub $0x77d0a40,%eax
+0x401d7e:6:mov %eax,-0x1d0(%rbp)
+0x401d84:6:je 00000000004028cd <get_scan_code_from_ascii+0x150d>
+0x401d8a:5:jmp 0000000000401d8f <get_scan_code_from_ascii+0x9cf>
+0x401d8f:3:mov -0x48(%rbp),%eax
+0x401d92:5:sub $0x882ead6,%eax
+0x401d97:6:mov %eax,-0x1d4(%rbp)
+0x401d9d:6:je 00000000004029e1 <get_scan_code_from_ascii+0x1621>
+0x401da3:5:jmp 0000000000401da8 <get_scan_code_from_ascii+0x9e8>
+0x401da8:3:mov -0x48(%rbp),%eax
+0x401dab:5:sub $0x8eefcab,%eax
+0x401db0:6:mov %eax,-0x1d8(%rbp)
+0x401db6:6:je 000000000040301a <get_scan_code_from_ascii+0x1c5a>
+0x401dbc:5:jmp 0000000000401dc1 <get_scan_code_from_ascii+0xa01>
+0x401dc1:3:mov -0x48(%rbp),%eax
+0x401dc4:5:sub $0x94ef451,%eax
+0x401dc9:6:mov %eax,-0x1dc(%rbp)
+0x401dcf:6:je 0000000000402bac <get_scan_code_from_ascii+0x17ec>
+0x401dd5:5:jmp 0000000000401dda <get_scan_code_from_ascii+0xa1a>
+0x401dda:3:mov -0x48(%rbp),%eax
+0x401ddd:5:sub $0xa863aff,%eax
+0x401de2:6:mov %eax,-0x1e0(%rbp)
+0x401de8:6:je 0000000000402dfe <get_scan_code_from_ascii+0x1a3e>
+0x401dee:5:jmp 0000000000401df3 <get_scan_code_from_ascii+0xa33>
+0x401df3:3:mov -0x48(%rbp),%eax
+0x401df6:5:sub $0xb508515,%eax
+0x401dfb:6:mov %eax,-0x1e4(%rbp)
+0x401e01:6:je 0000000000403180 <get_scan_code_from_ascii+0x1dc0>
+0x401e07:5:jmp 0000000000401e0c <get_scan_code_from_ascii+0xa4c>
+0x401e0c:3:mov -0x48(%rbp),%eax
+0x401e0f:5:sub $0xbdbaf44,%eax
+0x401e14:6:mov %eax,-0x1e8(%rbp)
+0x401e1a:6:je 0000000000403c64 <get_scan_code_from_ascii+0x28a4>
+0x401e20:5:jmp 0000000000401e25 <get_scan_code_from_ascii+0xa65>
+0x401e25:3:mov -0x48(%rbp),%eax
+0x401e28:5:sub $0xbed4b05,%eax
+0x401e2d:6:mov %eax,-0x1ec(%rbp)
+0x401e33:6:je 0000000000402a68 <get_scan_code_from_ascii+0x16a8>
+0x401e39:5:jmp 0000000000401e3e <get_scan_code_from_ascii+0xa7e>
+0x401e3e:3:mov -0x48(%rbp),%eax
+0x401e41:5:sub $0xbf2e068,%eax
+0x401e46:6:mov %eax,-0x1f0(%rbp)
+0x401e4c:6:je 0000000000402768 <get_scan_code_from_ascii+0x13a8>
+0x401e52:5:jmp 0000000000401e57 <get_scan_code_from_ascii+0xa97>
+0x401e57:3:mov -0x48(%rbp),%eax
+0x401e5a:5:sub $0xeda3509,%eax
+0x401e5f:6:mov %eax,-0x1f4(%rbp)
+0x401e65:6:je 0000000000402c9f <get_scan_code_from_ascii+0x18df>
+0x401e6b:5:jmp 0000000000401e70 <get_scan_code_from_ascii+0xab0>
+0x401e70:3:mov -0x48(%rbp),%eax
+0x401e73:5:sub $0xf9bd363,%eax
+0x401e78:6:mov %eax,-0x1f8(%rbp)
+0x401e7e:6:je 00000000004037b7 <get_scan_code_from_ascii+0x23f7>
+0x401e84:5:jmp 0000000000401e89 <get_scan_code_from_ascii+0xac9>
+0x401e89:3:mov -0x48(%rbp),%eax
+0x401e8c:5:sub $0x11d84b96,%eax
+0x401e91:6:mov %eax,-0x1fc(%rbp)
+0x401e97:6:je 0000000000403d0a <get_scan_code_from_ascii+0x294a>
+0x401e9d:5:jmp 0000000000401ea2 <get_scan_code_from_ascii+0xae2>
+0x401ea2:3:mov -0x48(%rbp),%eax
+0x401ea5:5:sub $0x134f7f23,%eax
+0x401eaa:6:mov %eax,-0x200(%rbp)
+0x401eb0:6:je 00000000004032e5 <get_scan_code_from_ascii+0x1f25>
+0x401eb6:5:jmp 0000000000401ebb <get_scan_code_from_ascii+0xafb>
+0x401ebb:3:mov -0x48(%rbp),%eax
+0x401ebe:5:sub $0x13c9852d,%eax
+0x401ec3:6:mov %eax,-0x204(%rbp)
+0x401ec9:6:je 0000000000402c69 <get_scan_code_from_ascii+0x18a9>
+0x401ecf:5:jmp 0000000000401ed4 <get_scan_code_from_ascii+0xb14>
+0x401ed4:3:mov -0x48(%rbp),%eax
+0x401ed7:5:sub $0x14c7dc0c,%eax
+0x401edc:6:mov %eax,-0x208(%rbp)
+0x401ee2:6:je 0000000000402a4d <get_scan_code_from_ascii+0x168d>
+0x401ee8:5:jmp 0000000000401eed <get_scan_code_from_ascii+0xb2d>
+0x401eed:3:mov -0x48(%rbp),%eax
+0x401ef0:5:sub $0x160148cc,%eax
+0x401ef5:6:mov %eax,-0x20c(%rbp)
+0x401efb:6:je 0000000000402f0b <get_scan_code_from_ascii+0x1b4b>
+0x401f01:5:jmp 0000000000401f06 <get_scan_code_from_ascii+0xb46>
+0x401f06:3:mov -0x48(%rbp),%eax
+0x401f09:5:sub $0x1894bd8c,%eax
+0x401f0e:6:mov %eax,-0x210(%rbp)
+0x401f14:6:je 0000000000404423 <get_scan_code_from_ascii+0x3063>
+0x401f1a:5:jmp 0000000000401f1f <get_scan_code_from_ascii+0xb5f>
+0x401f1f:3:mov -0x48(%rbp),%eax
+0x401f22:5:sub $0x1936ab3e,%eax
+0x401f27:6:mov %eax,-0x214(%rbp)
+0x401f2d:6:je 0000000000402c33 <get_scan_code_from_ascii+0x1873>
+0x401f33:5:jmp 0000000000401f38 <get_scan_code_from_ascii+0xb78>
+0x401f38:3:mov -0x48(%rbp),%eax
+0x401f3b:5:sub $0x1a1316c6,%eax
+0x401f40:6:mov %eax,-0x218(%rbp)
+0x401f46:6:je 0000000000402e34 <get_scan_code_from_ascii+0x1a74>
+0x401f4c:5:jmp 0000000000401f51 <get_scan_code_from_ascii+0xb91>
+0x401f51:3:mov -0x48(%rbp),%eax
+0x401f54:5:sub $0x1a3161fd,%eax
+0x401f59:6:mov %eax,-0x21c(%rbp)
+0x401f5f:6:je 00000000004037a1 <get_scan_code_from_ascii+0x23e1>
+0x401f65:5:jmp 0000000000401f6a <get_scan_code_from_ascii+0xbaa>
+0x401f6a:3:mov -0x48(%rbp),%eax
+0x401f6d:5:sub $0x1f0fcb94,%eax
+0x401f72:6:mov %eax,-0x220(%rbp)
+0x401f78:6:je 0000000000402be2 <get_scan_code_from_ascii+0x1822>
+0x401f7e:5:jmp 0000000000401f83 <get_scan_code_from_ascii+0xbc3>
+0x401f83:3:mov -0x48(%rbp),%eax
+0x401f86:5:sub $0x205266cb,%eax
+0x401f8b:6:mov %eax,-0x224(%rbp)
+0x401f91:6:je 0000000000402b25 <get_scan_code_from_ascii+0x1765>
+0x401f97:5:jmp 0000000000401f9c <get_scan_code_from_ascii+0xbdc>
+0x401f9c:3:mov -0x48(%rbp),%eax
+0x401f9f:5:sub $0x22140012,%eax
+0x401fa4:6:mov %eax,-0x228(%rbp)
+0x401faa:6:je 000000000040281c <get_scan_code_from_ascii+0x145c>
+0x401fb0:5:jmp 0000000000401fb5 <get_scan_code_from_ascii+0xbf5>
+0x401fb5:3:mov -0x48(%rbp),%eax
+0x401fb8:5:sub $0x2490e3af,%eax
+0x401fbd:6:mov %eax,-0x22c(%rbp)
+0x401fc3:6:je 00000000004037cd <get_scan_code_from_ascii+0x240d>
+0x401fc9:5:jmp 0000000000401fce <get_scan_code_from_ascii+0xc0e>
+0x401fce:3:mov -0x48(%rbp),%eax
+0x401fd1:5:sub $0x27cbe5a8,%eax
+0x401fd6:6:mov %eax,-0x230(%rbp)
+0x401fdc:6:je 0000000000402d5c <get_scan_code_from_ascii+0x199c>
+0x401fe2:5:jmp 0000000000401fe7 <get_scan_code_from_ascii+0xc27>
+0x401fe7:3:mov -0x48(%rbp),%eax
+0x401fea:5:sub $0x290d993a,%eax
+0x401fef:6:mov %eax,-0x234(%rbp)
+0x401ff5:6:je 000000000040438e <get_scan_code_from_ascii+0x2fce>
+0x401ffb:5:jmp 0000000000402000 <get_scan_code_from_ascii+0xc40>
+0x402000:3:mov -0x48(%rbp),%eax
+0x402003:5:sub $0x2ea086c5,%eax
+0x402008:6:mov %eax,-0x238(%rbp)
+0x40200e:6:je 0000000000402924 <get_scan_code_from_ascii+0x1564>
+0x402014:5:jmp 0000000000402019 <get_scan_code_from_ascii+0xc59>
+0x402019:3:mov -0x48(%rbp),%eax
+0x40201c:5:sub $0x3021adc7,%eax
+0x402021:6:mov %eax,-0x23c(%rbp)
+0x402027:6:je 0000000000403b66 <get_scan_code_from_ascii+0x27a6>
+0x40202d:5:jmp 0000000000402032 <get_scan_code_from_ascii+0xc72>
+0x402032:3:mov -0x48(%rbp),%eax
+0x402035:5:sub $0x31514597,%eax
+0x40203a:6:mov %eax,-0x240(%rbp)
+0x402040:6:je 0000000000403311 <get_scan_code_from_ascii+0x1f51>
+0x402046:5:jmp 000000000040204b <get_scan_code_from_ascii+0xc8b>
+0x40204b:3:mov -0x48(%rbp),%eax
+0x40204e:5:sub $0x323768ff,%eax
+0x402053:6:mov %eax,-0x244(%rbp)
+0x402059:6:je 0000000000403629 <get_scan_code_from_ascii+0x2269>
+0x40205f:5:jmp 0000000000402064 <get_scan_code_from_ascii+0xca4>
+0x402064:3:mov -0x48(%rbp),%eax
+0x402067:5:sub $0x32629b05,%eax
+0x40206c:6:mov %eax,-0x248(%rbp)
+0x402072:6:je 0000000000402bfd <get_scan_code_from_ascii+0x183d>
+0x402078:5:jmp 000000000040207d <get_scan_code_from_ascii+0xcbd>
+0x40207d:3:mov -0x48(%rbp),%eax
+0x402080:5:sub $0x33673ba5,%eax
+0x402085:6:mov %eax,-0x24c(%rbp)
+0x40208b:6:je 0000000000403895 <get_scan_code_from_ascii+0x24d5>
+0x402091:5:jmp 0000000000402096 <get_scan_code_from_ascii+0xcd6>
+0x402096:3:mov -0x48(%rbp),%eax
+0x402099:5:sub $0x3421f89a,%eax
+0x40209e:6:mov %eax,-0x250(%rbp)
+0x4020a4:6:je 0000000000402a32 <get_scan_code_from_ascii+0x1672>
+0x4020aa:5:jmp 00000000004020af <get_scan_code_from_ascii+0xcef>
+0x4020af:3:mov -0x48(%rbp),%eax
+0x4020b2:5:sub $0x34899a0a,%eax
+0x4020b7:6:mov %eax,-0x254(%rbp)
+0x4020bd:6:je 00000000004040fc <get_scan_code_from_ascii+0x2d3c>
+0x4020c3:5:jmp 00000000004020c8 <get_scan_code_from_ascii+0xd08>
+0x4020c8:3:mov -0x48(%rbp),%eax
+0x4020cb:5:sub $0x371f7a44,%eax
+0x4020d0:6:mov %eax,-0x258(%rbp)
+0x4020d6:6:je 0000000000402894 <get_scan_code_from_ascii+0x14d4>
+0x4020dc:5:jmp 00000000004020e1 <get_scan_code_from_ascii+0xd21>
+0x4020e1:3:mov -0x48(%rbp),%eax
+0x4020e4:5:sub $0x374ac454,%eax
+0x4020e9:6:mov %eax,-0x25c(%rbp)
+0x4020ef:6:je 0000000000402732 <get_scan_code_from_ascii+0x1372>
+0x4020f5:5:jmp 00000000004020fa <get_scan_code_from_ascii+0xd3a>
+0x4020fa:3:mov -0x48(%rbp),%eax
+0x4020fd:5:sub $0x374ff729,%eax
+0x402102:6:mov %eax,-0x260(%rbp)
+0x402108:6:je 0000000000402aef <get_scan_code_from_ascii+0x172f>
+0x40210e:5:jmp 0000000000402113 <get_scan_code_from_ascii+0xd53>
+0x402113:3:mov -0x48(%rbp),%eax
+0x402116:5:sub $0x37534f54,%eax
+0x40211b:6:mov %eax,-0x264(%rbp)
+0x402121:6:je 0000000000402de3 <get_scan_code_from_ascii+0x1a23>
+0x402127:5:jmp 000000000040212c <get_scan_code_from_ascii+0xd6c>
+0x40212c:3:mov -0x48(%rbp),%eax
+0x40212f:5:sub $0x38396bc0,%eax
+0x402134:6:mov %eax,-0x268(%rbp)
+0x40213a:6:je 0000000000404460 <get_scan_code_from_ascii+0x30a0>
+0x402140:5:jmp 0000000000402145 <get_scan_code_from_ascii+0xd85>
+0x402145:3:mov -0x48(%rbp),%eax
+0x402148:5:sub $0x384bad69,%eax
+0x40214d:6:mov %eax,-0x26c(%rbp)
+0x402153:6:je 00000000004027e0 <get_scan_code_from_ascii+0x1420>
+0x402159:5:jmp 000000000040215e <get_scan_code_from_ascii+0xd9e>
+0x40215e:3:mov -0x48(%rbp),%eax
+0x402161:5:sub $0x390fe75e,%eax
+0x402166:6:mov %eax,-0x270(%rbp)
+0x40216c:6:je 0000000000403934 <get_scan_code_from_ascii+0x2574>
+0x402172:5:jmp 0000000000402177 <get_scan_code_from_ascii+0xdb7>
+0x402177:3:mov -0x48(%rbp),%eax
+0x40217a:5:sub $0x39fa2608,%eax
+0x40217f:6:mov %eax,-0x274(%rbp)
+0x402185:6:je 0000000000404552 <get_scan_code_from_ascii+0x3192>
+0x40218b:5:jmp 0000000000402190 <get_scan_code_from_ascii+0xdd0>
+0x402190:3:mov -0x48(%rbp),%eax
+0x402193:5:sub $0x3dc48d58,%eax
+0x402198:6:mov %eax,-0x278(%rbp)
+0x40219e:6:je 0000000000404336 <get_scan_code_from_ascii+0x2f76>
+0x4021a4:5:jmp 00000000004021a9 <get_scan_code_from_ascii+0xde9>
+0x4021a9:3:mov -0x48(%rbp),%eax
+0x4021ac:5:sub $0x415b96c4,%eax
+0x4021b1:6:mov %eax,-0x27c(%rbp)
+0x4021b7:6:je 0000000000403c7a <get_scan_code_from_ascii+0x28ba>
+0x4021bd:5:jmp 00000000004021c2 <get_scan_code_from_ascii+0xe02>
+0x4021c2:3:mov -0x48(%rbp),%eax
+0x4021c5:5:sub $0x434d4d4f,%eax
+0x4021ca:6:mov %eax,-0x280(%rbp)
+0x4021d0:6:je 000000000040432a <get_scan_code_from_ascii+0x2f6a>
+0x4021d6:5:jmp 00000000004021db <get_scan_code_from_ascii+0xe1b>
+0x4021db:3:mov -0x48(%rbp),%eax
+0x4021de:5:sub $0x44885b63,%eax
+0x4021e3:6:mov %eax,-0x284(%rbp)
+0x4021e9:6:je 0000000000403775 <get_scan_code_from_ascii+0x23b5>
+0x4021ef:5:jmp 00000000004021f4 <get_scan_code_from_ascii+0xe34>
+0x4021f4:3:mov -0x48(%rbp),%eax
+0x4021f7:5:sub $0x4710cabd,%eax
+0x4021fc:6:mov %eax,-0x288(%rbp)
+0x402202:6:je 0000000000403ec4 <get_scan_code_from_ascii+0x2b04>
+0x402208:5:jmp 000000000040220d <get_scan_code_from_ascii+0xe4d>
+0x40220d:3:mov -0x48(%rbp),%eax
+0x402210:5:sub $0x472028a4,%eax
+0x402215:6:mov %eax,-0x28c(%rbp)
+0x40221b:6:je 00000000004042bc <get_scan_code_from_ascii+0x2efc>
+0x402221:5:jmp 0000000000402226 <get_scan_code_from_ascii+0xe66>
+0x402226:3:mov -0x48(%rbp),%eax
+0x402229:5:sub $0x4a2ff662,%eax
+0x40222e:6:mov %eax,-0x290(%rbp)
+0x402234:6:je 00000000004037f9 <get_scan_code_from_ascii+0x2439>
+0x40223a:5:jmp 000000000040223f <get_scan_code_from_ascii+0xe7f>
+0x40223f:3:mov -0x48(%rbp),%eax
+0x402242:5:sub $0x4a37cb26,%eax
+0x402247:6:mov %eax,-0x294(%rbp)
+0x40224d:6:je 0000000000402e19 <get_scan_code_from_ascii+0x1a59>
+0x402253:5:jmp 0000000000402258 <get_scan_code_from_ascii+0xe98>
+0x402258:3:mov -0x48(%rbp),%eax
+0x40225b:5:sub $0x4e2fb64f,%eax
+0x402260:6:mov %eax,-0x298(%rbp)
+0x402266:6:je 0000000000404476 <get_scan_code_from_ascii+0x30b6>
+0x40226c:5:jmp 0000000000402271 <get_scan_code_from_ascii+0xeb1>
+0x402271:3:mov -0x48(%rbp),%eax
+0x402274:5:sub $0x4f538461,%eax
+0x402279:6:mov %eax,-0x29c(%rbp)
+0x40227f:6:je 0000000000402f94 <get_scan_code_from_ascii+0x1bd4>
+0x402285:5:jmp 000000000040228a <get_scan_code_from_ascii+0xeca>
+0x40228a:3:mov -0x48(%rbp),%eax
+0x40228d:5:sub $0x4f59e977,%eax
+0x402292:6:mov %eax,-0x2a0(%rbp)
+0x402298:6:je 0000000000404068 <get_scan_code_from_ascii+0x2ca8>
+0x40229e:5:jmp 00000000004022a3 <get_scan_code_from_ascii+0xee3>
+0x4022a3:3:mov -0x48(%rbp),%eax
+0x4022a6:5:sub $0x4f5cd4b0,%eax
+0x4022ab:6:mov %eax,-0x2a4(%rbp)
+0x4022b1:6:je 0000000000403613 <get_scan_code_from_ascii+0x2253>
+0x4022b7:5:jmp 00000000004022bc <get_scan_code_from_ascii+0xefc>
+0x4022bc:3:mov -0x48(%rbp),%eax
+0x4022bf:5:sub $0x4fd98968,%eax
+0x4022c4:6:mov %eax,-0x2a8(%rbp)
+0x4022ca:6:je 0000000000402b76 <get_scan_code_from_ascii+0x17b6>
+0x4022d0:5:jmp 00000000004022d5 <get_scan_code_from_ascii+0xf15>
+0x4022d5:3:mov -0x48(%rbp),%eax
+0x4022d8:5:sub $0x52ab5aba,%eax
+0x4022dd:6:mov %eax,-0x2ac(%rbp)
+0x4022e3:6:je 000000000040453c <get_scan_code_from_ascii+0x317c>
+0x4022e9:5:jmp 00000000004022ee <get_scan_code_from_ascii+0xf2e>
+0x4022ee:3:mov -0x48(%rbp),%eax
+0x4022f1:5:sub $0x54168408,%eax
+0x4022f6:6:mov %eax,-0x2b0(%rbp)
+0x4022fc:6:je 00000000004042e8 <get_scan_code_from_ascii+0x2f28>
+0x402302:5:jmp 0000000000402307 <get_scan_code_from_ascii+0xf47>
+0x402307:3:mov -0x48(%rbp),%eax
+0x40230a:5:sub $0x55146b4d,%eax
+0x40230f:6:mov %eax,-0x2b4(%rbp)
+0x402315:6:je 0000000000403db0 <get_scan_code_from_ascii+0x29f0>
+0x40231b:5:jmp 0000000000402320 <get_scan_code_from_ascii+0xf60>
+0x402320:3:mov -0x48(%rbp),%eax
+0x402323:5:sub $0x55e19c4b,%eax
+0x402328:6:mov %eax,-0x2b8(%rbp)
+0x40232e:6:je 0000000000402bc7 <get_scan_code_from_ascii+0x1807>
+0x402334:5:jmp 0000000000402339 <get_scan_code_from_ascii+0xf79>
+0x402339:3:mov -0x48(%rbp),%eax
+0x40233c:5:sub $0x562096c8,%eax
+0x402341:6:mov %eax,-0x2bc(%rbp)
+0x402347:6:je 00000000004029ab <get_scan_code_from_ascii+0x15eb>
+0x40234d:5:jmp 0000000000402352 <get_scan_code_from_ascii+0xf92>
+0x402352:3:mov -0x48(%rbp),%eax
+0x402355:5:sub $0x565afe5c,%eax
+0x40235a:6:mov %eax,-0x2c0(%rbp)
+0x402360:6:je 0000000000403369 <get_scan_code_from_ascii+0x1fa9>
+0x402366:5:jmp 000000000040236b <get_scan_code_from_ascii+0xfab>
+0x40236b:3:mov -0x48(%rbp),%eax
+0x40236e:5:sub $0x581c9942,%eax
+0x402373:6:mov %eax,-0x2c4(%rbp)
+0x402379:6:je 0000000000403204 <get_scan_code_from_ascii+0x1e44>
+0x40237f:5:jmp 0000000000402384 <get_scan_code_from_ascii+0xfc4>
+0x402384:3:mov -0x48(%rbp),%eax
+0x402387:5:sub $0x58832de4,%eax
+0x40238c:6:mov %eax,-0x2c8(%rbp)
+0x402392:6:je 0000000000402c4e <get_scan_code_from_ascii+0x188e>
+0x402398:5:jmp 000000000040239d <get_scan_code_from_ascii+0xfdd>
+0x40239d:3:mov -0x48(%rbp),%eax
+0x4023a0:5:sub $0x5b74f4a1,%eax
+0x4023a5:6:mov %eax,-0x2cc(%rbp)
+0x4023ab:6:je 0000000000403081 <get_scan_code_from_ascii+0x1cc1>
+0x4023b1:5:jmp 00000000004023b6 <get_scan_code_from_ascii+0xff6>
+0x4023b6:3:mov -0x48(%rbp),%eax
+0x4023b9:5:sub $0x5cc2ed10,%eax
+0x4023be:6:mov %eax,-0x2d0(%rbp)
+0x4023c4:6:je 0000000000403da4 <get_scan_code_from_ascii+0x29e4>
+0x4023ca:5:jmp 00000000004023cf <get_scan_code_from_ascii+0x100f>
+0x4023cf:3:mov -0x48(%rbp),%eax
+0x4023d2:5:sub $0x5f6aa588,%eax
+0x4023d7:6:mov %eax,-0x2d4(%rbp)
+0x4023dd:6:je 0000000000403495 <get_scan_code_from_ascii+0x20d5>
+0x4023e3:5:jmp 00000000004023e8 <get_scan_code_from_ascii+0x1028>
+0x4023e8:3:mov -0x48(%rbp),%eax
+0x4023eb:5:sub $0x6365a002,%eax
+0x4023f0:6:mov %eax,-0x2d8(%rbp)
+0x4023f6:6:je 0000000000402f72 <get_scan_code_from_ascii+0x1bb2>
+0x4023fc:5:jmp 0000000000402401 <get_scan_code_from_ascii+0x1041>
+0x402401:3:mov -0x48(%rbp),%eax
+0x402404:5:sub $0x63d33818,%eax
+0x402409:6:mov %eax,-0x2dc(%rbp)
+0x40240f:6:je 0000000000403a6f <get_scan_code_from_ascii+0x26af>
+0x402415:5:jmp 000000000040241a <get_scan_code_from_ascii+0x105a>
+0x40241a:3:mov -0x48(%rbp),%eax
+0x40241d:5:sub $0x640ba340,%eax
+0x402422:6:mov %eax,-0x2e0(%rbp)
+0x402428:6:je 00000000004029fc <get_scan_code_from_ascii+0x163c>
+0x40242e:5:jmp 0000000000402433 <get_scan_code_from_ascii+0x1073>
+0x402433:3:mov -0x48(%rbp),%eax
+0x402436:5:sub $0x680340fc,%eax
+0x40243b:6:mov %eax,-0x2e4(%rbp)
+0x402441:6:je 0000000000403277 <get_scan_code_from_ascii+0x1eb7>
+0x402447:5:jmp 000000000040244c <get_scan_code_from_ascii+0x108c>
+0x40244c:3:mov -0x48(%rbp),%eax
+0x40244f:5:sub $0x6b377277,%eax
+0x402454:6:mov %eax,-0x2e8(%rbp)
+0x40245a:6:je 0000000000402cf0 <get_scan_code_from_ascii+0x1930>
+0x402460:5:jmp 0000000000402465 <get_scan_code_from_ascii+0x10a5>
+0x402465:3:mov -0x48(%rbp),%eax
+0x402468:5:sub $0x6e18c99f,%eax
+0x40246d:6:mov %eax,-0x2ec(%rbp)
+0x402473:6:je 0000000000402c84 <get_scan_code_from_ascii+0x18c4>
+0x402479:5:jmp 000000000040247e <get_scan_code_from_ascii+0x10be>
+0x40247e:3:mov -0x48(%rbp),%eax
+0x402481:5:sub $0x6f0249f4,%eax
+0x402486:6:mov %eax,-0x2f0(%rbp)
+0x40248c:6:je 0000000000402975 <get_scan_code_from_ascii+0x15b5>
+0x402492:5:jmp 0000000000402497 <get_scan_code_from_ascii+0x10d7>
+0x402497:3:mov -0x48(%rbp),%eax
+0x40249a:5:sub $0x6f2d04a3,%eax
+0x40249f:6:mov %eax,-0x2f4(%rbp)
+0x4024a5:6:je 0000000000402858 <get_scan_code_from_ascii+0x1498>
+0x4024ab:5:jmp 00000000004024b0 <get_scan_code_from_ascii+0x10f0>
+0x4024b0:3:mov -0x48(%rbp),%eax
+0x4024b3:5:sub $0x6f5e2a2f,%eax
+0x4024b8:6:mov %eax,-0x2f8(%rbp)
+0x4024be:6:je 00000000004029c6 <get_scan_code_from_ascii+0x1606>
+0x4024c4:5:jmp 00000000004024c9 <get_scan_code_from_ascii+0x1109>
+0x4024c9:3:mov -0x48(%rbp),%eax
+0x4024cc:5:sub $0x70d98906,%eax
+0x4024d1:6:mov %eax,-0x2fc(%rbp)
+0x4024d7:6:je 00000000004044fa <get_scan_code_from_ascii+0x313a>
+0x4024dd:5:jmp 00000000004024e2 <get_scan_code_from_ascii+0x1122>
+0x4024e2:3:mov -0x48(%rbp),%eax
+0x4024e5:5:sub $0x72b967a2,%eax
+0x4024ea:6:mov %eax,-0x300(%rbp)
+0x4024f0:6:je 0000000000404568 <get_scan_code_from_ascii+0x31a8>
+0x4024f6:5:jmp 00000000004024fb <get_scan_code_from_ascii+0x113b>
+0x4024fb:3:mov -0x48(%rbp),%eax
+0x4024fe:5:sub $0x73c02b50,%eax
+0x402503:6:mov %eax,-0x304(%rbp)
+0x402509:6:je 0000000000403e1e <get_scan_code_from_ascii+0x2a5e>
+0x40250f:5:jmp 0000000000402514 <get_scan_code_from_ascii+0x1154>
+0x402514:3:mov -0x48(%rbp),%eax
+0x402517:5:sub $0x7493a64a,%eax
+0x40251c:6:mov %eax,-0x308(%rbp)
+0x402522:6:je 0000000000402909 <get_scan_code_from_ascii+0x1549>
+0x402528:5:jmp 000000000040252d <get_scan_code_from_ascii+0x116d>
+0x40252d:3:mov -0x48(%rbp),%eax
+0x402530:5:sub $0x7740bd82,%eax
+0x402535:6:mov %eax,-0x30c(%rbp)
+0x40253b:6:je 0000000000403753 <get_scan_code_from_ascii+0x2393>
+0x402541:5:jmp 0000000000402546 <get_scan_code_from_ascii+0x1186>
+0x402546:3:mov -0x48(%rbp),%eax
+0x402549:5:sub $0x78062952,%eax
+0x40254e:6:mov %eax,-0x310(%rbp)
+0x402554:6:je 000000000040356d <get_scan_code_from_ascii+0x21ad>
+0x40255a:5:jmp 000000000040255f <get_scan_code_from_ascii+0x119f>
+0x40255f:3:mov -0x48(%rbp),%eax
+0x402562:5:sub $0x781a2c3f,%eax
+0x402567:6:mov %eax,-0x314(%rbp)
+0x40256d:6:je 0000000000402876 <get_scan_code_from_ascii+0x14b6>
+0x402573:5:jmp 0000000000402578 <get_scan_code_from_ascii+0x11b8>
+0x402578:3:mov -0x48(%rbp),%eax
+0x40257b:5:sub $0x79d977ca,%eax
+0x402580:6:mov %eax,-0x318(%rbp)
+0x402586:6:je 000000000040308d <get_scan_code_from_ascii+0x1ccd>
+0x40258c:5:jmp 0000000000402591 <get_scan_code_from_ascii+0x11d1>
+0x402591:3:mov -0x48(%rbp),%eax
+0x402594:5:sub $0x79e3d82f,%eax
+0x402599:6:mov %eax,-0x31c(%rbp)
+0x40259f:6:je 00000000004045d6 <get_scan_code_from_ascii+0x3216>
+0x4025a5:5:jmp 00000000004025aa <get_scan_code_from_ascii+0x11ea>
+0x4025aa:3:mov -0x48(%rbp),%eax
+0x4025ad:5:sub $0x7ba4c1d2,%eax
+0x4025b2:6:mov %eax,-0x320(%rbp)
+0x4025b8:6:je 000000000040391e <get_scan_code_from_ascii+0x255e>
+0x4025be:5:jmp 00000000004025c3 <get_scan_code_from_ascii+0x1203>
+0x4025c3:3:mov -0x48(%rbp),%eax
+0x4025c6:5:sub $0x7dbeaccb,%eax
+0x4025cb:6:mov %eax,-0x324(%rbp)
+0x4025d1:6:je 000000000040378b <get_scan_code_from_ascii+0x23cb>
+0x4025d7:5:jmp 00000000004025dc <get_scan_code_from_ascii+0x121c>
+0x4025dc:3:mov -0x48(%rbp),%eax
+0x4025df:5:sub $0x7dd3aea4,%eax
+0x4025e4:6:mov %eax,-0x328(%rbp)
+0x4025ea:6:je 0000000000402b91 <get_scan_code_from_ascii+0x17d1>
+0x4025f0:5:jmp 00000000004025f5 <get_scan_code_from_ascii+0x1235>
+0x4025f5:3:mov -0x48(%rbp),%eax
+0x4025f8:5:sub $0x7e36b384,%eax
+0x4025fd:6:mov %eax,-0x32c(%rbp)
+0x402603:6:je 0000000000402ad4 <get_scan_code_from_ascii+0x1714>
+0x402609:5:jmp 000000000040260e <get_scan_code_from_ascii+0x124e>
+0x40260e:3:mov -0x48(%rbp),%eax
+0x402611:5:sub $0x7eda817b,%eax
+0x402616:6:mov %eax,-0x330(%rbp)
+0x40261c:6:je 0000000000403bbe <get_scan_code_from_ascii+0x27fe>
+0x402622:5:jmp 0000000000402627 <get_scan_code_from_ascii+0x1267>
+0x402627:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x40262c:5:mov $0xcf6ef76b,%eax
+0x402631:5:mov $0x363356e,%ecx
+0x402636:2:mov $0x1,%dl
+0x402638:4:mov -0x3a(%rbp),%sil
+0x40263c:4:mov -0x39(%rbp),%dil
+0x402640:3:mov %sil,%r8b
+0x402643:4:xor $0xff,%r8b
+0x402647:3:mov %dil,%r9b
+0x40264a:4:xor $0xff,%r9b
+0x40264e:3:xor $0x0,%dl
+0x402651:3:mov %r8b,%r10b
+0x402654:4:and $0x0,%r10b
+0x402658:3:and %dl,%sil
+0x40265b:3:mov %r9b,%r11b
+0x40265e:4:and $0x0,%r11b
+0x402662:3:and %dl,%dil
+0x402665:3:or %sil,%r10b
+0x402668:3:or %dil,%r11b
+0x40266b:3:xor %r11b,%r10b
+0x40266e:3:or %r9b,%r8b
+0x402671:4:xor $0xff,%r8b
+0x402675:3:or $0x0,%dl
+0x402678:3:and %dl,%r8b
+0x40267b:3:or %r8b,%r10b
+0x40267e:4:test $0x1,%r10b
+0x402682:3:cmovne %ecx,%eax
+0x402685:3:mov %eax,-0x40(%rbp)
+0x402688:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x40268d:5:mov $0xcf6ef76b,%eax
+0x402692:5:mov $0xac630abf,%ecx
+0x402697:2:xor %edx,%edx
+0x402699:5:mov $0xffffffff,%esi
+0x40269e:3:mov %rsp,%rdi
+0x4026a1:4:add $0xfffffffffffffff0,%rdi
+0x4026a5:3:mov %rdi,%rsp
+0x4026a8:3:mov %rsp,%r8
+0x4026ab:4:add $0xfffffffffffffff0,%r8
+0x4026af:3:mov %r8,%rsp
+0x4026b2:4:mov %r8,-0x38(%rbp)
+0x4026b6:4:mov -0x44(%rbp),%r9d
+0x4026ba:3:mov %r9d,(%rdi)
+0x4026bd:4:mov -0x38(%rbp),%r8
+0x4026c1:7:movl $0x0,(%r8)
+0x4026c8:3:mov (%rdi),%r10d
+0x4026cb:6:xor $0xff,%esi
+0x4026d1:3:mov %r10d,%r11d
+0x4026d4:3:xor %esi,%r11d
+0x4026d7:3:and %r10d,%r11d
+0x4026da:4:mov %r11d,-0x30(%rbp)
+0x4026de:7:mov 0x407048,%esi
+0x4026e5:8:mov 0x407060,%r10d
+0x4026ed:3:sub $0x1,%edx
+0x4026f0:3:mov %esi,%r11d
+0x4026f3:3:add %edx,%r11d
+0x4026f6:4:imul %r11d,%esi
+0x4026fa:3:and $0x1,%esi
+0x4026fd:3:cmp $0x0,%esi
+0x402700:3:sete %bl
+0x402703:4:cmp $0xa,%r10d
+0x402707:4:setl %r14b
+0x40270b:3:mov %bl,%r15b
+0x40270e:3:and %r14b,%r15b
+0x402711:3:xor %r14b,%bl
+0x402714:3:or %bl,%r15b
+0x402717:4:test $0x1,%r15b
+0x40271b:3:cmovne %ecx,%eax
+0x40271e:3:mov %eax,-0x40(%rbp)
+0x402721:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x402726:7:movl $0x374ac454,-0x40(%rbp)
+0x40272d:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x402732:5:mov $0xb0599ec1,%eax
+0x402737:5:mov $0xc3e26185,%ecx
+0x40273c:3:mov -0x30(%rbp),%edx
+0x40273f:3:cmp $0x49,%edx
+0x402742:3:cmovl %ecx,%eax
+0x402745:3:mov %eax,-0x40(%rbp)
+0x402748:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x40274d:5:mov $0xbf2e068,%eax
+0x402752:5:mov $0xfeddaede,%ecx
+0x402757:3:mov -0x30(%rbp),%edx
+0x40275a:3:cmp $0x57,%edx
+0x40275d:3:cmovl %ecx,%eax
+0x402760:3:mov %eax,-0x40(%rbp)
+0x402763:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x402768:5:mov $0xf7945867,%eax
+0x40276d:5:mov $0x371f7a44,%ecx
+0x402772:3:mov -0x30(%rbp),%edx
+0x402775:6:cmp $0xbd,%edx
+0x40277b:3:cmovl %ecx,%eax
+0x40277e:3:mov %eax,-0x40(%rbp)
+0x402781:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x402786:5:mov $0xb42461f6,%eax
+0x40278b:5:mov $0x22140012,%ecx
+0x402790:3:mov -0x30(%rbp),%edx
+0x402793:6:cmp $0xdb,%edx
+0x402799:3:cmovl %ecx,%eax
+0x40279c:3:mov %eax,-0x40(%rbp)
+0x40279f:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x4027a4:5:mov $0xd49b55a6,%eax
+0x4027a9:5:mov $0xe0748e08,%ecx
+0x4027ae:3:mov -0x30(%rbp),%edx
+0x4027b1:6:cmp $0xdd,%edx
+0x4027b7:3:cmovl %ecx,%eax
+0x4027ba:3:mov %eax,-0x40(%rbp)
+0x4027bd:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x4027c2:5:mov $0x384bad69,%eax
+0x4027c7:5:mov $0x80092f52,%ecx
+0x4027cc:3:mov -0x30(%rbp),%edx
+0x4027cf:6:cmp $0xde,%edx
+0x4027d5:3:cmovl %ecx,%eax
+0x4027d8:3:mov %eax,-0x40(%rbp)
+0x4027db:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x4027e0:5:mov $0x434d4d4f,%eax
+0x4027e5:5:mov $0x4f5cd4b0,%ecx
+0x4027ea:3:mov -0x30(%rbp),%edx
+0x4027ed:6:cmp $0xde,%edx
+0x4027f3:3:cmove %ecx,%eax
+0x4027f6:3:mov %eax,-0x40(%rbp)
+0x4027f9:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x4027fe:5:mov $0xa899a27f,%eax
+0x402803:5:mov $0x31514597,%ecx
+0x402808:3:mov -0x30(%rbp),%edx
+0x40280b:6:cmp $0xdc,%edx
+0x402811:3:cmovl %ecx,%eax
+0x402814:3:mov %eax,-0x40(%rbp)
+0x402817:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x40281c:5:mov $0x88f82337,%eax
+0x402821:5:mov $0x781a2c3f,%ecx
+0x402826:3:mov -0x30(%rbp),%edx
+0x402829:6:cmp $0xbf,%edx
+0x40282f:3:cmovl %ecx,%eax
+0x402832:3:mov %eax,-0x40(%rbp)
+0x402835:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x40283a:5:mov $0x6f2d04a3,%eax
+0x40283f:5:mov $0x7dbeaccb,%ecx
+0x402844:3:mov -0x30(%rbp),%edx
+0x402847:6:cmp $0xc0,%edx
+0x40284d:3:cmovl %ecx,%eax
+0x402850:3:mov %eax,-0x40(%rbp)
+0x402853:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x402858:5:mov $0x434d4d4f,%eax
+0x40285d:5:mov $0x7ba4c1d2,%ecx
+0x402862:3:mov -0x30(%rbp),%edx
+0x402865:6:cmp $0xc0,%edx
+0x40286b:3:cmove %ecx,%eax
+0x40286e:3:mov %eax,-0x40(%rbp)
+0x402871:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x402876:5:mov $0x44885b63,%eax
+0x40287b:5:mov $0xf0cf0464,%ecx
+0x402880:3:mov -0x30(%rbp),%edx
+0x402883:6:cmp $0xbe,%edx
+0x402889:3:cmovl %ecx,%eax
+0x40288c:3:mov %eax,-0x40(%rbp)
+0x40288f:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x402894:5:mov $0x8d5cb1bd,%eax
+0x402899:5:mov $0x2ea086c5,%ecx
+0x40289e:3:mov -0x30(%rbp),%edx
+0x4028a1:3:cmp $0x5a,%edx
+0x4028a4:3:cmovl %ecx,%eax
+0x4028a7:3:mov %eax,-0x40(%rbp)
+0x4028aa:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x4028af:5:mov $0x77d0a40,%eax
+0x4028b4:5:mov $0x97729a45,%ecx
+0x4028b9:3:mov -0x30(%rbp),%edx
+0x4028bc:6:cmp $0xbb,%edx
+0x4028c2:3:cmovl %ecx,%eax
+0x4028c5:3:mov %eax,-0x40(%rbp)
+0x4028c8:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x4028cd:5:mov $0xcca72a68,%eax
+0x4028d2:5:mov $0xf70a4573,%ecx
+0x4028d7:3:mov -0x30(%rbp),%edx
+0x4028da:6:cmp $0xbc,%edx
+0x4028e0:3:cmovl %ecx,%eax
+0x4028e3:3:mov %eax,-0x40(%rbp)
+0x4028e6:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x4028eb:5:mov $0x54ea72a,%eax
+0x4028f0:5:mov $0x7493a64a,%ecx
+0x4028f5:3:mov -0x30(%rbp),%edx
+0x4028f8:6:cmp $0xba,%edx
+0x4028fe:3:cmovl %ecx,%eax
+0x402901:3:mov %eax,-0x40(%rbp)
+0x402904:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x402909:5:mov $0x434d4d4f,%eax
+0x40290e:5:mov $0xc90eeec1,%ecx
+0x402913:3:mov -0x30(%rbp),%edx
+0x402916:3:cmp $0x5a,%edx
+0x402919:3:cmove %ecx,%eax
+0x40291c:3:mov %eax,-0x40(%rbp)
+0x40291f:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x402924:5:mov $0xf4c76df3,%eax
+0x402929:5:mov $0xd4b208e6,%ecx
+0x40292e:3:mov -0x30(%rbp),%edx
+0x402931:3:cmp $0x58,%edx
+0x402934:3:cmovl %ecx,%eax
+0x402937:3:mov %eax,-0x40(%rbp)
+0x40293a:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x40293f:5:mov $0xd7cdb942,%eax
+0x402944:5:mov $0x54168408,%ecx
+0x402949:3:mov -0x30(%rbp),%edx
+0x40294c:3:cmp $0x59,%edx
+0x40294f:3:cmovl %ecx,%eax
+0x402952:3:mov %eax,-0x40(%rbp)
+0x402955:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x40295a:5:mov $0x6f0249f4,%eax
+0x40295f:5:mov $0x92714500,%ecx
+0x402964:3:mov -0x30(%rbp),%edx
+0x402967:3:cmp $0x50,%edx
+0x40296a:3:cmovl %ecx,%eax
+0x40296d:3:mov %eax,-0x40(%rbp)
+0x402970:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x402975:5:mov $0x9493c5b6,%eax
+0x40297a:5:mov $0x882ead6,%ecx
+0x40297f:3:mov -0x30(%rbp),%edx
+0x402982:3:cmp $0x53,%edx
+0x402985:3:cmovl %ecx,%eax
+0x402988:3:mov %eax,-0x40(%rbp)
+0x40298b:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x402990:5:mov $0x562096c8,%eax
+0x402995:5:mov $0x6f5e2a2f,%ecx
+0x40299a:3:mov -0x30(%rbp),%edx
+0x40299d:3:cmp $0x55,%edx
+0x4029a0:3:cmovl %ecx,%eax
+0x4029a3:3:mov %eax,-0x40(%rbp)
+0x4029a6:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x4029ab:5:mov $0x472028a4,%eax
+0x4029b0:5:mov $0xde905bb0,%ecx
+0x4029b5:3:mov -0x30(%rbp),%edx
+0x4029b8:3:cmp $0x56,%edx
+0x4029bb:3:cmovl %ecx,%eax
+0x4029be:3:mov %eax,-0x40(%rbp)
+0x4029c1:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x4029c6:5:mov $0x93fd9b72,%eax
+0x4029cb:5:mov $0xc63931e7,%ecx
+0x4029d0:3:mov -0x30(%rbp),%edx
+0x4029d3:3:cmp $0x54,%edx
+0x4029d6:3:cmovl %ecx,%eax
+0x4029d9:3:mov %eax,-0x40(%rbp)
+0x4029dc:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x4029e1:5:mov $0x640ba340,%eax
+0x4029e6:5:mov $0xa6769a6e,%ecx
+0x4029eb:3:mov -0x30(%rbp),%edx
+0x4029ee:3:cmp $0x51,%edx
+0x4029f1:3:cmovl %ecx,%eax
+0x4029f4:3:mov %eax,-0x40(%rbp)
+0x4029f7:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x4029fc:5:mov $0x8f9cab62,%eax
+0x402a01:5:mov $0xbe8b553a,%ecx
+0x402a06:3:mov -0x30(%rbp),%edx
+0x402a09:3:cmp $0x52,%edx
+0x402a0c:3:cmovl %ecx,%eax
+0x402a0f:3:mov %eax,-0x40(%rbp)
+0x402a12:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x402a17:5:mov $0x3421f89a,%eax
+0x402a1c:5:mov $0xaf9bc58f,%ecx
+0x402a21:3:mov -0x30(%rbp),%edx
+0x402a24:3:cmp $0x4c,%edx
+0x402a27:3:cmovl %ecx,%eax
+0x402a2a:3:mov %eax,-0x40(%rbp)
+0x402a2d:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x402a32:5:mov $0x14c7dc0c,%eax
+0x402a37:5:mov $0xbed4b05,%ecx
+0x402a3c:3:mov -0x30(%rbp),%edx
+0x402a3f:3:cmp $0x4e,%edx
+0x402a42:3:cmovl %ecx,%eax
+0x402a45:3:mov %eax,-0x40(%rbp)
+0x402a48:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x402a4d:5:mov $0xc8271b2f,%eax
+0x402a52:5:mov $0xca90db63,%ecx
+0x402a57:3:mov -0x30(%rbp),%edx
+0x402a5a:3:cmp $0x4f,%edx
+0x402a5d:3:cmovl %ecx,%eax
+0x402a60:3:mov %eax,-0x40(%rbp)
+0x402a63:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x402a68:5:mov $0x961d0f87,%eax
+0x402a6d:5:mov $0x4710cabd,%ecx
+0x402a72:3:mov -0x30(%rbp),%edx
+0x402a75:3:cmp $0x4d,%edx
+0x402a78:3:cmovl %ecx,%eax
+0x402a7b:3:mov %eax,-0x40(%rbp)
+0x402a7e:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x402a83:5:mov $0x8d23c96a,%eax
+0x402a88:5:mov $0x415b96c4,%ecx
+0x402a8d:3:mov -0x30(%rbp),%edx
+0x402a90:3:cmp $0x4a,%edx
+0x402a93:3:cmovl %ecx,%eax
+0x402a96:3:mov %eax,-0x40(%rbp)
+0x402a99:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x402a9e:5:mov $0x85a0a5c3,%eax
+0x402aa3:5:mov $0x55146b4d,%ecx
+0x402aa8:3:mov -0x30(%rbp),%edx
+0x402aab:3:cmp $0x4b,%edx
+0x402aae:3:cmovl %ecx,%eax
+0x402ab1:3:mov %eax,-0x40(%rbp)
+0x402ab4:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x402ab9:5:mov $0x7e36b384,%eax
+0x402abe:5:mov $0x13c9852d,%ecx
+0x402ac3:3:mov -0x30(%rbp),%edx
+0x402ac6:3:cmp $0x33,%edx
+0x402ac9:3:cmovl %ecx,%eax
+0x402acc:3:mov %eax,-0x40(%rbp)
+0x402acf:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x402ad4:5:mov $0x374ff729,%eax
+0x402ad9:5:mov $0x94ef451,%ecx
+0x402ade:3:mov -0x30(%rbp),%edx
+0x402ae1:3:cmp $0x41,%edx
+0x402ae4:3:cmovl %ecx,%eax
+0x402ae7:3:mov %eax,-0x40(%rbp)
+0x402aea:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x402aef:5:mov $0x4d79c6c,%eax
+0x402af4:5:mov $0x2637f3d,%ecx
+0x402af9:3:mov -0x30(%rbp),%edx
+0x402afc:3:cmp $0x45,%edx
+0x402aff:3:cmovl %ecx,%eax
+0x402b02:3:mov %eax,-0x40(%rbp)
+0x402b05:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x402b0a:5:mov $0x205266cb,%eax
+0x402b0f:5:mov $0xd9f49f16,%ecx
+0x402b14:3:mov -0x30(%rbp),%edx
+0x402b17:3:cmp $0x47,%edx
+0x402b1a:3:cmovl %ecx,%eax
+0x402b1d:3:mov %eax,-0x40(%rbp)
+0x402b20:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x402b25:5:mov $0xbdbaf44,%eax
+0x402b2a:5:mov $0x3021adc7,%ecx
+0x402b2f:3:mov -0x30(%rbp),%edx
+0x402b32:3:cmp $0x48,%edx
+0x402b35:3:cmovl %ecx,%eax
+0x402b38:3:mov %eax,-0x40(%rbp)
+0x402b3b:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x402b40:5:mov $0xa620257c,%eax
+0x402b45:5:mov $0x8cf35306,%ecx
+0x402b4a:3:mov -0x30(%rbp),%edx
+0x402b4d:3:cmp $0x46,%edx
+0x402b50:3:cmovl %ecx,%eax
+0x402b53:3:mov %eax,-0x40(%rbp)
+0x402b56:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x402b5b:5:mov $0x4fd98968,%eax
+0x402b60:5:mov $0x7dd3aea4,%ecx
+0x402b65:3:mov -0x30(%rbp),%edx
+0x402b68:3:cmp $0x43,%edx
+0x402b6b:3:cmovl %ecx,%eax
+0x402b6e:3:mov %eax,-0x40(%rbp)
+0x402b71:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x402b76:5:mov $0x63d33818,%eax
+0x402b7b:5:mov $0xfa4cf226,%ecx
+0x402b80:3:mov -0x30(%rbp),%edx
+0x402b83:3:cmp $0x44,%edx
+0x402b86:3:cmovl %ecx,%eax
+0x402b89:3:mov %eax,-0x40(%rbp)
+0x402b8c:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x402b91:5:mov $0xc12db140,%eax
+0x402b96:5:mov $0xbb8c522c,%ecx
+0x402b9b:3:mov -0x30(%rbp),%edx
+0x402b9e:3:cmp $0x42,%edx
+0x402ba1:3:cmovl %ecx,%eax
+0x402ba4:3:mov %eax,-0x40(%rbp)
+0x402ba7:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x402bac:5:mov $0x55e19c4b,%eax
+0x402bb1:5:mov $0x1936ab3e,%ecx
+0x402bb6:3:mov -0x30(%rbp),%edx
+0x402bb9:3:cmp $0x36,%edx
+0x402bbc:3:cmovl %ecx,%eax
+0x402bbf:3:mov %eax,-0x40(%rbp)
+0x402bc2:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x402bc7:5:mov $0x1f0fcb94,%eax
+0x402bcc:5:mov $0xbb42efd2,%ecx
+0x402bd1:3:mov -0x30(%rbp),%edx
+0x402bd4:3:cmp $0x38,%edx
+0x402bd7:3:cmovl %ecx,%eax
+0x402bda:3:mov %eax,-0x40(%rbp)
+0x402bdd:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x402be2:5:mov $0x32629b05,%eax
+0x402be7:5:mov $0xc1cecb42,%ecx
+0x402bec:3:mov -0x30(%rbp),%edx
+0x402bef:3:cmp $0x39,%edx
+0x402bf2:3:cmovl %ecx,%eax
+0x402bf5:3:mov %eax,-0x40(%rbp)
+0x402bf8:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x402bfd:5:mov $0x434d4d4f,%eax
+0x402c02:5:mov $0x9eecd780,%ecx
+0x402c07:3:mov -0x30(%rbp),%edx
+0x402c0a:3:cmp $0x39,%edx
+0x402c0d:3:cmove %ecx,%eax
+0x402c10:3:mov %eax,-0x40(%rbp)
+0x402c13:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x402c18:5:mov $0x680340fc,%eax
+0x402c1d:5:mov $0xf142892c,%ecx
+0x402c22:3:mov -0x30(%rbp),%edx
+0x402c25:3:cmp $0x37,%edx
+0x402c28:3:cmovl %ecx,%eax
+0x402c2b:3:mov %eax,-0x40(%rbp)
+0x402c2e:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x402c33:5:mov $0x58832de4,%eax
+0x402c38:5:mov $0x79d977ca,%ecx
+0x402c3d:3:mov -0x30(%rbp),%edx
+0x402c40:3:cmp $0x34,%edx
+0x402c43:3:cmovl %ecx,%eax
+0x402c46:3:mov %eax,-0x40(%rbp)
+0x402c49:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x402c4e:5:mov $0x960e3afd,%eax
+0x402c53:5:mov $0xb508515,%ecx
+0x402c58:3:mov -0x30(%rbp),%edx
+0x402c5b:3:cmp $0x35,%edx
+0x402c5e:3:cmovl %ecx,%eax
+0x402c61:3:mov %eax,-0x40(%rbp)
+0x402c64:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x402c69:5:mov $0x6e18c99f,%eax
+0x402c6e:5:mov $0x99e1c8a3,%ecx
+0x402c73:3:mov -0x30(%rbp),%edx
+0x402c76:3:cmp $0x25,%edx
+0x402c79:3:cmovl %ecx,%eax
+0x402c7c:3:mov %eax,-0x40(%rbp)
+0x402c7f:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x402c84:5:mov $0xeda3509,%eax
+0x402c89:5:mov $0xb0334821,%ecx
+0x402c8e:3:mov -0x30(%rbp),%edx
+0x402c91:3:cmp $0x28,%edx
+0x402c94:3:cmovl %ecx,%eax
+0x402c97:3:mov %eax,-0x40(%rbp)
+0x402c9a:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x402c9f:5:mov $0x8c8f8004,%eax
+0x402ca4:5:mov $0xb0508af5,%ecx
+0x402ca9:3:mov -0x30(%rbp),%edx
+0x402cac:3:cmp $0x31,%edx
+0x402caf:3:cmovl %ecx,%eax
+0x402cb2:3:mov %eax,-0x40(%rbp)
+0x402cb5:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x402cba:5:mov $0x4f538461,%eax
+0x402cbf:5:mov $0x8722a812,%ecx
+0x402cc4:3:mov -0x30(%rbp),%edx
+0x402cc7:3:cmp $0x32,%edx
+0x402cca:3:cmovl %ecx,%eax
+0x402ccd:3:mov %eax,-0x40(%rbp)
+0x402cd0:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x402cd5:5:mov $0xf30f1fd1,%eax
+0x402cda:5:mov $0x6b377277,%ecx
+0x402cdf:3:mov -0x30(%rbp),%edx
+0x402ce2:3:cmp $0x30,%edx
+0x402ce5:3:cmovl %ecx,%eax
+0x402ce8:3:mov %eax,-0x40(%rbp)
+0x402ceb:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x402cf0:5:mov $0x434d4d4f,%eax
+0x402cf5:5:mov $0x4a2ff662,%ecx
+0x402cfa:3:mov -0x30(%rbp),%edx
+0x402cfd:3:cmp $0x28,%edx
+0x402d00:3:cmove %ecx,%eax
+0x402d03:3:mov %eax,-0x40(%rbp)
+0x402d06:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x402d0b:5:mov $0xa62919a6,%eax
+0x402d10:5:mov $0x2490e3af,%ecx
+0x402d15:3:mov -0x30(%rbp),%edx
+0x402d18:3:cmp $0x26,%edx
+0x402d1b:3:cmovl %ecx,%eax
+0x402d1e:3:mov %eax,-0x40(%rbp)
+0x402d21:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x402d26:5:mov $0xf9bd363,%eax
+0x402d2b:5:mov $0xc5ca2915,%ecx
+0x402d30:3:mov -0x30(%rbp),%edx
+0x402d33:3:cmp $0x27,%edx
+0x402d36:3:cmovl %ecx,%eax
+0x402d39:3:mov %eax,-0x40(%rbp)
+0x402d3c:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x402d41:5:mov $0x27cbe5a8,%eax
+0x402d46:5:mov $0xa863aff,%ecx
+0x402d4b:3:mov -0x30(%rbp),%edx
+0x402d4e:3:cmp $0x10,%edx
+0x402d51:3:cmovl %ecx,%eax
+0x402d54:3:mov %eax,-0x40(%rbp)
+0x402d57:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x402d5c:5:mov $0xf3e8b053,%eax
+0x402d61:5:mov $0xe73d3bbc,%ecx
+0x402d66:3:mov -0x30(%rbp),%edx
+0x402d69:3:cmp $0x14,%edx
+0x402d6c:3:cmovl %ecx,%eax
+0x402d6f:3:mov %eax,-0x40(%rbp)
+0x402d72:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x402d77:5:mov $0xe1b6d767,%eax
+0x402d7c:5:mov $0x9691a320,%ecx
+0x402d81:3:mov -0x30(%rbp),%edx
+0x402d84:3:cmp $0x20,%edx
+0x402d87:3:cmovl %ecx,%eax
+0x402d8a:3:mov %eax,-0x40(%rbp)
+0x402d8d:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x402d92:5:mov $0x434d4d4f,%eax
+0x402d97:5:mov $0xa3b9121f,%ecx
+0x402d9c:3:mov -0x30(%rbp),%edx
+0x402d9f:3:cmp $0x20,%edx
+0x402da2:3:cmove %ecx,%eax
+0x402da5:3:mov %eax,-0x40(%rbp)
+0x402da8:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x402dad:5:mov $0x434d4d4f,%eax
+0x402db2:5:mov $0xa11d401a,%ecx
+0x402db7:3:mov -0x30(%rbp),%edx
+0x402dba:3:cmp $0x14,%edx
+0x402dbd:3:cmove %ecx,%eax
+0x402dc0:3:mov %eax,-0x40(%rbp)
+0x402dc3:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x402dc8:5:mov $0x37534f54,%eax
+0x402dcd:5:mov $0x323768ff,%ecx
+0x402dd2:3:mov -0x30(%rbp),%edx
+0x402dd5:3:cmp $0x11,%edx
+0x402dd8:3:cmovl %ecx,%eax
+0x402ddb:3:mov %eax,-0x40(%rbp)
+0x402dde:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x402de3:5:mov $0x434d4d4f,%eax
+0x402de8:5:mov $0x390fe75e,%ecx
+0x402ded:3:mov -0x30(%rbp),%edx
+0x402df0:3:cmp $0x11,%edx
+0x402df3:3:cmove %ecx,%eax
+0x402df6:3:mov %eax,-0x40(%rbp)
+0x402df9:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x402dfe:5:mov $0x4a37cb26,%eax
+0x402e03:5:mov $0x9372cb02,%ecx
+0x402e08:3:mov -0x30(%rbp),%edx
+0x402e0b:3:cmp $0x9,%edx
+0x402e0e:3:cmovl %ecx,%eax
+0x402e11:3:mov %eax,-0x40(%rbp)
+0x402e14:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x402e19:5:mov $0x1a1316c6,%eax
+0x402e1e:5:mov $0x86230d08,%ecx
+0x402e23:3:mov -0x30(%rbp),%edx
+0x402e26:3:cmp $0xd,%edx
+0x402e29:3:cmovl %ecx,%eax
+0x402e2c:3:mov %eax,-0x40(%rbp)
+0x402e2f:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x402e34:5:mov $0x434d4d4f,%eax
+0x402e39:5:mov $0x1a3161fd,%ecx
+0x402e3e:3:mov -0x30(%rbp),%edx
+0x402e41:3:cmp $0xd,%edx
+0x402e44:3:cmove %ecx,%eax
+0x402e47:3:mov %eax,-0x40(%rbp)
+0x402e4a:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x402e4f:5:mov $0x434d4d4f,%eax
+0x402e54:5:mov $0x9e5b73fc,%ecx
+0x402e59:3:mov -0x30(%rbp),%edx
+0x402e5c:3:cmp $0x9,%edx
+0x402e5f:3:cmove %ecx,%eax
+0x402e62:3:mov %eax,-0x40(%rbp)
+0x402e65:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x402e6a:5:mov $0x434d4d4f,%eax
+0x402e6f:5:mov $0x134f7f23,%ecx
+0x402e74:3:mov -0x30(%rbp),%edx
+0x402e77:3:cmp $0x8,%edx
+0x402e7a:3:cmove %ecx,%eax
+0x402e7d:3:mov %eax,-0x40(%rbp)
+0x402e80:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x402e85:5:mov $0x38396bc0,%eax
+0x402e8a:5:mov $0x160148cc,%ecx
+0x402e8f:2:mov $0x1,%dl
+0x402e91:2:xor %esi,%esi
+0x402e93:7:mov 0x407048,%edi
+0x402e9a:8:mov 0x407060,%r8d
+0x402ea2:3:sub $0x1,%esi
+0x402ea5:3:mov %edi,%r9d
+0x402ea8:3:add %esi,%r9d
+0x402eab:4:imul %r9d,%edi
+0x402eaf:3:and $0x1,%edi
+0x402eb2:3:cmp $0x0,%edi
+0x402eb5:4:sete %r10b
+0x402eb9:4:cmp $0xa,%r8d
+0x402ebd:4:setl %r11b
+0x402ec1:3:mov %r10b,%bl
+0x402ec4:3:xor $0xff,%bl
+0x402ec7:3:mov %r11b,%r14b
+0x402eca:4:xor $0xff,%r14b
+0x402ece:3:xor $0x1,%dl
+0x402ed1:3:mov %bl,%r15b
+0x402ed4:4:and $0xff,%r15b
+0x402ed8:3:and %dl,%r10b
+0x402edb:3:mov %r14b,%r12b
+0x402ede:4:and $0xff,%r12b
+0x402ee2:3:and %dl,%r11b
+0x402ee5:3:or %r10b,%r15b
+0x402ee8:3:or %r11b,%r12b
+0x402eeb:3:xor %r12b,%r15b
+0x402eee:3:or %r14b,%bl
+0x402ef1:3:xor $0xff,%bl
+0x402ef4:3:or $0x1,%dl
+0x402ef7:2:and %dl,%bl
+0x402ef9:3:or %bl,%r15b
+0x402efc:4:test $0x1,%r15b
+0x402f00:3:cmovne %ecx,%eax
+0x402f03:3:mov %eax,-0x40(%rbp)
+0x402f06:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x402f0b:5:mov $0x38396bc0,%eax
+0x402f10:5:mov $0x6365a002,%ecx
+0x402f15:4:mov -0x38(%rbp),%rdx
+0x402f19:6:movl $0xb,(%rdx)
+0x402f1f:7:mov 0x407048,%esi
+0x402f26:7:mov 0x407060,%edi
+0x402f2d:3:mov %esi,%r8d
+0x402f30:7:add $0x7c2022bb,%r8d
+0x402f37:4:sub $0x1,%r8d
+0x402f3b:7:sub $0x7c2022bb,%r8d
+0x402f42:4:imul %r8d,%esi
+0x402f46:3:and $0x1,%esi
+0x402f49:3:cmp $0x0,%esi
+0x402f4c:4:sete %r9b
+0x402f50:3:cmp $0xa,%edi
+0x402f53:4:setl %r10b
+0x402f57:3:mov %r9b,%r11b
+0x402f5a:3:and %r10b,%r11b
+0x402f5d:3:xor %r10b,%r9b
+0x402f60:3:or %r9b,%r11b
+0x402f63:4:test $0x1,%r11b
+0x402f67:3:cmovne %ecx,%eax
+0x402f6a:3:mov %eax,-0x40(%rbp)
+0x402f6d:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x402f72:7:movl $0x3dc48d58,-0x40(%rbp)
+0x402f79:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x402f7e:4:mov -0x38(%rbp),%rax
+0x402f82:6:movl $0x2,(%rax)
+0x402f88:7:movl $0x3dc48d58,-0x40(%rbp)
+0x402f8f:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x402f94:5:mov $0x4e2fb64f,%eax
+0x402f99:5:mov $0x8eefcab,%ecx
+0x402f9e:2:mov $0x1,%dl
+0x402fa0:2:xor %esi,%esi
+0x402fa2:7:mov 0x407048,%edi
+0x402fa9:8:mov 0x407060,%r8d
+0x402fb1:3:sub $0x1,%esi
+0x402fb4:3:mov %edi,%r9d
+0x402fb7:3:add %esi,%r9d
+0x402fba:4:imul %r9d,%edi
+0x402fbe:3:and $0x1,%edi
+0x402fc1:3:cmp $0x0,%edi
+0x402fc4:4:sete %r10b
+0x402fc8:4:cmp $0xa,%r8d
+0x402fcc:4:setl %r11b
+0x402fd0:3:mov %r10b,%bl
+0x402fd3:3:xor $0xff,%bl
+0x402fd6:3:mov %r11b,%r14b
+0x402fd9:4:xor $0xff,%r14b
+0x402fdd:3:xor $0x1,%dl
+0x402fe0:3:mov %bl,%r15b
+0x402fe3:4:and $0xff,%r15b
+0x402fe7:3:and %dl,%r10b
+0x402fea:3:mov %r14b,%r12b
+0x402fed:4:and $0xff,%r12b
+0x402ff1:3:and %dl,%r11b
+0x402ff4:3:or %r10b,%r15b
+0x402ff7:3:or %r11b,%r12b
+0x402ffa:3:xor %r12b,%r15b
+0x402ffd:3:or %r14b,%bl
+0x403000:3:xor $0xff,%bl
+0x403003:3:or $0x1,%dl
+0x403006:2:and %dl,%bl
+0x403008:3:or %bl,%r15b
+0x40300b:4:test $0x1,%r15b
+0x40300f:3:cmovne %ecx,%eax
+0x403012:3:mov %eax,-0x40(%rbp)
+0x403015:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x40301a:5:mov $0x4e2fb64f,%eax
+0x40301f:5:mov $0x5b74f4a1,%ecx
+0x403024:4:mov -0x38(%rbp),%rdx
+0x403028:6:movl $0x3,(%rdx)
+0x40302e:7:mov 0x407048,%esi
+0x403035:7:mov 0x407060,%edi
+0x40303c:3:mov %esi,%r8d
+0x40303f:7:sub $0x20c5f83d,%r8d
+0x403046:4:sub $0x1,%r8d
+0x40304a:7:add $0x20c5f83d,%r8d
+0x403051:4:imul %r8d,%esi
+0x403055:3:and $0x1,%esi
+0x403058:3:cmp $0x0,%esi
+0x40305b:4:sete %r9b
+0x40305f:3:cmp $0xa,%edi
+0x403062:4:setl %r10b
+0x403066:3:mov %r9b,%r11b
+0x403069:3:and %r10b,%r11b
+0x40306c:3:xor %r10b,%r9b
+0x40306f:3:or %r9b,%r11b
+0x403072:4:test $0x1,%r11b
+0x403076:3:cmovne %ecx,%eax
+0x403079:3:mov %eax,-0x40(%rbp)
+0x40307c:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x403081:7:movl $0x3dc48d58,-0x40(%rbp)
+0x403088:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x40308d:5:mov $0xeed98bb5,%eax
+0x403092:5:mov $0xca08272d,%ecx
+0x403097:2:xor %edx,%edx
+0x403099:7:mov 0x407048,%esi
+0x4030a0:7:mov 0x407060,%edi
+0x4030a7:3:sub $0x1,%edx
+0x4030aa:3:mov %esi,%r8d
+0x4030ad:3:add %edx,%r8d
+0x4030b0:4:imul %r8d,%esi
+0x4030b4:3:and $0x1,%esi
+0x4030b7:3:cmp $0x0,%esi
+0x4030ba:4:sete %r9b
+0x4030be:3:cmp $0xa,%edi
+0x4030c1:4:setl %r10b
+0x4030c5:3:mov %r9b,%r11b
+0x4030c8:3:and %r10b,%r11b
+0x4030cb:3:xor %r10b,%r9b
+0x4030ce:3:or %r9b,%r11b
+0x4030d1:4:test $0x1,%r11b
+0x4030d5:3:cmovne %ecx,%eax
+0x4030d8:3:mov %eax,-0x40(%rbp)
+0x4030db:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x4030e0:5:mov $0xeed98bb5,%eax
+0x4030e5:5:mov $0x8e4af87b,%ecx
+0x4030ea:2:mov $0x1,%dl
+0x4030ec:2:xor %esi,%esi
+0x4030ee:4:mov -0x38(%rbp),%rdi
+0x4030f2:6:movl $0x4,(%rdi)
+0x4030f8:8:mov 0x407048,%r8d
+0x403100:8:mov 0x407060,%r9d
+0x403108:3:sub $0x1,%esi
+0x40310b:3:mov %r8d,%r10d
+0x40310e:3:add %esi,%r10d
+0x403111:4:imul %r10d,%r8d
+0x403115:4:and $0x1,%r8d
+0x403119:4:cmp $0x0,%r8d
+0x40311d:4:sete %r11b
+0x403121:4:cmp $0xa,%r9d
+0x403125:3:setl %bl
+0x403128:3:mov %r11b,%r14b
+0x40312b:4:xor $0xff,%r14b
+0x40312f:3:mov %bl,%r15b
+0x403132:4:xor $0xff,%r15b
+0x403136:3:xor $0x1,%dl
+0x403139:3:mov %r14b,%r12b
+0x40313c:4:and $0xff,%r12b
+0x403140:3:and %dl,%r11b
+0x403143:3:mov %r15b,%r13b
+0x403146:4:and $0xff,%r13b
+0x40314a:2:and %dl,%bl
+0x40314c:3:or %r11b,%r12b
+0x40314f:3:or %bl,%r13b
+0x403152:3:xor %r13b,%r12b
+0x403155:3:or %r15b,%r14b
+0x403158:4:xor $0xff,%r14b
+0x40315c:3:or $0x1,%dl
+0x40315f:3:and %dl,%r14b
+0x403162:3:or %r14b,%r12b
+0x403165:4:test $0x1,%r12b
+0x403169:3:cmovne %ecx,%eax
+0x40316c:3:mov %eax,-0x40(%rbp)
+0x40316f:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x403174:7:movl $0x3dc48d58,-0x40(%rbp)
+0x40317b:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x403180:4:mov -0x38(%rbp),%rax
+0x403184:6:movl $0x5,(%rax)
+0x40318a:7:movl $0x3dc48d58,-0x40(%rbp)
+0x403191:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x403196:4:mov -0x38(%rbp),%rax
+0x40319a:6:movl $0x6,(%rax)
+0x4031a0:7:movl $0x3dc48d58,-0x40(%rbp)
+0x4031a7:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x4031ac:5:mov $0xdc0ac16c,%eax
+0x4031b1:5:mov $0x581c9942,%ecx
+0x4031b6:7:mov 0x407048,%edx
+0x4031bd:7:mov 0x407060,%esi
+0x4031c4:2:mov %edx,%edi
+0x4031c6:6:add $0x4d18020c,%edi
+0x4031cc:3:sub $0x1,%edi
+0x4031cf:6:sub $0x4d18020c,%edi
+0x4031d5:3:imul %edi,%edx
+0x4031d8:3:and $0x1,%edx
+0x4031db:3:cmp $0x0,%edx
+0x4031de:4:sete %r8b
+0x4031e2:3:cmp $0xa,%esi
+0x4031e5:4:setl %r9b
+0x4031e9:3:mov %r8b,%r10b
+0x4031ec:3:and %r9b,%r10b
+0x4031ef:3:xor %r9b,%r8b
+0x4031f2:3:or %r8b,%r10b
+0x4031f5:4:test $0x1,%r10b
+0x4031f9:3:cmovne %ecx,%eax
+0x4031fc:3:mov %eax,-0x40(%rbp)
+0x4031ff:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x403204:5:mov $0xdc0ac16c,%eax
+0x403209:5:mov $0x8428e348,%ecx
+0x40320e:4:mov -0x38(%rbp),%rdx
+0x403212:6:movl $0x7,(%rdx)
+0x403218:7:mov 0x407048,%esi
+0x40321f:7:mov 0x407060,%edi
+0x403226:3:mov %esi,%r8d
+0x403229:7:add $0xb4bcefff,%r8d
+0x403230:4:sub $0x1,%r8d
+0x403234:7:sub $0xb4bcefff,%r8d
+0x40323b:4:imul %r8d,%esi
+0x40323f:3:and $0x1,%esi
+0x403242:3:cmp $0x0,%esi
+0x403245:4:sete %r9b
+0x403249:3:cmp $0xa,%edi
+0x40324c:4:setl %r10b
+0x403250:3:mov %r9b,%r11b
+0x403253:3:and %r10b,%r11b
+0x403256:3:xor %r10b,%r9b
+0x403259:3:or %r9b,%r11b
+0x40325c:4:test $0x1,%r11b
+0x403260:3:cmovne %ecx,%eax
+0x403263:3:mov %eax,-0x40(%rbp)
+0x403266:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x40326b:7:movl $0x3dc48d58,-0x40(%rbp)
+0x403272:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x403277:4:mov -0x38(%rbp),%rax
+0x40327b:6:movl $0x8,(%rax)
+0x403281:7:movl $0x3dc48d58,-0x40(%rbp)
+0x403288:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x40328d:4:mov -0x38(%rbp),%rax
+0x403291:6:movl $0x9,(%rax)
+0x403297:7:movl $0x3dc48d58,-0x40(%rbp)
+0x40329e:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x4032a3:4:mov -0x38(%rbp),%rax
+0x4032a7:6:movl $0xa,(%rax)
+0x4032ad:7:movl $0x3dc48d58,-0x40(%rbp)
+0x4032b4:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x4032b9:4:mov -0x38(%rbp),%rax
+0x4032bd:6:movl $0xc,(%rax)
+0x4032c3:7:movl $0x3dc48d58,-0x40(%rbp)
+0x4032ca:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x4032cf:4:mov -0x38(%rbp),%rax
+0x4032d3:6:movl $0xd,(%rax)
+0x4032d9:7:movl $0x3dc48d58,-0x40(%rbp)
+0x4032e0:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x4032e5:4:mov -0x38(%rbp),%rax
+0x4032e9:6:movl $0xe,(%rax)
+0x4032ef:7:movl $0x3dc48d58,-0x40(%rbp)
+0x4032f6:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x4032fb:4:mov -0x38(%rbp),%rax
+0x4032ff:6:movl $0xf,(%rax)
+0x403305:7:movl $0x3dc48d58,-0x40(%rbp)
+0x40330c:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x403311:5:mov $0xba3b5024,%eax
+0x403316:5:mov $0x565afe5c,%ecx
+0x40331b:7:mov 0x407048,%edx
+0x403322:7:mov 0x407060,%esi
+0x403329:2:mov %edx,%edi
+0x40332b:6:sub $0x72944dfb,%edi
+0x403331:3:sub $0x1,%edi
+0x403334:6:add $0x72944dfb,%edi
+0x40333a:3:imul %edi,%edx
+0x40333d:3:and $0x1,%edx
+0x403340:3:cmp $0x0,%edx
+0x403343:4:sete %r8b
+0x403347:3:cmp $0xa,%esi
+0x40334a:4:setl %r9b
+0x40334e:3:mov %r8b,%r10b
+0x403351:3:and %r9b,%r10b
+0x403354:3:xor %r9b,%r8b
+0x403357:3:or %r8b,%r10b
+0x40335a:4:test $0x1,%r10b
+0x40335e:3:cmovne %ecx,%eax
+0x403361:3:mov %eax,-0x40(%rbp)
+0x403364:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x403369:5:mov $0xba3b5024,%eax
+0x40336e:5:mov $0x870dc3ea,%ecx
+0x403373:2:mov $0x1,%dl
+0x403375:4:mov -0x38(%rbp),%rsi
+0x403379:6:movl $0x1b,(%rsi)
+0x40337f:7:mov 0x407048,%edi
+0x403386:8:mov 0x407060,%r8d
+0x40338e:3:mov %edi,%r9d
+0x403391:7:sub $0x2695b79c,%r9d
+0x403398:4:sub $0x1,%r9d
+0x40339c:7:add $0x2695b79c,%r9d
+0x4033a3:4:imul %r9d,%edi
+0x4033a7:3:and $0x1,%edi
+0x4033aa:3:cmp $0x0,%edi
+0x4033ad:4:sete %r10b
+0x4033b1:4:cmp $0xa,%r8d
+0x4033b5:4:setl %r11b
+0x4033b9:3:mov %r10b,%bl
+0x4033bc:3:xor $0xff,%bl
+0x4033bf:3:mov %r11b,%r14b
+0x4033c2:4:xor $0xff,%r14b
+0x4033c6:3:xor $0x0,%dl
+0x4033c9:3:mov %bl,%r15b
+0x4033cc:4:and $0x0,%r15b
+0x4033d0:3:and %dl,%r10b
+0x4033d3:3:mov %r14b,%r12b
+0x4033d6:4:and $0x0,%r12b
+0x4033da:3:and %dl,%r11b
+0x4033dd:3:or %r10b,%r15b
+0x4033e0:3:or %r11b,%r12b
+0x4033e3:3:xor %r12b,%r15b
+0x4033e6:3:or %r14b,%bl
+0x4033e9:3:xor $0xff,%bl
+0x4033ec:3:or $0x0,%dl
+0x4033ef:2:and %dl,%bl
+0x4033f1:3:or %bl,%r15b
+0x4033f4:4:test $0x1,%r15b
+0x4033f8:3:cmovne %ecx,%eax
+0x4033fb:3:mov %eax,-0x40(%rbp)
+0x4033fe:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x403403:7:movl $0x3dc48d58,-0x40(%rbp)
+0x40340a:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x40340f:5:mov $0x81a332f1,%eax
+0x403414:5:mov $0x5f6aa588,%ecx
+0x403419:2:mov $0x1,%dl
+0x40341b:2:xor %esi,%esi
+0x40341d:7:mov 0x407048,%edi
+0x403424:8:mov 0x407060,%r8d
+0x40342c:3:sub $0x1,%esi
+0x40342f:3:mov %edi,%r9d
+0x403432:3:add %esi,%r9d
+0x403435:4:imul %r9d,%edi
+0x403439:3:and $0x1,%edi
+0x40343c:3:cmp $0x0,%edi
+0x40343f:4:sete %r10b
+0x403443:4:cmp $0xa,%r8d
+0x403447:4:setl %r11b
+0x40344b:3:mov %r10b,%bl
+0x40344e:3:xor $0xff,%bl
+0x403451:3:mov %r11b,%r14b
+0x403454:4:xor $0xff,%r14b
+0x403458:3:xor $0x0,%dl
+0x40345b:3:mov %bl,%r15b
+0x40345e:4:and $0x0,%r15b
+0x403462:3:and %dl,%r10b
+0x403465:3:mov %r14b,%r12b
+0x403468:4:and $0x0,%r12b
+0x40346c:3:and %dl,%r11b
+0x40346f:3:or %r10b,%r15b
+0x403472:3:or %r11b,%r12b
+0x403475:3:xor %r12b,%r15b
+0x403478:3:or %r14b,%bl
+0x40347b:3:xor $0xff,%bl
+0x40347e:3:or $0x0,%dl
+0x403481:2:and %dl,%bl
+0x403483:3:or %bl,%r15b
+0x403486:4:test $0x1,%r15b
+0x40348a:3:cmovne %ecx,%eax
+0x40348d:3:mov %eax,-0x40(%rbp)
+0x403490:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x403495:5:mov $0x81a332f1,%eax
+0x40349a:5:mov $0xd5fec630,%ecx
+0x40349f:2:xor %edx,%edx
+0x4034a1:4:mov -0x38(%rbp),%rsi
+0x4034a5:6:movl $0x1a,(%rsi)
+0x4034ab:7:mov 0x407048,%edi
+0x4034b2:8:mov 0x407060,%r8d
+0x4034ba:3:sub $0x1,%edx
+0x4034bd:3:mov %edi,%r9d
+0x4034c0:3:add %edx,%r9d
+0x4034c3:4:imul %r9d,%edi
+0x4034c7:3:and $0x1,%edi
+0x4034ca:3:cmp $0x0,%edi
+0x4034cd:4:sete %r10b
+0x4034d1:4:cmp $0xa,%r8d
+0x4034d5:4:setl %r11b
+0x4034d9:3:mov %r10b,%bl
+0x4034dc:3:and %r11b,%bl
+0x4034df:3:xor %r11b,%r10b
+0x4034e2:3:or %r10b,%bl
+0x4034e5:3:test $0x1,%bl
+0x4034e8:3:cmovne %ecx,%eax
+0x4034eb:3:mov %eax,-0x40(%rbp)
+0x4034ee:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x4034f3:7:movl $0x3dc48d58,-0x40(%rbp)
+0x4034fa:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x4034ff:4:mov -0x38(%rbp),%rax
+0x403503:6:movl $0x3a,(%rax)
+0x403509:7:movl $0x3dc48d58,-0x40(%rbp)
+0x403510:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x403515:5:mov $0xb079ba10,%eax
+0x40351a:5:mov $0x78062952,%ecx
+0x40351f:7:mov 0x407048,%edx
+0x403526:7:mov 0x407060,%esi
+0x40352d:2:mov %edx,%edi
+0x40352f:6:sub $0xce38d6f,%edi
+0x403535:3:sub $0x1,%edi
+0x403538:6:add $0xce38d6f,%edi
+0x40353e:3:imul %edi,%edx
+0x403541:3:and $0x1,%edx
+0x403544:3:cmp $0x0,%edx
+0x403547:4:sete %r8b
+0x40354b:3:cmp $0xa,%esi
+0x40354e:4:setl %r9b
+0x403552:3:mov %r8b,%r10b
+0x403555:3:and %r9b,%r10b
+0x403558:3:xor %r9b,%r8b
+0x40355b:3:or %r8b,%r10b
+0x40355e:4:test $0x1,%r10b
+0x403562:3:cmovne %ecx,%eax
+0x403565:3:mov %eax,-0x40(%rbp)
+0x403568:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x40356d:5:mov $0xb079ba10,%eax
+0x403572:5:mov $0xd76e4790,%ecx
+0x403577:2:mov $0x1,%dl
+0x403579:4:mov -0x38(%rbp),%rsi
+0x40357d:6:movl $0x27,(%rsi)
+0x403583:7:mov 0x407048,%edi
+0x40358a:8:mov 0x407060,%r8d
+0x403592:3:mov %edi,%r9d
+0x403595:7:sub $0x2204c485,%r9d
+0x40359c:4:sub $0x1,%r9d
+0x4035a0:7:add $0x2204c485,%r9d
+0x4035a7:4:imul %r9d,%edi
+0x4035ab:3:and $0x1,%edi
+0x4035ae:3:cmp $0x0,%edi
+0x4035b1:4:sete %r10b
+0x4035b5:4:cmp $0xa,%r8d
+0x4035b9:4:setl %r11b
+0x4035bd:3:mov %r10b,%bl
+0x4035c0:3:xor $0xff,%bl
+0x4035c3:3:mov %r11b,%r14b
+0x4035c6:4:xor $0xff,%r14b
+0x4035ca:3:xor $0x1,%dl
+0x4035cd:3:mov %bl,%r15b
+0x4035d0:4:and $0xff,%r15b
+0x4035d4:3:and %dl,%r10b
+0x4035d7:3:mov %r14b,%r12b
+0x4035da:4:and $0xff,%r12b
+0x4035de:3:and %dl,%r11b
+0x4035e1:3:or %r10b,%r15b
+0x4035e4:3:or %r11b,%r12b
+0x4035e7:3:xor %r12b,%r15b
+0x4035ea:3:or %r14b,%bl
+0x4035ed:3:xor $0xff,%bl
+0x4035f0:3:or $0x1,%dl
+0x4035f3:2:and %dl,%bl
+0x4035f5:3:or %bl,%r15b
+0x4035f8:4:test $0x1,%r15b
+0x4035fc:3:cmovne %ecx,%eax
+0x4035ff:3:mov %eax,-0x40(%rbp)
+0x403602:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x403607:7:movl $0x3dc48d58,-0x40(%rbp)
+0x40360e:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x403613:4:mov -0x38(%rbp),%rax
+0x403617:6:movl $0x28,(%rax)
+0x40361d:7:movl $0x3dc48d58,-0x40(%rbp)
+0x403624:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x403629:5:mov $0x70d98906,%eax
+0x40362e:5:mov $0xdb91702d,%ecx
+0x403633:2:mov $0x1,%dl
+0x403635:7:mov 0x407048,%esi
+0x40363c:7:mov 0x407060,%edi
+0x403643:3:mov %esi,%r8d
+0x403646:7:sub $0xbe985ee7,%r8d
+0x40364d:4:sub $0x1,%r8d
+0x403651:7:add $0xbe985ee7,%r8d
+0x403658:4:imul %r8d,%esi
+0x40365c:3:and $0x1,%esi
+0x40365f:3:cmp $0x0,%esi
+0x403662:4:sete %r9b
+0x403666:3:cmp $0xa,%edi
+0x403669:4:setl %r10b
+0x40366d:3:mov %r9b,%r11b
+0x403670:4:xor $0xff,%r11b
+0x403674:3:mov %r10b,%bl
+0x403677:3:xor $0xff,%bl
+0x40367a:3:xor $0x1,%dl
+0x40367d:3:mov %r11b,%r14b
+0x403680:4:and $0xff,%r14b
+0x403684:3:and %dl,%r9b
+0x403687:3:mov %bl,%r15b
+0x40368a:4:and $0xff,%r15b
+0x40368e:3:and %dl,%r10b
+0x403691:3:or %r9b,%r14b
+0x403694:3:or %r10b,%r15b
+0x403697:3:xor %r15b,%r14b
+0x40369a:3:or %bl,%r11b
+0x40369d:4:xor $0xff,%r11b
+0x4036a1:3:or $0x1,%dl
+0x4036a4:3:and %dl,%r11b
+0x4036a7:3:or %r11b,%r14b
+0x4036aa:4:test $0x1,%r14b
+0x4036ae:3:cmovne %ecx,%eax
+0x4036b1:3:mov %eax,-0x40(%rbp)
+0x4036b4:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x4036b9:5:mov $0x70d98906,%eax
+0x4036be:5:mov $0x7740bd82,%ecx
+0x4036c3:2:mov $0x1,%dl
+0x4036c5:4:mov -0x38(%rbp),%rsi
+0x4036c9:6:movl $0x2a,(%rsi)
+0x4036cf:7:mov 0x407048,%edi
+0x4036d6:8:mov 0x407060,%r8d
+0x4036de:3:mov %edi,%r9d
+0x4036e1:7:add $0x2642f954,%r9d
+0x4036e8:4:sub $0x1,%r9d
+0x4036ec:7:sub $0x2642f954,%r9d
+0x4036f3:4:imul %r9d,%edi
+0x4036f7:3:and $0x1,%edi
+0x4036fa:3:cmp $0x0,%edi
+0x4036fd:4:sete %r10b
+0x403701:4:cmp $0xa,%r8d
+0x403705:4:setl %r11b
+0x403709:3:mov %r10b,%bl
+0x40370c:3:xor $0xff,%bl
+0x40370f:3:mov %r11b,%r14b
+0x403712:4:xor $0xff,%r14b
+0x403716:3:xor $0x1,%dl
+0x403719:3:mov %bl,%r15b
+0x40371c:4:and $0xff,%r15b
+0x403720:3:and %dl,%r10b
+0x403723:3:mov %r14b,%r12b
+0x403726:4:and $0xff,%r12b
+0x40372a:3:and %dl,%r11b
+0x40372d:3:or %r10b,%r15b
+0x403730:3:or %r11b,%r12b
+0x403733:3:xor %r12b,%r15b
+0x403736:3:or %r14b,%bl
+0x403739:3:xor $0xff,%bl
+0x40373c:3:or $0x1,%dl
+0x40373f:2:and %dl,%bl
+0x403741:3:or %bl,%r15b
+0x403744:4:test $0x1,%r15b
+0x403748:3:cmovne %ecx,%eax
+0x40374b:3:mov %eax,-0x40(%rbp)
+0x40374e:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x403753:7:movl $0x3dc48d58,-0x40(%rbp)
+0x40375a:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x40375f:4:mov -0x38(%rbp),%rax
+0x403763:6:movl $0x33,(%rax)
+0x403769:7:movl $0x3dc48d58,-0x40(%rbp)
+0x403770:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x403775:4:mov -0x38(%rbp),%rax
+0x403779:6:movl $0x34,(%rax)
+0x40377f:7:movl $0x3dc48d58,-0x40(%rbp)
+0x403786:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x40378b:4:mov -0x38(%rbp),%rax
+0x40378f:6:movl $0x35,(%rax)
+0x403795:7:movl $0x3dc48d58,-0x40(%rbp)
+0x40379c:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x4037a1:4:mov -0x38(%rbp),%rax
+0x4037a5:6:movl $0x1c,(%rax)
+0x4037ab:7:movl $0x3dc48d58,-0x40(%rbp)
+0x4037b2:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x4037b7:4:mov -0x38(%rbp),%rax
+0x4037bb:6:movl $0x4d,(%rax)
+0x4037c1:7:movl $0x3dc48d58,-0x40(%rbp)
+0x4037c8:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x4037cd:4:mov -0x38(%rbp),%rax
+0x4037d1:6:movl $0x4b,(%rax)
+0x4037d7:7:movl $0x3dc48d58,-0x40(%rbp)
+0x4037de:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x4037e3:4:mov -0x38(%rbp),%rax
+0x4037e7:6:movl $0x48,(%rax)
+0x4037ed:7:movl $0x3dc48d58,-0x40(%rbp)
+0x4037f4:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x4037f9:4:mov -0x38(%rbp),%rax
+0x4037fd:6:movl $0x50,(%rax)
+0x403803:7:movl $0x3dc48d58,-0x40(%rbp)
+0x40380a:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x40380f:5:mov $0xb580ed7a,%eax
+0x403814:5:mov $0x33673ba5,%ecx
+0x403819:2:mov $0x1,%dl
+0x40381b:2:xor %esi,%esi
+0x40381d:7:mov 0x407048,%edi
+0x403824:8:mov 0x407060,%r8d
+0x40382c:3:sub $0x1,%esi
+0x40382f:3:mov %edi,%r9d
+0x403832:3:add %esi,%r9d
+0x403835:4:imul %r9d,%edi
+0x403839:3:and $0x1,%edi
+0x40383c:3:cmp $0x0,%edi
+0x40383f:4:sete %r10b
+0x403843:4:cmp $0xa,%r8d
+0x403847:4:setl %r11b
+0x40384b:3:mov %r10b,%bl
+0x40384e:3:xor $0xff,%bl
+0x403851:3:mov %r11b,%r14b
+0x403854:4:xor $0xff,%r14b
+0x403858:3:xor $0x0,%dl
+0x40385b:3:mov %bl,%r15b
+0x40385e:4:and $0x0,%r15b
+0x403862:3:and %dl,%r10b
+0x403865:3:mov %r14b,%r12b
+0x403868:4:and $0x0,%r12b
+0x40386c:3:and %dl,%r11b
+0x40386f:3:or %r10b,%r15b
+0x403872:3:or %r11b,%r12b
+0x403875:3:xor %r12b,%r15b
+0x403878:3:or %r14b,%bl
+0x40387b:3:xor $0xff,%bl
+0x40387e:3:or $0x0,%dl
+0x403881:2:and %dl,%bl
+0x403883:3:or %bl,%r15b
+0x403886:4:test $0x1,%r15b
+0x40388a:3:cmovne %ecx,%eax
+0x40388d:3:mov %eax,-0x40(%rbp)
+0x403890:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x403895:5:mov $0xb580ed7a,%eax
+0x40389a:5:mov $0x97606577,%ecx
+0x40389f:4:mov -0x38(%rbp),%rdx
+0x4038a3:6:movl $0x39,(%rdx)
+0x4038a9:7:mov 0x407048,%esi
+0x4038b0:7:mov 0x407060,%edi
+0x4038b7:3:mov %esi,%r8d
+0x4038ba:7:sub $0xa587c369,%r8d
+0x4038c1:4:sub $0x1,%r8d
+0x4038c5:7:add $0xa587c369,%r8d
+0x4038cc:4:imul %r8d,%esi
+0x4038d0:3:and $0x1,%esi
+0x4038d3:3:cmp $0x0,%esi
+0x4038d6:4:sete %r9b
+0x4038da:3:cmp $0xa,%edi
+0x4038dd:4:setl %r10b
+0x4038e1:3:mov %r9b,%r11b
+0x4038e4:3:and %r10b,%r11b
+0x4038e7:3:xor %r10b,%r9b
+0x4038ea:3:or %r9b,%r11b
+0x4038ed:4:test $0x1,%r11b
+0x4038f1:3:cmovne %ecx,%eax
+0x4038f4:3:mov %eax,-0x40(%rbp)
+0x4038f7:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x4038fc:7:movl $0x3dc48d58,-0x40(%rbp)
+0x403903:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x403908:4:mov -0x38(%rbp),%rax
+0x40390c:6:movl $0x2b,(%rax)
+0x403912:7:movl $0x3dc48d58,-0x40(%rbp)
+0x403919:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x40391e:4:mov -0x38(%rbp),%rax
+0x403922:6:movl $0x29,(%rax)
+0x403928:7:movl $0x3dc48d58,-0x40(%rbp)
+0x40392f:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x403934:4:mov -0x38(%rbp),%rax
+0x403938:6:movl $0x1d,(%rax)
+0x40393e:7:movl $0x3dc48d58,-0x40(%rbp)
+0x403945:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x40394a:4:mov -0x38(%rbp),%rax
+0x40394e:6:movl $0x1e,(%rax)
+0x403954:7:movl $0x3dc48d58,-0x40(%rbp)
+0x40395b:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x403960:5:mov $0x95a84012,%eax
+0x403965:5:mov $0xd695722f,%ecx
+0x40396a:2:xor %edx,%edx
+0x40396c:7:mov 0x407048,%esi
+0x403973:7:mov 0x407060,%edi
+0x40397a:3:sub $0x1,%edx
+0x40397d:3:mov %esi,%r8d
+0x403980:3:add %edx,%r8d
+0x403983:4:imul %r8d,%esi
+0x403987:3:and $0x1,%esi
+0x40398a:3:cmp $0x0,%esi
+0x40398d:4:sete %r9b
+0x403991:3:cmp $0xa,%edi
+0x403994:4:setl %r10b
+0x403998:3:mov %r9b,%r11b
+0x40399b:3:and %r10b,%r11b
+0x40399e:3:xor %r10b,%r9b
+0x4039a1:3:or %r9b,%r11b
+0x4039a4:4:test $0x1,%r11b
+0x4039a8:3:cmovne %ecx,%eax
+0x4039ab:3:mov %eax,-0x40(%rbp)
+0x4039ae:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x4039b3:5:mov $0x95a84012,%eax
+0x4039b8:5:mov $0x8102ae67,%ecx
+0x4039bd:2:mov $0x1,%dl
+0x4039bf:4:mov -0x38(%rbp),%rsi
+0x4039c3:6:movl $0x30,(%rsi)
+0x4039c9:7:mov 0x407048,%edi
+0x4039d0:8:mov 0x407060,%r8d
+0x4039d8:3:mov %edi,%r9d
+0x4039db:7:sub $0x2073b227,%r9d
+0x4039e2:4:sub $0x1,%r9d
+0x4039e6:7:add $0x2073b227,%r9d
+0x4039ed:4:imul %r9d,%edi
+0x4039f1:3:and $0x1,%edi
+0x4039f4:3:cmp $0x0,%edi
+0x4039f7:4:sete %r10b
+0x4039fb:4:cmp $0xa,%r8d
+0x4039ff:4:setl %r11b
+0x403a03:3:mov %r10b,%bl
+0x403a06:3:xor $0xff,%bl
+0x403a09:3:mov %r11b,%r14b
+0x403a0c:4:xor $0xff,%r14b
+0x403a10:3:xor $0x1,%dl
+0x403a13:3:mov %bl,%r15b
+0x403a16:4:and $0xff,%r15b
+0x403a1a:3:and %dl,%r10b
+0x403a1d:3:mov %r14b,%r12b
+0x403a20:4:and $0xff,%r12b
+0x403a24:3:and %dl,%r11b
+0x403a27:3:or %r10b,%r15b
+0x403a2a:3:or %r11b,%r12b
+0x403a2d:3:xor %r12b,%r15b
+0x403a30:3:or %r14b,%bl
+0x403a33:3:xor $0xff,%bl
+0x403a36:3:or $0x1,%dl
+0x403a39:2:and %dl,%bl
+0x403a3b:3:or %bl,%r15b
+0x403a3e:4:test $0x1,%r15b
+0x403a42:3:cmovne %ecx,%eax
+0x403a45:3:mov %eax,-0x40(%rbp)
+0x403a48:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x403a4d:7:movl $0x3dc48d58,-0x40(%rbp)
+0x403a54:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x403a59:4:mov -0x38(%rbp),%rax
+0x403a5d:6:movl $0x2e,(%rax)
+0x403a63:7:movl $0x3dc48d58,-0x40(%rbp)
+0x403a6a:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x403a6f:4:mov -0x38(%rbp),%rax
+0x403a73:6:movl $0x20,(%rax)
+0x403a79:7:movl $0x3dc48d58,-0x40(%rbp)
+0x403a80:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x403a85:4:mov -0x38(%rbp),%rax
+0x403a89:6:movl $0x12,(%rax)
+0x403a8f:7:movl $0x3dc48d58,-0x40(%rbp)
+0x403a96:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x403a9b:5:mov $0x52ab5aba,%eax
+0x403aa0:5:mov $0xcd4cdc3e,%ecx
+0x403aa5:7:mov 0x407048,%edx
+0x403aac:7:mov 0x407060,%esi
+0x403ab3:2:mov %edx,%edi
+0x403ab5:6:sub $0xcc3a8875,%edi
+0x403abb:3:sub $0x1,%edi
+0x403abe:6:add $0xcc3a8875,%edi
+0x403ac4:3:imul %edi,%edx
+0x403ac7:3:and $0x1,%edx
+0x403aca:3:cmp $0x0,%edx
+0x403acd:4:sete %r8b
+0x403ad1:3:cmp $0xa,%esi
+0x403ad4:4:setl %r9b
+0x403ad8:3:mov %r8b,%r10b
+0x403adb:3:and %r9b,%r10b
+0x403ade:3:xor %r9b,%r8b
+0x403ae1:3:or %r8b,%r10b
+0x403ae4:4:test $0x1,%r10b
+0x403ae8:3:cmovne %ecx,%eax
+0x403aeb:3:mov %eax,-0x40(%rbp)
+0x403aee:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x403af3:5:mov $0x52ab5aba,%eax
+0x403af8:5:mov $0x9f77863d,%ecx
+0x403afd:4:mov -0x38(%rbp),%rdx
+0x403b01:6:movl $0x21,(%rdx)
+0x403b07:7:mov 0x407048,%esi
+0x403b0e:7:mov 0x407060,%edi
+0x403b15:3:mov %esi,%r8d
+0x403b18:7:sub $0xf934926,%r8d
+0x403b1f:4:sub $0x1,%r8d
+0x403b23:7:add $0xf934926,%r8d
+0x403b2a:4:imul %r8d,%esi
+0x403b2e:3:and $0x1,%esi
+0x403b31:3:cmp $0x0,%esi
+0x403b34:4:sete %r9b
+0x403b38:3:cmp $0xa,%edi
+0x403b3b:4:setl %r10b
+0x403b3f:3:mov %r9b,%r11b
+0x403b42:3:and %r10b,%r11b
+0x403b45:3:xor %r10b,%r9b
+0x403b48:3:or %r9b,%r11b
+0x403b4b:4:test $0x1,%r11b
+0x403b4f:3:cmovne %ecx,%eax
+0x403b52:3:mov %eax,-0x40(%rbp)
+0x403b55:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x403b5a:7:movl $0x3dc48d58,-0x40(%rbp)
+0x403b61:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x403b66:5:mov $0x39fa2608,%eax
+0x403b6b:5:mov $0x7eda817b,%ecx
+0x403b70:7:mov 0x407048,%edx
+0x403b77:7:mov 0x407060,%esi
+0x403b7e:2:mov %edx,%edi
+0x403b80:6:sub $0x519470df,%edi
+0x403b86:3:sub $0x1,%edi
+0x403b89:6:add $0x519470df,%edi
+0x403b8f:3:imul %edi,%edx
+0x403b92:3:and $0x1,%edx
+0x403b95:3:cmp $0x0,%edx
+0x403b98:4:sete %r8b
+0x403b9c:3:cmp $0xa,%esi
+0x403b9f:4:setl %r9b
+0x403ba3:3:mov %r8b,%r10b
+0x403ba6:3:and %r9b,%r10b
+0x403ba9:3:xor %r9b,%r8b
+0x403bac:3:or %r8b,%r10b
+0x403baf:4:test $0x1,%r10b
+0x403bb3:3:cmovne %ecx,%eax
+0x403bb6:3:mov %eax,-0x40(%rbp)
+0x403bb9:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x403bbe:5:mov $0x39fa2608,%eax
+0x403bc3:5:mov $0xe83ad7b9,%ecx
+0x403bc8:2:mov $0x1,%dl
+0x403bca:4:mov -0x38(%rbp),%rsi
+0x403bce:6:movl $0x22,(%rsi)
+0x403bd4:7:mov 0x407048,%edi
+0x403bdb:8:mov 0x407060,%r8d
+0x403be3:3:mov %edi,%r9d
+0x403be6:7:add $0x5d049129,%r9d
+0x403bed:4:sub $0x1,%r9d
+0x403bf1:7:sub $0x5d049129,%r9d
+0x403bf8:4:imul %r9d,%edi
+0x403bfc:3:and $0x1,%edi
+0x403bff:3:cmp $0x0,%edi
+0x403c02:4:sete %r10b
+0x403c06:4:cmp $0xa,%r8d
+0x403c0a:4:setl %r11b
+0x403c0e:3:mov %r10b,%bl
+0x403c11:3:xor $0xff,%bl
+0x403c14:3:mov %r11b,%r14b
+0x403c17:4:xor $0xff,%r14b
+0x403c1b:3:xor $0x1,%dl
+0x403c1e:3:mov %bl,%r15b
+0x403c21:4:and $0xff,%r15b
+0x403c25:3:and %dl,%r10b
+0x403c28:3:mov %r14b,%r12b
+0x403c2b:4:and $0xff,%r12b
+0x403c2f:3:and %dl,%r11b
+0x403c32:3:or %r10b,%r15b
+0x403c35:3:or %r11b,%r12b
+0x403c38:3:xor %r12b,%r15b
+0x403c3b:3:or %r14b,%bl
+0x403c3e:3:xor $0xff,%bl
+0x403c41:3:or $0x1,%dl
+0x403c44:2:and %dl,%bl
+0x403c46:3:or %bl,%r15b
+0x403c49:4:test $0x1,%r15b
+0x403c4d:3:cmovne %ecx,%eax
+0x403c50:3:mov %eax,-0x40(%rbp)
+0x403c53:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x403c58:7:movl $0x3dc48d58,-0x40(%rbp)
+0x403c5f:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x403c64:4:mov -0x38(%rbp),%rax
+0x403c68:6:movl $0x23,(%rax)
+0x403c6e:7:movl $0x3dc48d58,-0x40(%rbp)
+0x403c75:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x403c7a:5:mov $0x72b967a2,%eax
+0x403c7f:5:mov $0x11d84b96,%ecx
+0x403c84:2:mov $0x1,%dl
+0x403c86:7:mov 0x407048,%esi
+0x403c8d:7:mov 0x407060,%edi
+0x403c94:3:mov %esi,%r8d
+0x403c97:7:add $0xe3a01c2,%r8d
+0x403c9e:4:sub $0x1,%r8d
+0x403ca2:7:sub $0xe3a01c2,%r8d
+0x403ca9:4:imul %r8d,%esi
+0x403cad:3:and $0x1,%esi
+0x403cb0:3:cmp $0x0,%esi
+0x403cb3:4:sete %r9b
+0x403cb7:3:cmp $0xa,%edi
+0x403cba:4:setl %r10b
+0x403cbe:3:mov %r9b,%r11b
+0x403cc1:4:xor $0xff,%r11b
+0x403cc5:3:mov %r10b,%bl
+0x403cc8:3:xor $0xff,%bl
+0x403ccb:3:xor $0x1,%dl
+0x403cce:3:mov %r11b,%r14b
+0x403cd1:4:and $0xff,%r14b
+0x403cd5:3:and %dl,%r9b
+0x403cd8:3:mov %bl,%r15b
+0x403cdb:4:and $0xff,%r15b
+0x403cdf:3:and %dl,%r10b
+0x403ce2:3:or %r9b,%r14b
+0x403ce5:3:or %r10b,%r15b
+0x403ce8:3:xor %r15b,%r14b
+0x403ceb:3:or %bl,%r11b
+0x403cee:4:xor $0xff,%r11b
+0x403cf2:3:or $0x1,%dl
+0x403cf5:3:and %dl,%r11b
+0x403cf8:3:or %r11b,%r14b
+0x403cfb:4:test $0x1,%r14b
+0x403cff:3:cmovne %ecx,%eax
+0x403d02:3:mov %eax,-0x40(%rbp)
+0x403d05:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x403d0a:5:mov $0x72b967a2,%eax
+0x403d0f:5:mov $0x5cc2ed10,%ecx
+0x403d14:2:mov $0x1,%dl
+0x403d16:4:mov -0x38(%rbp),%rsi
+0x403d1a:6:movl $0x17,(%rsi)
+0x403d20:7:mov 0x407048,%edi
+0x403d27:8:mov 0x407060,%r8d
+0x403d2f:3:mov %edi,%r9d
+0x403d32:7:add $0x18d2fa54,%r9d
+0x403d39:4:sub $0x1,%r9d
+0x403d3d:7:sub $0x18d2fa54,%r9d
+0x403d44:4:imul %r9d,%edi
+0x403d48:3:and $0x1,%edi
+0x403d4b:3:cmp $0x0,%edi
+0x403d4e:4:sete %r10b
+0x403d52:4:cmp $0xa,%r8d
+0x403d56:4:setl %r11b
+0x403d5a:3:mov %r10b,%bl
+0x403d5d:3:xor $0xff,%bl
+0x403d60:3:mov %r11b,%r14b
+0x403d63:4:xor $0xff,%r14b
+0x403d67:3:xor $0x1,%dl
+0x403d6a:3:mov %bl,%r15b
+0x403d6d:4:and $0xff,%r15b
+0x403d71:3:and %dl,%r10b
+0x403d74:3:mov %r14b,%r12b
+0x403d77:4:and $0xff,%r12b
+0x403d7b:3:and %dl,%r11b
+0x403d7e:3:or %r10b,%r15b
+0x403d81:3:or %r11b,%r12b
+0x403d84:3:xor %r12b,%r15b
+0x403d87:3:or %r14b,%bl
+0x403d8a:3:xor $0xff,%bl
+0x403d8d:3:or $0x1,%dl
+0x403d90:2:and %dl,%bl
+0x403d92:3:or %bl,%r15b
+0x403d95:4:test $0x1,%r15b
+0x403d99:3:cmovne %ecx,%eax
+0x403d9c:3:mov %eax,-0x40(%rbp)
+0x403d9f:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x403da4:7:movl $0x3dc48d58,-0x40(%rbp)
+0x403dab:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x403db0:4:mov -0x38(%rbp),%rax
+0x403db4:6:movl $0x24,(%rax)
+0x403dba:7:movl $0x3dc48d58,-0x40(%rbp)
+0x403dc1:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x403dc6:5:mov $0x9ed84f9c,%eax
+0x403dcb:5:mov $0x73c02b50,%ecx
+0x403dd0:7:mov 0x407048,%edx
+0x403dd7:7:mov 0x407060,%esi
+0x403dde:2:mov %edx,%edi
+0x403de0:6:add $0x8d73ff9a,%edi
+0x403de6:3:sub $0x1,%edi
+0x403de9:6:sub $0x8d73ff9a,%edi
+0x403def:3:imul %edi,%edx
+0x403df2:3:and $0x1,%edx
+0x403df5:3:cmp $0x0,%edx
+0x403df8:4:sete %r8b
+0x403dfc:3:cmp $0xa,%esi
+0x403dff:4:setl %r9b
+0x403e03:3:mov %r8b,%r10b
+0x403e06:3:and %r9b,%r10b
+0x403e09:3:xor %r9b,%r8b
+0x403e0c:3:or %r8b,%r10b
+0x403e0f:4:test $0x1,%r10b
+0x403e13:3:cmovne %ecx,%eax
+0x403e16:3:mov %eax,-0x40(%rbp)
+0x403e19:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x403e1e:5:mov $0x9ed84f9c,%eax
+0x403e23:5:mov $0x8c7a89fa,%ecx
+0x403e28:2:mov $0x1,%dl
+0x403e2a:4:mov -0x38(%rbp),%rsi
+0x403e2e:6:movl $0x25,(%rsi)
+0x403e34:7:mov 0x407048,%edi
+0x403e3b:8:mov 0x407060,%r8d
+0x403e43:3:mov %edi,%r9d
+0x403e46:7:add $0x82bf8dc8,%r9d
+0x403e4d:4:sub $0x1,%r9d
+0x403e51:7:sub $0x82bf8dc8,%r9d
+0x403e58:4:imul %r9d,%edi
+0x403e5c:3:and $0x1,%edi
+0x403e5f:3:cmp $0x0,%edi
+0x403e62:4:sete %r10b
+0x403e66:4:cmp $0xa,%r8d
+0x403e6a:4:setl %r11b
+0x403e6e:3:mov %r10b,%bl
+0x403e71:3:xor $0xff,%bl
+0x403e74:3:mov %r11b,%r14b
+0x403e77:4:xor $0xff,%r14b
+0x403e7b:3:xor $0x1,%dl
+0x403e7e:3:mov %bl,%r15b
+0x403e81:4:and $0xff,%r15b
+0x403e85:3:and %dl,%r10b
+0x403e88:3:mov %r14b,%r12b
+0x403e8b:4:and $0xff,%r12b
+0x403e8f:3:and %dl,%r11b
+0x403e92:3:or %r10b,%r15b
+0x403e95:3:or %r11b,%r12b
+0x403e98:3:xor %r12b,%r15b
+0x403e9b:3:or %r14b,%bl
+0x403e9e:3:xor $0xff,%bl
+0x403ea1:3:or $0x1,%dl
+0x403ea4:2:and %dl,%bl
+0x403ea6:3:or %bl,%r15b
+0x403ea9:4:test $0x1,%r15b
+0x403ead:3:cmovne %ecx,%eax
+0x403eb0:3:mov %eax,-0x40(%rbp)
+0x403eb3:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x403eb8:7:movl $0x3dc48d58,-0x40(%rbp)
+0x403ebf:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x403ec4:4:mov -0x38(%rbp),%rax
+0x403ec8:6:movl $0x26,(%rax)
+0x403ece:7:movl $0x3dc48d58,-0x40(%rbp)
+0x403ed5:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x403eda:5:mov $0x9acc7023,%eax
+0x403edf:5:mov $0xf8a70942,%ecx
+0x403ee4:2:mov $0x1,%dl
+0x403ee6:7:mov 0x407048,%esi
+0x403eed:7:mov 0x407060,%edi
+0x403ef4:3:mov %esi,%r8d
+0x403ef7:7:sub $0xa1357070,%r8d
+0x403efe:4:sub $0x1,%r8d
+0x403f02:7:add $0xa1357070,%r8d
+0x403f09:4:imul %r8d,%esi
+0x403f0d:3:and $0x1,%esi
+0x403f10:3:cmp $0x0,%esi
+0x403f13:4:sete %r9b
+0x403f17:3:cmp $0xa,%edi
+0x403f1a:4:setl %r10b
+0x403f1e:3:mov %r9b,%r11b
+0x403f21:4:xor $0xff,%r11b
+0x403f25:3:mov %r10b,%bl
+0x403f28:3:xor $0xff,%bl
+0x403f2b:3:xor $0x0,%dl
+0x403f2e:3:mov %r11b,%r14b
+0x403f31:4:and $0x0,%r14b
+0x403f35:3:and %dl,%r9b
+0x403f38:3:mov %bl,%r15b
+0x403f3b:4:and $0x0,%r15b
+0x403f3f:3:and %dl,%r10b
+0x403f42:3:or %r9b,%r14b
+0x403f45:3:or %r10b,%r15b
+0x403f48:3:xor %r15b,%r14b
+0x403f4b:3:or %bl,%r11b
+0x403f4e:4:xor $0xff,%r11b
+0x403f52:3:or $0x0,%dl
+0x403f55:3:and %dl,%r11b
+0x403f58:3:or %r11b,%r14b
+0x403f5b:4:test $0x1,%r14b
+0x403f5f:3:cmovne %ecx,%eax
+0x403f62:3:mov %eax,-0x40(%rbp)
+0x403f65:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x403f6a:5:mov $0x9acc7023,%eax
+0x403f6f:5:mov $0xe05281c8,%ecx
+0x403f74:2:mov $0x1,%dl
+0x403f76:4:mov -0x38(%rbp),%rsi
+0x403f7a:6:movl $0x32,(%rsi)
+0x403f80:7:mov 0x407048,%edi
+0x403f87:8:mov 0x407060,%r8d
+0x403f8f:3:mov %edi,%r9d
+0x403f92:7:sub $0xaf97ac14,%r9d
+0x403f99:4:sub $0x1,%r9d
+0x403f9d:7:add $0xaf97ac14,%r9d
+0x403fa4:4:imul %r9d,%edi
+0x403fa8:3:and $0x1,%edi
+0x403fab:3:cmp $0x0,%edi
+0x403fae:4:sete %r10b
+0x403fb2:4:cmp $0xa,%r8d
+0x403fb6:4:setl %r11b
+0x403fba:3:mov %r10b,%bl
+0x403fbd:3:xor $0xff,%bl
+0x403fc0:3:mov %r11b,%r14b
+0x403fc3:4:xor $0xff,%r14b
+0x403fc7:3:xor $0x1,%dl
+0x403fca:3:mov %bl,%r15b
+0x403fcd:4:and $0xff,%r15b
+0x403fd1:3:and %dl,%r10b
+0x403fd4:3:mov %r14b,%r12b
+0x403fd7:4:and $0xff,%r12b
+0x403fdb:3:and %dl,%r11b
+0x403fde:3:or %r10b,%r15b
+0x403fe1:3:or %r11b,%r12b
+0x403fe4:3:xor %r12b,%r15b
+0x403fe7:3:or %r14b,%bl
+0x403fea:3:xor $0xff,%bl
+0x403fed:3:or $0x1,%dl
+0x403ff0:2:and %dl,%bl
+0x403ff2:3:or %bl,%r15b
+0x403ff5:4:test $0x1,%r15b
+0x403ff9:3:cmovne %ecx,%eax
+0x403ffc:3:mov %eax,-0x40(%rbp)
+0x403fff:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x404004:7:movl $0x3dc48d58,-0x40(%rbp)
+0x40400b:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x404010:5:mov $0xef171933,%eax
+0x404015:5:mov $0x4f59e977,%ecx
+0x40401a:7:mov 0x407048,%edx
+0x404021:7:mov 0x407060,%esi
+0x404028:2:mov %edx,%edi
+0x40402a:6:add $0xe5952356,%edi
+0x404030:3:sub $0x1,%edi
+0x404033:6:sub $0xe5952356,%edi
+0x404039:3:imul %edi,%edx
+0x40403c:3:and $0x1,%edx
+0x40403f:3:cmp $0x0,%edx
+0x404042:4:sete %r8b
+0x404046:3:cmp $0xa,%esi
+0x404049:4:setl %r9b
+0x40404d:3:mov %r8b,%r10b
+0x404050:3:and %r9b,%r10b
+0x404053:3:xor %r9b,%r8b
+0x404056:3:or %r8b,%r10b
+0x404059:4:test $0x1,%r10b
+0x40405d:3:cmovne %ecx,%eax
+0x404060:3:mov %eax,-0x40(%rbp)
+0x404063:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x404068:5:mov $0xef171933,%eax
+0x40406d:5:mov $0x34899a0a,%ecx
+0x404072:2:mov $0x1,%dl
+0x404074:2:xor %esi,%esi
+0x404076:4:mov -0x38(%rbp),%rdi
+0x40407a:6:movl $0x31,(%rdi)
+0x404080:8:mov 0x407048,%r8d
+0x404088:8:mov 0x407060,%r9d
+0x404090:3:sub $0x1,%esi
+0x404093:3:mov %r8d,%r10d
+0x404096:3:add %esi,%r10d
+0x404099:4:imul %r10d,%r8d
+0x40409d:4:and $0x1,%r8d
+0x4040a1:4:cmp $0x0,%r8d
+0x4040a5:4:sete %r11b
+0x4040a9:4:cmp $0xa,%r9d
+0x4040ad:3:setl %bl
+0x4040b0:3:mov %r11b,%r14b
+0x4040b3:4:xor $0xff,%r14b
+0x4040b7:3:mov %bl,%r15b
+0x4040ba:4:xor $0xff,%r15b
+0x4040be:3:xor $0x0,%dl
+0x4040c1:3:mov %r14b,%r12b
+0x4040c4:4:and $0x0,%r12b
+0x4040c8:3:and %dl,%r11b
+0x4040cb:3:mov %r15b,%r13b
+0x4040ce:4:and $0x0,%r13b
+0x4040d2:2:and %dl,%bl
+0x4040d4:3:or %r11b,%r12b
+0x4040d7:3:or %bl,%r13b
+0x4040da:3:xor %r13b,%r12b
+0x4040dd:3:or %r15b,%r14b
+0x4040e0:4:xor $0xff,%r14b
+0x4040e4:3:or $0x0,%dl
+0x4040e7:3:and %dl,%r14b
+0x4040ea:3:or %r14b,%r12b
+0x4040ed:4:test $0x1,%r12b
+0x4040f1:3:cmovne %ecx,%eax
+0x4040f4:3:mov %eax,-0x40(%rbp)
+0x4040f7:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x4040fc:7:movl $0x3dc48d58,-0x40(%rbp)
+0x404103:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x404108:5:mov $0xe6b035,%eax
+0x40410d:5:mov $0xbbeec0ea,%ecx
+0x404112:2:mov $0x1,%dl
+0x404114:7:mov 0x407048,%esi
+0x40411b:7:mov 0x407060,%edi
+0x404122:3:mov %esi,%r8d
+0x404125:7:add $0xe1cecd97,%r8d
+0x40412c:4:sub $0x1,%r8d
+0x404130:7:sub $0xe1cecd97,%r8d
+0x404137:4:imul %r8d,%esi
+0x40413b:3:and $0x1,%esi
+0x40413e:3:cmp $0x0,%esi
+0x404141:4:sete %r9b
+0x404145:3:cmp $0xa,%edi
+0x404148:4:setl %r10b
+0x40414c:3:mov %r9b,%r11b
+0x40414f:4:xor $0xff,%r11b
+0x404153:3:mov %r10b,%bl
+0x404156:3:xor $0xff,%bl
+0x404159:3:xor $0x0,%dl
+0x40415c:3:mov %r11b,%r14b
+0x40415f:4:and $0x0,%r14b
+0x404163:3:and %dl,%r9b
+0x404166:3:mov %bl,%r15b
+0x404169:4:and $0x0,%r15b
+0x40416d:3:and %dl,%r10b
+0x404170:3:or %r9b,%r14b
+0x404173:3:or %r10b,%r15b
+0x404176:3:xor %r15b,%r14b
+0x404179:3:or %bl,%r11b
+0x40417c:4:xor $0xff,%r11b
+0x404180:3:or $0x0,%dl
+0x404183:3:and %dl,%r11b
+0x404186:3:or %r11b,%r14b
+0x404189:4:test $0x1,%r14b
+0x40418d:3:cmovne %ecx,%eax
+0x404190:3:mov %eax,-0x40(%rbp)
+0x404193:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x404198:5:mov $0xe6b035,%eax
+0x40419d:5:mov $0x86bd3c45,%ecx
+0x4041a2:2:mov $0x1,%dl
+0x4041a4:2:xor %esi,%esi
+0x4041a6:4:mov -0x38(%rbp),%rdi
+0x4041aa:6:movl $0x18,(%rdi)
+0x4041b0:8:mov 0x407048,%r8d
+0x4041b8:8:mov 0x407060,%r9d
+0x4041c0:3:sub $0x1,%esi
+0x4041c3:3:mov %r8d,%r10d
+0x4041c6:3:add %esi,%r10d
+0x4041c9:4:imul %r10d,%r8d
+0x4041cd:4:and $0x1,%r8d
+0x4041d1:4:cmp $0x0,%r8d
+0x4041d5:4:sete %r11b
+0x4041d9:4:cmp $0xa,%r9d
+0x4041dd:3:setl %bl
+0x4041e0:3:mov %r11b,%r14b
+0x4041e3:4:xor $0xff,%r14b
+0x4041e7:3:mov %bl,%r15b
+0x4041ea:4:xor $0xff,%r15b
+0x4041ee:3:xor $0x1,%dl
+0x4041f1:3:mov %r14b,%r12b
+0x4041f4:4:and $0xff,%r12b
+0x4041f8:3:and %dl,%r11b
+0x4041fb:3:mov %r15b,%r13b
+0x4041fe:4:and $0xff,%r13b
+0x404202:2:and %dl,%bl
+0x404204:3:or %r11b,%r12b
+0x404207:3:or %bl,%r13b
+0x40420a:3:xor %r13b,%r12b
+0x40420d:3:or %r15b,%r14b
+0x404210:4:xor $0xff,%r14b
+0x404214:3:or $0x1,%dl
+0x404217:3:and %dl,%r14b
+0x40421a:3:or %r14b,%r12b
+0x40421d:4:test $0x1,%r12b
+0x404221:3:cmovne %ecx,%eax
+0x404224:3:mov %eax,-0x40(%rbp)
+0x404227:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x40422c:7:movl $0x3dc48d58,-0x40(%rbp)
+0x404233:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x404238:4:mov -0x38(%rbp),%rax
+0x40423c:6:movl $0x19,(%rax)
+0x404242:7:movl $0x3dc48d58,-0x40(%rbp)
+0x404249:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x40424e:4:mov -0x38(%rbp),%rax
+0x404252:6:movl $0x10,(%rax)
+0x404258:7:movl $0x3dc48d58,-0x40(%rbp)
+0x40425f:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x404264:4:mov -0x38(%rbp),%rax
+0x404268:6:movl $0x13,(%rax)
+0x40426e:7:movl $0x3dc48d58,-0x40(%rbp)
+0x404275:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x40427a:4:mov -0x38(%rbp),%rax
+0x40427e:6:movl $0x1f,(%rax)
+0x404284:7:movl $0x3dc48d58,-0x40(%rbp)
+0x40428b:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x404290:4:mov -0x38(%rbp),%rax
+0x404294:6:movl $0x14,(%rax)
+0x40429a:7:movl $0x3dc48d58,-0x40(%rbp)
+0x4042a1:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x4042a6:4:mov -0x38(%rbp),%rax
+0x4042aa:6:movl $0x16,(%rax)
+0x4042b0:7:movl $0x3dc48d58,-0x40(%rbp)
+0x4042b7:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x4042bc:4:mov -0x38(%rbp),%rax
+0x4042c0:6:movl $0x2f,(%rax)
+0x4042c6:7:movl $0x3dc48d58,-0x40(%rbp)
+0x4042cd:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x4042d2:4:mov -0x38(%rbp),%rax
+0x4042d6:6:movl $0x11,(%rax)
+0x4042dc:7:movl $0x3dc48d58,-0x40(%rbp)
+0x4042e3:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x4042e8:4:mov -0x38(%rbp),%rax
+0x4042ec:6:movl $0x2d,(%rax)
+0x4042f2:7:movl $0x3dc48d58,-0x40(%rbp)
+0x4042f9:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x4042fe:4:mov -0x38(%rbp),%rax
+0x404302:6:movl $0x15,(%rax)
+0x404308:7:movl $0x3dc48d58,-0x40(%rbp)
+0x40430f:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x404314:4:mov -0x38(%rbp),%rax
+0x404318:6:movl $0x2c,(%rax)
+0x40431e:7:movl $0x3dc48d58,-0x40(%rbp)
+0x404325:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x40432a:7:movl $0x3dc48d58,-0x40(%rbp)
+0x404331:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x404336:5:mov $0x79e3d82f,%eax
+0x40433b:5:mov $0x290d993a,%ecx
+0x404340:7:mov 0x407048,%edx
+0x404347:7:mov 0x407060,%esi
+0x40434e:2:mov %edx,%edi
+0x404350:6:sub $0x5c0cf88,%edi
+0x404356:3:sub $0x1,%edi
+0x404359:6:add $0x5c0cf88,%edi
+0x40435f:3:imul %edi,%edx
+0x404362:3:and $0x1,%edx
+0x404365:3:cmp $0x0,%edx
+0x404368:4:sete %r8b
+0x40436c:3:cmp $0xa,%esi
+0x40436f:4:setl %r9b
+0x404373:3:mov %r8b,%r10b
+0x404376:3:and %r9b,%r10b
+0x404379:3:xor %r9b,%r8b
+0x40437c:3:or %r8b,%r10b
+0x40437f:4:test $0x1,%r10b
+0x404383:3:cmovne %ecx,%eax
+0x404386:3:mov %eax,-0x40(%rbp)
+0x404389:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x40438e:5:mov $0x79e3d82f,%eax
+0x404393:5:mov $0x1894bd8c,%ecx
+0x404398:2:mov $0x1,%dl
+0x40439a:2:xor %esi,%esi
+0x40439c:4:mov -0x38(%rbp),%rdi
+0x4043a0:3:mov (%rdi),%r8d
+0x4043a3:4:mov %r8d,-0x2c(%rbp)
+0x4043a7:8:mov 0x407048,%r8d
+0x4043af:8:mov 0x407060,%r9d
+0x4043b7:3:sub $0x1,%esi
+0x4043ba:3:mov %r8d,%r10d
+0x4043bd:3:add %esi,%r10d
+0x4043c0:4:imul %r10d,%r8d
+0x4043c4:4:and $0x1,%r8d
+0x4043c8:4:cmp $0x0,%r8d
+0x4043cc:4:sete %r11b
+0x4043d0:4:cmp $0xa,%r9d
+0x4043d4:3:setl %bl
+0x4043d7:3:mov %r11b,%r14b
+0x4043da:4:xor $0xff,%r14b
+0x4043de:3:mov %bl,%r15b
+0x4043e1:4:xor $0xff,%r15b
+0x4043e5:3:xor $0x1,%dl
+0x4043e8:3:mov %r14b,%r12b
+0x4043eb:4:and $0xff,%r12b
+0x4043ef:3:and %dl,%r11b
+0x4043f2:3:mov %r15b,%r13b
+0x4043f5:4:and $0xff,%r13b
+0x4043f9:2:and %dl,%bl
+0x4043fb:3:or %r11b,%r12b
+0x4043fe:3:or %bl,%r13b
+0x404401:3:xor %r13b,%r12b
+0x404404:3:or %r15b,%r14b
+0x404407:4:xor $0xff,%r14b
+0x40440b:3:or $0x1,%dl
+0x40440e:3:and %dl,%r14b
+0x404411:3:or %r14b,%r12b
+0x404414:4:test $0x1,%r12b
+0x404418:3:cmovne %ecx,%eax
+0x40441b:3:mov %eax,-0x40(%rbp)
+0x40441e:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x404423:3:mov -0x2c(%rbp),%eax
+0x404426:4:lea -0x28(%rbp),%rsp
+0x40442a:1:pop %rbx
+0x40442b:2:pop %r12
+0x40442d:2:pop %r13
+0x40442f:2:pop %r14
+0x404431:2:pop %r15
+0x404433:1:pop %rbp
+0x404434:1:ret
+0x404435:3:mov %rsp,%rax
+0x404438:4:add $0xfffffffffffffff0,%rax
+0x40443c:3:mov %rax,%rsp
+0x40443f:3:mov %rsp,%rcx
+0x404442:4:add $0xfffffffffffffff0,%rcx
+0x404446:3:mov %rcx,%rsp
+0x404449:3:mov -0x44(%rbp),%edx
+0x40444c:2:mov %edx,(%rax)
+0x40444e:6:movl $0x0,(%rcx)
+0x404454:7:movl $0x363356e,-0x40(%rbp)
+0x40445b:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x404460:4:mov -0x38(%rbp),%rax
+0x404464:6:movl $0xb,(%rax)
+0x40446a:7:movl $0x160148cc,-0x40(%rbp)
+0x404471:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x404476:4:mov -0x38(%rbp),%rax
+0x40447a:6:movl $0x3,(%rax)
+0x404480:7:movl $0x8eefcab,-0x40(%rbp)
+0x404487:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x40448c:4:mov -0x38(%rbp),%rax
+0x404490:6:movl $0x4,(%rax)
+0x404496:7:movl $0xca08272d,-0x40(%rbp)
+0x40449d:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x4044a2:4:mov -0x38(%rbp),%rax
+0x4044a6:6:movl $0x7,(%rax)
+0x4044ac:7:movl $0x581c9942,-0x40(%rbp)
+0x4044b3:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x4044b8:4:mov -0x38(%rbp),%rax
+0x4044bc:6:movl $0x1b,(%rax)
+0x4044c2:7:movl $0x565afe5c,-0x40(%rbp)
+0x4044c9:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x4044ce:4:mov -0x38(%rbp),%rax
+0x4044d2:6:movl $0x1a,(%rax)
+0x4044d8:7:movl $0x5f6aa588,-0x40(%rbp)
+0x4044df:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x4044e4:4:mov -0x38(%rbp),%rax
+0x4044e8:6:movl $0x27,(%rax)
+0x4044ee:7:movl $0x78062952,-0x40(%rbp)
+0x4044f5:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x4044fa:4:mov -0x38(%rbp),%rax
+0x4044fe:6:movl $0x2a,(%rax)
+0x404504:7:movl $0xdb91702d,-0x40(%rbp)
+0x40450b:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x404510:4:mov -0x38(%rbp),%rax
+0x404514:6:movl $0x39,(%rax)
+0x40451a:7:movl $0x33673ba5,-0x40(%rbp)
+0x404521:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x404526:4:mov -0x38(%rbp),%rax
+0x40452a:6:movl $0x30,(%rax)
+0x404530:7:movl $0xd695722f,-0x40(%rbp)
+0x404537:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x40453c:4:mov -0x38(%rbp),%rax
+0x404540:6:movl $0x21,(%rax)
+0x404546:7:movl $0xcd4cdc3e,-0x40(%rbp)
+0x40454d:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x404552:4:mov -0x38(%rbp),%rax
+0x404556:6:movl $0x22,(%rax)
+0x40455c:7:movl $0x7eda817b,-0x40(%rbp)
+0x404563:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x404568:4:mov -0x38(%rbp),%rax
+0x40456c:6:movl $0x17,(%rax)
+0x404572:7:movl $0x11d84b96,-0x40(%rbp)
+0x404579:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x40457e:4:mov -0x38(%rbp),%rax
+0x404582:6:movl $0x25,(%rax)
+0x404588:7:movl $0x73c02b50,-0x40(%rbp)
+0x40458f:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x404594:4:mov -0x38(%rbp),%rax
+0x404598:6:movl $0x32,(%rax)
+0x40459e:7:movl $0xf8a70942,-0x40(%rbp)
+0x4045a5:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x4045aa:4:mov -0x38(%rbp),%rax
+0x4045ae:6:movl $0x31,(%rax)
+0x4045b4:7:movl $0x4f59e977,-0x40(%rbp)
+0x4045bb:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x4045c0:4:mov -0x38(%rbp),%rax
+0x4045c4:6:movl $0x18,(%rax)
+0x4045ca:7:movl $0xbbeec0ea,-0x40(%rbp)
+0x4045d1:5:jmp 00000000004045e8 <get_scan_code_from_ascii+0x3228>
+0x4045d6:4:mov -0x38(%rbp),%rax
+0x4045da:7:movl $0x290d993a,-0x40(%rbp)
+0x4045e1:7:mov %rax,-0x338(%rbp)
+0x4045e8:5:jmp 0000000000401421 <get_scan_code_from_ascii+0x61>
+0x4045ed:3:nopl (%rax)
+0x4045f0:1:push %rbp
+0x4045f1:3:mov %rsp,%rbp
+0x4045f4:2:push %r15
+0x4045f6:2:push %r14
+0x4045f8:2:push %r13
+0x4045fa:2:push %r12
+0x4045fc:1:push %rbx
+0x4045fd:7:sub $0xa8,%rsp
+0x404604:7:movl $0x0,-0x34(%rbp)
+0x40460b:3:mov %edi,-0x38(%rbp)
+0x40460e:4:mov %rsi,-0x40(%rbp)
+0x404612:3:mov -0x38(%rbp),%edi
+0x404615:3:mov %edi,-0x30(%rbp)
+0x404618:7:movl $0x35c9b086,-0x60(%rbp)
+0x40461f:3:mov -0x60(%rbp),%eax
+0x404622:2:mov %eax,%ecx
+0x404624:6:sub $0x8268a899,%ecx
+0x40462a:3:mov %eax,-0x64(%rbp)
+0x40462d:3:mov %ecx,-0x68(%rbp)
+0x404630:6:je 000000000040485e <main+0x26e>
+0x404636:5:jmp 000000000040463b <main+0x4b>
+0x40463b:3:mov -0x64(%rbp),%eax
+0x40463e:5:sub $0x853a2ef5,%eax
+0x404643:3:mov %eax,-0x6c(%rbp)
+0x404646:6:je 0000000000404a0b <main+0x41b>
+0x40464c:5:jmp 0000000000404651 <main+0x61>
+0x404651:3:mov -0x64(%rbp),%eax
+0x404654:5:sub $0x867ab1d2,%eax
+0x404659:3:mov %eax,-0x70(%rbp)
+0x40465c:6:je 00000000004048ca <main+0x2da>
+0x404662:5:jmp 0000000000404667 <main+0x77>
+0x404667:3:mov -0x64(%rbp),%eax
+0x40466a:5:sub $0x8c297d26,%eax
+0x40466f:3:mov %eax,-0x74(%rbp)
+0x404672:6:je 0000000000404ba3 <main+0x5b3>
+0x404678:5:jmp 000000000040467d <main+0x8d>
+0x40467d:3:mov -0x64(%rbp),%eax
+0x404680:5:sub $0x9238b5e2,%eax
+0x404685:3:mov %eax,-0x78(%rbp)
+0x404688:6:je 0000000000404894 <main+0x2a4>
+0x40468e:5:jmp 0000000000404693 <main+0xa3>
+0x404693:3:mov -0x64(%rbp),%eax
+0x404696:5:sub $0x9c1dc121,%eax
+0x40469b:3:mov %eax,-0x7c(%rbp)
+0x40469e:6:je 000000000040483c <main+0x24c>
+0x4046a4:5:jmp 00000000004046a9 <main+0xb9>
+0x4046a9:3:mov -0x64(%rbp),%eax
+0x4046ac:5:sub $0xabc43d7b,%eax
+0x4046b1:3:mov %eax,-0x80(%rbp)
+0x4046b4:6:je 0000000000404bf0 <main+0x600>
+0x4046ba:5:jmp 00000000004046bf <main+0xcf>
+0x4046bf:3:mov -0x64(%rbp),%eax
+0x4046c2:5:sub $0xd7c3a216,%eax
+0x4046c7:6:mov %eax,-0x84(%rbp)
+0x4046cd:6:je 0000000000404824 <main+0x234>
+0x4046d3:5:jmp 00000000004046d8 <main+0xe8>
+0x4046d8:3:mov -0x64(%rbp),%eax
+0x4046db:5:sub $0xd7dd6d0d,%eax
+0x4046e0:6:mov %eax,-0x88(%rbp)
+0x4046e6:6:je 0000000000404902 <main+0x312>
+0x4046ec:5:jmp 00000000004046f1 <main+0x101>
+0x4046f1:3:mov -0x64(%rbp),%eax
+0x4046f4:5:sub $0xe5db6fb1,%eax
+0x4046f9:6:mov %eax,-0x8c(%rbp)
+0x4046ff:6:je 0000000000404b67 <main+0x577>
+0x404705:5:jmp 000000000040470a <main+0x11a>
+0x40470a:3:mov -0x64(%rbp),%eax
+0x40470d:5:sub $0x5fb6b53,%eax
+0x404712:6:mov %eax,-0x90(%rbp)
+0x404718:6:je 0000000000404b90 <main+0x5a0>
+0x40471e:5:jmp 0000000000404723 <main+0x133>
+0x404723:3:mov -0x64(%rbp),%eax
+0x404726:5:sub $0x90f86f3,%eax
+0x40472b:6:mov %eax,-0x94(%rbp)
+0x404731:6:je 0000000000404988 <main+0x398>
+0x404737:5:jmp 000000000040473c <main+0x14c>
+0x40473c:3:mov -0x64(%rbp),%eax
+0x40473f:5:sub $0x1a941d50,%eax
+0x404744:6:mov %eax,-0x98(%rbp)
+0x40474a:6:je 00000000004048af <main+0x2bf>
+0x404750:5:jmp 0000000000404755 <main+0x165>
+0x404755:3:mov -0x64(%rbp),%eax
+0x404758:5:sub $0x24c0875d,%eax
+0x40475d:6:mov %eax,-0x9c(%rbp)
+0x404763:6:je 0000000000404aa7 <main+0x4b7>
+0x404769:5:jmp 000000000040476e <main+0x17e>
+0x40476e:3:mov -0x64(%rbp),%eax
+0x404771:5:sub $0x2d7a7166,%eax
+0x404776:6:mov %eax,-0xa0(%rbp)
+0x40477c:6:je 0000000000404879 <main+0x289>
+0x404782:5:jmp 0000000000404787 <main+0x197>
+0x404787:3:mov -0x64(%rbp),%eax
+0x40478a:5:sub $0x35c9b086,%eax
+0x40478f:6:mov %eax,-0xa4(%rbp)
+0x404795:6:je 0000000000404809 <main+0x219>
+0x40479b:5:jmp 00000000004047a0 <main+0x1b0>
+0x4047a0:3:mov -0x64(%rbp),%eax
+0x4047a3:5:sub $0x361090c4,%eax
+0x4047a8:6:mov %eax,-0xa8(%rbp)
+0x4047ae:6:je 0000000000404bb8 <main+0x5c8>
+0x4047b4:5:jmp 00000000004047b9 <main+0x1c9>
+0x4047b9:3:mov -0x64(%rbp),%eax
+0x4047bc:5:sub $0x38262a79,%eax
+0x4047c1:6:mov %eax,-0xac(%rbp)
+0x4047c7:6:je 0000000000404b7f <main+0x58f>
+0x4047cd:5:jmp 00000000004047d2 <main+0x1e2>
+0x4047d2:3:mov -0x64(%rbp),%eax
+0x4047d5:5:sub $0x421bf7f8,%eax
+0x4047da:6:mov %eax,-0xb0(%rbp)
+0x4047e0:6:je 0000000000404a17 <main+0x427>
+0x4047e6:5:jmp 00000000004047eb <main+0x1fb>
+0x4047eb:3:mov -0x64(%rbp),%eax
+0x4047ee:5:sub $0x5e8484e8,%eax
+0x4047f3:6:mov %eax,-0xb4(%rbp)
+0x4047f9:6:je 0000000000404b73 <main+0x583>
+0x4047ff:5:jmp 0000000000404804 <main+0x214>
+0x404804:5:jmp 0000000000404c23 <main+0x633>
+0x404809:5:mov $0x9c1dc121,%eax
+0x40480e:5:mov $0xd7c3a216,%ecx
+0x404813:3:mov -0x30(%rbp),%edx
+0x404816:3:cmp $0x2,%edx
+0x404819:3:cmovne %ecx,%eax
+0x40481c:3:mov %eax,-0x60(%rbp)
+0x40481f:5:jmp 0000000000404c23 <main+0x633>
+0x404824:5:call 0000000000401390 <usage>
+0x404829:7:movl $0x1,-0x34(%rbp)
+0x404830:7:movl $0x8c297d26,-0x60(%rbp)
+0x404837:5:jmp 0000000000404c23 <main+0x633>
+0x40483c:4:mov -0x40(%rbp),%rax
+0x404840:4:mov 0x8(%rax),%rdi
+0x404844:5:call 0000000000401040 <atoi@plt>
+0x404849:3:mov %eax,-0x44(%rbp)
+0x40484c:3:mov -0x44(%rbp),%eax
+0x40484f:3:mov %eax,-0x2c(%rbp)
+0x404852:7:movl $0x8268a899,-0x60(%rbp)
+0x404859:5:jmp 0000000000404c23 <main+0x633>
+0x40485e:5:mov $0x2d7a7166,%eax
+0x404863:5:mov $0x1a941d50,%ecx
+0x404868:3:mov -0x2c(%rbp),%edx
+0x40486b:3:cmp $0x1,%edx
+0x40486e:3:cmovl %ecx,%eax
+0x404871:3:mov %eax,-0x60(%rbp)
+0x404874:5:jmp 0000000000404c23 <main+0x633>
+0x404879:5:mov $0x9238b5e2,%eax
+0x40487e:5:mov $0xd7dd6d0d,%ecx
+0x404883:3:mov -0x2c(%rbp),%edx
+0x404886:3:cmp $0x2,%edx
+0x404889:3:cmovl %ecx,%eax
+0x40488c:3:mov %eax,-0x60(%rbp)
+0x40488f:5:jmp 0000000000404c23 <main+0x633>
+0x404894:5:mov $0x5e8484e8,%eax
+0x404899:5:mov $0x421bf7f8,%ecx
+0x40489e:3:mov -0x2c(%rbp),%edx
+0x4048a1:3:cmp $0x2,%edx
+0x4048a4:3:cmove %ecx,%eax
+0x4048a7:3:mov %eax,-0x60(%rbp)
+0x4048aa:5:jmp 0000000000404c23 <main+0x633>
+0x4048af:5:mov $0x5e8484e8,%eax
+0x4048b4:5:mov $0x867ab1d2,%ecx
+0x4048b9:3:mov -0x2c(%rbp),%edx
+0x4048bc:3:cmp $0x0,%edx
+0x4048bf:3:cmove %ecx,%eax
+0x4048c2:3:mov %eax,-0x60(%rbp)
+0x4048c5:5:jmp 0000000000404c23 <main+0x633>
+0x4048ca:7:movl $0x64,-0x48(%rbp)
+0x4048d1:3:mov -0x48(%rbp),%edi
+0x4048d4:5:call 00000000004013c0 <get_scan_code_from_ascii>
+0x4048d9:10:movabs $0x4050f2,%rdi
+0x4048e3:3:mov %eax,-0x4c(%rbp)
+0x4048e6:3:mov -0x4c(%rbp),%esi
+0x4048e9:2:mov $0x0,%al
+0x4048eb:5:call 0000000000401030 <printf@plt>
+0x4048f0:7:movl $0x5fb6b53,-0x60(%rbp)
+0x4048f7:6:mov %eax,-0xb8(%rbp)
+0x4048fd:5:jmp 0000000000404c23 <main+0x633>
+0x404902:5:mov $0x361090c4,%eax
+0x404907:5:mov $0x90f86f3,%ecx
+0x40490c:2:mov $0x1,%dl
+0x40490e:2:xor %esi,%esi
+0x404910:7:mov 0x40704c,%edi
+0x404917:8:mov 0x407050,%r8d
+0x40491f:3:sub $0x1,%esi
+0x404922:3:mov %edi,%r9d
+0x404925:3:add %esi,%r9d
+0x404928:4:imul %r9d,%edi
+0x40492c:3:and $0x1,%edi
+0x40492f:3:cmp $0x0,%edi
+0x404932:4:sete %r10b
+0x404936:4:cmp $0xa,%r8d
+0x40493a:4:setl %r11b
+0x40493e:3:mov %r10b,%bl
+0x404941:3:xor $0xff,%bl
+0x404944:3:mov %r11b,%r14b
+0x404947:4:xor $0xff,%r14b
+0x40494b:3:xor $0x1,%dl
+0x40494e:3:mov %bl,%r15b
+0x404951:4:and $0xff,%r15b
+0x404955:3:and %dl,%r10b
+0x404958:3:mov %r14b,%r12b
+0x40495b:4:and $0xff,%r12b
+0x40495f:3:and %dl,%r11b
+0x404962:3:or %r10b,%r15b
+0x404965:3:or %r11b,%r12b
+0x404968:3:xor %r12b,%r15b
+0x40496b:3:or %r14b,%bl
+0x40496e:3:xor $0xff,%bl
+0x404971:3:or $0x1,%dl
+0x404974:2:and %dl,%bl
+0x404976:3:or %bl,%r15b
+0x404979:4:test $0x1,%r15b
+0x40497d:3:cmovne %ecx,%eax
+0x404980:3:mov %eax,-0x60(%rbp)
+0x404983:5:jmp 0000000000404c23 <main+0x633>
+0x404988:7:movl $0xff,-0x50(%rbp)
+0x40498f:3:mov -0x50(%rbp),%edi
+0x404992:5:call 00000000004013c0 <get_scan_code_from_ascii>
+0x404997:10:movabs $0x4050f2,%rdi
+0x4049a1:3:mov %eax,-0x54(%rbp)
+0x4049a4:3:mov -0x54(%rbp),%esi
+0x4049a7:2:mov $0x0,%al
+0x4049a9:5:call 0000000000401030 <printf@plt>
+0x4049ae:5:mov $0x361090c4,%esi
+0x4049b3:5:mov $0x853a2ef5,%ecx
+0x4049b8:2:xor %edx,%edx
+0x4049ba:8:mov 0x40704c,%r8d
+0x4049c2:8:mov 0x407050,%r9d
+0x4049ca:3:sub $0x1,%edx
+0x4049cd:3:mov %r8d,%r10d
+0x4049d0:3:add %edx,%r10d
+0x4049d3:4:imul %r10d,%r8d
+0x4049d7:4:and $0x1,%r8d
+0x4049db:4:cmp $0x0,%r8d
+0x4049df:4:sete %r11b
+0x4049e3:4:cmp $0xa,%r9d
+0x4049e7:3:setl %bl
+0x4049ea:3:mov %r11b,%r14b
+0x4049ed:3:and %bl,%r14b
+0x4049f0:3:xor %bl,%r11b
+0x4049f3:3:or %r11b,%r14b
+0x4049f6:4:test $0x1,%r14b
+0x4049fa:3:cmovne %ecx,%esi
+0x4049fd:3:mov %esi,-0x60(%rbp)
+0x404a00:6:mov %eax,-0xbc(%rbp)
+0x404a06:5:jmp 0000000000404c23 <main+0x633>
+0x404a0b:7:movl $0x5fb6b53,-0x60(%rbp)
+0x404a12:5:jmp 0000000000404c23 <main+0x633>
+0x404a17:5:mov $0xabc43d7b,%eax
+0x404a1c:5:mov $0x24c0875d,%ecx
+0x404a21:2:mov $0x1,%dl
+0x404a23:7:mov 0x40704c,%esi
+0x404a2a:7:mov 0x407050,%edi
+0x404a31:3:mov %esi,%r8d
+0x404a34:7:sub $0x5a9d32ba,%r8d
+0x404a3b:4:sub $0x1,%r8d
+0x404a3f:7:add $0x5a9d32ba,%r8d
+0x404a46:4:imul %r8d,%esi
+0x404a4a:3:and $0x1,%esi
+0x404a4d:3:cmp $0x0,%esi
+0x404a50:4:sete %r9b
+0x404a54:3:cmp $0xa,%edi
+0x404a57:4:setl %r10b
+0x404a5b:3:mov %r9b,%r11b
+0x404a5e:4:xor $0xff,%r11b
+0x404a62:3:mov %r10b,%bl
+0x404a65:3:xor $0xff,%bl
+0x404a68:3:xor $0x1,%dl
+0x404a6b:3:mov %r11b,%r14b
+0x404a6e:4:and $0xff,%r14b
+0x404a72:3:and %dl,%r9b
+0x404a75:3:mov %bl,%r15b
+0x404a78:4:and $0xff,%r15b
+0x404a7c:3:and %dl,%r10b
+0x404a7f:3:or %r9b,%r14b
+0x404a82:3:or %r10b,%r15b
+0x404a85:3:xor %r15b,%r14b
+0x404a88:3:or %bl,%r11b
+0x404a8b:4:xor $0xff,%r11b
+0x404a8f:3:or $0x1,%dl
+0x404a92:3:and %dl,%r11b
+0x404a95:3:or %r11b,%r14b
+0x404a98:4:test $0x1,%r14b
+0x404a9c:3:cmovne %ecx,%eax
+0x404a9f:3:mov %eax,-0x60(%rbp)
+0x404aa2:5:jmp 0000000000404c23 <main+0x633>
+0x404aa7:7:movl $0xa,-0x58(%rbp)
+0x404aae:3:mov -0x58(%rbp),%edi
+0x404ab1:5:call 00000000004013c0 <get_scan_code_from_ascii>
+0x404ab6:10:movabs $0x4050f2,%rdi
+0x404ac0:3:mov %eax,-0x5c(%rbp)
+0x404ac3:3:mov -0x5c(%rbp),%esi
+0x404ac6:2:mov $0x0,%al
+0x404ac8:5:call 0000000000401030 <printf@plt>
+0x404acd:5:mov $0xabc43d7b,%esi
+0x404ad2:5:mov $0xe5db6fb1,%ecx
+0x404ad7:2:mov $0x1,%dl
+0x404ad9:8:mov 0x40704c,%r8d
+0x404ae1:8:mov 0x407050,%r9d
+0x404ae9:3:mov %r8d,%r10d
+0x404aec:7:add $0x30f4132f,%r10d
+0x404af3:4:sub $0x1,%r10d
+0x404af7:7:sub $0x30f4132f,%r10d
+0x404afe:4:imul %r10d,%r8d
+0x404b02:4:and $0x1,%r8d
+0x404b06:4:cmp $0x0,%r8d
+0x404b0a:4:sete %r11b
+0x404b0e:4:cmp $0xa,%r9d
+0x404b12:3:setl %bl
+0x404b15:3:mov %r11b,%r14b
+0x404b18:4:xor $0xff,%r14b
+0x404b1c:3:mov %bl,%r15b
+0x404b1f:4:xor $0xff,%r15b
+0x404b23:3:xor $0x0,%dl
+0x404b26:3:mov %r14b,%r12b
+0x404b29:4:and $0x0,%r12b
+0x404b2d:3:and %dl,%r11b
+0x404b30:3:mov %r15b,%r13b
+0x404b33:4:and $0x0,%r13b
+0x404b37:2:and %dl,%bl
+0x404b39:3:or %r11b,%r12b
+0x404b3c:3:or %bl,%r13b
+0x404b3f:3:xor %r13b,%r12b
+0x404b42:3:or %r15b,%r14b
+0x404b45:4:xor $0xff,%r14b
+0x404b49:3:or $0x0,%dl
+0x404b4c:3:and %dl,%r14b
+0x404b4f:3:or %r14b,%r12b
+0x404b52:4:test $0x1,%r12b
+0x404b56:3:cmovne %ecx,%esi
+0x404b59:3:mov %esi,-0x60(%rbp)
+0x404b5c:6:mov %eax,-0xc0(%rbp)
+0x404b62:5:jmp 0000000000404c23 <main+0x633>
+0x404b67:7:movl $0x5fb6b53,-0x60(%rbp)
+0x404b6e:5:jmp 0000000000404c23 <main+0x633>
+0x404b73:7:movl $0x38262a79,-0x60(%rbp)
+0x404b7a:5:jmp 0000000000404c23 <main+0x633>
+0x404b7f:5:call 0000000000401390 <usage>
+0x404b84:7:movl $0x5fb6b53,-0x60(%rbp)
+0x404b8b:5:jmp 0000000000404c23 <main+0x633>
+0x404b90:7:movl $0x0,-0x34(%rbp)
+0x404b97:7:movl $0x8c297d26,-0x60(%rbp)
+0x404b9e:5:jmp 0000000000404c23 <main+0x633>
+0x404ba3:3:mov -0x34(%rbp),%eax
+0x404ba6:7:add $0xa8,%rsp
+0x404bad:1:pop %rbx
+0x404bae:2:pop %r12
+0x404bb0:2:pop %r13
+0x404bb2:2:pop %r14
+0x404bb4:2:pop %r15
+0x404bb6:1:pop %rbp
+0x404bb7:1:ret
+0x404bb8:7:movl $0xff,-0x50(%rbp)
+0x404bbf:3:mov -0x50(%rbp),%edi
+0x404bc2:5:call 00000000004013c0 <get_scan_code_from_ascii>
+0x404bc7:10:movabs $0x4050f2,%rdi
+0x404bd1:3:mov %eax,-0x54(%rbp)
+0x404bd4:3:mov -0x54(%rbp),%esi
+0x404bd7:2:mov $0x0,%al
+0x404bd9:5:call 0000000000401030 <printf@plt>
+0x404bde:7:movl $0x90f86f3,-0x60(%rbp)
+0x404be5:6:mov %eax,-0xc4(%rbp)
+0x404beb:5:jmp 0000000000404c23 <main+0x633>
+0x404bf0:7:movl $0xa,-0x58(%rbp)
+0x404bf7:3:mov -0x58(%rbp),%edi
+0x404bfa:5:call 00000000004013c0 <get_scan_code_from_ascii>
+0x404bff:10:movabs $0x4050f2,%rdi
+0x404c09:3:mov %eax,-0x5c(%rbp)
+0x404c0c:3:mov -0x5c(%rbp),%esi
+0x404c0f:2:mov $0x0,%al
+0x404c11:5:call 0000000000401030 <printf@plt>
+0x404c16:7:movl $0x24c0875d,-0x60(%rbp)
+0x404c1d:6:mov %eax,-0xc8(%rbp)
+0x404c23:5:jmp 000000000040461f <main+0x2f>
+0x404c28:4:endbr64
+0x404c2c:4:sub $0x8,%rsp
+0x404c30:4:add $0x8,%rsp
+0x404c34:1:ret

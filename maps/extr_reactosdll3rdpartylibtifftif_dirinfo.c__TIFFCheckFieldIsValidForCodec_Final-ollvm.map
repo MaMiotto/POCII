@@ -1,0 +1,3142 @@
+0x401000:4:endbr64
+0x401004:4:sub $0x8,%rsp
+0x401008:7:mov 0x5fe9(%rip),%rax
+0x40100f:3:test %rax,%rax
+0x401012:2:je 0000000000401016 <_init+0x16>
+0x401014:2:call *%rax
+0x401016:4:add $0x8,%rsp
+0x40101a:1:ret
+0x401020:6:push 0x5fe2(%rip)
+0x401026:6:jmp *0x5fe4(%rip)
+0x40102c:4:nopl 0x0(%rax)
+0x401030:6:jmp *0x5fe2(%rip)
+0x401036:5:push $0x0
+0x40103b:5:jmp 0000000000401020 <_init+0x20>
+0x401040:6:jmp *0x5fda(%rip)
+0x401046:5:push $0x1
+0x40104b:5:jmp 0000000000401020 <_init+0x20>
+0x401050:6:jmp *0x5fd2(%rip)
+0x401056:5:push $0x2
+0x40105b:5:jmp 0000000000401020 <_init+0x20>
+0x401060:6:jmp *0x5fca(%rip)
+0x401066:5:push $0x3
+0x40106b:5:jmp 0000000000401020 <_init+0x20>
+0x401070:4:endbr64
+0x401074:2:xor %ebp,%ebp
+0x401076:3:mov %rdx,%r9
+0x401079:1:pop %rsi
+0x40107a:3:mov %rsp,%rdx
+0x40107d:4:and $0xfffffffffffffff0,%rsp
+0x401081:1:push %rax
+0x401082:1:push %rsp
+0x401083:3:xor %r8d,%r8d
+0x401086:2:xor %ecx,%ecx
+0x401088:7:mov $0x403370,%rdi
+0x40108f:6:call *0x5f5b(%rip)
+0x401095:1:hlt
+0x401096:10:cs nopw 0x0(%rax,%rax,1)
+0x4010a0:4:endbr64
+0x4010a4:1:ret
+0x4010a5:10:cs nopw 0x0(%rax,%rax,1)
+0x4010af:1:nop
+0x4010b0:5:mov $0x407048,%eax
+0x4010b5:6:cmp $0x407048,%rax
+0x4010bb:2:je 00000000004010d0 <deregister_tm_clones+0x20>
+0x4010bd:5:mov $0x0,%eax
+0x4010c2:3:test %rax,%rax
+0x4010c5:2:je 00000000004010d0 <deregister_tm_clones+0x20>
+0x4010c7:5:mov $0x407048,%edi
+0x4010cc:2:jmp *%rax
+0x4010ce:2:xchg %ax,%ax
+0x4010d0:1:ret
+0x4010d1:11:data16 cs nopw 0x0(%rax,%rax,1)
+0x4010dc:4:nopl 0x0(%rax)
+0x4010e0:5:mov $0x407048,%esi
+0x4010e5:7:sub $0x407048,%rsi
+0x4010ec:3:mov %rsi,%rax
+0x4010ef:4:shr $0x3f,%rsi
+0x4010f3:4:sar $0x3,%rax
+0x4010f7:3:add %rax,%rsi
+0x4010fa:3:sar %rsi
+0x4010fd:2:je 0000000000401110 <register_tm_clones+0x30>
+0x4010ff:5:mov $0x0,%eax
+0x401104:3:test %rax,%rax
+0x401107:2:je 0000000000401110 <register_tm_clones+0x30>
+0x401109:5:mov $0x407048,%edi
+0x40110e:2:jmp *%rax
+0x401110:1:ret
+0x401111:11:data16 cs nopw 0x0(%rax,%rax,1)
+0x40111c:4:nopl 0x0(%rax)
+0x401120:4:endbr64
+0x401124:7:cmpb $0x0,0x5f1d(%rip)
+0x40112b:2:jne 0000000000401140 <__do_global_dtors_aux+0x20>
+0x40112d:1:push %rbp
+0x40112e:3:mov %rsp,%rbp
+0x401131:5:call 00000000004010b0 <deregister_tm_clones>
+0x401136:7:movb $0x1,0x5f0b(%rip)
+0x40113d:1:pop %rbp
+0x40113e:1:ret
+0x40113f:1:nop
+0x401140:1:ret
+0x401141:11:data16 cs nopw 0x0(%rax,%rax,1)
+0x40114c:4:nopl 0x0(%rax)
+0x401150:4:endbr64
+0x401154:2:jmp 00000000004010e0 <register_tm_clones>
+0x401156:10:cs nopw 0x0(%rax,%rax,1)
+0x401160:1:push %rbp
+0x401161:3:mov %rsp,%rbp
+0x401164:5:mov $0x19,%eax
+0x401169:7:movl $0x0,-0x4(%rbp)
+0x401170:3:mov -0x4(%rbp),%ecx
+0x401173:6:add $0x1d33b0ef,%ecx
+0x401179:3:add $0x1,%ecx
+0x40117c:6:sub $0x1d33b0ef,%ecx
+0x401182:3:mov %ecx,-0x4(%rbp)
+0x401185:3:mov %eax,-0x8(%rbp)
+0x401188:2:mov %ecx,%eax
+0x40118a:1:cltd
+0x40118b:3:mov -0x8(%rbp),%ecx
+0x40118e:2:idiv %ecx
+0x401190:3:movslq %edx,%rsi
+0x401193:7:mov 0x405010(,%rsi,4),%edx
+0x40119a:2:mov %edx,%eax
+0x40119c:1:pop %rbp
+0x40119d:1:ret
+0x40119e:2:xchg %ax,%ax
+0x4011a0:1:push %rbp
+0x4011a1:3:mov %rsp,%rbp
+0x4011a4:2:push %r15
+0x4011a6:2:push %r14
+0x4011a8:2:push %r13
+0x4011aa:2:push %r12
+0x4011ac:1:push %rbx
+0x4011ad:4:sub $0x28,%rsp
+0x4011b1:7:mov 0x407050,%eax
+0x4011b8:7:mov 0x407068,%ecx
+0x4011bf:2:mov %eax,%edx
+0x4011c1:6:add $0xff81493a,%edx
+0x4011c7:3:sub $0x1,%edx
+0x4011ca:6:sub $0xff81493a,%edx
+0x4011d0:3:imul %edx,%eax
+0x4011d3:3:and $0x1,%eax
+0x4011d6:3:cmp $0x0,%eax
+0x4011d9:4:sete %sil
+0x4011dd:4:and $0x1,%sil
+0x4011e1:4:mov %sil,-0x2e(%rbp)
+0x4011e5:3:cmp $0xa,%ecx
+0x4011e8:4:setl %sil
+0x4011ec:4:and $0x1,%sil
+0x4011f0:4:mov %sil,-0x2d(%rbp)
+0x4011f4:7:movl $0x32c23af7,-0x34(%rbp)
+0x4011fb:3:mov -0x34(%rbp),%eax
+0x4011fe:2:mov %eax,%ecx
+0x401200:6:sub $0xa3b6c8e,%ecx
+0x401206:3:mov %eax,-0x38(%rbp)
+0x401209:3:mov %ecx,-0x3c(%rbp)
+0x40120c:6:je 000000000040139e <next_f+0x1fe>
+0x401212:5:jmp 0000000000401217 <next_f+0x77>
+0x401217:3:mov -0x38(%rbp),%eax
+0x40121a:5:sub $0x2f6c6aab,%eax
+0x40121f:3:mov %eax,-0x40(%rbp)
+0x401222:6:je 00000000004013b2 <next_f+0x212>
+0x401228:5:jmp 000000000040122d <next_f+0x8d>
+0x40122d:3:mov -0x38(%rbp),%eax
+0x401230:5:sub $0x32c23af7,%eax
+0x401235:3:mov %eax,-0x44(%rbp)
+0x401238:6:je 000000000040125e <next_f+0xbe>
+0x40123e:5:jmp 0000000000401243 <next_f+0xa3>
+0x401243:3:mov -0x38(%rbp),%eax
+0x401246:5:sub $0x7282a210,%eax
+0x40124b:3:mov %eax,-0x48(%rbp)
+0x40124e:6:je 000000000040128a <next_f+0xea>
+0x401254:5:jmp 0000000000401259 <next_f+0xb9>
+0x401259:5:jmp 00000000004013dc <next_f+0x23c>
+0x40125e:5:mov $0x2f6c6aab,%eax
+0x401263:5:mov $0x7282a210,%ecx
+0x401268:3:mov -0x2e(%rbp),%dl
+0x40126b:4:mov -0x2d(%rbp),%sil
+0x40126f:3:mov %dl,%dil
+0x401272:3:and %sil,%dil
+0x401275:3:xor %sil,%dl
+0x401278:3:or %dl,%dil
+0x40127b:4:test $0x1,%dil
+0x40127f:3:cmovne %ecx,%eax
+0x401282:3:mov %eax,-0x34(%rbp)
+0x401285:5:jmp 00000000004013dc <next_f+0x23c>
+0x40128a:5:mov $0x2f6c6aab,%eax
+0x40128f:5:mov $0xa3b6c8e,%ecx
+0x401294:2:mov $0x1,%dl
+0x401296:8:movss 0x3d66(%rip),%xmm0
+0x40129e:3:mov %rsp,%rsi
+0x4012a1:3:mov %rsi,%rdi
+0x4012a4:4:add $0xfffffffffffffff0,%rdi
+0x4012a8:3:mov %rdi,%rsp
+0x4012ab:7:movl $0x0,-0x10(%rsi)
+0x4012b2:4:mov -0x10(%rsi),%r8d
+0x4012b6:3:mov %r8d,%r9d
+0x4012b9:3:inc %r9d
+0x4012bc:4:mov %r9d,-0x10(%rsi)
+0x4012c0:3:movslq %r9d,%rsi
+0x4012c3:7:imul $0x51eb851f,%rsi,%rsi
+0x4012ca:3:mov %rsi,%rdi
+0x4012cd:4:shr $0x3f,%rdi
+0x4012d1:3:mov %edi,%r9d
+0x4012d4:4:sar $0x23,%rsi
+0x4012d8:3:mov %esi,%r10d
+0x4012db:3:add %r9d,%r10d
+0x4012de:3:mov %r10d,%esi
+0x4012e1:4:lea (%rsi,%rsi,4),%r9d
+0x4012e5:3:mov %r9d,%esi
+0x4012e8:4:lea (%rsi,%rsi,4),%r9d
+0x4012ec:3:neg %r9d
+0x4012ef:3:mov %r9d,%esi
+0x4012f2:3:mov %r8d,%edi
+0x4012f5:5:lea 0x1(%rdi,%rsi,1),%r8d
+0x4012fa:3:movslq %r8d,%rsi
+0x4012fd:8:mov 0x405010(,%rsi,4),%r8d
+0x401305:3:mov %r8d,%esi
+0x401308:5:cvtsi2ss %rsi,%xmm1
+0x40130d:4:divss %xmm0,%xmm1
+0x401311:5:movss %xmm1,-0x2c(%rbp)
+0x401316:8:mov 0x407050,%r8d
+0x40131e:8:mov 0x407068,%r9d
+0x401326:3:mov %r8d,%r10d
+0x401329:7:add $0x1c84837b,%r10d
+0x401330:4:sub $0x1,%r10d
+0x401334:7:sub $0x1c84837b,%r10d
+0x40133b:4:imul %r10d,%r8d
+0x40133f:4:and $0x1,%r8d
+0x401343:4:cmp $0x0,%r8d
+0x401347:4:sete %r11b
+0x40134b:4:cmp $0xa,%r9d
+0x40134f:3:setl %bl
+0x401352:3:mov %r11b,%r14b
+0x401355:4:xor $0xff,%r14b
+0x401359:3:mov %bl,%r15b
+0x40135c:4:xor $0xff,%r15b
+0x401360:3:xor $0x0,%dl
+0x401363:3:mov %r14b,%r12b
+0x401366:4:and $0x0,%r12b
+0x40136a:3:and %dl,%r11b
+0x40136d:3:mov %r15b,%r13b
+0x401370:4:and $0x0,%r13b
+0x401374:2:and %dl,%bl
+0x401376:3:or %r11b,%r12b
+0x401379:3:or %bl,%r13b
+0x40137c:3:xor %r13b,%r12b
+0x40137f:3:or %r15b,%r14b
+0x401382:4:xor $0xff,%r14b
+0x401386:3:or $0x0,%dl
+0x401389:3:and %dl,%r14b
+0x40138c:3:or %r14b,%r12b
+0x40138f:4:test $0x1,%r12b
+0x401393:3:cmovne %ecx,%eax
+0x401396:3:mov %eax,-0x34(%rbp)
+0x401399:5:jmp 00000000004013dc <next_f+0x23c>
+0x40139e:5:movss -0x2c(%rbp),%xmm0
+0x4013a3:4:lea -0x28(%rbp),%rsp
+0x4013a7:1:pop %rbx
+0x4013a8:2:pop %r12
+0x4013aa:2:pop %r13
+0x4013ac:2:pop %r14
+0x4013ae:2:pop %r15
+0x4013b0:1:pop %rbp
+0x4013b1:1:ret
+0x4013b2:3:mov %rsp,%rax
+0x4013b5:4:add $0xfffffffffffffff0,%rax
+0x4013b9:3:mov %rax,%rsp
+0x4013bc:6:movl $0x0,(%rax)
+0x4013c2:2:mov (%rax),%ecx
+0x4013c4:6:add $0x29fd20ed,%ecx
+0x4013ca:3:add $0x1,%ecx
+0x4013cd:6:sub $0x29fd20ed,%ecx
+0x4013d3:2:mov %ecx,(%rax)
+0x4013d5:7:movl $0x7282a210,-0x34(%rbp)
+0x4013dc:5:jmp 00000000004011fb <next_f+0x5b>
+0x4013e1:15:data16 data16 data16 data16 data16 cs nopw 0x0(%rax,%rax,1)
+0x4013f0:1:push %rbp
+0x4013f1:3:mov %rsp,%rbp
+0x4013f4:4:sub $0x10,%rsp
+0x4013f8:10:movabs $0x405074,%rdi
+0x401402:10:movabs $0x405077,%rsi
+0x40140c:2:mov $0x0,%al
+0x40140e:5:call 0000000000401040 <printf@plt>
+0x401413:3:mov %eax,-0x4(%rbp)
+0x401416:4:add $0x10,%rsp
+0x40141a:1:pop %rbp
+0x40141b:1:ret
+0x40141c:4:nopl 0x0(%rax)
+0x401420:1:push %rbp
+0x401421:3:mov %rsp,%rbp
+0x401424:2:push %r15
+0x401426:2:push %r14
+0x401428:2:push %r12
+0x40142a:1:push %rbx
+0x40142b:7:sub $0x190,%rsp
+0x401432:4:mov %rdi,-0x48(%rbp)
+0x401436:3:mov %esi,-0x4c(%rbp)
+0x401439:3:mov -0x4c(%rbp),%esi
+0x40143c:3:mov %esi,-0x3c(%rbp)
+0x40143f:7:movl $0x3e2672db,-0x50(%rbp)
+0x401446:3:mov -0x50(%rbp),%eax
+0x401449:2:mov %eax,%ecx
+0x40144b:6:sub $0x82c8b7fe,%ecx
+0x401451:3:mov %eax,-0x54(%rbp)
+0x401454:3:mov %ecx,-0x58(%rbp)
+0x401457:6:je 00000000004024ea <_TIFFCheckFieldIsValidForCodec+0x10ca>
+0x40145d:5:jmp 0000000000401462 <_TIFFCheckFieldIsValidForCodec+0x42>
+0x401462:3:mov -0x54(%rbp),%eax
+0x401465:5:sub $0x85e94ef2,%eax
+0x40146a:3:mov %eax,-0x5c(%rbp)
+0x40146d:6:je 0000000000402b34 <_TIFFCheckFieldIsValidForCodec+0x1714>
+0x401473:5:jmp 0000000000401478 <_TIFFCheckFieldIsValidForCodec+0x58>
+0x401478:3:mov -0x54(%rbp),%eax
+0x40147b:5:sub $0x86304ce1,%eax
+0x401480:3:mov %eax,-0x60(%rbp)
+0x401483:6:je 0000000000402cc2 <_TIFFCheckFieldIsValidForCodec+0x18a2>
+0x401489:5:jmp 000000000040148e <_TIFFCheckFieldIsValidForCodec+0x6e>
+0x40148e:3:mov -0x54(%rbp),%eax
+0x401491:5:sub $0x936f52a6,%eax
+0x401496:3:mov %eax,-0x64(%rbp)
+0x401499:6:je 0000000000402789 <_TIFFCheckFieldIsValidForCodec+0x1369>
+0x40149f:5:jmp 00000000004014a4 <_TIFFCheckFieldIsValidForCodec+0x84>
+0x4014a4:3:mov -0x54(%rbp),%eax
+0x4014a7:5:sub $0x93e4dc6e,%eax
+0x4014ac:3:mov %eax,-0x68(%rbp)
+0x4014af:6:je 0000000000402eda <_TIFFCheckFieldIsValidForCodec+0x1aba>
+0x4014b5:5:jmp 00000000004014ba <_TIFFCheckFieldIsValidForCodec+0x9a>
+0x4014ba:3:mov -0x54(%rbp),%eax
+0x4014bd:5:sub $0x97710d33,%eax
+0x4014c2:3:mov %eax,-0x6c(%rbp)
+0x4014c5:6:je 0000000000402316 <_TIFFCheckFieldIsValidForCodec+0xef6>
+0x4014cb:5:jmp 00000000004014d0 <_TIFFCheckFieldIsValidForCodec+0xb0>
+0x4014d0:3:mov -0x54(%rbp),%eax
+0x4014d3:5:sub $0x993b1cd0,%eax
+0x4014d8:3:mov %eax,-0x70(%rbp)
+0x4014db:6:je 0000000000402a26 <_TIFFCheckFieldIsValidForCodec+0x1606>
+0x4014e1:5:jmp 00000000004014e6 <_TIFFCheckFieldIsValidForCodec+0xc6>
+0x4014e6:3:mov -0x54(%rbp),%eax
+0x4014e9:5:sub $0x99b08c24,%eax
+0x4014ee:3:mov %eax,-0x74(%rbp)
+0x4014f1:6:je 00000000004028c9 <_TIFFCheckFieldIsValidForCodec+0x14a9>
+0x4014f7:5:jmp 00000000004014fc <_TIFFCheckFieldIsValidForCodec+0xdc>
+0x4014fc:3:mov -0x54(%rbp),%eax
+0x4014ff:5:sub $0x99e1d0e0,%eax
+0x401504:3:mov %eax,-0x78(%rbp)
+0x401507:6:je 0000000000402aa4 <_TIFFCheckFieldIsValidForCodec+0x1684>
+0x40150d:5:jmp 0000000000401512 <_TIFFCheckFieldIsValidForCodec+0xf2>
+0x401512:3:mov -0x54(%rbp),%eax
+0x401515:5:sub $0x9aa72ed9,%eax
+0x40151a:3:mov %eax,-0x7c(%rbp)
+0x40151d:6:je 00000000004024f6 <_TIFFCheckFieldIsValidForCodec+0x10d6>
+0x401523:5:jmp 0000000000401528 <_TIFFCheckFieldIsValidForCodec+0x108>
+0x401528:3:mov -0x54(%rbp),%eax
+0x40152b:5:sub $0x9d206fb8,%eax
+0x401530:3:mov %eax,-0x80(%rbp)
+0x401533:6:je 00000000004023b7 <_TIFFCheckFieldIsValidForCodec+0xf97>
+0x401539:5:jmp 000000000040153e <_TIFFCheckFieldIsValidForCodec+0x11e>
+0x40153e:3:mov -0x54(%rbp),%eax
+0x401541:5:sub $0x9f0ac476,%eax
+0x401546:6:mov %eax,-0x84(%rbp)
+0x40154c:6:je 000000000040212e <_TIFFCheckFieldIsValidForCodec+0xd0e>
+0x401552:5:jmp 0000000000401557 <_TIFFCheckFieldIsValidForCodec+0x137>
+0x401557:3:mov -0x54(%rbp),%eax
+0x40155a:5:sub $0xa1ee953d,%eax
+0x40155f:6:mov %eax,-0x88(%rbp)
+0x401565:6:je 0000000000402a45 <_TIFFCheckFieldIsValidForCodec+0x1625>
+0x40156b:5:jmp 0000000000401570 <_TIFFCheckFieldIsValidForCodec+0x150>
+0x401570:3:mov -0x54(%rbp),%eax
+0x401573:5:sub $0xa2552383,%eax
+0x401578:6:mov %eax,-0x8c(%rbp)
+0x40157e:6:je 0000000000402e8c <_TIFFCheckFieldIsValidForCodec+0x1a6c>
+0x401584:5:jmp 0000000000401589 <_TIFFCheckFieldIsValidForCodec+0x169>
+0x401589:3:mov -0x54(%rbp),%eax
+0x40158c:5:sub $0xa47fd830,%eax
+0x401591:6:mov %eax,-0x90(%rbp)
+0x401597:6:je 0000000000403006 <_TIFFCheckFieldIsValidForCodec+0x1be6>
+0x40159d:5:jmp 00000000004015a2 <_TIFFCheckFieldIsValidForCodec+0x182>
+0x4015a2:3:mov -0x54(%rbp),%eax
+0x4015a5:5:sub $0xa5282380,%eax
+0x4015aa:6:mov %eax,-0x94(%rbp)
+0x4015b0:6:je 0000000000403313 <_TIFFCheckFieldIsValidForCodec+0x1ef3>
+0x4015b6:5:jmp 00000000004015bb <_TIFFCheckFieldIsValidForCodec+0x19b>
+0x4015bb:3:mov -0x54(%rbp),%eax
+0x4015be:5:sub $0xa58fc3e5,%eax
+0x4015c3:6:mov %eax,-0x98(%rbp)
+0x4015c9:6:je 000000000040216a <_TIFFCheckFieldIsValidForCodec+0xd4a>
+0x4015cf:5:jmp 00000000004015d4 <_TIFFCheckFieldIsValidForCodec+0x1b4>
+0x4015d4:3:mov -0x54(%rbp),%eax
+0x4015d7:5:sub $0xa771bb44,%eax
+0x4015dc:6:mov %eax,-0x9c(%rbp)
+0x4015e2:6:je 0000000000402271 <_TIFFCheckFieldIsValidForCodec+0xe51>
+0x4015e8:5:jmp 00000000004015ed <_TIFFCheckFieldIsValidForCodec+0x1cd>
+0x4015ed:3:mov -0x54(%rbp),%eax
+0x4015f0:5:sub $0xa8b2e830,%eax
+0x4015f5:6:mov %eax,-0xa0(%rbp)
+0x4015fb:6:je 0000000000402db9 <_TIFFCheckFieldIsValidForCodec+0x1999>
+0x401601:5:jmp 0000000000401606 <_TIFFCheckFieldIsValidForCodec+0x1e6>
+0x401606:3:mov -0x54(%rbp),%eax
+0x401609:5:sub $0xaabb1a94,%eax
+0x40160e:6:mov %eax,-0xa4(%rbp)
+0x401614:6:je 0000000000402a70 <_TIFFCheckFieldIsValidForCodec+0x1650>
+0x40161a:5:jmp 000000000040161f <_TIFFCheckFieldIsValidForCodec+0x1ff>
+0x40161f:3:mov -0x54(%rbp),%eax
+0x401622:5:sub $0xac00d5b5,%eax
+0x401627:6:mov %eax,-0xa8(%rbp)
+0x40162d:6:je 0000000000402f6a <_TIFFCheckFieldIsValidForCodec+0x1b4a>
+0x401633:5:jmp 0000000000401638 <_TIFFCheckFieldIsValidForCodec+0x218>
+0x401638:3:mov -0x54(%rbp),%eax
+0x40163b:5:sub $0xaeb1e902,%eax
+0x401640:6:mov %eax,-0xac(%rbp)
+0x401646:6:je 0000000000403221 <_TIFFCheckFieldIsValidForCodec+0x1e01>
+0x40164c:5:jmp 0000000000401651 <_TIFFCheckFieldIsValidForCodec+0x231>
+0x401651:3:mov -0x54(%rbp),%eax
+0x401654:5:sub $0xafb916c3,%eax
+0x401659:6:mov %eax,-0xb0(%rbp)
+0x40165f:6:je 00000000004028ab <_TIFFCheckFieldIsValidForCodec+0x148b>
+0x401665:5:jmp 000000000040166a <_TIFFCheckFieldIsValidForCodec+0x24a>
+0x40166a:3:mov -0x54(%rbp),%eax
+0x40166d:5:sub $0xb02815b7,%eax
+0x401672:6:mov %eax,-0xb4(%rbp)
+0x401678:6:je 000000000040310b <_TIFFCheckFieldIsValidForCodec+0x1ceb>
+0x40167e:5:jmp 0000000000401683 <_TIFFCheckFieldIsValidForCodec+0x263>
+0x401683:3:mov -0x54(%rbp),%eax
+0x401686:5:sub $0xb157e32f,%eax
+0x40168b:6:mov %eax,-0xb8(%rbp)
+0x401691:6:je 00000000004021c4 <_TIFFCheckFieldIsValidForCodec+0xda4>
+0x401697:5:jmp 000000000040169c <_TIFFCheckFieldIsValidForCodec+0x27c>
+0x40169c:3:mov -0x54(%rbp),%eax
+0x40169f:5:sub $0xb4937a56,%eax
+0x4016a4:6:mov %eax,-0xbc(%rbp)
+0x4016aa:6:je 00000000004030f3 <_TIFFCheckFieldIsValidForCodec+0x1cd3>
+0x4016b0:5:jmp 00000000004016b5 <_TIFFCheckFieldIsValidForCodec+0x295>
+0x4016b5:3:mov -0x54(%rbp),%eax
+0x4016b8:5:sub $0xb4c7ee10,%eax
+0x4016bd:6:mov %eax,-0xc0(%rbp)
+0x4016c3:6:je 00000000004020f2 <_TIFFCheckFieldIsValidForCodec+0xcd2>
+0x4016c9:5:jmp 00000000004016ce <_TIFFCheckFieldIsValidForCodec+0x2ae>
+0x4016ce:3:mov -0x54(%rbp),%eax
+0x4016d1:5:sub $0xb55e896e,%eax
+0x4016d6:6:mov %eax,-0xc4(%rbp)
+0x4016dc:6:je 0000000000403292 <_TIFFCheckFieldIsValidForCodec+0x1e72>
+0x4016e2:5:jmp 00000000004016e7 <_TIFFCheckFieldIsValidForCodec+0x2c7>
+0x4016e7:3:mov -0x54(%rbp),%eax
+0x4016ea:5:sub $0xb667a03e,%eax
+0x4016ef:6:mov %eax,-0xc8(%rbp)
+0x4016f5:6:je 00000000004032f4 <_TIFFCheckFieldIsValidForCodec+0x1ed4>
+0x4016fb:5:jmp 0000000000401700 <_TIFFCheckFieldIsValidForCodec+0x2e0>
+0x401700:3:mov -0x54(%rbp),%eax
+0x401703:5:sub $0xb804e6c7,%eax
+0x401708:6:mov %eax,-0xcc(%rbp)
+0x40170e:6:je 000000000040329e <_TIFFCheckFieldIsValidForCodec+0x1e7e>
+0x401714:5:jmp 0000000000401719 <_TIFFCheckFieldIsValidForCodec+0x2f9>
+0x401719:3:mov -0x54(%rbp),%eax
+0x40171c:5:sub $0xb85dcdaf,%eax
+0x401721:6:mov %eax,-0xd0(%rbp)
+0x401727:6:je 00000000004028f6 <_TIFFCheckFieldIsValidForCodec+0x14d6>
+0x40172d:5:jmp 0000000000401732 <_TIFFCheckFieldIsValidForCodec+0x312>
+0x401732:3:mov -0x54(%rbp),%eax
+0x401735:5:sub $0xbbba5e2d,%eax
+0x40173a:6:mov %eax,-0xd4(%rbp)
+0x401740:6:je 000000000040207a <_TIFFCheckFieldIsValidForCodec+0xc5a>
+0x401746:5:jmp 000000000040174b <_TIFFCheckFieldIsValidForCodec+0x32b>
+0x40174b:3:mov -0x54(%rbp),%eax
+0x40174e:5:sub $0xbc15fea2,%eax
+0x401753:6:mov %eax,-0xd8(%rbp)
+0x401759:6:je 00000000004032d0 <_TIFFCheckFieldIsValidForCodec+0x1eb0>
+0x40175f:5:jmp 0000000000401764 <_TIFFCheckFieldIsValidForCodec+0x344>
+0x401764:3:mov -0x54(%rbp),%eax
+0x401767:5:sub $0xc14a984a,%eax
+0x40176c:6:mov %eax,-0xdc(%rbp)
+0x401772:6:je 0000000000403163 <_TIFFCheckFieldIsValidForCodec+0x1d43>
+0x401778:5:jmp 000000000040177d <_TIFFCheckFieldIsValidForCodec+0x35d>
+0x40177d:3:mov -0x54(%rbp),%eax
+0x401780:5:sub $0xc1e2e486,%eax
+0x401785:6:mov %eax,-0xe0(%rbp)
+0x40178b:6:je 0000000000402110 <_TIFFCheckFieldIsValidForCodec+0xcf0>
+0x401791:5:jmp 0000000000401796 <_TIFFCheckFieldIsValidForCodec+0x376>
+0x401796:3:mov -0x54(%rbp),%eax
+0x401799:5:sub $0xc3b303d1,%eax
+0x40179e:6:mov %eax,-0xe4(%rbp)
+0x4017a4:6:je 0000000000401ff8 <_TIFFCheckFieldIsValidForCodec+0xbd8>
+0x4017aa:5:jmp 00000000004017af <_TIFFCheckFieldIsValidForCodec+0x38f>
+0x4017af:3:mov -0x54(%rbp),%eax
+0x4017b2:5:sub $0xc44104bc,%eax
+0x4017b7:6:mov %eax,-0xe8(%rbp)
+0x4017bd:6:je 0000000000403337 <_TIFFCheckFieldIsValidForCodec+0x1f17>
+0x4017c3:5:jmp 00000000004017c8 <_TIFFCheckFieldIsValidForCodec+0x3a8>
+0x4017c8:3:mov -0x54(%rbp),%eax
+0x4017cb:5:sub $0xc6ff1d8c,%eax
+0x4017d0:6:mov %eax,-0xec(%rbp)
+0x4017d6:6:je 000000000040281f <_TIFFCheckFieldIsValidForCodec+0x13ff>
+0x4017dc:5:jmp 00000000004017e1 <_TIFFCheckFieldIsValidForCodec+0x3c1>
+0x4017e1:3:mov -0x54(%rbp),%eax
+0x4017e4:5:sub $0xc74eaad9,%eax
+0x4017e9:6:mov %eax,-0xf0(%rbp)
+0x4017ef:6:je 000000000040263b <_TIFFCheckFieldIsValidForCodec+0x121b>
+0x4017f5:5:jmp 00000000004017fa <_TIFFCheckFieldIsValidForCodec+0x3da>
+0x4017fa:3:mov -0x54(%rbp),%eax
+0x4017fd:5:sub $0xcebd86c0,%eax
+0x401802:6:mov %eax,-0xf4(%rbp)
+0x401808:6:je 00000000004030e0 <_TIFFCheckFieldIsValidForCodec+0x1cc0>
+0x40180e:5:jmp 0000000000401813 <_TIFFCheckFieldIsValidForCodec+0x3f3>
+0x401813:3:mov -0x54(%rbp),%eax
+0x401816:5:sub $0xd04e1d6d,%eax
+0x40181b:6:mov %eax,-0xf8(%rbp)
+0x401821:6:je 000000000040282b <_TIFFCheckFieldIsValidForCodec+0x140b>
+0x401827:5:jmp 000000000040182c <_TIFFCheckFieldIsValidForCodec+0x40c>
+0x40182c:3:mov -0x54(%rbp),%eax
+0x40182f:5:sub $0xd12f3ab4,%eax
+0x401834:6:mov %eax,-0xfc(%rbp)
+0x40183a:6:je 000000000040214c <_TIFFCheckFieldIsValidForCodec+0xd2c>
+0x401840:5:jmp 0000000000401845 <_TIFFCheckFieldIsValidForCodec+0x425>
+0x401845:3:mov -0x54(%rbp),%eax
+0x401848:5:sub $0xd4ff0264,%eax
+0x40184d:6:mov %eax,-0x100(%rbp)
+0x401853:6:je 0000000000402422 <_TIFFCheckFieldIsValidForCodec+0x1002>
+0x401859:5:jmp 000000000040185e <_TIFFCheckFieldIsValidForCodec+0x43e>
+0x40185e:3:mov -0x54(%rbp),%eax
+0x401861:5:sub $0xd6e21a3a,%eax
+0x401866:6:mov %eax,-0x104(%rbp)
+0x40186c:6:je 0000000000402b93 <_TIFFCheckFieldIsValidForCodec+0x1773>
+0x401872:5:jmp 0000000000401877 <_TIFFCheckFieldIsValidForCodec+0x457>
+0x401877:3:mov -0x54(%rbp),%eax
+0x40187a:5:sub $0xd6f7db1c,%eax
+0x40187f:6:mov %eax,-0x108(%rbp)
+0x401885:6:je 0000000000402a07 <_TIFFCheckFieldIsValidForCodec+0x15e7>
+0x40188b:5:jmp 0000000000401890 <_TIFFCheckFieldIsValidForCodec+0x470>
+0x401890:3:mov -0x54(%rbp),%eax
+0x401893:5:sub $0xdce62cbc,%eax
+0x401898:6:mov %eax,-0x10c(%rbp)
+0x40189e:6:je 0000000000402caf <_TIFFCheckFieldIsValidForCodec+0x188f>
+0x4018a4:5:jmp 00000000004018a9 <_TIFFCheckFieldIsValidForCodec+0x489>
+0x4018a9:3:mov -0x54(%rbp),%eax
+0x4018ac:5:sub $0xed28906f,%eax
+0x4018b1:6:mov %eax,-0x110(%rbp)
+0x4018b7:6:je 0000000000402703 <_TIFFCheckFieldIsValidForCodec+0x12e3>
+0x4018bd:5:jmp 00000000004018c2 <_TIFFCheckFieldIsValidForCodec+0x4a2>
+0x4018c2:3:mov -0x54(%rbp),%eax
+0x4018c5:5:sub $0xee33335d,%eax
+0x4018ca:6:mov %eax,-0x114(%rbp)
+0x4018d0:6:je 0000000000403059 <_TIFFCheckFieldIsValidForCodec+0x1c39>
+0x4018d6:5:jmp 00000000004018db <_TIFFCheckFieldIsValidForCodec+0x4bb>
+0x4018db:3:mov -0x54(%rbp),%eax
+0x4018de:5:sub $0xef3b18c5,%eax
+0x4018e3:6:mov %eax,-0x118(%rbp)
+0x4018e9:6:je 0000000000402c87 <_TIFFCheckFieldIsValidForCodec+0x1867>
+0x4018ef:5:jmp 00000000004018f4 <_TIFFCheckFieldIsValidForCodec+0x4d4>
+0x4018f4:3:mov -0x54(%rbp),%eax
+0x4018f7:5:sub $0xf010aff6,%eax
+0x4018fc:6:mov %eax,-0x11c(%rbp)
+0x401902:6:je 0000000000402a1a <_TIFFCheckFieldIsValidForCodec+0x15fa>
+0x401908:5:jmp 000000000040190d <_TIFFCheckFieldIsValidForCodec+0x4ed>
+0x40190d:3:mov -0x54(%rbp),%eax
+0x401910:5:sub $0xf1d177ff,%eax
+0x401915:6:mov %eax,-0x120(%rbp)
+0x40191b:6:je 000000000040269f <_TIFFCheckFieldIsValidForCodec+0x127f>
+0x401921:5:jmp 0000000000401926 <_TIFFCheckFieldIsValidForCodec+0x506>
+0x401926:3:mov -0x54(%rbp),%eax
+0x401929:5:sub $0xf21b81d7,%eax
+0x40192e:6:mov %eax,-0x124(%rbp)
+0x401934:6:je 00000000004025a4 <_TIFFCheckFieldIsValidForCodec+0x1184>
+0x40193a:5:jmp 000000000040193f <_TIFFCheckFieldIsValidForCodec+0x51f>
+0x40193f:3:mov -0x54(%rbp),%eax
+0x401942:5:sub $0xf229b144,%eax
+0x401947:6:mov %eax,-0x128(%rbp)
+0x40194d:6:je 0000000000402486 <_TIFFCheckFieldIsValidForCodec+0x1066>
+0x401953:5:jmp 0000000000401958 <_TIFFCheckFieldIsValidForCodec+0x538>
+0x401958:3:mov -0x54(%rbp),%eax
+0x40195b:5:sub $0xf3e478d9,%eax
+0x401960:6:mov %eax,-0x12c(%rbp)
+0x401966:6:je 000000000040242e <_TIFFCheckFieldIsValidForCodec+0x100e>
+0x40196c:5:jmp 0000000000401971 <_TIFFCheckFieldIsValidForCodec+0x551>
+0x401971:3:mov -0x54(%rbp),%eax
+0x401974:5:sub $0xf896be6d,%eax
+0x401979:6:mov %eax,-0x130(%rbp)
+0x40197f:6:je 0000000000402d1a <_TIFFCheckFieldIsValidForCodec+0x18fa>
+0x401985:5:jmp 000000000040198a <_TIFFCheckFieldIsValidForCodec+0x56a>
+0x40198a:3:mov -0x54(%rbp),%eax
+0x40198d:5:sub $0xfae541e2,%eax
+0x401992:6:mov %eax,-0x134(%rbp)
+0x401998:6:je 0000000000401fec <_TIFFCheckFieldIsValidForCodec+0xbcc>
+0x40199e:5:jmp 00000000004019a3 <_TIFFCheckFieldIsValidForCodec+0x583>
+0x4019a3:3:mov -0x54(%rbp),%eax
+0x4019a6:5:sub $0xfc016b86,%eax
+0x4019ab:6:mov %eax,-0x138(%rbp)
+0x4019b1:6:je 00000000004021e2 <_TIFFCheckFieldIsValidForCodec+0xdc2>
+0x4019b7:5:jmp 00000000004019bc <_TIFFCheckFieldIsValidForCodec+0x59c>
+0x4019bc:3:mov -0x54(%rbp),%eax
+0x4019bf:5:sub $0xff332e22,%eax
+0x4019c4:6:mov %eax,-0x13c(%rbp)
+0x4019ca:6:je 0000000000402863 <_TIFFCheckFieldIsValidForCodec+0x1443>
+0x4019d0:5:jmp 00000000004019d5 <_TIFFCheckFieldIsValidForCodec+0x5b5>
+0x4019d5:3:mov -0x54(%rbp),%eax
+0x4019d8:5:sub $0xff38d62a,%eax
+0x4019dd:6:mov %eax,-0x140(%rbp)
+0x4019e3:6:je 0000000000402d72 <_TIFFCheckFieldIsValidForCodec+0x1952>
+0x4019e9:5:jmp 00000000004019ee <_TIFFCheckFieldIsValidForCodec+0x5ce>
+0x4019ee:3:mov -0x54(%rbp),%eax
+0x4019f1:5:sub $0xffca1586,%eax
+0x4019f6:6:mov %eax,-0x144(%rbp)
+0x4019fc:6:je 0000000000402020 <_TIFFCheckFieldIsValidForCodec+0xc00>
+0x401a02:5:jmp 0000000000401a07 <_TIFFCheckFieldIsValidForCodec+0x5e7>
+0x401a07:3:mov -0x54(%rbp),%eax
+0x401a0a:5:sub $0x5961539,%eax
+0x401a0f:6:mov %eax,-0x148(%rbp)
+0x401a15:6:je 0000000000402e70 <_TIFFCheckFieldIsValidForCodec+0x1a50>
+0x401a1b:5:jmp 0000000000401a20 <_TIFFCheckFieldIsValidForCodec+0x600>
+0x401a20:3:mov -0x54(%rbp),%eax
+0x401a23:5:sub $0x947fd4b,%eax
+0x401a28:6:mov %eax,-0x14c(%rbp)
+0x401a2e:6:je 000000000040221e <_TIFFCheckFieldIsValidForCodec+0xdfe>
+0x401a34:5:jmp 0000000000401a39 <_TIFFCheckFieldIsValidForCodec+0x619>
+0x401a39:3:mov -0x54(%rbp),%eax
+0x401a3c:5:sub $0xc4047ff,%eax
+0x401a41:6:mov %eax,-0x150(%rbp)
+0x401a47:6:je 0000000000402188 <_TIFFCheckFieldIsValidForCodec+0xd68>
+0x401a4d:5:jmp 0000000000401a52 <_TIFFCheckFieldIsValidForCodec+0x632>
+0x401a52:3:mov -0x54(%rbp),%eax
+0x401a55:5:sub $0xdbe2685,%eax
+0x401a5a:6:mov %eax,-0x154(%rbp)
+0x401a60:6:je 00000000004026f7 <_TIFFCheckFieldIsValidForCodec+0x12d7>
+0x401a66:5:jmp 0000000000401a6b <_TIFFCheckFieldIsValidForCodec+0x64b>
+0x401a6b:3:mov -0x54(%rbp),%eax
+0x401a6e:5:sub $0x1027d2b6,%eax
+0x401a73:6:mov %eax,-0x158(%rbp)
+0x401a79:6:je 0000000000403307 <_TIFFCheckFieldIsValidForCodec+0x1ee7>
+0x401a7f:5:jmp 0000000000401a84 <_TIFFCheckFieldIsValidForCodec+0x664>
+0x401a84:3:mov -0x54(%rbp),%eax
+0x401a87:5:sub $0x106b8d17,%eax
+0x401a8c:6:mov %eax,-0x15c(%rbp)
+0x401a92:6:je 0000000000402e9f <_TIFFCheckFieldIsValidForCodec+0x1a7f>
+0x401a98:5:jmp 0000000000401a9d <_TIFFCheckFieldIsValidForCodec+0x67d>
+0x401a9d:3:mov -0x54(%rbp),%eax
+0x401aa0:5:sub $0x10da8967,%eax
+0x401aa5:6:mov %eax,-0x160(%rbp)
+0x401aab:6:je 0000000000402914 <_TIFFCheckFieldIsValidForCodec+0x14f4>
+0x401ab1:5:jmp 0000000000401ab6 <_TIFFCheckFieldIsValidForCodec+0x696>
+0x401ab6:3:mov -0x54(%rbp),%eax
+0x401ab9:5:sub $0x10f8b742,%eax
+0x401abe:6:mov %eax,-0x164(%rbp)
+0x401ac4:6:je 00000000004029ec <_TIFFCheckFieldIsValidForCodec+0x15cc>
+0x401aca:5:jmp 0000000000401acf <_TIFFCheckFieldIsValidForCodec+0x6af>
+0x401acf:3:mov -0x54(%rbp),%eax
+0x401ad2:5:sub $0x11c5c613,%eax
+0x401ad7:6:mov %eax,-0x168(%rbp)
+0x401add:6:je 00000000004030c5 <_TIFFCheckFieldIsValidForCodec+0x1ca5>
+0x401ae3:5:jmp 0000000000401ae8 <_TIFFCheckFieldIsValidForCodec+0x6c8>
+0x401ae8:3:mov -0x54(%rbp),%eax
+0x401aeb:5:sub $0x12b28cf6,%eax
+0x401af0:6:mov %eax,-0x16c(%rbp)
+0x401af6:6:je 00000000004032dc <_TIFFCheckFieldIsValidForCodec+0x1ebc>
+0x401afc:5:jmp 0000000000401b01 <_TIFFCheckFieldIsValidForCodec+0x6e1>
+0x401b01:3:mov -0x54(%rbp),%eax
+0x401b04:5:sub $0x17d2308f,%eax
+0x401b09:6:mov %eax,-0x170(%rbp)
+0x401b0f:6:je 0000000000402eab <_TIFFCheckFieldIsValidForCodec+0x1a8b>
+0x401b15:5:jmp 0000000000401b1a <_TIFFCheckFieldIsValidForCodec+0x6fa>
+0x401b1a:3:mov -0x54(%rbp),%eax
+0x401b1d:5:sub $0x19eb886c,%eax
+0x401b22:6:mov %eax,-0x174(%rbp)
+0x401b28:6:je 00000000004032e8 <_TIFFCheckFieldIsValidForCodec+0x1ec8>
+0x401b2e:5:jmp 0000000000401b33 <_TIFFCheckFieldIsValidForCodec+0x713>
+0x401b33:3:mov -0x54(%rbp),%eax
+0x401b36:5:sub $0x1aada6fa,%eax
+0x401b3b:6:mov %eax,-0x178(%rbp)
+0x401b41:6:je 000000000040205c <_TIFFCheckFieldIsValidForCodec+0xc3c>
+0x401b47:5:jmp 0000000000401b4c <_TIFFCheckFieldIsValidForCodec+0x72c>
+0x401b4c:3:mov -0x54(%rbp),%eax
+0x401b4f:5:sub $0x1d751b02,%eax
+0x401b54:6:mov %eax,-0x17c(%rbp)
+0x401b5a:6:je 0000000000402d8a <_TIFFCheckFieldIsValidForCodec+0x196a>
+0x401b60:5:jmp 0000000000401b65 <_TIFFCheckFieldIsValidForCodec+0x745>
+0x401b65:3:mov -0x54(%rbp),%eax
+0x401b68:5:sub $0x1d7a27ee,%eax
+0x401b6d:6:mov %eax,-0x180(%rbp)
+0x401b73:6:je 000000000040331f <_TIFFCheckFieldIsValidForCodec+0x1eff>
+0x401b79:5:jmp 0000000000401b7e <_TIFFCheckFieldIsValidForCodec+0x75e>
+0x401b7e:3:mov -0x54(%rbp),%eax
+0x401b81:5:sub $0x217b433f,%eax
+0x401b86:6:mov %eax,-0x184(%rbp)
+0x401b8c:6:je 00000000004031c2 <_TIFFCheckFieldIsValidForCodec+0x1da2>
+0x401b92:5:jmp 0000000000401b97 <_TIFFCheckFieldIsValidForCodec+0x777>
+0x401b97:3:mov -0x54(%rbp),%eax
+0x401b9a:5:sub $0x24a502c0,%eax
+0x401b9f:6:mov %eax,-0x188(%rbp)
+0x401ba5:6:je 0000000000402647 <_TIFFCheckFieldIsValidForCodec+0x1227>
+0x401bab:5:jmp 0000000000401bb0 <_TIFFCheckFieldIsValidForCodec+0x790>
+0x401bb0:3:mov -0x54(%rbp),%eax
+0x401bb3:5:sub $0x2b3fc321,%eax
+0x401bb8:6:mov %eax,-0x18c(%rbp)
+0x401bbe:6:je 0000000000402c93 <_TIFFCheckFieldIsValidForCodec+0x1873>
+0x401bc4:5:jmp 0000000000401bc9 <_TIFFCheckFieldIsValidForCodec+0x7a9>
+0x401bc9:3:mov -0x54(%rbp),%eax
+0x401bcc:5:sub $0x3241a977,%eax
+0x401bd1:6:mov %eax,-0x190(%rbp)
+0x401bd7:6:je 000000000040251e <_TIFFCheckFieldIsValidForCodec+0x10fe>
+0x401bdd:5:jmp 0000000000401be2 <_TIFFCheckFieldIsValidForCodec+0x7c2>
+0x401be2:3:mov -0x54(%rbp),%eax
+0x401be5:5:sub $0x355fbc2e,%eax
+0x401bea:6:mov %eax,-0x194(%rbp)
+0x401bf0:6:je 000000000040203e <_TIFFCheckFieldIsValidForCodec+0xc1e>
+0x401bf6:5:jmp 0000000000401bfb <_TIFFCheckFieldIsValidForCodec+0x7db>
+0x401bfb:3:mov -0x54(%rbp),%eax
+0x401bfe:5:sub $0x36be07f6,%eax
+0x401c03:6:mov %eax,-0x198(%rbp)
+0x401c09:6:je 0000000000403343 <_TIFFCheckFieldIsValidForCodec+0x1f23>
+0x401c0f:5:jmp 0000000000401c14 <_TIFFCheckFieldIsValidForCodec+0x7f4>
+0x401c14:3:mov -0x54(%rbp),%eax
+0x401c17:5:sub $0x384b1cf2,%eax
+0x401c1c:6:mov %eax,-0x19c(%rbp)
+0x401c22:6:je 00000000004020d4 <_TIFFCheckFieldIsValidForCodec+0xcb4>
+0x401c28:5:jmp 0000000000401c2d <_TIFFCheckFieldIsValidForCodec+0x80d>
+0x401c2d:3:mov -0x54(%rbp),%eax
+0x401c30:5:sub $0x38ca0e00,%eax
+0x401c35:6:mov %eax,-0x1a0(%rbp)
+0x401c3b:6:je 000000000040287b <_TIFFCheckFieldIsValidForCodec+0x145b>
+0x401c41:5:jmp 0000000000401c46 <_TIFFCheckFieldIsValidForCodec+0x826>
+0x401c46:3:mov -0x54(%rbp),%eax
+0x401c49:5:sub $0x3964ca55,%eax
+0x401c4e:6:mov %eax,-0x1a4(%rbp)
+0x401c54:6:je 0000000000402a58 <_TIFFCheckFieldIsValidForCodec+0x1638>
+0x401c5a:5:jmp 0000000000401c5f <_TIFFCheckFieldIsValidForCodec+0x83f>
+0x401c5f:3:mov -0x54(%rbp),%eax
+0x401c62:5:sub $0x3a058a68,%eax
+0x401c67:6:mov %eax,-0x1a8(%rbp)
+0x401c6d:6:je 000000000040332b <_TIFFCheckFieldIsValidForCodec+0x1f0b>
+0x401c73:5:jmp 0000000000401c78 <_TIFFCheckFieldIsValidForCodec+0x858>
+0x401c78:3:mov -0x54(%rbp),%eax
+0x401c7b:5:sub $0x3ae964f3,%eax
+0x401c80:6:mov %eax,-0x1ac(%rbp)
+0x401c86:6:je 000000000040297f <_TIFFCheckFieldIsValidForCodec+0x155f>
+0x401c8c:5:jmp 0000000000401c91 <_TIFFCheckFieldIsValidForCodec+0x871>
+0x401c91:3:mov -0x54(%rbp),%eax
+0x401c94:5:sub $0x3bfb0e30,%eax
+0x401c99:6:mov %eax,-0x1b0(%rbp)
+0x401c9f:6:je 0000000000402927 <_TIFFCheckFieldIsValidForCodec+0x1507>
+0x401ca5:5:jmp 0000000000401caa <_TIFFCheckFieldIsValidForCodec+0x88a>
+0x401caa:3:mov -0x54(%rbp),%eax
+0x401cad:5:sub $0x3d4828bc,%eax
+0x401cb2:6:mov %eax,-0x1b4(%rbp)
+0x401cb8:6:je 00000000004032bd <_TIFFCheckFieldIsValidForCodec+0x1e9d>
+0x401cbe:5:jmp 0000000000401cc3 <_TIFFCheckFieldIsValidForCodec+0x8a3>
+0x401cc3:3:mov -0x54(%rbp),%eax
+0x401cc6:5:sub $0x3e154c3e,%eax
+0x401ccb:6:mov %eax,-0x1b8(%rbp)
+0x401cd1:6:je 0000000000402a64 <_TIFFCheckFieldIsValidForCodec+0x1644>
+0x401cd7:5:jmp 0000000000401cdc <_TIFFCheckFieldIsValidForCodec+0x8bc>
+0x401cdc:3:mov -0x54(%rbp),%eax
+0x401cdf:5:sub $0x3e2672db,%eax
+0x401ce4:6:mov %eax,-0x1bc(%rbp)
+0x401cea:6:je 0000000000401fb6 <_TIFFCheckFieldIsValidForCodec+0xb96>
+0x401cf0:5:jmp 0000000000401cf5 <_TIFFCheckFieldIsValidForCodec+0x8d5>
+0x401cf5:3:mov -0x54(%rbp),%eax
+0x401cf8:5:sub $0x457ed0da,%eax
+0x401cfd:6:mov %eax,-0x1c0(%rbp)
+0x401d03:6:je 000000000040286f <_TIFFCheckFieldIsValidForCodec+0x144f>
+0x401d09:5:jmp 0000000000401d0e <_TIFFCheckFieldIsValidForCodec+0x8ee>
+0x401d0e:3:mov -0x54(%rbp),%eax
+0x401d11:5:sub $0x489c2130,%eax
+0x401d16:6:mov %eax,-0x1c4(%rbp)
+0x401d1c:6:je 0000000000402ec7 <_TIFFCheckFieldIsValidForCodec+0x1aa7>
+0x401d22:5:jmp 0000000000401d27 <_TIFFCheckFieldIsValidForCodec+0x907>
+0x401d27:3:mov -0x54(%rbp),%eax
+0x401d2a:5:sub $0x4914135c,%eax
+0x401d2f:6:mov %eax,-0x1c8(%rbp)
+0x401d35:6:je 0000000000402850 <_TIFFCheckFieldIsValidForCodec+0x1430>
+0x401d3b:5:jmp 0000000000401d40 <_TIFFCheckFieldIsValidForCodec+0x920>
+0x401d40:3:mov -0x54(%rbp),%eax
+0x401d43:5:sub $0x4a102dc1,%eax
+0x401d48:6:mov %eax,-0x1cc(%rbp)
+0x401d4e:6:je 0000000000402da6 <_TIFFCheckFieldIsValidForCodec+0x1986>
+0x401d54:5:jmp 0000000000401d59 <_TIFFCheckFieldIsValidForCodec+0x939>
+0x401d59:3:mov -0x54(%rbp),%eax
+0x401d5c:5:sub $0x4a2c67ca,%eax
+0x401d61:6:mov %eax,-0x1d0(%rbp)
+0x401d67:6:je 00000000004032b1 <_TIFFCheckFieldIsValidForCodec+0x1e91>
+0x401d6d:5:jmp 0000000000401d72 <_TIFFCheckFieldIsValidForCodec+0x952>
+0x401d72:3:mov -0x54(%rbp),%eax
+0x401d75:5:sub $0x4d90fe3d,%eax
+0x401d7a:6:mov %eax,-0x1d4(%rbp)
+0x401d80:6:je 0000000000402e64 <_TIFFCheckFieldIsValidForCodec+0x1a44>
+0x401d86:5:jmp 0000000000401d8b <_TIFFCheckFieldIsValidForCodec+0x96b>
+0x401d8b:3:mov -0x54(%rbp),%eax
+0x401d8e:5:sub $0x4e27e6d2,%eax
+0x401d93:6:mov %eax,-0x1d8(%rbp)
+0x401d99:6:je 000000000040200b <_TIFFCheckFieldIsValidForCodec+0xbeb>
+0x401d9f:5:jmp 0000000000401da4 <_TIFFCheckFieldIsValidForCodec+0x984>
+0x401da4:3:mov -0x54(%rbp),%eax
+0x401da7:5:sub $0x4ef5465d,%eax
+0x401dac:6:mov %eax,-0x1dc(%rbp)
+0x401db2:6:je 0000000000402098 <_TIFFCheckFieldIsValidForCodec+0xc78>
+0x401db8:5:jmp 0000000000401dbd <_TIFFCheckFieldIsValidForCodec+0x99d>
+0x401dbd:3:mov -0x54(%rbp),%eax
+0x401dc0:5:sub $0x51a13372,%eax
+0x401dc5:6:mov %eax,-0x1e0(%rbp)
+0x401dcb:6:je 0000000000402200 <_TIFFCheckFieldIsValidForCodec+0xde0>
+0x401dd1:5:jmp 0000000000401dd6 <_TIFFCheckFieldIsValidForCodec+0x9b6>
+0x401dd6:3:mov -0x54(%rbp),%eax
+0x401dd9:5:sub $0x53faf6ec,%eax
+0x401dde:6:mov %eax,-0x1e4(%rbp)
+0x401de4:6:je 000000000040327f <_TIFFCheckFieldIsValidForCodec+0x1e5f>
+0x401dea:5:jmp 0000000000401def <_TIFFCheckFieldIsValidForCodec+0x9cf>
+0x401def:3:mov -0x54(%rbp),%eax
+0x401df2:5:sub $0x5561d793,%eax
+0x401df7:6:mov %eax,-0x1e8(%rbp)
+0x401dfd:6:je 0000000000402331 <_TIFFCheckFieldIsValidForCodec+0xf11>
+0x401e03:5:jmp 0000000000401e08 <_TIFFCheckFieldIsValidForCodec+0x9e8>
+0x401e08:3:mov -0x54(%rbp),%eax
+0x401e0b:5:sub $0x56077973,%eax
+0x401e10:6:mov %eax,-0x1ec(%rbp)
+0x401e16:6:je 00000000004030ff <_TIFFCheckFieldIsValidForCodec+0x1cdf>
+0x401e1c:5:jmp 0000000000401e21 <_TIFFCheckFieldIsValidForCodec+0xa01>
+0x401e21:3:mov -0x54(%rbp),%eax
+0x401e24:5:sub $0x57aee531,%eax
+0x401e29:6:mov %eax,-0x1f0(%rbp)
+0x401e2f:6:je 00000000004020b6 <_TIFFCheckFieldIsValidForCodec+0xc96>
+0x401e35:5:jmp 0000000000401e3a <_TIFFCheckFieldIsValidForCodec+0xa1a>
+0x401e3a:3:mov -0x54(%rbp),%eax
+0x401e3d:5:sub $0x59485d7a,%eax
+0x401e42:6:mov %eax,-0x1f4(%rbp)
+0x401e48:6:je 0000000000402a7c <_TIFFCheckFieldIsValidForCodec+0x165c>
+0x401e4e:5:jmp 0000000000401e53 <_TIFFCheckFieldIsValidForCodec+0xa33>
+0x401e53:3:mov -0x54(%rbp),%eax
+0x401e56:5:sub $0x5ac0a24a,%eax
+0x401e5b:6:mov %eax,-0x1f8(%rbp)
+0x401e61:6:je 0000000000403356 <_TIFFCheckFieldIsValidForCodec+0x1f36>
+0x401e67:5:jmp 0000000000401e6c <_TIFFCheckFieldIsValidForCodec+0xa4c>
+0x401e6c:3:mov -0x54(%rbp),%eax
+0x401e6f:5:sub $0x60040cff,%eax
+0x401e74:6:mov %eax,-0x1fc(%rbp)
+0x401e7a:6:je 00000000004031ce <_TIFFCheckFieldIsValidForCodec+0x1dae>
+0x401e80:5:jmp 0000000000401e85 <_TIFFCheckFieldIsValidForCodec+0xa65>
+0x401e85:3:mov -0x54(%rbp),%eax
+0x401e88:5:sub $0x61e23679,%eax
+0x401e8d:6:mov %eax,-0x200(%rbp)
+0x401e93:6:je 00000000004021a6 <_TIFFCheckFieldIsValidForCodec+0xd86>
+0x401e99:5:jmp 0000000000401e9e <_TIFFCheckFieldIsValidForCodec+0xa7e>
+0x401e9e:3:mov -0x54(%rbp),%eax
+0x401ea1:5:sub $0x64c3358e,%eax
+0x401ea6:6:mov %eax,-0x204(%rbp)
+0x401eac:6:je 0000000000402a88 <_TIFFCheckFieldIsValidForCodec+0x1668>
+0x401eb2:5:jmp 0000000000401eb7 <_TIFFCheckFieldIsValidForCodec+0xa97>
+0x401eb7:3:mov -0x54(%rbp),%eax
+0x401eba:5:sub $0x654a5e1d,%eax
+0x401ebf:6:mov %eax,-0x208(%rbp)
+0x401ec5:6:je 0000000000402502 <_TIFFCheckFieldIsValidForCodec+0x10e2>
+0x401ecb:5:jmp 0000000000401ed0 <_TIFFCheckFieldIsValidForCodec+0xab0>
+0x401ed0:3:mov -0x54(%rbp),%eax
+0x401ed3:5:sub $0x68c8749a,%eax
+0x401ed8:6:mov %eax,-0x20c(%rbp)
+0x401ede:6:je 0000000000402416 <_TIFFCheckFieldIsValidForCodec+0xff6>
+0x401ee4:5:jmp 0000000000401ee9 <_TIFFCheckFieldIsValidForCodec+0xac9>
+0x401ee9:3:mov -0x54(%rbp),%eax
+0x401eec:5:sub $0x69e0427a,%eax
+0x401ef1:6:mov %eax,-0x210(%rbp)
+0x401ef7:6:je 0000000000402ffa <_TIFFCheckFieldIsValidForCodec+0x1bda>
+0x401efd:5:jmp 0000000000401f02 <_TIFFCheckFieldIsValidForCodec+0xae2>
+0x401f02:3:mov -0x54(%rbp),%eax
+0x401f05:5:sub $0x72c1f538,%eax
+0x401f0a:6:mov %eax,-0x214(%rbp)
+0x401f10:6:je 000000000040288d <_TIFFCheckFieldIsValidForCodec+0x146d>
+0x401f16:5:jmp 0000000000401f1b <_TIFFCheckFieldIsValidForCodec+0xafb>
+0x401f1b:3:mov -0x54(%rbp),%eax
+0x401f1e:5:sub $0x739a7efe,%eax
+0x401f23:6:mov %eax,-0x218(%rbp)
+0x401f29:6:je 0000000000401fe0 <_TIFFCheckFieldIsValidForCodec+0xbc0>
+0x401f2f:5:jmp 0000000000401f34 <_TIFFCheckFieldIsValidForCodec+0xb14>
+0x401f34:3:mov -0x54(%rbp),%eax
+0x401f37:5:sub $0x790bb0c8,%eax
+0x401f3c:6:mov %eax,-0x21c(%rbp)
+0x401f42:6:je 0000000000402c2f <_TIFFCheckFieldIsValidForCodec+0x180f>
+0x401f48:5:jmp 0000000000401f4d <_TIFFCheckFieldIsValidForCodec+0xb2d>
+0x401f4d:3:mov -0x54(%rbp),%eax
+0x401f50:5:sub $0x79f5562c,%eax
+0x401f55:6:mov %eax,-0x220(%rbp)
+0x401f5b:6:je 00000000004024de <_TIFFCheckFieldIsValidForCodec+0x10be>
+0x401f61:5:jmp 0000000000401f66 <_TIFFCheckFieldIsValidForCodec+0xb46>
+0x401f66:3:mov -0x54(%rbp),%eax
+0x401f69:5:sub $0x7a0740b2,%eax
+0x401f6e:6:mov %eax,-0x224(%rbp)
+0x401f74:6:je 0000000000402e0c <_TIFFCheckFieldIsValidForCodec+0x19ec>
+0x401f7a:5:jmp 0000000000401f7f <_TIFFCheckFieldIsValidForCodec+0xb5f>
+0x401f7f:3:mov -0x54(%rbp),%eax
+0x401f82:5:sub $0x7df2663c,%eax
+0x401f87:6:mov %eax,-0x228(%rbp)
+0x401f8d:6:je 0000000000402b9f <_TIFFCheckFieldIsValidForCodec+0x177f>
+0x401f93:5:jmp 0000000000401f98 <_TIFFCheckFieldIsValidForCodec+0xb78>
+0x401f98:3:mov -0x54(%rbp),%eax
+0x401f9b:5:sub $0x7f6d76e1,%eax
+0x401fa0:6:mov %eax,-0x22c(%rbp)
+0x401fa6:6:je 0000000000402d7e <_TIFFCheckFieldIsValidForCodec+0x195e>
+0x401fac:5:jmp 0000000000401fb1 <_TIFFCheckFieldIsValidForCodec+0xb91>
+0x401fb1:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x401fb6:5:mov $0xfae541e2,%eax
+0x401fbb:5:mov $0x739a7efe,%ecx
+0x401fc0:2:xor %edx,%edx
+0x401fc2:3:mov -0x3c(%rbp),%esi
+0x401fc5:2:mov %edx,%edi
+0x401fc7:2:sub %esi,%edi
+0x401fc9:2:mov %edx,%esi
+0x401fcb:3:sub $0xffffff80,%esi
+0x401fce:2:add %esi,%edi
+0x401fd0:2:sub %edi,%edx
+0x401fd2:3:cmp $0xe,%edx
+0x401fd5:3:cmovbe %ecx,%eax
+0x401fd8:3:mov %eax,-0x50(%rbp)
+0x401fdb:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x401fe0:7:movl $0x4e27e6d2,-0x50(%rbp)
+0x401fe7:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x401fec:7:movl $0xc3b303d1,-0x50(%rbp)
+0x401ff3:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x401ff8:7:movl $0x1,-0x40(%rbp)
+0x401fff:7:movl $0x60040cff,-0x50(%rbp)
+0x402006:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x40200b:4:mov -0x48(%rbp),%rax
+0x40200f:2:mov (%rax),%ecx
+0x402011:3:mov %ecx,-0x38(%rbp)
+0x402014:7:movl $0xffca1586,-0x50(%rbp)
+0x40201b:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x402020:5:mov $0x355fbc2e,%eax
+0x402025:5:mov $0x9f0ac476,%ecx
+0x40202a:3:mov -0x38(%rbp),%edx
+0x40202d:6:cmp $0x98,%edx
+0x402033:3:cmovl %ecx,%eax
+0x402036:3:mov %eax,-0x50(%rbp)
+0x402039:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x40203e:5:mov $0x1aada6fa,%eax
+0x402043:5:mov $0x384b1cf2,%ecx
+0x402048:3:mov -0x38(%rbp),%edx
+0x40204b:6:cmp $0x9c,%edx
+0x402051:3:cmovl %ecx,%eax
+0x402054:3:mov %eax,-0x50(%rbp)
+0x402057:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x40205c:5:mov $0xbbba5e2d,%eax
+0x402061:5:mov $0x57aee531,%ecx
+0x402066:3:mov -0x38(%rbp),%edx
+0x402069:6:cmp $0x9e,%edx
+0x40206f:3:cmovl %ecx,%eax
+0x402072:3:mov %eax,-0x50(%rbp)
+0x402075:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x40207a:5:mov $0x4ef5465d,%eax
+0x40207f:5:mov $0x38ca0e00,%ecx
+0x402084:3:mov -0x38(%rbp),%edx
+0x402087:6:cmp $0xa2,%edx
+0x40208d:3:cmovl %ecx,%eax
+0x402090:3:mov %eax,-0x50(%rbp)
+0x402093:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x402098:5:mov $0x56077973,%eax
+0x40209d:5:mov $0x64c3358e,%ecx
+0x4020a2:3:mov -0x38(%rbp),%edx
+0x4020a5:6:cmp $0xa2,%edx
+0x4020ab:3:cmove %ecx,%eax
+0x4020ae:3:mov %eax,-0x50(%rbp)
+0x4020b1:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x4020b6:5:mov $0x64c3358e,%eax
+0x4020bb:5:mov $0x59485d7a,%ecx
+0x4020c0:3:mov -0x38(%rbp),%edx
+0x4020c3:6:cmp $0x9d,%edx
+0x4020c9:3:cmovl %ecx,%eax
+0x4020cc:3:mov %eax,-0x50(%rbp)
+0x4020cf:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x4020d4:5:mov $0xb4c7ee10,%eax
+0x4020d9:5:mov $0xc1e2e486,%ecx
+0x4020de:3:mov -0x38(%rbp),%edx
+0x4020e1:6:cmp $0x9a,%edx
+0x4020e7:3:cmovl %ecx,%eax
+0x4020ea:3:mov %eax,-0x50(%rbp)
+0x4020ed:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x4020f2:5:mov $0x654a5e1d,%eax
+0x4020f7:5:mov $0x17d2308f,%ecx
+0x4020fc:3:mov -0x38(%rbp),%edx
+0x4020ff:6:cmp $0x9b,%edx
+0x402105:3:cmovl %ecx,%eax
+0x402108:3:mov %eax,-0x50(%rbp)
+0x40210b:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x402110:5:mov $0x1d751b02,%eax
+0x402115:5:mov $0x947fd4b,%ecx
+0x40211a:3:mov -0x38(%rbp),%edx
+0x40211d:6:cmp $0x99,%edx
+0x402123:3:cmovl %ecx,%eax
+0x402126:3:mov %eax,-0x50(%rbp)
+0x402129:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x40212e:5:mov $0xd12f3ab4,%eax
+0x402133:5:mov $0x61e23679,%ecx
+0x402138:3:mov -0x38(%rbp),%edx
+0x40213b:6:cmp $0x94,%edx
+0x402141:3:cmovl %ecx,%eax
+0x402144:3:mov %eax,-0x50(%rbp)
+0x402147:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x40214c:5:mov $0xa58fc3e5,%eax
+0x402151:5:mov $0xc4047ff,%ecx
+0x402156:3:mov -0x38(%rbp),%edx
+0x402159:6:cmp $0x96,%edx
+0x40215f:3:cmovl %ecx,%eax
+0x402162:3:mov %eax,-0x50(%rbp)
+0x402165:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x40216a:5:mov $0x9aa72ed9,%eax
+0x40216f:5:mov $0xed28906f,%ecx
+0x402174:3:mov -0x38(%rbp),%edx
+0x402177:6:cmp $0x97,%edx
+0x40217d:3:cmovl %ecx,%eax
+0x402180:3:mov %eax,-0x50(%rbp)
+0x402183:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x402188:5:mov $0xf3e478d9,%eax
+0x40218d:5:mov $0x2b3fc321,%ecx
+0x402192:3:mov -0x38(%rbp),%edx
+0x402195:6:cmp $0x95,%edx
+0x40219b:3:cmovl %ecx,%eax
+0x40219e:3:mov %eax,-0x50(%rbp)
+0x4021a1:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x4021a6:5:mov $0xb157e32f,%eax
+0x4021ab:5:mov $0xfc016b86,%ecx
+0x4021b0:3:mov -0x38(%rbp),%edx
+0x4021b3:6:cmp $0x91,%edx
+0x4021b9:3:cmovl %ecx,%eax
+0x4021bc:3:mov %eax,-0x50(%rbp)
+0x4021bf:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x4021c4:5:mov $0x7f6d76e1,%eax
+0x4021c9:5:mov $0x82c8b7fe,%ecx
+0x4021ce:3:mov -0x38(%rbp),%edx
+0x4021d1:6:cmp $0x92,%edx
+0x4021d7:3:cmovl %ecx,%eax
+0x4021da:3:mov %eax,-0x50(%rbp)
+0x4021dd:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x4021e2:5:mov $0xa47fd830,%eax
+0x4021e7:5:mov $0x51a13372,%ecx
+0x4021ec:3:mov -0x38(%rbp),%edx
+0x4021ef:6:cmp $0x90,%edx
+0x4021f5:3:cmovl %ecx,%eax
+0x4021f8:3:mov %eax,-0x50(%rbp)
+0x4021fb:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x402200:5:mov $0x56077973,%eax
+0x402205:5:mov $0x5961539,%ecx
+0x40220a:3:mov -0x38(%rbp),%edx
+0x40220d:6:cmp $0x8f,%edx
+0x402213:3:cmove %ecx,%eax
+0x402216:3:mov %eax,-0x50(%rbp)
+0x402219:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x40221e:5:mov $0xb55e896e,%eax
+0x402223:5:mov $0xa771bb44,%ecx
+0x402228:2:xor %edx,%edx
+0x40222a:7:mov 0x407058,%esi
+0x402231:7:mov 0x407070,%edi
+0x402238:3:sub $0x1,%edx
+0x40223b:3:mov %esi,%r8d
+0x40223e:3:add %edx,%r8d
+0x402241:4:imul %r8d,%esi
+0x402245:3:and $0x1,%esi
+0x402248:3:cmp $0x0,%esi
+0x40224b:4:sete %r9b
+0x40224f:3:cmp $0xa,%edi
+0x402252:4:setl %r10b
+0x402256:3:mov %r9b,%r11b
+0x402259:3:and %r10b,%r11b
+0x40225c:3:xor %r10b,%r9b
+0x40225f:3:or %r9b,%r11b
+0x402262:4:test $0x1,%r11b
+0x402266:3:cmovne %ecx,%eax
+0x402269:3:mov %eax,-0x50(%rbp)
+0x40226c:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x402271:5:mov $0xb55e896e,%eax
+0x402276:5:mov $0x97710d33,%ecx
+0x40227b:2:mov $0x1,%dl
+0x40227d:7:cmpl $0x80,-0x4c(%rbp)
+0x402284:4:sete %sil
+0x402288:4:and $0x1,%sil
+0x40228c:4:mov %sil,-0x31(%rbp)
+0x402290:7:mov 0x407058,%edi
+0x402297:8:mov 0x407070,%r8d
+0x40229f:3:mov %edi,%r9d
+0x4022a2:7:sub $0x3197b3ac,%r9d
+0x4022a9:4:sub $0x1,%r9d
+0x4022ad:7:add $0x3197b3ac,%r9d
+0x4022b4:4:imul %r9d,%edi
+0x4022b8:3:and $0x1,%edi
+0x4022bb:3:cmp $0x0,%edi
+0x4022be:4:sete %sil
+0x4022c2:4:cmp $0xa,%r8d
+0x4022c6:4:setl %r10b
+0x4022ca:3:mov %sil,%r11b
+0x4022cd:4:xor $0xff,%r11b
+0x4022d1:3:mov %r10b,%bl
+0x4022d4:3:xor $0xff,%bl
+0x4022d7:3:xor $0x0,%dl
+0x4022da:3:mov %r11b,%r14b
+0x4022dd:4:and $0x0,%r14b
+0x4022e1:3:and %dl,%sil
+0x4022e4:3:mov %bl,%r15b
+0x4022e7:4:and $0x0,%r15b
+0x4022eb:3:and %dl,%r10b
+0x4022ee:3:or %sil,%r14b
+0x4022f1:3:or %r10b,%r15b
+0x4022f4:3:xor %r15b,%r14b
+0x4022f7:3:or %bl,%r11b
+0x4022fa:4:xor $0xff,%r11b
+0x4022fe:3:or $0x0,%dl
+0x402301:3:and %dl,%r11b
+0x402304:3:or %r11b,%r14b
+0x402307:4:test $0x1,%r14b
+0x40230b:3:cmovne %ecx,%eax
+0x40230e:3:mov %eax,-0x50(%rbp)
+0x402311:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x402316:5:mov $0xd4ff0264,%eax
+0x40231b:5:mov $0x5561d793,%ecx
+0x402320:3:mov -0x31(%rbp),%dl
+0x402323:3:test $0x1,%dl
+0x402326:3:cmovne %ecx,%eax
+0x402329:3:mov %eax,-0x50(%rbp)
+0x40232c:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x402331:5:mov $0xb804e6c7,%eax
+0x402336:5:mov $0x9d206fb8,%ecx
+0x40233b:2:mov $0x1,%dl
+0x40233d:2:xor %esi,%esi
+0x40233f:7:mov 0x407058,%edi
+0x402346:8:mov 0x407070,%r8d
+0x40234e:3:sub $0x1,%esi
+0x402351:3:mov %edi,%r9d
+0x402354:3:add %esi,%r9d
+0x402357:4:imul %r9d,%edi
+0x40235b:3:and $0x1,%edi
+0x40235e:3:cmp $0x0,%edi
+0x402361:4:sete %r10b
+0x402365:4:cmp $0xa,%r8d
+0x402369:4:setl %r11b
+0x40236d:3:mov %r10b,%bl
+0x402370:3:xor $0xff,%bl
+0x402373:3:mov %r11b,%r14b
+0x402376:4:xor $0xff,%r14b
+0x40237a:3:xor $0x1,%dl
+0x40237d:3:mov %bl,%r15b
+0x402380:4:and $0xff,%r15b
+0x402384:3:and %dl,%r10b
+0x402387:3:mov %r14b,%r12b
+0x40238a:4:and $0xff,%r12b
+0x40238e:3:and %dl,%r11b
+0x402391:3:or %r10b,%r15b
+0x402394:3:or %r11b,%r12b
+0x402397:3:xor %r12b,%r15b
+0x40239a:3:or %r14b,%bl
+0x40239d:3:xor $0xff,%bl
+0x4023a0:3:or $0x1,%dl
+0x4023a3:2:and %dl,%bl
+0x4023a5:3:or %bl,%r15b
+0x4023a8:4:test $0x1,%r15b
+0x4023ac:3:cmovne %ecx,%eax
+0x4023af:3:mov %eax,-0x50(%rbp)
+0x4023b2:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x4023b7:5:mov $0xb804e6c7,%eax
+0x4023bc:5:mov $0x68c8749a,%ecx
+0x4023c1:7:movl $0x1,-0x40(%rbp)
+0x4023c8:7:mov 0x407058,%edx
+0x4023cf:7:mov 0x407070,%esi
+0x4023d6:2:mov %edx,%edi
+0x4023d8:6:add $0xad4ce360,%edi
+0x4023de:3:sub $0x1,%edi
+0x4023e1:6:sub $0xad4ce360,%edi
+0x4023e7:3:imul %edi,%edx
+0x4023ea:3:and $0x1,%edx
+0x4023ed:3:cmp $0x0,%edx
+0x4023f0:4:sete %r8b
+0x4023f4:3:cmp $0xa,%esi
+0x4023f7:4:setl %r9b
+0x4023fb:3:mov %r8b,%r10b
+0x4023fe:3:and %r9b,%r10b
+0x402401:3:xor %r9b,%r8b
+0x402404:3:or %r8b,%r10b
+0x402407:4:test $0x1,%r10b
+0x40240b:3:cmovne %ecx,%eax
+0x40240e:3:mov %eax,-0x50(%rbp)
+0x402411:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x402416:7:movl $0x60040cff,-0x50(%rbp)
+0x40241d:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x402422:7:movl $0xb02815b7,-0x50(%rbp)
+0x402429:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x40242e:5:mov $0x4a2c67ca,%eax
+0x402433:5:mov $0xf229b144,%ecx
+0x402438:7:mov 0x407058,%edx
+0x40243f:7:mov 0x407070,%esi
+0x402446:2:mov %edx,%edi
+0x402448:6:add $0xbb3ad46f,%edi
+0x40244e:3:sub $0x1,%edi
+0x402451:6:sub $0xbb3ad46f,%edi
+0x402457:3:imul %edi,%edx
+0x40245a:3:and $0x1,%edx
+0x40245d:3:cmp $0x0,%edx
+0x402460:4:sete %r8b
+0x402464:3:cmp $0xa,%esi
+0x402467:4:setl %r9b
+0x40246b:3:mov %r8b,%r10b
+0x40246e:3:and %r9b,%r10b
+0x402471:3:xor %r9b,%r8b
+0x402474:3:or %r8b,%r10b
+0x402477:4:test $0x1,%r10b
+0x40247b:3:cmovne %ecx,%eax
+0x40247e:3:mov %eax,-0x50(%rbp)
+0x402481:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x402486:5:mov $0x4a2c67ca,%eax
+0x40248b:5:mov $0x79f5562c,%ecx
+0x402490:7:mov 0x407058,%edx
+0x402497:7:mov 0x407070,%esi
+0x40249e:2:mov %edx,%edi
+0x4024a0:6:add $0xa692a2cc,%edi
+0x4024a6:3:sub $0x1,%edi
+0x4024a9:6:sub $0xa692a2cc,%edi
+0x4024af:3:imul %edi,%edx
+0x4024b2:3:and $0x1,%edx
+0x4024b5:3:cmp $0x0,%edx
+0x4024b8:4:sete %r8b
+0x4024bc:3:cmp $0xa,%esi
+0x4024bf:4:setl %r9b
+0x4024c3:3:mov %r8b,%r10b
+0x4024c6:3:and %r9b,%r10b
+0x4024c9:3:xor %r9b,%r8b
+0x4024cc:3:or %r8b,%r10b
+0x4024cf:4:test $0x1,%r10b
+0x4024d3:3:cmovne %ecx,%eax
+0x4024d6:3:mov %eax,-0x50(%rbp)
+0x4024d9:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x4024de:7:movl $0xb02815b7,-0x50(%rbp)
+0x4024e5:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x4024ea:7:movl $0xb02815b7,-0x50(%rbp)
+0x4024f1:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x4024f6:7:movl $0xb02815b7,-0x50(%rbp)
+0x4024fd:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x402502:5:mov $0x24a502c0,%eax
+0x402507:5:mov $0x3241a977,%ecx
+0x40250c:7:cmpl $0x82,-0x4c(%rbp)
+0x402513:3:cmove %ecx,%eax
+0x402516:3:mov %eax,-0x50(%rbp)
+0x402519:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x40251e:5:mov $0x3d4828bc,%eax
+0x402523:5:mov $0xf21b81d7,%ecx
+0x402528:2:mov $0x1,%dl
+0x40252a:2:xor %esi,%esi
+0x40252c:7:mov 0x407058,%edi
+0x402533:8:mov 0x407070,%r8d
+0x40253b:3:sub $0x1,%esi
+0x40253e:3:mov %edi,%r9d
+0x402541:3:add %esi,%r9d
+0x402544:4:imul %r9d,%edi
+0x402548:3:and $0x1,%edi
+0x40254b:3:cmp $0x0,%edi
+0x40254e:4:sete %r10b
+0x402552:4:cmp $0xa,%r8d
+0x402556:4:setl %r11b
+0x40255a:3:mov %r10b,%bl
+0x40255d:3:xor $0xff,%bl
+0x402560:3:mov %r11b,%r14b
+0x402563:4:xor $0xff,%r14b
+0x402567:3:xor $0x0,%dl
+0x40256a:3:mov %bl,%r15b
+0x40256d:4:and $0x0,%r15b
+0x402571:3:and %dl,%r10b
+0x402574:3:mov %r14b,%r12b
+0x402577:4:and $0x0,%r12b
+0x40257b:3:and %dl,%r11b
+0x40257e:3:or %r10b,%r15b
+0x402581:3:or %r11b,%r12b
+0x402584:3:xor %r12b,%r15b
+0x402587:3:or %r14b,%bl
+0x40258a:3:xor $0xff,%bl
+0x40258d:3:or $0x0,%dl
+0x402590:2:and %dl,%bl
+0x402592:3:or %bl,%r15b
+0x402595:4:test $0x1,%r15b
+0x402599:3:cmovne %ecx,%eax
+0x40259c:3:mov %eax,-0x50(%rbp)
+0x40259f:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x4025a4:5:mov $0x3d4828bc,%eax
+0x4025a9:5:mov $0xc74eaad9,%ecx
+0x4025ae:2:mov $0x1,%dl
+0x4025b0:7:movl $0x1,-0x40(%rbp)
+0x4025b7:7:mov 0x407058,%esi
+0x4025be:7:mov 0x407070,%edi
+0x4025c5:3:mov %esi,%r8d
+0x4025c8:7:sub $0x3bb79319,%r8d
+0x4025cf:4:sub $0x1,%r8d
+0x4025d3:7:add $0x3bb79319,%r8d
+0x4025da:4:imul %r8d,%esi
+0x4025de:3:and $0x1,%esi
+0x4025e1:3:cmp $0x0,%esi
+0x4025e4:4:sete %r9b
+0x4025e8:3:cmp $0xa,%edi
+0x4025eb:4:setl %r10b
+0x4025ef:3:mov %r9b,%r11b
+0x4025f2:4:xor $0xff,%r11b
+0x4025f6:3:mov %r10b,%bl
+0x4025f9:3:xor $0xff,%bl
+0x4025fc:3:xor $0x1,%dl
+0x4025ff:3:mov %r11b,%r14b
+0x402602:4:and $0xff,%r14b
+0x402606:3:and %dl,%r9b
+0x402609:3:mov %bl,%r15b
+0x40260c:4:and $0xff,%r15b
+0x402610:3:and %dl,%r10b
+0x402613:3:or %r9b,%r14b
+0x402616:3:or %r10b,%r15b
+0x402619:3:xor %r15b,%r14b
+0x40261c:3:or %bl,%r11b
+0x40261f:4:xor $0xff,%r11b
+0x402623:3:or $0x1,%dl
+0x402626:3:and %dl,%r11b
+0x402629:3:or %r11b,%r14b
+0x40262c:4:test $0x1,%r14b
+0x402630:3:cmovne %ecx,%eax
+0x402633:3:mov %eax,-0x50(%rbp)
+0x402636:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x40263b:7:movl $0x60040cff,-0x50(%rbp)
+0x402642:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x402647:5:mov $0xbc15fea2,%eax
+0x40264c:5:mov $0xf1d177ff,%ecx
+0x402651:7:mov 0x407058,%edx
+0x402658:7:mov 0x407070,%esi
+0x40265f:2:mov %edx,%edi
+0x402661:6:sub $0x35e3d3ae,%edi
+0x402667:3:sub $0x1,%edi
+0x40266a:6:add $0x35e3d3ae,%edi
+0x402670:3:imul %edi,%edx
+0x402673:3:and $0x1,%edx
+0x402676:3:cmp $0x0,%edx
+0x402679:4:sete %r8b
+0x40267d:3:cmp $0xa,%esi
+0x402680:4:setl %r9b
+0x402684:3:mov %r8b,%r10b
+0x402687:3:and %r9b,%r10b
+0x40268a:3:xor %r9b,%r8b
+0x40268d:3:or %r8b,%r10b
+0x402690:4:test $0x1,%r10b
+0x402694:3:cmovne %ecx,%eax
+0x402697:3:mov %eax,-0x50(%rbp)
+0x40269a:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x40269f:5:mov $0xbc15fea2,%eax
+0x4026a4:5:mov $0xdbe2685,%ecx
+0x4026a9:7:mov 0x407058,%edx
+0x4026b0:7:mov 0x407070,%esi
+0x4026b7:2:mov %edx,%edi
+0x4026b9:6:sub $0x70ac51e6,%edi
+0x4026bf:3:sub $0x1,%edi
+0x4026c2:6:add $0x70ac51e6,%edi
+0x4026c8:3:imul %edi,%edx
+0x4026cb:3:and $0x1,%edx
+0x4026ce:3:cmp $0x0,%edx
+0x4026d1:4:sete %r8b
+0x4026d5:3:cmp $0xa,%esi
+0x4026d8:4:setl %r9b
+0x4026dc:3:mov %r8b,%r10b
+0x4026df:3:and %r9b,%r10b
+0x4026e2:3:xor %r9b,%r8b
+0x4026e5:3:or %r8b,%r10b
+0x4026e8:4:test $0x1,%r10b
+0x4026ec:3:cmovne %ecx,%eax
+0x4026ef:3:mov %eax,-0x50(%rbp)
+0x4026f2:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x4026f7:7:movl $0xb02815b7,-0x50(%rbp)
+0x4026fe:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x402703:5:mov $0x12b28cf6,%eax
+0x402708:5:mov $0x936f52a6,%ecx
+0x40270d:2:mov $0x1,%dl
+0x40270f:2:xor %esi,%esi
+0x402711:7:mov 0x407058,%edi
+0x402718:8:mov 0x407070,%r8d
+0x402720:3:sub $0x1,%esi
+0x402723:3:mov %edi,%r9d
+0x402726:3:add %esi,%r9d
+0x402729:4:imul %r9d,%edi
+0x40272d:3:and $0x1,%edi
+0x402730:3:cmp $0x0,%edi
+0x402733:4:sete %r10b
+0x402737:4:cmp $0xa,%r8d
+0x40273b:4:setl %r11b
+0x40273f:3:mov %r10b,%bl
+0x402742:3:xor $0xff,%bl
+0x402745:3:mov %r11b,%r14b
+0x402748:4:xor $0xff,%r14b
+0x40274c:3:xor $0x0,%dl
+0x40274f:3:mov %bl,%r15b
+0x402752:4:and $0x0,%r15b
+0x402756:3:and %dl,%r10b
+0x402759:3:mov %r14b,%r12b
+0x40275c:4:and $0x0,%r12b
+0x402760:3:and %dl,%r11b
+0x402763:3:or %r10b,%r15b
+0x402766:3:or %r11b,%r12b
+0x402769:3:xor %r12b,%r15b
+0x40276c:3:or %r14b,%bl
+0x40276f:3:xor $0xff,%bl
+0x402772:3:or $0x0,%dl
+0x402775:2:and %dl,%bl
+0x402777:3:or %bl,%r15b
+0x40277a:4:test $0x1,%r15b
+0x40277e:3:cmovne %ecx,%eax
+0x402781:3:mov %eax,-0x50(%rbp)
+0x402784:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x402789:5:mov $0x12b28cf6,%eax
+0x40278e:5:mov $0xc6ff1d8c,%ecx
+0x402793:2:mov $0x1,%dl
+0x402795:3:mov -0x4c(%rbp),%esi
+0x402798:3:mov %esi,-0x30(%rbp)
+0x40279b:7:mov 0x407058,%esi
+0x4027a2:7:mov 0x407070,%edi
+0x4027a9:3:mov %esi,%r8d
+0x4027ac:7:add $0x7b34e829,%r8d
+0x4027b3:4:sub $0x1,%r8d
+0x4027b7:7:sub $0x7b34e829,%r8d
+0x4027be:4:imul %r8d,%esi
+0x4027c2:3:and $0x1,%esi
+0x4027c5:3:cmp $0x0,%esi
+0x4027c8:4:sete %r9b
+0x4027cc:3:cmp $0xa,%edi
+0x4027cf:4:setl %r10b
+0x4027d3:3:mov %r9b,%r11b
+0x4027d6:4:xor $0xff,%r11b
+0x4027da:3:mov %r10b,%bl
+0x4027dd:3:xor $0xff,%bl
+0x4027e0:3:xor $0x0,%dl
+0x4027e3:3:mov %r11b,%r14b
+0x4027e6:4:and $0x0,%r14b
+0x4027ea:3:and %dl,%r9b
+0x4027ed:3:mov %bl,%r15b
+0x4027f0:4:and $0x0,%r15b
+0x4027f4:3:and %dl,%r10b
+0x4027f7:3:or %r9b,%r14b
+0x4027fa:3:or %r10b,%r15b
+0x4027fd:3:xor %r15b,%r14b
+0x402800:3:or %bl,%r11b
+0x402803:4:xor $0xff,%r11b
+0x402807:3:or $0x0,%dl
+0x40280a:3:and %dl,%r11b
+0x40280d:3:or %r11b,%r14b
+0x402810:4:test $0x1,%r14b
+0x402814:3:cmovne %ecx,%eax
+0x402817:3:mov %eax,-0x50(%rbp)
+0x40281a:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x40281f:7:movl $0xd04e1d6d,-0x50(%rbp)
+0x402826:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x40282b:5:mov $0xff332e22,%eax
+0x402830:5:mov $0x4914135c,%ecx
+0x402835:2:xor %edx,%edx
+0x402837:3:mov -0x30(%rbp),%esi
+0x40283a:6:sub $0xffffff7d,%edx
+0x402840:2:sub %edx,%esi
+0x402842:3:cmp $0x6,%esi
+0x402845:3:cmovbe %ecx,%eax
+0x402848:3:mov %eax,-0x50(%rbp)
+0x40284b:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x402850:7:movl $0x1,-0x40(%rbp)
+0x402857:7:movl $0x60040cff,-0x50(%rbp)
+0x40285e:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x402863:7:movl $0x457ed0da,-0x50(%rbp)
+0x40286a:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x40286f:7:movl $0xb02815b7,-0x50(%rbp)
+0x402876:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x40287b:3:mov -0x4c(%rbp),%eax
+0x40287e:3:mov %eax,-0x2c(%rbp)
+0x402881:7:movl $0x72c1f538,-0x50(%rbp)
+0x402888:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x40288d:5:mov $0xafb916c3,%eax
+0x402892:5:mov $0xb85dcdaf,%ecx
+0x402897:3:mov -0x2c(%rbp),%edx
+0x40289a:6:cmp $0x8b,%edx
+0x4028a0:3:cmovl %ecx,%eax
+0x4028a3:3:mov %eax,-0x50(%rbp)
+0x4028a6:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x4028ab:5:mov $0x99b08c24,%eax
+0x4028b0:5:mov $0x3bfb0e30,%ecx
+0x4028b5:3:mov -0x2c(%rbp),%edx
+0x4028b8:6:cmp $0x8c,%edx
+0x4028be:3:cmovl %ecx,%eax
+0x4028c1:3:mov %eax,-0x50(%rbp)
+0x4028c4:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x4028c9:5:mov $0x3e154c3e,%eax
+0x4028ce:5:mov $0x10da8967,%ecx
+0x4028d3:2:xor %edx,%edx
+0x4028d5:3:mov -0x2c(%rbp),%esi
+0x4028d8:2:mov %edx,%edi
+0x4028da:2:sub %esi,%edi
+0x4028dc:2:mov %edx,%esi
+0x4028de:6:sub $0xffffff74,%esi
+0x4028e4:2:add %esi,%edi
+0x4028e6:2:sub %edi,%edx
+0x4028e8:3:cmp $0x2,%edx
+0x4028eb:3:cmovbe %ecx,%eax
+0x4028ee:3:mov %eax,-0x50(%rbp)
+0x4028f1:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x4028f6:5:mov $0x3e154c3e,%eax
+0x4028fb:5:mov $0x993b1cd0,%ecx
+0x402900:3:mov -0x2c(%rbp),%edx
+0x402903:6:cmp $0x8a,%edx
+0x402909:3:cmove %ecx,%eax
+0x40290c:3:mov %eax,-0x50(%rbp)
+0x40290f:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x402914:7:movl $0x1,-0x40(%rbp)
+0x40291b:7:movl $0x60040cff,-0x50(%rbp)
+0x402922:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x402927:5:mov $0x19eb886c,%eax
+0x40292c:5:mov $0x3ae964f3,%ecx
+0x402931:7:mov 0x407058,%edx
+0x402938:7:mov 0x407070,%esi
+0x40293f:2:mov %edx,%edi
+0x402941:6:add $0x1e94fab1,%edi
+0x402947:3:sub $0x1,%edi
+0x40294a:6:sub $0x1e94fab1,%edi
+0x402950:3:imul %edi,%edx
+0x402953:3:and $0x1,%edx
+0x402956:3:cmp $0x0,%edx
+0x402959:4:sete %r8b
+0x40295d:3:cmp $0xa,%esi
+0x402960:4:setl %r9b
+0x402964:3:mov %r8b,%r10b
+0x402967:3:and %r9b,%r10b
+0x40296a:3:xor %r9b,%r8b
+0x40296d:3:or %r8b,%r10b
+0x402970:4:test $0x1,%r10b
+0x402974:3:cmovne %ecx,%eax
+0x402977:3:mov %eax,-0x50(%rbp)
+0x40297a:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x40297f:5:mov $0x19eb886c,%eax
+0x402984:5:mov $0x10f8b742,%ecx
+0x402989:2:xor %edx,%edx
+0x40298b:4:mov -0x48(%rbp),%rsi
+0x40298f:6:cmpl $0xa1,(%rsi)
+0x402995:4:sete %dil
+0x402999:4:and $0x1,%dil
+0x40299d:4:mov %dil,-0x26(%rbp)
+0x4029a1:8:mov 0x407058,%r8d
+0x4029a9:8:mov 0x407070,%r9d
+0x4029b1:3:sub $0x1,%edx
+0x4029b4:3:mov %r8d,%r10d
+0x4029b7:3:add %edx,%r10d
+0x4029ba:4:imul %r10d,%r8d
+0x4029be:4:and $0x1,%r8d
+0x4029c2:4:cmp $0x0,%r8d
+0x4029c6:4:sete %dil
+0x4029ca:4:cmp $0xa,%r9d
+0x4029ce:4:setl %r11b
+0x4029d2:3:mov %dil,%bl
+0x4029d5:3:and %r11b,%bl
+0x4029d8:3:xor %r11b,%dil
+0x4029db:3:or %dil,%bl
+0x4029de:3:test $0x1,%bl
+0x4029e1:3:cmovne %ecx,%eax
+0x4029e4:3:mov %eax,-0x50(%rbp)
+0x4029e7:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x4029ec:5:mov $0xf010aff6,%eax
+0x4029f1:5:mov $0xd6f7db1c,%ecx
+0x4029f6:3:mov -0x26(%rbp),%dl
+0x4029f9:3:test $0x1,%dl
+0x4029fc:3:cmovne %ecx,%eax
+0x4029ff:3:mov %eax,-0x50(%rbp)
+0x402a02:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x402a07:7:movl $0x1,-0x40(%rbp)
+0x402a0e:7:movl $0x60040cff,-0x50(%rbp)
+0x402a15:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x402a1a:7:movl $0xaabb1a94,-0x50(%rbp)
+0x402a21:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x402a26:5:mov $0x3964ca55,%eax
+0x402a2b:5:mov $0xa1ee953d,%ecx
+0x402a30:4:mov -0x48(%rbp),%rdx
+0x402a34:6:cmpl $0xa0,(%rdx)
+0x402a3a:3:cmove %ecx,%eax
+0x402a3d:3:mov %eax,-0x50(%rbp)
+0x402a40:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x402a45:7:movl $0x1,-0x40(%rbp)
+0x402a4c:7:movl $0x60040cff,-0x50(%rbp)
+0x402a53:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x402a58:7:movl $0xaabb1a94,-0x50(%rbp)
+0x402a5f:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x402a64:7:movl $0xaabb1a94,-0x50(%rbp)
+0x402a6b:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x402a70:7:movl $0xb02815b7,-0x50(%rbp)
+0x402a77:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x402a7c:7:movl $0xb02815b7,-0x50(%rbp)
+0x402a83:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x402a88:5:mov $0x7df2663c,%eax
+0x402a8d:5:mov $0x99e1d0e0,%ecx
+0x402a92:7:cmpl $0x80,-0x4c(%rbp)
+0x402a99:3:cmove %ecx,%eax
+0x402a9c:3:mov %eax,-0x50(%rbp)
+0x402a9f:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x402aa4:5:mov $0xb667a03e,%eax
+0x402aa9:5:mov $0x85e94ef2,%ecx
+0x402aae:2:mov $0x1,%dl
+0x402ab0:7:mov 0x407058,%esi
+0x402ab7:7:mov 0x407070,%edi
+0x402abe:3:mov %esi,%r8d
+0x402ac1:7:add $0xf523670a,%r8d
+0x402ac8:4:sub $0x1,%r8d
+0x402acc:7:sub $0xf523670a,%r8d
+0x402ad3:4:imul %r8d,%esi
+0x402ad7:3:and $0x1,%esi
+0x402ada:3:cmp $0x0,%esi
+0x402add:4:sete %r9b
+0x402ae1:3:cmp $0xa,%edi
+0x402ae4:4:setl %r10b
+0x402ae8:3:mov %r9b,%r11b
+0x402aeb:4:xor $0xff,%r11b
+0x402aef:3:mov %r10b,%bl
+0x402af2:3:xor $0xff,%bl
+0x402af5:3:xor $0x1,%dl
+0x402af8:3:mov %r11b,%r14b
+0x402afb:4:and $0xff,%r14b
+0x402aff:3:and %dl,%r9b
+0x402b02:3:mov %bl,%r15b
+0x402b05:4:and $0xff,%r15b
+0x402b09:3:and %dl,%r10b
+0x402b0c:3:or %r9b,%r14b
+0x402b0f:3:or %r10b,%r15b
+0x402b12:3:xor %r15b,%r14b
+0x402b15:3:or %bl,%r11b
+0x402b18:4:xor $0xff,%r11b
+0x402b1c:3:or $0x1,%dl
+0x402b1f:3:and %dl,%r11b
+0x402b22:3:or %r11b,%r14b
+0x402b25:4:test $0x1,%r14b
+0x402b29:3:cmovne %ecx,%eax
+0x402b2c:3:mov %eax,-0x50(%rbp)
+0x402b2f:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x402b34:5:mov $0xb667a03e,%eax
+0x402b39:5:mov $0xd6e21a3a,%ecx
+0x402b3e:7:movl $0x1,-0x40(%rbp)
+0x402b45:7:mov 0x407058,%edx
+0x402b4c:7:mov 0x407070,%esi
+0x402b53:2:mov %edx,%edi
+0x402b55:6:add $0x5619ca65,%edi
+0x402b5b:3:sub $0x1,%edi
+0x402b5e:6:sub $0x5619ca65,%edi
+0x402b64:3:imul %edi,%edx
+0x402b67:3:and $0x1,%edx
+0x402b6a:3:cmp $0x0,%edx
+0x402b6d:4:sete %r8b
+0x402b71:3:cmp $0xa,%esi
+0x402b74:4:setl %r9b
+0x402b78:3:mov %r8b,%r10b
+0x402b7b:3:and %r9b,%r10b
+0x402b7e:3:xor %r9b,%r8b
+0x402b81:3:or %r8b,%r10b
+0x402b84:4:test $0x1,%r10b
+0x402b88:3:cmovne %ecx,%eax
+0x402b8b:3:mov %eax,-0x50(%rbp)
+0x402b8e:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x402b93:7:movl $0x60040cff,-0x50(%rbp)
+0x402b9a:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x402b9f:5:mov $0x1027d2b6,%eax
+0x402ba4:5:mov $0x790bb0c8,%ecx
+0x402ba9:2:mov $0x1,%dl
+0x402bab:7:mov 0x407058,%esi
+0x402bb2:7:mov 0x407070,%edi
+0x402bb9:3:mov %esi,%r8d
+0x402bbc:7:add $0x941fca5e,%r8d
+0x402bc3:4:sub $0x1,%r8d
+0x402bc7:7:sub $0x941fca5e,%r8d
+0x402bce:4:imul %r8d,%esi
+0x402bd2:3:and $0x1,%esi
+0x402bd5:3:cmp $0x0,%esi
+0x402bd8:4:sete %r9b
+0x402bdc:3:cmp $0xa,%edi
+0x402bdf:4:setl %r10b
+0x402be3:3:mov %r9b,%r11b
+0x402be6:4:xor $0xff,%r11b
+0x402bea:3:mov %r10b,%bl
+0x402bed:3:xor $0xff,%bl
+0x402bf0:3:xor $0x1,%dl
+0x402bf3:3:mov %r11b,%r14b
+0x402bf6:4:and $0xff,%r14b
+0x402bfa:3:and %dl,%r9b
+0x402bfd:3:mov %bl,%r15b
+0x402c00:4:and $0xff,%r15b
+0x402c04:3:and %dl,%r10b
+0x402c07:3:or %r9b,%r14b
+0x402c0a:3:or %r10b,%r15b
+0x402c0d:3:xor %r15b,%r14b
+0x402c10:3:or %bl,%r11b
+0x402c13:4:xor $0xff,%r11b
+0x402c17:3:or $0x1,%dl
+0x402c1a:3:and %dl,%r11b
+0x402c1d:3:or %r11b,%r14b
+0x402c20:4:test $0x1,%r14b
+0x402c24:3:cmovne %ecx,%eax
+0x402c27:3:mov %eax,-0x50(%rbp)
+0x402c2a:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x402c2f:5:mov $0x1027d2b6,%eax
+0x402c34:5:mov $0xef3b18c5,%ecx
+0x402c39:7:mov 0x407058,%edx
+0x402c40:7:mov 0x407070,%esi
+0x402c47:2:mov %edx,%edi
+0x402c49:6:add $0x285a70f1,%edi
+0x402c4f:3:sub $0x1,%edi
+0x402c52:6:sub $0x285a70f1,%edi
+0x402c58:3:imul %edi,%edx
+0x402c5b:3:and $0x1,%edx
+0x402c5e:3:cmp $0x0,%edx
+0x402c61:4:sete %r8b
+0x402c65:3:cmp $0xa,%esi
+0x402c68:4:setl %r9b
+0x402c6c:3:mov %r8b,%r10b
+0x402c6f:3:and %r9b,%r10b
+0x402c72:3:xor %r9b,%r8b
+0x402c75:3:or %r8b,%r10b
+0x402c78:4:test $0x1,%r10b
+0x402c7c:3:cmovne %ecx,%eax
+0x402c7f:3:mov %eax,-0x50(%rbp)
+0x402c82:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x402c87:7:movl $0xb02815b7,-0x50(%rbp)
+0x402c8e:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x402c93:5:mov $0x86304ce1,%eax
+0x402c98:5:mov $0xdce62cbc,%ecx
+0x402c9d:7:cmpl $0x80,-0x4c(%rbp)
+0x402ca4:3:cmove %ecx,%eax
+0x402ca7:3:mov %eax,-0x50(%rbp)
+0x402caa:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x402caf:7:movl $0x1,-0x40(%rbp)
+0x402cb6:7:movl $0x60040cff,-0x50(%rbp)
+0x402cbd:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x402cc2:5:mov $0xa5282380,%eax
+0x402cc7:5:mov $0xf896be6d,%ecx
+0x402ccc:7:mov 0x407058,%edx
+0x402cd3:7:mov 0x407070,%esi
+0x402cda:2:mov %edx,%edi
+0x402cdc:6:sub $0x3f74a9d1,%edi
+0x402ce2:3:sub $0x1,%edi
+0x402ce5:6:add $0x3f74a9d1,%edi
+0x402ceb:3:imul %edi,%edx
+0x402cee:3:and $0x1,%edx
+0x402cf1:3:cmp $0x0,%edx
+0x402cf4:4:sete %r8b
+0x402cf8:3:cmp $0xa,%esi
+0x402cfb:4:setl %r9b
+0x402cff:3:mov %r8b,%r10b
+0x402d02:3:and %r9b,%r10b
+0x402d05:3:xor %r9b,%r8b
+0x402d08:3:or %r8b,%r10b
+0x402d0b:4:test $0x1,%r10b
+0x402d0f:3:cmovne %ecx,%eax
+0x402d12:3:mov %eax,-0x50(%rbp)
+0x402d15:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x402d1a:5:mov $0xa5282380,%eax
+0x402d1f:5:mov $0xff38d62a,%ecx
+0x402d24:7:mov 0x407058,%edx
+0x402d2b:7:mov 0x407070,%esi
+0x402d32:2:mov %edx,%edi
+0x402d34:6:sub $0x2d389f5a,%edi
+0x402d3a:3:sub $0x1,%edi
+0x402d3d:6:add $0x2d389f5a,%edi
+0x402d43:3:imul %edi,%edx
+0x402d46:3:and $0x1,%edx
+0x402d49:3:cmp $0x0,%edx
+0x402d4c:4:sete %r8b
+0x402d50:3:cmp $0xa,%esi
+0x402d53:4:setl %r9b
+0x402d57:3:mov %r8b,%r10b
+0x402d5a:3:and %r9b,%r10b
+0x402d5d:3:xor %r9b,%r8b
+0x402d60:3:or %r8b,%r10b
+0x402d63:4:test $0x1,%r10b
+0x402d67:3:cmovne %ecx,%eax
+0x402d6a:3:mov %eax,-0x50(%rbp)
+0x402d6d:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x402d72:7:movl $0xb02815b7,-0x50(%rbp)
+0x402d79:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x402d7e:7:movl $0xb02815b7,-0x50(%rbp)
+0x402d85:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x402d8a:5:mov $0xa8b2e830,%eax
+0x402d8f:5:mov $0x4a102dc1,%ecx
+0x402d94:7:cmpl $0x80,-0x4c(%rbp)
+0x402d9b:3:cmove %ecx,%eax
+0x402d9e:3:mov %eax,-0x50(%rbp)
+0x402da1:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x402da6:7:movl $0x1,-0x40(%rbp)
+0x402dad:7:movl $0x60040cff,-0x50(%rbp)
+0x402db4:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x402db9:5:mov $0x1d7a27ee,%eax
+0x402dbe:5:mov $0x7a0740b2,%ecx
+0x402dc3:2:xor %edx,%edx
+0x402dc5:7:mov 0x407058,%esi
+0x402dcc:7:mov 0x407070,%edi
+0x402dd3:3:sub $0x1,%edx
+0x402dd6:3:mov %esi,%r8d
+0x402dd9:3:add %edx,%r8d
+0x402ddc:4:imul %r8d,%esi
+0x402de0:3:and $0x1,%esi
+0x402de3:3:cmp $0x0,%esi
+0x402de6:4:sete %r9b
+0x402dea:3:cmp $0xa,%edi
+0x402ded:4:setl %r10b
+0x402df1:3:mov %r9b,%r11b
+0x402df4:3:and %r10b,%r11b
+0x402df7:3:xor %r10b,%r9b
+0x402dfa:3:or %r9b,%r11b
+0x402dfd:4:test $0x1,%r11b
+0x402e01:3:cmovne %ecx,%eax
+0x402e04:3:mov %eax,-0x50(%rbp)
+0x402e07:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x402e0c:5:mov $0x1d7a27ee,%eax
+0x402e11:5:mov $0x4d90fe3d,%ecx
+0x402e16:7:mov 0x407058,%edx
+0x402e1d:7:mov 0x407070,%esi
+0x402e24:2:mov %edx,%edi
+0x402e26:6:sub $0x39e093cd,%edi
+0x402e2c:3:sub $0x1,%edi
+0x402e2f:6:add $0x39e093cd,%edi
+0x402e35:3:imul %edi,%edx
+0x402e38:3:and $0x1,%edx
+0x402e3b:3:cmp $0x0,%edx
+0x402e3e:4:sete %r8b
+0x402e42:3:cmp $0xa,%esi
+0x402e45:4:setl %r9b
+0x402e49:3:mov %r8b,%r10b
+0x402e4c:3:and %r9b,%r10b
+0x402e4f:3:xor %r9b,%r8b
+0x402e52:3:or %r8b,%r10b
+0x402e55:4:test $0x1,%r10b
+0x402e59:3:cmovne %ecx,%eax
+0x402e5c:3:mov %eax,-0x50(%rbp)
+0x402e5f:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x402e64:7:movl $0xb02815b7,-0x50(%rbp)
+0x402e6b:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x402e70:5:mov $0x106b8d17,%eax
+0x402e75:5:mov $0xa2552383,%ecx
+0x402e7a:7:cmpl $0x80,-0x4c(%rbp)
+0x402e81:3:cmove %ecx,%eax
+0x402e84:3:mov %eax,-0x50(%rbp)
+0x402e87:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x402e8c:7:movl $0x1,-0x40(%rbp)
+0x402e93:7:movl $0x60040cff,-0x50(%rbp)
+0x402e9a:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x402e9f:7:movl $0xb02815b7,-0x50(%rbp)
+0x402ea6:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x402eab:5:mov $0x93e4dc6e,%eax
+0x402eb0:5:mov $0x489c2130,%ecx
+0x402eb5:7:cmpl $0x81,-0x4c(%rbp)
+0x402ebc:3:cmove %ecx,%eax
+0x402ebf:3:mov %eax,-0x50(%rbp)
+0x402ec2:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x402ec7:7:movl $0x1,-0x40(%rbp)
+0x402ece:7:movl $0x60040cff,-0x50(%rbp)
+0x402ed5:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x402eda:5:mov $0x3a058a68,%eax
+0x402edf:5:mov $0xac00d5b5,%ecx
+0x402ee4:2:mov $0x1,%dl
+0x402ee6:7:mov 0x407058,%esi
+0x402eed:7:mov 0x407070,%edi
+0x402ef4:3:mov %esi,%r8d
+0x402ef7:7:sub $0x67b8e8c5,%r8d
+0x402efe:4:sub $0x1,%r8d
+0x402f02:7:add $0x67b8e8c5,%r8d
+0x402f09:4:imul %r8d,%esi
+0x402f0d:3:and $0x1,%esi
+0x402f10:3:cmp $0x0,%esi
+0x402f13:4:sete %r9b
+0x402f17:3:cmp $0xa,%edi
+0x402f1a:4:setl %r10b
+0x402f1e:3:mov %r9b,%r11b
+0x402f21:4:xor $0xff,%r11b
+0x402f25:3:mov %r10b,%bl
+0x402f28:3:xor $0xff,%bl
+0x402f2b:3:xor $0x0,%dl
+0x402f2e:3:mov %r11b,%r14b
+0x402f31:4:and $0x0,%r14b
+0x402f35:3:and %dl,%r9b
+0x402f38:3:mov %bl,%r15b
+0x402f3b:4:and $0x0,%r15b
+0x402f3f:3:and %dl,%r10b
+0x402f42:3:or %r9b,%r14b
+0x402f45:3:or %r10b,%r15b
+0x402f48:3:xor %r15b,%r14b
+0x402f4b:3:or %bl,%r11b
+0x402f4e:4:xor $0xff,%r11b
+0x402f52:3:or $0x0,%dl
+0x402f55:3:and %dl,%r11b
+0x402f58:3:or %r11b,%r14b
+0x402f5b:4:test $0x1,%r14b
+0x402f5f:3:cmovne %ecx,%eax
+0x402f62:3:mov %eax,-0x50(%rbp)
+0x402f65:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x402f6a:5:mov $0x3a058a68,%eax
+0x402f6f:5:mov $0x69e0427a,%ecx
+0x402f74:2:mov $0x1,%dl
+0x402f76:7:mov 0x407058,%esi
+0x402f7d:7:mov 0x407070,%edi
+0x402f84:3:mov %esi,%r8d
+0x402f87:7:add $0x782834a7,%r8d
+0x402f8e:4:sub $0x1,%r8d
+0x402f92:7:sub $0x782834a7,%r8d
+0x402f99:4:imul %r8d,%esi
+0x402f9d:3:and $0x1,%esi
+0x402fa0:3:cmp $0x0,%esi
+0x402fa3:4:sete %r9b
+0x402fa7:3:cmp $0xa,%edi
+0x402faa:4:setl %r10b
+0x402fae:3:mov %r9b,%r11b
+0x402fb1:4:xor $0xff,%r11b
+0x402fb5:3:mov %r10b,%bl
+0x402fb8:3:xor $0xff,%bl
+0x402fbb:3:xor $0x0,%dl
+0x402fbe:3:mov %r11b,%r14b
+0x402fc1:4:and $0x0,%r14b
+0x402fc5:3:and %dl,%r9b
+0x402fc8:3:mov %bl,%r15b
+0x402fcb:4:and $0x0,%r15b
+0x402fcf:3:and %dl,%r10b
+0x402fd2:3:or %r9b,%r14b
+0x402fd5:3:or %r10b,%r15b
+0x402fd8:3:xor %r15b,%r14b
+0x402fdb:3:or %bl,%r11b
+0x402fde:4:xor $0xff,%r11b
+0x402fe2:3:or $0x0,%dl
+0x402fe5:3:and %dl,%r11b
+0x402fe8:3:or %r11b,%r14b
+0x402feb:4:test $0x1,%r14b
+0x402fef:3:cmovne %ecx,%eax
+0x402ff2:3:mov %eax,-0x50(%rbp)
+0x402ff5:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x402ffa:7:movl $0xb02815b7,-0x50(%rbp)
+0x403001:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x403006:5:mov $0xc44104bc,%eax
+0x40300b:5:mov $0xee33335d,%ecx
+0x403010:2:xor %edx,%edx
+0x403012:7:mov 0x407058,%esi
+0x403019:7:mov 0x407070,%edi
+0x403020:3:sub $0x1,%edx
+0x403023:3:mov %esi,%r8d
+0x403026:3:add %edx,%r8d
+0x403029:4:imul %r8d,%esi
+0x40302d:3:and $0x1,%esi
+0x403030:3:cmp $0x0,%esi
+0x403033:4:sete %r9b
+0x403037:3:cmp $0xa,%edi
+0x40303a:4:setl %r10b
+0x40303e:3:mov %r9b,%r11b
+0x403041:3:and %r10b,%r11b
+0x403044:3:xor %r10b,%r9b
+0x403047:3:or %r9b,%r11b
+0x40304a:4:test $0x1,%r11b
+0x40304e:3:cmovne %ecx,%eax
+0x403051:3:mov %eax,-0x50(%rbp)
+0x403054:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x403059:5:mov $0xc44104bc,%eax
+0x40305e:5:mov $0x11c5c613,%ecx
+0x403063:7:cmpl $0x80,-0x4c(%rbp)
+0x40306a:3:sete %dl
+0x40306d:3:and $0x1,%dl
+0x403070:3:mov %dl,-0x25(%rbp)
+0x403073:7:mov 0x407058,%esi
+0x40307a:7:mov 0x407070,%edi
+0x403081:3:mov %esi,%r8d
+0x403084:7:sub $0xe3d31fc0,%r8d
+0x40308b:4:sub $0x1,%r8d
+0x40308f:7:add $0xe3d31fc0,%r8d
+0x403096:4:imul %r8d,%esi
+0x40309a:3:and $0x1,%esi
+0x40309d:3:cmp $0x0,%esi
+0x4030a0:3:sete %dl
+0x4030a3:3:cmp $0xa,%edi
+0x4030a6:4:setl %r9b
+0x4030aa:3:mov %dl,%r10b
+0x4030ad:3:and %r9b,%r10b
+0x4030b0:3:xor %r9b,%dl
+0x4030b3:3:or %dl,%r10b
+0x4030b6:4:test $0x1,%r10b
+0x4030ba:3:cmovne %ecx,%eax
+0x4030bd:3:mov %eax,-0x50(%rbp)
+0x4030c0:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x4030c5:5:mov $0xb4937a56,%eax
+0x4030ca:5:mov $0xcebd86c0,%ecx
+0x4030cf:3:mov -0x25(%rbp),%dl
+0x4030d2:3:test $0x1,%dl
+0x4030d5:3:cmovne %ecx,%eax
+0x4030d8:3:mov %eax,-0x50(%rbp)
+0x4030db:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x4030e0:7:movl $0x1,-0x40(%rbp)
+0x4030e7:7:movl $0x60040cff,-0x50(%rbp)
+0x4030ee:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x4030f3:7:movl $0xb02815b7,-0x50(%rbp)
+0x4030fa:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x4030ff:7:movl $0xb02815b7,-0x50(%rbp)
+0x403106:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x40310b:5:mov $0x36be07f6,%eax
+0x403110:5:mov $0xc14a984a,%ecx
+0x403115:7:mov 0x407058,%edx
+0x40311c:7:mov 0x407070,%esi
+0x403123:2:mov %edx,%edi
+0x403125:6:add $0xecdebc31,%edi
+0x40312b:3:sub $0x1,%edi
+0x40312e:6:sub $0xecdebc31,%edi
+0x403134:3:imul %edi,%edx
+0x403137:3:and $0x1,%edx
+0x40313a:3:cmp $0x0,%edx
+0x40313d:4:sete %r8b
+0x403141:3:cmp $0xa,%esi
+0x403144:4:setl %r9b
+0x403148:3:mov %r8b,%r10b
+0x40314b:3:and %r9b,%r10b
+0x40314e:3:xor %r9b,%r8b
+0x403151:3:or %r8b,%r10b
+0x403154:4:test $0x1,%r10b
+0x403158:3:cmovne %ecx,%eax
+0x40315b:3:mov %eax,-0x50(%rbp)
+0x40315e:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x403163:5:mov $0x36be07f6,%eax
+0x403168:5:mov $0x217b433f,%ecx
+0x40316d:7:movl $0x0,-0x40(%rbp)
+0x403174:7:mov 0x407058,%edx
+0x40317b:7:mov 0x407070,%esi
+0x403182:2:mov %edx,%edi
+0x403184:6:sub $0x829df8ba,%edi
+0x40318a:3:sub $0x1,%edi
+0x40318d:6:add $0x829df8ba,%edi
+0x403193:3:imul %edi,%edx
+0x403196:3:and $0x1,%edx
+0x403199:3:cmp $0x0,%edx
+0x40319c:4:sete %r8b
+0x4031a0:3:cmp $0xa,%esi
+0x4031a3:4:setl %r9b
+0x4031a7:3:mov %r8b,%r10b
+0x4031aa:3:and %r9b,%r10b
+0x4031ad:3:xor %r9b,%r8b
+0x4031b0:3:or %r8b,%r10b
+0x4031b3:4:test $0x1,%r10b
+0x4031b7:3:cmovne %ecx,%eax
+0x4031ba:3:mov %eax,-0x50(%rbp)
+0x4031bd:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x4031c2:7:movl $0x60040cff,-0x50(%rbp)
+0x4031c9:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x4031ce:5:mov $0x5ac0a24a,%eax
+0x4031d3:5:mov $0xaeb1e902,%ecx
+0x4031d8:2:xor %edx,%edx
+0x4031da:7:mov 0x407058,%esi
+0x4031e1:7:mov 0x407070,%edi
+0x4031e8:3:sub $0x1,%edx
+0x4031eb:3:mov %esi,%r8d
+0x4031ee:3:add %edx,%r8d
+0x4031f1:4:imul %r8d,%esi
+0x4031f5:3:and $0x1,%esi
+0x4031f8:3:cmp $0x0,%esi
+0x4031fb:4:sete %r9b
+0x4031ff:3:cmp $0xa,%edi
+0x403202:4:setl %r10b
+0x403206:3:mov %r9b,%r11b
+0x403209:3:and %r10b,%r11b
+0x40320c:3:xor %r10b,%r9b
+0x40320f:3:or %r9b,%r11b
+0x403212:4:test $0x1,%r11b
+0x403216:3:cmovne %ecx,%eax
+0x403219:3:mov %eax,-0x50(%rbp)
+0x40321c:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x403221:5:mov $0x5ac0a24a,%eax
+0x403226:5:mov $0x53faf6ec,%ecx
+0x40322b:3:mov -0x40(%rbp),%edx
+0x40322e:3:mov %edx,-0x24(%rbp)
+0x403231:7:mov 0x407058,%edx
+0x403238:7:mov 0x407070,%esi
+0x40323f:2:mov %edx,%edi
+0x403241:6:sub $0xb60b6cfe,%edi
+0x403247:3:sub $0x1,%edi
+0x40324a:6:add $0xb60b6cfe,%edi
+0x403250:3:imul %edi,%edx
+0x403253:3:and $0x1,%edx
+0x403256:3:cmp $0x0,%edx
+0x403259:4:sete %r8b
+0x40325d:3:cmp $0xa,%esi
+0x403260:4:setl %r9b
+0x403264:3:mov %r8b,%r10b
+0x403267:3:and %r9b,%r10b
+0x40326a:3:xor %r9b,%r8b
+0x40326d:3:or %r8b,%r10b
+0x403270:4:test $0x1,%r10b
+0x403274:3:cmovne %ecx,%eax
+0x403277:3:mov %eax,-0x50(%rbp)
+0x40327a:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x40327f:3:mov -0x24(%rbp),%eax
+0x403282:7:add $0x190,%rsp
+0x403289:1:pop %rbx
+0x40328a:2:pop %r12
+0x40328c:2:pop %r14
+0x40328e:2:pop %r15
+0x403290:1:pop %rbp
+0x403291:1:ret
+0x403292:7:movl $0xa771bb44,-0x50(%rbp)
+0x403299:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x40329e:7:movl $0x1,-0x40(%rbp)
+0x4032a5:7:movl $0x9d206fb8,-0x50(%rbp)
+0x4032ac:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x4032b1:7:movl $0xf229b144,-0x50(%rbp)
+0x4032b8:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x4032bd:7:movl $0x1,-0x40(%rbp)
+0x4032c4:7:movl $0xf21b81d7,-0x50(%rbp)
+0x4032cb:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x4032d0:7:movl $0xf1d177ff,-0x50(%rbp)
+0x4032d7:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x4032dc:7:movl $0x936f52a6,-0x50(%rbp)
+0x4032e3:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x4032e8:7:movl $0x3ae964f3,-0x50(%rbp)
+0x4032ef:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x4032f4:7:movl $0x1,-0x40(%rbp)
+0x4032fb:7:movl $0x85e94ef2,-0x50(%rbp)
+0x403302:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x403307:7:movl $0x790bb0c8,-0x50(%rbp)
+0x40330e:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x403313:7:movl $0xf896be6d,-0x50(%rbp)
+0x40331a:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x40331f:7:movl $0x7a0740b2,-0x50(%rbp)
+0x403326:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x40332b:7:movl $0xac00d5b5,-0x50(%rbp)
+0x403332:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x403337:7:movl $0xee33335d,-0x50(%rbp)
+0x40333e:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x403343:7:movl $0x0,-0x40(%rbp)
+0x40334a:7:movl $0xc14a984a,-0x50(%rbp)
+0x403351:5:jmp 000000000040335d <_TIFFCheckFieldIsValidForCodec+0x1f3d>
+0x403356:7:movl $0xaeb1e902,-0x50(%rbp)
+0x40335d:5:jmp 0000000000401446 <_TIFFCheckFieldIsValidForCodec+0x26>
+0x403362:14:data16 data16 data16 data16 cs nopw 0x0(%rax,%rax,1)
+0x403370:1:push %rbp
+0x403371:3:mov %rsp,%rbp
+0x403374:2:push %r15
+0x403376:2:push %r14
+0x403378:2:push %r13
+0x40337a:2:push %r12
+0x40337c:1:push %rbx
+0x40337d:7:sub $0x178,%rsp
+0x403384:7:mov 0x40705c,%eax
+0x40338b:7:mov 0x407060,%ecx
+0x403392:2:mov %eax,%edx
+0x403394:6:sub $0x9a1f1ab,%edx
+0x40339a:3:sub $0x1,%edx
+0x40339d:6:add $0x9a1f1ab,%edx
+0x4033a3:3:imul %edx,%eax
+0x4033a6:3:and $0x1,%eax
+0x4033a9:3:cmp $0x0,%eax
+0x4033ac:4:sete %r8b
+0x4033b0:4:and $0x1,%r8b
+0x4033b4:7:mov %r8b,-0xa2(%rbp)
+0x4033bb:3:cmp $0xa,%ecx
+0x4033be:4:setl %r8b
+0x4033c2:4:and $0x1,%r8b
+0x4033c6:7:mov %r8b,-0xa1(%rbp)
+0x4033cd:10:movl $0xfd4656d5,-0xa8(%rbp)
+0x4033d7:6:mov %edi,-0xac(%rbp)
+0x4033dd:7:mov %rsi,-0xb8(%rbp)
+0x4033e4:6:mov -0xa8(%rbp),%eax
+0x4033ea:2:mov %eax,%ecx
+0x4033ec:6:sub $0x8023b503,%ecx
+0x4033f2:6:mov %eax,-0xbc(%rbp)
+0x4033f8:6:mov %ecx,-0xc0(%rbp)
+0x4033fe:6:je 0000000000403a7c <main+0x70c>
+0x403404:5:jmp 0000000000403409 <main+0x99>
+0x403409:6:mov -0xbc(%rbp),%eax
+0x40340f:5:sub $0x8139092b,%eax
+0x403414:6:mov %eax,-0xc4(%rbp)
+0x40341a:6:je 0000000000404416 <main+0x10a6>
+0x403420:5:jmp 0000000000403425 <main+0xb5>
+0x403425:6:mov -0xbc(%rbp),%eax
+0x40342b:5:sub $0x86d53ff1,%eax
+0x403430:6:mov %eax,-0xc8(%rbp)
+0x403436:6:je 0000000000403b0d <main+0x79d>
+0x40343c:5:jmp 0000000000403441 <main+0xd1>
+0x403441:6:mov -0xbc(%rbp),%eax
+0x403447:5:sub $0x9311b6dc,%eax
+0x40344c:6:mov %eax,-0xcc(%rbp)
+0x403452:6:je 0000000000404491 <main+0x1121>
+0x403458:5:jmp 000000000040345d <main+0xed>
+0x40345d:6:mov -0xbc(%rbp),%eax
+0x403463:5:sub $0x9537114d,%eax
+0x403468:6:mov %eax,-0xd0(%rbp)
+0x40346e:6:je 0000000000403c95 <main+0x925>
+0x403474:5:jmp 0000000000403479 <main+0x109>
+0x403479:6:mov -0xbc(%rbp),%eax
+0x40347f:5:sub $0x9556ec5e,%eax
+0x403484:6:mov %eax,-0xd4(%rbp)
+0x40348a:6:je 0000000000403f5f <main+0xbef>
+0x403490:5:jmp 0000000000403495 <main+0x125>
+0x403495:6:mov -0xbc(%rbp),%eax
+0x40349b:5:sub $0x97ee4d74,%eax
+0x4034a0:6:mov %eax,-0xd8(%rbp)
+0x4034a6:6:je 00000000004040a6 <main+0xd36>
+0x4034ac:5:jmp 00000000004034b1 <main+0x141>
+0x4034b1:6:mov -0xbc(%rbp),%eax
+0x4034b7:5:sub $0x9b2e9158,%eax
+0x4034bc:6:mov %eax,-0xdc(%rbp)
+0x4034c2:6:je 000000000040443b <main+0x10cb>
+0x4034c8:5:jmp 00000000004034cd <main+0x15d>
+0x4034cd:6:mov -0xbc(%rbp),%eax
+0x4034d3:5:sub $0x9fb746ce,%eax
+0x4034d8:6:mov %eax,-0xe0(%rbp)
+0x4034de:6:je 0000000000403e81 <main+0xb11>
+0x4034e4:5:jmp 00000000004034e9 <main+0x179>
+0x4034e9:6:mov -0xbc(%rbp),%eax
+0x4034ef:5:sub $0xab500621,%eax
+0x4034f4:6:mov %eax,-0xe4(%rbp)
+0x4034fa:6:je 0000000000404558 <main+0x11e8>
+0x403500:5:jmp 0000000000403505 <main+0x195>
+0x403505:6:mov -0xbc(%rbp),%eax
+0x40350b:5:sub $0xae05eb0a,%eax
+0x403510:6:mov %eax,-0xe8(%rbp)
+0x403516:6:je 0000000000403d0e <main+0x99e>
+0x40351c:5:jmp 0000000000403521 <main+0x1b1>
+0x403521:6:mov -0xbc(%rbp),%eax
+0x403527:5:sub $0xbdc14912,%eax
+0x40352c:6:mov %eax,-0xec(%rbp)
+0x403532:6:je 00000000004043b9 <main+0x1049>
+0x403538:5:jmp 000000000040353d <main+0x1cd>
+0x40353d:6:mov -0xbc(%rbp),%eax
+0x403543:5:sub $0xbfd4ff0b,%eax
+0x403548:6:mov %eax,-0xf0(%rbp)
+0x40354e:6:je 0000000000404389 <main+0x1019>
+0x403554:5:jmp 0000000000403559 <main+0x1e9>
+0x403559:6:mov -0xbc(%rbp),%eax
+0x40355f:5:sub $0xc1b7328f,%eax
+0x403564:6:mov %eax,-0xf4(%rbp)
+0x40356a:6:je 0000000000404224 <main+0xeb4>
+0x403570:5:jmp 0000000000403575 <main+0x205>
+0x403575:6:mov -0xbc(%rbp),%eax
+0x40357b:5:sub $0xc349b96f,%eax
+0x403580:6:mov %eax,-0xf8(%rbp)
+0x403586:6:je 0000000000403dee <main+0xa7e>
+0x40358c:5:jmp 0000000000403591 <main+0x221>
+0x403591:6:mov -0xbc(%rbp),%eax
+0x403597:5:sub $0xc8b5e0c8,%eax
+0x40359c:6:mov %eax,-0xfc(%rbp)
+0x4035a2:6:je 0000000000404125 <main+0xdb5>
+0x4035a8:5:jmp 00000000004035ad <main+0x23d>
+0x4035ad:6:mov -0xbc(%rbp),%eax
+0x4035b3:5:sub $0xcc56b724,%eax
+0x4035b8:6:mov %eax,-0x100(%rbp)
+0x4035be:6:je 0000000000403a3d <main+0x6cd>
+0x4035c4:5:jmp 00000000004035c9 <main+0x259>
+0x4035c9:6:mov -0xbc(%rbp),%eax
+0x4035cf:5:sub $0xddafc986,%eax
+0x4035d4:6:mov %eax,-0x104(%rbp)
+0x4035da:6:je 0000000000404097 <main+0xd27>
+0x4035e0:5:jmp 00000000004035e5 <main+0x275>
+0x4035e5:6:mov -0xbc(%rbp),%eax
+0x4035eb:5:sub $0xeac56f2e,%eax
+0x4035f0:6:mov %eax,-0x108(%rbp)
+0x4035f6:6:je 0000000000403ab3 <main+0x743>
+0x4035fc:5:jmp 0000000000403601 <main+0x291>
+0x403601:6:mov -0xbc(%rbp),%eax
+0x403607:5:sub $0xeb249fbf,%eax
+0x40360c:6:mov %eax,-0x10c(%rbp)
+0x403612:6:je 000000000040439d <main+0x102d>
+0x403618:5:jmp 000000000040361d <main+0x2ad>
+0x40361d:6:mov -0xbc(%rbp),%eax
+0x403623:5:sub $0xf23b5f8e,%eax
+0x403628:6:mov %eax,-0x110(%rbp)
+0x40362e:6:je 000000000040452e <main+0x11be>
+0x403634:5:jmp 0000000000403639 <main+0x2c9>
+0x403639:6:mov -0xbc(%rbp),%eax
+0x40363f:5:sub $0xf41decd2,%eax
+0x403644:6:mov %eax,-0x114(%rbp)
+0x40364a:6:je 0000000000403aef <main+0x77f>
+0x403650:5:jmp 0000000000403655 <main+0x2e5>
+0x403655:6:mov -0xbc(%rbp),%eax
+0x40365b:5:sub $0xfd4656d5,%eax
+0x403660:6:mov %eax,-0x118(%rbp)
+0x403666:6:je 000000000040386e <main+0x4fe>
+0x40366c:5:jmp 0000000000403671 <main+0x301>
+0x403671:6:mov -0xbc(%rbp),%eax
+0x403677:5:sub $0xff1f48ce,%eax
+0x40367c:6:mov %eax,-0x11c(%rbp)
+0x403682:6:je 000000000040417b <main+0xe0b>
+0x403688:5:jmp 000000000040368d <main+0x31d>
+0x40368d:6:mov -0xbc(%rbp),%eax
+0x403693:5:sub $0xff8f84e3,%eax
+0x403698:6:mov %eax,-0x120(%rbp)
+0x40369e:6:je 0000000000403bea <main+0x87a>
+0x4036a4:5:jmp 00000000004036a9 <main+0x339>
+0x4036a9:6:mov -0xbc(%rbp),%eax
+0x4036af:5:sub $0x663389c,%eax
+0x4036b4:6:mov %eax,-0x124(%rbp)
+0x4036ba:6:je 0000000000403b57 <main+0x7e7>
+0x4036c0:5:jmp 00000000004036c5 <main+0x355>
+0x4036c5:6:mov -0xbc(%rbp),%eax
+0x4036cb:5:sub $0xdbfe463,%eax
+0x4036d0:6:mov %eax,-0x128(%rbp)
+0x4036d6:6:je 00000000004042c6 <main+0xf56>
+0x4036dc:5:jmp 00000000004036e1 <main+0x371>
+0x4036e1:6:mov -0xbc(%rbp),%eax
+0x4036e7:5:sub $0x1147bd6b,%eax
+0x4036ec:6:mov %eax,-0x12c(%rbp)
+0x4036f2:6:je 00000000004043d1 <main+0x1061>
+0x4036f8:5:jmp 00000000004036fd <main+0x38d>
+0x4036fd:6:mov -0xbc(%rbp),%eax
+0x403703:5:sub $0x1352da12,%eax
+0x403708:6:mov %eax,-0x130(%rbp)
+0x40370e:6:je 0000000000403ad1 <main+0x761>
+0x403714:5:jmp 0000000000403719 <main+0x3a9>
+0x403719:6:mov -0xbc(%rbp),%eax
+0x40371f:5:sub $0x141f633e,%eax
+0x403724:6:mov %eax,-0x134(%rbp)
+0x40372a:6:je 0000000000403db5 <main+0xa45>
+0x403730:5:jmp 0000000000403735 <main+0x3c5>
+0x403735:6:mov -0xbc(%rbp),%eax
+0x40373b:5:sub $0x1aba0ebf,%eax
+0x403740:6:mov %eax,-0x138(%rbp)
+0x403746:6:je 0000000000403dc4 <main+0xa54>
+0x40374c:5:jmp 0000000000403751 <main+0x3e1>
+0x403751:6:mov -0xbc(%rbp),%eax
+0x403757:5:sub $0x1ec8f98a,%eax
+0x40375c:6:mov %eax,-0x13c(%rbp)
+0x403762:6:je 00000000004044e7 <main+0x1177>
+0x403768:5:jmp 000000000040376d <main+0x3fd>
+0x40376d:6:mov -0xbc(%rbp),%eax
+0x403773:5:sub $0x24dc56bd,%eax
+0x403778:6:mov %eax,-0x140(%rbp)
+0x40377e:6:je 0000000000404233 <main+0xec3>
+0x403784:5:jmp 0000000000403789 <main+0x419>
+0x403789:6:mov -0xbc(%rbp),%eax
+0x40378f:5:sub $0x27cab8d0,%eax
+0x403794:6:mov %eax,-0x144(%rbp)
+0x40379a:6:je 0000000000403f6e <main+0xbfe>
+0x4037a0:5:jmp 00000000004037a5 <main+0x435>
+0x4037a5:6:mov -0xbc(%rbp),%eax
+0x4037ab:5:sub $0x3563de25,%eax
+0x4037b0:6:mov %eax,-0x148(%rbp)
+0x4037b6:6:je 00000000004038a3 <main+0x533>
+0x4037bc:5:jmp 00000000004037c1 <main+0x451>
+0x4037c1:6:mov -0xbc(%rbp),%eax
+0x4037c7:5:sub $0x3584bc2a,%eax
+0x4037cc:6:mov %eax,-0x14c(%rbp)
+0x4037d2:6:je 000000000040437a <main+0x100a>
+0x4037d8:5:jmp 00000000004037dd <main+0x46d>
+0x4037dd:6:mov -0xbc(%rbp),%eax
+0x4037e3:5:sub $0x4220cea1,%eax
+0x4037e8:6:mov %eax,-0x150(%rbp)
+0x4037ee:6:je 0000000000403fc4 <main+0xc54>
+0x4037f4:5:jmp 00000000004037f9 <main+0x489>
+0x4037f9:6:mov -0xbc(%rbp),%eax
+0x4037ff:5:sub $0x4b20b181,%eax
+0x403804:6:mov %eax,-0x154(%rbp)
+0x40380a:6:je 00000000004040ca <main+0xd5a>
+0x403810:5:jmp 0000000000403815 <main+0x4a5>
+0x403815:6:mov -0xbc(%rbp),%eax
+0x40381b:5:sub $0x5f4eb58f,%eax
+0x403820:6:mov %eax,-0x158(%rbp)
+0x403826:6:je 0000000000403cb3 <main+0x943>
+0x40382c:5:jmp 0000000000403831 <main+0x4c1>
+0x403831:6:mov -0xbc(%rbp),%eax
+0x403837:5:sub $0x5fe723d9,%eax
+0x40383c:6:mov %eax,-0x15c(%rbp)
+0x403842:6:je 000000000040436b <main+0xffb>
+0x403848:5:jmp 000000000040384d <main+0x4dd>
+0x40384d:6:mov -0xbc(%rbp),%eax
+0x403853:5:sub $0x6303e9c8,%eax
+0x403858:6:mov %eax,-0x160(%rbp)
+0x40385e:6:je 0000000000403a5b <main+0x6eb>
+0x403864:5:jmp 0000000000403869 <main+0x4f9>
+0x403869:5:jmp 00000000004045a6 <main+0x1236>
+0x40386e:5:mov $0x1147bd6b,%eax
+0x403873:5:mov $0x3563de25,%ecx
+0x403878:6:mov -0xa2(%rbp),%dl
+0x40387e:7:mov -0xa1(%rbp),%sil
+0x403885:3:mov %dl,%dil
+0x403888:3:and %sil,%dil
+0x40388b:3:xor %sil,%dl
+0x40388e:3:or %dl,%dil
+0x403891:4:test $0x1,%dil
+0x403895:3:cmovne %ecx,%eax
+0x403898:6:mov %eax,-0xa8(%rbp)
+0x40389e:5:jmp 00000000004045a6 <main+0x1236>
+0x4038a3:5:mov $0x1147bd6b,%eax
+0x4038a8:5:mov $0xcc56b724,%ecx
+0x4038ad:2:mov $0x1,%dl
+0x4038af:3:mov %rsp,%rsi
+0x4038b2:4:add $0xfffffffffffffff0,%rsi
+0x4038b6:3:mov %rsi,%rsp
+0x4038b9:7:mov %rsi,-0xa0(%rbp)
+0x4038c0:3:mov %rsp,%rsi
+0x4038c3:4:add $0xfffffffffffffff0,%rsi
+0x4038c7:3:mov %rsi,%rsp
+0x4038ca:3:mov %rsp,%rdi
+0x4038cd:4:add $0xfffffffffffffff0,%rdi
+0x4038d1:3:mov %rdi,%rsp
+0x4038d4:7:mov %rdi,-0x98(%rbp)
+0x4038db:3:mov %rsp,%rdi
+0x4038de:4:add $0xfffffffffffffff0,%rdi
+0x4038e2:3:mov %rdi,%rsp
+0x4038e5:7:mov %rdi,-0x90(%rbp)
+0x4038ec:3:mov %rsp,%rdi
+0x4038ef:4:add $0xfffffffffffffff0,%rdi
+0x4038f3:3:mov %rdi,%rsp
+0x4038f6:7:mov %rdi,-0x88(%rbp)
+0x4038fd:3:mov %rsp,%rdi
+0x403900:4:add $0xfffffffffffffff0,%rdi
+0x403904:3:mov %rdi,%rsp
+0x403907:4:mov %rdi,-0x80(%rbp)
+0x40390b:3:mov %rsp,%rdi
+0x40390e:4:add $0xfffffffffffffff0,%rdi
+0x403912:3:mov %rdi,%rsp
+0x403915:4:mov %rdi,-0x78(%rbp)
+0x403919:3:mov %rsp,%rdi
+0x40391c:4:add $0xfffffffffffffff0,%rdi
+0x403920:3:mov %rdi,%rsp
+0x403923:4:mov %rdi,-0x70(%rbp)
+0x403927:3:mov %rsp,%rdi
+0x40392a:4:add $0xfffffffffffffff0,%rdi
+0x40392e:3:mov %rdi,%rsp
+0x403931:4:mov %rdi,-0x68(%rbp)
+0x403935:3:mov %rsp,%rdi
+0x403938:4:add $0xfffffffffffffff0,%rdi
+0x40393c:3:mov %rdi,%rsp
+0x40393f:4:mov %rdi,-0x60(%rbp)
+0x403943:3:mov %rsp,%rdi
+0x403946:4:add $0xfffffffffffffff0,%rdi
+0x40394a:3:mov %rdi,%rsp
+0x40394d:4:mov %rdi,-0x58(%rbp)
+0x403951:3:mov %rsp,%rdi
+0x403954:4:add $0xfffffffffffffff0,%rdi
+0x403958:3:mov %rdi,%rsp
+0x40395b:4:mov %rdi,-0x50(%rbp)
+0x40395f:3:mov %rsp,%rdi
+0x403962:4:add $0xfffffffffffffff0,%rdi
+0x403966:3:mov %rdi,%rsp
+0x403969:4:mov %rdi,-0x48(%rbp)
+0x40396d:3:mov %rsp,%rdi
+0x403970:4:add $0xfffffffffffffff0,%rdi
+0x403974:3:mov %rdi,%rsp
+0x403977:4:mov %rdi,-0x40(%rbp)
+0x40397b:7:mov -0xa0(%rbp),%rdi
+0x403982:6:movl $0x0,(%rdi)
+0x403988:7:mov -0xac(%rbp),%r8d
+0x40398f:3:mov %r8d,(%rsi)
+0x403992:7:mov -0x98(%rbp),%rdi
+0x403999:7:mov -0xb8(%rbp),%r9
+0x4039a0:3:mov %r9,(%rdi)
+0x4039a3:3:cmpl $0x2,(%rsi)
+0x4039a6:4:setne %r10b
+0x4039aa:4:and $0x1,%r10b
+0x4039ae:4:mov %r10b,-0x31(%rbp)
+0x4039b2:8:mov 0x40705c,%r11d
+0x4039ba:7:mov 0x407060,%ebx
+0x4039c1:3:mov %r11d,%r14d
+0x4039c4:7:sub $0x78cf83c5,%r14d
+0x4039cb:4:sub $0x1,%r14d
+0x4039cf:7:add $0x78cf83c5,%r14d
+0x4039d6:4:imul %r14d,%r11d
+0x4039da:4:and $0x1,%r11d
+0x4039de:4:cmp $0x0,%r11d
+0x4039e2:4:sete %r10b
+0x4039e6:3:cmp $0xa,%ebx
+0x4039e9:4:setl %r15b
+0x4039ed:3:mov %r10b,%r12b
+0x4039f0:4:xor $0xff,%r12b
+0x4039f4:3:mov %r15b,%r13b
+0x4039f7:4:xor $0xff,%r13b
+0x4039fb:3:xor $0x0,%dl
+0x4039fe:3:mov %r12b,%sil
+0x403a01:4:and $0x0,%sil
+0x403a05:3:and %dl,%r10b
+0x403a08:3:mov %r13b,%dil
+0x403a0b:4:and $0x0,%dil
+0x403a0f:3:and %dl,%r15b
+0x403a12:3:or %r10b,%sil
+0x403a15:3:or %r15b,%dil
+0x403a18:3:xor %dil,%sil
+0x403a1b:3:or %r13b,%r12b
+0x403a1e:4:xor $0xff,%r12b
+0x403a22:3:or $0x0,%dl
+0x403a25:3:and %dl,%r12b
+0x403a28:3:or %r12b,%sil
+0x403a2b:4:test $0x1,%sil
+0x403a2f:3:cmovne %ecx,%eax
+0x403a32:6:mov %eax,-0xa8(%rbp)
+0x403a38:5:jmp 00000000004045a6 <main+0x1236>
+0x403a3d:5:mov $0x8023b503,%eax
+0x403a42:5:mov $0x6303e9c8,%ecx
+0x403a47:3:mov -0x31(%rbp),%dl
+0x403a4a:3:test $0x1,%dl
+0x403a4d:3:cmovne %ecx,%eax
+0x403a50:6:mov %eax,-0xa8(%rbp)
+0x403a56:5:jmp 00000000004045a6 <main+0x1236>
+0x403a5b:5:call 00000000004013f0 <usage>
+0x403a60:7:mov -0xa0(%rbp),%rax
+0x403a67:6:movl $0x1,(%rax)
+0x403a6d:10:movl $0xbdc14912,-0xa8(%rbp)
+0x403a77:5:jmp 00000000004045a6 <main+0x1236>
+0x403a7c:7:mov -0x98(%rbp),%rax
+0x403a83:3:mov (%rax),%rax
+0x403a86:4:mov 0x8(%rax),%rdi
+0x403a8a:5:call 0000000000401060 <atoi@plt>
+0x403a8f:7:mov -0x90(%rbp),%rdi
+0x403a96:2:mov %eax,(%rdi)
+0x403a98:7:mov -0x90(%rbp),%rdi
+0x403a9f:2:mov (%rdi),%eax
+0x403aa1:3:mov %eax,-0x30(%rbp)
+0x403aa4:10:movl $0xeac56f2e,-0xa8(%rbp)
+0x403aae:5:jmp 00000000004045a6 <main+0x1236>
+0x403ab3:5:mov $0x1352da12,%eax
+0x403ab8:5:mov $0xf41decd2,%ecx
+0x403abd:3:mov -0x30(%rbp),%edx
+0x403ac0:3:cmp $0x1,%edx
+0x403ac3:3:cmovl %ecx,%eax
+0x403ac6:6:mov %eax,-0xa8(%rbp)
+0x403acc:5:jmp 00000000004045a6 <main+0x1236>
+0x403ad1:5:mov $0x3584bc2a,%eax
+0x403ad6:5:mov $0x27cab8d0,%ecx
+0x403adb:3:mov -0x30(%rbp),%edx
+0x403ade:3:cmp $0x1,%edx
+0x403ae1:3:cmove %ecx,%eax
+0x403ae4:6:mov %eax,-0xa8(%rbp)
+0x403aea:5:jmp 00000000004045a6 <main+0x1236>
+0x403aef:5:mov $0x3584bc2a,%eax
+0x403af4:5:mov $0x86d53ff1,%ecx
+0x403af9:3:mov -0x30(%rbp),%edx
+0x403afc:3:cmp $0x0,%edx
+0x403aff:3:cmove %ecx,%eax
+0x403b02:6:mov %eax,-0xa8(%rbp)
+0x403b08:5:jmp 00000000004045a6 <main+0x1236>
+0x403b0d:7:mov -0x88(%rbp),%rax
+0x403b14:6:movl $0x64,(%rax)
+0x403b1a:4:mov -0x80(%rbp),%rax
+0x403b1e:6:movl $0x1,(%rax)
+0x403b24:4:mov -0x80(%rbp),%rax
+0x403b28:3:movslq (%rax),%rax
+0x403b2b:4:shl $0x2,%rax
+0x403b2f:3:mov %rax,%rdi
+0x403b32:5:call 0000000000401050 <malloc@plt>
+0x403b37:4:mov -0x78(%rbp),%rdi
+0x403b3b:3:mov %rax,(%rdi)
+0x403b3e:4:mov -0x70(%rbp),%rax
+0x403b42:6:movl $0x0,(%rax)
+0x403b48:10:movl $0x663389c,-0xa8(%rbp)
+0x403b52:5:jmp 00000000004045a6 <main+0x1236>
+0x403b57:5:mov $0x8139092b,%eax
+0x403b5c:5:mov $0xff8f84e3,%ecx
+0x403b61:2:mov $0x1,%dl
+0x403b63:7:mov 0x40705c,%esi
+0x403b6a:7:mov 0x407060,%edi
+0x403b71:3:mov %esi,%r8d
+0x403b74:7:sub $0x2c86fc35,%r8d
+0x403b7b:4:sub $0x1,%r8d
+0x403b7f:7:add $0x2c86fc35,%r8d
+0x403b86:4:imul %r8d,%esi
+0x403b8a:3:and $0x1,%esi
+0x403b8d:3:cmp $0x0,%esi
+0x403b90:4:sete %r9b
+0x403b94:3:cmp $0xa,%edi
+0x403b97:4:setl %r10b
+0x403b9b:3:mov %r9b,%r11b
+0x403b9e:4:xor $0xff,%r11b
+0x403ba2:3:mov %r10b,%bl
+0x403ba5:3:xor $0xff,%bl
+0x403ba8:3:xor $0x0,%dl
+0x403bab:3:mov %r11b,%r14b
+0x403bae:4:and $0x0,%r14b
+0x403bb2:3:and %dl,%r9b
+0x403bb5:3:mov %bl,%r15b
+0x403bb8:4:and $0x0,%r15b
+0x403bbc:3:and %dl,%r10b
+0x403bbf:3:or %r9b,%r14b
+0x403bc2:3:or %r10b,%r15b
+0x403bc5:3:xor %r15b,%r14b
+0x403bc8:3:or %bl,%r11b
+0x403bcb:4:xor $0xff,%r11b
+0x403bcf:3:or $0x0,%dl
+0x403bd2:3:and %dl,%r11b
+0x403bd5:3:or %r11b,%r14b
+0x403bd8:4:test $0x1,%r14b
+0x403bdc:3:cmovne %ecx,%eax
+0x403bdf:6:mov %eax,-0xa8(%rbp)
+0x403be5:5:jmp 00000000004045a6 <main+0x1236>
+0x403bea:5:mov $0x8139092b,%eax
+0x403bef:5:mov $0x9537114d,%ecx
+0x403bf4:2:mov $0x1,%dl
+0x403bf6:4:mov -0x70(%rbp),%rsi
+0x403bfa:2:mov (%rsi),%edi
+0x403bfc:4:mov -0x80(%rbp),%rsi
+0x403c00:2:cmp (%rsi),%edi
+0x403c02:4:setl %r8b
+0x403c06:4:and $0x1,%r8b
+0x403c0a:4:mov %r8b,-0x29(%rbp)
+0x403c0e:7:mov 0x40705c,%edi
+0x403c15:8:mov 0x407060,%r9d
+0x403c1d:3:mov %edi,%r10d
+0x403c20:7:sub $0x621cd211,%r10d
+0x403c27:4:sub $0x1,%r10d
+0x403c2b:7:add $0x621cd211,%r10d
+0x403c32:4:imul %r10d,%edi
+0x403c36:3:and $0x1,%edi
+0x403c39:3:cmp $0x0,%edi
+0x403c3c:4:sete %r8b
+0x403c40:4:cmp $0xa,%r9d
+0x403c44:4:setl %r11b
+0x403c48:3:mov %r8b,%bl
+0x403c4b:3:xor $0xff,%bl
+0x403c4e:3:mov %r11b,%r14b
+0x403c51:4:xor $0xff,%r14b
+0x403c55:3:xor $0x1,%dl
+0x403c58:3:mov %bl,%r15b
+0x403c5b:4:and $0xff,%r15b
+0x403c5f:3:and %dl,%r8b
+0x403c62:3:mov %r14b,%r12b
+0x403c65:4:and $0xff,%r12b
+0x403c69:3:and %dl,%r11b
+0x403c6c:3:or %r8b,%r15b
+0x403c6f:3:or %r11b,%r12b
+0x403c72:3:xor %r12b,%r15b
+0x403c75:3:or %r14b,%bl
+0x403c78:3:xor $0xff,%bl
+0x403c7b:3:or $0x1,%dl
+0x403c7e:2:and %dl,%bl
+0x403c80:3:or %bl,%r15b
+0x403c83:4:test $0x1,%r15b
+0x403c87:3:cmovne %ecx,%eax
+0x403c8a:6:mov %eax,-0xa8(%rbp)
+0x403c90:5:jmp 00000000004045a6 <main+0x1236>
+0x403c95:5:mov $0xc349b96f,%eax
+0x403c9a:5:mov $0x5f4eb58f,%ecx
+0x403c9f:3:mov -0x29(%rbp),%dl
+0x403ca2:3:test $0x1,%dl
+0x403ca5:3:cmovne %ecx,%eax
+0x403ca8:6:mov %eax,-0xa8(%rbp)
+0x403cae:5:jmp 00000000004045a6 <main+0x1236>
+0x403cb3:5:mov $0x9b2e9158,%eax
+0x403cb8:5:mov $0xae05eb0a,%ecx
+0x403cbd:7:mov 0x40705c,%edx
+0x403cc4:7:mov 0x407060,%esi
+0x403ccb:2:mov %edx,%edi
+0x403ccd:6:add $0x743e5fbe,%edi
+0x403cd3:3:sub $0x1,%edi
+0x403cd6:6:sub $0x743e5fbe,%edi
+0x403cdc:3:imul %edi,%edx
+0x403cdf:3:and $0x1,%edx
+0x403ce2:3:cmp $0x0,%edx
+0x403ce5:4:sete %r8b
+0x403ce9:3:cmp $0xa,%esi
+0x403cec:4:setl %r9b
+0x403cf0:3:mov %r8b,%r10b
+0x403cf3:3:and %r9b,%r10b
+0x403cf6:3:xor %r9b,%r8b
+0x403cf9:3:or %r8b,%r10b
+0x403cfc:4:test $0x1,%r10b
+0x403d00:3:cmovne %ecx,%eax
+0x403d03:6:mov %eax,-0xa8(%rbp)
+0x403d09:5:jmp 00000000004045a6 <main+0x1236>
+0x403d0e:5:call 0000000000401160 <next_i>
+0x403d13:5:mov $0x2,%ecx
+0x403d18:1:cltd
+0x403d19:2:idiv %ecx
+0x403d1b:6:imul $0xfffffffe,%edx,%ecx
+0x403d21:6:sub $0xc1a55300,%ecx
+0x403d27:3:add $0x1,%ecx
+0x403d2a:6:add $0xc1a55300,%ecx
+0x403d30:6:mov %ecx,-0x164(%rbp)
+0x403d36:5:call 0000000000401160 <next_i>
+0x403d3b:5:mov $0x9b2e9158,%ecx
+0x403d40:5:mov $0x141f633e,%edx
+0x403d45:6:mov -0x164(%rbp),%esi
+0x403d4b:3:imul %eax,%esi
+0x403d4e:4:mov -0x78(%rbp),%rdi
+0x403d52:3:mov (%rdi),%rdi
+0x403d55:4:mov -0x70(%rbp),%r8
+0x403d59:3:movslq (%r8),%r8
+0x403d5c:4:mov %esi,(%rdi,%r8,4)
+0x403d60:7:mov 0x40705c,%eax
+0x403d67:7:mov 0x407060,%esi
+0x403d6e:3:mov %eax,%r9d
+0x403d71:7:sub $0xe01f58eb,%r9d
+0x403d78:4:sub $0x1,%r9d
+0x403d7c:7:add $0xe01f58eb,%r9d
+0x403d83:4:imul %r9d,%eax
+0x403d87:3:and $0x1,%eax
+0x403d8a:3:cmp $0x0,%eax
+0x403d8d:4:sete %r10b
+0x403d91:3:cmp $0xa,%esi
+0x403d94:4:setl %r11b
+0x403d98:3:mov %r10b,%bl
+0x403d9b:3:and %r11b,%bl
+0x403d9e:3:xor %r11b,%r10b
+0x403da1:3:or %r10b,%bl
+0x403da4:3:test $0x1,%bl
+0x403da7:3:cmovne %edx,%ecx
+0x403daa:6:mov %ecx,-0xa8(%rbp)
+0x403db0:5:jmp 00000000004045a6 <main+0x1236>
+0x403db5:10:movl $0x1aba0ebf,-0xa8(%rbp)
+0x403dbf:5:jmp 00000000004045a6 <main+0x1236>
+0x403dc4:2:xor %eax,%eax
+0x403dc6:4:mov -0x70(%rbp),%rcx
+0x403dca:2:mov (%rcx),%edx
+0x403dcc:2:mov %eax,%esi
+0x403dce:2:sub %edx,%esi
+0x403dd0:2:mov %eax,%edx
+0x403dd2:3:sub $0x1,%edx
+0x403dd5:2:add %edx,%esi
+0x403dd7:2:sub %esi,%eax
+0x403dd9:4:mov -0x70(%rbp),%rcx
+0x403ddd:2:mov %eax,(%rcx)
+0x403ddf:10:movl $0x663389c,-0xa8(%rbp)
+0x403de9:5:jmp 00000000004045a6 <main+0x1236>
+0x403dee:5:mov $0x9311b6dc,%eax
+0x403df3:5:mov $0x9fb746ce,%ecx
+0x403df8:2:mov $0x1,%dl
+0x403dfa:7:mov 0x40705c,%esi
+0x403e01:7:mov 0x407060,%edi
+0x403e08:3:mov %esi,%r8d
+0x403e0b:7:sub $0xd2f260ad,%r8d
+0x403e12:4:sub $0x1,%r8d
+0x403e16:7:add $0xd2f260ad,%r8d
+0x403e1d:4:imul %r8d,%esi
+0x403e21:3:and $0x1,%esi
+0x403e24:3:cmp $0x0,%esi
+0x403e27:4:sete %r9b
+0x403e2b:3:cmp $0xa,%edi
+0x403e2e:4:setl %r10b
+0x403e32:3:mov %r9b,%r11b
+0x403e35:4:xor $0xff,%r11b
+0x403e39:3:mov %r10b,%bl
+0x403e3c:3:xor $0xff,%bl
+0x403e3f:3:xor $0x1,%dl
+0x403e42:3:mov %r11b,%r14b
+0x403e45:4:and $0xff,%r14b
+0x403e49:3:and %dl,%r9b
+0x403e4c:3:mov %bl,%r15b
+0x403e4f:4:and $0xff,%r15b
+0x403e53:3:and %dl,%r10b
+0x403e56:3:or %r9b,%r14b
+0x403e59:3:or %r10b,%r15b
+0x403e5c:3:xor %r15b,%r14b
+0x403e5f:3:or %bl,%r11b
+0x403e62:4:xor $0xff,%r11b
+0x403e66:3:or $0x1,%dl
+0x403e69:3:and %dl,%r11b
+0x403e6c:3:or %r11b,%r14b
+0x403e6f:4:test $0x1,%r14b
+0x403e73:3:cmovne %ecx,%eax
+0x403e76:6:mov %eax,-0xa8(%rbp)
+0x403e7c:5:jmp 00000000004045a6 <main+0x1236>
+0x403e81:4:mov -0x78(%rbp),%rax
+0x403e85:3:mov (%rax),%rdi
+0x403e88:7:mov -0x88(%rbp),%rax
+0x403e8f:2:mov (%rax),%esi
+0x403e91:5:call 0000000000401420 <_TIFFCheckFieldIsValidForCodec>
+0x403e96:10:movabs $0x4050d6,%rdi
+0x403ea0:4:mov -0x68(%rbp),%rcx
+0x403ea4:2:mov %eax,(%rcx)
+0x403ea6:4:mov -0x68(%rbp),%rcx
+0x403eaa:2:mov (%rcx),%esi
+0x403eac:2:mov $0x0,%al
+0x403eae:5:call 0000000000401040 <printf@plt>
+0x403eb3:4:mov -0x78(%rbp),%rcx
+0x403eb7:3:mov (%rcx),%rcx
+0x403eba:3:mov %rcx,%rdi
+0x403ebd:6:mov %eax,-0x168(%rbp)
+0x403ec3:5:call 0000000000401030 <free@plt>
+0x403ec8:5:mov $0x9311b6dc,%eax
+0x403ecd:5:mov $0x9556ec5e,%esi
+0x403ed2:2:mov $0x1,%dl
+0x403ed4:8:mov 0x40705c,%r8d
+0x403edc:8:mov 0x407060,%r9d
+0x403ee4:3:mov %r8d,%r10d
+0x403ee7:7:add $0x8971f17b,%r10d
+0x403eee:4:sub $0x1,%r10d
+0x403ef2:7:sub $0x8971f17b,%r10d
+0x403ef9:4:imul %r10d,%r8d
+0x403efd:4:and $0x1,%r8d
+0x403f01:4:cmp $0x0,%r8d
+0x403f05:4:sete %r11b
+0x403f09:4:cmp $0xa,%r9d
+0x403f0d:3:setl %bl
+0x403f10:3:mov %r11b,%r14b
+0x403f13:4:xor $0xff,%r14b
+0x403f17:3:mov %bl,%r15b
+0x403f1a:4:xor $0xff,%r15b
+0x403f1e:3:xor $0x1,%dl
+0x403f21:3:mov %r14b,%r12b
+0x403f24:4:and $0xff,%r12b
+0x403f28:3:and %dl,%r11b
+0x403f2b:3:mov %r15b,%r13b
+0x403f2e:4:and $0xff,%r13b
+0x403f32:2:and %dl,%bl
+0x403f34:3:or %r11b,%r12b
+0x403f37:3:or %bl,%r13b
+0x403f3a:3:xor %r13b,%r12b
+0x403f3d:3:or %r15b,%r14b
+0x403f40:4:xor $0xff,%r14b
+0x403f44:3:or $0x1,%dl
+0x403f47:3:and %dl,%r14b
+0x403f4a:3:or %r14b,%r12b
+0x403f4d:4:test $0x1,%r12b
+0x403f51:3:cmovne %esi,%eax
+0x403f54:6:mov %eax,-0xa8(%rbp)
+0x403f5a:5:jmp 00000000004045a6 <main+0x1236>
+0x403f5f:10:movl $0xeb249fbf,-0xa8(%rbp)
+0x403f69:5:jmp 00000000004045a6 <main+0x1236>
+0x403f6e:5:mov $0x1ec8f98a,%eax
+0x403f73:5:mov $0x4220cea1,%ecx
+0x403f78:2:xor %edx,%edx
+0x403f7a:7:mov 0x40705c,%esi
+0x403f81:7:mov 0x407060,%edi
+0x403f88:3:sub $0x1,%edx
+0x403f8b:3:mov %esi,%r8d
+0x403f8e:3:add %edx,%r8d
+0x403f91:4:imul %r8d,%esi
+0x403f95:3:and $0x1,%esi
+0x403f98:3:cmp $0x0,%esi
+0x403f9b:4:sete %r9b
+0x403f9f:3:cmp $0xa,%edi
+0x403fa2:4:setl %r10b
+0x403fa6:3:mov %r9b,%r11b
+0x403fa9:3:and %r10b,%r11b
+0x403fac:3:xor %r10b,%r9b
+0x403faf:3:or %r9b,%r11b
+0x403fb2:4:test $0x1,%r11b
+0x403fb6:3:cmovne %ecx,%eax
+0x403fb9:6:mov %eax,-0xa8(%rbp)
+0x403fbf:5:jmp 00000000004045a6 <main+0x1236>
+0x403fc4:4:mov -0x60(%rbp),%rax
+0x403fc8:6:movl $0xa,(%rax)
+0x403fce:4:mov -0x58(%rbp),%rax
+0x403fd2:6:movl $0x64,(%rax)
+0x403fd8:4:mov -0x58(%rbp),%rax
+0x403fdc:3:movslq (%rax),%rax
+0x403fdf:4:shl $0x2,%rax
+0x403fe3:3:mov %rax,%rdi
+0x403fe6:5:call 0000000000401050 <malloc@plt>
+0x403feb:5:mov $0x1ec8f98a,%ecx
+0x403ff0:5:mov $0xddafc986,%edx
+0x403ff5:3:mov $0x1,%sil
+0x403ff8:4:mov -0x50(%rbp),%rdi
+0x403ffc:3:mov %rax,(%rdi)
+0x403fff:4:mov -0x48(%rbp),%rax
+0x404003:6:movl $0x0,(%rax)
+0x404009:8:mov 0x40705c,%r8d
+0x404011:8:mov 0x407060,%r9d
+0x404019:3:mov %r8d,%r10d
+0x40401c:7:add $0xa45464b3,%r10d
+0x404023:4:sub $0x1,%r10d
+0x404027:7:sub $0xa45464b3,%r10d
+0x40402e:4:imul %r10d,%r8d
+0x404032:4:and $0x1,%r8d
+0x404036:4:cmp $0x0,%r8d
+0x40403a:4:sete %r11b
+0x40403e:4:cmp $0xa,%r9d
+0x404042:3:setl %bl
+0x404045:3:mov %r11b,%r14b
+0x404048:4:xor $0xff,%r14b
+0x40404c:3:mov %bl,%r15b
+0x40404f:4:xor $0xff,%r15b
+0x404053:4:xor $0x1,%sil
+0x404057:3:mov %r14b,%r12b
+0x40405a:4:and $0xff,%r12b
+0x40405e:3:and %sil,%r11b
+0x404061:3:mov %r15b,%r13b
+0x404064:4:and $0xff,%r13b
+0x404068:3:and %sil,%bl
+0x40406b:3:or %r11b,%r12b
+0x40406e:3:or %bl,%r13b
+0x404071:3:xor %r13b,%r12b
+0x404074:3:or %r15b,%r14b
+0x404077:4:xor $0xff,%r14b
+0x40407b:4:or $0x1,%sil
+0x40407f:3:and %sil,%r14b
+0x404082:3:or %r14b,%r12b
+0x404085:4:test $0x1,%r12b
+0x404089:3:cmovne %edx,%ecx
+0x40408c:6:mov %ecx,-0xa8(%rbp)
+0x404092:5:jmp 00000000004045a6 <main+0x1236>
+0x404097:10:movl $0x97ee4d74,-0xa8(%rbp)
+0x4040a1:5:jmp 00000000004045a6 <main+0x1236>
+0x4040a6:5:mov $0x24dc56bd,%eax
+0x4040ab:5:mov $0x4b20b181,%ecx
+0x4040b0:4:mov -0x48(%rbp),%rdx
+0x4040b4:2:mov (%rdx),%esi
+0x4040b6:4:mov -0x58(%rbp),%rdx
+0x4040ba:2:cmp (%rdx),%esi
+0x4040bc:3:cmovl %ecx,%eax
+0x4040bf:6:mov %eax,-0xa8(%rbp)
+0x4040c5:5:jmp 00000000004045a6 <main+0x1236>
+0x4040ca:5:call 0000000000401160 <next_i>
+0x4040cf:2:xor %ecx,%ecx
+0x4040d1:5:mov $0x2,%edx
+0x4040d6:6:mov %edx,-0x16c(%rbp)
+0x4040dc:1:cltd
+0x4040dd:6:mov -0x16c(%rbp),%esi
+0x4040e3:2:idiv %esi
+0x4040e5:6:imul $0xfffffffe,%edx,%edx
+0x4040eb:3:sub $0x1,%ecx
+0x4040ee:2:sub %ecx,%edx
+0x4040f0:6:mov %edx,-0x170(%rbp)
+0x4040f6:5:call 0000000000401160 <next_i>
+0x4040fb:6:mov -0x170(%rbp),%ecx
+0x404101:3:imul %eax,%ecx
+0x404104:4:mov -0x50(%rbp),%rdi
+0x404108:3:mov (%rdi),%rdi
+0x40410b:4:mov -0x48(%rbp),%r8
+0x40410f:3:movslq (%r8),%r8
+0x404112:4:mov %ecx,(%rdi,%r8,4)
+0x404116:10:movl $0xc8b5e0c8,-0xa8(%rbp)
+0x404120:5:jmp 00000000004045a6 <main+0x1236>
+0x404125:5:mov $0xf23b5f8e,%eax
+0x40412a:5:mov $0xff1f48ce,%ecx
+0x40412f:2:xor %edx,%edx
+0x404131:7:mov 0x40705c,%esi
+0x404138:7:mov 0x407060,%edi
+0x40413f:3:sub $0x1,%edx
+0x404142:3:mov %esi,%r8d
+0x404145:3:add %edx,%r8d
+0x404148:4:imul %r8d,%esi
+0x40414c:3:and $0x1,%esi
+0x40414f:3:cmp $0x0,%esi
+0x404152:4:sete %r9b
+0x404156:3:cmp $0xa,%edi
+0x404159:4:setl %r10b
+0x40415d:3:mov %r9b,%r11b
+0x404160:3:and %r10b,%r11b
+0x404163:3:xor %r10b,%r9b
+0x404166:3:or %r9b,%r11b
+0x404169:4:test $0x1,%r11b
+0x40416d:3:cmovne %ecx,%eax
+0x404170:6:mov %eax,-0xa8(%rbp)
+0x404176:5:jmp 00000000004045a6 <main+0x1236>
+0x40417b:5:mov $0xf23b5f8e,%eax
+0x404180:5:mov $0xc1b7328f,%ecx
+0x404185:2:mov $0x1,%dl
+0x404187:2:xor %esi,%esi
+0x404189:4:mov -0x48(%rbp),%rdi
+0x40418d:3:mov (%rdi),%r8d
+0x404190:3:sub $0x1,%esi
+0x404193:3:sub %esi,%r8d
+0x404196:4:mov -0x48(%rbp),%rdi
+0x40419a:3:mov %r8d,(%rdi)
+0x40419d:7:mov 0x40705c,%esi
+0x4041a4:8:mov 0x407060,%r8d
+0x4041ac:3:mov %esi,%r9d
+0x4041af:7:sub $0x4867044c,%r9d
+0x4041b6:4:sub $0x1,%r9d
+0x4041ba:7:add $0x4867044c,%r9d
+0x4041c1:4:imul %r9d,%esi
+0x4041c5:3:and $0x1,%esi
+0x4041c8:3:cmp $0x0,%esi
+0x4041cb:4:sete %r10b
+0x4041cf:4:cmp $0xa,%r8d
+0x4041d3:4:setl %r11b
+0x4041d7:3:mov %r10b,%bl
+0x4041da:3:xor $0xff,%bl
+0x4041dd:3:mov %r11b,%r14b
+0x4041e0:4:xor $0xff,%r14b
+0x4041e4:3:xor $0x1,%dl
+0x4041e7:3:mov %bl,%r15b
+0x4041ea:4:and $0xff,%r15b
+0x4041ee:3:and %dl,%r10b
+0x4041f1:3:mov %r14b,%r12b
+0x4041f4:4:and $0xff,%r12b
+0x4041f8:3:and %dl,%r11b
+0x4041fb:3:or %r10b,%r15b
+0x4041fe:3:or %r11b,%r12b
+0x404201:3:xor %r12b,%r15b
+0x404204:3:or %r14b,%bl
+0x404207:3:xor $0xff,%bl
+0x40420a:3:or $0x1,%dl
+0x40420d:2:and %dl,%bl
+0x40420f:3:or %bl,%r15b
+0x404212:4:test $0x1,%r15b
+0x404216:3:cmovne %ecx,%eax
+0x404219:6:mov %eax,-0xa8(%rbp)
+0x40421f:5:jmp 00000000004045a6 <main+0x1236>
+0x404224:10:movl $0x97ee4d74,-0xa8(%rbp)
+0x40422e:5:jmp 00000000004045a6 <main+0x1236>
+0x404233:5:mov $0xab500621,%eax
+0x404238:5:mov $0xdbfe463,%ecx
+0x40423d:2:mov $0x1,%dl
+0x40423f:7:mov 0x40705c,%esi
+0x404246:7:mov 0x407060,%edi
+0x40424d:3:mov %esi,%r8d
+0x404250:7:sub $0xf6442baf,%r8d
+0x404257:4:sub $0x1,%r8d
+0x40425b:7:add $0xf6442baf,%r8d
+0x404262:4:imul %r8d,%esi
+0x404266:3:and $0x1,%esi
+0x404269:3:cmp $0x0,%esi
+0x40426c:4:sete %r9b
+0x404270:3:cmp $0xa,%edi
+0x404273:4:setl %r10b
+0x404277:3:mov %r9b,%r11b
+0x40427a:4:xor $0xff,%r11b
+0x40427e:3:mov %r10b,%bl
+0x404281:3:xor $0xff,%bl
+0x404284:3:xor $0x0,%dl
+0x404287:3:mov %r11b,%r14b
+0x40428a:4:and $0x0,%r14b
+0x40428e:3:and %dl,%r9b
+0x404291:3:mov %bl,%r15b
+0x404294:4:and $0x0,%r15b
+0x404298:3:and %dl,%r10b
+0x40429b:3:or %r9b,%r14b
+0x40429e:3:or %r10b,%r15b
+0x4042a1:3:xor %r15b,%r14b
+0x4042a4:3:or %bl,%r11b
+0x4042a7:4:xor $0xff,%r11b
+0x4042ab:3:or $0x0,%dl
+0x4042ae:3:and %dl,%r11b
+0x4042b1:3:or %r11b,%r14b
+0x4042b4:4:test $0x1,%r14b
+0x4042b8:3:cmovne %ecx,%eax
+0x4042bb:6:mov %eax,-0xa8(%rbp)
+0x4042c1:5:jmp 00000000004045a6 <main+0x1236>
+0x4042c6:4:mov -0x50(%rbp),%rax
+0x4042ca:3:mov (%rax),%rdi
+0x4042cd:4:mov -0x60(%rbp),%rax
+0x4042d1:2:mov (%rax),%esi
+0x4042d3:5:call 0000000000401420 <_TIFFCheckFieldIsValidForCodec>
+0x4042d8:10:movabs $0x4050d6,%rdi
+0x4042e2:4:mov -0x40(%rbp),%rcx
+0x4042e6:2:mov %eax,(%rcx)
+0x4042e8:4:mov -0x40(%rbp),%rcx
+0x4042ec:2:mov (%rcx),%esi
+0x4042ee:2:mov $0x0,%al
+0x4042f0:5:call 0000000000401040 <printf@plt>
+0x4042f5:4:mov -0x50(%rbp),%rcx
+0x4042f9:3:mov (%rcx),%rcx
+0x4042fc:3:mov %rcx,%rdi
+0x4042ff:6:mov %eax,-0x174(%rbp)
+0x404305:5:call 0000000000401030 <free@plt>
+0x40430a:5:mov $0xab500621,%eax
+0x40430f:5:mov $0x5fe723d9,%esi
+0x404314:7:mov 0x40705c,%edx
+0x40431b:8:mov 0x407060,%r8d
+0x404323:3:mov %edx,%r9d
+0x404326:7:add $0x29aac33,%r9d
+0x40432d:4:sub $0x1,%r9d
+0x404331:7:sub $0x29aac33,%r9d
+0x404338:4:imul %r9d,%edx
+0x40433c:3:and $0x1,%edx
+0x40433f:3:cmp $0x0,%edx
+0x404342:4:sete %r10b
+0x404346:4:cmp $0xa,%r8d
+0x40434a:4:setl %r11b
+0x40434e:3:mov %r10b,%bl
+0x404351:3:and %r11b,%bl
+0x404354:3:xor %r11b,%r10b
+0x404357:3:or %r10b,%bl
+0x40435a:3:test $0x1,%bl
+0x40435d:3:cmovne %esi,%eax
+0x404360:6:mov %eax,-0xa8(%rbp)
+0x404366:5:jmp 00000000004045a6 <main+0x1236>
+0x40436b:10:movl $0xeb249fbf,-0xa8(%rbp)
+0x404375:5:jmp 00000000004045a6 <main+0x1236>
+0x40437a:10:movl $0xbfd4ff0b,-0xa8(%rbp)
+0x404384:5:jmp 00000000004045a6 <main+0x1236>
+0x404389:5:call 00000000004013f0 <usage>
+0x40438e:10:movl $0xeb249fbf,-0xa8(%rbp)
+0x404398:5:jmp 00000000004045a6 <main+0x1236>
+0x40439d:7:mov -0xa0(%rbp),%rax
+0x4043a4:6:movl $0x0,(%rax)
+0x4043aa:10:movl $0xbdc14912,-0xa8(%rbp)
+0x4043b4:5:jmp 00000000004045a6 <main+0x1236>
+0x4043b9:7:mov -0xa0(%rbp),%rax
+0x4043c0:2:mov (%rax),%eax
+0x4043c2:4:lea -0x28(%rbp),%rsp
+0x4043c6:1:pop %rbx
+0x4043c7:2:pop %r12
+0x4043c9:2:pop %r13
+0x4043cb:2:pop %r14
+0x4043cd:2:pop %r15
+0x4043cf:1:pop %rbp
+0x4043d0:1:ret
+0x4043d1:3:mov %rsp,%rax
+0x4043d4:4:add $0xfffffffffffffff0,%rax
+0x4043d8:3:mov %rax,%rsp
+0x4043db:3:mov %rsp,%rcx
+0x4043de:4:add $0xfffffffffffffff0,%rcx
+0x4043e2:3:mov %rcx,%rsp
+0x4043e5:3:mov %rsp,%rdx
+0x4043e8:4:add $0xfffffffffffffff0,%rdx
+0x4043ec:3:mov %rdx,%rsp
+0x4043ef:6:movl $0x0,(%rax)
+0x4043f5:6:mov -0xac(%rbp),%esi
+0x4043fb:2:mov %esi,(%rcx)
+0x4043fd:7:mov -0xb8(%rbp),%rax
+0x404404:3:mov %rax,(%rdx)
+0x404407:10:movl $0x3563de25,-0xa8(%rbp)
+0x404411:5:jmp 00000000004045a6 <main+0x1236>
+0x404416:4:mov -0x70(%rbp),%rax
+0x40441a:4:mov -0x80(%rbp),%rcx
+0x40441e:10:movl $0xff8f84e3,-0xa8(%rbp)
+0x404428:7:mov %rax,-0x180(%rbp)
+0x40442f:7:mov %rcx,-0x188(%rbp)
+0x404436:5:jmp 00000000004045a6 <main+0x1236>
+0x40443b:5:call 0000000000401160 <next_i>
+0x404440:5:mov $0x2,%ecx
+0x404445:1:cltd
+0x404446:2:idiv %ecx
+0x404448:6:imul $0xfffffffe,%edx,%ecx
+0x40444e:6:sub $0x1552e041,%ecx
+0x404454:3:add $0x1,%ecx
+0x404457:6:add $0x1552e041,%ecx
+0x40445d:6:mov %ecx,-0x18c(%rbp)
+0x404463:5:call 0000000000401160 <next_i>
+0x404468:6:mov -0x18c(%rbp),%ecx
+0x40446e:3:imul %eax,%ecx
+0x404471:4:mov -0x78(%rbp),%rsi
+0x404475:3:mov (%rsi),%rsi
+0x404478:4:mov -0x70(%rbp),%rdi
+0x40447c:3:movslq (%rdi),%rdi
+0x40447f:3:mov %ecx,(%rsi,%rdi,4)
+0x404482:10:movl $0xae05eb0a,-0xa8(%rbp)
+0x40448c:5:jmp 00000000004045a6 <main+0x1236>
+0x404491:4:mov -0x78(%rbp),%rax
+0x404495:3:mov (%rax),%rdi
+0x404498:7:mov -0x88(%rbp),%rax
+0x40449f:2:mov (%rax),%esi
+0x4044a1:5:call 0000000000401420 <_TIFFCheckFieldIsValidForCodec>
+0x4044a6:10:movabs $0x4050d6,%rdi
+0x4044b0:4:mov -0x68(%rbp),%rcx
+0x4044b4:2:mov %eax,(%rcx)
+0x4044b6:4:mov -0x68(%rbp),%rcx
+0x4044ba:2:mov (%rcx),%esi
+0x4044bc:2:mov $0x0,%al
+0x4044be:5:call 0000000000401040 <printf@plt>
+0x4044c3:4:mov -0x78(%rbp),%rcx
+0x4044c7:3:mov (%rcx),%rcx
+0x4044ca:3:mov %rcx,%rdi
+0x4044cd:6:mov %eax,-0x190(%rbp)
+0x4044d3:5:call 0000000000401030 <free@plt>
+0x4044d8:10:movl $0x9fb746ce,-0xa8(%rbp)
+0x4044e2:5:jmp 00000000004045a6 <main+0x1236>
+0x4044e7:4:mov -0x60(%rbp),%rax
+0x4044eb:6:movl $0xa,(%rax)
+0x4044f1:4:mov -0x58(%rbp),%rax
+0x4044f5:6:movl $0x64,(%rax)
+0x4044fb:4:mov -0x58(%rbp),%rax
+0x4044ff:3:movslq (%rax),%rax
+0x404502:4:shl $0x2,%rax
+0x404506:3:mov %rax,%rdi
+0x404509:5:call 0000000000401050 <malloc@plt>
+0x40450e:4:mov -0x50(%rbp),%rdi
+0x404512:3:mov %rax,(%rdi)
+0x404515:4:mov -0x48(%rbp),%rax
+0x404519:6:movl $0x0,(%rax)
+0x40451f:10:movl $0x4220cea1,-0xa8(%rbp)
+0x404529:5:jmp 00000000004045a6 <main+0x1236>
+0x40452e:4:mov -0x48(%rbp),%rax
+0x404532:2:mov (%rax),%ecx
+0x404534:6:sub $0x4d0863e3,%ecx
+0x40453a:3:add $0x1,%ecx
+0x40453d:6:add $0x4d0863e3,%ecx
+0x404543:4:mov -0x48(%rbp),%rax
+0x404547:2:mov %ecx,(%rax)
+0x404549:10:movl $0xff1f48ce,-0xa8(%rbp)
+0x404553:5:jmp 00000000004045a6 <main+0x1236>
+0x404558:4:mov -0x50(%rbp),%rax
+0x40455c:3:mov (%rax),%rdi
+0x40455f:4:mov -0x60(%rbp),%rax
+0x404563:2:mov (%rax),%esi
+0x404565:5:call 0000000000401420 <_TIFFCheckFieldIsValidForCodec>
+0x40456a:10:movabs $0x4050d6,%rdi
+0x404574:4:mov -0x40(%rbp),%rcx
+0x404578:2:mov %eax,(%rcx)
+0x40457a:4:mov -0x40(%rbp),%rcx
+0x40457e:2:mov (%rcx),%esi
+0x404580:2:mov $0x0,%al
+0x404582:5:call 0000000000401040 <printf@plt>
+0x404587:4:mov -0x50(%rbp),%rcx
+0x40458b:3:mov (%rcx),%rcx
+0x40458e:3:mov %rcx,%rdi
+0x404591:6:mov %eax,-0x194(%rbp)
+0x404597:5:call 0000000000401030 <free@plt>
+0x40459c:10:movl $0xdbfe463,-0xa8(%rbp)
+0x4045a6:5:jmp 00000000004033e4 <main+0x74>
+0x4045ac:4:endbr64
+0x4045b0:4:sub $0x8,%rsp
+0x4045b4:4:add $0x8,%rsp
+0x4045b8:1:ret
