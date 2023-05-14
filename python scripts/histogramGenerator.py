@@ -2,6 +2,7 @@
 	This code reads from Jotai Benchmarks files, compiles those codes, 
 	then generate the assembly instructions mapping, and control flow graph for each one of them.
 	To do so, the 'jotai-benchmarks' folder should be next to the 'python scripts' folder.
+	CFGGrind and Obfuscator-LLVM should be also installed next to the 'jotai-benchmarks' folder.
 
 	It uses no input, so to run it just do
 	python3 histogramGenerator.py
@@ -14,8 +15,9 @@ import subprocess
 def main():
 	compileFilesFrom("../jotai-benchmarks/benchmarks/anghaLeaves", "../binaries")
 	compileFilesFrom("../jotai-benchmarks/benchmarks/anghaMath", "../binaries")
-	generateCFGgrindMapsFrom("./binaries", "./maps")
+	generateCFGgrindMapsFrom("../binaries", "../maps")
 	generateDotFilesFrom("../binaries", "../cfg", "../maps", "../dots")
+	generateCFGgrindStatisticsFrom("../cfg", "../maps", "../statistics")
 
 def compileFilesFrom(folderPathPrograms, folderPathBinaries):
 	files = getFilesFrom(folderPathPrograms)
@@ -27,6 +29,7 @@ def compileFilesFrom(folderPathPrograms, folderPathBinaries):
 		if fileName not in filesNotCompilable():
 			print("Compiling file " + fileName + " -> " + str(count) + " / " + str(len(files)))
 			regularCompilation(fileName, folderPathPrograms, folderPathBinaries)
+			ollvmCompilation(fileName, folderPathPrograms, folderPathBinaries)
 
 def filesNotCompilable():
 	return ["a.out"]
@@ -41,6 +44,11 @@ def regularCompilation(fileName, folderPathPrograms, folderPathBinaries):
 	if osResult == 0:
 		os.system("cp " + "./a.out " + folderPathBinaries + "/" + fileName[:-2] + "-regular.out")
 
+def ollvmCompilation(fileName, folderPathPrograms, folderPathBinaries):
+	osResult = os.system("../build/bin/clang " + folderPathPrograms + "/" + fileName + " -o a.out -mllvm -sub -mllvm -fla -mllvm -bcf")
+	if osResult == 0:
+		os.system("cp " + "./a.out " + folderPathBinaries + "/" + fileName[:-2] + "-ollvm.out")
+
 def getFilesFrom(folderPath):
 	return next(os.walk(folderPath), (None, None, []))[2]
 
@@ -54,7 +62,6 @@ def generateCFGgrindMapsFrom(folderPathBinaries, folderPathMaps):
 		cfggrindAsMap(fileName, folderPathBinaries, folderPathMaps)
 
 def cfggrindAsMap(fileName, folderPathBinaries, folderPathMaps):
-	print("cfggrind_asmmap " + folderPathBinaries + "/" + fileName + " > " + folderPathMaps + "/" + fileName[:-4] + ".map")
 	os.system("cfggrind_asmmap " + folderPathBinaries + "/" + fileName + " > " + folderPathMaps + "/" + fileName[:-4] + ".map")
 
 def generateDotFilesFrom(folderPathBinaries, folderCfgFiles, folderPathMaps, folderPathDots):
@@ -80,6 +87,17 @@ def generateDotFile(fileName, folderPathBinaries, folderPathCfgs, folderPathMaps
 			os.system("cp " + "./" + dotfile + " " + folderPathDots + "/" + fileName[:-4] + ".dot")
 			os.system("rm ./" + dotfile)
 
+def generateCFGgrindStatisticsFrom(folderPathCfg, folderPathMaps, folderPathStatistics):
+	files = getFilesFrom(folderPathCfg)
+	createFolderIfNotExist(folderPathStatistics)
+	count = 0
+	for fileName in files:
+		count = count + 1
+		print("Generating statistics file " + fileName + " -> " + str(count) + " / " + str(len(files)))
+		cfggrindInfo(fileName, folderPathCfg, folderPathMaps, folderPathStatistics)
+
+def cfggrindInfo(fileName, folderPathCfg, folderPathMaps, folderPathStatistics):
+	os.system("cfggrind_info -s functions -f \"" + fileName[:-3]  + "out::main\" -i " + folderPathMaps + "/" +  fileName[:-3]  + "map -m json " + folderPathCfg + "/" + fileName[:-3] + "cfg  > " + folderPathStatistics + "/" + fileName[:-3] + "json")
 
 if __name__ == "__main__":
 	main()
