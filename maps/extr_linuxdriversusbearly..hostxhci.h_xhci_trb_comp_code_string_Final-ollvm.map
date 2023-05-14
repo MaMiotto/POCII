@@ -1,0 +1,2246 @@
+0x401000:4:endbr64
+0x401004:4:sub $0x8,%rsp
+0x401008:7:mov 0x4fe9(%rip),%rax
+0x40100f:3:test %rax,%rax
+0x401012:2:je 0000000000401016 <_init+0x16>
+0x401014:2:call *%rax
+0x401016:4:add $0x8,%rsp
+0x40101a:1:ret
+0x401020:6:push 0x4fe2(%rip)
+0x401026:6:jmp *0x4fe4(%rip)
+0x40102c:4:nopl 0x0(%rax)
+0x401030:6:jmp *0x4fe2(%rip)
+0x401036:5:push $0x0
+0x40103b:5:jmp 0000000000401020 <_init+0x20>
+0x401040:6:jmp *0x4fda(%rip)
+0x401046:5:push $0x1
+0x40104b:5:jmp 0000000000401020 <_init+0x20>
+0x401050:4:endbr64
+0x401054:2:xor %ebp,%ebp
+0x401056:3:mov %rdx,%r9
+0x401059:1:pop %rsi
+0x40105a:3:mov %rsp,%rdx
+0x40105d:4:and $0xfffffffffffffff0,%rsp
+0x401061:1:push %rax
+0x401062:1:push %rsp
+0x401063:3:xor %r8d,%r8d
+0x401066:2:xor %ecx,%ecx
+0x401068:7:mov $0x4031e0,%rdi
+0x40106f:6:call *0x4f7b(%rip)
+0x401075:1:hlt
+0x401076:10:cs nopw 0x0(%rax,%rax,1)
+0x401080:4:endbr64
+0x401084:1:ret
+0x401085:10:cs nopw 0x0(%rax,%rax,1)
+0x40108f:1:nop
+0x401090:5:mov $0x406038,%eax
+0x401095:6:cmp $0x406038,%rax
+0x40109b:2:je 00000000004010b0 <deregister_tm_clones+0x20>
+0x40109d:5:mov $0x0,%eax
+0x4010a2:3:test %rax,%rax
+0x4010a5:2:je 00000000004010b0 <deregister_tm_clones+0x20>
+0x4010a7:5:mov $0x406038,%edi
+0x4010ac:2:jmp *%rax
+0x4010ae:2:xchg %ax,%ax
+0x4010b0:1:ret
+0x4010b1:11:data16 cs nopw 0x0(%rax,%rax,1)
+0x4010bc:4:nopl 0x0(%rax)
+0x4010c0:5:mov $0x406038,%esi
+0x4010c5:7:sub $0x406038,%rsi
+0x4010cc:3:mov %rsi,%rax
+0x4010cf:4:shr $0x3f,%rsi
+0x4010d3:4:sar $0x3,%rax
+0x4010d7:3:add %rax,%rsi
+0x4010da:3:sar %rsi
+0x4010dd:2:je 00000000004010f0 <register_tm_clones+0x30>
+0x4010df:5:mov $0x0,%eax
+0x4010e4:3:test %rax,%rax
+0x4010e7:2:je 00000000004010f0 <register_tm_clones+0x30>
+0x4010e9:5:mov $0x406038,%edi
+0x4010ee:2:jmp *%rax
+0x4010f0:1:ret
+0x4010f1:11:data16 cs nopw 0x0(%rax,%rax,1)
+0x4010fc:4:nopl 0x0(%rax)
+0x401100:4:endbr64
+0x401104:7:cmpb $0x0,0x4f2d(%rip)
+0x40110b:2:jne 0000000000401120 <__do_global_dtors_aux+0x20>
+0x40110d:1:push %rbp
+0x40110e:3:mov %rsp,%rbp
+0x401111:5:call 0000000000401090 <deregister_tm_clones>
+0x401116:7:movb $0x1,0x4f1b(%rip)
+0x40111d:1:pop %rbp
+0x40111e:1:ret
+0x40111f:1:nop
+0x401120:1:ret
+0x401121:11:data16 cs nopw 0x0(%rax,%rax,1)
+0x40112c:4:nopl 0x0(%rax)
+0x401130:4:endbr64
+0x401134:2:jmp 00000000004010c0 <register_tm_clones>
+0x401136:10:cs nopw 0x0(%rax,%rax,1)
+0x401140:1:push %rbp
+0x401141:3:mov %rsp,%rbp
+0x401144:2:push %r15
+0x401146:2:push %r14
+0x401148:2:push %r13
+0x40114a:2:push %r12
+0x40114c:1:push %rbx
+0x40114d:4:sub $0x28,%rsp
+0x401151:7:mov 0x40604c,%eax
+0x401158:7:mov 0x406060,%ecx
+0x40115f:2:mov %eax,%edx
+0x401161:6:add $0x388c1d76,%edx
+0x401167:3:sub $0x1,%edx
+0x40116a:6:sub $0x388c1d76,%edx
+0x401170:3:imul %edx,%eax
+0x401173:3:and $0x1,%eax
+0x401176:3:cmp $0x0,%eax
+0x401179:4:sete %sil
+0x40117d:4:and $0x1,%sil
+0x401181:4:mov %sil,-0x2e(%rbp)
+0x401185:3:cmp $0xa,%ecx
+0x401188:4:setl %sil
+0x40118c:4:and $0x1,%sil
+0x401190:4:mov %sil,-0x2d(%rbp)
+0x401194:7:movl $0x1074534c,-0x34(%rbp)
+0x40119b:3:mov -0x34(%rbp),%eax
+0x40119e:2:mov %eax,%ecx
+0x4011a0:6:sub $0x87e60046,%ecx
+0x4011a6:3:mov %eax,-0x38(%rbp)
+0x4011a9:3:mov %ecx,-0x3c(%rbp)
+0x4011ac:6:je 000000000040122a <next_i+0xea>
+0x4011b2:5:jmp 00000000004011b7 <next_i+0x77>
+0x4011b7:3:mov -0x38(%rbp),%eax
+0x4011ba:5:sub $0x8a1b4bbb,%eax
+0x4011bf:3:mov %eax,-0x40(%rbp)
+0x4011c2:6:je 0000000000401315 <next_i+0x1d5>
+0x4011c8:5:jmp 00000000004011cd <next_i+0x8d>
+0x4011cd:3:mov -0x38(%rbp),%eax
+0x4011d0:5:sub $0xa63005d2,%eax
+0x4011d5:3:mov %eax,-0x44(%rbp)
+0x4011d8:6:je 0000000000401303 <next_i+0x1c3>
+0x4011de:5:jmp 00000000004011e3 <next_i+0xa3>
+0x4011e3:3:mov -0x38(%rbp),%eax
+0x4011e6:5:sub $0x1074534c,%eax
+0x4011eb:3:mov %eax,-0x48(%rbp)
+0x4011ee:6:je 00000000004011fe <next_i+0xbe>
+0x4011f4:5:jmp 00000000004011f9 <next_i+0xb9>
+0x4011f9:5:jmp 000000000040133f <next_i+0x1ff>
+0x4011fe:5:mov $0x8a1b4bbb,%eax
+0x401203:5:mov $0x87e60046,%ecx
+0x401208:3:mov -0x2e(%rbp),%dl
+0x40120b:4:mov -0x2d(%rbp),%sil
+0x40120f:3:mov %dl,%dil
+0x401212:3:and %sil,%dil
+0x401215:3:xor %sil,%dl
+0x401218:3:or %dl,%dil
+0x40121b:4:test $0x1,%dil
+0x40121f:3:cmovne %ecx,%eax
+0x401222:3:mov %eax,-0x34(%rbp)
+0x401225:5:jmp 000000000040133f <next_i+0x1ff>
+0x40122a:5:mov $0x8a1b4bbb,%eax
+0x40122f:5:mov $0xa63005d2,%ecx
+0x401234:2:mov $0x1,%dl
+0x401236:2:xor %esi,%esi
+0x401238:5:mov $0x19,%edi
+0x40123d:3:mov %rsp,%r8
+0x401240:4:add $0xfffffffffffffff0,%r8
+0x401244:3:mov %r8,%rsp
+0x401247:7:movl $0x0,(%r8)
+0x40124e:3:mov (%r8),%r9d
+0x401251:3:mov %esi,%r10d
+0x401254:3:sub %r9d,%r10d
+0x401257:3:mov %esi,%r9d
+0x40125a:4:sub $0x1,%r9d
+0x40125e:3:add %r9d,%r10d
+0x401261:3:mov %esi,%r9d
+0x401264:3:sub %r10d,%r9d
+0x401267:3:mov %r9d,(%r8)
+0x40126a:3:mov %eax,-0x4c(%rbp)
+0x40126d:3:mov %r9d,%eax
+0x401270:3:mov %dl,-0x4d(%rbp)
+0x401273:1:cltd
+0x401274:2:idiv %edi
+0x401276:3:movslq %edx,%r8
+0x401279:8:mov 0x404010(,%r8,4),%edx
+0x401281:3:mov %edx,-0x2c(%rbp)
+0x401284:7:mov 0x40604c,%edx
+0x40128b:7:mov 0x406060,%edi
+0x401292:3:sub $0x1,%esi
+0x401295:3:mov %edx,%r9d
+0x401298:3:add %esi,%r9d
+0x40129b:4:imul %r9d,%edx
+0x40129f:3:and $0x1,%edx
+0x4012a2:3:cmp $0x0,%edx
+0x4012a5:4:sete %r11b
+0x4012a9:3:cmp $0xa,%edi
+0x4012ac:3:setl %bl
+0x4012af:3:mov %r11b,%r14b
+0x4012b2:4:xor $0xff,%r14b
+0x4012b6:3:mov %bl,%r15b
+0x4012b9:4:xor $0xff,%r15b
+0x4012bd:4:mov -0x4d(%rbp),%r12b
+0x4012c1:4:xor $0x1,%r12b
+0x4012c5:3:mov %r14b,%r13b
+0x4012c8:4:and $0xff,%r13b
+0x4012cc:3:and %r12b,%r11b
+0x4012cf:3:mov %r15b,%dl
+0x4012d2:3:and $0xff,%dl
+0x4012d5:3:and %r12b,%bl
+0x4012d8:3:or %r11b,%r13b
+0x4012db:2:or %bl,%dl
+0x4012dd:3:xor %dl,%r13b
+0x4012e0:3:or %r15b,%r14b
+0x4012e3:4:xor $0xff,%r14b
+0x4012e7:4:or $0x1,%r12b
+0x4012eb:3:and %r12b,%r14b
+0x4012ee:3:or %r14b,%r13b
+0x4012f1:4:test $0x1,%r13b
+0x4012f5:3:mov -0x4c(%rbp),%esi
+0x4012f8:3:cmovne %ecx,%esi
+0x4012fb:3:mov %esi,-0x34(%rbp)
+0x4012fe:5:jmp 000000000040133f <next_i+0x1ff>
+0x401303:3:mov -0x2c(%rbp),%eax
+0x401306:4:lea -0x28(%rbp),%rsp
+0x40130a:1:pop %rbx
+0x40130b:2:pop %r12
+0x40130d:2:pop %r13
+0x40130f:2:pop %r14
+0x401311:2:pop %r15
+0x401313:1:pop %rbp
+0x401314:1:ret
+0x401315:2:xor %eax,%eax
+0x401317:3:mov %rsp,%rcx
+0x40131a:4:add $0xfffffffffffffff0,%rcx
+0x40131e:3:mov %rcx,%rsp
+0x401321:6:movl $0x0,(%rcx)
+0x401327:2:mov (%rcx),%edx
+0x401329:2:mov %eax,%esi
+0x40132b:2:sub %edx,%esi
+0x40132d:2:mov %eax,%edx
+0x40132f:3:sub $0x1,%edx
+0x401332:2:add %edx,%esi
+0x401334:2:sub %esi,%eax
+0x401336:2:mov %eax,(%rcx)
+0x401338:7:movl $0x87e60046,-0x34(%rbp)
+0x40133f:5:jmp 000000000040119b <next_i+0x5b>
+0x401344:12:data16 data16 cs nopw 0x0(%rax,%rax,1)
+0x401350:1:push %rbp
+0x401351:3:mov %rsp,%rbp
+0x401354:1:push %rbx
+0x401355:4:sub $0x28,%rsp
+0x401359:7:mov 0x406054,%eax
+0x401360:7:mov 0x406040,%ecx
+0x401367:2:mov %eax,%edx
+0x401369:6:sub $0xf6ea0dc5,%edx
+0x40136f:3:sub $0x1,%edx
+0x401372:6:add $0xf6ea0dc5,%edx
+0x401378:3:imul %edx,%eax
+0x40137b:3:and $0x1,%eax
+0x40137e:3:cmp $0x0,%eax
+0x401381:4:sete %sil
+0x401385:4:and $0x1,%sil
+0x401389:4:mov %sil,-0xe(%rbp)
+0x40138d:3:cmp $0xa,%ecx
+0x401390:4:setl %sil
+0x401394:4:and $0x1,%sil
+0x401398:4:mov %sil,-0xd(%rbp)
+0x40139c:7:movl $0xad8ca84b,-0x14(%rbp)
+0x4013a3:3:mov -0x14(%rbp),%eax
+0x4013a6:2:mov %eax,%ecx
+0x4013a8:6:sub $0xad8ca84b,%ecx
+0x4013ae:3:mov %eax,-0x18(%rbp)
+0x4013b1:3:mov %ecx,-0x1c(%rbp)
+0x4013b4:6:je 0000000000401406 <next_f+0xb6>
+0x4013ba:5:jmp 00000000004013bf <next_f+0x6f>
+0x4013bf:3:mov -0x18(%rbp),%eax
+0x4013c2:5:sub $0xc544253b,%eax
+0x4013c7:3:mov %eax,-0x20(%rbp)
+0x4013ca:6:je 000000000040154c <next_f+0x1fc>
+0x4013d0:5:jmp 00000000004013d5 <next_f+0x85>
+0x4013d5:3:mov -0x18(%rbp),%eax
+0x4013d8:5:sub $0xfe6492ba,%eax
+0x4013dd:3:mov %eax,-0x24(%rbp)
+0x4013e0:6:je 0000000000401467 <next_f+0x117>
+0x4013e6:5:jmp 00000000004013eb <next_f+0x9b>
+0x4013eb:3:mov -0x18(%rbp),%eax
+0x4013ee:5:sub $0x3c494bfe,%eax
+0x4013f3:3:mov %eax,-0x28(%rbp)
+0x4013f6:6:je 0000000000401540 <next_f+0x1f0>
+0x4013fc:5:jmp 0000000000401401 <next_f+0xb1>
+0x401401:5:jmp 0000000000401576 <next_f+0x226>
+0x401406:5:mov $0xc544253b,%eax
+0x40140b:5:mov $0xfe6492ba,%ecx
+0x401410:2:mov $0x1,%dl
+0x401412:4:mov -0xe(%rbp),%sil
+0x401416:4:mov -0xd(%rbp),%dil
+0x40141a:3:mov %sil,%r8b
+0x40141d:4:xor $0xff,%r8b
+0x401421:3:mov %dil,%r9b
+0x401424:4:xor $0xff,%r9b
+0x401428:3:xor $0x1,%dl
+0x40142b:3:mov %r8b,%r10b
+0x40142e:4:and $0xff,%r10b
+0x401432:3:and %dl,%sil
+0x401435:3:mov %r9b,%r11b
+0x401438:4:and $0xff,%r11b
+0x40143c:3:and %dl,%dil
+0x40143f:3:or %sil,%r10b
+0x401442:3:or %dil,%r11b
+0x401445:3:xor %r11b,%r10b
+0x401448:3:or %r9b,%r8b
+0x40144b:4:xor $0xff,%r8b
+0x40144f:3:or $0x1,%dl
+0x401452:3:and %dl,%r8b
+0x401455:3:or %r8b,%r10b
+0x401458:4:test $0x1,%r10b
+0x40145c:3:cmovne %ecx,%eax
+0x40145f:3:mov %eax,-0x14(%rbp)
+0x401462:5:jmp 0000000000401576 <next_f+0x226>
+0x401467:5:mov $0xc544253b,%eax
+0x40146c:5:mov $0x3c494bfe,%ecx
+0x401471:8:movss 0x2b8b(%rip),%xmm0
+0x401479:3:mov %rsp,%rdx
+0x40147c:3:mov %rdx,%rsi
+0x40147f:4:add $0xfffffffffffffff0,%rsi
+0x401483:3:mov %rsi,%rsp
+0x401486:7:movl $0x0,-0x10(%rdx)
+0x40148d:3:mov -0x10(%rdx),%edi
+0x401490:3:mov %edi,%r8d
+0x401493:3:inc %r8d
+0x401496:4:mov %r8d,-0x10(%rdx)
+0x40149a:3:movslq %r8d,%rdx
+0x40149d:7:imul $0x51eb851f,%rdx,%rdx
+0x4014a4:3:mov %rdx,%rsi
+0x4014a7:4:shr $0x3f,%rsi
+0x4014ab:3:mov %esi,%r8d
+0x4014ae:4:sar $0x23,%rdx
+0x4014b2:3:mov %edx,%r9d
+0x4014b5:3:add %r8d,%r9d
+0x4014b8:3:mov %r9d,%edx
+0x4014bb:4:lea (%rdx,%rdx,4),%r8d
+0x4014bf:3:mov %r8d,%edx
+0x4014c2:4:lea (%rdx,%rdx,4),%r8d
+0x4014c6:3:neg %r8d
+0x4014c9:3:mov %r8d,%edx
+0x4014cc:2:mov %edi,%esi
+0x4014ce:4:lea 0x1(%rsi,%rdx,1),%edi
+0x4014d2:3:movslq %edi,%rdx
+0x4014d5:7:mov 0x404010(,%rdx,4),%edi
+0x4014dc:2:mov %edi,%edx
+0x4014de:5:cvtsi2ss %rdx,%xmm1
+0x4014e3:4:divss %xmm0,%xmm1
+0x4014e7:5:movss %xmm1,-0xc(%rbp)
+0x4014ec:7:mov 0x406054,%edi
+0x4014f3:8:mov 0x406040,%r8d
+0x4014fb:3:mov %edi,%r9d
+0x4014fe:7:add $0xbe7ad502,%r9d
+0x401505:4:sub $0x1,%r9d
+0x401509:7:sub $0xbe7ad502,%r9d
+0x401510:4:imul %r9d,%edi
+0x401514:3:and $0x1,%edi
+0x401517:3:cmp $0x0,%edi
+0x40151a:4:sete %r10b
+0x40151e:4:cmp $0xa,%r8d
+0x401522:4:setl %r11b
+0x401526:3:mov %r10b,%bl
+0x401529:3:and %r11b,%bl
+0x40152c:3:xor %r11b,%r10b
+0x40152f:3:or %r10b,%bl
+0x401532:3:test $0x1,%bl
+0x401535:3:cmovne %ecx,%eax
+0x401538:3:mov %eax,-0x14(%rbp)
+0x40153b:5:jmp 0000000000401576 <next_f+0x226>
+0x401540:5:movss -0xc(%rbp),%xmm0
+0x401545:4:lea -0x8(%rbp),%rsp
+0x401549:1:pop %rbx
+0x40154a:1:pop %rbp
+0x40154b:1:ret
+0x40154c:2:xor %eax,%eax
+0x40154e:3:mov %rsp,%rcx
+0x401551:4:add $0xfffffffffffffff0,%rcx
+0x401555:3:mov %rcx,%rsp
+0x401558:6:movl $0x0,(%rcx)
+0x40155e:2:mov (%rcx),%edx
+0x401560:2:mov %eax,%esi
+0x401562:2:sub %edx,%esi
+0x401564:2:mov %eax,%edx
+0x401566:3:sub $0x1,%edx
+0x401569:2:add %edx,%esi
+0x40156b:2:sub %esi,%eax
+0x40156d:2:mov %eax,(%rcx)
+0x40156f:7:movl $0xfe6492ba,-0x14(%rbp)
+0x401576:5:jmp 00000000004013a3 <next_f+0x53>
+0x40157b:5:nopl 0x0(%rax,%rax,1)
+0x401580:1:push %rbp
+0x401581:3:mov %rsp,%rbp
+0x401584:4:sub $0x10,%rsp
+0x401588:10:movabs $0x404074,%rdi
+0x401592:10:movabs $0x404077,%rsi
+0x40159c:2:mov $0x0,%al
+0x40159e:5:call 0000000000401030 <printf@plt>
+0x4015a3:3:mov %eax,-0x4(%rbp)
+0x4015a6:4:add $0x10,%rsp
+0x4015aa:1:pop %rbp
+0x4015ab:1:ret
+0x4015ac:4:nopl 0x0(%rax)
+0x4015b0:1:push %rbp
+0x4015b1:3:mov %rsp,%rbp
+0x4015b4:2:push %r15
+0x4015b6:2:push %r14
+0x4015b8:2:push %r13
+0x4015ba:2:push %r12
+0x4015bc:1:push %rbx
+0x4015bd:7:sub $0x148,%rsp
+0x4015c4:3:mov %edi,-0x3c(%rbp)
+0x4015c7:3:mov -0x3c(%rbp),%edi
+0x4015ca:3:mov %edi,-0x2c(%rbp)
+0x4015cd:7:movl $0x472fc8b5,-0x40(%rbp)
+0x4015d4:3:mov -0x40(%rbp),%eax
+0x4015d7:2:mov %eax,%ecx
+0x4015d9:6:sub $0x87911732,%ecx
+0x4015df:3:mov %eax,-0x44(%rbp)
+0x4015e2:3:mov %ecx,-0x48(%rbp)
+0x4015e5:6:je 0000000000402462 <xhci_trb_comp_code_string+0xeb2>
+0x4015eb:5:jmp 00000000004015f0 <xhci_trb_comp_code_string+0x40>
+0x4015f0:3:mov -0x44(%rbp),%eax
+0x4015f3:5:sub $0x87b6c792,%eax
+0x4015f8:3:mov %eax,-0x4c(%rbp)
+0x4015fb:6:je 0000000000402f51 <xhci_trb_comp_code_string+0x19a1>
+0x401601:5:jmp 0000000000401606 <xhci_trb_comp_code_string+0x56>
+0x401606:3:mov -0x44(%rbp),%eax
+0x401609:5:sub $0x87e6d736,%eax
+0x40160e:3:mov %eax,-0x50(%rbp)
+0x401611:6:je 0000000000402fab <xhci_trb_comp_code_string+0x19fb>
+0x401617:5:jmp 000000000040161c <xhci_trb_comp_code_string+0x6c>
+0x40161c:3:mov -0x44(%rbp),%eax
+0x40161f:5:sub $0x88978efb,%eax
+0x401624:3:mov %eax,-0x54(%rbp)
+0x401627:6:je 00000000004025b2 <xhci_trb_comp_code_string+0x1002>
+0x40162d:5:jmp 0000000000401632 <xhci_trb_comp_code_string+0x82>
+0x401632:3:mov -0x44(%rbp),%eax
+0x401635:5:sub $0x89dc3347,%eax
+0x40163a:3:mov %eax,-0x58(%rbp)
+0x40163d:6:je 00000000004021ec <xhci_trb_comp_code_string+0xc3c>
+0x401643:5:jmp 0000000000401648 <xhci_trb_comp_code_string+0x98>
+0x401648:3:mov -0x44(%rbp),%eax
+0x40164b:5:sub $0x8c76b704,%eax
+0x401650:3:mov %eax,-0x5c(%rbp)
+0x401653:6:je 0000000000402cec <xhci_trb_comp_code_string+0x173c>
+0x401659:5:jmp 000000000040165e <xhci_trb_comp_code_string+0xae>
+0x40165e:3:mov -0x44(%rbp),%eax
+0x401661:5:sub $0x8e14f22d,%eax
+0x401666:3:mov %eax,-0x60(%rbp)
+0x401669:6:je 0000000000402b0b <xhci_trb_comp_code_string+0x155b>
+0x40166f:5:jmp 0000000000401674 <xhci_trb_comp_code_string+0xc4>
+0x401674:3:mov -0x44(%rbp),%eax
+0x401677:5:sub $0x90b98458,%eax
+0x40167c:3:mov %eax,-0x64(%rbp)
+0x40167f:6:je 000000000040220a <xhci_trb_comp_code_string+0xc5a>
+0x401685:5:jmp 000000000040168a <xhci_trb_comp_code_string+0xda>
+0x40168a:3:mov -0x44(%rbp),%eax
+0x40168d:5:sub $0x92b68b44,%eax
+0x401692:3:mov %eax,-0x68(%rbp)
+0x401695:6:je 0000000000402a84 <xhci_trb_comp_code_string+0x14d4>
+0x40169b:5:jmp 00000000004016a0 <xhci_trb_comp_code_string+0xf0>
+0x4016a0:3:mov -0x44(%rbp),%eax
+0x4016a3:5:sub $0x9306a7d6,%eax
+0x4016a8:3:mov %eax,-0x6c(%rbp)
+0x4016ab:6:je 000000000040269e <xhci_trb_comp_code_string+0x10ee>
+0x4016b1:5:jmp 00000000004016b6 <xhci_trb_comp_code_string+0x106>
+0x4016b6:3:mov -0x44(%rbp),%eax
+0x4016b9:5:sub $0x93f7abb1,%eax
+0x4016be:3:mov %eax,-0x70(%rbp)
+0x4016c1:6:je 00000000004029c0 <xhci_trb_comp_code_string+0x1410>
+0x4016c7:5:jmp 00000000004016cc <xhci_trb_comp_code_string+0x11c>
+0x4016cc:3:mov -0x44(%rbp),%eax
+0x4016cf:5:sub $0x953d3cd6,%eax
+0x4016d4:3:mov %eax,-0x74(%rbp)
+0x4016d7:6:je 000000000040295c <xhci_trb_comp_code_string+0x13ac>
+0x4016dd:5:jmp 00000000004016e2 <xhci_trb_comp_code_string+0x132>
+0x4016e2:3:mov -0x44(%rbp),%eax
+0x4016e5:5:sub $0x9c4ff96b,%eax
+0x4016ea:3:mov %eax,-0x78(%rbp)
+0x4016ed:6:je 00000000004023cc <xhci_trb_comp_code_string+0xe1c>
+0x4016f3:5:jmp 00000000004016f8 <xhci_trb_comp_code_string+0x148>
+0x4016f8:3:mov -0x44(%rbp),%eax
+0x4016fb:5:sub $0x9c595b14,%eax
+0x401700:3:mov %eax,-0x7c(%rbp)
+0x401703:6:je 0000000000402282 <xhci_trb_comp_code_string+0xcd2>
+0x401709:5:jmp 000000000040170e <xhci_trb_comp_code_string+0x15e>
+0x40170e:3:mov -0x44(%rbp),%eax
+0x401711:5:sub $0x9d77f6e2,%eax
+0x401716:3:mov %eax,-0x80(%rbp)
+0x401719:6:je 000000000040273a <xhci_trb_comp_code_string+0x118a>
+0x40171f:5:jmp 0000000000401724 <xhci_trb_comp_code_string+0x174>
+0x401724:3:mov -0x44(%rbp),%eax
+0x401727:5:sub $0xa31a10b8,%eax
+0x40172c:6:mov %eax,-0x84(%rbp)
+0x401732:6:je 0000000000402de4 <xhci_trb_comp_code_string+0x1834>
+0x401738:5:jmp 000000000040173d <xhci_trb_comp_code_string+0x18d>
+0x40173d:3:mov -0x44(%rbp),%eax
+0x401740:5:sub $0xa45e278f,%eax
+0x401745:6:mov %eax,-0x88(%rbp)
+0x40174b:6:je 0000000000402800 <xhci_trb_comp_code_string+0x1250>
+0x401751:5:jmp 0000000000401756 <xhci_trb_comp_code_string+0x1a6>
+0x401756:3:mov -0x44(%rbp),%eax
+0x401759:5:sub $0xa53dfc53,%eax
+0x40175e:6:mov %eax,-0x8c(%rbp)
+0x401764:6:je 00000000004020de <xhci_trb_comp_code_string+0xb2e>
+0x40176a:5:jmp 000000000040176f <xhci_trb_comp_code_string+0x1bf>
+0x40176f:3:mov -0x44(%rbp),%eax
+0x401772:5:sub $0xa6bdf89b,%eax
+0x401777:6:mov %eax,-0x90(%rbp)
+0x40177d:6:je 0000000000402792 <xhci_trb_comp_code_string+0x11e2>
+0x401783:5:jmp 0000000000401788 <xhci_trb_comp_code_string+0x1d8>
+0x401788:3:mov -0x44(%rbp),%eax
+0x40178b:5:sub $0xa750994a,%eax
+0x401790:6:mov %eax,-0x94(%rbp)
+0x401796:6:je 00000000004023ae <xhci_trb_comp_code_string+0xdfe>
+0x40179c:5:jmp 00000000004017a1 <xhci_trb_comp_code_string+0x1f1>
+0x4017a1:3:mov -0x44(%rbp),%eax
+0x4017a4:5:sub $0xa7dcc375,%eax
+0x4017a9:6:mov %eax,-0x98(%rbp)
+0x4017af:6:je 0000000000402354 <xhci_trb_comp_code_string+0xda4>
+0x4017b5:5:jmp 00000000004017ba <xhci_trb_comp_code_string+0x20a>
+0x4017ba:3:mov -0x44(%rbp),%eax
+0x4017bd:5:sub $0xb3bba80d,%eax
+0x4017c2:6:mov %eax,-0x9c(%rbp)
+0x4017c8:6:je 00000000004023ea <xhci_trb_comp_code_string+0xe3a>
+0x4017ce:5:jmp 00000000004017d3 <xhci_trb_comp_code_string+0x223>
+0x4017d3:3:mov -0x44(%rbp),%eax
+0x4017d6:5:sub $0xb525fdb6,%eax
+0x4017db:6:mov %eax,-0xa0(%rbp)
+0x4017e1:6:je 0000000000402d06 <xhci_trb_comp_code_string+0x1756>
+0x4017e7:5:jmp 00000000004017ec <xhci_trb_comp_code_string+0x23c>
+0x4017ec:3:mov -0x44(%rbp),%eax
+0x4017ef:5:sub $0xb7040505,%eax
+0x4017f4:6:mov %eax,-0xa4(%rbp)
+0x4017fa:6:je 0000000000402084 <xhci_trb_comp_code_string+0xad4>
+0x401800:5:jmp 0000000000401805 <xhci_trb_comp_code_string+0x255>
+0x401805:3:mov -0x44(%rbp),%eax
+0x401808:5:sub $0xbc6d645f,%eax
+0x40180d:6:mov %eax,-0xa8(%rbp)
+0x401813:6:je 00000000004021ce <xhci_trb_comp_code_string+0xc1e>
+0x401819:5:jmp 000000000040181e <xhci_trb_comp_code_string+0x26e>
+0x40181e:3:mov -0x44(%rbp),%eax
+0x401821:5:sub $0xbf12c12e,%eax
+0x401826:6:mov %eax,-0xac(%rbp)
+0x40182c:6:je 000000000040319f <xhci_trb_comp_code_string+0x1bef>
+0x401832:5:jmp 0000000000401837 <xhci_trb_comp_code_string+0x287>
+0x401837:3:mov -0x44(%rbp),%eax
+0x40183a:5:sub $0xc6f28251,%eax
+0x40183f:6:mov %eax,-0xb0(%rbp)
+0x401845:6:je 0000000000402a6a <xhci_trb_comp_code_string+0x14ba>
+0x40184b:5:jmp 0000000000401850 <xhci_trb_comp_code_string+0x2a0>
+0x401850:3:mov -0x44(%rbp),%eax
+0x401853:5:sub $0xc8120b03,%eax
+0x401858:6:mov %eax,-0xb4(%rbp)
+0x40185e:6:je 00000000004020fc <xhci_trb_comp_code_string+0xb4c>
+0x401864:5:jmp 0000000000401869 <xhci_trb_comp_code_string+0x2b9>
+0x401869:3:mov -0x44(%rbp),%eax
+0x40186c:5:sub $0xcc3dd476,%eax
+0x401871:6:mov %eax,-0xb8(%rbp)
+0x401877:6:je 00000000004028c4 <xhci_trb_comp_code_string+0x1314>
+0x40187d:5:jmp 0000000000401882 <xhci_trb_comp_code_string+0x2d2>
+0x401882:3:mov -0x44(%rbp),%eax
+0x401885:5:sub $0xcc4800a7,%eax
+0x40188a:6:mov %eax,-0xbc(%rbp)
+0x401890:6:je 00000000004024ca <xhci_trb_comp_code_string+0xf1a>
+0x401896:5:jmp 000000000040189b <xhci_trb_comp_code_string+0x2eb>
+0x40189b:3:mov -0x44(%rbp),%eax
+0x40189e:5:sub $0xcc60e905,%eax
+0x4018a3:6:mov %eax,-0xc0(%rbp)
+0x4018a9:6:je 00000000004022a0 <xhci_trb_comp_code_string+0xcf0>
+0x4018af:5:jmp 00000000004018b4 <xhci_trb_comp_code_string+0x304>
+0x4018b4:3:mov -0x44(%rbp),%eax
+0x4018b7:5:sub $0xce02953b,%eax
+0x4018bc:6:mov %eax,-0xc4(%rbp)
+0x4018c2:6:je 00000000004030ad <xhci_trb_comp_code_string+0x1afd>
+0x4018c8:5:jmp 00000000004018cd <xhci_trb_comp_code_string+0x31d>
+0x4018cd:3:mov -0x44(%rbp),%eax
+0x4018d0:5:sub $0xd3b100b0,%eax
+0x4018d5:6:mov %eax,-0xc8(%rbp)
+0x4018db:6:je 0000000000403151 <xhci_trb_comp_code_string+0x1ba1>
+0x4018e1:5:jmp 00000000004018e6 <xhci_trb_comp_code_string+0x336>
+0x4018e6:3:mov -0x44(%rbp),%eax
+0x4018e9:5:sub $0xdaad8e3a,%eax
+0x4018ee:6:mov %eax,-0xcc(%rbp)
+0x4018f4:6:je 0000000000402264 <xhci_trb_comp_code_string+0xcb4>
+0x4018fa:5:jmp 00000000004018ff <xhci_trb_comp_code_string+0x34f>
+0x4018ff:3:mov -0x44(%rbp),%eax
+0x401902:5:sub $0xdc274606,%eax
+0x401907:6:mov %eax,-0xd0(%rbp)
+0x40190d:6:je 0000000000402228 <xhci_trb_comp_code_string+0xc78>
+0x401913:5:jmp 0000000000401918 <xhci_trb_comp_code_string+0x368>
+0x401918:3:mov -0x44(%rbp),%eax
+0x40191b:5:sub $0xdcd0163d,%eax
+0x401920:6:mov %eax,-0xd4(%rbp)
+0x401926:6:je 0000000000402d3a <xhci_trb_comp_code_string+0x178a>
+0x40192c:5:jmp 0000000000401931 <xhci_trb_comp_code_string+0x381>
+0x401931:3:mov -0x44(%rbp),%eax
+0x401934:5:sub $0xdddef4cb,%eax
+0x401939:6:mov %eax,-0xd8(%rbp)
+0x40193f:6:je 0000000000402550 <xhci_trb_comp_code_string+0xfa0>
+0x401945:5:jmp 000000000040194a <xhci_trb_comp_code_string+0x39a>
+0x40194a:3:mov -0x44(%rbp),%eax
+0x40194d:5:sub $0xdfe45603,%eax
+0x401952:6:mov %eax,-0xdc(%rbp)
+0x401958:6:je 000000000040202a <xhci_trb_comp_code_string+0xa7a>
+0x40195e:5:jmp 0000000000401963 <xhci_trb_comp_code_string+0x3b3>
+0x401963:3:mov -0x44(%rbp),%eax
+0x401966:5:sub $0xe28ba7de,%eax
+0x40196b:6:mov %eax,-0xe0(%rbp)
+0x401971:6:je 00000000004027f4 <xhci_trb_comp_code_string+0x1244>
+0x401977:5:jmp 000000000040197c <xhci_trb_comp_code_string+0x3cc>
+0x40197c:3:mov -0x44(%rbp),%eax
+0x40197f:5:sub $0xe30cead7,%eax
+0x401984:6:mov %eax,-0xe4(%rbp)
+0x40198a:6:je 00000000004024b0 <xhci_trb_comp_code_string+0xf00>
+0x401990:5:jmp 0000000000401995 <xhci_trb_comp_code_string+0x3e5>
+0x401995:3:mov -0x44(%rbp),%eax
+0x401998:5:sub $0xe3800931,%eax
+0x40199d:6:mov %eax,-0xe8(%rbp)
+0x4019a3:6:je 0000000000402968 <xhci_trb_comp_code_string+0x13b8>
+0x4019a9:5:jmp 00000000004019ae <xhci_trb_comp_code_string+0x3fe>
+0x4019ae:3:mov -0x44(%rbp),%eax
+0x4019b1:5:sub $0xe437b010,%eax
+0x4019b6:6:mov %eax,-0xec(%rbp)
+0x4019bc:6:je 0000000000402496 <xhci_trb_comp_code_string+0xee6>
+0x4019c2:5:jmp 00000000004019c7 <xhci_trb_comp_code_string+0x417>
+0x4019c7:3:mov -0x44(%rbp),%eax
+0x4019ca:5:sub $0xe5ba5572,%eax
+0x4019cf:6:mov %eax,-0xf0(%rbp)
+0x4019d5:6:je 0000000000402408 <xhci_trb_comp_code_string+0xe58>
+0x4019db:5:jmp 00000000004019e0 <xhci_trb_comp_code_string+0x430>
+0x4019e0:3:mov -0x44(%rbp),%eax
+0x4019e3:5:sub $0xe9006ef5,%eax
+0x4019e8:6:mov %eax,-0xf4(%rbp)
+0x4019ee:6:je 000000000040316b <xhci_trb_comp_code_string+0x1bbb>
+0x4019f4:5:jmp 00000000004019f9 <xhci_trb_comp_code_string+0x449>
+0x4019f9:3:mov -0x44(%rbp),%eax
+0x4019fc:5:sub $0xea5e1148,%eax
+0x401a01:6:mov %eax,-0xf8(%rbp)
+0x401a07:6:je 0000000000402bea <xhci_trb_comp_code_string+0x163a>
+0x401a0d:5:jmp 0000000000401a12 <xhci_trb_comp_code_string+0x462>
+0x401a12:3:mov -0x44(%rbp),%eax
+0x401a15:5:sub $0xef79f8ad,%eax
+0x401a1a:6:mov %eax,-0xfc(%rbp)
+0x401a20:6:je 0000000000402f5d <xhci_trb_comp_code_string+0x19ad>
+0x401a26:5:jmp 0000000000401a2b <xhci_trb_comp_code_string+0x47b>
+0x401a2b:3:mov -0x44(%rbp),%eax
+0x401a2e:5:sub $0xf0374ab5,%eax
+0x401a33:6:mov %eax,-0x100(%rbp)
+0x401a39:6:je 0000000000402246 <xhci_trb_comp_code_string+0xc96>
+0x401a3f:5:jmp 0000000000401a44 <xhci_trb_comp_code_string+0x494>
+0x401a44:3:mov -0x44(%rbp),%eax
+0x401a47:5:sub $0xf18160b3,%eax
+0x401a4c:6:mov %eax,-0x104(%rbp)
+0x401a52:6:je 00000000004030b9 <xhci_trb_comp_code_string+0x1b09>
+0x401a58:5:jmp 0000000000401a5d <xhci_trb_comp_code_string+0x4ad>
+0x401a5d:3:mov -0x44(%rbp),%eax
+0x401a60:5:sub $0xf1fb1b91,%eax
+0x401a65:6:mov %eax,-0x108(%rbp)
+0x401a6b:6:je 0000000000402706 <xhci_trb_comp_code_string+0x1156>
+0x401a71:5:jmp 0000000000401a76 <xhci_trb_comp_code_string+0x4c6>
+0x401a76:3:mov -0x44(%rbp),%eax
+0x401a79:5:sub $0xf4022d82,%eax
+0x401a7e:6:mov %eax,-0x10c(%rbp)
+0x401a84:6:je 000000000040311d <xhci_trb_comp_code_string+0x1b6d>
+0x401a8a:5:jmp 0000000000401a8f <xhci_trb_comp_code_string+0x4df>
+0x401a8f:3:mov -0x44(%rbp),%eax
+0x401a92:5:sub $0xf43c5fb3,%eax
+0x401a97:6:mov %eax,-0x110(%rbp)
+0x401a9d:6:je 0000000000402444 <xhci_trb_comp_code_string+0xe94>
+0x401aa3:5:jmp 0000000000401aa8 <xhci_trb_comp_code_string+0x4f8>
+0x401aa8:3:mov -0x44(%rbp),%eax
+0x401aab:5:sub $0xf62ef35a,%eax
+0x401ab0:6:mov %eax,-0x114(%rbp)
+0x401ab6:6:je 000000000040300f <xhci_trb_comp_code_string+0x1a5f>
+0x401abc:5:jmp 0000000000401ac1 <xhci_trb_comp_code_string+0x511>
+0x401ac1:3:mov -0x44(%rbp),%eax
+0x401ac4:5:sub $0xf643b645,%eax
+0x401ac9:6:mov %eax,-0x118(%rbp)
+0x401acf:6:je 0000000000402a9e <xhci_trb_comp_code_string+0x14ee>
+0x401ad5:5:jmp 0000000000401ada <xhci_trb_comp_code_string+0x52a>
+0x401ada:3:mov -0x44(%rbp),%eax
+0x401add:5:sub $0xf80340b8,%eax
+0x401ae2:6:mov %eax,-0x11c(%rbp)
+0x401ae8:6:je 00000000004026b8 <xhci_trb_comp_code_string+0x1108>
+0x401aee:5:jmp 0000000000401af3 <xhci_trb_comp_code_string+0x543>
+0x401af3:3:mov -0x44(%rbp),%eax
+0x401af6:5:sub $0xf87a43a8,%eax
+0x401afb:6:mov %eax,-0x120(%rbp)
+0x401b01:6:je 0000000000402bb6 <xhci_trb_comp_code_string+0x1606>
+0x401b07:5:jmp 0000000000401b0c <xhci_trb_comp_code_string+0x55c>
+0x401b0c:3:mov -0x44(%rbp),%eax
+0x401b0f:5:sub $0xf8e64ddb,%eax
+0x401b14:6:mov %eax,-0x124(%rbp)
+0x401b1a:6:je 0000000000402b9c <xhci_trb_comp_code_string+0x15ec>
+0x401b20:5:jmp 0000000000401b25 <xhci_trb_comp_code_string+0x575>
+0x401b25:3:mov -0x44(%rbp),%eax
+0x401b28:5:sub $0xf96836f3,%eax
+0x401b2d:6:mov %eax,-0x128(%rbp)
+0x401b33:6:je 0000000000402066 <xhci_trb_comp_code_string+0xab6>
+0x401b39:5:jmp 0000000000401b3e <xhci_trb_comp_code_string+0x58e>
+0x401b3e:3:mov -0x44(%rbp),%eax
+0x401b41:5:sub $0xfaa04b95,%eax
+0x401b46:6:mov %eax,-0x12c(%rbp)
+0x401b4c:6:je 00000000004026d2 <xhci_trb_comp_code_string+0x1122>
+0x401b52:5:jmp 0000000000401b57 <xhci_trb_comp_code_string+0x5a7>
+0x401b57:3:mov -0x44(%rbp),%eax
+0x401b5a:5:sub $0xff2240fa,%eax
+0x401b5f:6:mov %eax,-0x130(%rbp)
+0x401b65:6:je 0000000000402d54 <xhci_trb_comp_code_string+0x17a4>
+0x401b6b:5:jmp 0000000000401b70 <xhci_trb_comp_code_string+0x5c0>
+0x401b70:3:mov -0x44(%rbp),%eax
+0x401b73:5:sub $0xff6898a7,%eax
+0x401b78:6:mov %eax,-0x134(%rbp)
+0x401b7e:6:je 0000000000402fb7 <xhci_trb_comp_code_string+0x1a07>
+0x401b84:5:jmp 0000000000401b89 <xhci_trb_comp_code_string+0x5d9>
+0x401b89:3:mov -0x44(%rbp),%eax
+0x401b8c:5:sub $0xf99185,%eax
+0x401b91:6:mov %eax,-0x138(%rbp)
+0x401b97:6:je 0000000000403137 <xhci_trb_comp_code_string+0x1b87>
+0x401b9d:5:jmp 0000000000401ba2 <xhci_trb_comp_code_string+0x5f2>
+0x401ba2:3:mov -0x44(%rbp),%eax
+0x401ba5:5:sub $0x11747da,%eax
+0x401baa:6:mov %eax,-0x13c(%rbp)
+0x401bb0:6:je 0000000000402bd0 <xhci_trb_comp_code_string+0x1620>
+0x401bb6:5:jmp 0000000000401bbb <xhci_trb_comp_code_string+0x60b>
+0x401bbb:3:mov -0x44(%rbp),%eax
+0x401bbe:5:sub $0x4388c93,%eax
+0x401bc3:6:mov %eax,-0x140(%rbp)
+0x401bc9:6:je 0000000000402336 <xhci_trb_comp_code_string+0xd86>
+0x401bcf:5:jmp 0000000000401bd4 <xhci_trb_comp_code_string+0x624>
+0x401bd4:3:mov -0x44(%rbp),%eax
+0x401bd7:5:sub $0x4e41bae,%eax
+0x401bdc:6:mov %eax,-0x144(%rbp)
+0x401be2:6:je 0000000000402b82 <xhci_trb_comp_code_string+0x15d2>
+0x401be8:5:jmp 0000000000401bed <xhci_trb_comp_code_string+0x63d>
+0x401bed:3:mov -0x44(%rbp),%eax
+0x401bf0:5:sub $0x75d3e38,%eax
+0x401bf5:6:mov %eax,-0x148(%rbp)
+0x401bfb:6:je 0000000000402426 <xhci_trb_comp_code_string+0xe76>
+0x401c01:5:jmp 0000000000401c06 <xhci_trb_comp_code_string+0x656>
+0x401c06:3:mov -0x44(%rbp),%eax
+0x401c09:5:sub $0x8965d83,%eax
+0x401c0e:6:mov %eax,-0x14c(%rbp)
+0x401c14:6:je 000000000040247c <xhci_trb_comp_code_string+0xecc>
+0x401c1a:5:jmp 0000000000401c1f <xhci_trb_comp_code_string+0x66f>
+0x401c1f:3:mov -0x44(%rbp),%eax
+0x401c22:5:sub $0xbd4544c,%eax
+0x401c27:6:mov %eax,-0x150(%rbp)
+0x401c2d:6:je 0000000000402192 <xhci_trb_comp_code_string+0xbe2>
+0x401c33:5:jmp 0000000000401c38 <xhci_trb_comp_code_string+0x688>
+0x401c38:3:mov -0x44(%rbp),%eax
+0x401c3b:5:sub $0x10c68edf,%eax
+0x401c40:6:mov %eax,-0x154(%rbp)
+0x401c46:6:je 0000000000402720 <xhci_trb_comp_code_string+0x1170>
+0x401c4c:5:jmp 0000000000401c51 <xhci_trb_comp_code_string+0x6a1>
+0x401c51:3:mov -0x44(%rbp),%eax
+0x401c54:5:sub $0x123f71d3,%eax
+0x401c59:6:mov %eax,-0x158(%rbp)
+0x401c5f:6:je 0000000000403185 <xhci_trb_comp_code_string+0x1bd5>
+0x401c65:5:jmp 0000000000401c6a <xhci_trb_comp_code_string+0x6ba>
+0x401c6a:3:mov -0x44(%rbp),%eax
+0x401c6d:5:sub $0x157ff028,%eax
+0x401c72:6:mov %eax,-0x15c(%rbp)
+0x401c78:6:je 00000000004020a2 <xhci_trb_comp_code_string+0xaf2>
+0x401c7e:5:jmp 0000000000401c83 <xhci_trb_comp_code_string+0x6d3>
+0x401c83:3:mov -0x44(%rbp),%eax
+0x401c86:5:sub $0x168e3769,%eax
+0x401c8b:6:mov %eax,-0x160(%rbp)
+0x401c91:6:je 00000000004022fa <xhci_trb_comp_code_string+0xd4a>
+0x401c97:5:jmp 0000000000401c9c <xhci_trb_comp_code_string+0x6ec>
+0x401c9c:3:mov -0x44(%rbp),%eax
+0x401c9f:5:sub $0x1a0271d7,%eax
+0x401ca4:6:mov %eax,-0x164(%rbp)
+0x401caa:6:je 0000000000402318 <xhci_trb_comp_code_string+0xd68>
+0x401cb0:5:jmp 0000000000401cb5 <xhci_trb_comp_code_string+0x705>
+0x401cb5:3:mov -0x44(%rbp),%eax
+0x401cb8:5:sub $0x1dbf230e,%eax
+0x401cbd:6:mov %eax,-0x168(%rbp)
+0x401cc3:6:je 0000000000402ab8 <xhci_trb_comp_code_string+0x1508>
+0x401cc9:5:jmp 0000000000401cce <xhci_trb_comp_code_string+0x71e>
+0x401cce:3:mov -0x44(%rbp),%eax
+0x401cd1:5:sub $0x1e1690bc,%eax
+0x401cd6:6:mov %eax,-0x16c(%rbp)
+0x401cdc:6:je 00000000004020c0 <xhci_trb_comp_code_string+0xb10>
+0x401ce2:5:jmp 0000000000401ce7 <xhci_trb_comp_code_string+0x737>
+0x401ce7:3:mov -0x44(%rbp),%eax
+0x401cea:5:sub $0x21fb7673,%eax
+0x401cef:6:mov %eax,-0x170(%rbp)
+0x401cf5:6:je 0000000000402f77 <xhci_trb_comp_code_string+0x19c7>
+0x401cfb:5:jmp 0000000000401d00 <xhci_trb_comp_code_string+0x750>
+0x401d00:3:mov -0x44(%rbp),%eax
+0x401d03:5:sub $0x28204f16,%eax
+0x401d08:6:mov %eax,-0x174(%rbp)
+0x401d0e:6:je 00000000004022be <xhci_trb_comp_code_string+0xd0e>
+0x401d14:5:jmp 0000000000401d19 <xhci_trb_comp_code_string+0x769>
+0x401d19:3:mov -0x44(%rbp),%eax
+0x401d1c:5:sub $0x2ac9a50d,%eax
+0x401d21:6:mov %eax,-0x178(%rbp)
+0x401d27:6:je 0000000000402ce0 <xhci_trb_comp_code_string+0x1730>
+0x401d2d:5:jmp 0000000000401d32 <xhci_trb_comp_code_string+0x782>
+0x401d32:3:mov -0x44(%rbp),%eax
+0x401d35:5:sub $0x2b6f59ef,%eax
+0x401d3a:6:mov %eax,-0x17c(%rbp)
+0x401d40:6:je 0000000000402c42 <xhci_trb_comp_code_string+0x1692>
+0x401d46:5:jmp 0000000000401d4b <xhci_trb_comp_code_string+0x79b>
+0x401d4b:3:mov -0x44(%rbp),%eax
+0x401d4e:5:sub $0x2d1fb530,%eax
+0x401d53:6:mov %eax,-0x180(%rbp)
+0x401d59:6:je 0000000000402678 <xhci_trb_comp_code_string+0x10c8>
+0x401d5f:5:jmp 0000000000401d64 <xhci_trb_comp_code_string+0x7b4>
+0x401d64:3:mov -0x44(%rbp),%eax
+0x401d67:5:sub $0x3088fdf9,%eax
+0x401d6c:6:mov %eax,-0x184(%rbp)
+0x401d72:6:je 0000000000403103 <xhci_trb_comp_code_string+0x1b53>
+0x401d78:5:jmp 0000000000401d7d <xhci_trb_comp_code_string+0x7cd>
+0x401d7d:3:mov -0x44(%rbp),%eax
+0x401d80:5:sub $0x312e1525,%eax
+0x401d85:6:mov %eax,-0x188(%rbp)
+0x401d8b:6:je 00000000004022dc <xhci_trb_comp_code_string+0xd2c>
+0x401d91:5:jmp 0000000000401d96 <xhci_trb_comp_code_string+0x7e6>
+0x401d96:3:mov -0x44(%rbp),%eax
+0x401d99:5:sub $0x31a0f1fa,%eax
+0x401d9e:6:mov %eax,-0x18c(%rbp)
+0x401da4:6:je 0000000000402a5e <xhci_trb_comp_code_string+0x14ae>
+0x401daa:5:jmp 0000000000401daf <xhci_trb_comp_code_string+0x7ff>
+0x401daf:3:mov -0x44(%rbp),%eax
+0x401db2:5:sub $0x380e256f,%eax
+0x401db7:6:mov %eax,-0x190(%rbp)
+0x401dbd:6:je 00000000004021b0 <xhci_trb_comp_code_string+0xc00>
+0x401dc3:5:jmp 0000000000401dc8 <xhci_trb_comp_code_string+0x818>
+0x401dc8:3:mov -0x44(%rbp),%eax
+0x401dcb:5:sub $0x38f0ac11,%eax
+0x401dd0:6:mov %eax,-0x194(%rbp)
+0x401dd6:6:je 0000000000402048 <xhci_trb_comp_code_string+0xa98>
+0x401ddc:5:jmp 0000000000401de1 <xhci_trb_comp_code_string+0x831>
+0x401de1:3:mov -0x44(%rbp),%eax
+0x401de4:5:sub $0x3e91008b,%eax
+0x401de9:6:mov %eax,-0x198(%rbp)
+0x401def:6:je 0000000000402390 <xhci_trb_comp_code_string+0xde0>
+0x401df5:5:jmp 0000000000401dfa <xhci_trb_comp_code_string+0x84a>
+0x401dfa:3:mov -0x44(%rbp),%eax
+0x401dfd:5:sub $0x4059b1a9,%eax
+0x401e02:6:mov %eax,-0x19c(%rbp)
+0x401e08:6:je 0000000000402156 <xhci_trb_comp_code_string+0xba6>
+0x401e0e:5:jmp 0000000000401e13 <xhci_trb_comp_code_string+0x863>
+0x401e13:3:mov -0x44(%rbp),%eax
+0x401e16:5:sub $0x4115ee6c,%eax
+0x401e1b:6:mov %eax,-0x1a0(%rbp)
+0x401e21:6:je 00000000004030e9 <xhci_trb_comp_code_string+0x1b39>
+0x401e27:5:jmp 0000000000401e2c <xhci_trb_comp_code_string+0x87c>
+0x401e2c:3:mov -0x44(%rbp),%eax
+0x401e2f:5:sub $0x472fc8b5,%eax
+0x401e34:6:mov %eax,-0x1a4(%rbp)
+0x401e3a:6:je 000000000040200c <xhci_trb_comp_code_string+0xa5c>
+0x401e40:5:jmp 0000000000401e45 <xhci_trb_comp_code_string+0x895>
+0x401e45:3:mov -0x44(%rbp),%eax
+0x401e48:5:sub $0x4a444de6,%eax
+0x401e4d:6:mov %eax,-0x1a8(%rbp)
+0x401e53:6:je 000000000040281a <xhci_trb_comp_code_string+0x126a>
+0x401e59:5:jmp 0000000000401e5e <xhci_trb_comp_code_string+0x8ae>
+0x401e5e:3:mov -0x44(%rbp),%eax
+0x401e61:5:sub $0x4f96570b,%eax
+0x401e66:6:mov %eax,-0x1ac(%rbp)
+0x401e6c:6:je 00000000004030cf <xhci_trb_comp_code_string+0x1b1f>
+0x401e72:5:jmp 0000000000401e77 <xhci_trb_comp_code_string+0x8c7>
+0x401e77:3:mov -0x44(%rbp),%eax
+0x401e7a:5:sub $0x4fe8f5d8,%eax
+0x401e7f:6:mov %eax,-0x1b0(%rbp)
+0x401e85:6:je 0000000000402b76 <xhci_trb_comp_code_string+0x15c6>
+0x401e8b:5:jmp 0000000000401e90 <xhci_trb_comp_code_string+0x8e0>
+0x401e90:3:mov -0x44(%rbp),%eax
+0x401e93:5:sub $0x528a93ea,%eax
+0x401e98:6:mov %eax,-0x1b4(%rbp)
+0x401e9e:6:je 00000000004025be <xhci_trb_comp_code_string+0x100e>
+0x401ea4:5:jmp 0000000000401ea9 <xhci_trb_comp_code_string+0x8f9>
+0x401ea9:3:mov -0x44(%rbp),%eax
+0x401eac:5:sub $0x53faebf4,%eax
+0x401eb1:6:mov %eax,-0x1b8(%rbp)
+0x401eb7:6:je 0000000000402e5b <xhci_trb_comp_code_string+0x18ab>
+0x401ebd:5:jmp 0000000000401ec2 <xhci_trb_comp_code_string+0x912>
+0x401ec2:3:mov -0x44(%rbp),%eax
+0x401ec5:5:sub $0x5dcd8cc6,%eax
+0x401eca:6:mov %eax,-0x1bc(%rbp)
+0x401ed0:6:je 0000000000402f91 <xhci_trb_comp_code_string+0x19e1>
+0x401ed6:5:jmp 0000000000401edb <xhci_trb_comp_code_string+0x92b>
+0x401edb:3:mov -0x44(%rbp),%eax
+0x401ede:5:sub $0x62ffb83a,%eax
+0x401ee3:6:mov %eax,-0x1c0(%rbp)
+0x401ee9:6:je 000000000040211a <xhci_trb_comp_code_string+0xb6a>
+0x401eef:5:jmp 0000000000401ef4 <xhci_trb_comp_code_string+0x944>
+0x401ef4:3:mov -0x44(%rbp),%eax
+0x401ef7:5:sub $0x6336822e,%eax
+0x401efc:6:mov %eax,-0x1c4(%rbp)
+0x401f02:6:je 0000000000402d20 <xhci_trb_comp_code_string+0x1770>
+0x401f08:5:jmp 0000000000401f0d <xhci_trb_comp_code_string+0x95d>
+0x401f0d:3:mov -0x44(%rbp),%eax
+0x401f10:5:sub $0x699b1b52,%eax
+0x401f15:6:mov %eax,-0x1c8(%rbp)
+0x401f1b:6:je 0000000000402372 <xhci_trb_comp_code_string+0xdc2>
+0x401f21:5:jmp 0000000000401f26 <xhci_trb_comp_code_string+0x976>
+0x401f26:3:mov -0x44(%rbp),%eax
+0x401f29:5:sub $0x6aae939c,%eax
+0x401f2e:6:mov %eax,-0x1cc(%rbp)
+0x401f34:6:je 0000000000402834 <xhci_trb_comp_code_string+0x1284>
+0x401f3a:5:jmp 0000000000401f3f <xhci_trb_comp_code_string+0x98f>
+0x401f3f:3:mov -0x44(%rbp),%eax
+0x401f42:5:sub $0x6b97c727,%eax
+0x401f47:6:mov %eax,-0x1d0(%rbp)
+0x401f4d:6:je 0000000000402eb3 <xhci_trb_comp_code_string+0x1903>
+0x401f53:5:jmp 0000000000401f58 <xhci_trb_comp_code_string+0x9a8>
+0x401f58:3:mov -0x44(%rbp),%eax
+0x401f5b:5:sub $0x6c365414,%eax
+0x401f60:6:mov %eax,-0x1d4(%rbp)
+0x401f66:6:je 0000000000402616 <xhci_trb_comp_code_string+0x1066>
+0x401f6c:5:jmp 0000000000401f71 <xhci_trb_comp_code_string+0x9c1>
+0x401f71:3:mov -0x44(%rbp),%eax
+0x401f74:5:sub $0x75bac65c,%eax
+0x401f79:6:mov %eax,-0x1d8(%rbp)
+0x401f7f:6:je 0000000000402e4f <xhci_trb_comp_code_string+0x189f>
+0x401f85:5:jmp 0000000000401f8a <xhci_trb_comp_code_string+0x9da>
+0x401f8a:3:mov -0x44(%rbp),%eax
+0x401f8d:5:sub $0x76b62421,%eax
+0x401f92:6:mov %eax,-0x1dc(%rbp)
+0x401f98:6:je 0000000000402684 <xhci_trb_comp_code_string+0x10d4>
+0x401f9e:5:jmp 0000000000401fa3 <xhci_trb_comp_code_string+0x9f3>
+0x401fa3:3:mov -0x44(%rbp),%eax
+0x401fa6:5:sub $0x76ecdd93,%eax
+0x401fab:6:mov %eax,-0x1e0(%rbp)
+0x401fb1:6:je 0000000000402138 <xhci_trb_comp_code_string+0xb88>
+0x401fb7:5:jmp 0000000000401fbc <xhci_trb_comp_code_string+0xa0c>
+0x401fbc:3:mov -0x44(%rbp),%eax
+0x401fbf:5:sub $0x79916369,%eax
+0x401fc4:6:mov %eax,-0x1e4(%rbp)
+0x401fca:6:je 0000000000402174 <xhci_trb_comp_code_string+0xbc4>
+0x401fd0:5:jmp 0000000000401fd5 <xhci_trb_comp_code_string+0xa25>
+0x401fd5:3:mov -0x44(%rbp),%eax
+0x401fd8:5:sub $0x7b727faa,%eax
+0x401fdd:6:mov %eax,-0x1e8(%rbp)
+0x401fe3:6:je 00000000004026ec <xhci_trb_comp_code_string+0x113c>
+0x401fe9:5:jmp 0000000000401fee <xhci_trb_comp_code_string+0xa3e>
+0x401fee:3:mov -0x44(%rbp),%eax
+0x401ff1:5:sub $0x7f7106dc,%eax
+0x401ff6:6:mov %eax,-0x1ec(%rbp)
+0x401ffc:6:je 00000000004031b9 <xhci_trb_comp_code_string+0x1c09>
+0x402002:5:jmp 0000000000402007 <xhci_trb_comp_code_string+0xa57>
+0x402007:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x40200c:5:mov $0xdfe45603,%eax
+0x402011:5:mov $0xf0374ab5,%ecx
+0x402016:3:mov -0x2c(%rbp),%edx
+0x402019:6:cmp $0x92,%edx
+0x40201f:3:cmovl %ecx,%eax
+0x402022:3:mov %eax,-0x40(%rbp)
+0x402025:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x40202a:5:mov $0x38f0ac11,%eax
+0x40202f:5:mov $0x4059b1a9,%ecx
+0x402034:3:mov -0x2c(%rbp),%edx
+0x402037:6:cmp $0x9b,%edx
+0x40203d:3:cmovl %ecx,%eax
+0x402040:3:mov %eax,-0x40(%rbp)
+0x402043:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x402048:5:mov $0xf96836f3,%eax
+0x40204d:5:mov $0xc8120b03,%ecx
+0x402052:3:mov -0x2c(%rbp),%edx
+0x402055:6:cmp $0x9f,%edx
+0x40205b:3:cmovl %ecx,%eax
+0x40205e:3:mov %eax,-0x40(%rbp)
+0x402061:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x402066:5:mov $0xb7040505,%eax
+0x40206b:5:mov $0xa53dfc53,%ecx
+0x402070:3:mov -0x2c(%rbp),%edx
+0x402073:6:cmp $0xa1,%edx
+0x402079:3:cmovl %ecx,%eax
+0x40207c:3:mov %eax,-0x40(%rbp)
+0x40207f:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x402084:5:mov $0x157ff028,%eax
+0x402089:5:mov $0xc6f28251,%ecx
+0x40208e:3:mov -0x2c(%rbp),%edx
+0x402091:6:cmp $0xa2,%edx
+0x402097:3:cmovl %ecx,%eax
+0x40209a:3:mov %eax,-0x40(%rbp)
+0x40209d:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x4020a2:5:mov $0x1e1690bc,%eax
+0x4020a7:5:mov $0xf80340b8,%ecx
+0x4020ac:3:mov -0x2c(%rbp),%edx
+0x4020af:6:cmp $0xa3,%edx
+0x4020b5:3:cmovl %ecx,%eax
+0x4020b8:3:mov %eax,-0x40(%rbp)
+0x4020bb:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x4020c0:5:mov $0x87e6d736,%eax
+0x4020c5:5:mov $0xe30cead7,%ecx
+0x4020ca:3:mov -0x2c(%rbp),%edx
+0x4020cd:6:cmp $0xa3,%edx
+0x4020d3:3:cmove %ecx,%eax
+0x4020d6:3:mov %eax,-0x40(%rbp)
+0x4020d9:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x4020de:5:mov $0x11747da,%eax
+0x4020e3:5:mov $0xf87a43a8,%ecx
+0x4020e8:3:mov -0x2c(%rbp),%edx
+0x4020eb:6:cmp $0xa0,%edx
+0x4020f1:3:cmovl %ecx,%eax
+0x4020f4:3:mov %eax,-0x40(%rbp)
+0x4020f7:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x4020fc:5:mov $0x62ffb83a,%eax
+0x402101:5:mov $0x76ecdd93,%ecx
+0x402106:3:mov -0x2c(%rbp),%edx
+0x402109:6:cmp $0x9d,%edx
+0x40210f:3:cmovl %ecx,%eax
+0x402112:3:mov %eax,-0x40(%rbp)
+0x402115:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x40211a:5:mov $0x92b68b44,%eax
+0x40211f:5:mov $0xe437b010,%ecx
+0x402124:3:mov -0x2c(%rbp),%edx
+0x402127:6:cmp $0x9e,%edx
+0x40212d:3:cmovl %ecx,%eax
+0x402130:3:mov %eax,-0x40(%rbp)
+0x402133:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x402138:5:mov $0x10c68edf,%eax
+0x40213d:5:mov $0xff2240fa,%ecx
+0x402142:3:mov -0x2c(%rbp),%edx
+0x402145:6:cmp $0x9c,%edx
+0x40214b:3:cmovl %ecx,%eax
+0x40214e:3:mov %eax,-0x40(%rbp)
+0x402151:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x402156:5:mov $0x79916369,%eax
+0x40215b:5:mov $0x89dc3347,%ecx
+0x402160:3:mov -0x2c(%rbp),%edx
+0x402163:6:cmp $0x96,%edx
+0x402169:3:cmovl %ecx,%eax
+0x40216c:3:mov %eax,-0x40(%rbp)
+0x40216f:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x402174:5:mov $0xbd4544c,%eax
+0x402179:5:mov $0xbc6d645f,%ecx
+0x40217e:3:mov -0x2c(%rbp),%edx
+0x402181:6:cmp $0x98,%edx
+0x402187:3:cmovl %ecx,%eax
+0x40218a:3:mov %eax,-0x40(%rbp)
+0x40218d:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x402192:5:mov $0x380e256f,%eax
+0x402197:5:mov $0x87911732,%ecx
+0x40219c:3:mov -0x2c(%rbp),%edx
+0x40219f:6:cmp $0x99,%edx
+0x4021a5:3:cmovl %ecx,%eax
+0x4021a8:3:mov %eax,-0x40(%rbp)
+0x4021ab:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x4021b0:5:mov $0x1dbf230e,%eax
+0x4021b5:5:mov $0x4e41bae,%ecx
+0x4021ba:3:mov -0x2c(%rbp),%edx
+0x4021bd:6:cmp $0x9a,%edx
+0x4021c3:3:cmovl %ecx,%eax
+0x4021c6:3:mov %eax,-0x40(%rbp)
+0x4021c9:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x4021ce:5:mov $0xef79f8ad,%eax
+0x4021d3:5:mov $0x7b727faa,%ecx
+0x4021d8:3:mov -0x2c(%rbp),%edx
+0x4021db:6:cmp $0x97,%edx
+0x4021e1:3:cmovl %ecx,%eax
+0x4021e4:3:mov %eax,-0x40(%rbp)
+0x4021e7:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x4021ec:5:mov $0x90b98458,%eax
+0x4021f1:5:mov $0xdc274606,%ecx
+0x4021f6:3:mov -0x2c(%rbp),%edx
+0x4021f9:6:cmp $0x94,%edx
+0x4021ff:3:cmovl %ecx,%eax
+0x402202:3:mov %eax,-0x40(%rbp)
+0x402205:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x40220a:5:mov $0xdcd0163d,%eax
+0x40220f:5:mov $0x6336822e,%ecx
+0x402214:3:mov -0x2c(%rbp),%edx
+0x402217:6:cmp $0x95,%edx
+0x40221d:3:cmovl %ecx,%eax
+0x402220:3:mov %eax,-0x40(%rbp)
+0x402223:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x402228:5:mov $0xf8e64ddb,%eax
+0x40222d:5:mov $0xf643b645,%ecx
+0x402232:3:mov -0x2c(%rbp),%edx
+0x402235:6:cmp $0x93,%edx
+0x40223b:3:cmovl %ecx,%eax
+0x40223e:3:mov %eax,-0x40(%rbp)
+0x402241:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x402246:5:mov $0xdaad8e3a,%eax
+0x40224b:5:mov $0xa7dcc375,%ecx
+0x402250:3:mov -0x2c(%rbp),%edx
+0x402253:6:cmp $0x89,%edx
+0x402259:3:cmovl %ecx,%eax
+0x40225c:3:mov %eax,-0x40(%rbp)
+0x40225f:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x402264:5:mov $0x9c595b14,%eax
+0x402269:5:mov $0x168e3769,%ecx
+0x40226e:3:mov -0x2c(%rbp),%edx
+0x402271:6:cmp $0x8d,%edx
+0x402277:3:cmovl %ecx,%eax
+0x40227a:3:mov %eax,-0x40(%rbp)
+0x40227d:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x402282:5:mov $0xcc60e905,%eax
+0x402287:5:mov $0x312e1525,%ecx
+0x40228c:3:mov -0x2c(%rbp),%edx
+0x40228f:6:cmp $0x8f,%edx
+0x402295:3:cmovl %ecx,%eax
+0x402298:3:mov %eax,-0x40(%rbp)
+0x40229b:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x4022a0:5:mov $0x28204f16,%eax
+0x4022a5:5:mov $0x9306a7d6,%ecx
+0x4022aa:3:mov -0x2c(%rbp),%edx
+0x4022ad:6:cmp $0x90,%edx
+0x4022b3:3:cmovl %ecx,%eax
+0x4022b6:3:mov %eax,-0x40(%rbp)
+0x4022b9:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x4022be:5:mov $0xfaa04b95,%eax
+0x4022c3:5:mov $0xe3800931,%ecx
+0x4022c8:3:mov -0x2c(%rbp),%edx
+0x4022cb:6:cmp $0x91,%edx
+0x4022d1:3:cmovl %ecx,%eax
+0x4022d4:3:mov %eax,-0x40(%rbp)
+0x4022d7:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x4022dc:5:mov $0x4a444de6,%eax
+0x4022e1:5:mov $0xa45e278f,%ecx
+0x4022e6:3:mov -0x2c(%rbp),%edx
+0x4022e9:6:cmp $0x8e,%edx
+0x4022ef:3:cmovl %ecx,%eax
+0x4022f2:3:mov %eax,-0x40(%rbp)
+0x4022f5:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x4022fa:5:mov $0x1a0271d7,%eax
+0x4022ff:5:mov $0x4388c93,%ecx
+0x402304:3:mov -0x2c(%rbp),%edx
+0x402307:6:cmp $0x8b,%edx
+0x40230d:3:cmovl %ecx,%eax
+0x402310:3:mov %eax,-0x40(%rbp)
+0x402313:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x402318:5:mov $0x21fb7673,%eax
+0x40231d:5:mov $0x9d77f6e2,%ecx
+0x402322:3:mov -0x2c(%rbp),%edx
+0x402325:6:cmp $0x8c,%edx
+0x40232b:3:cmovl %ecx,%eax
+0x40232e:3:mov %eax,-0x40(%rbp)
+0x402331:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x402336:5:mov $0xf1fb1b91,%eax
+0x40233b:5:mov $0x5dcd8cc6,%ecx
+0x402340:3:mov -0x2c(%rbp),%edx
+0x402343:6:cmp $0x8a,%edx
+0x402349:3:cmovl %ecx,%eax
+0x40234c:3:mov %eax,-0x40(%rbp)
+0x40234f:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x402354:5:mov $0x699b1b52,%eax
+0x402359:5:mov $0xb3bba80d,%ecx
+0x40235e:3:mov -0x2c(%rbp),%edx
+0x402361:6:cmp $0x84,%edx
+0x402367:3:cmovl %ecx,%eax
+0x40236a:3:mov %eax,-0x40(%rbp)
+0x40236d:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x402372:5:mov $0x3e91008b,%eax
+0x402377:5:mov $0x9c4ff96b,%ecx
+0x40237c:3:mov -0x2c(%rbp),%edx
+0x40237f:6:cmp $0x86,%edx
+0x402385:3:cmovl %ecx,%eax
+0x402388:3:mov %eax,-0x40(%rbp)
+0x40238b:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x402390:5:mov $0xa750994a,%eax
+0x402395:5:mov $0x8c76b704,%ecx
+0x40239a:3:mov -0x2c(%rbp),%edx
+0x40239d:6:cmp $0x87,%edx
+0x4023a3:3:cmovl %ecx,%eax
+0x4023a6:3:mov %eax,-0x40(%rbp)
+0x4023a9:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x4023ae:5:mov $0x76b62421,%eax
+0x4023b3:5:mov $0xea5e1148,%ecx
+0x4023b8:3:mov -0x2c(%rbp),%edx
+0x4023bb:6:cmp $0x88,%edx
+0x4023c1:3:cmovl %ecx,%eax
+0x4023c4:3:mov %eax,-0x40(%rbp)
+0x4023c7:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x4023cc:5:mov $0xb525fdb6,%eax
+0x4023d1:5:mov $0x8965d83,%ecx
+0x4023d6:3:mov -0x2c(%rbp),%edx
+0x4023d9:6:cmp $0x85,%edx
+0x4023df:3:cmovl %ecx,%eax
+0x4023e2:3:mov %eax,-0x40(%rbp)
+0x4023e5:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x4023ea:5:mov $0xe5ba5572,%eax
+0x4023ef:5:mov $0x75d3e38,%ecx
+0x4023f4:3:mov -0x2c(%rbp),%edx
+0x4023f7:6:cmp $0x82,%edx
+0x4023fd:3:cmovl %ecx,%eax
+0x402400:3:mov %eax,-0x40(%rbp)
+0x402403:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x402408:5:mov $0x528a93ea,%eax
+0x40240d:5:mov $0x53faebf4,%ecx
+0x402412:3:mov -0x2c(%rbp),%edx
+0x402415:6:cmp $0x83,%edx
+0x40241b:3:cmovl %ecx,%eax
+0x40241e:3:mov %eax,-0x40(%rbp)
+0x402421:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x402426:5:mov $0xcc4800a7,%eax
+0x40242b:5:mov $0xf43c5fb3,%ecx
+0x402430:3:mov -0x2c(%rbp),%edx
+0x402433:6:cmp $0x81,%edx
+0x402439:3:cmovl %ecx,%eax
+0x40243c:3:mov %eax,-0x40(%rbp)
+0x40243f:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x402444:5:mov $0x87e6d736,%eax
+0x402449:5:mov $0x6aae939c,%ecx
+0x40244e:3:mov -0x2c(%rbp),%edx
+0x402451:6:cmp $0x80,%edx
+0x402457:3:cmove %ecx,%eax
+0x40245a:3:mov %eax,-0x40(%rbp)
+0x40245d:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x402462:10:movabs $0x4042a8,%rax
+0x40246c:4:mov %rax,-0x38(%rbp)
+0x402470:7:movl $0xf18160b3,-0x40(%rbp)
+0x402477:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x40247c:10:movabs $0x4040f2,%rax
+0x402486:4:mov %rax,-0x38(%rbp)
+0x40248a:7:movl $0xf18160b3,-0x40(%rbp)
+0x402491:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x402496:10:movabs $0x4040fa,%rax
+0x4024a0:4:mov %rax,-0x38(%rbp)
+0x4024a4:7:movl $0xf18160b3,-0x40(%rbp)
+0x4024ab:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x4024b0:10:movabs $0x40410c,%rax
+0x4024ba:4:mov %rax,-0x38(%rbp)
+0x4024be:7:movl $0xf18160b3,-0x40(%rbp)
+0x4024c5:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x4024ca:5:mov $0x4f96570b,%eax
+0x4024cf:5:mov $0xdddef4cb,%ecx
+0x4024d4:2:mov $0x1,%dl
+0x4024d6:2:xor %esi,%esi
+0x4024d8:7:mov 0x40605c,%edi
+0x4024df:8:mov 0x406044,%r8d
+0x4024e7:3:sub $0x1,%esi
+0x4024ea:3:mov %edi,%r9d
+0x4024ed:3:add %esi,%r9d
+0x4024f0:4:imul %r9d,%edi
+0x4024f4:3:and $0x1,%edi
+0x4024f7:3:cmp $0x0,%edi
+0x4024fa:4:sete %r10b
+0x4024fe:4:cmp $0xa,%r8d
+0x402502:4:setl %r11b
+0x402506:3:mov %r10b,%bl
+0x402509:3:xor $0xff,%bl
+0x40250c:3:mov %r11b,%r14b
+0x40250f:4:xor $0xff,%r14b
+0x402513:3:xor $0x1,%dl
+0x402516:3:mov %bl,%r15b
+0x402519:4:and $0xff,%r15b
+0x40251d:3:and %dl,%r10b
+0x402520:3:mov %r14b,%r12b
+0x402523:4:and $0xff,%r12b
+0x402527:3:and %dl,%r11b
+0x40252a:3:or %r10b,%r15b
+0x40252d:3:or %r11b,%r12b
+0x402530:3:xor %r12b,%r15b
+0x402533:3:or %r14b,%bl
+0x402536:3:xor $0xff,%bl
+0x402539:3:or $0x1,%dl
+0x40253c:2:and %dl,%bl
+0x40253e:3:or %bl,%r15b
+0x402541:4:test $0x1,%r15b
+0x402545:3:cmovne %ecx,%eax
+0x402548:3:mov %eax,-0x40(%rbp)
+0x40254b:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x402550:5:mov $0x4f96570b,%eax
+0x402555:5:mov $0x88978efb,%ecx
+0x40255a:2:xor %edx,%edx
+0x40255c:10:movabs $0x40411c,%rsi
+0x402566:4:mov %rsi,-0x38(%rbp)
+0x40256a:7:mov 0x40605c,%edi
+0x402571:8:mov 0x406044,%r8d
+0x402579:3:sub $0x1,%edx
+0x40257c:3:mov %edi,%r9d
+0x40257f:3:add %edx,%r9d
+0x402582:4:imul %r9d,%edi
+0x402586:3:and $0x1,%edi
+0x402589:3:cmp $0x0,%edi
+0x40258c:4:sete %r10b
+0x402590:4:cmp $0xa,%r8d
+0x402594:4:setl %r11b
+0x402598:3:mov %r10b,%bl
+0x40259b:3:and %r11b,%bl
+0x40259e:3:xor %r11b,%r10b
+0x4025a1:3:or %r10b,%bl
+0x4025a4:3:test $0x1,%bl
+0x4025a7:3:cmovne %ecx,%eax
+0x4025aa:3:mov %eax,-0x40(%rbp)
+0x4025ad:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x4025b2:7:movl $0xf18160b3,-0x40(%rbp)
+0x4025b9:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x4025be:5:mov $0x4115ee6c,%eax
+0x4025c3:5:mov $0x6c365414,%ecx
+0x4025c8:7:mov 0x40605c,%edx
+0x4025cf:7:mov 0x406044,%esi
+0x4025d6:2:mov %edx,%edi
+0x4025d8:6:sub $0x3eb1e5ab,%edi
+0x4025de:3:sub $0x1,%edi
+0x4025e1:6:add $0x3eb1e5ab,%edi
+0x4025e7:3:imul %edi,%edx
+0x4025ea:3:and $0x1,%edx
+0x4025ed:3:cmp $0x0,%edx
+0x4025f0:4:sete %r8b
+0x4025f4:3:cmp $0xa,%esi
+0x4025f7:4:setl %r9b
+0x4025fb:3:mov %r8b,%r10b
+0x4025fe:3:and %r9b,%r10b
+0x402601:3:xor %r9b,%r8b
+0x402604:3:or %r8b,%r10b
+0x402607:4:test $0x1,%r10b
+0x40260b:3:cmovne %ecx,%eax
+0x40260e:3:mov %eax,-0x40(%rbp)
+0x402611:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x402616:5:mov $0x4115ee6c,%eax
+0x40261b:5:mov $0x2d1fb530,%ecx
+0x402620:2:xor %edx,%edx
+0x402622:10:movabs $0x404132,%rsi
+0x40262c:4:mov %rsi,-0x38(%rbp)
+0x402630:7:mov 0x40605c,%edi
+0x402637:8:mov 0x406044,%r8d
+0x40263f:3:sub $0x1,%edx
+0x402642:3:mov %edi,%r9d
+0x402645:3:add %edx,%r9d
+0x402648:4:imul %r9d,%edi
+0x40264c:3:and $0x1,%edi
+0x40264f:3:cmp $0x0,%edi
+0x402652:4:sete %r10b
+0x402656:4:cmp $0xa,%r8d
+0x40265a:4:setl %r11b
+0x40265e:3:mov %r10b,%bl
+0x402661:3:and %r11b,%bl
+0x402664:3:xor %r11b,%r10b
+0x402667:3:or %r10b,%bl
+0x40266a:3:test $0x1,%bl
+0x40266d:3:cmovne %ecx,%eax
+0x402670:3:mov %eax,-0x40(%rbp)
+0x402673:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x402678:7:movl $0xf18160b3,-0x40(%rbp)
+0x40267f:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x402684:10:movabs $0x40413c,%rax
+0x40268e:4:mov %rax,-0x38(%rbp)
+0x402692:7:movl $0xf18160b3,-0x40(%rbp)
+0x402699:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x40269e:10:movabs $0x404148,%rax
+0x4026a8:4:mov %rax,-0x38(%rbp)
+0x4026ac:7:movl $0xf18160b3,-0x40(%rbp)
+0x4026b3:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x4026b8:10:movabs $0x404340,%rax
+0x4026c2:4:mov %rax,-0x38(%rbp)
+0x4026c6:7:movl $0xf18160b3,-0x40(%rbp)
+0x4026cd:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x4026d2:10:movabs $0x404157,%rax
+0x4026dc:4:mov %rax,-0x38(%rbp)
+0x4026e0:7:movl $0xf18160b3,-0x40(%rbp)
+0x4026e7:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x4026ec:10:movabs $0x404170,%rax
+0x4026f6:4:mov %rax,-0x38(%rbp)
+0x4026fa:7:movl $0xf18160b3,-0x40(%rbp)
+0x402701:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x402706:10:movabs $0x40418a,%rax
+0x402710:4:mov %rax,-0x38(%rbp)
+0x402714:7:movl $0xf18160b3,-0x40(%rbp)
+0x40271b:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x402720:10:movabs $0x4041a1,%rax
+0x40272a:4:mov %rax,-0x38(%rbp)
+0x40272e:7:movl $0xf18160b3,-0x40(%rbp)
+0x402735:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x40273a:5:mov $0x3088fdf9,%eax
+0x40273f:5:mov $0xa6bdf89b,%ecx
+0x402744:7:mov 0x40605c,%edx
+0x40274b:7:mov 0x406044,%esi
+0x402752:2:mov %edx,%edi
+0x402754:6:sub $0xc0a5927b,%edi
+0x40275a:3:sub $0x1,%edi
+0x40275d:6:add $0xc0a5927b,%edi
+0x402763:3:imul %edi,%edx
+0x402766:3:and $0x1,%edx
+0x402769:3:cmp $0x0,%edx
+0x40276c:4:sete %r8b
+0x402770:3:cmp $0xa,%esi
+0x402773:4:setl %r9b
+0x402777:3:mov %r8b,%r10b
+0x40277a:3:and %r9b,%r10b
+0x40277d:3:xor %r9b,%r8b
+0x402780:3:or %r8b,%r10b
+0x402783:4:test $0x1,%r10b
+0x402787:3:cmovne %ecx,%eax
+0x40278a:3:mov %eax,-0x40(%rbp)
+0x40278d:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x402792:5:mov $0x3088fdf9,%eax
+0x402797:5:mov $0xe28ba7de,%ecx
+0x40279c:2:xor %edx,%edx
+0x40279e:10:movabs $0x4042ba,%rsi
+0x4027a8:4:mov %rsi,-0x38(%rbp)
+0x4027ac:7:mov 0x40605c,%edi
+0x4027b3:8:mov 0x406044,%r8d
+0x4027bb:3:sub $0x1,%edx
+0x4027be:3:mov %edi,%r9d
+0x4027c1:3:add %edx,%r9d
+0x4027c4:4:imul %r9d,%edi
+0x4027c8:3:and $0x1,%edi
+0x4027cb:3:cmp $0x0,%edi
+0x4027ce:4:sete %r10b
+0x4027d2:4:cmp $0xa,%r8d
+0x4027d6:4:setl %r11b
+0x4027da:3:mov %r10b,%bl
+0x4027dd:3:and %r11b,%bl
+0x4027e0:3:xor %r11b,%r10b
+0x4027e3:3:or %r10b,%bl
+0x4027e6:3:test $0x1,%bl
+0x4027e9:3:cmovne %ecx,%eax
+0x4027ec:3:mov %eax,-0x40(%rbp)
+0x4027ef:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x4027f4:7:movl $0xf18160b3,-0x40(%rbp)
+0x4027fb:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x402800:10:movabs $0x4041bc,%rax
+0x40280a:4:mov %rax,-0x38(%rbp)
+0x40280e:7:movl $0xf18160b3,-0x40(%rbp)
+0x402815:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x40281a:10:movabs $0x4041ca,%rax
+0x402824:4:mov %rax,-0x38(%rbp)
+0x402828:7:movl $0xf18160b3,-0x40(%rbp)
+0x40282f:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x402834:5:mov $0xf4022d82,%eax
+0x402839:5:mov $0xcc3dd476,%ecx
+0x40283e:2:mov $0x1,%dl
+0x402840:7:mov 0x40605c,%esi
+0x402847:7:mov 0x406044,%edi
+0x40284e:3:mov %esi,%r8d
+0x402851:7:add $0x20b20897,%r8d
+0x402858:4:sub $0x1,%r8d
+0x40285c:7:sub $0x20b20897,%r8d
+0x402863:4:imul %r8d,%esi
+0x402867:3:and $0x1,%esi
+0x40286a:3:cmp $0x0,%esi
+0x40286d:4:sete %r9b
+0x402871:3:cmp $0xa,%edi
+0x402874:4:setl %r10b
+0x402878:3:mov %r9b,%r11b
+0x40287b:4:xor $0xff,%r11b
+0x40287f:3:mov %r10b,%bl
+0x402882:3:xor $0xff,%bl
+0x402885:3:xor $0x0,%dl
+0x402888:3:mov %r11b,%r14b
+0x40288b:4:and $0x0,%r14b
+0x40288f:3:and %dl,%r9b
+0x402892:3:mov %bl,%r15b
+0x402895:4:and $0x0,%r15b
+0x402899:3:and %dl,%r10b
+0x40289c:3:or %r9b,%r14b
+0x40289f:3:or %r10b,%r15b
+0x4028a2:3:xor %r15b,%r14b
+0x4028a5:3:or %bl,%r11b
+0x4028a8:4:xor $0xff,%r11b
+0x4028ac:3:or $0x0,%dl
+0x4028af:3:and %dl,%r11b
+0x4028b2:3:or %r11b,%r14b
+0x4028b5:4:test $0x1,%r14b
+0x4028b9:3:cmovne %ecx,%eax
+0x4028bc:3:mov %eax,-0x40(%rbp)
+0x4028bf:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x4028c4:5:mov $0xf4022d82,%eax
+0x4028c9:5:mov $0x953d3cd6,%ecx
+0x4028ce:2:mov $0x1,%dl
+0x4028d0:2:xor %esi,%esi
+0x4028d2:10:movabs $0x4041d7,%rdi
+0x4028dc:4:mov %rdi,-0x38(%rbp)
+0x4028e0:8:mov 0x40605c,%r8d
+0x4028e8:8:mov 0x406044,%r9d
+0x4028f0:3:sub $0x1,%esi
+0x4028f3:3:mov %r8d,%r10d
+0x4028f6:3:add %esi,%r10d
+0x4028f9:4:imul %r10d,%r8d
+0x4028fd:4:and $0x1,%r8d
+0x402901:4:cmp $0x0,%r8d
+0x402905:4:sete %r11b
+0x402909:4:cmp $0xa,%r9d
+0x40290d:3:setl %bl
+0x402910:3:mov %r11b,%r14b
+0x402913:4:xor $0xff,%r14b
+0x402917:3:mov %bl,%r15b
+0x40291a:4:xor $0xff,%r15b
+0x40291e:3:xor $0x1,%dl
+0x402921:3:mov %r14b,%r12b
+0x402924:4:and $0xff,%r12b
+0x402928:3:and %dl,%r11b
+0x40292b:3:mov %r15b,%r13b
+0x40292e:4:and $0xff,%r13b
+0x402932:2:and %dl,%bl
+0x402934:3:or %r11b,%r12b
+0x402937:3:or %bl,%r13b
+0x40293a:3:xor %r13b,%r12b
+0x40293d:3:or %r15b,%r14b
+0x402940:4:xor $0xff,%r14b
+0x402944:3:or $0x1,%dl
+0x402947:3:and %dl,%r14b
+0x40294a:3:or %r14b,%r12b
+0x40294d:4:test $0x1,%r12b
+0x402951:3:cmovne %ecx,%eax
+0x402954:3:mov %eax,-0x40(%rbp)
+0x402957:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x40295c:7:movl $0xf18160b3,-0x40(%rbp)
+0x402963:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x402968:5:mov $0xf99185,%eax
+0x40296d:5:mov $0x93f7abb1,%ecx
+0x402972:7:mov 0x40605c,%edx
+0x402979:7:mov 0x406044,%esi
+0x402980:2:mov %edx,%edi
+0x402982:6:sub $0x8abff921,%edi
+0x402988:3:sub $0x1,%edi
+0x40298b:6:add $0x8abff921,%edi
+0x402991:3:imul %edi,%edx
+0x402994:3:and $0x1,%edx
+0x402997:3:cmp $0x0,%edx
+0x40299a:4:sete %r8b
+0x40299e:3:cmp $0xa,%esi
+0x4029a1:4:setl %r9b
+0x4029a5:3:mov %r8b,%r10b
+0x4029a8:3:and %r9b,%r10b
+0x4029ab:3:xor %r9b,%r8b
+0x4029ae:3:or %r8b,%r10b
+0x4029b1:4:test $0x1,%r10b
+0x4029b5:3:cmovne %ecx,%eax
+0x4029b8:3:mov %eax,-0x40(%rbp)
+0x4029bb:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x4029c0:5:mov $0xf99185,%eax
+0x4029c5:5:mov $0x31a0f1fa,%ecx
+0x4029ca:2:mov $0x1,%dl
+0x4029cc:10:movabs $0x4041f0,%rsi
+0x4029d6:4:mov %rsi,-0x38(%rbp)
+0x4029da:7:mov 0x40605c,%edi
+0x4029e1:8:mov 0x406044,%r8d
+0x4029e9:3:mov %edi,%r9d
+0x4029ec:7:sub $0x1665d324,%r9d
+0x4029f3:4:sub $0x1,%r9d
+0x4029f7:7:add $0x1665d324,%r9d
+0x4029fe:4:imul %r9d,%edi
+0x402a02:3:and $0x1,%edi
+0x402a05:3:cmp $0x0,%edi
+0x402a08:4:sete %r10b
+0x402a0c:4:cmp $0xa,%r8d
+0x402a10:4:setl %r11b
+0x402a14:3:mov %r10b,%bl
+0x402a17:3:xor $0xff,%bl
+0x402a1a:3:mov %r11b,%r14b
+0x402a1d:4:xor $0xff,%r14b
+0x402a21:3:xor $0x1,%dl
+0x402a24:3:mov %bl,%r15b
+0x402a27:4:and $0xff,%r15b
+0x402a2b:3:and %dl,%r10b
+0x402a2e:3:mov %r14b,%r12b
+0x402a31:4:and $0xff,%r12b
+0x402a35:3:and %dl,%r11b
+0x402a38:3:or %r10b,%r15b
+0x402a3b:3:or %r11b,%r12b
+0x402a3e:3:xor %r12b,%r15b
+0x402a41:3:or %r14b,%bl
+0x402a44:3:xor $0xff,%bl
+0x402a47:3:or $0x1,%dl
+0x402a4a:2:and %dl,%bl
+0x402a4c:3:or %bl,%r15b
+0x402a4f:4:test $0x1,%r15b
+0x402a53:3:cmovne %ecx,%eax
+0x402a56:3:mov %eax,-0x40(%rbp)
+0x402a59:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x402a5e:7:movl $0xf18160b3,-0x40(%rbp)
+0x402a65:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x402a6a:10:movabs $0x404200,%rax
+0x402a74:4:mov %rax,-0x38(%rbp)
+0x402a78:7:movl $0xf18160b3,-0x40(%rbp)
+0x402a7f:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x402a84:10:movabs $0x404218,%rax
+0x402a8e:4:mov %rax,-0x38(%rbp)
+0x402a92:7:movl $0xf18160b3,-0x40(%rbp)
+0x402a99:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x402a9e:10:movabs $0x40422c,%rax
+0x402aa8:4:mov %rax,-0x38(%rbp)
+0x402aac:7:movl $0xf18160b3,-0x40(%rbp)
+0x402ab3:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x402ab8:5:mov $0xd3b100b0,%eax
+0x402abd:5:mov $0x8e14f22d,%ecx
+0x402ac2:2:xor %edx,%edx
+0x402ac4:7:mov 0x40605c,%esi
+0x402acb:7:mov 0x406044,%edi
+0x402ad2:3:sub $0x1,%edx
+0x402ad5:3:mov %esi,%r8d
+0x402ad8:3:add %edx,%r8d
+0x402adb:4:imul %r8d,%esi
+0x402adf:3:and $0x1,%esi
+0x402ae2:3:cmp $0x0,%esi
+0x402ae5:4:sete %r9b
+0x402ae9:3:cmp $0xa,%edi
+0x402aec:4:setl %r10b
+0x402af0:3:mov %r9b,%r11b
+0x402af3:3:and %r10b,%r11b
+0x402af6:3:xor %r10b,%r9b
+0x402af9:3:or %r9b,%r11b
+0x402afc:4:test $0x1,%r11b
+0x402b00:3:cmovne %ecx,%eax
+0x402b03:3:mov %eax,-0x40(%rbp)
+0x402b06:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x402b0b:5:mov $0xd3b100b0,%eax
+0x402b10:5:mov $0x4fe8f5d8,%ecx
+0x402b15:10:movabs $0x4041da,%rdx
+0x402b1f:4:mov %rdx,-0x38(%rbp)
+0x402b23:7:mov 0x40605c,%esi
+0x402b2a:7:mov 0x406044,%edi
+0x402b31:3:mov %esi,%r8d
+0x402b34:7:add $0xc2f7dbaa,%r8d
+0x402b3b:4:sub $0x1,%r8d
+0x402b3f:7:sub $0xc2f7dbaa,%r8d
+0x402b46:4:imul %r8d,%esi
+0x402b4a:3:and $0x1,%esi
+0x402b4d:3:cmp $0x0,%esi
+0x402b50:4:sete %r9b
+0x402b54:3:cmp $0xa,%edi
+0x402b57:4:setl %r10b
+0x402b5b:3:mov %r9b,%r11b
+0x402b5e:3:and %r10b,%r11b
+0x402b61:3:xor %r10b,%r9b
+0x402b64:3:or %r9b,%r11b
+0x402b67:4:test $0x1,%r11b
+0x402b6b:3:cmovne %ecx,%eax
+0x402b6e:3:mov %eax,-0x40(%rbp)
+0x402b71:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x402b76:7:movl $0xf18160b3,-0x40(%rbp)
+0x402b7d:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x402b82:10:movabs $0x404243,%rax
+0x402b8c:4:mov %rax,-0x38(%rbp)
+0x402b90:7:movl $0xf18160b3,-0x40(%rbp)
+0x402b97:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x402b9c:10:movabs $0x40425d,%rax
+0x402ba6:4:mov %rax,-0x38(%rbp)
+0x402baa:7:movl $0xf18160b3,-0x40(%rbp)
+0x402bb1:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x402bb6:10:movabs $0x404272,%rax
+0x402bc0:4:mov %rax,-0x38(%rbp)
+0x402bc4:7:movl $0xf18160b3,-0x40(%rbp)
+0x402bcb:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x402bd0:10:movabs $0x404287,%rax
+0x402bda:4:mov %rax,-0x38(%rbp)
+0x402bde:7:movl $0xf18160b3,-0x40(%rbp)
+0x402be5:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x402bea:5:mov $0xe9006ef5,%eax
+0x402bef:5:mov $0x2b6f59ef,%ecx
+0x402bf4:7:mov 0x40605c,%edx
+0x402bfb:7:mov 0x406044,%esi
+0x402c02:2:mov %edx,%edi
+0x402c04:6:add $0xe323a6f,%edi
+0x402c0a:3:sub $0x1,%edi
+0x402c0d:6:sub $0xe323a6f,%edi
+0x402c13:3:imul %edi,%edx
+0x402c16:3:and $0x1,%edx
+0x402c19:3:cmp $0x0,%edx
+0x402c1c:4:sete %r8b
+0x402c20:3:cmp $0xa,%esi
+0x402c23:4:setl %r9b
+0x402c27:3:mov %r8b,%r10b
+0x402c2a:3:and %r9b,%r10b
+0x402c2d:3:xor %r9b,%r8b
+0x402c30:3:or %r8b,%r10b
+0x402c33:4:test $0x1,%r10b
+0x402c37:3:cmovne %ecx,%eax
+0x402c3a:3:mov %eax,-0x40(%rbp)
+0x402c3d:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x402c42:5:mov $0xe9006ef5,%eax
+0x402c47:5:mov $0x2ac9a50d,%ecx
+0x402c4c:2:mov $0x1,%dl
+0x402c4e:10:movabs $0x40427f,%rsi
+0x402c58:4:mov %rsi,-0x38(%rbp)
+0x402c5c:7:mov 0x40605c,%edi
+0x402c63:8:mov 0x406044,%r8d
+0x402c6b:3:mov %edi,%r9d
+0x402c6e:7:add $0xb388739e,%r9d
+0x402c75:4:sub $0x1,%r9d
+0x402c79:7:sub $0xb388739e,%r9d
+0x402c80:4:imul %r9d,%edi
+0x402c84:3:and $0x1,%edi
+0x402c87:3:cmp $0x0,%edi
+0x402c8a:4:sete %r10b
+0x402c8e:4:cmp $0xa,%r8d
+0x402c92:4:setl %r11b
+0x402c96:3:mov %r10b,%bl
+0x402c99:3:xor $0xff,%bl
+0x402c9c:3:mov %r11b,%r14b
+0x402c9f:4:xor $0xff,%r14b
+0x402ca3:3:xor $0x0,%dl
+0x402ca6:3:mov %bl,%r15b
+0x402ca9:4:and $0x0,%r15b
+0x402cad:3:and %dl,%r10b
+0x402cb0:3:mov %r14b,%r12b
+0x402cb3:4:and $0x0,%r12b
+0x402cb7:3:and %dl,%r11b
+0x402cba:3:or %r10b,%r15b
+0x402cbd:3:or %r11b,%r12b
+0x402cc0:3:xor %r12b,%r15b
+0x402cc3:3:or %r14b,%bl
+0x402cc6:3:xor $0xff,%bl
+0x402cc9:3:or $0x0,%dl
+0x402ccc:2:and %dl,%bl
+0x402cce:3:or %bl,%r15b
+0x402cd1:4:test $0x1,%r15b
+0x402cd5:3:cmovne %ecx,%eax
+0x402cd8:3:mov %eax,-0x40(%rbp)
+0x402cdb:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x402ce0:7:movl $0xf18160b3,-0x40(%rbp)
+0x402ce7:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x402cec:10:movabs $0x404297,%rax
+0x402cf6:4:mov %rax,-0x38(%rbp)
+0x402cfa:7:movl $0xf18160b3,-0x40(%rbp)
+0x402d01:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x402d06:10:movabs $0x4042b0,%rax
+0x402d10:4:mov %rax,-0x38(%rbp)
+0x402d14:7:movl $0xf18160b3,-0x40(%rbp)
+0x402d1b:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x402d20:10:movabs $0x4042c7,%rax
+0x402d2a:4:mov %rax,-0x38(%rbp)
+0x402d2e:7:movl $0xf18160b3,-0x40(%rbp)
+0x402d35:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x402d3a:10:movabs $0x4042e8,%rax
+0x402d44:4:mov %rax,-0x38(%rbp)
+0x402d48:7:movl $0xf18160b3,-0x40(%rbp)
+0x402d4f:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x402d54:5:mov $0x123f71d3,%eax
+0x402d59:5:mov $0xa31a10b8,%ecx
+0x402d5e:2:mov $0x1,%dl
+0x402d60:7:mov 0x40605c,%esi
+0x402d67:7:mov 0x406044,%edi
+0x402d6e:3:mov %esi,%r8d
+0x402d71:7:sub $0xd852fe46,%r8d
+0x402d78:4:sub $0x1,%r8d
+0x402d7c:7:add $0xd852fe46,%r8d
+0x402d83:4:imul %r8d,%esi
+0x402d87:3:and $0x1,%esi
+0x402d8a:3:cmp $0x0,%esi
+0x402d8d:4:sete %r9b
+0x402d91:3:cmp $0xa,%edi
+0x402d94:4:setl %r10b
+0x402d98:3:mov %r9b,%r11b
+0x402d9b:4:xor $0xff,%r11b
+0x402d9f:3:mov %r10b,%bl
+0x402da2:3:xor $0xff,%bl
+0x402da5:3:xor $0x0,%dl
+0x402da8:3:mov %r11b,%r14b
+0x402dab:4:and $0x0,%r14b
+0x402daf:3:and %dl,%r9b
+0x402db2:3:mov %bl,%r15b
+0x402db5:4:and $0x0,%r15b
+0x402db9:3:and %dl,%r10b
+0x402dbc:3:or %r9b,%r14b
+0x402dbf:3:or %r10b,%r15b
+0x402dc2:3:xor %r15b,%r14b
+0x402dc5:3:or %bl,%r11b
+0x402dc8:4:xor $0xff,%r11b
+0x402dcc:3:or $0x0,%dl
+0x402dcf:3:and %dl,%r11b
+0x402dd2:3:or %r11b,%r14b
+0x402dd5:4:test $0x1,%r14b
+0x402dd9:3:cmovne %ecx,%eax
+0x402ddc:3:mov %eax,-0x40(%rbp)
+0x402ddf:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x402de4:5:mov $0x123f71d3,%eax
+0x402de9:5:mov $0x75bac65c,%ecx
+0x402dee:10:movabs $0x4042fd,%rdx
+0x402df8:4:mov %rdx,-0x38(%rbp)
+0x402dfc:7:mov 0x40605c,%esi
+0x402e03:7:mov 0x406044,%edi
+0x402e0a:3:mov %esi,%r8d
+0x402e0d:7:add $0x64dbc75e,%r8d
+0x402e14:4:sub $0x1,%r8d
+0x402e18:7:sub $0x64dbc75e,%r8d
+0x402e1f:4:imul %r8d,%esi
+0x402e23:3:and $0x1,%esi
+0x402e26:3:cmp $0x0,%esi
+0x402e29:4:sete %r9b
+0x402e2d:3:cmp $0xa,%edi
+0x402e30:4:setl %r10b
+0x402e34:3:mov %r9b,%r11b
+0x402e37:3:and %r10b,%r11b
+0x402e3a:3:xor %r10b,%r9b
+0x402e3d:3:or %r9b,%r11b
+0x402e40:4:test $0x1,%r11b
+0x402e44:3:cmovne %ecx,%eax
+0x402e47:3:mov %eax,-0x40(%rbp)
+0x402e4a:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x402e4f:7:movl $0xf18160b3,-0x40(%rbp)
+0x402e56:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x402e5b:5:mov $0xbf12c12e,%eax
+0x402e60:5:mov $0x6b97c727,%ecx
+0x402e65:7:mov 0x40605c,%edx
+0x402e6c:7:mov 0x406044,%esi
+0x402e73:2:mov %edx,%edi
+0x402e75:6:sub $0xc712f519,%edi
+0x402e7b:3:sub $0x1,%edi
+0x402e7e:6:add $0xc712f519,%edi
+0x402e84:3:imul %edi,%edx
+0x402e87:3:and $0x1,%edx
+0x402e8a:3:cmp $0x0,%edx
+0x402e8d:4:sete %r8b
+0x402e91:3:cmp $0xa,%esi
+0x402e94:4:setl %r9b
+0x402e98:3:mov %r8b,%r10b
+0x402e9b:3:and %r9b,%r10b
+0x402e9e:3:xor %r9b,%r8b
+0x402ea1:3:or %r8b,%r10b
+0x402ea4:4:test $0x1,%r10b
+0x402ea8:3:cmovne %ecx,%eax
+0x402eab:3:mov %eax,-0x40(%rbp)
+0x402eae:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x402eb3:5:mov $0xbf12c12e,%eax
+0x402eb8:5:mov $0x87b6c792,%ecx
+0x402ebd:2:mov $0x1,%dl
+0x402ebf:10:movabs $0x40430e,%rsi
+0x402ec9:4:mov %rsi,-0x38(%rbp)
+0x402ecd:7:mov 0x40605c,%edi
+0x402ed4:8:mov 0x406044,%r8d
+0x402edc:3:mov %edi,%r9d
+0x402edf:7:add $0x817e325c,%r9d
+0x402ee6:4:sub $0x1,%r9d
+0x402eea:7:sub $0x817e325c,%r9d
+0x402ef1:4:imul %r9d,%edi
+0x402ef5:3:and $0x1,%edi
+0x402ef8:3:cmp $0x0,%edi
+0x402efb:4:sete %r10b
+0x402eff:4:cmp $0xa,%r8d
+0x402f03:4:setl %r11b
+0x402f07:3:mov %r10b,%bl
+0x402f0a:3:xor $0xff,%bl
+0x402f0d:3:mov %r11b,%r14b
+0x402f10:4:xor $0xff,%r14b
+0x402f14:3:xor $0x0,%dl
+0x402f17:3:mov %bl,%r15b
+0x402f1a:4:and $0x0,%r15b
+0x402f1e:3:and %dl,%r10b
+0x402f21:3:mov %r14b,%r12b
+0x402f24:4:and $0x0,%r12b
+0x402f28:3:and %dl,%r11b
+0x402f2b:3:or %r10b,%r15b
+0x402f2e:3:or %r11b,%r12b
+0x402f31:3:xor %r12b,%r15b
+0x402f34:3:or %r14b,%bl
+0x402f37:3:xor $0xff,%bl
+0x402f3a:3:or $0x0,%dl
+0x402f3d:2:and %dl,%bl
+0x402f3f:3:or %bl,%r15b
+0x402f42:4:test $0x1,%r15b
+0x402f46:3:cmovne %ecx,%eax
+0x402f49:3:mov %eax,-0x40(%rbp)
+0x402f4c:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x402f51:7:movl $0xf18160b3,-0x40(%rbp)
+0x402f58:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x402f5d:10:movabs $0x40431e,%rax
+0x402f67:4:mov %rax,-0x38(%rbp)
+0x402f6b:7:movl $0xf18160b3,-0x40(%rbp)
+0x402f72:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x402f77:10:movabs $0x404336,%rax
+0x402f81:4:mov %rax,-0x38(%rbp)
+0x402f85:7:movl $0xf18160b3,-0x40(%rbp)
+0x402f8c:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x402f91:10:movabs $0x404350,%rax
+0x402f9b:4:mov %rax,-0x38(%rbp)
+0x402f9f:7:movl $0xf18160b3,-0x40(%rbp)
+0x402fa6:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x402fab:7:movl $0xff6898a7,-0x40(%rbp)
+0x402fb2:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x402fb7:5:mov $0x7f7106dc,%eax
+0x402fbc:5:mov $0xf62ef35a,%ecx
+0x402fc1:7:mov 0x40605c,%edx
+0x402fc8:7:mov 0x406044,%esi
+0x402fcf:2:mov %edx,%edi
+0x402fd1:6:add $0xd57811fc,%edi
+0x402fd7:3:sub $0x1,%edi
+0x402fda:6:sub $0xd57811fc,%edi
+0x402fe0:3:imul %edi,%edx
+0x402fe3:3:and $0x1,%edx
+0x402fe6:3:cmp $0x0,%edx
+0x402fe9:4:sete %r8b
+0x402fed:3:cmp $0xa,%esi
+0x402ff0:4:setl %r9b
+0x402ff4:3:mov %r8b,%r10b
+0x402ff7:3:and %r9b,%r10b
+0x402ffa:3:xor %r9b,%r8b
+0x402ffd:3:or %r8b,%r10b
+0x403000:4:test $0x1,%r10b
+0x403004:3:cmovne %ecx,%eax
+0x403007:3:mov %eax,-0x40(%rbp)
+0x40300a:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x40300f:5:mov $0x7f7106dc,%eax
+0x403014:5:mov $0xce02953b,%ecx
+0x403019:2:mov $0x1,%dl
+0x40301b:10:movabs $0x404368,%rsi
+0x403025:4:mov %rsi,-0x38(%rbp)
+0x403029:7:mov 0x40605c,%edi
+0x403030:8:mov 0x406044,%r8d
+0x403038:3:mov %edi,%r9d
+0x40303b:7:sub $0xc7412e5,%r9d
+0x403042:4:sub $0x1,%r9d
+0x403046:7:add $0xc7412e5,%r9d
+0x40304d:4:imul %r9d,%edi
+0x403051:3:and $0x1,%edi
+0x403054:3:cmp $0x0,%edi
+0x403057:4:sete %r10b
+0x40305b:4:cmp $0xa,%r8d
+0x40305f:4:setl %r11b
+0x403063:3:mov %r10b,%bl
+0x403066:3:xor $0xff,%bl
+0x403069:3:mov %r11b,%r14b
+0x40306c:4:xor $0xff,%r14b
+0x403070:3:xor $0x0,%dl
+0x403073:3:mov %bl,%r15b
+0x403076:4:and $0x0,%r15b
+0x40307a:3:and %dl,%r10b
+0x40307d:3:mov %r14b,%r12b
+0x403080:4:and $0x0,%r12b
+0x403084:3:and %dl,%r11b
+0x403087:3:or %r10b,%r15b
+0x40308a:3:or %r11b,%r12b
+0x40308d:3:xor %r12b,%r15b
+0x403090:3:or %r14b,%bl
+0x403093:3:xor $0xff,%bl
+0x403096:3:or $0x0,%dl
+0x403099:2:and %dl,%bl
+0x40309b:3:or %bl,%r15b
+0x40309e:4:test $0x1,%r15b
+0x4030a2:3:cmovne %ecx,%eax
+0x4030a5:3:mov %eax,-0x40(%rbp)
+0x4030a8:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x4030ad:7:movl $0xf18160b3,-0x40(%rbp)
+0x4030b4:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x4030b9:4:mov -0x38(%rbp),%rax
+0x4030bd:7:add $0x148,%rsp
+0x4030c4:1:pop %rbx
+0x4030c5:2:pop %r12
+0x4030c7:2:pop %r13
+0x4030c9:2:pop %r14
+0x4030cb:2:pop %r15
+0x4030cd:1:pop %rbp
+0x4030ce:1:ret
+0x4030cf:10:movabs $0x40411c,%rax
+0x4030d9:4:mov %rax,-0x38(%rbp)
+0x4030dd:7:movl $0xdddef4cb,-0x40(%rbp)
+0x4030e4:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x4030e9:10:movabs $0x404132,%rax
+0x4030f3:4:mov %rax,-0x38(%rbp)
+0x4030f7:7:movl $0x6c365414,-0x40(%rbp)
+0x4030fe:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x403103:10:movabs $0x4042ba,%rax
+0x40310d:4:mov %rax,-0x38(%rbp)
+0x403111:7:movl $0xa6bdf89b,-0x40(%rbp)
+0x403118:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x40311d:10:movabs $0x4041d7,%rax
+0x403127:4:mov %rax,-0x38(%rbp)
+0x40312b:7:movl $0xcc3dd476,-0x40(%rbp)
+0x403132:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x403137:10:movabs $0x4041f0,%rax
+0x403141:4:mov %rax,-0x38(%rbp)
+0x403145:7:movl $0x93f7abb1,-0x40(%rbp)
+0x40314c:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x403151:10:movabs $0x4041da,%rax
+0x40315b:4:mov %rax,-0x38(%rbp)
+0x40315f:7:movl $0x8e14f22d,-0x40(%rbp)
+0x403166:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x40316b:10:movabs $0x40427f,%rax
+0x403175:4:mov %rax,-0x38(%rbp)
+0x403179:7:movl $0x2b6f59ef,-0x40(%rbp)
+0x403180:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x403185:10:movabs $0x4042fd,%rax
+0x40318f:4:mov %rax,-0x38(%rbp)
+0x403193:7:movl $0xa31a10b8,-0x40(%rbp)
+0x40319a:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x40319f:10:movabs $0x40430e,%rax
+0x4031a9:4:mov %rax,-0x38(%rbp)
+0x4031ad:7:movl $0x6b97c727,-0x40(%rbp)
+0x4031b4:5:jmp 00000000004031ce <xhci_trb_comp_code_string+0x1c1e>
+0x4031b9:10:movabs $0x404368,%rax
+0x4031c3:4:mov %rax,-0x38(%rbp)
+0x4031c7:7:movl $0xf62ef35a,-0x40(%rbp)
+0x4031ce:5:jmp 00000000004015d4 <xhci_trb_comp_code_string+0x24>
+0x4031d3:13:data16 data16 data16 cs nopw 0x0(%rax,%rax,1)
+0x4031e0:1:push %rbp
+0x4031e1:3:mov %rsp,%rbp
+0x4031e4:2:push %r15
+0x4031e6:2:push %r14
+0x4031e8:1:push %rbx
+0x4031e9:7:sub $0xb8,%rsp
+0x4031f0:7:movl $0x0,-0x28(%rbp)
+0x4031f7:3:mov %edi,-0x2c(%rbp)
+0x4031fa:4:mov %rsi,-0x38(%rbp)
+0x4031fe:3:mov -0x2c(%rbp),%edi
+0x403201:3:mov %edi,-0x24(%rbp)
+0x403204:7:movl $0xc0add1a5,-0x6c(%rbp)
+0x40320b:3:mov -0x6c(%rbp),%eax
+0x40320e:2:mov %eax,%ecx
+0x403210:6:sub $0x982a21e5,%ecx
+0x403216:3:mov %eax,-0x70(%rbp)
+0x403219:3:mov %ecx,-0x74(%rbp)
+0x40321c:6:je 0000000000403423 <main+0x243>
+0x403222:5:jmp 0000000000403227 <main+0x47>
+0x403227:3:mov -0x70(%rbp),%eax
+0x40322a:5:sub $0x9c3f204e,%eax
+0x40322f:3:mov %eax,-0x78(%rbp)
+0x403232:6:je 00000000004036a9 <main+0x4c9>
+0x403238:5:jmp 000000000040323d <main+0x5d>
+0x40323d:3:mov -0x70(%rbp),%eax
+0x403240:5:sub $0xb04eec19,%eax
+0x403245:3:mov %eax,-0x7c(%rbp)
+0x403248:6:je 000000000040363a <main+0x45a>
+0x40324e:5:jmp 0000000000403253 <main+0x73>
+0x403253:3:mov -0x70(%rbp),%eax
+0x403256:5:sub $0xbde5f808,%eax
+0x40325b:3:mov %eax,-0x80(%rbp)
+0x40325e:6:je 0000000000403474 <main+0x294>
+0x403264:5:jmp 0000000000403269 <main+0x89>
+0x403269:3:mov -0x70(%rbp),%eax
+0x40326c:5:sub $0xc0add1a5,%eax
+0x403271:6:mov %eax,-0x84(%rbp)
+0x403277:6:je 00000000004033b3 <main+0x1d3>
+0x40327d:5:jmp 0000000000403282 <main+0xa2>
+0x403282:3:mov -0x70(%rbp),%eax
+0x403285:5:sub $0xc39facba,%eax
+0x40328a:6:mov %eax,-0x88(%rbp)
+0x403290:6:je 0000000000403597 <main+0x3b7>
+0x403296:5:jmp 000000000040329b <main+0xbb>
+0x40329b:3:mov -0x70(%rbp),%eax
+0x40329e:5:sub $0xc7da332b,%eax
+0x4032a3:6:mov %eax,-0x8c(%rbp)
+0x4032a9:6:je 0000000000403459 <main+0x279>
+0x4032af:5:jmp 00000000004032b4 <main+0xd4>
+0x4032b4:3:mov -0x70(%rbp),%eax
+0x4032b7:5:sub $0xe95242f2,%eax
+0x4032bc:6:mov %eax,-0x90(%rbp)
+0x4032c2:6:je 00000000004033e6 <main+0x206>
+0x4032c8:5:jmp 00000000004032cd <main+0xed>
+0x4032cd:3:mov -0x70(%rbp),%eax
+0x4032d0:5:sub $0xeb670b2b,%eax
+0x4032d5:6:mov %eax,-0x94(%rbp)
+0x4032db:6:je 0000000000403586 <main+0x3a6>
+0x4032e1:5:jmp 00000000004032e6 <main+0x106>
+0x4032e6:3:mov -0x70(%rbp),%eax
+0x4032e9:5:sub $0xbf8a1b,%eax
+0x4032ee:6:mov %eax,-0x98(%rbp)
+0x4032f4:6:je 0000000000403698 <main+0x4b8>
+0x4032fa:5:jmp 00000000004032ff <main+0x11f>
+0x4032ff:3:mov -0x70(%rbp),%eax
+0x403302:5:sub $0x1e841a9d,%eax
+0x403307:6:mov %eax,-0x9c(%rbp)
+0x40330d:6:je 00000000004035aa <main+0x3ca>
+0x403313:5:jmp 0000000000403318 <main+0x138>
+0x403318:3:mov -0x70(%rbp),%eax
+0x40331b:5:sub $0x27b02224,%eax
+0x403320:6:mov %eax,-0xa0(%rbp)
+0x403326:6:je 0000000000403408 <main+0x228>
+0x40332c:5:jmp 0000000000403331 <main+0x151>
+0x403331:3:mov -0x70(%rbp),%eax
+0x403334:5:sub $0x2bceaa65,%eax
+0x403339:6:mov %eax,-0xa4(%rbp)
+0x40333f:6:je 0000000000403524 <main+0x344>
+0x403345:5:jmp 000000000040334a <main+0x16a>
+0x40334a:3:mov -0x70(%rbp),%eax
+0x40334d:5:sub $0x34871ed6,%eax
+0x403352:6:mov %eax,-0xa8(%rbp)
+0x403358:6:je 000000000040343e <main+0x25e>
+0x40335e:5:jmp 0000000000403363 <main+0x183>
+0x403363:3:mov -0x70(%rbp),%eax
+0x403366:5:sub $0x51a0ca4c,%eax
+0x40336b:6:mov %eax,-0xac(%rbp)
+0x403371:6:je 000000000040357a <main+0x39a>
+0x403377:5:jmp 000000000040337c <main+0x19c>
+0x40337c:3:mov -0x70(%rbp),%eax
+0x40337f:5:sub $0x5df50f46,%eax
+0x403384:6:mov %eax,-0xb0(%rbp)
+0x40338a:6:je 00000000004033ce <main+0x1ee>
+0x403390:5:jmp 0000000000403395 <main+0x1b5>
+0x403395:3:mov -0x70(%rbp),%eax
+0x403398:5:sub $0x69933cf7,%eax
+0x40339d:6:mov %eax,-0xb4(%rbp)
+0x4033a3:6:je 00000000004034ca <main+0x2ea>
+0x4033a9:5:jmp 00000000004033ae <main+0x1ce>
+0x4033ae:5:jmp 00000000004036b0 <main+0x4d0>
+0x4033b3:5:mov $0xe95242f2,%eax
+0x4033b8:5:mov $0x5df50f46,%ecx
+0x4033bd:3:mov -0x24(%rbp),%edx
+0x4033c0:3:cmp $0x2,%edx
+0x4033c3:3:cmovne %ecx,%eax
+0x4033c6:3:mov %eax,-0x6c(%rbp)
+0x4033c9:5:jmp 00000000004036b0 <main+0x4d0>
+0x4033ce:5:call 0000000000401580 <usage>
+0x4033d3:7:movl $0x1,-0x28(%rbp)
+0x4033da:7:movl $0x1e841a9d,-0x6c(%rbp)
+0x4033e1:5:jmp 00000000004036b0 <main+0x4d0>
+0x4033e6:4:mov -0x38(%rbp),%rax
+0x4033ea:4:mov 0x8(%rax),%rdi
+0x4033ee:5:call 0000000000401040 <atoi@plt>
+0x4033f3:3:mov %eax,-0x3c(%rbp)
+0x4033f6:3:mov -0x3c(%rbp),%eax
+0x4033f9:3:mov %eax,-0x20(%rbp)
+0x4033fc:7:movl $0x27b02224,-0x6c(%rbp)
+0x403403:5:jmp 00000000004036b0 <main+0x4d0>
+0x403408:5:mov $0x982a21e5,%eax
+0x40340d:5:mov $0xc7da332b,%ecx
+0x403412:3:mov -0x20(%rbp),%edx
+0x403415:3:cmp $0x1,%edx
+0x403418:3:cmovl %ecx,%eax
+0x40341b:3:mov %eax,-0x6c(%rbp)
+0x40341e:5:jmp 00000000004036b0 <main+0x4d0>
+0x403423:5:mov $0x34871ed6,%eax
+0x403428:5:mov $0x69933cf7,%ecx
+0x40342d:3:mov -0x20(%rbp),%edx
+0x403430:3:cmp $0x2,%edx
+0x403433:3:cmovl %ecx,%eax
+0x403436:3:mov %eax,-0x6c(%rbp)
+0x403439:5:jmp 00000000004036b0 <main+0x4d0>
+0x40343e:5:mov $0x51a0ca4c,%eax
+0x403443:5:mov $0x2bceaa65,%ecx
+0x403448:3:mov -0x20(%rbp),%edx
+0x40344b:3:cmp $0x2,%edx
+0x40344e:3:cmove %ecx,%eax
+0x403451:3:mov %eax,-0x6c(%rbp)
+0x403454:5:jmp 00000000004036b0 <main+0x4d0>
+0x403459:5:mov $0x51a0ca4c,%eax
+0x40345e:5:mov $0xbde5f808,%ecx
+0x403463:3:mov -0x20(%rbp),%edx
+0x403466:3:cmp $0x0,%edx
+0x403469:3:cmove %ecx,%eax
+0x40346c:3:mov %eax,-0x6c(%rbp)
+0x40346f:5:jmp 00000000004036b0 <main+0x4d0>
+0x403474:7:movl $0x64,-0x40(%rbp)
+0x40347b:3:mov -0x40(%rbp),%edi
+0x40347e:5:call 00000000004015b0 <xhci_trb_comp_code_string>
+0x403483:10:movabs $0x404372,%rdi
+0x40348d:5:mov $0x1a,%ecx
+0x403492:4:mov %rax,-0x48(%rbp)
+0x403496:4:mov -0x48(%rbp),%rax
+0x40349a:3:movsbl (%rax),%eax
+0x40349d:1:cltd
+0x40349e:2:idiv %ecx
+0x4034a0:6:add $0x769df90a,%edx
+0x4034a6:3:add $0x61,%edx
+0x4034a9:6:sub $0x769df90a,%edx
+0x4034af:2:mov %edx,%esi
+0x4034b1:2:mov $0x0,%al
+0x4034b3:5:call 0000000000401030 <printf@plt>
+0x4034b8:7:movl $0xc39facba,-0x6c(%rbp)
+0x4034bf:6:mov %eax,-0xb8(%rbp)
+0x4034c5:5:jmp 00000000004036b0 <main+0x4d0>
+0x4034ca:7:movl $0xff,-0x4c(%rbp)
+0x4034d1:3:mov -0x4c(%rbp),%edi
+0x4034d4:5:call 00000000004015b0 <xhci_trb_comp_code_string>
+0x4034d9:10:movabs $0x404372,%rdi
+0x4034e3:2:xor %ecx,%ecx
+0x4034e5:5:mov $0x1a,%edx
+0x4034ea:4:mov %rax,-0x58(%rbp)
+0x4034ee:4:mov -0x58(%rbp),%rax
+0x4034f2:3:movsbl (%rax),%eax
+0x4034f5:6:mov %edx,-0xbc(%rbp)
+0x4034fb:1:cltd
+0x4034fc:6:mov -0xbc(%rbp),%esi
+0x403502:2:idiv %esi
+0x403504:3:sub $0x61,%ecx
+0x403507:2:sub %ecx,%edx
+0x403509:2:mov %edx,%esi
+0x40350b:2:mov $0x0,%al
+0x40350d:5:call 0000000000401030 <printf@plt>
+0x403512:7:movl $0xc39facba,-0x6c(%rbp)
+0x403519:6:mov %eax,-0xc0(%rbp)
+0x40351f:5:jmp 00000000004036b0 <main+0x4d0>
+0x403524:7:movl $0xa,-0x5c(%rbp)
+0x40352b:3:mov -0x5c(%rbp),%edi
+0x40352e:5:call 00000000004015b0 <xhci_trb_comp_code_string>
+0x403533:10:movabs $0x404372,%rdi
+0x40353d:5:mov $0x1a,%ecx
+0x403542:4:mov %rax,-0x68(%rbp)
+0x403546:4:mov -0x68(%rbp),%rax
+0x40354a:3:movsbl (%rax),%eax
+0x40354d:1:cltd
+0x40354e:2:idiv %ecx
+0x403550:6:add $0x75a722ae,%edx
+0x403556:3:add $0x61,%edx
+0x403559:6:sub $0x75a722ae,%edx
+0x40355f:2:mov %edx,%esi
+0x403561:2:mov $0x0,%al
+0x403563:5:call 0000000000401030 <printf@plt>
+0x403568:7:movl $0xc39facba,-0x6c(%rbp)
+0x40356f:6:mov %eax,-0xc4(%rbp)
+0x403575:5:jmp 00000000004036b0 <main+0x4d0>
+0x40357a:7:movl $0xeb670b2b,-0x6c(%rbp)
+0x403581:5:jmp 00000000004036b0 <main+0x4d0>
+0x403586:5:call 0000000000401580 <usage>
+0x40358b:7:movl $0xc39facba,-0x6c(%rbp)
+0x403592:5:jmp 00000000004036b0 <main+0x4d0>
+0x403597:7:movl $0x0,-0x28(%rbp)
+0x40359e:7:movl $0x1e841a9d,-0x6c(%rbp)
+0x4035a5:5:jmp 00000000004036b0 <main+0x4d0>
+0x4035aa:5:mov $0x9c3f204e,%eax
+0x4035af:5:mov $0xb04eec19,%ecx
+0x4035b4:2:mov $0x1,%dl
+0x4035b6:7:mov 0x406058,%esi
+0x4035bd:7:mov 0x40603c,%edi
+0x4035c4:3:mov %esi,%r8d
+0x4035c7:7:add $0x4a438e49,%r8d
+0x4035ce:4:sub $0x1,%r8d
+0x4035d2:7:sub $0x4a438e49,%r8d
+0x4035d9:4:imul %r8d,%esi
+0x4035dd:3:and $0x1,%esi
+0x4035e0:3:cmp $0x0,%esi
+0x4035e3:4:sete %r9b
+0x4035e7:3:cmp $0xa,%edi
+0x4035ea:4:setl %r10b
+0x4035ee:3:mov %r9b,%r11b
+0x4035f1:4:xor $0xff,%r11b
+0x4035f5:3:mov %r10b,%bl
+0x4035f8:3:xor $0xff,%bl
+0x4035fb:3:xor $0x0,%dl
+0x4035fe:3:mov %r11b,%r14b
+0x403601:4:and $0x0,%r14b
+0x403605:3:and %dl,%r9b
+0x403608:3:mov %bl,%r15b
+0x40360b:4:and $0x0,%r15b
+0x40360f:3:and %dl,%r10b
+0x403612:3:or %r9b,%r14b
+0x403615:3:or %r10b,%r15b
+0x403618:3:xor %r15b,%r14b
+0x40361b:3:or %bl,%r11b
+0x40361e:4:xor $0xff,%r11b
+0x403622:3:or $0x0,%dl
+0x403625:3:and %dl,%r11b
+0x403628:3:or %r11b,%r14b
+0x40362b:4:test $0x1,%r14b
+0x40362f:3:cmovne %ecx,%eax
+0x403632:3:mov %eax,-0x6c(%rbp)
+0x403635:5:jmp 00000000004036b0 <main+0x4d0>
+0x40363a:5:mov $0x9c3f204e,%eax
+0x40363f:5:mov $0xbf8a1b,%ecx
+0x403644:3:mov -0x28(%rbp),%edx
+0x403647:3:mov %edx,-0x1c(%rbp)
+0x40364a:7:mov 0x406058,%edx
+0x403651:7:mov 0x40603c,%esi
+0x403658:2:mov %edx,%edi
+0x40365a:6:sub $0xf36f2f54,%edi
+0x403660:3:sub $0x1,%edi
+0x403663:6:add $0xf36f2f54,%edi
+0x403669:3:imul %edi,%edx
+0x40366c:3:and $0x1,%edx
+0x40366f:3:cmp $0x0,%edx
+0x403672:4:sete %r8b
+0x403676:3:cmp $0xa,%esi
+0x403679:4:setl %r9b
+0x40367d:3:mov %r8b,%r10b
+0x403680:3:and %r9b,%r10b
+0x403683:3:xor %r9b,%r8b
+0x403686:3:or %r8b,%r10b
+0x403689:4:test $0x1,%r10b
+0x40368d:3:cmovne %ecx,%eax
+0x403690:3:mov %eax,-0x6c(%rbp)
+0x403693:5:jmp 00000000004036b0 <main+0x4d0>
+0x403698:3:mov -0x1c(%rbp),%eax
+0x40369b:7:add $0xb8,%rsp
+0x4036a2:1:pop %rbx
+0x4036a3:2:pop %r14
+0x4036a5:2:pop %r15
+0x4036a7:1:pop %rbp
+0x4036a8:1:ret
+0x4036a9:7:movl $0xb04eec19,-0x6c(%rbp)
+0x4036b0:5:jmp 000000000040320b <main+0x2b>
+0x4036b8:4:endbr64
+0x4036bc:4:sub $0x8,%rsp
+0x4036c0:4:add $0x8,%rsp
+0x4036c4:1:ret

@@ -1,0 +1,3066 @@
+0x401000:4:endbr64
+0x401004:4:sub $0x8,%rsp
+0x401008:7:mov 0x5fe9(%rip),%rax
+0x40100f:3:test %rax,%rax
+0x401012:2:je 0000000000401016 <_init+0x16>
+0x401014:2:call *%rax
+0x401016:4:add $0x8,%rsp
+0x40101a:1:ret
+0x401020:6:push 0x5fe2(%rip)
+0x401026:6:jmp *0x5fe4(%rip)
+0x40102c:4:nopl 0x0(%rax)
+0x401030:6:jmp *0x5fe2(%rip)
+0x401036:5:push $0x0
+0x40103b:5:jmp 0000000000401020 <_init+0x20>
+0x401040:6:jmp *0x5fda(%rip)
+0x401046:5:push $0x1
+0x40104b:5:jmp 0000000000401020 <_init+0x20>
+0x401050:4:endbr64
+0x401054:2:xor %ebp,%ebp
+0x401056:3:mov %rdx,%r9
+0x401059:1:pop %rsi
+0x40105a:3:mov %rsp,%rdx
+0x40105d:4:and $0xfffffffffffffff0,%rsp
+0x401061:1:push %rax
+0x401062:1:push %rsp
+0x401063:3:xor %r8d,%r8d
+0x401066:2:xor %ecx,%ecx
+0x401068:7:mov $0x403b60,%rdi
+0x40106f:6:call *0x5f7b(%rip)
+0x401075:1:hlt
+0x401076:10:cs nopw 0x0(%rax,%rax,1)
+0x401080:4:endbr64
+0x401084:1:ret
+0x401085:10:cs nopw 0x0(%rax,%rax,1)
+0x40108f:1:nop
+0x401090:5:mov $0x407038,%eax
+0x401095:6:cmp $0x407038,%rax
+0x40109b:2:je 00000000004010b0 <deregister_tm_clones+0x20>
+0x40109d:5:mov $0x0,%eax
+0x4010a2:3:test %rax,%rax
+0x4010a5:2:je 00000000004010b0 <deregister_tm_clones+0x20>
+0x4010a7:5:mov $0x407038,%edi
+0x4010ac:2:jmp *%rax
+0x4010ae:2:xchg %ax,%ax
+0x4010b0:1:ret
+0x4010b1:11:data16 cs nopw 0x0(%rax,%rax,1)
+0x4010bc:4:nopl 0x0(%rax)
+0x4010c0:5:mov $0x407038,%esi
+0x4010c5:7:sub $0x407038,%rsi
+0x4010cc:3:mov %rsi,%rax
+0x4010cf:4:shr $0x3f,%rsi
+0x4010d3:4:sar $0x3,%rax
+0x4010d7:3:add %rax,%rsi
+0x4010da:3:sar %rsi
+0x4010dd:2:je 00000000004010f0 <register_tm_clones+0x30>
+0x4010df:5:mov $0x0,%eax
+0x4010e4:3:test %rax,%rax
+0x4010e7:2:je 00000000004010f0 <register_tm_clones+0x30>
+0x4010e9:5:mov $0x407038,%edi
+0x4010ee:2:jmp *%rax
+0x4010f0:1:ret
+0x4010f1:11:data16 cs nopw 0x0(%rax,%rax,1)
+0x4010fc:4:nopl 0x0(%rax)
+0x401100:4:endbr64
+0x401104:7:cmpb $0x0,0x5f2d(%rip)
+0x40110b:2:jne 0000000000401120 <__do_global_dtors_aux+0x20>
+0x40110d:1:push %rbp
+0x40110e:3:mov %rsp,%rbp
+0x401111:5:call 0000000000401090 <deregister_tm_clones>
+0x401116:7:movb $0x1,0x5f1b(%rip)
+0x40111d:1:pop %rbp
+0x40111e:1:ret
+0x40111f:1:nop
+0x401120:1:ret
+0x401121:11:data16 cs nopw 0x0(%rax,%rax,1)
+0x40112c:4:nopl 0x0(%rax)
+0x401130:4:endbr64
+0x401134:2:jmp 00000000004010c0 <register_tm_clones>
+0x401136:10:cs nopw 0x0(%rax,%rax,1)
+0x401140:1:push %rbp
+0x401141:3:mov %rsp,%rbp
+0x401144:2:push %r15
+0x401146:2:push %r14
+0x401148:2:push %r13
+0x40114a:2:push %r12
+0x40114c:1:push %rbx
+0x40114d:4:sub $0x28,%rsp
+0x401151:7:mov 0x40703c,%eax
+0x401158:7:mov 0x407058,%ecx
+0x40115f:2:mov %eax,%edx
+0x401161:6:sub $0x616ef164,%edx
+0x401167:3:sub $0x1,%edx
+0x40116a:6:add $0x616ef164,%edx
+0x401170:3:imul %edx,%eax
+0x401173:3:and $0x1,%eax
+0x401176:3:cmp $0x0,%eax
+0x401179:4:sete %sil
+0x40117d:4:and $0x1,%sil
+0x401181:4:mov %sil,-0x2e(%rbp)
+0x401185:3:cmp $0xa,%ecx
+0x401188:4:setl %sil
+0x40118c:4:and $0x1,%sil
+0x401190:4:mov %sil,-0x2d(%rbp)
+0x401194:7:movl $0x1714b161,-0x34(%rbp)
+0x40119b:3:mov -0x34(%rbp),%eax
+0x40119e:2:mov %eax,%ecx
+0x4011a0:6:sub $0xf6e1bf2b,%ecx
+0x4011a6:3:mov %eax,-0x38(%rbp)
+0x4011a9:3:mov %ecx,-0x3c(%rbp)
+0x4011ac:6:je 0000000000401330 <next_i+0x1f0>
+0x4011b2:5:jmp 00000000004011b7 <next_i+0x77>
+0x4011b7:3:mov -0x38(%rbp),%eax
+0x4011ba:5:sub $0x1714b161,%eax
+0x4011bf:3:mov %eax,-0x40(%rbp)
+0x4011c2:6:je 00000000004011fe <next_i+0xbe>
+0x4011c8:5:jmp 00000000004011cd <next_i+0x8d>
+0x4011cd:3:mov -0x38(%rbp),%eax
+0x4011d0:5:sub $0x25c8182c,%eax
+0x4011d5:3:mov %eax,-0x44(%rbp)
+0x4011d8:6:je 0000000000401342 <next_i+0x202>
+0x4011de:5:jmp 00000000004011e3 <next_i+0xa3>
+0x4011e3:3:mov -0x38(%rbp),%eax
+0x4011e6:5:sub $0x6a5b3938,%eax
+0x4011eb:3:mov %eax,-0x48(%rbp)
+0x4011ee:6:je 000000000040125f <next_i+0x11f>
+0x4011f4:5:jmp 00000000004011f9 <next_i+0xb9>
+0x4011f9:5:jmp 0000000000401364 <next_i+0x224>
+0x4011fe:5:mov $0x25c8182c,%eax
+0x401203:5:mov $0x6a5b3938,%ecx
+0x401208:2:mov $0x1,%dl
+0x40120a:4:mov -0x2e(%rbp),%sil
+0x40120e:4:mov -0x2d(%rbp),%dil
+0x401212:3:mov %sil,%r8b
+0x401215:4:xor $0xff,%r8b
+0x401219:3:mov %dil,%r9b
+0x40121c:4:xor $0xff,%r9b
+0x401220:3:xor $0x0,%dl
+0x401223:3:mov %r8b,%r10b
+0x401226:4:and $0x0,%r10b
+0x40122a:3:and %dl,%sil
+0x40122d:3:mov %r9b,%r11b
+0x401230:4:and $0x0,%r11b
+0x401234:3:and %dl,%dil
+0x401237:3:or %sil,%r10b
+0x40123a:3:or %dil,%r11b
+0x40123d:3:xor %r11b,%r10b
+0x401240:3:or %r9b,%r8b
+0x401243:4:xor $0xff,%r8b
+0x401247:3:or $0x0,%dl
+0x40124a:3:and %dl,%r8b
+0x40124d:3:or %r8b,%r10b
+0x401250:4:test $0x1,%r10b
+0x401254:3:cmovne %ecx,%eax
+0x401257:3:mov %eax,-0x34(%rbp)
+0x40125a:5:jmp 0000000000401364 <next_i+0x224>
+0x40125f:5:mov $0x25c8182c,%eax
+0x401264:5:mov $0xf6e1bf2b,%ecx
+0x401269:2:mov $0x1,%dl
+0x40126b:5:mov $0x19,%esi
+0x401270:2:xor %edi,%edi
+0x401272:3:mov %rsp,%r8
+0x401275:4:add $0xfffffffffffffff0,%r8
+0x401279:3:mov %r8,%rsp
+0x40127c:7:movl $0x0,(%r8)
+0x401283:3:mov (%r8),%r9d
+0x401286:3:sub $0x1,%edi
+0x401289:3:sub %edi,%r9d
+0x40128c:3:mov %r9d,(%r8)
+0x40128f:3:mov %eax,-0x4c(%rbp)
+0x401292:3:mov %r9d,%eax
+0x401295:3:mov %dl,-0x4d(%rbp)
+0x401298:1:cltd
+0x401299:2:idiv %esi
+0x40129b:3:movslq %edx,%r8
+0x40129e:8:mov 0x405010(,%r8,4),%edx
+0x4012a6:3:mov %edx,-0x2c(%rbp)
+0x4012a9:7:mov 0x40703c,%edx
+0x4012b0:7:mov 0x407058,%esi
+0x4012b7:2:mov %edx,%edi
+0x4012b9:6:sub $0xcdaf1af0,%edi
+0x4012bf:3:sub $0x1,%edi
+0x4012c2:6:add $0xcdaf1af0,%edi
+0x4012c8:3:imul %edi,%edx
+0x4012cb:3:and $0x1,%edx
+0x4012ce:3:cmp $0x0,%edx
+0x4012d1:4:sete %r10b
+0x4012d5:3:cmp $0xa,%esi
+0x4012d8:4:setl %r11b
+0x4012dc:3:mov %r10b,%bl
+0x4012df:3:xor $0xff,%bl
+0x4012e2:3:mov %r11b,%r14b
+0x4012e5:4:xor $0xff,%r14b
+0x4012e9:4:mov -0x4d(%rbp),%r15b
+0x4012ed:4:xor $0x1,%r15b
+0x4012f1:3:mov %bl,%r12b
+0x4012f4:4:and $0xff,%r12b
+0x4012f8:3:and %r15b,%r10b
+0x4012fb:3:mov %r14b,%r13b
+0x4012fe:4:and $0xff,%r13b
+0x401302:3:and %r15b,%r11b
+0x401305:3:or %r10b,%r12b
+0x401308:3:or %r11b,%r13b
+0x40130b:3:xor %r13b,%r12b
+0x40130e:3:or %r14b,%bl
+0x401311:3:xor $0xff,%bl
+0x401314:4:or $0x1,%r15b
+0x401318:3:and %r15b,%bl
+0x40131b:3:or %bl,%r12b
+0x40131e:4:test $0x1,%r12b
+0x401322:3:mov -0x4c(%rbp),%edx
+0x401325:3:cmovne %ecx,%edx
+0x401328:3:mov %edx,-0x34(%rbp)
+0x40132b:5:jmp 0000000000401364 <next_i+0x224>
+0x401330:3:mov -0x2c(%rbp),%eax
+0x401333:4:lea -0x28(%rbp),%rsp
+0x401337:1:pop %rbx
+0x401338:2:pop %r12
+0x40133a:2:pop %r13
+0x40133c:2:pop %r14
+0x40133e:2:pop %r15
+0x401340:1:pop %rbp
+0x401341:1:ret
+0x401342:2:xor %eax,%eax
+0x401344:3:mov %rsp,%rcx
+0x401347:4:add $0xfffffffffffffff0,%rcx
+0x40134b:3:mov %rcx,%rsp
+0x40134e:6:movl $0x0,(%rcx)
+0x401354:2:mov (%rcx),%edx
+0x401356:3:sub $0x1,%eax
+0x401359:2:sub %eax,%edx
+0x40135b:2:mov %edx,(%rcx)
+0x40135d:7:movl $0x6a5b3938,-0x34(%rbp)
+0x401364:5:jmp 000000000040119b <next_i+0x5b>
+0x401369:7:nopl 0x0(%rax)
+0x401370:1:push %rbp
+0x401371:3:mov %rsp,%rbp
+0x401374:8:movss 0x3c88(%rip),%xmm0
+0x40137c:7:movl $0x0,-0x4(%rbp)
+0x401383:3:mov -0x4(%rbp),%eax
+0x401386:2:mov %eax,%ecx
+0x401388:2:inc %ecx
+0x40138a:3:mov %ecx,-0x4(%rbp)
+0x40138d:3:movslq %ecx,%rdx
+0x401390:7:imul $0x51eb851f,%rdx,%rdx
+0x401397:3:mov %rdx,%rsi
+0x40139a:4:shr $0x3f,%rsi
+0x40139e:2:mov %esi,%ecx
+0x4013a0:4:sar $0x23,%rdx
+0x4013a4:2:mov %edx,%edi
+0x4013a6:2:add %ecx,%edi
+0x4013a8:2:mov %edi,%edx
+0x4013aa:3:lea (%rdx,%rdx,4),%ecx
+0x4013ad:2:mov %ecx,%edx
+0x4013af:3:lea (%rdx,%rdx,4),%ecx
+0x4013b2:2:neg %ecx
+0x4013b4:2:mov %ecx,%edx
+0x4013b6:2:mov %eax,%esi
+0x4013b8:4:lea 0x1(%rsi,%rdx,1),%eax
+0x4013bc:3:movslq %eax,%rdx
+0x4013bf:7:mov 0x405010(,%rdx,4),%eax
+0x4013c6:2:mov %eax,%edx
+0x4013c8:5:cvtsi2ss %rdx,%xmm1
+0x4013cd:4:divss %xmm0,%xmm1
+0x4013d1:3:movaps %xmm1,%xmm0
+0x4013d4:1:pop %rbp
+0x4013d5:1:ret
+0x4013d6:10:cs nopw 0x0(%rax,%rax,1)
+0x4013e0:1:push %rbp
+0x4013e1:3:mov %rsp,%rbp
+0x4013e4:4:sub $0x10,%rsp
+0x4013e8:10:movabs $0x405074,%rdi
+0x4013f2:10:movabs $0x405077,%rsi
+0x4013fc:2:mov $0x0,%al
+0x4013fe:5:call 0000000000401030 <printf@plt>
+0x401403:3:mov %eax,-0x4(%rbp)
+0x401406:4:add $0x10,%rsp
+0x40140a:1:pop %rbp
+0x40140b:1:ret
+0x40140c:4:nopl 0x0(%rax)
+0x401410:1:push %rbp
+0x401411:3:mov %rsp,%rbp
+0x401414:2:push %r15
+0x401416:2:push %r14
+0x401418:2:push %r13
+0x40141a:2:push %r12
+0x40141c:1:push %rbx
+0x40141d:7:sub $0x298,%rsp
+0x401424:7:mov 0x407048,%eax
+0x40142b:7:mov 0x407064,%ecx
+0x401432:2:mov %eax,%edx
+0x401434:6:sub $0x13ab7dfd,%edx
+0x40143a:3:sub $0x1,%edx
+0x40143d:6:add $0x13ab7dfd,%edx
+0x401443:3:imul %edx,%eax
+0x401446:3:and $0x1,%eax
+0x401449:3:cmp $0x0,%eax
+0x40144c:4:sete %r8b
+0x401450:4:and $0x1,%r8b
+0x401454:4:mov %r8b,-0x52(%rbp)
+0x401458:3:cmp $0xa,%ecx
+0x40145b:4:setl %r8b
+0x40145f:4:and $0x1,%r8b
+0x401463:4:mov %r8b,-0x51(%rbp)
+0x401467:7:movl $0x3efbed0e,-0x58(%rbp)
+0x40146e:3:mov %edi,-0x5c(%rbp)
+0x401471:3:mov %esi,-0x60(%rbp)
+0x401474:3:mov -0x58(%rbp),%eax
+0x401477:2:mov %eax,%ecx
+0x401479:6:sub $0x805acab5,%ecx
+0x40147f:3:mov %eax,-0x64(%rbp)
+0x401482:3:mov %ecx,-0x68(%rbp)
+0x401485:6:je 0000000000403356 <viafb_lcd_get_support_expand_state+0x1f46>
+0x40148b:5:jmp 0000000000401490 <viafb_lcd_get_support_expand_state+0x80>
+0x401490:3:mov -0x64(%rbp),%eax
+0x401493:5:sub $0x81232ebc,%eax
+0x401498:3:mov %eax,-0x6c(%rbp)
+0x40149b:6:je 0000000000403555 <viafb_lcd_get_support_expand_state+0x2145>
+0x4014a1:5:jmp 00000000004014a6 <viafb_lcd_get_support_expand_state+0x96>
+0x4014a6:3:mov -0x64(%rbp),%eax
+0x4014a9:5:sub $0x83004230,%eax
+0x4014ae:3:mov %eax,-0x70(%rbp)
+0x4014b1:6:je 00000000004030e5 <viafb_lcd_get_support_expand_state+0x1cd5>
+0x4014b7:5:jmp 00000000004014bc <viafb_lcd_get_support_expand_state+0xac>
+0x4014bc:3:mov -0x64(%rbp),%eax
+0x4014bf:5:sub $0x840f740a,%eax
+0x4014c4:3:mov %eax,-0x74(%rbp)
+0x4014c7:6:je 0000000000402751 <viafb_lcd_get_support_expand_state+0x1341>
+0x4014cd:5:jmp 00000000004014d2 <viafb_lcd_get_support_expand_state+0xc2>
+0x4014d2:3:mov -0x64(%rbp),%eax
+0x4014d5:5:sub $0x842d1a76,%eax
+0x4014da:3:mov %eax,-0x78(%rbp)
+0x4014dd:6:je 0000000000402386 <viafb_lcd_get_support_expand_state+0xf76>
+0x4014e3:5:jmp 00000000004014e8 <viafb_lcd_get_support_expand_state+0xd8>
+0x4014e8:3:mov -0x64(%rbp),%eax
+0x4014eb:5:sub $0x843ae952,%eax
+0x4014f0:3:mov %eax,-0x7c(%rbp)
+0x4014f3:6:je 00000000004022b4 <viafb_lcd_get_support_expand_state+0xea4>
+0x4014f9:5:jmp 00000000004014fe <viafb_lcd_get_support_expand_state+0xee>
+0x4014fe:3:mov -0x64(%rbp),%eax
+0x401501:5:sub $0x863249fd,%eax
+0x401506:3:mov %eax,-0x80(%rbp)
+0x401509:6:je 0000000000402368 <viafb_lcd_get_support_expand_state+0xf58>
+0x40150f:5:jmp 0000000000401514 <viafb_lcd_get_support_expand_state+0x104>
+0x401514:3:mov -0x64(%rbp),%eax
+0x401517:5:sub $0x885bcec9,%eax
+0x40151c:6:mov %eax,-0x84(%rbp)
+0x401522:6:je 0000000000402aba <viafb_lcd_get_support_expand_state+0x16aa>
+0x401528:5:jmp 000000000040152d <viafb_lcd_get_support_expand_state+0x11d>
+0x40152d:3:mov -0x64(%rbp),%eax
+0x401530:5:sub $0x8889832e,%eax
+0x401535:6:mov %eax,-0x88(%rbp)
+0x40153b:6:je 00000000004036eb <viafb_lcd_get_support_expand_state+0x22db>
+0x401541:5:jmp 0000000000401546 <viafb_lcd_get_support_expand_state+0x136>
+0x401546:3:mov -0x64(%rbp),%eax
+0x401549:5:sub $0x8eb18ae3,%eax
+0x40154e:6:mov %eax,-0x8c(%rbp)
+0x401554:6:je 00000000004037d3 <viafb_lcd_get_support_expand_state+0x23c3>
+0x40155a:5:jmp 000000000040155f <viafb_lcd_get_support_expand_state+0x14f>
+0x40155f:3:mov -0x64(%rbp),%eax
+0x401562:5:sub $0x8fcd32ab,%eax
+0x401567:6:mov %eax,-0x90(%rbp)
+0x40156d:6:je 0000000000402bd3 <viafb_lcd_get_support_expand_state+0x17c3>
+0x401573:5:jmp 0000000000401578 <viafb_lcd_get_support_expand_state+0x168>
+0x401578:3:mov -0x64(%rbp),%eax
+0x40157b:5:sub $0x90876ce7,%eax
+0x401580:6:mov %eax,-0x94(%rbp)
+0x401586:6:je 0000000000403232 <viafb_lcd_get_support_expand_state+0x1e22>
+0x40158c:5:jmp 0000000000401591 <viafb_lcd_get_support_expand_state+0x181>
+0x401591:3:mov -0x64(%rbp),%eax
+0x401594:5:sub $0x933061c7,%eax
+0x401599:6:mov %eax,-0x98(%rbp)
+0x40159f:6:je 00000000004038ce <viafb_lcd_get_support_expand_state+0x24be>
+0x4015a5:5:jmp 00000000004015aa <viafb_lcd_get_support_expand_state+0x19a>
+0x4015aa:3:mov -0x64(%rbp),%eax
+0x4015ad:5:sub $0x93b4deb9,%eax
+0x4015b2:6:mov %eax,-0x9c(%rbp)
+0x4015b8:6:je 000000000040386f <viafb_lcd_get_support_expand_state+0x245f>
+0x4015be:5:jmp 00000000004015c3 <viafb_lcd_get_support_expand_state+0x1b3>
+0x4015c3:3:mov -0x64(%rbp),%eax
+0x4015c6:5:sub $0x99fa1569,%eax
+0x4015cb:6:mov %eax,-0xa0(%rbp)
+0x4015d1:6:je 0000000000402e81 <viafb_lcd_get_support_expand_state+0x1a71>
+0x4015d7:5:jmp 00000000004015dc <viafb_lcd_get_support_expand_state+0x1cc>
+0x4015dc:3:mov -0x64(%rbp),%eax
+0x4015df:5:sub $0x9cbd418a,%eax
+0x4015e4:6:mov %eax,-0xa4(%rbp)
+0x4015ea:6:je 0000000000402c33 <viafb_lcd_get_support_expand_state+0x1823>
+0x4015f0:5:jmp 00000000004015f5 <viafb_lcd_get_support_expand_state+0x1e5>
+0x4015f5:3:mov -0x64(%rbp),%eax
+0x4015f8:5:sub $0xa1792177,%eax
+0x4015fd:6:mov %eax,-0xa8(%rbp)
+0x401603:6:je 00000000004022f0 <viafb_lcd_get_support_expand_state+0xee0>
+0x401609:5:jmp 000000000040160e <viafb_lcd_get_support_expand_state+0x1fe>
+0x40160e:3:mov -0x64(%rbp),%eax
+0x401611:5:sub $0xa2d445cb,%eax
+0x401616:6:mov %eax,-0xac(%rbp)
+0x40161c:6:je 0000000000402667 <viafb_lcd_get_support_expand_state+0x1257>
+0x401622:5:jmp 0000000000401627 <viafb_lcd_get_support_expand_state+0x217>
+0x401627:3:mov -0x64(%rbp),%eax
+0x40162a:5:sub $0xa4125e5b,%eax
+0x40162f:6:mov %eax,-0xb0(%rbp)
+0x401635:6:je 0000000000402936 <viafb_lcd_get_support_expand_state+0x1526>
+0x40163b:5:jmp 0000000000401640 <viafb_lcd_get_support_expand_state+0x230>
+0x401640:3:mov -0x64(%rbp),%eax
+0x401643:5:sub $0xa4abca84,%eax
+0x401648:6:mov %eax,-0xb4(%rbp)
+0x40164e:6:je 0000000000402c5e <viafb_lcd_get_support_expand_state+0x184e>
+0x401654:5:jmp 0000000000401659 <viafb_lcd_get_support_expand_state+0x249>
+0x401659:3:mov -0x64(%rbp),%eax
+0x40165c:5:sub $0xa51cf9bb,%eax
+0x401661:6:mov %eax,-0xb8(%rbp)
+0x401667:6:je 0000000000402c93 <viafb_lcd_get_support_expand_state+0x1883>
+0x40166d:5:jmp 0000000000401672 <viafb_lcd_get_support_expand_state+0x262>
+0x401672:3:mov -0x64(%rbp),%eax
+0x401675:5:sub $0xa5c60d75,%eax
+0x40167a:6:mov %eax,-0xbc(%rbp)
+0x401680:6:je 0000000000402890 <viafb_lcd_get_support_expand_state+0x1480>
+0x401686:5:jmp 000000000040168b <viafb_lcd_get_support_expand_state+0x27b>
+0x40168b:3:mov -0x64(%rbp),%eax
+0x40168e:5:sub $0xa7c08f30,%eax
+0x401693:6:mov %eax,-0xc0(%rbp)
+0x401699:6:je 0000000000402d76 <viafb_lcd_get_support_expand_state+0x1966>
+0x40169f:5:jmp 00000000004016a4 <viafb_lcd_get_support_expand_state+0x294>
+0x4016a4:3:mov -0x64(%rbp),%eax
+0x4016a7:5:sub $0xac366c40,%eax
+0x4016ac:6:mov %eax,-0xc4(%rbp)
+0x4016b2:6:je 000000000040258b <viafb_lcd_get_support_expand_state+0x117b>
+0x4016b8:5:jmp 00000000004016bd <viafb_lcd_get_support_expand_state+0x2ad>
+0x4016bd:3:mov -0x64(%rbp),%eax
+0x4016c0:5:sub $0xad104190,%eax
+0x4016c5:6:mov %eax,-0xc8(%rbp)
+0x4016cb:6:je 0000000000402770 <viafb_lcd_get_support_expand_state+0x1360>
+0x4016d1:5:jmp 00000000004016d6 <viafb_lcd_get_support_expand_state+0x2c6>
+0x4016d6:3:mov -0x64(%rbp),%eax
+0x4016d9:5:sub $0xae06eb5b,%eax
+0x4016de:6:mov %eax,-0xcc(%rbp)
+0x4016e4:6:je 0000000000402570 <viafb_lcd_get_support_expand_state+0x1160>
+0x4016ea:5:jmp 00000000004016ef <viafb_lcd_get_support_expand_state+0x2df>
+0x4016ef:3:mov -0x64(%rbp),%eax
+0x4016f2:5:sub $0xae65ce68,%eax
+0x4016f7:6:mov %eax,-0xd0(%rbp)
+0x4016fd:6:je 00000000004028a6 <viafb_lcd_get_support_expand_state+0x1496>
+0x401703:5:jmp 0000000000401708 <viafb_lcd_get_support_expand_state+0x2f8>
+0x401708:3:mov -0x64(%rbp),%eax
+0x40170b:5:sub $0xb07ec640,%eax
+0x401710:6:mov %eax,-0xd4(%rbp)
+0x401716:6:je 0000000000403285 <viafb_lcd_get_support_expand_state+0x1e75>
+0x40171c:5:jmp 0000000000401721 <viafb_lcd_get_support_expand_state+0x311>
+0x401721:3:mov -0x64(%rbp),%eax
+0x401724:5:sub $0xb175b026,%eax
+0x401729:6:mov %eax,-0xd8(%rbp)
+0x40172f:6:je 00000000004037e9 <viafb_lcd_get_support_expand_state+0x23d9>
+0x401735:5:jmp 000000000040173a <viafb_lcd_get_support_expand_state+0x32a>
+0x40173a:3:mov -0x64(%rbp),%eax
+0x40173d:5:sub $0xb27902e7,%eax
+0x401742:6:mov %eax,-0xdc(%rbp)
+0x401748:6:je 0000000000402dc0 <viafb_lcd_get_support_expand_state+0x19b0>
+0x40174e:5:jmp 0000000000401753 <viafb_lcd_get_support_expand_state+0x343>
+0x401753:3:mov -0x64(%rbp),%eax
+0x401756:5:sub $0xb307f48f,%eax
+0x40175b:6:mov %eax,-0xe0(%rbp)
+0x401761:6:je 0000000000402c1d <viafb_lcd_get_support_expand_state+0x180d>
+0x401767:5:jmp 000000000040176c <viafb_lcd_get_support_expand_state+0x35c>
+0x40176c:3:mov -0x64(%rbp),%eax
+0x40176f:5:sub $0xb7a81740,%eax
+0x401774:6:mov %eax,-0xe4(%rbp)
+0x40177a:6:je 00000000004039f1 <viafb_lcd_get_support_expand_state+0x25e1>
+0x401780:5:jmp 0000000000401785 <viafb_lcd_get_support_expand_state+0x375>
+0x401785:3:mov -0x64(%rbp),%eax
+0x401788:5:sub $0xba36ebcc,%eax
+0x40178d:6:mov %eax,-0xe8(%rbp)
+0x401793:6:je 0000000000403b33 <viafb_lcd_get_support_expand_state+0x2723>
+0x401799:5:jmp 000000000040179e <viafb_lcd_get_support_expand_state+0x38e>
+0x40179e:3:mov -0x64(%rbp),%eax
+0x4017a1:5:sub $0xbf90a3ee,%eax
+0x4017a6:6:mov %eax,-0xec(%rbp)
+0x4017ac:6:je 0000000000402aeb <viafb_lcd_get_support_expand_state+0x16db>
+0x4017b2:5:jmp 00000000004017b7 <viafb_lcd_get_support_expand_state+0x3a7>
+0x4017b7:3:mov -0x64(%rbp),%eax
+0x4017ba:5:sub $0xc00feb3c,%eax
+0x4017bf:6:mov %eax,-0xf0(%rbp)
+0x4017c5:6:je 00000000004023ff <viafb_lcd_get_support_expand_state+0xfef>
+0x4017cb:5:jmp 00000000004017d0 <viafb_lcd_get_support_expand_state+0x3c0>
+0x4017d0:3:mov -0x64(%rbp),%eax
+0x4017d3:5:sub $0xc6761bcd,%eax
+0x4017d8:6:mov %eax,-0xf4(%rbp)
+0x4017de:6:je 0000000000403a7c <viafb_lcd_get_support_expand_state+0x266c>
+0x4017e4:5:jmp 00000000004017e9 <viafb_lcd_get_support_expand_state+0x3d9>
+0x4017e9:3:mov -0x64(%rbp),%eax
+0x4017ec:5:sub $0xc7e77703,%eax
+0x4017f1:6:mov %eax,-0xf8(%rbp)
+0x4017f7:6:je 0000000000403a64 <viafb_lcd_get_support_expand_state+0x2654>
+0x4017fd:5:jmp 0000000000401802 <viafb_lcd_get_support_expand_state+0x3f2>
+0x401802:3:mov -0x64(%rbp),%eax
+0x401805:5:sub $0xc8a74ab3,%eax
+0x40180a:6:mov %eax,-0xfc(%rbp)
+0x401810:6:je 00000000004024d0 <viafb_lcd_get_support_expand_state+0x10c0>
+0x401816:5:jmp 000000000040181b <viafb_lcd_get_support_expand_state+0x40b>
+0x40181b:3:mov -0x64(%rbp),%eax
+0x40181e:5:sub $0xc8efa123,%eax
+0x401823:6:mov %eax,-0x100(%rbp)
+0x401829:6:je 0000000000403a08 <viafb_lcd_get_support_expand_state+0x25f8>
+0x40182f:5:jmp 0000000000401834 <viafb_lcd_get_support_expand_state+0x424>
+0x401834:3:mov -0x64(%rbp),%eax
+0x401837:5:sub $0xcb079604,%eax
+0x40183c:6:mov %eax,-0x104(%rbp)
+0x401842:6:je 0000000000403758 <viafb_lcd_get_support_expand_state+0x2348>
+0x401848:5:jmp 000000000040184d <viafb_lcd_get_support_expand_state+0x43d>
+0x40184d:3:mov -0x64(%rbp),%eax
+0x401850:5:sub $0xcb1171f5,%eax
+0x401855:6:mov %eax,-0x108(%rbp)
+0x40185b:6:je 0000000000403577 <viafb_lcd_get_support_expand_state+0x2167>
+0x401861:5:jmp 0000000000401866 <viafb_lcd_get_support_expand_state+0x456>
+0x401866:3:mov -0x64(%rbp),%eax
+0x401869:5:sub $0xceb63f02,%eax
+0x40186e:6:mov %eax,-0x10c(%rbp)
+0x401874:6:je 0000000000403315 <viafb_lcd_get_support_expand_state+0x1f05>
+0x40187a:5:jmp 000000000040187f <viafb_lcd_get_support_expand_state+0x46f>
+0x40187f:3:mov -0x64(%rbp),%eax
+0x401882:5:sub $0xd17c7d5e,%eax
+0x401887:6:mov %eax,-0x110(%rbp)
+0x40188d:6:je 00000000004029b9 <viafb_lcd_get_support_expand_state+0x15a9>
+0x401893:5:jmp 0000000000401898 <viafb_lcd_get_support_expand_state+0x488>
+0x401898:3:mov -0x64(%rbp),%eax
+0x40189b:5:sub $0xd1c55aab,%eax
+0x4018a0:6:mov %eax,-0x114(%rbp)
+0x4018a6:6:je 0000000000402d23 <viafb_lcd_get_support_expand_state+0x1913>
+0x4018ac:5:jmp 00000000004018b1 <viafb_lcd_get_support_expand_state+0x4a1>
+0x4018b1:3:mov -0x64(%rbp),%eax
+0x4018b4:5:sub $0xd57c3dd9,%eax
+0x4018b9:6:mov %eax,-0x118(%rbp)
+0x4018bf:6:je 00000000004031b3 <viafb_lcd_get_support_expand_state+0x1da3>
+0x4018c5:5:jmp 00000000004018ca <viafb_lcd_get_support_expand_state+0x4ba>
+0x4018ca:3:mov -0x64(%rbp),%eax
+0x4018cd:5:sub $0xd59289cd,%eax
+0x4018d2:6:mov %eax,-0x11c(%rbp)
+0x4018d8:6:je 000000000040299a <viafb_lcd_get_support_expand_state+0x158a>
+0x4018de:5:jmp 00000000004018e3 <viafb_lcd_get_support_expand_state+0x4d3>
+0x4018e3:3:mov -0x64(%rbp),%eax
+0x4018e6:5:sub $0xd989dc02,%eax
+0x4018eb:6:mov %eax,-0x120(%rbp)
+0x4018f1:6:je 0000000000403773 <viafb_lcd_get_support_expand_state+0x2363>
+0x4018f7:5:jmp 00000000004018fc <viafb_lcd_get_support_expand_state+0x4ec>
+0x4018fc:3:mov -0x64(%rbp),%eax
+0x4018ff:5:sub $0xe1382946,%eax
+0x401904:6:mov %eax,-0x124(%rbp)
+0x40190a:6:je 0000000000402bdf <viafb_lcd_get_support_expand_state+0x17cf>
+0x401910:5:jmp 0000000000401915 <viafb_lcd_get_support_expand_state+0x505>
+0x401915:3:mov -0x64(%rbp),%eax
+0x401918:5:sub $0xe221eb24,%eax
+0x40191d:6:mov %eax,-0x128(%rbp)
+0x401923:6:je 0000000000403948 <viafb_lcd_get_support_expand_state+0x2538>
+0x401929:5:jmp 000000000040192e <viafb_lcd_get_support_expand_state+0x51e>
+0x40192e:3:mov -0x64(%rbp),%eax
+0x401931:5:sub $0xe24de2a4,%eax
+0x401936:6:mov %eax,-0x12c(%rbp)
+0x40193c:6:je 000000000040232c <viafb_lcd_get_support_expand_state+0xf1c>
+0x401942:5:jmp 0000000000401947 <viafb_lcd_get_support_expand_state+0x537>
+0x401947:3:mov -0x64(%rbp),%eax
+0x40194a:5:sub $0xe71369e8,%eax
+0x40194f:6:mov %eax,-0x130(%rbp)
+0x401955:6:je 000000000040230e <viafb_lcd_get_support_expand_state+0xefe>
+0x40195b:5:jmp 0000000000401960 <viafb_lcd_get_support_expand_state+0x550>
+0x401960:3:mov -0x64(%rbp),%eax
+0x401963:5:sub $0xe9c40a16,%eax
+0x401968:6:mov %eax,-0x134(%rbp)
+0x40196e:6:je 00000000004039b7 <viafb_lcd_get_support_expand_state+0x25a7>
+0x401974:5:jmp 0000000000401979 <viafb_lcd_get_support_expand_state+0x569>
+0x401979:3:mov -0x64(%rbp),%eax
+0x40197c:5:sub $0xeb63c72a,%eax
+0x401981:6:mov %eax,-0x138(%rbp)
+0x401987:6:je 00000000004023a4 <viafb_lcd_get_support_expand_state+0xf94>
+0x40198d:5:jmp 0000000000401992 <viafb_lcd_get_support_expand_state+0x582>
+0x401992:3:mov -0x64(%rbp),%eax
+0x401995:5:sub $0xedb230e3,%eax
+0x40199a:6:mov %eax,-0x13c(%rbp)
+0x4019a0:6:je 00000000004033ae <viafb_lcd_get_support_expand_state+0x1f9e>
+0x4019a6:5:jmp 00000000004019ab <viafb_lcd_get_support_expand_state+0x59b>
+0x4019ab:3:mov -0x64(%rbp),%eax
+0x4019ae:5:sub $0xeeb8e5a3,%eax
+0x4019b3:6:mov %eax,-0x140(%rbp)
+0x4019b9:6:je 0000000000402745 <viafb_lcd_get_support_expand_state+0x1335>
+0x4019bf:5:jmp 00000000004019c4 <viafb_lcd_get_support_expand_state+0x5b4>
+0x4019c4:3:mov -0x64(%rbp),%eax
+0x4019c7:5:sub $0xefaedef0,%eax
+0x4019cc:6:mov %eax,-0x144(%rbp)
+0x4019d2:6:je 0000000000403a4d <viafb_lcd_get_support_expand_state+0x263d>
+0x4019d8:5:jmp 00000000004019dd <viafb_lcd_get_support_expand_state+0x5cd>
+0x4019dd:3:mov -0x64(%rbp),%eax
+0x4019e0:5:sub $0xefd93d42,%eax
+0x4019e5:6:mov %eax,-0x148(%rbp)
+0x4019eb:6:je 0000000000402800 <viafb_lcd_get_support_expand_state+0x13f0>
+0x4019f1:5:jmp 00000000004019f6 <viafb_lcd_get_support_expand_state+0x5e6>
+0x4019f6:3:mov -0x64(%rbp),%eax
+0x4019f9:5:sub $0xf0abbaf3,%eax
+0x4019fe:6:mov %eax,-0x14c(%rbp)
+0x401a04:6:je 0000000000403a1e <viafb_lcd_get_support_expand_state+0x260e>
+0x401a0a:5:jmp 0000000000401a0f <viafb_lcd_get_support_expand_state+0x5ff>
+0x401a0f:3:mov -0x64(%rbp),%eax
+0x401a12:5:sub $0xf24d06fc,%eax
+0x401a17:6:mov %eax,-0x150(%rbp)
+0x401a1d:6:je 00000000004038f0 <viafb_lcd_get_support_expand_state+0x24e0>
+0x401a23:5:jmp 0000000000401a28 <viafb_lcd_get_support_expand_state+0x618>
+0x401a28:3:mov -0x64(%rbp),%eax
+0x401a2b:5:sub $0xf3bb7aff,%eax
+0x401a30:6:mov %eax,-0x154(%rbp)
+0x401a36:6:je 0000000000403ac0 <viafb_lcd_get_support_expand_state+0x26b0>
+0x401a3c:5:jmp 0000000000401a41 <viafb_lcd_get_support_expand_state+0x631>
+0x401a41:3:mov -0x64(%rbp),%eax
+0x401a44:5:sub $0xf6cd09e0,%eax
+0x401a49:6:mov %eax,-0x158(%rbp)
+0x401a4f:6:je 0000000000403a41 <viafb_lcd_get_support_expand_state+0x2631>
+0x401a55:5:jmp 0000000000401a5a <viafb_lcd_get_support_expand_state+0x64a>
+0x401a5a:3:mov -0x64(%rbp),%eax
+0x401a5d:5:sub $0xf71c2a16,%eax
+0x401a62:6:mov %eax,-0x15c(%rbp)
+0x401a68:6:je 0000000000403aaa <viafb_lcd_get_support_expand_state+0x269a>
+0x401a6e:5:jmp 0000000000401a73 <viafb_lcd_get_support_expand_state+0x663>
+0x401a73:3:mov -0x64(%rbp),%eax
+0x401a76:5:sub $0xfa56b329,%eax
+0x401a7b:6:mov %eax,-0x160(%rbp)
+0x401a81:6:je 0000000000402dd6 <viafb_lcd_get_support_expand_state+0x19c6>
+0x401a87:5:jmp 0000000000401a8c <viafb_lcd_get_support_expand_state+0x67c>
+0x401a8c:3:mov -0x64(%rbp),%eax
+0x401a8f:5:sub $0xfb4b1b50,%eax
+0x401a94:6:mov %eax,-0x164(%rbp)
+0x401a9a:6:je 0000000000403789 <viafb_lcd_get_support_expand_state+0x2379>
+0x401aa0:5:jmp 0000000000401aa5 <viafb_lcd_get_support_expand_state+0x695>
+0x401aa5:3:mov -0x64(%rbp),%eax
+0x401aa8:5:sub $0x81bebbd,%eax
+0x401aad:6:mov %eax,-0x168(%rbp)
+0x401ab3:6:je 0000000000402d82 <viafb_lcd_get_support_expand_state+0x1972>
+0x401ab9:5:jmp 0000000000401abe <viafb_lcd_get_support_expand_state+0x6ae>
+0x401abe:3:mov -0x64(%rbp),%eax
+0x401ac1:5:sub $0x92f9c47,%eax
+0x401ac6:6:mov %eax,-0x16c(%rbp)
+0x401acc:6:je 0000000000402b7b <viafb_lcd_get_support_expand_state+0x176b>
+0x401ad2:5:jmp 0000000000401ad7 <viafb_lcd_get_support_expand_state+0x6c7>
+0x401ad7:3:mov -0x64(%rbp),%eax
+0x401ada:5:sub $0xd612470,%eax
+0x401adf:6:mov %eax,-0x170(%rbp)
+0x401ae5:6:je 0000000000403334 <viafb_lcd_get_support_expand_state+0x1f24>
+0x401aeb:5:jmp 0000000000401af0 <viafb_lcd_get_support_expand_state+0x6e0>
+0x401af0:3:mov -0x64(%rbp),%eax
+0x401af3:5:sub $0xf5d97d7,%eax
+0x401af8:6:mov %eax,-0x174(%rbp)
+0x401afe:6:je 00000000004023c2 <viafb_lcd_get_support_expand_state+0xfb2>
+0x401b04:5:jmp 0000000000401b09 <viafb_lcd_get_support_expand_state+0x6f9>
+0x401b09:3:mov -0x64(%rbp),%eax
+0x401b0c:5:sub $0x111d3a95,%eax
+0x401b11:6:mov %eax,-0x178(%rbp)
+0x401b17:6:je 000000000040356b <viafb_lcd_get_support_expand_state+0x215b>
+0x401b1d:5:jmp 0000000000401b22 <viafb_lcd_get_support_expand_state+0x712>
+0x401b22:3:mov -0x64(%rbp),%eax
+0x401b25:5:sub $0x14f5fdaf,%eax
+0x401b2a:6:mov %eax,-0x17c(%rbp)
+0x401b30:6:je 000000000040334a <viafb_lcd_get_support_expand_state+0x1f3a>
+0x401b36:5:jmp 0000000000401b3b <viafb_lcd_get_support_expand_state+0x72b>
+0x401b3b:3:mov -0x64(%rbp),%eax
+0x401b3e:5:sub $0x1548685f,%eax
+0x401b43:6:mov %eax,-0x180(%rbp)
+0x401b49:6:je 000000000040298e <viafb_lcd_get_support_expand_state+0x157e>
+0x401b4f:5:jmp 0000000000401b54 <viafb_lcd_get_support_expand_state+0x744>
+0x401b54:3:mov -0x64(%rbp),%eax
+0x401b57:5:sub $0x1718aff3,%eax
+0x401b5c:6:mov %eax,-0x184(%rbp)
+0x401b62:6:je 000000000040353a <viafb_lcd_get_support_expand_state+0x212a>
+0x401b68:5:jmp 0000000000401b6d <viafb_lcd_get_support_expand_state+0x75d>
+0x401b6d:3:mov -0x64(%rbp),%eax
+0x401b70:5:sub $0x17907edb,%eax
+0x401b75:6:mov %eax,-0x188(%rbp)
+0x401b7b:6:je 000000000040225a <viafb_lcd_get_support_expand_state+0xe4a>
+0x401b81:5:jmp 0000000000401b86 <viafb_lcd_get_support_expand_state+0x776>
+0x401b86:3:mov -0x64(%rbp),%eax
+0x401b89:5:sub $0x183adbd8,%eax
+0x401b8e:6:mov %eax,-0x18c(%rbp)
+0x401b94:6:je 0000000000403049 <viafb_lcd_get_support_expand_state+0x1c39>
+0x401b9a:5:jmp 0000000000401b9f <viafb_lcd_get_support_expand_state+0x78f>
+0x401b9f:3:mov -0x64(%rbp),%eax
+0x401ba2:5:sub $0x1b035d6b,%eax
+0x401ba7:6:mov %eax,-0x190(%rbp)
+0x401bad:6:je 0000000000402434 <viafb_lcd_get_support_expand_state+0x1024>
+0x401bb3:5:jmp 0000000000401bb8 <viafb_lcd_get_support_expand_state+0x7a8>
+0x401bb8:3:mov -0x64(%rbp),%eax
+0x401bbb:5:sub $0x1bcfc90d,%eax
+0x401bc0:6:mov %eax,-0x194(%rbp)
+0x401bc6:6:je 0000000000403693 <viafb_lcd_get_support_expand_state+0x2283>
+0x401bcc:5:jmp 0000000000401bd1 <viafb_lcd_get_support_expand_state+0x7c1>
+0x401bd1:3:mov -0x64(%rbp),%eax
+0x401bd4:5:sub $0x1c2fe25c,%eax
+0x401bd9:6:mov %eax,-0x198(%rbp)
+0x401bdf:6:je 00000000004038c2 <viafb_lcd_get_support_expand_state+0x24b2>
+0x401be5:5:jmp 0000000000401bea <viafb_lcd_get_support_expand_state+0x7da>
+0x401bea:3:mov -0x64(%rbp),%eax
+0x401bed:5:sub $0x1d3519b4,%eax
+0x401bf2:6:mov %eax,-0x19c(%rbp)
+0x401bf8:6:je 000000000040223c <viafb_lcd_get_support_expand_state+0xe2c>
+0x401bfe:5:jmp 0000000000401c03 <viafb_lcd_get_support_expand_state+0x7f3>
+0x401c03:3:mov -0x64(%rbp),%eax
+0x401c06:5:sub $0x1e9c090a,%eax
+0x401c0b:6:mov %eax,-0x1a0(%rbp)
+0x401c11:6:je 00000000004025aa <viafb_lcd_get_support_expand_state+0x119a>
+0x401c17:5:jmp 0000000000401c1c <viafb_lcd_get_support_expand_state+0x80c>
+0x401c1c:3:mov -0x64(%rbp),%eax
+0x401c1f:5:sub $0x1ea887ae,%eax
+0x401c24:6:mov %eax,-0x1a4(%rbp)
+0x401c2a:6:je 0000000000403423 <viafb_lcd_get_support_expand_state+0x2013>
+0x401c30:5:jmp 0000000000401c35 <viafb_lcd_get_support_expand_state+0x825>
+0x401c35:3:mov -0x64(%rbp),%eax
+0x401c38:5:sub $0x239441b9,%eax
+0x401c3d:6:mov %eax,-0x1a8(%rbp)
+0x401c43:6:je 000000000040234a <viafb_lcd_get_support_expand_state+0xf3a>
+0x401c49:5:jmp 0000000000401c4e <viafb_lcd_get_support_expand_state+0x83e>
+0x401c4e:3:mov -0x64(%rbp),%eax
+0x401c51:5:sub $0x2760ceab,%eax
+0x401c56:6:mov %eax,-0x1ac(%rbp)
+0x401c5c:6:je 0000000000402eac <viafb_lcd_get_support_expand_state+0x1a9c>
+0x401c62:5:jmp 0000000000401c67 <viafb_lcd_get_support_expand_state+0x857>
+0x401c67:3:mov -0x64(%rbp),%eax
+0x401c6a:5:sub $0x2798985d,%eax
+0x401c6f:6:mov %eax,-0x1b0(%rbp)
+0x401c75:6:je 00000000004030d9 <viafb_lcd_get_support_expand_state+0x1cc9>
+0x401c7b:5:jmp 0000000000401c80 <viafb_lcd_get_support_expand_state+0x870>
+0x401c80:3:mov -0x64(%rbp),%eax
+0x401c83:5:sub $0x294cf07e,%eax
+0x401c88:6:mov %eax,-0x1b4(%rbp)
+0x401c8e:6:je 00000000004039a5 <viafb_lcd_get_support_expand_state+0x2595>
+0x401c94:5:jmp 0000000000401c99 <viafb_lcd_get_support_expand_state+0x889>
+0x401c99:3:mov -0x64(%rbp),%eax
+0x401c9c:5:sub $0x29965f2d,%eax
+0x401ca1:6:mov %eax,-0x1b8(%rbp)
+0x401ca7:6:je 0000000000403b05 <viafb_lcd_get_support_expand_state+0x26f5>
+0x401cad:5:jmp 0000000000401cb2 <viafb_lcd_get_support_expand_state+0x8a2>
+0x401cb2:3:mov -0x64(%rbp),%eax
+0x401cb5:5:sub $0x29af899f,%eax
+0x401cba:6:mov %eax,-0x1bc(%rbp)
+0x401cc0:6:je 0000000000403b1c <viafb_lcd_get_support_expand_state+0x270c>
+0x401cc6:5:jmp 0000000000401ccb <viafb_lcd_get_support_expand_state+0x8bb>
+0x401ccb:3:mov -0x64(%rbp),%eax
+0x401cce:5:sub $0x2a7cf43b,%eax
+0x401cd3:6:mov %eax,-0x1c0(%rbp)
+0x401cd9:6:je 0000000000402440 <viafb_lcd_get_support_expand_state+0x1030>
+0x401cdf:5:jmp 0000000000401ce4 <viafb_lcd_get_support_expand_state+0x8d4>
+0x401ce4:3:mov -0x64(%rbp),%eax
+0x401ce7:5:sub $0x2f8f8c7c,%eax
+0x401cec:6:mov %eax,-0x1c4(%rbp)
+0x401cf2:6:je 0000000000402278 <viafb_lcd_get_support_expand_state+0xe68>
+0x401cf8:5:jmp 0000000000401cfd <viafb_lcd_get_support_expand_state+0x8ed>
+0x401cfd:3:mov -0x64(%rbp),%eax
+0x401d00:5:sub $0x31627811,%eax
+0x401d05:6:mov %eax,-0x1c8(%rbp)
+0x401d0b:6:je 0000000000403a9e <viafb_lcd_get_support_expand_state+0x268e>
+0x401d11:5:jmp 0000000000401d16 <viafb_lcd_get_support_expand_state+0x906>
+0x401d16:3:mov -0x64(%rbp),%eax
+0x401d19:5:sub $0x3180981e,%eax
+0x401d1e:6:mov %eax,-0x1cc(%rbp)
+0x401d24:6:je 0000000000402da1 <viafb_lcd_get_support_expand_state+0x1991>
+0x401d2a:5:jmp 0000000000401d2f <viafb_lcd_get_support_expand_state+0x91f>
+0x401d2f:3:mov -0x64(%rbp),%eax
+0x401d32:5:sub $0x31eba841,%eax
+0x401d37:6:mov %eax,-0x1d0(%rbp)
+0x401d3d:6:je 00000000004035cf <viafb_lcd_get_support_expand_state+0x21bf>
+0x401d43:5:jmp 0000000000401d48 <viafb_lcd_get_support_expand_state+0x938>
+0x401d48:3:mov -0x64(%rbp),%eax
+0x401d4b:5:sub $0x36ff1092,%eax
+0x401d50:6:mov %eax,-0x1d4(%rbp)
+0x401d56:6:je 0000000000402c7d <viafb_lcd_get_support_expand_state+0x186d>
+0x401d5c:5:jmp 0000000000401d61 <viafb_lcd_get_support_expand_state+0x951>
+0x401d61:3:mov -0x64(%rbp),%eax
+0x401d64:5:sub $0x3b801090,%eax
+0x401d69:6:mov %eax,-0x1d8(%rbp)
+0x401d6f:6:je 00000000004026bf <viafb_lcd_get_support_expand_state+0x12af>
+0x401d75:5:jmp 0000000000401d7a <viafb_lcd_get_support_expand_state+0x96a>
+0x401d7a:3:mov -0x64(%rbp),%eax
+0x401d7d:5:sub $0x3e94da9e,%eax
+0x401d82:6:mov %eax,-0x1dc(%rbp)
+0x401d88:6:je 0000000000402e29 <viafb_lcd_get_support_expand_state+0x1a19>
+0x401d8e:5:jmp 0000000000401d93 <viafb_lcd_get_support_expand_state+0x983>
+0x401d93:3:mov -0x64(%rbp),%eax
+0x401d96:5:sub $0x3efbed0e,%eax
+0x401d9b:6:mov %eax,-0x1e0(%rbp)
+0x401da1:6:je 000000000040211c <viafb_lcd_get_support_expand_state+0xd0c>
+0x401da7:5:jmp 0000000000401dac <viafb_lcd_get_support_expand_state+0x99c>
+0x401dac:3:mov -0x64(%rbp),%eax
+0x401daf:5:sub $0x3fe07d61,%eax
+0x401db4:6:mov %eax,-0x1e4(%rbp)
+0x401dba:6:je 00000000004025fd <viafb_lcd_get_support_expand_state+0x11ed>
+0x401dc0:5:jmp 0000000000401dc5 <viafb_lcd_get_support_expand_state+0x9b5>
+0x401dc5:3:mov -0x64(%rbp),%eax
+0x401dc8:5:sub $0x42275db5,%eax
+0x401dcd:6:mov %eax,-0x1e8(%rbp)
+0x401dd3:6:je 0000000000402ad5 <viafb_lcd_get_support_expand_state+0x16c5>
+0x401dd9:5:jmp 0000000000401dde <viafb_lcd_get_support_expand_state+0x9ce>
+0x401dde:3:mov -0x64(%rbp),%eax
+0x401de1:5:sub $0x44758db5,%eax
+0x401de6:6:mov %eax,-0x1ec(%rbp)
+0x401dec:6:je 0000000000402fe5 <viafb_lcd_get_support_expand_state+0x1bd5>
+0x401df2:5:jmp 0000000000401df7 <viafb_lcd_get_support_expand_state+0x9e7>
+0x401df7:3:mov -0x64(%rbp),%eax
+0x401dfa:5:sub $0x44765f67,%eax
+0x401dff:6:mov %eax,-0x1f0(%rbp)
+0x401e05:6:je 000000000040217d <viafb_lcd_get_support_expand_state+0xd6d>
+0x401e0b:5:jmp 0000000000401e10 <viafb_lcd_get_support_expand_state+0xa00>
+0x401e10:3:mov -0x64(%rbp),%eax
+0x401e13:5:sub $0x4549829a,%eax
+0x401e18:6:mov %eax,-0x1f4(%rbp)
+0x401e1e:6:je 000000000040321a <viafb_lcd_get_support_expand_state+0x1e0a>
+0x401e24:5:jmp 0000000000401e29 <viafb_lcd_get_support_expand_state+0xa19>
+0x401e29:3:mov -0x64(%rbp),%eax
+0x401e2c:5:sub $0x47655d66,%eax
+0x401e31:6:mov %eax,-0x1f8(%rbp)
+0x401e37:6:je 0000000000403123 <viafb_lcd_get_support_expand_state+0x1d13>
+0x401e3d:5:jmp 0000000000401e42 <viafb_lcd_get_support_expand_state+0xa32>
+0x401e42:3:mov -0x64(%rbp),%eax
+0x401e45:5:sub $0x4f6f7f69,%eax
+0x401e4a:6:mov %eax,-0x1fc(%rbp)
+0x401e50:6:je 0000000000403a70 <viafb_lcd_get_support_expand_state+0x2660>
+0x401e56:5:jmp 0000000000401e5b <viafb_lcd_get_support_expand_state+0xa4b>
+0x401e5b:3:mov -0x64(%rbp),%eax
+0x401e5e:5:sub $0x507a5c12,%eax
+0x401e63:6:mov %eax,-0x200(%rbp)
+0x401e69:6:je 0000000000403795 <viafb_lcd_get_support_expand_state+0x2385>
+0x401e6f:5:jmp 0000000000401e74 <viafb_lcd_get_support_expand_state+0xa64>
+0x401e74:3:mov -0x64(%rbp),%eax
+0x401e77:5:sub $0x54d88b89,%eax
+0x401e7c:6:mov %eax,-0x204(%rbp)
+0x401e82:6:je 0000000000403a2a <viafb_lcd_get_support_expand_state+0x261a>
+0x401e88:5:jmp 0000000000401e8d <viafb_lcd_get_support_expand_state+0xa7d>
+0x401e8d:3:mov -0x64(%rbp),%eax
+0x401e90:5:sub $0x54f41170,%eax
+0x401e95:6:mov %eax,-0x208(%rbp)
+0x401e9b:6:je 0000000000402230 <viafb_lcd_get_support_expand_state+0xe20>
+0x401ea1:5:jmp 0000000000401ea6 <viafb_lcd_get_support_expand_state+0xa96>
+0x401ea6:3:mov -0x64(%rbp),%eax
+0x401ea9:5:sub $0x556517be,%eax
+0x401eae:6:mov %eax,-0x20c(%rbp)
+0x401eb4:6:je 000000000040241e <viafb_lcd_get_support_expand_state+0x100e>
+0x401eba:5:jmp 0000000000401ebf <viafb_lcd_get_support_expand_state+0xaaf>
+0x401ebf:3:mov -0x64(%rbp),%eax
+0x401ec2:5:sub $0x59de27f1,%eax
+0x401ec7:6:mov %eax,-0x210(%rbp)
+0x401ecd:6:je 0000000000402875 <viafb_lcd_get_support_expand_state+0x1465>
+0x401ed3:5:jmp 0000000000401ed8 <viafb_lcd_get_support_expand_state+0xac8>
+0x401ed8:3:mov -0x64(%rbp),%eax
+0x401edb:5:sub $0x5a0c8bd3,%eax
+0x401ee0:6:mov %eax,-0x214(%rbp)
+0x401ee6:6:je 0000000000402f51 <viafb_lcd_get_support_expand_state+0x1b41>
+0x401eec:5:jmp 0000000000401ef1 <viafb_lcd_get_support_expand_state+0xae1>
+0x401ef1:3:mov -0x64(%rbp),%eax
+0x401ef4:5:sub $0x5a79ee6d,%eax
+0x401ef9:6:mov %eax,-0x218(%rbp)
+0x401eff:6:je 0000000000403226 <viafb_lcd_get_support_expand_state+0x1e16>
+0x401f05:5:jmp 0000000000401f0a <viafb_lcd_get_support_expand_state+0xafa>
+0x401f0a:3:mov -0x64(%rbp),%eax
+0x401f0d:5:sub $0x606e4157,%eax
+0x401f12:6:mov %eax,-0x21c(%rbp)
+0x401f18:6:je 000000000040265b <viafb_lcd_get_support_expand_state+0x124b>
+0x401f1e:5:jmp 0000000000401f23 <viafb_lcd_get_support_expand_state+0xb13>
+0x401f23:3:mov -0x64(%rbp),%eax
+0x401f26:5:sub $0x62341c80,%eax
+0x401f2b:6:mov %eax,-0x220(%rbp)
+0x401f31:6:je 000000000040343e <viafb_lcd_get_support_expand_state+0x202e>
+0x401f37:5:jmp 0000000000401f3c <viafb_lcd_get_support_expand_state+0xb2c>
+0x401f3c:3:mov -0x64(%rbp),%eax
+0x401f3f:5:sub $0x6550a76a,%eax
+0x401f44:6:mov %eax,-0x224(%rbp)
+0x401f4a:6:je 00000000004038da <viafb_lcd_get_support_expand_state+0x24ca>
+0x401f50:5:jmp 0000000000401f55 <viafb_lcd_get_support_expand_state+0xb45>
+0x401f55:3:mov -0x64(%rbp),%eax
+0x401f58:5:sub $0x690635e9,%eax
+0x401f5d:6:mov %eax,-0x228(%rbp)
+0x401f63:6:je 00000000004023e0 <viafb_lcd_get_support_expand_state+0xfd0>
+0x401f69:5:jmp 0000000000401f6e <viafb_lcd_get_support_expand_state+0xb5e>
+0x401f6e:3:mov -0x64(%rbp),%eax
+0x401f71:5:sub $0x69b17814,%eax
+0x401f76:6:mov %eax,-0x22c(%rbp)
+0x401f7c:6:je 0000000000403b3f <viafb_lcd_get_support_expand_state+0x272f>
+0x401f82:5:jmp 0000000000401f87 <viafb_lcd_get_support_expand_state+0xb77>
+0x401f87:3:mov -0x64(%rbp),%eax
+0x401f8a:5:sub $0x6c10fb6d,%eax
+0x401f8f:6:mov %eax,-0x230(%rbp)
+0x401f95:6:je 00000000004037b4 <viafb_lcd_get_support_expand_state+0x23a4>
+0x401f9b:5:jmp 0000000000401fa0 <viafb_lcd_get_support_expand_state+0xb90>
+0x401fa0:3:mov -0x64(%rbp),%eax
+0x401fa3:5:sub $0x6eb9949a,%eax
+0x401fa8:6:mov %eax,-0x234(%rbp)
+0x401fae:6:je 0000000000402ff1 <viafb_lcd_get_support_expand_state+0x1be1>
+0x401fb4:5:jmp 0000000000401fb9 <viafb_lcd_get_support_expand_state+0xba9>
+0x401fb9:3:mov -0x64(%rbp),%eax
+0x401fbc:5:sub $0x6f5debac,%eax
+0x401fc1:6:mov %eax,-0x238(%rbp)
+0x401fc7:6:je 0000000000402e8d <viafb_lcd_get_support_expand_state+0x1a7d>
+0x401fcd:5:jmp 0000000000401fd2 <viafb_lcd_get_support_expand_state+0xbc2>
+0x401fd2:3:mov -0x64(%rbp),%eax
+0x401fd5:5:sub $0x72fee785,%eax
+0x401fda:6:mov %eax,-0x23c(%rbp)
+0x401fe0:6:je 0000000000403491 <viafb_lcd_get_support_expand_state+0x2081>
+0x401fe6:5:jmp 0000000000401feb <viafb_lcd_get_support_expand_state+0xbdb>
+0x401feb:3:mov -0x64(%rbp),%eax
+0x401fee:5:sub $0x751863c1,%eax
+0x401ff3:6:mov %eax,-0x240(%rbp)
+0x401ff9:6:je 00000000004032fa <viafb_lcd_get_support_expand_state+0x1eea>
+0x401fff:5:jmp 0000000000402004 <viafb_lcd_get_support_expand_state+0xbf4>
+0x402004:3:mov -0x64(%rbp),%eax
+0x402007:5:sub $0x75cc22bc,%eax
+0x40200c:6:mov %eax,-0x244(%rbp)
+0x402012:6:je 0000000000402296 <viafb_lcd_get_support_expand_state+0xe86>
+0x402018:5:jmp 000000000040201d <viafb_lcd_get_support_expand_state+0xc0d>
+0x40201d:3:mov -0x64(%rbp),%eax
+0x402020:5:sub $0x7653d147,%eax
+0x402025:6:mov %eax,-0x248(%rbp)
+0x40202b:6:je 0000000000402bfe <viafb_lcd_get_support_expand_state+0x17ee>
+0x402031:5:jmp 0000000000402036 <viafb_lcd_get_support_expand_state+0xc26>
+0x402036:3:mov -0x64(%rbp),%eax
+0x402039:5:sub $0x78a83968,%eax
+0x40203e:6:mov %eax,-0x24c(%rbp)
+0x402044:6:je 0000000000402ecb <viafb_lcd_get_support_expand_state+0x1abb>
+0x40204a:5:jmp 000000000040204f <viafb_lcd_get_support_expand_state+0xc3f>
+0x40204f:3:mov -0x64(%rbp),%eax
+0x402052:5:sub $0x79397e81,%eax
+0x402057:6:mov %eax,-0x250(%rbp)
+0x40205d:6:je 0000000000403ad7 <viafb_lcd_get_support_expand_state+0x26c7>
+0x402063:5:jmp 0000000000402068 <viafb_lcd_get_support_expand_state+0xc58>
+0x402068:3:mov -0x64(%rbp),%eax
+0x40206b:5:sub $0x79804ad1,%eax
+0x402070:6:mov %eax,-0x254(%rbp)
+0x402076:6:je 0000000000403678 <viafb_lcd_get_support_expand_state+0x2268>
+0x40207c:5:jmp 0000000000402081 <viafb_lcd_get_support_expand_state+0xc71>
+0x402081:3:mov -0x64(%rbp),%eax
+0x402084:5:sub $0x798812ff,%eax
+0x402089:6:mov %eax,-0x258(%rbp)
+0x40208f:6:je 0000000000402c3f <viafb_lcd_get_support_expand_state+0x182f>
+0x402095:5:jmp 000000000040209a <viafb_lcd_get_support_expand_state+0xc8a>
+0x40209a:3:mov -0x64(%rbp),%eax
+0x40209d:5:sub $0x79d0e2cf,%eax
+0x4020a2:6:mov %eax,-0x25c(%rbp)
+0x4020a8:6:je 0000000000403a88 <viafb_lcd_get_support_expand_state+0x2678>
+0x4020ae:5:jmp 00000000004020b3 <viafb_lcd_get_support_expand_state+0xca3>
+0x4020b3:3:mov -0x64(%rbp),%eax
+0x4020b6:5:sub $0x7caed3ce,%eax
+0x4020bb:6:mov %eax,-0x260(%rbp)
+0x4020c1:6:je 0000000000403aee <viafb_lcd_get_support_expand_state+0x26de>
+0x4020c7:5:jmp 00000000004020cc <viafb_lcd_get_support_expand_state+0xcbc>
+0x4020cc:3:mov -0x64(%rbp),%eax
+0x4020cf:5:sub $0x7d2f197c,%eax
+0x4020d4:6:mov %eax,-0x264(%rbp)
+0x4020da:6:je 00000000004022d2 <viafb_lcd_get_support_expand_state+0xec2>
+0x4020e0:5:jmp 00000000004020e5 <viafb_lcd_get_support_expand_state+0xcd5>
+0x4020e5:3:mov -0x64(%rbp),%eax
+0x4020e8:5:sub $0x7e4527b6,%eax
+0x4020ed:6:mov %eax,-0x268(%rbp)
+0x4020f3:6:je 0000000000403104 <viafb_lcd_get_support_expand_state+0x1cf4>
+0x4020f9:5:jmp 00000000004020fe <viafb_lcd_get_support_expand_state+0xcee>
+0x4020fe:3:mov -0x64(%rbp),%eax
+0x402101:5:sub $0x7fb81be4,%eax
+0x402106:6:mov %eax,-0x26c(%rbp)
+0x40210c:6:je 0000000000402a11 <viafb_lcd_get_support_expand_state+0x1601>
+0x402112:5:jmp 0000000000402117 <viafb_lcd_get_support_expand_state+0xd07>
+0x402117:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x40211c:5:mov $0xe9c40a16,%eax
+0x402121:5:mov $0x44765f67,%ecx
+0x402126:2:mov $0x1,%dl
+0x402128:4:mov -0x52(%rbp),%sil
+0x40212c:4:mov -0x51(%rbp),%dil
+0x402130:3:mov %sil,%r8b
+0x402133:4:xor $0xff,%r8b
+0x402137:3:mov %dil,%r9b
+0x40213a:4:xor $0xff,%r9b
+0x40213e:3:xor $0x0,%dl
+0x402141:3:mov %r8b,%r10b
+0x402144:4:and $0x0,%r10b
+0x402148:3:and %dl,%sil
+0x40214b:3:mov %r9b,%r11b
+0x40214e:4:and $0x0,%r11b
+0x402152:3:and %dl,%dil
+0x402155:3:or %sil,%r10b
+0x402158:3:or %dil,%r11b
+0x40215b:3:xor %r11b,%r10b
+0x40215e:3:or %r9b,%r8b
+0x402161:4:xor $0xff,%r8b
+0x402165:3:or $0x0,%dl
+0x402168:3:and %dl,%r8b
+0x40216b:3:or %r8b,%r10b
+0x40216e:4:test $0x1,%r10b
+0x402172:3:cmovne %ecx,%eax
+0x402175:3:mov %eax,-0x58(%rbp)
+0x402178:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x40217d:5:mov $0xe9c40a16,%eax
+0x402182:5:mov $0x54f41170,%ecx
+0x402187:3:mov %rsp,%rdx
+0x40218a:4:add $0xfffffffffffffff0,%rdx
+0x40218e:3:mov %rdx,%rsp
+0x402191:4:mov %rdx,-0x50(%rbp)
+0x402195:3:mov %rsp,%rdx
+0x402198:4:add $0xfffffffffffffff0,%rdx
+0x40219c:3:mov %rdx,%rsp
+0x40219f:4:mov %rdx,-0x48(%rbp)
+0x4021a3:3:mov %rsp,%rdx
+0x4021a6:4:add $0xfffffffffffffff0,%rdx
+0x4021aa:3:mov %rdx,%rsp
+0x4021ad:4:mov %rdx,-0x40(%rbp)
+0x4021b1:4:mov -0x50(%rbp),%rdx
+0x4021b5:3:mov -0x5c(%rbp),%esi
+0x4021b8:2:mov %esi,(%rdx)
+0x4021ba:4:mov -0x48(%rbp),%rdx
+0x4021be:3:mov -0x60(%rbp),%edi
+0x4021c1:2:mov %edi,(%rdx)
+0x4021c3:4:mov -0x40(%rbp),%rdx
+0x4021c7:6:movl $0x0,(%rdx)
+0x4021cd:8:mov 0x407054,%r8d
+0x4021d5:4:mov %r8d,-0x38(%rbp)
+0x4021d9:8:mov 0x407048,%r8d
+0x4021e1:8:mov 0x407064,%r9d
+0x4021e9:3:mov %r8d,%r10d
+0x4021ec:7:sub $0x13dbe55b,%r10d
+0x4021f3:4:sub $0x1,%r10d
+0x4021f7:7:add $0x13dbe55b,%r10d
+0x4021fe:4:imul %r10d,%r8d
+0x402202:4:and $0x1,%r8d
+0x402206:4:cmp $0x0,%r8d
+0x40220a:4:sete %r11b
+0x40220e:4:cmp $0xa,%r9d
+0x402212:3:setl %bl
+0x402215:3:mov %r11b,%r14b
+0x402218:3:and %bl,%r14b
+0x40221b:3:xor %bl,%r11b
+0x40221e:3:or %r11b,%r14b
+0x402221:4:test $0x1,%r14b
+0x402225:3:cmovne %ecx,%eax
+0x402228:3:mov %eax,-0x58(%rbp)
+0x40222b:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x402230:7:movl $0x1d3519b4,-0x58(%rbp)
+0x402237:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x40223c:5:mov $0x17907edb,%eax
+0x402241:5:mov $0xe24de2a4,%ecx
+0x402246:3:mov -0x38(%rbp),%edx
+0x402249:6:cmp $0x86,%edx
+0x40224f:3:cmovl %ecx,%eax
+0x402252:3:mov %eax,-0x58(%rbp)
+0x402255:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x40225a:5:mov $0x2f8f8c7c,%eax
+0x40225f:5:mov $0xa1792177,%ecx
+0x402264:3:mov -0x38(%rbp),%edx
+0x402267:6:cmp $0x89,%edx
+0x40226d:3:cmovl %ecx,%eax
+0x402270:3:mov %eax,-0x58(%rbp)
+0x402273:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x402278:5:mov $0x75cc22bc,%eax
+0x40227d:5:mov $0x7d2f197c,%ecx
+0x402282:3:mov -0x38(%rbp),%edx
+0x402285:6:cmp $0x8b,%edx
+0x40228b:3:cmovl %ecx,%eax
+0x40228e:3:mov %eax,-0x58(%rbp)
+0x402291:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x402296:5:mov $0x843ae952,%eax
+0x40229b:5:mov $0x2a7cf43b,%ecx
+0x4022a0:3:mov -0x38(%rbp),%edx
+0x4022a3:6:cmp $0x8c,%edx
+0x4022a9:3:cmovl %ecx,%eax
+0x4022ac:3:mov %eax,-0x58(%rbp)
+0x4022af:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x4022b4:5:mov $0x933061c7,%eax
+0x4022b9:5:mov $0x690635e9,%ecx
+0x4022be:3:mov -0x38(%rbp),%edx
+0x4022c1:6:cmp $0x8c,%edx
+0x4022c7:3:cmove %ecx,%eax
+0x4022ca:3:mov %eax,-0x58(%rbp)
+0x4022cd:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x4022d2:5:mov $0x840f740a,%eax
+0x4022d7:5:mov $0xd59289cd,%ecx
+0x4022dc:3:mov -0x38(%rbp),%edx
+0x4022df:6:cmp $0x8a,%edx
+0x4022e5:3:cmovl %ecx,%eax
+0x4022e8:3:mov %eax,-0x58(%rbp)
+0x4022eb:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x4022f0:5:mov $0xe71369e8,%eax
+0x4022f5:5:mov $0x81bebbd,%ecx
+0x4022fa:3:mov -0x38(%rbp),%edx
+0x4022fd:6:cmp $0x87,%edx
+0x402303:3:cmovl %ecx,%eax
+0x402306:3:mov %eax,-0x58(%rbp)
+0x402309:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x40230e:5:mov $0xe1382946,%eax
+0x402313:5:mov $0x798812ff,%ecx
+0x402318:3:mov -0x38(%rbp),%edx
+0x40231b:6:cmp $0x88,%edx
+0x402321:3:cmovl %ecx,%eax
+0x402324:3:mov %eax,-0x58(%rbp)
+0x402327:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x40232c:5:mov $0x239441b9,%eax
+0x402331:5:mov $0x842d1a76,%ecx
+0x402336:3:mov -0x38(%rbp),%edx
+0x402339:6:cmp $0x83,%edx
+0x40233f:3:cmovl %ecx,%eax
+0x402342:3:mov %eax,-0x58(%rbp)
+0x402345:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x40234a:5:mov $0x863249fd,%eax
+0x40234f:5:mov $0x90876ce7,%ecx
+0x402354:3:mov -0x38(%rbp),%edx
+0x402357:6:cmp $0x84,%edx
+0x40235d:3:cmovl %ecx,%eax
+0x402360:3:mov %eax,-0x58(%rbp)
+0x402363:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x402368:5:mov $0x6f5debac,%eax
+0x40236d:5:mov $0x83004230,%ecx
+0x402372:3:mov -0x38(%rbp),%edx
+0x402375:6:cmp $0x85,%edx
+0x40237b:3:cmovl %ecx,%eax
+0x40237e:3:mov %eax,-0x58(%rbp)
+0x402381:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x402386:5:mov $0xeb63c72a,%eax
+0x40238b:5:mov $0xf5d97d7,%ecx
+0x402390:3:mov -0x38(%rbp),%edx
+0x402393:6:cmp $0x81,%edx
+0x402399:3:cmovl %ecx,%eax
+0x40239c:3:mov %eax,-0x58(%rbp)
+0x40239f:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x4023a4:5:mov $0x805acab5,%eax
+0x4023a9:5:mov $0xcb1171f5,%ecx
+0x4023ae:3:mov -0x38(%rbp),%edx
+0x4023b1:6:cmp $0x82,%edx
+0x4023b7:3:cmovl %ecx,%eax
+0x4023ba:3:mov %eax,-0x58(%rbp)
+0x4023bd:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x4023c2:5:mov $0x933061c7,%eax
+0x4023c7:5:mov $0x507a5c12,%ecx
+0x4023cc:3:mov -0x38(%rbp),%edx
+0x4023cf:6:cmp $0x80,%edx
+0x4023d5:3:cmove %ecx,%eax
+0x4023d8:3:mov %eax,-0x58(%rbp)
+0x4023db:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x4023e0:5:mov $0x1b035d6b,%eax
+0x4023e5:5:mov $0xc00feb3c,%ecx
+0x4023ea:4:mov -0x50(%rbp),%rdx
+0x4023ee:6:cmpl $0x280,(%rdx)
+0x4023f4:3:cmovl %ecx,%eax
+0x4023f7:3:mov %eax,-0x58(%rbp)
+0x4023fa:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x4023ff:5:mov $0x1b035d6b,%eax
+0x402404:5:mov $0x556517be,%ecx
+0x402409:4:mov -0x48(%rbp),%rdx
+0x40240d:6:cmpl $0x1e0,(%rdx)
+0x402413:3:cmovl %ecx,%eax
+0x402416:3:mov %eax,-0x58(%rbp)
+0x402419:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x40241e:4:mov -0x40(%rbp),%rax
+0x402422:6:movl $0x1,(%rax)
+0x402428:7:movl $0x1b035d6b,-0x58(%rbp)
+0x40242f:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x402434:7:movl $0xf24d06fc,-0x58(%rbp)
+0x40243b:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x402440:5:mov $0xb7a81740,%eax
+0x402445:5:mov $0xc8a74ab3,%ecx
+0x40244a:2:mov $0x1,%dl
+0x40244c:7:mov 0x407048,%esi
+0x402453:7:mov 0x407064,%edi
+0x40245a:3:mov %esi,%r8d
+0x40245d:7:sub $0xc0d2ff8c,%r8d
+0x402464:4:sub $0x1,%r8d
+0x402468:7:add $0xc0d2ff8c,%r8d
+0x40246f:4:imul %r8d,%esi
+0x402473:3:and $0x1,%esi
+0x402476:3:cmp $0x0,%esi
+0x402479:4:sete %r9b
+0x40247d:3:cmp $0xa,%edi
+0x402480:4:setl %r10b
+0x402484:3:mov %r9b,%r11b
+0x402487:4:xor $0xff,%r11b
+0x40248b:3:mov %r10b,%bl
+0x40248e:3:xor $0xff,%bl
+0x402491:3:xor $0x0,%dl
+0x402494:3:mov %r11b,%r14b
+0x402497:4:and $0x0,%r14b
+0x40249b:3:and %dl,%r9b
+0x40249e:3:mov %bl,%r15b
+0x4024a1:4:and $0x0,%r15b
+0x4024a5:3:and %dl,%r10b
+0x4024a8:3:or %r9b,%r14b
+0x4024ab:3:or %r10b,%r15b
+0x4024ae:3:xor %r15b,%r14b
+0x4024b1:3:or %bl,%r11b
+0x4024b4:4:xor $0xff,%r11b
+0x4024b8:3:or $0x0,%dl
+0x4024bb:3:and %dl,%r11b
+0x4024be:3:or %r11b,%r14b
+0x4024c1:4:test $0x1,%r14b
+0x4024c5:3:cmovne %ecx,%eax
+0x4024c8:3:mov %eax,-0x58(%rbp)
+0x4024cb:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x4024d0:5:mov $0xb7a81740,%eax
+0x4024d5:5:mov $0xae06eb5b,%ecx
+0x4024da:2:mov $0x1,%dl
+0x4024dc:2:xor %esi,%esi
+0x4024de:4:mov -0x50(%rbp),%rdi
+0x4024e2:6:cmpl $0x320,(%rdi)
+0x4024e8:4:setl %r8b
+0x4024ec:4:and $0x1,%r8b
+0x4024f0:4:mov %r8b,-0x34(%rbp)
+0x4024f4:8:mov 0x407048,%r9d
+0x4024fc:8:mov 0x407064,%r10d
+0x402504:3:sub $0x1,%esi
+0x402507:3:mov %r9d,%r11d
+0x40250a:3:add %esi,%r11d
+0x40250d:4:imul %r11d,%r9d
+0x402511:4:and $0x1,%r9d
+0x402515:4:cmp $0x0,%r9d
+0x402519:4:sete %r8b
+0x40251d:4:cmp $0xa,%r10d
+0x402521:3:setl %bl
+0x402524:3:mov %r8b,%r14b
+0x402527:4:xor $0xff,%r14b
+0x40252b:3:mov %bl,%r15b
+0x40252e:4:xor $0xff,%r15b
+0x402532:3:xor $0x0,%dl
+0x402535:3:mov %r14b,%r12b
+0x402538:4:and $0x0,%r12b
+0x40253c:3:and %dl,%r8b
+0x40253f:3:mov %r15b,%r13b
+0x402542:4:and $0x0,%r13b
+0x402546:2:and %dl,%bl
+0x402548:3:or %r8b,%r12b
+0x40254b:3:or %bl,%r13b
+0x40254e:3:xor %r13b,%r12b
+0x402551:3:or %r15b,%r14b
+0x402554:4:xor $0xff,%r14b
+0x402558:3:or $0x0,%dl
+0x40255b:3:and %dl,%r14b
+0x40255e:3:or %r14b,%r12b
+0x402561:4:test $0x1,%r12b
+0x402565:3:cmovne %ecx,%eax
+0x402568:3:mov %eax,-0x58(%rbp)
+0x40256b:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x402570:5:mov $0xa2d445cb,%eax
+0x402575:5:mov $0xac366c40,%ecx
+0x40257a:3:mov -0x34(%rbp),%dl
+0x40257d:3:test $0x1,%dl
+0x402580:3:cmovne %ecx,%eax
+0x402583:3:mov %eax,-0x58(%rbp)
+0x402586:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x40258b:5:mov $0xa2d445cb,%eax
+0x402590:5:mov $0x1e9c090a,%ecx
+0x402595:4:mov -0x48(%rbp),%rdx
+0x402599:6:cmpl $0x258,(%rdx)
+0x40259f:3:cmovl %ecx,%eax
+0x4025a2:3:mov %eax,-0x58(%rbp)
+0x4025a5:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x4025aa:5:mov $0xc8efa123,%eax
+0x4025af:5:mov $0x3fe07d61,%ecx
+0x4025b4:2:xor %edx,%edx
+0x4025b6:7:mov 0x407048,%esi
+0x4025bd:7:mov 0x407064,%edi
+0x4025c4:3:sub $0x1,%edx
+0x4025c7:3:mov %esi,%r8d
+0x4025ca:3:add %edx,%r8d
+0x4025cd:4:imul %r8d,%esi
+0x4025d1:3:and $0x1,%esi
+0x4025d4:3:cmp $0x0,%esi
+0x4025d7:4:sete %r9b
+0x4025db:3:cmp $0xa,%edi
+0x4025de:4:setl %r10b
+0x4025e2:3:mov %r9b,%r11b
+0x4025e5:3:and %r10b,%r11b
+0x4025e8:3:xor %r10b,%r9b
+0x4025eb:3:or %r9b,%r11b
+0x4025ee:4:test $0x1,%r11b
+0x4025f2:3:cmovne %ecx,%eax
+0x4025f5:3:mov %eax,-0x58(%rbp)
+0x4025f8:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x4025fd:5:mov $0xc8efa123,%eax
+0x402602:5:mov $0x606e4157,%ecx
+0x402607:2:xor %edx,%edx
+0x402609:4:mov -0x40(%rbp),%rsi
+0x40260d:6:movl $0x1,(%rsi)
+0x402613:7:mov 0x407048,%edi
+0x40261a:8:mov 0x407064,%r8d
+0x402622:3:sub $0x1,%edx
+0x402625:3:mov %edi,%r9d
+0x402628:3:add %edx,%r9d
+0x40262b:4:imul %r9d,%edi
+0x40262f:3:and $0x1,%edi
+0x402632:3:cmp $0x0,%edi
+0x402635:4:sete %r10b
+0x402639:4:cmp $0xa,%r8d
+0x40263d:4:setl %r11b
+0x402641:3:mov %r10b,%bl
+0x402644:3:and %r11b,%bl
+0x402647:3:xor %r11b,%r10b
+0x40264a:3:or %r10b,%bl
+0x40264d:3:test $0x1,%bl
+0x402650:3:cmovne %ecx,%eax
+0x402653:3:mov %eax,-0x58(%rbp)
+0x402656:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x40265b:7:movl $0xa2d445cb,-0x58(%rbp)
+0x402662:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x402667:5:mov $0xf0abbaf3,%eax
+0x40266c:5:mov $0x3b801090,%ecx
+0x402671:7:mov 0x407048,%edx
+0x402678:7:mov 0x407064,%esi
+0x40267f:2:mov %edx,%edi
+0x402681:6:add $0x4fb894ce,%edi
+0x402687:3:sub $0x1,%edi
+0x40268a:6:sub $0x4fb894ce,%edi
+0x402690:3:imul %edi,%edx
+0x402693:3:and $0x1,%edx
+0x402696:3:cmp $0x0,%edx
+0x402699:4:sete %r8b
+0x40269d:3:cmp $0xa,%esi
+0x4026a0:4:setl %r9b
+0x4026a4:3:mov %r8b,%r10b
+0x4026a7:3:and %r9b,%r10b
+0x4026aa:3:xor %r9b,%r8b
+0x4026ad:3:or %r8b,%r10b
+0x4026b0:4:test $0x1,%r10b
+0x4026b4:3:cmovne %ecx,%eax
+0x4026b7:3:mov %eax,-0x58(%rbp)
+0x4026ba:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x4026bf:5:mov $0xf0abbaf3,%eax
+0x4026c4:5:mov $0xeeb8e5a3,%ecx
+0x4026c9:2:mov $0x1,%dl
+0x4026cb:2:xor %esi,%esi
+0x4026cd:7:mov 0x407048,%edi
+0x4026d4:8:mov 0x407064,%r8d
+0x4026dc:3:sub $0x1,%esi
+0x4026df:3:mov %edi,%r9d
+0x4026e2:3:add %esi,%r9d
+0x4026e5:4:imul %r9d,%edi
+0x4026e9:3:and $0x1,%edi
+0x4026ec:3:cmp $0x0,%edi
+0x4026ef:4:sete %r10b
+0x4026f3:4:cmp $0xa,%r8d
+0x4026f7:4:setl %r11b
+0x4026fb:3:mov %r10b,%bl
+0x4026fe:3:xor $0xff,%bl
+0x402701:3:mov %r11b,%r14b
+0x402704:4:xor $0xff,%r14b
+0x402708:3:xor $0x0,%dl
+0x40270b:3:mov %bl,%r15b
+0x40270e:4:and $0x0,%r15b
+0x402712:3:and %dl,%r10b
+0x402715:3:mov %r14b,%r12b
+0x402718:4:and $0x0,%r12b
+0x40271c:3:and %dl,%r11b
+0x40271f:3:or %r10b,%r15b
+0x402722:3:or %r11b,%r12b
+0x402725:3:xor %r12b,%r15b
+0x402728:3:or %r14b,%bl
+0x40272b:3:xor $0xff,%bl
+0x40272e:3:or $0x0,%dl
+0x402731:2:and %dl,%bl
+0x402733:3:or %bl,%r15b
+0x402736:4:test $0x1,%r15b
+0x40273a:3:cmovne %ecx,%eax
+0x40273d:3:mov %eax,-0x58(%rbp)
+0x402740:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x402745:7:movl $0xf24d06fc,-0x58(%rbp)
+0x40274c:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x402751:5:mov $0xae65ce68,%eax
+0x402756:5:mov $0xad104190,%ecx
+0x40275b:4:mov -0x50(%rbp),%rdx
+0x40275f:6:cmpl $0x400,(%rdx)
+0x402765:3:cmovl %ecx,%eax
+0x402768:3:mov %eax,-0x58(%rbp)
+0x40276b:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x402770:5:mov $0x54d88b89,%eax
+0x402775:5:mov $0xefd93d42,%ecx
+0x40277a:2:mov $0x1,%dl
+0x40277c:7:mov 0x407048,%esi
+0x402783:7:mov 0x407064,%edi
+0x40278a:3:mov %esi,%r8d
+0x40278d:7:add $0xd4c0b4fa,%r8d
+0x402794:4:sub $0x1,%r8d
+0x402798:7:sub $0xd4c0b4fa,%r8d
+0x40279f:4:imul %r8d,%esi
+0x4027a3:3:and $0x1,%esi
+0x4027a6:3:cmp $0x0,%esi
+0x4027a9:4:sete %r9b
+0x4027ad:3:cmp $0xa,%edi
+0x4027b0:4:setl %r10b
+0x4027b4:3:mov %r9b,%r11b
+0x4027b7:4:xor $0xff,%r11b
+0x4027bb:3:mov %r10b,%bl
+0x4027be:3:xor $0xff,%bl
+0x4027c1:3:xor $0x0,%dl
+0x4027c4:3:mov %r11b,%r14b
+0x4027c7:4:and $0x0,%r14b
+0x4027cb:3:and %dl,%r9b
+0x4027ce:3:mov %bl,%r15b
+0x4027d1:4:and $0x0,%r15b
+0x4027d5:3:and %dl,%r10b
+0x4027d8:3:or %r9b,%r14b
+0x4027db:3:or %r10b,%r15b
+0x4027de:3:xor %r15b,%r14b
+0x4027e1:3:or %bl,%r11b
+0x4027e4:4:xor $0xff,%r11b
+0x4027e8:3:or $0x0,%dl
+0x4027eb:3:and %dl,%r11b
+0x4027ee:3:or %r11b,%r14b
+0x4027f1:4:test $0x1,%r14b
+0x4027f5:3:cmovne %ecx,%eax
+0x4027f8:3:mov %eax,-0x58(%rbp)
+0x4027fb:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x402800:5:mov $0x54d88b89,%eax
+0x402805:5:mov $0x59de27f1,%ecx
+0x40280a:4:mov -0x48(%rbp),%rdx
+0x40280e:6:cmpl $0x300,(%rdx)
+0x402814:4:setl %sil
+0x402818:4:and $0x1,%sil
+0x40281c:4:mov %sil,-0x33(%rbp)
+0x402820:7:mov 0x407048,%edi
+0x402827:8:mov 0x407064,%r8d
+0x40282f:3:mov %edi,%r9d
+0x402832:7:add $0x86dd9e59,%r9d
+0x402839:4:sub $0x1,%r9d
+0x40283d:7:sub $0x86dd9e59,%r9d
+0x402844:4:imul %r9d,%edi
+0x402848:3:and $0x1,%edi
+0x40284b:3:cmp $0x0,%edi
+0x40284e:4:sete %sil
+0x402852:4:cmp $0xa,%r8d
+0x402856:4:setl %r10b
+0x40285a:3:mov %sil,%r11b
+0x40285d:3:and %r10b,%r11b
+0x402860:3:xor %r10b,%sil
+0x402863:3:or %sil,%r11b
+0x402866:4:test $0x1,%r11b
+0x40286a:3:cmovne %ecx,%eax
+0x40286d:3:mov %eax,-0x58(%rbp)
+0x402870:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x402875:5:mov $0xae65ce68,%eax
+0x40287a:5:mov $0xa5c60d75,%ecx
+0x40287f:3:mov -0x33(%rbp),%dl
+0x402882:3:test $0x1,%dl
+0x402885:3:cmovne %ecx,%eax
+0x402888:3:mov %eax,-0x58(%rbp)
+0x40288b:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x402890:4:mov -0x40(%rbp),%rax
+0x402894:6:movl $0x1,(%rax)
+0x40289a:7:movl $0xae65ce68,-0x58(%rbp)
+0x4028a1:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x4028a6:5:mov $0xf6cd09e0,%eax
+0x4028ab:5:mov $0xa4125e5b,%ecx
+0x4028b0:2:mov $0x1,%dl
+0x4028b2:7:mov 0x407048,%esi
+0x4028b9:7:mov 0x407064,%edi
+0x4028c0:3:mov %esi,%r8d
+0x4028c3:7:add $0xfd27281a,%r8d
+0x4028ca:4:sub $0x1,%r8d
+0x4028ce:7:sub $0xfd27281a,%r8d
+0x4028d5:4:imul %r8d,%esi
+0x4028d9:3:and $0x1,%esi
+0x4028dc:3:cmp $0x0,%esi
+0x4028df:4:sete %r9b
+0x4028e3:3:cmp $0xa,%edi
+0x4028e6:4:setl %r10b
+0x4028ea:3:mov %r9b,%r11b
+0x4028ed:4:xor $0xff,%r11b
+0x4028f1:3:mov %r10b,%bl
+0x4028f4:3:xor $0xff,%bl
+0x4028f7:3:xor $0x1,%dl
+0x4028fa:3:mov %r11b,%r14b
+0x4028fd:4:and $0xff,%r14b
+0x402901:3:and %dl,%r9b
+0x402904:3:mov %bl,%r15b
+0x402907:4:and $0xff,%r15b
+0x40290b:3:and %dl,%r10b
+0x40290e:3:or %r9b,%r14b
+0x402911:3:or %r10b,%r15b
+0x402914:3:xor %r15b,%r14b
+0x402917:3:or %bl,%r11b
+0x40291a:4:xor $0xff,%r11b
+0x40291e:3:or $0x1,%dl
+0x402921:3:and %dl,%r11b
+0x402924:3:or %r11b,%r14b
+0x402927:4:test $0x1,%r14b
+0x40292b:3:cmovne %ecx,%eax
+0x40292e:3:mov %eax,-0x58(%rbp)
+0x402931:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x402936:5:mov $0xf6cd09e0,%eax
+0x40293b:5:mov $0x1548685f,%ecx
+0x402940:7:mov 0x407048,%edx
+0x402947:7:mov 0x407064,%esi
+0x40294e:2:mov %edx,%edi
+0x402950:6:add $0x11adb574,%edi
+0x402956:3:sub $0x1,%edi
+0x402959:6:sub $0x11adb574,%edi
+0x40295f:3:imul %edi,%edx
+0x402962:3:and $0x1,%edx
+0x402965:3:cmp $0x0,%edx
+0x402968:4:sete %r8b
+0x40296c:3:cmp $0xa,%esi
+0x40296f:4:setl %r9b
+0x402973:3:mov %r8b,%r10b
+0x402976:3:and %r9b,%r10b
+0x402979:3:xor %r9b,%r8b
+0x40297c:3:or %r8b,%r10b
+0x40297f:4:test $0x1,%r10b
+0x402983:3:cmovne %ecx,%eax
+0x402986:3:mov %eax,-0x58(%rbp)
+0x402989:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x40298e:7:movl $0xf24d06fc,-0x58(%rbp)
+0x402995:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x40299a:5:mov $0xbf90a3ee,%eax
+0x40299f:5:mov $0xd17c7d5e,%ecx
+0x4029a4:4:mov -0x50(%rbp),%rdx
+0x4029a8:6:cmpl $0x500,(%rdx)
+0x4029ae:3:cmovl %ecx,%eax
+0x4029b1:3:mov %eax,-0x58(%rbp)
+0x4029b4:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x4029b9:5:mov $0xefaedef0,%eax
+0x4029be:5:mov $0x7fb81be4,%ecx
+0x4029c3:7:mov 0x407048,%edx
+0x4029ca:7:mov 0x407064,%esi
+0x4029d1:2:mov %edx,%edi
+0x4029d3:6:sub $0x182b5d80,%edi
+0x4029d9:3:sub $0x1,%edi
+0x4029dc:6:add $0x182b5d80,%edi
+0x4029e2:3:imul %edi,%edx
+0x4029e5:3:and $0x1,%edx
+0x4029e8:3:cmp $0x0,%edx
+0x4029eb:4:sete %r8b
+0x4029ef:3:cmp $0xa,%esi
+0x4029f2:4:setl %r9b
+0x4029f6:3:mov %r8b,%r10b
+0x4029f9:3:and %r9b,%r10b
+0x4029fc:3:xor %r9b,%r8b
+0x4029ff:3:or %r8b,%r10b
+0x402a02:4:test $0x1,%r10b
+0x402a06:3:cmovne %ecx,%eax
+0x402a09:3:mov %eax,-0x58(%rbp)
+0x402a0c:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x402a11:5:mov $0xefaedef0,%eax
+0x402a16:5:mov $0x885bcec9,%ecx
+0x402a1b:2:mov $0x1,%dl
+0x402a1d:4:mov -0x48(%rbp),%rsi
+0x402a21:6:cmpl $0x300,(%rsi)
+0x402a27:4:setl %dil
+0x402a2b:4:and $0x1,%dil
+0x402a2f:4:mov %dil,-0x32(%rbp)
+0x402a33:8:mov 0x407048,%r8d
+0x402a3b:8:mov 0x407064,%r9d
+0x402a43:3:mov %r8d,%r10d
+0x402a46:7:add $0x4ba234ce,%r10d
+0x402a4d:4:sub $0x1,%r10d
+0x402a51:7:sub $0x4ba234ce,%r10d
+0x402a58:4:imul %r10d,%r8d
+0x402a5c:4:and $0x1,%r8d
+0x402a60:4:cmp $0x0,%r8d
+0x402a64:4:sete %dil
+0x402a68:4:cmp $0xa,%r9d
+0x402a6c:4:setl %r11b
+0x402a70:3:mov %dil,%bl
+0x402a73:3:xor $0xff,%bl
+0x402a76:3:mov %r11b,%r14b
+0x402a79:4:xor $0xff,%r14b
+0x402a7d:3:xor $0x0,%dl
+0x402a80:3:mov %bl,%r15b
+0x402a83:4:and $0x0,%r15b
+0x402a87:3:and %dl,%dil
+0x402a8a:3:mov %r14b,%r12b
+0x402a8d:4:and $0x0,%r12b
+0x402a91:3:and %dl,%r11b
+0x402a94:3:or %dil,%r15b
+0x402a97:3:or %r11b,%r12b
+0x402a9a:3:xor %r12b,%r15b
+0x402a9d:3:or %r14b,%bl
+0x402aa0:3:xor $0xff,%bl
+0x402aa3:3:or $0x0,%dl
+0x402aa6:2:and %dl,%bl
+0x402aa8:3:or %bl,%r15b
+0x402aab:4:test $0x1,%r15b
+0x402aaf:3:cmovne %ecx,%eax
+0x402ab2:3:mov %eax,-0x58(%rbp)
+0x402ab5:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x402aba:5:mov $0xbf90a3ee,%eax
+0x402abf:5:mov $0x42275db5,%ecx
+0x402ac4:3:mov -0x32(%rbp),%dl
+0x402ac7:3:test $0x1,%dl
+0x402aca:3:cmovne %ecx,%eax
+0x402acd:3:mov %eax,-0x58(%rbp)
+0x402ad0:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x402ad5:4:mov -0x40(%rbp),%rax
+0x402ad9:6:movl $0x1,(%rax)
+0x402adf:7:movl $0xbf90a3ee,-0x58(%rbp)
+0x402ae6:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x402aeb:5:mov $0xc7e77703,%eax
+0x402af0:5:mov $0x92f9c47,%ecx
+0x402af5:2:mov $0x1,%dl
+0x402af7:7:mov 0x407048,%esi
+0x402afe:7:mov 0x407064,%edi
+0x402b05:3:mov %esi,%r8d
+0x402b08:7:sub $0xcd3cc8c,%r8d
+0x402b0f:4:sub $0x1,%r8d
+0x402b13:7:add $0xcd3cc8c,%r8d
+0x402b1a:4:imul %r8d,%esi
+0x402b1e:3:and $0x1,%esi
+0x402b21:3:cmp $0x0,%esi
+0x402b24:4:sete %r9b
+0x402b28:3:cmp $0xa,%edi
+0x402b2b:4:setl %r10b
+0x402b2f:3:mov %r9b,%r11b
+0x402b32:4:xor $0xff,%r11b
+0x402b36:3:mov %r10b,%bl
+0x402b39:3:xor $0xff,%bl
+0x402b3c:3:xor $0x0,%dl
+0x402b3f:3:mov %r11b,%r14b
+0x402b42:4:and $0x0,%r14b
+0x402b46:3:and %dl,%r9b
+0x402b49:3:mov %bl,%r15b
+0x402b4c:4:and $0x0,%r15b
+0x402b50:3:and %dl,%r10b
+0x402b53:3:or %r9b,%r14b
+0x402b56:3:or %r10b,%r15b
+0x402b59:3:xor %r15b,%r14b
+0x402b5c:3:or %bl,%r11b
+0x402b5f:4:xor $0xff,%r11b
+0x402b63:3:or $0x0,%dl
+0x402b66:3:and %dl,%r11b
+0x402b69:3:or %r11b,%r14b
+0x402b6c:4:test $0x1,%r14b
+0x402b70:3:cmovne %ecx,%eax
+0x402b73:3:mov %eax,-0x58(%rbp)
+0x402b76:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x402b7b:5:mov $0xc7e77703,%eax
+0x402b80:5:mov $0x8fcd32ab,%ecx
+0x402b85:7:mov 0x407048,%edx
+0x402b8c:7:mov 0x407064,%esi
+0x402b93:2:mov %edx,%edi
+0x402b95:6:add $0x81ae12a1,%edi
+0x402b9b:3:sub $0x1,%edi
+0x402b9e:6:sub $0x81ae12a1,%edi
+0x402ba4:3:imul %edi,%edx
+0x402ba7:3:and $0x1,%edx
+0x402baa:3:cmp $0x0,%edx
+0x402bad:4:sete %r8b
+0x402bb1:3:cmp $0xa,%esi
+0x402bb4:4:setl %r9b
+0x402bb8:3:mov %r8b,%r10b
+0x402bbb:3:and %r9b,%r10b
+0x402bbe:3:xor %r9b,%r8b
+0x402bc1:3:or %r8b,%r10b
+0x402bc4:4:test $0x1,%r10b
+0x402bc8:3:cmovne %ecx,%eax
+0x402bcb:3:mov %eax,-0x58(%rbp)
+0x402bce:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x402bd3:7:movl $0xf24d06fc,-0x58(%rbp)
+0x402bda:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x402bdf:5:mov $0x9cbd418a,%eax
+0x402be4:5:mov $0x7653d147,%ecx
+0x402be9:4:mov -0x50(%rbp),%rdx
+0x402bed:6:cmpl $0x500,(%rdx)
+0x402bf3:3:cmovl %ecx,%eax
+0x402bf6:3:mov %eax,-0x58(%rbp)
+0x402bf9:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x402bfe:5:mov $0x9cbd418a,%eax
+0x402c03:5:mov $0xb307f48f,%ecx
+0x402c08:4:mov -0x48(%rbp),%rdx
+0x402c0c:6:cmpl $0x400,(%rdx)
+0x402c12:3:cmovl %ecx,%eax
+0x402c15:3:mov %eax,-0x58(%rbp)
+0x402c18:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x402c1d:4:mov -0x40(%rbp),%rax
+0x402c21:6:movl $0x1,(%rax)
+0x402c27:7:movl $0x9cbd418a,-0x58(%rbp)
+0x402c2e:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x402c33:7:movl $0xf24d06fc,-0x58(%rbp)
+0x402c3a:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x402c3f:5:mov $0xa51cf9bb,%eax
+0x402c44:5:mov $0xa4abca84,%ecx
+0x402c49:4:mov -0x50(%rbp),%rdx
+0x402c4d:6:cmpl $0x578,(%rdx)
+0x402c53:3:cmovl %ecx,%eax
+0x402c56:3:mov %eax,-0x58(%rbp)
+0x402c59:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x402c5e:5:mov $0xa51cf9bb,%eax
+0x402c63:5:mov $0x36ff1092,%ecx
+0x402c68:4:mov -0x48(%rbp),%rdx
+0x402c6c:6:cmpl $0x41a,(%rdx)
+0x402c72:3:cmovl %ecx,%eax
+0x402c75:3:mov %eax,-0x58(%rbp)
+0x402c78:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x402c7d:4:mov -0x40(%rbp),%rax
+0x402c81:6:movl $0x1,(%rax)
+0x402c87:7:movl $0xa51cf9bb,-0x58(%rbp)
+0x402c8e:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x402c93:5:mov $0x4f6f7f69,%eax
+0x402c98:5:mov $0xd1c55aab,%ecx
+0x402c9d:2:mov $0x1,%dl
+0x402c9f:7:mov 0x407048,%esi
+0x402ca6:7:mov 0x407064,%edi
+0x402cad:3:mov %esi,%r8d
+0x402cb0:7:sub $0xfac1e9ba,%r8d
+0x402cb7:4:sub $0x1,%r8d
+0x402cbb:7:add $0xfac1e9ba,%r8d
+0x402cc2:4:imul %r8d,%esi
+0x402cc6:3:and $0x1,%esi
+0x402cc9:3:cmp $0x0,%esi
+0x402ccc:4:sete %r9b
+0x402cd0:3:cmp $0xa,%edi
+0x402cd3:4:setl %r10b
+0x402cd7:3:mov %r9b,%r11b
+0x402cda:4:xor $0xff,%r11b
+0x402cde:3:mov %r10b,%bl
+0x402ce1:3:xor $0xff,%bl
+0x402ce4:3:xor $0x1,%dl
+0x402ce7:3:mov %r11b,%r14b
+0x402cea:4:and $0xff,%r14b
+0x402cee:3:and %dl,%r9b
+0x402cf1:3:mov %bl,%r15b
+0x402cf4:4:and $0xff,%r15b
+0x402cf8:3:and %dl,%r10b
+0x402cfb:3:or %r9b,%r14b
+0x402cfe:3:or %r10b,%r15b
+0x402d01:3:xor %r15b,%r14b
+0x402d04:3:or %bl,%r11b
+0x402d07:4:xor $0xff,%r11b
+0x402d0b:3:or $0x1,%dl
+0x402d0e:3:and %dl,%r11b
+0x402d11:3:or %r11b,%r14b
+0x402d14:4:test $0x1,%r14b
+0x402d18:3:cmovne %ecx,%eax
+0x402d1b:3:mov %eax,-0x58(%rbp)
+0x402d1e:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x402d23:5:mov $0x4f6f7f69,%eax
+0x402d28:5:mov $0xa7c08f30,%ecx
+0x402d2d:2:xor %edx,%edx
+0x402d2f:7:mov 0x407048,%esi
+0x402d36:7:mov 0x407064,%edi
+0x402d3d:3:sub $0x1,%edx
+0x402d40:3:mov %esi,%r8d
+0x402d43:3:add %edx,%r8d
+0x402d46:4:imul %r8d,%esi
+0x402d4a:3:and $0x1,%esi
+0x402d4d:3:cmp $0x0,%esi
+0x402d50:4:sete %r9b
+0x402d54:3:cmp $0xa,%edi
+0x402d57:4:setl %r10b
+0x402d5b:3:mov %r9b,%r11b
+0x402d5e:3:and %r10b,%r11b
+0x402d61:3:xor %r10b,%r9b
+0x402d64:3:or %r9b,%r11b
+0x402d67:4:test $0x1,%r11b
+0x402d6b:3:cmovne %ecx,%eax
+0x402d6e:3:mov %eax,-0x58(%rbp)
+0x402d71:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x402d76:7:movl $0xf24d06fc,-0x58(%rbp)
+0x402d7d:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x402d82:5:mov $0xfa56b329,%eax
+0x402d87:5:mov $0x3180981e,%ecx
+0x402d8c:4:mov -0x50(%rbp),%rdx
+0x402d90:6:cmpl $0x640,(%rdx)
+0x402d96:3:cmovl %ecx,%eax
+0x402d99:3:mov %eax,-0x58(%rbp)
+0x402d9c:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x402da1:5:mov $0xfa56b329,%eax
+0x402da6:5:mov $0xb27902e7,%ecx
+0x402dab:4:mov -0x48(%rbp),%rdx
+0x402daf:6:cmpl $0x4b0,(%rdx)
+0x402db5:3:cmovl %ecx,%eax
+0x402db8:3:mov %eax,-0x58(%rbp)
+0x402dbb:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x402dc0:4:mov -0x40(%rbp),%rax
+0x402dc4:6:movl $0x1,(%rax)
+0x402dca:7:movl $0xfa56b329,-0x58(%rbp)
+0x402dd1:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x402dd6:5:mov $0xc6761bcd,%eax
+0x402ddb:5:mov $0x3e94da9e,%ecx
+0x402de0:2:xor %edx,%edx
+0x402de2:7:mov 0x407048,%esi
+0x402de9:7:mov 0x407064,%edi
+0x402df0:3:sub $0x1,%edx
+0x402df3:3:mov %esi,%r8d
+0x402df6:3:add %edx,%r8d
+0x402df9:4:imul %r8d,%esi
+0x402dfd:3:and $0x1,%esi
+0x402e00:3:cmp $0x0,%esi
+0x402e03:4:sete %r9b
+0x402e07:3:cmp $0xa,%edi
+0x402e0a:4:setl %r10b
+0x402e0e:3:mov %r9b,%r11b
+0x402e11:3:and %r10b,%r11b
+0x402e14:3:xor %r10b,%r9b
+0x402e17:3:or %r9b,%r11b
+0x402e1a:4:test $0x1,%r11b
+0x402e1e:3:cmovne %ecx,%eax
+0x402e21:3:mov %eax,-0x58(%rbp)
+0x402e24:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x402e29:5:mov $0xc6761bcd,%eax
+0x402e2e:5:mov $0x99fa1569,%ecx
+0x402e33:7:mov 0x407048,%edx
+0x402e3a:7:mov 0x407064,%esi
+0x402e41:2:mov %edx,%edi
+0x402e43:6:add $0xf64b54c6,%edi
+0x402e49:3:sub $0x1,%edi
+0x402e4c:6:sub $0xf64b54c6,%edi
+0x402e52:3:imul %edi,%edx
+0x402e55:3:and $0x1,%edx
+0x402e58:3:cmp $0x0,%edx
+0x402e5b:4:sete %r8b
+0x402e5f:3:cmp $0xa,%esi
+0x402e62:4:setl %r9b
+0x402e66:3:mov %r8b,%r10b
+0x402e69:3:and %r9b,%r10b
+0x402e6c:3:xor %r9b,%r8b
+0x402e6f:3:or %r8b,%r10b
+0x402e72:4:test $0x1,%r10b
+0x402e76:3:cmovne %ecx,%eax
+0x402e79:3:mov %eax,-0x58(%rbp)
+0x402e7c:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x402e81:7:movl $0xf24d06fc,-0x58(%rbp)
+0x402e88:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x402e8d:5:mov $0x6eb9949a,%eax
+0x402e92:5:mov $0x2760ceab,%ecx
+0x402e97:4:mov -0x50(%rbp),%rdx
+0x402e9b:6:cmpl $0x556,(%rdx)
+0x402ea1:3:cmovl %ecx,%eax
+0x402ea4:3:mov %eax,-0x58(%rbp)
+0x402ea7:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x402eac:5:mov $0x6eb9949a,%eax
+0x402eb1:5:mov $0x78a83968,%ecx
+0x402eb6:4:mov -0x48(%rbp),%rdx
+0x402eba:6:cmpl $0x300,(%rdx)
+0x402ec0:3:cmovl %ecx,%eax
+0x402ec3:3:mov %eax,-0x58(%rbp)
+0x402ec6:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x402ecb:5:mov $0x79d0e2cf,%eax
+0x402ed0:5:mov $0x5a0c8bd3,%ecx
+0x402ed5:2:mov $0x1,%dl
+0x402ed7:2:xor %esi,%esi
+0x402ed9:7:mov 0x407048,%edi
+0x402ee0:8:mov 0x407064,%r8d
+0x402ee8:3:sub $0x1,%esi
+0x402eeb:3:mov %edi,%r9d
+0x402eee:3:add %esi,%r9d
+0x402ef1:4:imul %r9d,%edi
+0x402ef5:3:and $0x1,%edi
+0x402ef8:3:cmp $0x0,%edi
+0x402efb:4:sete %r10b
+0x402eff:4:cmp $0xa,%r8d
+0x402f03:4:setl %r11b
+0x402f07:3:mov %r10b,%bl
+0x402f0a:3:xor $0xff,%bl
+0x402f0d:3:mov %r11b,%r14b
+0x402f10:4:xor $0xff,%r14b
+0x402f14:3:xor $0x0,%dl
+0x402f17:3:mov %bl,%r15b
+0x402f1a:4:and $0x0,%r15b
+0x402f1e:3:and %dl,%r10b
+0x402f21:3:mov %r14b,%r12b
+0x402f24:4:and $0x0,%r12b
+0x402f28:3:and %dl,%r11b
+0x402f2b:3:or %r10b,%r15b
+0x402f2e:3:or %r11b,%r12b
+0x402f31:3:xor %r12b,%r15b
+0x402f34:3:or %r14b,%bl
+0x402f37:3:xor $0xff,%bl
+0x402f3a:3:or $0x0,%dl
+0x402f3d:2:and %dl,%bl
+0x402f3f:3:or %bl,%r15b
+0x402f42:4:test $0x1,%r15b
+0x402f46:3:cmovne %ecx,%eax
+0x402f49:3:mov %eax,-0x58(%rbp)
+0x402f4c:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x402f51:5:mov $0x79d0e2cf,%eax
+0x402f56:5:mov $0x44758db5,%ecx
+0x402f5b:2:mov $0x1,%dl
+0x402f5d:2:xor %esi,%esi
+0x402f5f:4:mov -0x40(%rbp),%rdi
+0x402f63:6:movl $0x1,(%rdi)
+0x402f69:8:mov 0x407048,%r8d
+0x402f71:8:mov 0x407064,%r9d
+0x402f79:3:sub $0x1,%esi
+0x402f7c:3:mov %r8d,%r10d
+0x402f7f:3:add %esi,%r10d
+0x402f82:4:imul %r10d,%r8d
+0x402f86:4:and $0x1,%r8d
+0x402f8a:4:cmp $0x0,%r8d
+0x402f8e:4:sete %r11b
+0x402f92:4:cmp $0xa,%r9d
+0x402f96:3:setl %bl
+0x402f99:3:mov %r11b,%r14b
+0x402f9c:4:xor $0xff,%r14b
+0x402fa0:3:mov %bl,%r15b
+0x402fa3:4:xor $0xff,%r15b
+0x402fa7:3:xor $0x1,%dl
+0x402faa:3:mov %r14b,%r12b
+0x402fad:4:and $0xff,%r12b
+0x402fb1:3:and %dl,%r11b
+0x402fb4:3:mov %r15b,%r13b
+0x402fb7:4:and $0xff,%r13b
+0x402fbb:2:and %dl,%bl
+0x402fbd:3:or %r11b,%r12b
+0x402fc0:3:or %bl,%r13b
+0x402fc3:3:xor %r13b,%r12b
+0x402fc6:3:or %r15b,%r14b
+0x402fc9:4:xor $0xff,%r14b
+0x402fcd:3:or $0x1,%dl
+0x402fd0:3:and %dl,%r14b
+0x402fd3:3:or %r14b,%r12b
+0x402fd6:4:test $0x1,%r12b
+0x402fda:3:cmovne %ecx,%eax
+0x402fdd:3:mov %eax,-0x58(%rbp)
+0x402fe0:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x402fe5:7:movl $0x6eb9949a,-0x58(%rbp)
+0x402fec:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x402ff1:5:mov $0x31627811,%eax
+0x402ff6:5:mov $0x183adbd8,%ecx
+0x402ffb:7:mov 0x407048,%edx
+0x403002:7:mov 0x407064,%esi
+0x403009:2:mov %edx,%edi
+0x40300b:6:sub $0x431ff5e0,%edi
+0x403011:3:sub $0x1,%edi
+0x403014:6:add $0x431ff5e0,%edi
+0x40301a:3:imul %edi,%edx
+0x40301d:3:and $0x1,%edx
+0x403020:3:cmp $0x0,%edx
+0x403023:4:sete %r8b
+0x403027:3:cmp $0xa,%esi
+0x40302a:4:setl %r9b
+0x40302e:3:mov %r8b,%r10b
+0x403031:3:and %r9b,%r10b
+0x403034:3:xor %r9b,%r8b
+0x403037:3:or %r8b,%r10b
+0x40303a:4:test $0x1,%r10b
+0x40303e:3:cmovne %ecx,%eax
+0x403041:3:mov %eax,-0x58(%rbp)
+0x403044:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x403049:5:mov $0x31627811,%eax
+0x40304e:5:mov $0x2798985d,%ecx
+0x403053:2:mov $0x1,%dl
+0x403055:7:mov 0x407048,%esi
+0x40305c:7:mov 0x407064,%edi
+0x403063:3:mov %esi,%r8d
+0x403066:7:add $0x8a32b3eb,%r8d
+0x40306d:4:sub $0x1,%r8d
+0x403071:7:sub $0x8a32b3eb,%r8d
+0x403078:4:imul %r8d,%esi
+0x40307c:3:and $0x1,%esi
+0x40307f:3:cmp $0x0,%esi
+0x403082:4:sete %r9b
+0x403086:3:cmp $0xa,%edi
+0x403089:4:setl %r10b
+0x40308d:3:mov %r9b,%r11b
+0x403090:4:xor $0xff,%r11b
+0x403094:3:mov %r10b,%bl
+0x403097:3:xor $0xff,%bl
+0x40309a:3:xor $0x0,%dl
+0x40309d:3:mov %r11b,%r14b
+0x4030a0:4:and $0x0,%r14b
+0x4030a4:3:and %dl,%r9b
+0x4030a7:3:mov %bl,%r15b
+0x4030aa:4:and $0x0,%r15b
+0x4030ae:3:and %dl,%r10b
+0x4030b1:3:or %r9b,%r14b
+0x4030b4:3:or %r10b,%r15b
+0x4030b7:3:xor %r15b,%r14b
+0x4030ba:3:or %bl,%r11b
+0x4030bd:4:xor $0xff,%r11b
+0x4030c1:3:or $0x0,%dl
+0x4030c4:3:and %dl,%r11b
+0x4030c7:3:or %r11b,%r14b
+0x4030ca:4:test $0x1,%r14b
+0x4030ce:3:cmovne %ecx,%eax
+0x4030d1:3:mov %eax,-0x58(%rbp)
+0x4030d4:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x4030d9:7:movl $0xf24d06fc,-0x58(%rbp)
+0x4030e0:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x4030e5:5:mov $0x5a79ee6d,%eax
+0x4030ea:5:mov $0x7e4527b6,%ecx
+0x4030ef:4:mov -0x50(%rbp),%rdx
+0x4030f3:6:cmpl $0x400,(%rdx)
+0x4030f9:3:cmovl %ecx,%eax
+0x4030fc:3:mov %eax,-0x58(%rbp)
+0x4030ff:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x403104:5:mov $0x5a79ee6d,%eax
+0x403109:5:mov $0x47655d66,%ecx
+0x40310e:4:mov -0x48(%rbp),%rdx
+0x403112:6:cmpl $0x258,(%rdx)
+0x403118:3:cmovl %ecx,%eax
+0x40311b:3:mov %eax,-0x58(%rbp)
+0x40311e:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x403123:5:mov $0xf71c2a16,%eax
+0x403128:5:mov $0xd57c3dd9,%ecx
+0x40312d:2:mov $0x1,%dl
+0x40312f:7:mov 0x407048,%esi
+0x403136:7:mov 0x407064,%edi
+0x40313d:3:mov %esi,%r8d
+0x403140:7:sub $0xa3dbdd8d,%r8d
+0x403147:4:sub $0x1,%r8d
+0x40314b:7:add $0xa3dbdd8d,%r8d
+0x403152:4:imul %r8d,%esi
+0x403156:3:and $0x1,%esi
+0x403159:3:cmp $0x0,%esi
+0x40315c:4:sete %r9b
+0x403160:3:cmp $0xa,%edi
+0x403163:4:setl %r10b
+0x403167:3:mov %r9b,%r11b
+0x40316a:4:xor $0xff,%r11b
+0x40316e:3:mov %r10b,%bl
+0x403171:3:xor $0xff,%bl
+0x403174:3:xor $0x1,%dl
+0x403177:3:mov %r11b,%r14b
+0x40317a:4:and $0xff,%r14b
+0x40317e:3:and %dl,%r9b
+0x403181:3:mov %bl,%r15b
+0x403184:4:and $0xff,%r15b
+0x403188:3:and %dl,%r10b
+0x40318b:3:or %r9b,%r14b
+0x40318e:3:or %r10b,%r15b
+0x403191:3:xor %r15b,%r14b
+0x403194:3:or %bl,%r11b
+0x403197:4:xor $0xff,%r11b
+0x40319b:3:or $0x1,%dl
+0x40319e:3:and %dl,%r11b
+0x4031a1:3:or %r11b,%r14b
+0x4031a4:4:test $0x1,%r14b
+0x4031a8:3:cmovne %ecx,%eax
+0x4031ab:3:mov %eax,-0x58(%rbp)
+0x4031ae:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x4031b3:5:mov $0xf71c2a16,%eax
+0x4031b8:5:mov $0x4549829a,%ecx
+0x4031bd:4:mov -0x40(%rbp),%rdx
+0x4031c1:6:movl $0x1,(%rdx)
+0x4031c7:7:mov 0x407048,%esi
+0x4031ce:7:mov 0x407064,%edi
+0x4031d5:3:mov %esi,%r8d
+0x4031d8:7:sub $0x10145ec0,%r8d
+0x4031df:4:sub $0x1,%r8d
+0x4031e3:7:add $0x10145ec0,%r8d
+0x4031ea:4:imul %r8d,%esi
+0x4031ee:3:and $0x1,%esi
+0x4031f1:3:cmp $0x0,%esi
+0x4031f4:4:sete %r9b
+0x4031f8:3:cmp $0xa,%edi
+0x4031fb:4:setl %r10b
+0x4031ff:3:mov %r9b,%r11b
+0x403202:3:and %r10b,%r11b
+0x403205:3:xor %r10b,%r9b
+0x403208:3:or %r9b,%r11b
+0x40320b:4:test $0x1,%r11b
+0x40320f:3:cmovne %ecx,%eax
+0x403212:3:mov %eax,-0x58(%rbp)
+0x403215:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x40321a:7:movl $0x5a79ee6d,-0x58(%rbp)
+0x403221:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x403226:7:movl $0xf24d06fc,-0x58(%rbp)
+0x40322d:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x403232:5:mov $0xf3bb7aff,%eax
+0x403237:5:mov $0xb07ec640,%ecx
+0x40323c:2:xor %edx,%edx
+0x40323e:7:mov 0x407048,%esi
+0x403245:7:mov 0x407064,%edi
+0x40324c:3:sub $0x1,%edx
+0x40324f:3:mov %esi,%r8d
+0x403252:3:add %edx,%r8d
+0x403255:4:imul %r8d,%esi
+0x403259:3:and $0x1,%esi
+0x40325c:3:cmp $0x0,%esi
+0x40325f:4:sete %r9b
+0x403263:3:cmp $0xa,%edi
+0x403266:4:setl %r10b
+0x40326a:3:mov %r9b,%r11b
+0x40326d:3:and %r10b,%r11b
+0x403270:3:xor %r10b,%r9b
+0x403273:3:or %r9b,%r11b
+0x403276:4:test $0x1,%r11b
+0x40327a:3:cmovne %ecx,%eax
+0x40327d:3:mov %eax,-0x58(%rbp)
+0x403280:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x403285:5:mov $0xf3bb7aff,%eax
+0x40328a:5:mov $0x751863c1,%ecx
+0x40328f:4:mov -0x50(%rbp),%rdx
+0x403293:6:cmpl $0x500,(%rdx)
+0x403299:4:setl %sil
+0x40329d:4:and $0x1,%sil
+0x4032a1:4:mov %sil,-0x31(%rbp)
+0x4032a5:7:mov 0x407048,%edi
+0x4032ac:8:mov 0x407064,%r8d
+0x4032b4:3:mov %edi,%r9d
+0x4032b7:7:add $0x2fb9b4b0,%r9d
+0x4032be:4:sub $0x1,%r9d
+0x4032c2:7:sub $0x2fb9b4b0,%r9d
+0x4032c9:4:imul %r9d,%edi
+0x4032cd:3:and $0x1,%edi
+0x4032d0:3:cmp $0x0,%edi
+0x4032d3:4:sete %sil
+0x4032d7:4:cmp $0xa,%r8d
+0x4032db:4:setl %r10b
+0x4032df:3:mov %sil,%r11b
+0x4032e2:3:and %r10b,%r11b
+0x4032e5:3:xor %r10b,%sil
+0x4032e8:3:or %sil,%r11b
+0x4032eb:4:test $0x1,%r11b
+0x4032ef:3:cmovne %ecx,%eax
+0x4032f2:3:mov %eax,-0x58(%rbp)
+0x4032f5:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x4032fa:5:mov $0x14f5fdaf,%eax
+0x4032ff:5:mov $0xceb63f02,%ecx
+0x403304:3:mov -0x31(%rbp),%dl
+0x403307:3:test $0x1,%dl
+0x40330a:3:cmovne %ecx,%eax
+0x40330d:3:mov %eax,-0x58(%rbp)
+0x403310:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x403315:5:mov $0x14f5fdaf,%eax
+0x40331a:5:mov $0xd612470,%ecx
+0x40331f:4:mov -0x48(%rbp),%rdx
+0x403323:6:cmpl $0x320,(%rdx)
+0x403329:3:cmovl %ecx,%eax
+0x40332c:3:mov %eax,-0x58(%rbp)
+0x40332f:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x403334:4:mov -0x40(%rbp),%rax
+0x403338:6:movl $0x1,(%rax)
+0x40333e:7:movl $0x14f5fdaf,-0x58(%rbp)
+0x403345:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x40334a:7:movl $0xf24d06fc,-0x58(%rbp)
+0x403351:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x403356:5:mov $0x79397e81,%eax
+0x40335b:5:mov $0xedb230e3,%ecx
+0x403360:7:mov 0x407048,%edx
+0x403367:7:mov 0x407064,%esi
+0x40336e:2:mov %edx,%edi
+0x403370:6:add $0x7702c1aa,%edi
+0x403376:3:sub $0x1,%edi
+0x403379:6:sub $0x7702c1aa,%edi
+0x40337f:3:imul %edi,%edx
+0x403382:3:and $0x1,%edx
+0x403385:3:cmp $0x0,%edx
+0x403388:4:sete %r8b
+0x40338c:3:cmp $0xa,%esi
+0x40338f:4:setl %r9b
+0x403393:3:mov %r8b,%r10b
+0x403396:3:and %r9b,%r10b
+0x403399:3:xor %r9b,%r8b
+0x40339c:3:or %r8b,%r10b
+0x40339f:4:test $0x1,%r10b
+0x4033a3:3:cmovne %ecx,%eax
+0x4033a6:3:mov %eax,-0x58(%rbp)
+0x4033a9:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x4033ae:5:mov $0x79397e81,%eax
+0x4033b3:5:mov $0x1ea887ae,%ecx
+0x4033b8:4:mov -0x50(%rbp),%rdx
+0x4033bc:6:cmpl $0x320,(%rdx)
+0x4033c2:4:setl %sil
+0x4033c6:4:and $0x1,%sil
+0x4033ca:4:mov %sil,-0x30(%rbp)
+0x4033ce:7:mov 0x407048,%edi
+0x4033d5:8:mov 0x407064,%r8d
+0x4033dd:3:mov %edi,%r9d
+0x4033e0:7:add $0x3c73c18e,%r9d
+0x4033e7:4:sub $0x1,%r9d
+0x4033eb:7:sub $0x3c73c18e,%r9d
+0x4033f2:4:imul %r9d,%edi
+0x4033f6:3:and $0x1,%edi
+0x4033f9:3:cmp $0x0,%edi
+0x4033fc:4:sete %sil
+0x403400:4:cmp $0xa,%r8d
+0x403404:4:setl %r10b
+0x403408:3:mov %sil,%r11b
+0x40340b:3:and %r10b,%r11b
+0x40340e:3:xor %r10b,%sil
+0x403411:3:or %sil,%r11b
+0x403414:4:test $0x1,%r11b
+0x403418:3:cmovne %ecx,%eax
+0x40341b:3:mov %eax,-0x58(%rbp)
+0x40341e:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x403423:5:mov $0x111d3a95,%eax
+0x403428:5:mov $0x62341c80,%ecx
+0x40342d:3:mov -0x30(%rbp),%dl
+0x403430:3:test $0x1,%dl
+0x403433:3:cmovne %ecx,%eax
+0x403436:3:mov %eax,-0x58(%rbp)
+0x403439:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x40343e:5:mov $0x7caed3ce,%eax
+0x403443:5:mov $0x72fee785,%ecx
+0x403448:2:xor %edx,%edx
+0x40344a:7:mov 0x407048,%esi
+0x403451:7:mov 0x407064,%edi
+0x403458:3:sub $0x1,%edx
+0x40345b:3:mov %esi,%r8d
+0x40345e:3:add %edx,%r8d
+0x403461:4:imul %r8d,%esi
+0x403465:3:and $0x1,%esi
+0x403468:3:cmp $0x0,%esi
+0x40346b:4:sete %r9b
+0x40346f:3:cmp $0xa,%edi
+0x403472:4:setl %r10b
+0x403476:3:mov %r9b,%r11b
+0x403479:3:and %r10b,%r11b
+0x40347c:3:xor %r10b,%r9b
+0x40347f:3:or %r9b,%r11b
+0x403482:4:test $0x1,%r11b
+0x403486:3:cmovne %ecx,%eax
+0x403489:3:mov %eax,-0x58(%rbp)
+0x40348c:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x403491:5:mov $0x7caed3ce,%eax
+0x403496:5:mov $0x1718aff3,%ecx
+0x40349b:2:mov $0x1,%dl
+0x40349d:4:mov -0x48(%rbp),%rsi
+0x4034a1:6:cmpl $0x1e0,(%rsi)
+0x4034a7:4:setl %dil
+0x4034ab:4:and $0x1,%dil
+0x4034af:4:mov %dil,-0x2f(%rbp)
+0x4034b3:8:mov 0x407048,%r8d
+0x4034bb:8:mov 0x407064,%r9d
+0x4034c3:3:mov %r8d,%r10d
+0x4034c6:7:sub $0x8e555ce5,%r10d
+0x4034cd:4:sub $0x1,%r10d
+0x4034d1:7:add $0x8e555ce5,%r10d
+0x4034d8:4:imul %r10d,%r8d
+0x4034dc:4:and $0x1,%r8d
+0x4034e0:4:cmp $0x0,%r8d
+0x4034e4:4:sete %dil
+0x4034e8:4:cmp $0xa,%r9d
+0x4034ec:4:setl %r11b
+0x4034f0:3:mov %dil,%bl
+0x4034f3:3:xor $0xff,%bl
+0x4034f6:3:mov %r11b,%r14b
+0x4034f9:4:xor $0xff,%r14b
+0x4034fd:3:xor $0x1,%dl
+0x403500:3:mov %bl,%r15b
+0x403503:4:and $0xff,%r15b
+0x403507:3:and %dl,%dil
+0x40350a:3:mov %r14b,%r12b
+0x40350d:4:and $0xff,%r12b
+0x403511:3:and %dl,%r11b
+0x403514:3:or %dil,%r15b
+0x403517:3:or %r11b,%r12b
+0x40351a:3:xor %r12b,%r15b
+0x40351d:3:or %r14b,%bl
+0x403520:3:xor $0xff,%bl
+0x403523:3:or $0x1,%dl
+0x403526:2:and %dl,%bl
+0x403528:3:or %bl,%r15b
+0x40352b:4:test $0x1,%r15b
+0x40352f:3:cmovne %ecx,%eax
+0x403532:3:mov %eax,-0x58(%rbp)
+0x403535:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x40353a:5:mov $0x111d3a95,%eax
+0x40353f:5:mov $0x81232ebc,%ecx
+0x403544:3:mov -0x2f(%rbp),%dl
+0x403547:3:test $0x1,%dl
+0x40354a:3:cmovne %ecx,%eax
+0x40354d:3:mov %eax,-0x58(%rbp)
+0x403550:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x403555:4:mov -0x40(%rbp),%rax
+0x403559:6:movl $0x1,(%rax)
+0x40355f:7:movl $0x111d3a95,-0x58(%rbp)
+0x403566:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x40356b:7:movl $0xf24d06fc,-0x58(%rbp)
+0x403572:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x403577:5:mov $0x29965f2d,%eax
+0x40357c:5:mov $0x31eba841,%ecx
+0x403581:7:mov 0x407048,%edx
+0x403588:7:mov 0x407064,%esi
+0x40358f:2:mov %edx,%edi
+0x403591:6:add $0x783abce1,%edi
+0x403597:3:sub $0x1,%edi
+0x40359a:6:sub $0x783abce1,%edi
+0x4035a0:3:imul %edi,%edx
+0x4035a3:3:and $0x1,%edx
+0x4035a6:3:cmp $0x0,%edx
+0x4035a9:4:sete %r8b
+0x4035ad:3:cmp $0xa,%esi
+0x4035b0:4:setl %r9b
+0x4035b4:3:mov %r8b,%r10b
+0x4035b7:3:and %r9b,%r10b
+0x4035ba:3:xor %r9b,%r8b
+0x4035bd:3:or %r8b,%r10b
+0x4035c0:4:test $0x1,%r10b
+0x4035c4:3:cmovne %ecx,%eax
+0x4035c7:3:mov %eax,-0x58(%rbp)
+0x4035ca:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x4035cf:5:mov $0x29965f2d,%eax
+0x4035d4:5:mov $0x79804ad1,%ecx
+0x4035d9:2:mov $0x1,%dl
+0x4035db:4:mov -0x50(%rbp),%rsi
+0x4035df:6:cmpl $0x550,(%rsi)
+0x4035e5:4:setl %dil
+0x4035e9:4:and $0x1,%dil
+0x4035ed:4:mov %dil,-0x2e(%rbp)
+0x4035f1:8:mov 0x407048,%r8d
+0x4035f9:8:mov 0x407064,%r9d
+0x403601:3:mov %r8d,%r10d
+0x403604:7:sub $0x92a87ecb,%r10d
+0x40360b:4:sub $0x1,%r10d
+0x40360f:7:add $0x92a87ecb,%r10d
+0x403616:4:imul %r10d,%r8d
+0x40361a:4:and $0x1,%r8d
+0x40361e:4:cmp $0x0,%r8d
+0x403622:4:sete %dil
+0x403626:4:cmp $0xa,%r9d
+0x40362a:4:setl %r11b
+0x40362e:3:mov %dil,%bl
+0x403631:3:xor $0xff,%bl
+0x403634:3:mov %r11b,%r14b
+0x403637:4:xor $0xff,%r14b
+0x40363b:3:xor $0x0,%dl
+0x40363e:3:mov %bl,%r15b
+0x403641:4:and $0x0,%r15b
+0x403645:3:and %dl,%dil
+0x403648:3:mov %r14b,%r12b
+0x40364b:4:and $0x0,%r12b
+0x40364f:3:and %dl,%r11b
+0x403652:3:or %dil,%r15b
+0x403655:3:or %r11b,%r12b
+0x403658:3:xor %r12b,%r15b
+0x40365b:3:or %r14b,%bl
+0x40365e:3:xor $0xff,%bl
+0x403661:3:or $0x0,%dl
+0x403664:2:and %dl,%bl
+0x403666:3:or %bl,%r15b
+0x403669:4:test $0x1,%r15b
+0x40366d:3:cmovne %ecx,%eax
+0x403670:3:mov %eax,-0x58(%rbp)
+0x403673:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x403678:5:mov $0xfb4b1b50,%eax
+0x40367d:5:mov $0x1bcfc90d,%ecx
+0x403682:3:mov -0x2e(%rbp),%dl
+0x403685:3:test $0x1,%dl
+0x403688:3:cmovne %ecx,%eax
+0x40368b:3:mov %eax,-0x58(%rbp)
+0x40368e:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x403693:5:mov $0x29af899f,%eax
+0x403698:5:mov $0x8889832e,%ecx
+0x40369d:7:mov 0x407048,%edx
+0x4036a4:7:mov 0x407064,%esi
+0x4036ab:2:mov %edx,%edi
+0x4036ad:6:add $0xb3801537,%edi
+0x4036b3:3:sub $0x1,%edi
+0x4036b6:6:sub $0xb3801537,%edi
+0x4036bc:3:imul %edi,%edx
+0x4036bf:3:and $0x1,%edx
+0x4036c2:3:cmp $0x0,%edx
+0x4036c5:4:sete %r8b
+0x4036c9:3:cmp $0xa,%esi
+0x4036cc:4:setl %r9b
+0x4036d0:3:mov %r8b,%r10b
+0x4036d3:3:and %r9b,%r10b
+0x4036d6:3:xor %r9b,%r8b
+0x4036d9:3:or %r8b,%r10b
+0x4036dc:4:test $0x1,%r10b
+0x4036e0:3:cmovne %ecx,%eax
+0x4036e3:3:mov %eax,-0x58(%rbp)
+0x4036e6:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x4036eb:5:mov $0x29af899f,%eax
+0x4036f0:5:mov $0xcb079604,%ecx
+0x4036f5:2:xor %edx,%edx
+0x4036f7:4:mov -0x48(%rbp),%rsi
+0x4036fb:6:cmpl $0x300,(%rsi)
+0x403701:4:setl %dil
+0x403705:4:and $0x1,%dil
+0x403709:4:mov %dil,-0x2d(%rbp)
+0x40370d:8:mov 0x407048,%r8d
+0x403715:8:mov 0x407064,%r9d
+0x40371d:3:sub $0x1,%edx
+0x403720:3:mov %r8d,%r10d
+0x403723:3:add %edx,%r10d
+0x403726:4:imul %r10d,%r8d
+0x40372a:4:and $0x1,%r8d
+0x40372e:4:cmp $0x0,%r8d
+0x403732:4:sete %dil
+0x403736:4:cmp $0xa,%r9d
+0x40373a:4:setl %r11b
+0x40373e:3:mov %dil,%bl
+0x403741:3:and %r11b,%bl
+0x403744:3:xor %r11b,%dil
+0x403747:3:or %dil,%bl
+0x40374a:3:test $0x1,%bl
+0x40374d:3:cmovne %ecx,%eax
+0x403750:3:mov %eax,-0x58(%rbp)
+0x403753:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x403758:5:mov $0xfb4b1b50,%eax
+0x40375d:5:mov $0xd989dc02,%ecx
+0x403762:3:mov -0x2d(%rbp),%dl
+0x403765:3:test $0x1,%dl
+0x403768:3:cmovne %ecx,%eax
+0x40376b:3:mov %eax,-0x58(%rbp)
+0x40376e:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x403773:4:mov -0x40(%rbp),%rax
+0x403777:6:movl $0x1,(%rax)
+0x40377d:7:movl $0xfb4b1b50,-0x58(%rbp)
+0x403784:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x403789:7:movl $0xf24d06fc,-0x58(%rbp)
+0x403790:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x403795:5:mov $0xb175b026,%eax
+0x40379a:5:mov $0x6c10fb6d,%ecx
+0x40379f:4:mov -0x50(%rbp),%rdx
+0x4037a3:6:cmpl $0x1e0,(%rdx)
+0x4037a9:3:cmovl %ecx,%eax
+0x4037ac:3:mov %eax,-0x58(%rbp)
+0x4037af:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x4037b4:5:mov $0xb175b026,%eax
+0x4037b9:5:mov $0x8eb18ae3,%ecx
+0x4037be:4:mov -0x48(%rbp),%rdx
+0x4037c2:6:cmpl $0x280,(%rdx)
+0x4037c8:3:cmovl %ecx,%eax
+0x4037cb:3:mov %eax,-0x58(%rbp)
+0x4037ce:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x4037d3:4:mov -0x40(%rbp),%rax
+0x4037d7:6:movl $0x1,(%rax)
+0x4037dd:7:movl $0xb175b026,-0x58(%rbp)
+0x4037e4:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x4037e9:5:mov $0xba36ebcc,%eax
+0x4037ee:5:mov $0x93b4deb9,%ecx
+0x4037f3:2:mov $0x1,%dl
+0x4037f5:2:xor %esi,%esi
+0x4037f7:7:mov 0x407048,%edi
+0x4037fe:8:mov 0x407064,%r8d
+0x403806:3:sub $0x1,%esi
+0x403809:3:mov %edi,%r9d
+0x40380c:3:add %esi,%r9d
+0x40380f:4:imul %r9d,%edi
+0x403813:3:and $0x1,%edi
+0x403816:3:cmp $0x0,%edi
+0x403819:4:sete %r10b
+0x40381d:4:cmp $0xa,%r8d
+0x403821:4:setl %r11b
+0x403825:3:mov %r10b,%bl
+0x403828:3:xor $0xff,%bl
+0x40382b:3:mov %r11b,%r14b
+0x40382e:4:xor $0xff,%r14b
+0x403832:3:xor $0x1,%dl
+0x403835:3:mov %bl,%r15b
+0x403838:4:and $0xff,%r15b
+0x40383c:3:and %dl,%r10b
+0x40383f:3:mov %r14b,%r12b
+0x403842:4:and $0xff,%r12b
+0x403846:3:and %dl,%r11b
+0x403849:3:or %r10b,%r15b
+0x40384c:3:or %r11b,%r12b
+0x40384f:3:xor %r12b,%r15b
+0x403852:3:or %r14b,%bl
+0x403855:3:xor $0xff,%bl
+0x403858:3:or $0x1,%dl
+0x40385b:2:and %dl,%bl
+0x40385d:3:or %bl,%r15b
+0x403860:4:test $0x1,%r15b
+0x403864:3:cmovne %ecx,%eax
+0x403867:3:mov %eax,-0x58(%rbp)
+0x40386a:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x40386f:5:mov $0xba36ebcc,%eax
+0x403874:5:mov $0x1c2fe25c,%ecx
+0x403879:2:xor %edx,%edx
+0x40387b:7:mov 0x407048,%esi
+0x403882:7:mov 0x407064,%edi
+0x403889:3:sub $0x1,%edx
+0x40388c:3:mov %esi,%r8d
+0x40388f:3:add %edx,%r8d
+0x403892:4:imul %r8d,%esi
+0x403896:3:and $0x1,%esi
+0x403899:3:cmp $0x0,%esi
+0x40389c:4:sete %r9b
+0x4038a0:3:cmp $0xa,%edi
+0x4038a3:4:setl %r10b
+0x4038a7:3:mov %r9b,%r11b
+0x4038aa:3:and %r10b,%r11b
+0x4038ad:3:xor %r10b,%r9b
+0x4038b0:3:or %r9b,%r11b
+0x4038b3:4:test $0x1,%r11b
+0x4038b7:3:cmovne %ecx,%eax
+0x4038ba:3:mov %eax,-0x58(%rbp)
+0x4038bd:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x4038c2:7:movl $0xf24d06fc,-0x58(%rbp)
+0x4038c9:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x4038ce:7:movl $0x6550a76a,-0x58(%rbp)
+0x4038d5:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x4038da:4:mov -0x40(%rbp),%rax
+0x4038de:6:movl $0x0,(%rax)
+0x4038e4:7:movl $0xf24d06fc,-0x58(%rbp)
+0x4038eb:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x4038f0:5:mov $0x69b17814,%eax
+0x4038f5:5:mov $0xe221eb24,%ecx
+0x4038fa:7:mov 0x407048,%edx
+0x403901:7:mov 0x407064,%esi
+0x403908:2:mov %edx,%edi
+0x40390a:6:sub $0x9b00d437,%edi
+0x403910:3:sub $0x1,%edi
+0x403913:6:add $0x9b00d437,%edi
+0x403919:3:imul %edi,%edx
+0x40391c:3:and $0x1,%edx
+0x40391f:3:cmp $0x0,%edx
+0x403922:4:sete %r8b
+0x403926:3:cmp $0xa,%esi
+0x403929:4:setl %r9b
+0x40392d:3:mov %r8b,%r10b
+0x403930:3:and %r9b,%r10b
+0x403933:3:xor %r9b,%r8b
+0x403936:3:or %r8b,%r10b
+0x403939:4:test $0x1,%r10b
+0x40393d:3:cmovne %ecx,%eax
+0x403940:3:mov %eax,-0x58(%rbp)
+0x403943:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x403948:5:mov $0x69b17814,%eax
+0x40394d:5:mov $0x294cf07e,%ecx
+0x403952:2:xor %edx,%edx
+0x403954:4:mov -0x40(%rbp),%rsi
+0x403958:2:mov (%rsi),%edi
+0x40395a:3:mov %edi,-0x2c(%rbp)
+0x40395d:7:mov 0x407048,%edi
+0x403964:8:mov 0x407064,%r8d
+0x40396c:3:sub $0x1,%edx
+0x40396f:3:mov %edi,%r9d
+0x403972:3:add %edx,%r9d
+0x403975:4:imul %r9d,%edi
+0x403979:3:and $0x1,%edi
+0x40397c:3:cmp $0x0,%edi
+0x40397f:4:sete %r10b
+0x403983:4:cmp $0xa,%r8d
+0x403987:4:setl %r11b
+0x40398b:3:mov %r10b,%bl
+0x40398e:3:and %r11b,%bl
+0x403991:3:xor %r11b,%r10b
+0x403994:3:or %r10b,%bl
+0x403997:3:test $0x1,%bl
+0x40399a:3:cmovne %ecx,%eax
+0x40399d:3:mov %eax,-0x58(%rbp)
+0x4039a0:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x4039a5:3:mov -0x2c(%rbp),%eax
+0x4039a8:4:lea -0x28(%rbp),%rsp
+0x4039ac:1:pop %rbx
+0x4039ad:2:pop %r12
+0x4039af:2:pop %r13
+0x4039b1:2:pop %r14
+0x4039b3:2:pop %r15
+0x4039b5:1:pop %rbp
+0x4039b6:1:ret
+0x4039b7:3:mov %rsp,%rax
+0x4039ba:4:add $0xfffffffffffffff0,%rax
+0x4039be:3:mov %rax,%rsp
+0x4039c1:3:mov %rsp,%rcx
+0x4039c4:4:add $0xfffffffffffffff0,%rcx
+0x4039c8:3:mov %rcx,%rsp
+0x4039cb:3:mov %rsp,%rdx
+0x4039ce:4:add $0xfffffffffffffff0,%rdx
+0x4039d2:3:mov %rdx,%rsp
+0x4039d5:3:mov -0x5c(%rbp),%esi
+0x4039d8:2:mov %esi,(%rax)
+0x4039da:3:mov -0x60(%rbp),%edi
+0x4039dd:2:mov %edi,(%rcx)
+0x4039df:6:movl $0x0,(%rdx)
+0x4039e5:7:movl $0x44765f67,-0x58(%rbp)
+0x4039ec:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x4039f1:4:mov -0x50(%rbp),%rax
+0x4039f5:7:movl $0xc8a74ab3,-0x58(%rbp)
+0x4039fc:7:mov %rax,-0x278(%rbp)
+0x403a03:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x403a08:4:mov -0x40(%rbp),%rax
+0x403a0c:6:movl $0x1,(%rax)
+0x403a12:7:movl $0x3fe07d61,-0x58(%rbp)
+0x403a19:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x403a1e:7:movl $0x3b801090,-0x58(%rbp)
+0x403a25:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x403a2a:4:mov -0x48(%rbp),%rax
+0x403a2e:7:movl $0xefd93d42,-0x58(%rbp)
+0x403a35:7:mov %rax,-0x280(%rbp)
+0x403a3c:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x403a41:7:movl $0xa4125e5b,-0x58(%rbp)
+0x403a48:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x403a4d:4:mov -0x48(%rbp),%rax
+0x403a51:7:movl $0x7fb81be4,-0x58(%rbp)
+0x403a58:7:mov %rax,-0x288(%rbp)
+0x403a5f:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x403a64:7:movl $0x92f9c47,-0x58(%rbp)
+0x403a6b:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x403a70:7:movl $0xd1c55aab,-0x58(%rbp)
+0x403a77:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x403a7c:7:movl $0x3e94da9e,-0x58(%rbp)
+0x403a83:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x403a88:4:mov -0x40(%rbp),%rax
+0x403a8c:6:movl $0x1,(%rax)
+0x403a92:7:movl $0x5a0c8bd3,-0x58(%rbp)
+0x403a99:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x403a9e:7:movl $0x183adbd8,-0x58(%rbp)
+0x403aa5:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x403aaa:4:mov -0x40(%rbp),%rax
+0x403aae:6:movl $0x1,(%rax)
+0x403ab4:7:movl $0xd57c3dd9,-0x58(%rbp)
+0x403abb:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x403ac0:4:mov -0x50(%rbp),%rax
+0x403ac4:7:movl $0xb07ec640,-0x58(%rbp)
+0x403acb:7:mov %rax,-0x290(%rbp)
+0x403ad2:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x403ad7:4:mov -0x50(%rbp),%rax
+0x403adb:7:movl $0xedb230e3,-0x58(%rbp)
+0x403ae2:7:mov %rax,-0x298(%rbp)
+0x403ae9:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x403aee:4:mov -0x48(%rbp),%rax
+0x403af2:7:movl $0x72fee785,-0x58(%rbp)
+0x403af9:7:mov %rax,-0x2a0(%rbp)
+0x403b00:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x403b05:4:mov -0x50(%rbp),%rax
+0x403b09:7:movl $0x31eba841,-0x58(%rbp)
+0x403b10:7:mov %rax,-0x2a8(%rbp)
+0x403b17:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x403b1c:4:mov -0x48(%rbp),%rax
+0x403b20:7:movl $0x8889832e,-0x58(%rbp)
+0x403b27:7:mov %rax,-0x2b0(%rbp)
+0x403b2e:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x403b33:7:movl $0x93b4deb9,-0x58(%rbp)
+0x403b3a:5:jmp 0000000000403b51 <viafb_lcd_get_support_expand_state+0x2741>
+0x403b3f:4:mov -0x40(%rbp),%rax
+0x403b43:7:movl $0xe221eb24,-0x58(%rbp)
+0x403b4a:7:mov %rax,-0x2b8(%rbp)
+0x403b51:5:jmp 0000000000401474 <viafb_lcd_get_support_expand_state+0x64>
+0x403b56:10:cs nopw 0x0(%rax,%rax,1)
+0x403b60:1:push %rbp
+0x403b61:3:mov %rsp,%rbp
+0x403b64:2:push %r15
+0x403b66:2:push %r14
+0x403b68:2:push %r12
+0x403b6a:1:push %rbx
+0x403b6b:7:sub $0xc0,%rsp
+0x403b72:7:movl $0x0,-0x30(%rbp)
+0x403b79:3:mov %edi,-0x34(%rbp)
+0x403b7c:4:mov %rsi,-0x40(%rbp)
+0x403b80:3:mov -0x34(%rbp),%edi
+0x403b83:3:mov %edi,-0x2c(%rbp)
+0x403b86:7:movl $0x8a76fc65,-0x6c(%rbp)
+0x403b8d:3:mov -0x6c(%rbp),%eax
+0x403b90:2:mov %eax,%ecx
+0x403b92:6:sub $0x8a76fc65,%ecx
+0x403b98:3:mov %eax,-0x70(%rbp)
+0x403b9b:3:mov %ecx,-0x74(%rbp)
+0x403b9e:6:je 0000000000403dcb <main+0x26b>
+0x403ba4:5:jmp 0000000000403ba9 <main+0x49>
+0x403ba9:3:mov -0x70(%rbp),%eax
+0x403bac:5:sub $0x910bdf6e,%eax
+0x403bb1:3:mov %eax,-0x78(%rbp)
+0x403bb4:6:je 0000000000403f5f <main+0x3ff>
+0x403bba:5:jmp 0000000000403bbf <main+0x5f>
+0x403bbf:3:mov -0x70(%rbp),%eax
+0x403bc2:5:sub $0x98f0cae6,%eax
+0x403bc7:3:mov %eax,-0x7c(%rbp)
+0x403bca:6:je 0000000000403dfe <main+0x29e>
+0x403bd0:5:jmp 0000000000403bd5 <main+0x75>
+0x403bd5:3:mov -0x70(%rbp),%eax
+0x403bd8:5:sub $0xb1a7ec9d,%eax
+0x403bdd:3:mov %eax,-0x80(%rbp)
+0x403be0:6:je 0000000000404173 <main+0x613>
+0x403be6:5:jmp 0000000000403beb <main+0x8b>
+0x403beb:3:mov -0x70(%rbp),%eax
+0x403bee:5:sub $0xb8484451,%eax
+0x403bf3:6:mov %eax,-0x84(%rbp)
+0x403bf9:6:je 0000000000403e8e <main+0x32e>
+0x403bff:5:jmp 0000000000403c04 <main+0xa4>
+0x403c04:3:mov -0x70(%rbp),%eax
+0x403c07:5:sub $0xbd76d486,%eax
+0x403c0c:6:mov %eax,-0x88(%rbp)
+0x403c12:6:je 0000000000404119 <main+0x5b9>
+0x403c18:5:jmp 0000000000403c1d <main+0xbd>
+0x403c1d:3:mov -0x70(%rbp),%eax
+0x403c20:5:sub $0xc4d90352,%eax
+0x403c25:6:mov %eax,-0x8c(%rbp)
+0x403c2b:6:je 0000000000403f95 <main+0x435>
+0x403c31:5:jmp 0000000000403c36 <main+0xd6>
+0x403c36:3:mov -0x70(%rbp),%eax
+0x403c39:5:sub $0xe062ba89,%eax
+0x403c3e:6:mov %eax,-0x90(%rbp)
+0x403c44:6:je 0000000000404093 <main+0x533>
+0x403c4a:5:jmp 0000000000403c4f <main+0xef>
+0x403c4f:3:mov -0x70(%rbp),%eax
+0x403c52:5:sub $0xe175d230,%eax
+0x403c57:6:mov %eax,-0x94(%rbp)
+0x403c5d:6:je 00000000004042a4 <main+0x744>
+0x403c63:5:jmp 0000000000403c68 <main+0x108>
+0x403c68:3:mov -0x70(%rbp),%eax
+0x403c6b:5:sub $0xed1b0b24,%eax
+0x403c70:6:mov %eax,-0x98(%rbp)
+0x403c76:6:je 000000000040417f <main+0x61f>
+0x403c7c:5:jmp 0000000000403c81 <main+0x121>
+0x403c81:3:mov -0x70(%rbp),%eax
+0x403c84:5:sub $0xed87b81d,%eax
+0x403c89:6:mov %eax,-0x9c(%rbp)
+0x403c8f:6:je 00000000004042c0 <main+0x760>
+0x403c95:5:jmp 0000000000403c9a <main+0x13a>
+0x403c9a:3:mov -0x70(%rbp),%eax
+0x403c9d:5:sub $0xf81c7390,%eax
+0x403ca2:6:mov %eax,-0xa0(%rbp)
+0x403ca8:6:je 0000000000404205 <main+0x6a5>
+0x403cae:5:jmp 0000000000403cb3 <main+0x153>
+0x403cb3:3:mov -0x70(%rbp),%eax
+0x403cb6:5:sub $0x209182e,%eax
+0x403cbb:6:mov %eax,-0xa4(%rbp)
+0x403cc1:6:je 00000000004042d3 <main+0x773>
+0x403cc7:5:jmp 0000000000403ccc <main+0x16c>
+0x403ccc:3:mov -0x70(%rbp),%eax
+0x403ccf:5:sub $0xdf757c0,%eax
+0x403cd4:6:mov %eax,-0xa8(%rbp)
+0x403cda:6:je 0000000000403ff2 <main+0x492>
+0x403ce0:5:jmp 0000000000403ce5 <main+0x185>
+0x403ce5:3:mov -0x70(%rbp),%eax
+0x403ce8:5:sub $0x1689368d,%eax
+0x403ced:6:mov %eax,-0xac(%rbp)
+0x403cf3:6:je 0000000000404082 <main+0x522>
+0x403cf9:5:jmp 0000000000403cfe <main+0x19e>
+0x403cfe:3:mov -0x70(%rbp),%eax
+0x403d01:5:sub $0x21bdea0c,%eax
+0x403d06:6:mov %eax,-0xb0(%rbp)
+0x403d0c:6:je 0000000000403f7a <main+0x41a>
+0x403d12:5:jmp 0000000000403d17 <main+0x1b7>
+0x403d17:3:mov -0x70(%rbp),%eax
+0x403d1a:5:sub $0x2549fb39,%eax
+0x403d1f:6:mov %eax,-0xb4(%rbp)
+0x403d25:6:je 0000000000403f38 <main+0x3d8>
+0x403d2b:5:jmp 0000000000403d30 <main+0x1d0>
+0x403d30:3:mov -0x70(%rbp),%eax
+0x403d33:5:sub $0x2d8cc885,%eax
+0x403d38:6:mov %eax,-0xb8(%rbp)
+0x403d3e:6:je 0000000000403fb0 <main+0x450>
+0x403d44:5:jmp 0000000000403d49 <main+0x1e9>
+0x403d49:3:mov -0x70(%rbp),%eax
+0x403d4c:5:sub $0x376d7ff8,%eax
+0x403d51:6:mov %eax,-0xbc(%rbp)
+0x403d57:6:je 0000000000403de6 <main+0x286>
+0x403d5d:5:jmp 0000000000403d62 <main+0x202>
+0x403d62:3:mov -0x70(%rbp),%eax
+0x403d65:5:sub $0x53ae2150,%eax
+0x403d6a:6:mov %eax,-0xc0(%rbp)
+0x403d70:6:je 0000000000403f44 <main+0x3e4>
+0x403d76:5:jmp 0000000000403d7b <main+0x21b>
+0x403d7b:3:mov -0x70(%rbp),%eax
+0x403d7e:5:sub $0x7a00c95f,%eax
+0x403d83:6:mov %eax,-0xc4(%rbp)
+0x403d89:6:je 0000000000404034 <main+0x4d4>
+0x403d8f:5:jmp 0000000000403d94 <main+0x234>
+0x403d94:3:mov -0x70(%rbp),%eax
+0x403d97:5:sub $0x7edef71f,%eax
+0x403d9c:6:mov %eax,-0xc8(%rbp)
+0x403da2:6:je 0000000000404076 <main+0x516>
+0x403da8:5:jmp 0000000000403dad <main+0x24d>
+0x403dad:3:mov -0x70(%rbp),%eax
+0x403db0:5:sub $0x7f70ea08,%eax
+0x403db5:6:mov %eax,-0xcc(%rbp)
+0x403dbb:6:je 0000000000404291 <main+0x731>
+0x403dc1:5:jmp 0000000000403dc6 <main+0x266>
+0x403dc6:5:jmp 00000000004042da <main+0x77a>
+0x403dcb:5:mov $0x98f0cae6,%eax
+0x403dd0:5:mov $0x376d7ff8,%ecx
+0x403dd5:3:mov -0x2c(%rbp),%edx
+0x403dd8:3:cmp $0x2,%edx
+0x403ddb:3:cmovne %ecx,%eax
+0x403dde:3:mov %eax,-0x6c(%rbp)
+0x403de1:5:jmp 00000000004042da <main+0x77a>
+0x403de6:5:call 00000000004013e0 <usage>
+0x403deb:7:movl $0x1,-0x30(%rbp)
+0x403df2:7:movl $0xed1b0b24,-0x6c(%rbp)
+0x403df9:5:jmp 00000000004042da <main+0x77a>
+0x403dfe:5:mov $0xe175d230,%eax
+0x403e03:5:mov $0xb8484451,%ecx
+0x403e08:2:mov $0x1,%dl
+0x403e0a:7:mov 0x40704c,%esi
+0x403e11:7:mov 0x407050,%edi
+0x403e18:3:mov %esi,%r8d
+0x403e1b:7:add $0x1d22a820,%r8d
+0x403e22:4:sub $0x1,%r8d
+0x403e26:7:sub $0x1d22a820,%r8d
+0x403e2d:4:imul %r8d,%esi
+0x403e31:3:and $0x1,%esi
+0x403e34:3:cmp $0x0,%esi
+0x403e37:4:sete %r9b
+0x403e3b:3:cmp $0xa,%edi
+0x403e3e:4:setl %r10b
+0x403e42:3:mov %r9b,%r11b
+0x403e45:4:xor $0xff,%r11b
+0x403e49:3:mov %r10b,%bl
+0x403e4c:3:xor $0xff,%bl
+0x403e4f:3:xor $0x1,%dl
+0x403e52:3:mov %r11b,%r14b
+0x403e55:4:and $0xff,%r14b
+0x403e59:3:and %dl,%r9b
+0x403e5c:3:mov %bl,%r15b
+0x403e5f:4:and $0xff,%r15b
+0x403e63:3:and %dl,%r10b
+0x403e66:3:or %r9b,%r14b
+0x403e69:3:or %r10b,%r15b
+0x403e6c:3:xor %r15b,%r14b
+0x403e6f:3:or %bl,%r11b
+0x403e72:4:xor $0xff,%r11b
+0x403e76:3:or $0x1,%dl
+0x403e79:3:and %dl,%r11b
+0x403e7c:3:or %r11b,%r14b
+0x403e7f:4:test $0x1,%r14b
+0x403e83:3:cmovne %ecx,%eax
+0x403e86:3:mov %eax,-0x6c(%rbp)
+0x403e89:5:jmp 00000000004042da <main+0x77a>
+0x403e8e:4:mov -0x40(%rbp),%rax
+0x403e92:4:mov 0x8(%rax),%rdi
+0x403e96:5:call 0000000000401040 <atoi@plt>
+0x403e9b:5:mov $0xe175d230,%ecx
+0x403ea0:5:mov $0x2549fb39,%edx
+0x403ea5:3:mov $0x1,%sil
+0x403ea8:3:mov %eax,-0x44(%rbp)
+0x403eab:3:mov -0x44(%rbp),%eax
+0x403eae:3:mov %eax,-0x28(%rbp)
+0x403eb1:7:mov 0x40704c,%eax
+0x403eb8:8:mov 0x407050,%r8d
+0x403ec0:3:mov %eax,%r9d
+0x403ec3:7:add $0x4f296296,%r9d
+0x403eca:4:sub $0x1,%r9d
+0x403ece:7:sub $0x4f296296,%r9d
+0x403ed5:4:imul %r9d,%eax
+0x403ed9:3:and $0x1,%eax
+0x403edc:3:cmp $0x0,%eax
+0x403edf:4:sete %r10b
+0x403ee3:4:cmp $0xa,%r8d
+0x403ee7:4:setl %r11b
+0x403eeb:3:mov %r10b,%bl
+0x403eee:3:xor $0xff,%bl
+0x403ef1:3:mov %r11b,%r14b
+0x403ef4:4:xor $0xff,%r14b
+0x403ef8:4:xor $0x0,%sil
+0x403efc:3:mov %bl,%r15b
+0x403eff:4:and $0x0,%r15b
+0x403f03:3:and %sil,%r10b
+0x403f06:3:mov %r14b,%r12b
+0x403f09:4:and $0x0,%r12b
+0x403f0d:3:and %sil,%r11b
+0x403f10:3:or %r10b,%r15b
+0x403f13:3:or %r11b,%r12b
+0x403f16:3:xor %r12b,%r15b
+0x403f19:3:or %r14b,%bl
+0x403f1c:3:xor $0xff,%bl
+0x403f1f:4:or $0x0,%sil
+0x403f23:3:and %sil,%bl
+0x403f26:3:or %bl,%r15b
+0x403f29:4:test $0x1,%r15b
+0x403f2d:3:cmovne %edx,%ecx
+0x403f30:3:mov %ecx,-0x6c(%rbp)
+0x403f33:5:jmp 00000000004042da <main+0x77a>
+0x403f38:7:movl $0x53ae2150,-0x6c(%rbp)
+0x403f3f:5:jmp 00000000004042da <main+0x77a>
+0x403f44:5:mov $0x910bdf6e,%eax
+0x403f49:5:mov $0xc4d90352,%ecx
+0x403f4e:3:mov -0x28(%rbp),%edx
+0x403f51:3:cmp $0x1,%edx
+0x403f54:3:cmovl %ecx,%eax
+0x403f57:3:mov %eax,-0x6c(%rbp)
+0x403f5a:5:jmp 00000000004042da <main+0x77a>
+0x403f5f:5:mov $0x21bdea0c,%eax
+0x403f64:5:mov $0xdf757c0,%ecx
+0x403f69:3:mov -0x28(%rbp),%edx
+0x403f6c:3:cmp $0x2,%edx
+0x403f6f:3:cmovl %ecx,%eax
+0x403f72:3:mov %eax,-0x6c(%rbp)
+0x403f75:5:jmp 00000000004042da <main+0x77a>
+0x403f7a:5:mov $0x7edef71f,%eax
+0x403f7f:5:mov $0x7a00c95f,%ecx
+0x403f84:3:mov -0x28(%rbp),%edx
+0x403f87:3:cmp $0x2,%edx
+0x403f8a:3:cmove %ecx,%eax
+0x403f8d:3:mov %eax,-0x6c(%rbp)
+0x403f90:5:jmp 00000000004042da <main+0x77a>
+0x403f95:5:mov $0x7edef71f,%eax
+0x403f9a:5:mov $0x2d8cc885,%ecx
+0x403f9f:3:mov -0x28(%rbp),%edx
+0x403fa2:3:cmp $0x0,%edx
+0x403fa5:3:cmove %ecx,%eax
+0x403fa8:3:mov %eax,-0x6c(%rbp)
+0x403fab:5:jmp 00000000004042da <main+0x77a>
+0x403fb0:7:movl $0x64,-0x48(%rbp)
+0x403fb7:7:movl $0x64,-0x4c(%rbp)
+0x403fbe:3:mov -0x48(%rbp),%edi
+0x403fc1:3:mov -0x4c(%rbp),%esi
+0x403fc4:5:call 0000000000401410 <viafb_lcd_get_support_expand_state>
+0x403fc9:10:movabs $0x4050f2,%rdi
+0x403fd3:3:mov %eax,-0x50(%rbp)
+0x403fd6:3:mov -0x50(%rbp),%esi
+0x403fd9:2:mov $0x0,%al
+0x403fdb:5:call 0000000000401030 <printf@plt>
+0x403fe0:7:movl $0xe062ba89,-0x6c(%rbp)
+0x403fe7:6:mov %eax,-0xd0(%rbp)
+0x403fed:5:jmp 00000000004042da <main+0x77a>
+0x403ff2:7:movl $0xff,-0x54(%rbp)
+0x403ff9:7:movl $0xff,-0x58(%rbp)
+0x404000:3:mov -0x54(%rbp),%edi
+0x404003:3:mov -0x58(%rbp),%esi
+0x404006:5:call 0000000000401410 <viafb_lcd_get_support_expand_state>
+0x40400b:10:movabs $0x4050f2,%rdi
+0x404015:3:mov %eax,-0x5c(%rbp)
+0x404018:3:mov -0x5c(%rbp),%esi
+0x40401b:2:mov $0x0,%al
+0x40401d:5:call 0000000000401030 <printf@plt>
+0x404022:7:movl $0xe062ba89,-0x6c(%rbp)
+0x404029:6:mov %eax,-0xd4(%rbp)
+0x40402f:5:jmp 00000000004042da <main+0x77a>
+0x404034:7:movl $0xa,-0x60(%rbp)
+0x40403b:7:movl $0xa,-0x64(%rbp)
+0x404042:3:mov -0x60(%rbp),%edi
+0x404045:3:mov -0x64(%rbp),%esi
+0x404048:5:call 0000000000401410 <viafb_lcd_get_support_expand_state>
+0x40404d:10:movabs $0x4050f2,%rdi
+0x404057:3:mov %eax,-0x68(%rbp)
+0x40405a:3:mov -0x68(%rbp),%esi
+0x40405d:2:mov $0x0,%al
+0x40405f:5:call 0000000000401030 <printf@plt>
+0x404064:7:movl $0xe062ba89,-0x6c(%rbp)
+0x40406b:6:mov %eax,-0xd8(%rbp)
+0x404071:5:jmp 00000000004042da <main+0x77a>
+0x404076:7:movl $0x1689368d,-0x6c(%rbp)
+0x40407d:5:jmp 00000000004042da <main+0x77a>
+0x404082:5:call 00000000004013e0 <usage>
+0x404087:7:movl $0xe062ba89,-0x6c(%rbp)
+0x40408e:5:jmp 00000000004042da <main+0x77a>
+0x404093:5:mov $0xed87b81d,%eax
+0x404098:5:mov $0xbd76d486,%ecx
+0x40409d:2:mov $0x1,%dl
+0x40409f:2:xor %esi,%esi
+0x4040a1:7:mov 0x40704c,%edi
+0x4040a8:8:mov 0x407050,%r8d
+0x4040b0:3:sub $0x1,%esi
+0x4040b3:3:mov %edi,%r9d
+0x4040b6:3:add %esi,%r9d
+0x4040b9:4:imul %r9d,%edi
+0x4040bd:3:and $0x1,%edi
+0x4040c0:3:cmp $0x0,%edi
+0x4040c3:4:sete %r10b
+0x4040c7:4:cmp $0xa,%r8d
+0x4040cb:4:setl %r11b
+0x4040cf:3:mov %r10b,%bl
+0x4040d2:3:xor $0xff,%bl
+0x4040d5:3:mov %r11b,%r14b
+0x4040d8:4:xor $0xff,%r14b
+0x4040dc:3:xor $0x0,%dl
+0x4040df:3:mov %bl,%r15b
+0x4040e2:4:and $0x0,%r15b
+0x4040e6:3:and %dl,%r10b
+0x4040e9:3:mov %r14b,%r12b
+0x4040ec:4:and $0x0,%r12b
+0x4040f0:3:and %dl,%r11b
+0x4040f3:3:or %r10b,%r15b
+0x4040f6:3:or %r11b,%r12b
+0x4040f9:3:xor %r12b,%r15b
+0x4040fc:3:or %r14b,%bl
+0x4040ff:3:xor $0xff,%bl
+0x404102:3:or $0x0,%dl
+0x404105:2:and %dl,%bl
+0x404107:3:or %bl,%r15b
+0x40410a:4:test $0x1,%r15b
+0x40410e:3:cmovne %ecx,%eax
+0x404111:3:mov %eax,-0x6c(%rbp)
+0x404114:5:jmp 00000000004042da <main+0x77a>
+0x404119:5:mov $0xed87b81d,%eax
+0x40411e:5:mov $0xb1a7ec9d,%ecx
+0x404123:2:xor %edx,%edx
+0x404125:7:movl $0x0,-0x30(%rbp)
+0x40412c:7:mov 0x40704c,%esi
+0x404133:7:mov 0x407050,%edi
+0x40413a:3:sub $0x1,%edx
+0x40413d:3:mov %esi,%r8d
+0x404140:3:add %edx,%r8d
+0x404143:4:imul %r8d,%esi
+0x404147:3:and $0x1,%esi
+0x40414a:3:cmp $0x0,%esi
+0x40414d:4:sete %r9b
+0x404151:3:cmp $0xa,%edi
+0x404154:4:setl %r10b
+0x404158:3:mov %r9b,%r11b
+0x40415b:3:and %r10b,%r11b
+0x40415e:3:xor %r10b,%r9b
+0x404161:3:or %r9b,%r11b
+0x404164:4:test $0x1,%r11b
+0x404168:3:cmovne %ecx,%eax
+0x40416b:3:mov %eax,-0x6c(%rbp)
+0x40416e:5:jmp 00000000004042da <main+0x77a>
+0x404173:7:movl $0xed1b0b24,-0x6c(%rbp)
+0x40417a:5:jmp 00000000004042da <main+0x77a>
+0x40417f:5:mov $0x209182e,%eax
+0x404184:5:mov $0xf81c7390,%ecx
+0x404189:2:mov $0x1,%dl
+0x40418b:2:xor %esi,%esi
+0x40418d:7:mov 0x40704c,%edi
+0x404194:8:mov 0x407050,%r8d
+0x40419c:3:sub $0x1,%esi
+0x40419f:3:mov %edi,%r9d
+0x4041a2:3:add %esi,%r9d
+0x4041a5:4:imul %r9d,%edi
+0x4041a9:3:and $0x1,%edi
+0x4041ac:3:cmp $0x0,%edi
+0x4041af:4:sete %r10b
+0x4041b3:4:cmp $0xa,%r8d
+0x4041b7:4:setl %r11b
+0x4041bb:3:mov %r10b,%bl
+0x4041be:3:xor $0xff,%bl
+0x4041c1:3:mov %r11b,%r14b
+0x4041c4:4:xor $0xff,%r14b
+0x4041c8:3:xor $0x1,%dl
+0x4041cb:3:mov %bl,%r15b
+0x4041ce:4:and $0xff,%r15b
+0x4041d2:3:and %dl,%r10b
+0x4041d5:3:mov %r14b,%r12b
+0x4041d8:4:and $0xff,%r12b
+0x4041dc:3:and %dl,%r11b
+0x4041df:3:or %r10b,%r15b
+0x4041e2:3:or %r11b,%r12b
+0x4041e5:3:xor %r12b,%r15b
+0x4041e8:3:or %r14b,%bl
+0x4041eb:3:xor $0xff,%bl
+0x4041ee:3:or $0x1,%dl
+0x4041f1:2:and %dl,%bl
+0x4041f3:3:or %bl,%r15b
+0x4041f6:4:test $0x1,%r15b
+0x4041fa:3:cmovne %ecx,%eax
+0x4041fd:3:mov %eax,-0x6c(%rbp)
+0x404200:5:jmp 00000000004042da <main+0x77a>
+0x404205:5:mov $0x209182e,%eax
+0x40420a:5:mov $0x7f70ea08,%ecx
+0x40420f:2:mov $0x1,%dl
+0x404211:2:xor %esi,%esi
+0x404213:3:mov -0x30(%rbp),%edi
+0x404216:3:mov %edi,-0x24(%rbp)
+0x404219:7:mov 0x40704c,%edi
+0x404220:8:mov 0x407050,%r8d
+0x404228:3:sub $0x1,%esi
+0x40422b:3:mov %edi,%r9d
+0x40422e:3:add %esi,%r9d
+0x404231:4:imul %r9d,%edi
+0x404235:3:and $0x1,%edi
+0x404238:3:cmp $0x0,%edi
+0x40423b:4:sete %r10b
+0x40423f:4:cmp $0xa,%r8d
+0x404243:4:setl %r11b
+0x404247:3:mov %r10b,%bl
+0x40424a:3:xor $0xff,%bl
+0x40424d:3:mov %r11b,%r14b
+0x404250:4:xor $0xff,%r14b
+0x404254:3:xor $0x0,%dl
+0x404257:3:mov %bl,%r15b
+0x40425a:4:and $0x0,%r15b
+0x40425e:3:and %dl,%r10b
+0x404261:3:mov %r14b,%r12b
+0x404264:4:and $0x0,%r12b
+0x404268:3:and %dl,%r11b
+0x40426b:3:or %r10b,%r15b
+0x40426e:3:or %r11b,%r12b
+0x404271:3:xor %r12b,%r15b
+0x404274:3:or %r14b,%bl
+0x404277:3:xor $0xff,%bl
+0x40427a:3:or $0x0,%dl
+0x40427d:2:and %dl,%bl
+0x40427f:3:or %bl,%r15b
+0x404282:4:test $0x1,%r15b
+0x404286:3:cmovne %ecx,%eax
+0x404289:3:mov %eax,-0x6c(%rbp)
+0x40428c:5:jmp 00000000004042da <main+0x77a>
+0x404291:3:mov -0x24(%rbp),%eax
+0x404294:7:add $0xc0,%rsp
+0x40429b:1:pop %rbx
+0x40429c:2:pop %r12
+0x40429e:2:pop %r14
+0x4042a0:2:pop %r15
+0x4042a2:1:pop %rbp
+0x4042a3:1:ret
+0x4042a4:4:mov -0x40(%rbp),%rax
+0x4042a8:4:mov 0x8(%rax),%rdi
+0x4042ac:5:call 0000000000401040 <atoi@plt>
+0x4042b1:3:mov %eax,-0x44(%rbp)
+0x4042b4:7:movl $0xb8484451,-0x6c(%rbp)
+0x4042bb:5:jmp 00000000004042da <main+0x77a>
+0x4042c0:7:movl $0x0,-0x30(%rbp)
+0x4042c7:7:movl $0xbd76d486,-0x6c(%rbp)
+0x4042ce:5:jmp 00000000004042da <main+0x77a>
+0x4042d3:7:movl $0xf81c7390,-0x6c(%rbp)
+0x4042da:5:jmp 0000000000403b8d <main+0x2d>
+0x4042e0:4:endbr64
+0x4042e4:4:sub $0x8,%rsp
+0x4042e8:4:add $0x8,%rsp
+0x4042ec:1:ret

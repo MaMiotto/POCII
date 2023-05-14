@@ -1,0 +1,1651 @@
+0x401000:4:endbr64
+0x401004:4:sub $0x8,%rsp
+0x401008:7:mov 0x3fe9(%rip),%rax
+0x40100f:3:test %rax,%rax
+0x401012:2:je 0000000000401016 <_init+0x16>
+0x401014:2:call *%rax
+0x401016:4:add $0x8,%rsp
+0x40101a:1:ret
+0x401020:6:push 0x3fe2(%rip)
+0x401026:6:jmp *0x3fe4(%rip)
+0x40102c:4:nopl 0x0(%rax)
+0x401030:6:jmp *0x3fe2(%rip)
+0x401036:5:push $0x0
+0x40103b:5:jmp 0000000000401020 <_init+0x20>
+0x401040:6:jmp *0x3fda(%rip)
+0x401046:5:push $0x1
+0x40104b:5:jmp 0000000000401020 <_init+0x20>
+0x401050:4:endbr64
+0x401054:2:xor %ebp,%ebp
+0x401056:3:mov %rdx,%r9
+0x401059:1:pop %rsi
+0x40105a:3:mov %rsp,%rdx
+0x40105d:4:and $0xfffffffffffffff0,%rsp
+0x401061:1:push %rax
+0x401062:1:push %rsp
+0x401063:3:xor %r8d,%r8d
+0x401066:2:xor %ecx,%ecx
+0x401068:7:mov $0x4024f0,%rdi
+0x40106f:6:call *0x3f7b(%rip)
+0x401075:1:hlt
+0x401076:10:cs nopw 0x0(%rax,%rax,1)
+0x401080:4:endbr64
+0x401084:1:ret
+0x401085:10:cs nopw 0x0(%rax,%rax,1)
+0x40108f:1:nop
+0x401090:5:mov $0x405038,%eax
+0x401095:6:cmp $0x405038,%rax
+0x40109b:2:je 00000000004010b0 <deregister_tm_clones+0x20>
+0x40109d:5:mov $0x0,%eax
+0x4010a2:3:test %rax,%rax
+0x4010a5:2:je 00000000004010b0 <deregister_tm_clones+0x20>
+0x4010a7:5:mov $0x405038,%edi
+0x4010ac:2:jmp *%rax
+0x4010ae:2:xchg %ax,%ax
+0x4010b0:1:ret
+0x4010b1:11:data16 cs nopw 0x0(%rax,%rax,1)
+0x4010bc:4:nopl 0x0(%rax)
+0x4010c0:5:mov $0x405038,%esi
+0x4010c5:7:sub $0x405038,%rsi
+0x4010cc:3:mov %rsi,%rax
+0x4010cf:4:shr $0x3f,%rsi
+0x4010d3:4:sar $0x3,%rax
+0x4010d7:3:add %rax,%rsi
+0x4010da:3:sar %rsi
+0x4010dd:2:je 00000000004010f0 <register_tm_clones+0x30>
+0x4010df:5:mov $0x0,%eax
+0x4010e4:3:test %rax,%rax
+0x4010e7:2:je 00000000004010f0 <register_tm_clones+0x30>
+0x4010e9:5:mov $0x405038,%edi
+0x4010ee:2:jmp *%rax
+0x4010f0:1:ret
+0x4010f1:11:data16 cs nopw 0x0(%rax,%rax,1)
+0x4010fc:4:nopl 0x0(%rax)
+0x401100:4:endbr64
+0x401104:7:cmpb $0x0,0x3f2d(%rip)
+0x40110b:2:jne 0000000000401120 <__do_global_dtors_aux+0x20>
+0x40110d:1:push %rbp
+0x40110e:3:mov %rsp,%rbp
+0x401111:5:call 0000000000401090 <deregister_tm_clones>
+0x401116:7:movb $0x1,0x3f1b(%rip)
+0x40111d:1:pop %rbp
+0x40111e:1:ret
+0x40111f:1:nop
+0x401120:1:ret
+0x401121:11:data16 cs nopw 0x0(%rax,%rax,1)
+0x40112c:4:nopl 0x0(%rax)
+0x401130:4:endbr64
+0x401134:2:jmp 00000000004010c0 <register_tm_clones>
+0x401136:10:cs nopw 0x0(%rax,%rax,1)
+0x401140:1:push %rbp
+0x401141:3:mov %rsp,%rbp
+0x401144:1:push %rbx
+0x401145:4:sub $0x28,%rsp
+0x401149:7:mov 0x405048,%eax
+0x401150:7:mov 0x40505c,%ecx
+0x401157:2:mov %eax,%edx
+0x401159:6:add $0xfa1d0e0,%edx
+0x40115f:3:sub $0x1,%edx
+0x401162:6:sub $0xfa1d0e0,%edx
+0x401168:3:imul %edx,%eax
+0x40116b:3:and $0x1,%eax
+0x40116e:3:cmp $0x0,%eax
+0x401171:4:sete %sil
+0x401175:4:and $0x1,%sil
+0x401179:4:mov %sil,-0xe(%rbp)
+0x40117d:3:cmp $0xa,%ecx
+0x401180:4:setl %sil
+0x401184:4:and $0x1,%sil
+0x401188:4:mov %sil,-0xd(%rbp)
+0x40118c:7:movl $0xddbbb39,-0x14(%rbp)
+0x401193:3:mov -0x14(%rbp),%eax
+0x401196:2:mov %eax,%ecx
+0x401198:6:sub $0xddbbb39,%ecx
+0x40119e:3:mov %eax,-0x18(%rbp)
+0x4011a1:3:mov %ecx,-0x1c(%rbp)
+0x4011a4:6:je 00000000004011f6 <next_i+0xb6>
+0x4011aa:5:jmp 00000000004011af <next_i+0x6f>
+0x4011af:3:mov -0x18(%rbp),%eax
+0x4011b2:5:sub $0x169b9f7e,%eax
+0x4011b7:3:mov %eax,-0x20(%rbp)
+0x4011ba:6:je 00000000004012cc <next_i+0x18c>
+0x4011c0:5:jmp 00000000004011c5 <next_i+0x85>
+0x4011c5:3:mov -0x18(%rbp),%eax
+0x4011c8:5:sub $0x2fc2d0e2,%eax
+0x4011cd:3:mov %eax,-0x24(%rbp)
+0x4011d0:6:je 00000000004012c2 <next_i+0x182>
+0x4011d6:5:jmp 00000000004011db <next_i+0x9b>
+0x4011db:3:mov -0x18(%rbp),%eax
+0x4011de:5:sub $0x4f92c0a7,%eax
+0x4011e3:3:mov %eax,-0x28(%rbp)
+0x4011e6:6:je 0000000000401222 <next_i+0xe2>
+0x4011ec:5:jmp 00000000004011f1 <next_i+0xb1>
+0x4011f1:5:jmp 00000000004012f6 <next_i+0x1b6>
+0x4011f6:5:mov $0x169b9f7e,%eax
+0x4011fb:5:mov $0x4f92c0a7,%ecx
+0x401200:3:mov -0xe(%rbp),%dl
+0x401203:4:mov -0xd(%rbp),%sil
+0x401207:3:mov %dl,%dil
+0x40120a:3:and %sil,%dil
+0x40120d:3:xor %sil,%dl
+0x401210:3:or %dl,%dil
+0x401213:4:test $0x1,%dil
+0x401217:3:cmovne %ecx,%eax
+0x40121a:3:mov %eax,-0x14(%rbp)
+0x40121d:5:jmp 00000000004012f6 <next_i+0x1b6>
+0x401222:5:mov $0x169b9f7e,%eax
+0x401227:5:mov $0x2fc2d0e2,%ecx
+0x40122c:5:mov $0x19,%edx
+0x401231:2:xor %esi,%esi
+0x401233:3:mov %rsp,%rdi
+0x401236:4:add $0xfffffffffffffff0,%rdi
+0x40123a:3:mov %rdi,%rsp
+0x40123d:6:movl $0x0,(%rdi)
+0x401243:3:mov (%rdi),%r8d
+0x401246:3:sub $0x1,%esi
+0x401249:3:sub %esi,%r8d
+0x40124c:3:mov %r8d,(%rdi)
+0x40124f:3:mov %eax,-0x2c(%rbp)
+0x401252:3:mov %r8d,%eax
+0x401255:3:mov %edx,-0x30(%rbp)
+0x401258:1:cltd
+0x401259:3:mov -0x30(%rbp),%esi
+0x40125c:2:idiv %esi
+0x40125e:3:movslq %edx,%rdi
+0x401261:7:mov 0x403010(,%rdi,4),%edx
+0x401268:3:mov %edx,-0xc(%rbp)
+0x40126b:7:mov 0x405048,%edx
+0x401272:8:mov 0x40505c,%r8d
+0x40127a:3:mov %edx,%r9d
+0x40127d:7:add $0xd401511f,%r9d
+0x401284:4:sub $0x1,%r9d
+0x401288:7:sub $0xd401511f,%r9d
+0x40128f:4:imul %r9d,%edx
+0x401293:3:and $0x1,%edx
+0x401296:3:cmp $0x0,%edx
+0x401299:4:sete %r10b
+0x40129d:4:cmp $0xa,%r8d
+0x4012a1:4:setl %r11b
+0x4012a5:3:mov %r10b,%bl
+0x4012a8:3:and %r11b,%bl
+0x4012ab:3:xor %r11b,%r10b
+0x4012ae:3:or %r10b,%bl
+0x4012b1:3:test $0x1,%bl
+0x4012b4:3:mov -0x2c(%rbp),%edx
+0x4012b7:3:cmovne %ecx,%edx
+0x4012ba:3:mov %edx,-0x14(%rbp)
+0x4012bd:5:jmp 00000000004012f6 <next_i+0x1b6>
+0x4012c2:3:mov -0xc(%rbp),%eax
+0x4012c5:4:lea -0x8(%rbp),%rsp
+0x4012c9:1:pop %rbx
+0x4012ca:1:pop %rbp
+0x4012cb:1:ret
+0x4012cc:3:mov %rsp,%rax
+0x4012cf:4:add $0xfffffffffffffff0,%rax
+0x4012d3:3:mov %rax,%rsp
+0x4012d6:6:movl $0x0,(%rax)
+0x4012dc:2:mov (%rax),%ecx
+0x4012de:6:sub $0xfaac7f3c,%ecx
+0x4012e4:3:add $0x1,%ecx
+0x4012e7:6:add $0xfaac7f3c,%ecx
+0x4012ed:2:mov %ecx,(%rax)
+0x4012ef:7:movl $0x4f92c0a7,-0x14(%rbp)
+0x4012f6:5:jmp 0000000000401193 <next_i+0x53>
+0x4012fb:5:nopl 0x0(%rax,%rax,1)
+0x401300:1:push %rbp
+0x401301:3:mov %rsp,%rbp
+0x401304:1:push %rbx
+0x401305:4:sub $0x28,%rsp
+0x401309:7:mov 0x40503c,%eax
+0x401310:7:mov 0x405054,%ecx
+0x401317:2:mov %eax,%edx
+0x401319:6:sub $0x92a5f1e4,%edx
+0x40131f:3:sub $0x1,%edx
+0x401322:6:add $0x92a5f1e4,%edx
+0x401328:3:imul %edx,%eax
+0x40132b:3:and $0x1,%eax
+0x40132e:3:cmp $0x0,%eax
+0x401331:4:sete %sil
+0x401335:4:and $0x1,%sil
+0x401339:4:mov %sil,-0xe(%rbp)
+0x40133d:3:cmp $0xa,%ecx
+0x401340:4:setl %sil
+0x401344:4:and $0x1,%sil
+0x401348:4:mov %sil,-0xd(%rbp)
+0x40134c:7:movl $0x7322b3d8,-0x14(%rbp)
+0x401353:3:mov -0x14(%rbp),%eax
+0x401356:2:mov %eax,%ecx
+0x401358:6:sub $0xe33f1be2,%ecx
+0x40135e:3:mov %eax,-0x18(%rbp)
+0x401361:3:mov %ecx,-0x1c(%rbp)
+0x401364:6:je 00000000004014bb <next_f+0x1bb>
+0x40136a:5:jmp 000000000040136f <next_f+0x6f>
+0x40136f:3:mov -0x18(%rbp),%eax
+0x401372:5:sub $0x4339dbde,%eax
+0x401377:3:mov %eax,-0x20(%rbp)
+0x40137a:6:je 00000000004013e2 <next_f+0xe2>
+0x401380:5:jmp 0000000000401385 <next_f+0x85>
+0x401385:3:mov -0x18(%rbp),%eax
+0x401388:5:sub $0x5b194dfd,%eax
+0x40138d:3:mov %eax,-0x24(%rbp)
+0x401390:6:je 00000000004014c7 <next_f+0x1c7>
+0x401396:5:jmp 000000000040139b <next_f+0x9b>
+0x40139b:3:mov -0x18(%rbp),%eax
+0x40139e:5:sub $0x7322b3d8,%eax
+0x4013a3:3:mov %eax,-0x28(%rbp)
+0x4013a6:6:je 00000000004013b6 <next_f+0xb6>
+0x4013ac:5:jmp 00000000004013b1 <next_f+0xb1>
+0x4013b1:5:jmp 00000000004014e9 <next_f+0x1e9>
+0x4013b6:5:mov $0x5b194dfd,%eax
+0x4013bb:5:mov $0x4339dbde,%ecx
+0x4013c0:3:mov -0xe(%rbp),%dl
+0x4013c3:4:mov -0xd(%rbp),%sil
+0x4013c7:3:mov %dl,%dil
+0x4013ca:3:and %sil,%dil
+0x4013cd:3:xor %sil,%dl
+0x4013d0:3:or %dl,%dil
+0x4013d3:4:test $0x1,%dil
+0x4013d7:3:cmovne %ecx,%eax
+0x4013da:3:mov %eax,-0x14(%rbp)
+0x4013dd:5:jmp 00000000004014e9 <next_f+0x1e9>
+0x4013e2:5:mov $0x5b194dfd,%eax
+0x4013e7:5:mov $0xe33f1be2,%ecx
+0x4013ec:8:movss 0x1c10(%rip),%xmm0
+0x4013f4:3:mov %rsp,%rdx
+0x4013f7:3:mov %rdx,%rsi
+0x4013fa:4:add $0xfffffffffffffff0,%rsi
+0x4013fe:3:mov %rsi,%rsp
+0x401401:7:movl $0x0,-0x10(%rdx)
+0x401408:3:mov -0x10(%rdx),%edi
+0x40140b:3:mov %edi,%r8d
+0x40140e:3:inc %r8d
+0x401411:4:mov %r8d,-0x10(%rdx)
+0x401415:3:movslq %r8d,%rdx
+0x401418:7:imul $0x51eb851f,%rdx,%rdx
+0x40141f:3:mov %rdx,%rsi
+0x401422:4:shr $0x3f,%rsi
+0x401426:3:mov %esi,%r8d
+0x401429:4:sar $0x23,%rdx
+0x40142d:3:mov %edx,%r9d
+0x401430:3:add %r8d,%r9d
+0x401433:3:mov %r9d,%edx
+0x401436:4:lea (%rdx,%rdx,4),%r8d
+0x40143a:3:mov %r8d,%edx
+0x40143d:4:lea (%rdx,%rdx,4),%r8d
+0x401441:3:neg %r8d
+0x401444:3:mov %r8d,%edx
+0x401447:2:mov %edi,%esi
+0x401449:4:lea 0x1(%rsi,%rdx,1),%edi
+0x40144d:3:movslq %edi,%rdx
+0x401450:7:mov 0x403010(,%rdx,4),%edi
+0x401457:2:mov %edi,%edx
+0x401459:5:cvtsi2ss %rdx,%xmm1
+0x40145e:4:divss %xmm0,%xmm1
+0x401462:5:movss %xmm1,-0xc(%rbp)
+0x401467:7:mov 0x40503c,%edi
+0x40146e:8:mov 0x405054,%r8d
+0x401476:3:mov %edi,%r9d
+0x401479:7:add $0x9a0ad96c,%r9d
+0x401480:4:sub $0x1,%r9d
+0x401484:7:sub $0x9a0ad96c,%r9d
+0x40148b:4:imul %r9d,%edi
+0x40148f:3:and $0x1,%edi
+0x401492:3:cmp $0x0,%edi
+0x401495:4:sete %r10b
+0x401499:4:cmp $0xa,%r8d
+0x40149d:4:setl %r11b
+0x4014a1:3:mov %r10b,%bl
+0x4014a4:3:and %r11b,%bl
+0x4014a7:3:xor %r11b,%r10b
+0x4014aa:3:or %r10b,%bl
+0x4014ad:3:test $0x1,%bl
+0x4014b0:3:cmovne %ecx,%eax
+0x4014b3:3:mov %eax,-0x14(%rbp)
+0x4014b6:5:jmp 00000000004014e9 <next_f+0x1e9>
+0x4014bb:5:movss -0xc(%rbp),%xmm0
+0x4014c0:4:lea -0x8(%rbp),%rsp
+0x4014c4:1:pop %rbx
+0x4014c5:1:pop %rbp
+0x4014c6:1:ret
+0x4014c7:2:xor %eax,%eax
+0x4014c9:3:mov %rsp,%rcx
+0x4014cc:4:add $0xfffffffffffffff0,%rcx
+0x4014d0:3:mov %rcx,%rsp
+0x4014d3:6:movl $0x0,(%rcx)
+0x4014d9:2:mov (%rcx),%edx
+0x4014db:3:sub $0x1,%eax
+0x4014de:2:sub %eax,%edx
+0x4014e0:2:mov %edx,(%rcx)
+0x4014e2:7:movl $0x4339dbde,-0x14(%rbp)
+0x4014e9:5:jmp 0000000000401353 <next_f+0x53>
+0x4014ee:2:xchg %ax,%ax
+0x4014f0:1:push %rbp
+0x4014f1:3:mov %rsp,%rbp
+0x4014f4:4:sub $0x10,%rsp
+0x4014f8:10:movabs $0x403074,%rdi
+0x401502:10:movabs $0x403077,%rsi
+0x40150c:2:mov $0x0,%al
+0x40150e:5:call 0000000000401030 <printf@plt>
+0x401513:3:mov %eax,-0x4(%rbp)
+0x401516:4:add $0x10,%rsp
+0x40151a:1:pop %rbp
+0x40151b:1:ret
+0x40151c:4:nopl 0x0(%rax)
+0x401520:1:push %rbp
+0x401521:3:mov %rsp,%rbp
+0x401524:2:push %r15
+0x401526:2:push %r14
+0x401528:2:push %r13
+0x40152a:2:push %r12
+0x40152c:1:push %rbx
+0x40152d:7:sub $0xf8,%rsp
+0x401534:7:mov 0x405040,%eax
+0x40153b:7:mov 0x405050,%ecx
+0x401542:2:mov %eax,%edx
+0x401544:6:sub $0x971f7750,%edx
+0x40154a:3:sub $0x1,%edx
+0x40154d:6:add $0x971f7750,%edx
+0x401553:3:imul %edx,%eax
+0x401556:3:and $0x1,%eax
+0x401559:3:cmp $0x0,%eax
+0x40155c:4:sete %sil
+0x401560:4:and $0x1,%sil
+0x401564:4:mov %sil,-0x42(%rbp)
+0x401568:3:cmp $0xa,%ecx
+0x40156b:4:setl %sil
+0x40156f:4:and $0x1,%sil
+0x401573:4:mov %sil,-0x41(%rbp)
+0x401577:7:movl $0x3600013c,-0x48(%rbp)
+0x40157e:3:mov %edi,-0x4c(%rbp)
+0x401581:3:mov -0x48(%rbp),%eax
+0x401584:2:mov %eax,%ecx
+0x401586:6:sub $0x83d6d804,%ecx
+0x40158c:3:mov %eax,-0x50(%rbp)
+0x40158f:3:mov %ecx,-0x54(%rbp)
+0x401592:6:je 0000000000401ceb <hdmi_audio_coding_type_ext_get_name+0x7cb>
+0x401598:5:jmp 000000000040159d <hdmi_audio_coding_type_ext_get_name+0x7d>
+0x40159d:3:mov -0x50(%rbp),%eax
+0x4015a0:5:sub $0x8527ec2e,%eax
+0x4015a5:3:mov %eax,-0x58(%rbp)
+0x4015a8:6:je 0000000000401e6a <hdmi_audio_coding_type_ext_get_name+0x94a>
+0x4015ae:5:jmp 00000000004015b3 <hdmi_audio_coding_type_ext_get_name+0x93>
+0x4015b3:3:mov -0x50(%rbp),%eax
+0x4015b6:5:sub $0x8da11de1,%eax
+0x4015bb:3:mov %eax,-0x5c(%rbp)
+0x4015be:6:je 0000000000401c91 <hdmi_audio_coding_type_ext_get_name+0x771>
+0x4015c4:5:jmp 00000000004015c9 <hdmi_audio_coding_type_ext_get_name+0xa9>
+0x4015c9:3:mov -0x50(%rbp),%eax
+0x4015cc:5:sub $0x8ea8a439,%eax
+0x4015d1:3:mov %eax,-0x60(%rbp)
+0x4015d4:6:je 00000000004023dc <hdmi_audio_coding_type_ext_get_name+0xebc>
+0x4015da:5:jmp 00000000004015df <hdmi_audio_coding_type_ext_get_name+0xbf>
+0x4015df:3:mov -0x50(%rbp),%eax
+0x4015e2:5:sub $0x934edd44,%eax
+0x4015e7:3:mov %eax,-0x64(%rbp)
+0x4015ea:6:je 0000000000402193 <hdmi_audio_coding_type_ext_get_name+0xc73>
+0x4015f0:5:jmp 00000000004015f5 <hdmi_audio_coding_type_ext_get_name+0xd5>
+0x4015f5:3:mov -0x50(%rbp),%eax
+0x4015f8:5:sub $0x95f6fd6c,%eax
+0x4015fd:3:mov %eax,-0x68(%rbp)
+0x401600:6:je 0000000000402474 <hdmi_audio_coding_type_ext_get_name+0xf54>
+0x401606:5:jmp 000000000040160b <hdmi_audio_coding_type_ext_get_name+0xeb>
+0x40160b:3:mov -0x50(%rbp),%eax
+0x40160e:5:sub $0x9d49d237,%eax
+0x401613:3:mov %eax,-0x6c(%rbp)
+0x401616:6:je 0000000000401b95 <hdmi_audio_coding_type_ext_get_name+0x675>
+0x40161c:5:jmp 0000000000401621 <hdmi_audio_coding_type_ext_get_name+0x101>
+0x401621:3:mov -0x50(%rbp),%eax
+0x401624:5:sub $0xa25eef77,%eax
+0x401629:3:mov %eax,-0x70(%rbp)
+0x40162c:6:je 0000000000401d81 <hdmi_audio_coding_type_ext_get_name+0x861>
+0x401632:5:jmp 0000000000401637 <hdmi_audio_coding_type_ext_get_name+0x117>
+0x401637:3:mov -0x50(%rbp),%eax
+0x40163a:5:sub $0xa3951303,%eax
+0x40163f:3:mov %eax,-0x74(%rbp)
+0x401642:6:je 0000000000401dbd <hdmi_audio_coding_type_ext_get_name+0x89d>
+0x401648:5:jmp 000000000040164d <hdmi_audio_coding_type_ext_get_name+0x12d>
+0x40164d:3:mov -0x50(%rbp),%eax
+0x401650:5:sub $0xa82bc199,%eax
+0x401655:3:mov %eax,-0x78(%rbp)
+0x401658:6:je 00000000004023b3 <hdmi_audio_coding_type_ext_get_name+0xe93>
+0x40165e:5:jmp 0000000000401663 <hdmi_audio_coding_type_ext_get_name+0x143>
+0x401663:3:mov -0x50(%rbp),%eax
+0x401666:5:sub $0xa8dc049c,%eax
+0x40166b:3:mov %eax,-0x7c(%rbp)
+0x40166e:6:je 0000000000402050 <hdmi_audio_coding_type_ext_get_name+0xb30>
+0x401674:5:jmp 0000000000401679 <hdmi_audio_coding_type_ext_get_name+0x159>
+0x401679:3:mov -0x50(%rbp),%eax
+0x40167c:5:sub $0xac13fa32,%eax
+0x401681:3:mov %eax,-0x80(%rbp)
+0x401684:6:je 0000000000401ccd <hdmi_audio_coding_type_ext_get_name+0x7ad>
+0x40168a:5:jmp 000000000040168f <hdmi_audio_coding_type_ext_get_name+0x16f>
+0x40168f:3:mov -0x50(%rbp),%eax
+0x401692:5:sub $0xb408d931,%eax
+0x401697:6:mov %eax,-0x84(%rbp)
+0x40169d:6:je 0000000000402187 <hdmi_audio_coding_type_ext_get_name+0xc67>
+0x4016a3:5:jmp 00000000004016a8 <hdmi_audio_coding_type_ext_get_name+0x188>
+0x4016a8:3:mov -0x50(%rbp),%eax
+0x4016ab:5:sub $0xbd5daa53,%eax
+0x4016b0:6:mov %eax,-0x88(%rbp)
+0x4016b6:6:je 0000000000401c67 <hdmi_audio_coding_type_ext_get_name+0x747>
+0x4016bc:5:jmp 00000000004016c1 <hdmi_audio_coding_type_ext_get_name+0x1a1>
+0x4016c1:3:mov -0x50(%rbp),%eax
+0x4016c4:5:sub $0xc0078f3a,%eax
+0x4016c9:6:mov %eax,-0x8c(%rbp)
+0x4016cf:6:je 0000000000401b5e <hdmi_audio_coding_type_ext_get_name+0x63e>
+0x4016d5:5:jmp 00000000004016da <hdmi_audio_coding_type_ext_get_name+0x1ba>
+0x4016da:3:mov -0x50(%rbp),%eax
+0x4016dd:5:sub $0xcd2dfe3e,%eax
+0x4016e2:6:mov %eax,-0x90(%rbp)
+0x4016e8:6:je 0000000000401dda <hdmi_audio_coding_type_ext_get_name+0x8ba>
+0x4016ee:5:jmp 00000000004016f3 <hdmi_audio_coding_type_ext_get_name+0x1d3>
+0x4016f3:3:mov -0x50(%rbp),%eax
+0x4016f6:5:sub $0xda8969e2,%eax
+0x4016fb:6:mov %eax,-0x94(%rbp)
+0x401701:6:je 0000000000402242 <hdmi_audio_coding_type_ext_get_name+0xd22>
+0x401707:5:jmp 000000000040170c <hdmi_audio_coding_type_ext_get_name+0x1ec>
+0x40170c:3:mov -0x50(%rbp),%eax
+0x40170f:5:sub $0xdb337e48,%eax
+0x401714:6:mov %eax,-0x98(%rbp)
+0x40171a:6:je 0000000000401fab <hdmi_audio_coding_type_ext_get_name+0xa8b>
+0x401720:5:jmp 0000000000401725 <hdmi_audio_coding_type_ext_get_name+0x205>
+0x401725:3:mov -0x50(%rbp),%eax
+0x401728:5:sub $0xdbe5f63f,%eax
+0x40172d:6:mov %eax,-0x9c(%rbp)
+0x401733:6:je 00000000004024cb <hdmi_audio_coding_type_ext_get_name+0xfab>
+0x401739:5:jmp 000000000040173e <hdmi_audio_coding_type_ext_get_name+0x21e>
+0x40173e:3:mov -0x50(%rbp),%eax
+0x401741:5:sub $0xdc6669a0,%eax
+0x401746:6:mov %eax,-0xa0(%rbp)
+0x40174c:6:je 0000000000402457 <hdmi_audio_coding_type_ext_get_name+0xf37>
+0x401752:5:jmp 0000000000401757 <hdmi_audio_coding_type_ext_get_name+0x237>
+0x401757:3:mov -0x50(%rbp),%eax
+0x40175a:5:sub $0xe75b22fa,%eax
+0x40175f:6:mov %eax,-0xa4(%rbp)
+0x401765:6:je 00000000004021cd <hdmi_audio_coding_type_ext_get_name+0xcad>
+0x40176b:5:jmp 0000000000401770 <hdmi_audio_coding_type_ext_get_name+0x250>
+0x401770:3:mov -0x50(%rbp),%eax
+0x401773:5:sub $0xe991234e,%eax
+0x401778:6:mov %eax,-0xa8(%rbp)
+0x40177e:6:je 0000000000401f1b <hdmi_audio_coding_type_ext_get_name+0x9fb>
+0x401784:5:jmp 0000000000401789 <hdmi_audio_coding_type_ext_get_name+0x269>
+0x401789:3:mov -0x50(%rbp),%eax
+0x40178c:5:sub $0xeb362835,%eax
+0x401791:6:mov %eax,-0xac(%rbp)
+0x401797:6:je 0000000000401a92 <hdmi_audio_coding_type_ext_get_name+0x572>
+0x40179d:5:jmp 00000000004017a2 <hdmi_audio_coding_type_ext_get_name+0x282>
+0x4017a2:3:mov -0x50(%rbp),%eax
+0x4017a5:5:sub $0xed8f4800,%eax
+0x4017aa:6:mov %eax,-0xb0(%rbp)
+0x4017b0:6:je 00000000004021b0 <hdmi_audio_coding_type_ext_get_name+0xc90>
+0x4017b6:5:jmp 00000000004017bb <hdmi_audio_coding_type_ext_get_name+0x29b>
+0x4017bb:3:mov -0x50(%rbp),%eax
+0x4017be:5:sub $0xfb5d37ac,%eax
+0x4017c3:6:mov %eax,-0xb4(%rbp)
+0x4017c9:6:je 0000000000401b79 <hdmi_audio_coding_type_ext_get_name+0x659>
+0x4017cf:5:jmp 00000000004017d4 <hdmi_audio_coding_type_ext_get_name+0x2b4>
+0x4017d4:3:mov -0x50(%rbp),%eax
+0x4017d7:5:sub $0xfea8b594,%eax
+0x4017dc:6:mov %eax,-0xb8(%rbp)
+0x4017e2:6:je 000000000040241b <hdmi_audio_coding_type_ext_get_name+0xefb>
+0x4017e8:5:jmp 00000000004017ed <hdmi_audio_coding_type_ext_get_name+0x2cd>
+0x4017ed:3:mov -0x50(%rbp),%eax
+0x4017f0:5:sub $0x1c58c8e,%eax
+0x4017f5:6:mov %eax,-0xbc(%rbp)
+0x4017fb:6:je 000000000040205c <hdmi_audio_coding_type_ext_get_name+0xb3c>
+0x401801:5:jmp 0000000000401806 <hdmi_audio_coding_type_ext_get_name+0x2e6>
+0x401806:3:mov -0x50(%rbp),%eax
+0x401809:5:sub $0x5c2e414,%eax
+0x40180e:6:mov %eax,-0xc0(%rbp)
+0x401814:6:je 0000000000402405 <hdmi_audio_coding_type_ext_get_name+0xee5>
+0x40181a:5:jmp 000000000040181f <hdmi_audio_coding_type_ext_get_name+0x2ff>
+0x40181f:3:mov -0x50(%rbp),%eax
+0x401822:5:sub $0x5e7ca75,%eax
+0x401827:6:mov %eax,-0xc4(%rbp)
+0x40182d:6:je 00000000004024ae <hdmi_audio_coding_type_ext_get_name+0xf8e>
+0x401833:5:jmp 0000000000401838 <hdmi_audio_coding_type_ext_get_name+0x318>
+0x401838:3:mov -0x50(%rbp),%eax
+0x40183b:5:sub $0x766b32d,%eax
+0x401840:6:mov %eax,-0xc8(%rbp)
+0x401846:6:je 00000000004022e7 <hdmi_audio_coding_type_ext_get_name+0xdc7>
+0x40184c:5:jmp 0000000000401851 <hdmi_audio_coding_type_ext_get_name+0x331>
+0x401851:3:mov -0x50(%rbp),%eax
+0x401854:5:sub $0xc73e486,%eax
+0x401859:6:mov %eax,-0xcc(%rbp)
+0x40185f:6:je 0000000000402491 <hdmi_audio_coding_type_ext_get_name+0xf71>
+0x401865:5:jmp 000000000040186a <hdmi_audio_coding_type_ext_get_name+0x34a>
+0x40186a:3:mov -0x50(%rbp),%eax
+0x40186d:5:sub $0x29aa23a8,%eax
+0x401872:6:mov %eax,-0xd0(%rbp)
+0x401878:6:je 0000000000401c73 <hdmi_audio_coding_type_ext_get_name+0x753>
+0x40187e:5:jmp 0000000000401883 <hdmi_audio_coding_type_ext_get_name+0x363>
+0x401883:3:mov -0x50(%rbp),%eax
+0x401886:5:sub $0x3360b47c,%eax
+0x40188b:6:mov %eax,-0xd4(%rbp)
+0x401891:6:je 0000000000402440 <hdmi_audio_coding_type_ext_get_name+0xf20>
+0x401897:5:jmp 000000000040189c <hdmi_audio_coding_type_ext_get_name+0x37c>
+0x40189c:3:mov -0x50(%rbp),%eax
+0x40189f:5:sub $0x3600013c,%eax
+0x4018a4:6:mov %eax,-0xd8(%rbp)
+0x4018aa:6:je 0000000000401a31 <hdmi_audio_coding_type_ext_get_name+0x511>
+0x4018b0:5:jmp 00000000004018b5 <hdmi_audio_coding_type_ext_get_name+0x395>
+0x4018b5:3:mov -0x50(%rbp),%eax
+0x4018b8:5:sub $0x39aa240c,%eax
+0x4018bd:6:mov %eax,-0xdc(%rbp)
+0x4018c3:6:je 0000000000401d45 <hdmi_audio_coding_type_ext_get_name+0x825>
+0x4018c9:5:jmp 00000000004018ce <hdmi_audio_coding_type_ext_get_name+0x3ae>
+0x4018ce:3:mov -0x50(%rbp),%eax
+0x4018d1:5:sub $0x3c8ba609,%eax
+0x4018d6:6:mov %eax,-0xe0(%rbp)
+0x4018dc:6:je 0000000000401d63 <hdmi_audio_coding_type_ext_get_name+0x843>
+0x4018e2:5:jmp 00000000004018e7 <hdmi_audio_coding_type_ext_get_name+0x3c7>
+0x4018e7:3:mov -0x50(%rbp),%eax
+0x4018ea:5:sub $0x4298b22f,%eax
+0x4018ef:6:mov %eax,-0xe4(%rbp)
+0x4018f5:6:je 0000000000401d9f <hdmi_audio_coding_type_ext_get_name+0x87f>
+0x4018fb:5:jmp 0000000000401900 <hdmi_audio_coding_type_ext_get_name+0x3e0>
+0x401900:3:mov -0x50(%rbp),%eax
+0x401903:5:sub $0x4384c216,%eax
+0x401908:6:mov %eax,-0xe8(%rbp)
+0x40190e:6:je 0000000000401c0a <hdmi_audio_coding_type_ext_get_name+0x6ea>
+0x401914:5:jmp 0000000000401919 <hdmi_audio_coding_type_ext_get_name+0x3f9>
+0x401919:3:mov -0x50(%rbp),%eax
+0x40191c:5:sub $0x43ad2e12,%eax
+0x401921:6:mov %eax,-0xec(%rbp)
+0x401927:6:je 0000000000401d27 <hdmi_audio_coding_type_ext_get_name+0x807>
+0x40192d:5:jmp 0000000000401932 <hdmi_audio_coding_type_ext_get_name+0x412>
+0x401932:3:mov -0x50(%rbp),%eax
+0x401935:5:sub $0x47edf567,%eax
+0x40193a:6:mov %eax,-0xf0(%rbp)
+0x401940:6:je 0000000000401f0f <hdmi_audio_coding_type_ext_get_name+0x9ef>
+0x401946:5:jmp 000000000040194b <hdmi_audio_coding_type_ext_get_name+0x42b>
+0x40194b:3:mov -0x50(%rbp),%eax
+0x40194e:5:sub $0x4850c1a3,%eax
+0x401953:6:mov %eax,-0xf4(%rbp)
+0x401959:6:je 00000000004021ea <hdmi_audio_coding_type_ext_get_name+0xcca>
+0x40195f:5:jmp 0000000000401964 <hdmi_audio_coding_type_ext_get_name+0x444>
+0x401964:3:mov -0x50(%rbp),%eax
+0x401967:5:sub $0x54518b8e,%eax
+0x40196c:6:mov %eax,-0xf8(%rbp)
+0x401972:6:je 0000000000401d09 <hdmi_audio_coding_type_ext_get_name+0x7e9>
+0x401978:5:jmp 000000000040197d <hdmi_audio_coding_type_ext_get_name+0x45d>
+0x40197d:3:mov -0x50(%rbp),%eax
+0x401980:5:sub $0x563eb321,%eax
+0x401985:6:mov %eax,-0xfc(%rbp)
+0x40198b:6:je 0000000000401caf <hdmi_audio_coding_type_ext_get_name+0x78f>
+0x401991:5:jmp 0000000000401996 <hdmi_audio_coding_type_ext_get_name+0x476>
+0x401996:3:mov -0x50(%rbp),%eax
+0x401999:5:sub $0x59a96173,%eax
+0x40199e:6:mov %eax,-0x100(%rbp)
+0x4019a4:6:je 000000000040234b <hdmi_audio_coding_type_ext_get_name+0xe2b>
+0x4019aa:5:jmp 00000000004019af <hdmi_audio_coding_type_ext_get_name+0x48f>
+0x4019af:3:mov -0x50(%rbp),%eax
+0x4019b2:5:sub $0x5a194b08,%eax
+0x4019b7:6:mov %eax,-0x104(%rbp)
+0x4019bd:6:je 00000000004020e2 <hdmi_audio_coding_type_ext_get_name+0xbc2>
+0x4019c3:5:jmp 00000000004019c8 <hdmi_audio_coding_type_ext_get_name+0x4a8>
+0x4019c8:3:mov -0x50(%rbp),%eax
+0x4019cb:5:sub $0x5c0b8c5e,%eax
+0x4019d0:6:mov %eax,-0x108(%rbp)
+0x4019d6:6:je 00000000004023bf <hdmi_audio_coding_type_ext_get_name+0xe9f>
+0x4019dc:5:jmp 00000000004019e1 <hdmi_audio_coding_type_ext_get_name+0x4c1>
+0x4019e1:3:mov -0x50(%rbp),%eax
+0x4019e4:5:sub $0x625432c8,%eax
+0x4019e9:6:mov %eax,-0x10c(%rbp)
+0x4019ef:6:je 0000000000401bb2 <hdmi_audio_coding_type_ext_get_name+0x692>
+0x4019f5:5:jmp 00000000004019fa <hdmi_audio_coding_type_ext_get_name+0x4da>
+0x4019fa:3:mov -0x50(%rbp),%eax
+0x4019fd:5:sub $0x64100678,%eax
+0x401a02:6:mov %eax,-0x110(%rbp)
+0x401a08:6:je 00000000004023e8 <hdmi_audio_coding_type_ext_get_name+0xec8>
+0x401a0e:5:jmp 0000000000401a13 <hdmi_audio_coding_type_ext_get_name+0x4f3>
+0x401a13:3:mov -0x50(%rbp),%eax
+0x401a16:5:sub $0x75b8b357,%eax
+0x401a1b:6:mov %eax,-0x114(%rbp)
+0x401a21:6:je 00000000004022f3 <hdmi_audio_coding_type_ext_get_name+0xdd3>
+0x401a27:5:jmp 0000000000401a2c <hdmi_audio_coding_type_ext_get_name+0x50c>
+0x401a2c:5:jmp 00000000004024e3 <hdmi_audio_coding_type_ext_get_name+0xfc3>
+0x401a31:5:mov $0xfea8b594,%eax
+0x401a36:5:mov $0xeb362835,%ecx
+0x401a3b:2:mov $0x1,%dl
+0x401a3d:4:mov -0x42(%rbp),%sil
+0x401a41:4:mov -0x41(%rbp),%dil
+0x401a45:3:mov %sil,%r8b
+0x401a48:4:xor $0xff,%r8b
+0x401a4c:3:mov %dil,%r9b
+0x401a4f:4:xor $0xff,%r9b
+0x401a53:3:xor $0x0,%dl
+0x401a56:3:mov %r8b,%r10b
+0x401a59:4:and $0x0,%r10b
+0x401a5d:3:and %dl,%sil
+0x401a60:3:mov %r9b,%r11b
+0x401a63:4:and $0x0,%r11b
+0x401a67:3:and %dl,%dil
+0x401a6a:3:or %sil,%r10b
+0x401a6d:3:or %dil,%r11b
+0x401a70:3:xor %r11b,%r10b
+0x401a73:3:or %r9b,%r8b
+0x401a76:4:xor $0xff,%r8b
+0x401a7a:3:or $0x0,%dl
+0x401a7d:3:and %dl,%r8b
+0x401a80:3:or %r8b,%r10b
+0x401a83:4:test $0x1,%r10b
+0x401a87:3:cmovne %ecx,%eax
+0x401a8a:3:mov %eax,-0x48(%rbp)
+0x401a8d:5:jmp 00000000004024e3 <hdmi_audio_coding_type_ext_get_name+0xfc3>
+0x401a92:5:mov $0xfea8b594,%eax
+0x401a97:5:mov $0xc0078f3a,%ecx
+0x401a9c:2:mov $0x1,%dl
+0x401a9e:3:mov %rsp,%rsi
+0x401aa1:4:add $0xfffffffffffffff0,%rsi
+0x401aa5:3:mov %rsi,%rsp
+0x401aa8:4:mov %rsi,-0x40(%rbp)
+0x401aac:3:mov %rsp,%rsi
+0x401aaf:4:add $0xfffffffffffffff0,%rsi
+0x401ab3:3:mov %rsi,%rsp
+0x401ab6:4:mov %rsi,-0x38(%rbp)
+0x401aba:4:mov -0x38(%rbp),%rsi
+0x401abe:3:mov -0x4c(%rbp),%edi
+0x401ac1:2:mov %edi,(%rsi)
+0x401ac3:4:mov -0x38(%rbp),%rsi
+0x401ac7:3:cmpl $0x0,(%rsi)
+0x401aca:4:setb %r8b
+0x401ace:4:and $0x1,%r8b
+0x401ad2:4:mov %r8b,-0x2d(%rbp)
+0x401ad6:8:mov 0x405040,%r9d
+0x401ade:8:mov 0x405050,%r10d
+0x401ae6:3:mov %r9d,%r11d
+0x401ae9:7:add $0xa7bbf95c,%r11d
+0x401af0:4:sub $0x1,%r11d
+0x401af4:7:sub $0xa7bbf95c,%r11d
+0x401afb:4:imul %r11d,%r9d
+0x401aff:4:and $0x1,%r9d
+0x401b03:4:cmp $0x0,%r9d
+0x401b07:4:sete %r8b
+0x401b0b:4:cmp $0xa,%r10d
+0x401b0f:3:setl %bl
+0x401b12:3:mov %r8b,%r14b
+0x401b15:4:xor $0xff,%r14b
+0x401b19:3:mov %bl,%r15b
+0x401b1c:4:xor $0xff,%r15b
+0x401b20:3:xor $0x0,%dl
+0x401b23:3:mov %r14b,%r12b
+0x401b26:4:and $0x0,%r12b
+0x401b2a:3:and %dl,%r8b
+0x401b2d:3:mov %r15b,%r13b
+0x401b30:4:and $0x0,%r13b
+0x401b34:2:and %dl,%bl
+0x401b36:3:or %r8b,%r12b
+0x401b39:3:or %bl,%r13b
+0x401b3c:3:xor %r13b,%r12b
+0x401b3f:3:or %r15b,%r14b
+0x401b42:4:xor $0xff,%r14b
+0x401b46:3:or $0x0,%dl
+0x401b49:3:and %dl,%r14b
+0x401b4c:3:or %r14b,%r12b
+0x401b4f:4:test $0x1,%r12b
+0x401b53:3:cmovne %ecx,%eax
+0x401b56:3:mov %eax,-0x48(%rbp)
+0x401b59:5:jmp 00000000004024e3 <hdmi_audio_coding_type_ext_get_name+0xfc3>
+0x401b5e:5:mov $0xfb5d37ac,%eax
+0x401b63:5:mov $0x9d49d237,%ecx
+0x401b68:3:mov -0x2d(%rbp),%dl
+0x401b6b:3:test $0x1,%dl
+0x401b6e:3:cmovne %ecx,%eax
+0x401b71:3:mov %eax,-0x48(%rbp)
+0x401b74:5:jmp 00000000004024e3 <hdmi_audio_coding_type_ext_get_name+0xfc3>
+0x401b79:5:mov $0x625432c8,%eax
+0x401b7e:5:mov $0x9d49d237,%ecx
+0x401b83:4:mov -0x38(%rbp),%rdx
+0x401b87:3:cmpl $0x1f,(%rdx)
+0x401b8a:3:cmova %ecx,%eax
+0x401b8d:3:mov %eax,-0x48(%rbp)
+0x401b90:5:jmp 00000000004024e3 <hdmi_audio_coding_type_ext_get_name+0xfc3>
+0x401b95:10:movabs $0x4030b6,%rax
+0x401b9f:4:mov -0x40(%rbp),%rcx
+0x401ba3:3:mov %rax,(%rcx)
+0x401ba6:7:movl $0x5c2e414,-0x48(%rbp)
+0x401bad:5:jmp 00000000004024e3 <hdmi_audio_coding_type_ext_get_name+0xfc3>
+0x401bb2:5:mov $0x3360b47c,%eax
+0x401bb7:5:mov $0x4384c216,%ecx
+0x401bbc:7:mov 0x405040,%edx
+0x401bc3:7:mov 0x405050,%esi
+0x401bca:2:mov %edx,%edi
+0x401bcc:6:sub $0x58188ce,%edi
+0x401bd2:3:sub $0x1,%edi
+0x401bd5:6:add $0x58188ce,%edi
+0x401bdb:3:imul %edi,%edx
+0x401bde:3:and $0x1,%edx
+0x401be1:3:cmp $0x0,%edx
+0x401be4:4:sete %r8b
+0x401be8:3:cmp $0xa,%esi
+0x401beb:4:setl %r9b
+0x401bef:3:mov %r8b,%r10b
+0x401bf2:3:and %r9b,%r10b
+0x401bf5:3:xor %r9b,%r8b
+0x401bf8:3:or %r8b,%r10b
+0x401bfb:4:test $0x1,%r10b
+0x401bff:3:cmovne %ecx,%eax
+0x401c02:3:mov %eax,-0x48(%rbp)
+0x401c05:5:jmp 00000000004024e3 <hdmi_audio_coding_type_ext_get_name+0xfc3>
+0x401c0a:5:mov $0x3360b47c,%eax
+0x401c0f:5:mov $0xbd5daa53,%ecx
+0x401c14:2:xor %edx,%edx
+0x401c16:4:mov -0x38(%rbp),%rsi
+0x401c1a:2:mov (%rsi),%edi
+0x401c1c:3:mov %edi,-0x2c(%rbp)
+0x401c1f:7:mov 0x405040,%edi
+0x401c26:8:mov 0x405050,%r8d
+0x401c2e:3:sub $0x1,%edx
+0x401c31:3:mov %edi,%r9d
+0x401c34:3:add %edx,%r9d
+0x401c37:4:imul %r9d,%edi
+0x401c3b:3:and $0x1,%edi
+0x401c3e:3:cmp $0x0,%edi
+0x401c41:4:sete %r10b
+0x401c45:4:cmp $0xa,%r8d
+0x401c49:4:setl %r11b
+0x401c4d:3:mov %r10b,%bl
+0x401c50:3:and %r11b,%bl
+0x401c53:3:xor %r11b,%r10b
+0x401c56:3:or %r10b,%bl
+0x401c59:3:test $0x1,%bl
+0x401c5c:3:cmovne %ecx,%eax
+0x401c5f:3:mov %eax,-0x48(%rbp)
+0x401c62:5:jmp 00000000004024e3 <hdmi_audio_coding_type_ext_get_name+0xfc3>
+0x401c67:7:movl $0x29aa23a8,-0x48(%rbp)
+0x401c6e:5:jmp 00000000004024e3 <hdmi_audio_coding_type_ext_get_name+0xfc3>
+0x401c73:5:mov $0x8da11de1,%eax
+0x401c78:5:mov $0x43ad2e12,%ecx
+0x401c7d:3:mov -0x2c(%rbp),%edx
+0x401c80:6:cmp $0x85,%edx
+0x401c86:3:cmovl %ecx,%eax
+0x401c89:3:mov %eax,-0x48(%rbp)
+0x401c8c:5:jmp 00000000004024e3 <hdmi_audio_coding_type_ext_get_name+0xfc3>
+0x401c91:5:mov $0x563eb321,%eax
+0x401c96:5:mov $0x54518b8e,%ecx
+0x401c9b:3:mov -0x2c(%rbp),%edx
+0x401c9e:6:cmp $0x87,%edx
+0x401ca4:3:cmovl %ecx,%eax
+0x401ca7:3:mov %eax,-0x48(%rbp)
+0x401caa:5:jmp 00000000004024e3 <hdmi_audio_coding_type_ext_get_name+0xfc3>
+0x401caf:5:mov $0xac13fa32,%eax
+0x401cb4:5:mov $0xcd2dfe3e,%ecx
+0x401cb9:3:mov -0x2c(%rbp),%edx
+0x401cbc:6:cmp $0x88,%edx
+0x401cc2:3:cmovl %ecx,%eax
+0x401cc5:3:mov %eax,-0x48(%rbp)
+0x401cc8:5:jmp 00000000004024e3 <hdmi_audio_coding_type_ext_get_name+0xfc3>
+0x401ccd:5:mov $0x83d6d804,%eax
+0x401cd2:5:mov $0x4850c1a3,%ecx
+0x401cd7:3:mov -0x2c(%rbp),%edx
+0x401cda:6:cmp $0x89,%edx
+0x401ce0:3:cmovl %ecx,%eax
+0x401ce3:3:mov %eax,-0x48(%rbp)
+0x401ce6:5:jmp 00000000004024e3 <hdmi_audio_coding_type_ext_get_name+0xfc3>
+0x401ceb:5:mov $0x8ea8a439,%eax
+0x401cf0:5:mov $0xa3951303,%ecx
+0x401cf5:3:mov -0x2c(%rbp),%edx
+0x401cf8:6:cmp $0x89,%edx
+0x401cfe:3:cmove %ecx,%eax
+0x401d01:3:mov %eax,-0x48(%rbp)
+0x401d04:5:jmp 00000000004024e3 <hdmi_audio_coding_type_ext_get_name+0xfc3>
+0x401d09:5:mov $0xe991234e,%eax
+0x401d0e:5:mov $0xe75b22fa,%ecx
+0x401d13:3:mov -0x2c(%rbp),%edx
+0x401d16:6:cmp $0x86,%edx
+0x401d1c:3:cmovl %ecx,%eax
+0x401d1f:3:mov %eax,-0x48(%rbp)
+0x401d22:5:jmp 00000000004024e3 <hdmi_audio_coding_type_ext_get_name+0xfc3>
+0x401d27:5:mov $0x39aa240c,%eax
+0x401d2c:5:mov $0xa25eef77,%ecx
+0x401d31:3:mov -0x2c(%rbp),%edx
+0x401d34:6:cmp $0x82,%edx
+0x401d3a:3:cmovl %ecx,%eax
+0x401d3d:3:mov %eax,-0x48(%rbp)
+0x401d40:5:jmp 00000000004024e3 <hdmi_audio_coding_type_ext_get_name+0xfc3>
+0x401d45:5:mov $0x3c8ba609,%eax
+0x401d4a:5:mov $0x75b8b357,%ecx
+0x401d4f:3:mov -0x2c(%rbp),%edx
+0x401d52:6:cmp $0x83,%edx
+0x401d58:3:cmovl %ecx,%eax
+0x401d5b:3:mov %eax,-0x48(%rbp)
+0x401d5e:5:jmp 00000000004024e3 <hdmi_audio_coding_type_ext_get_name+0xfc3>
+0x401d63:5:mov $0x5c0b8c5e,%eax
+0x401d68:5:mov $0x934edd44,%ecx
+0x401d6d:3:mov -0x2c(%rbp),%edx
+0x401d70:6:cmp $0x84,%edx
+0x401d76:3:cmovl %ecx,%eax
+0x401d79:3:mov %eax,-0x48(%rbp)
+0x401d7c:5:jmp 00000000004024e3 <hdmi_audio_coding_type_ext_get_name+0xfc3>
+0x401d81:5:mov $0xed8f4800,%eax
+0x401d86:5:mov $0x4298b22f,%ecx
+0x401d8b:3:mov -0x2c(%rbp),%edx
+0x401d8e:6:cmp $0x81,%edx
+0x401d94:3:cmovl %ecx,%eax
+0x401d97:3:mov %eax,-0x48(%rbp)
+0x401d9a:5:jmp 00000000004024e3 <hdmi_audio_coding_type_ext_get_name+0xfc3>
+0x401d9f:5:mov $0x8ea8a439,%eax
+0x401da4:5:mov $0x1c58c8e,%ecx
+0x401da9:3:mov -0x2c(%rbp),%edx
+0x401dac:6:cmp $0x80,%edx
+0x401db2:3:cmove %ecx,%eax
+0x401db5:3:mov %eax,-0x48(%rbp)
+0x401db8:5:jmp 00000000004024e3 <hdmi_audio_coding_type_ext_get_name+0xfc3>
+0x401dbd:10:movabs $0x4030be,%rax
+0x401dc7:4:mov -0x40(%rbp),%rcx
+0x401dcb:3:mov %rax,(%rcx)
+0x401dce:7:movl $0x5c2e414,-0x48(%rbp)
+0x401dd5:5:jmp 00000000004024e3 <hdmi_audio_coding_type_ext_get_name+0xfc3>
+0x401dda:5:mov $0xdc6669a0,%eax
+0x401ddf:5:mov $0x8527ec2e,%ecx
+0x401de4:2:mov $0x1,%dl
+0x401de6:7:mov 0x405040,%esi
+0x401ded:7:mov 0x405050,%edi
+0x401df4:3:mov %esi,%r8d
+0x401df7:7:add $0x5b9a1a6c,%r8d
+0x401dfe:4:sub $0x1,%r8d
+0x401e02:7:sub $0x5b9a1a6c,%r8d
+0x401e09:4:imul %r8d,%esi
+0x401e0d:3:and $0x1,%esi
+0x401e10:3:cmp $0x0,%esi
+0x401e13:4:sete %r9b
+0x401e17:3:cmp $0xa,%edi
+0x401e1a:4:setl %r10b
+0x401e1e:3:mov %r9b,%r11b
+0x401e21:4:xor $0xff,%r11b
+0x401e25:3:mov %r10b,%bl
+0x401e28:3:xor $0xff,%bl
+0x401e2b:3:xor $0x0,%dl
+0x401e2e:3:mov %r11b,%r14b
+0x401e31:4:and $0x0,%r14b
+0x401e35:3:and %dl,%r9b
+0x401e38:3:mov %bl,%r15b
+0x401e3b:4:and $0x0,%r15b
+0x401e3f:3:and %dl,%r10b
+0x401e42:3:or %r9b,%r14b
+0x401e45:3:or %r10b,%r15b
+0x401e48:3:xor %r15b,%r14b
+0x401e4b:3:or %bl,%r11b
+0x401e4e:4:xor $0xff,%r11b
+0x401e52:3:or $0x0,%dl
+0x401e55:3:and %dl,%r11b
+0x401e58:3:or %r11b,%r14b
+0x401e5b:4:test $0x1,%r14b
+0x401e5f:3:cmovne %ecx,%eax
+0x401e62:3:mov %eax,-0x48(%rbp)
+0x401e65:5:jmp 00000000004024e3 <hdmi_audio_coding_type_ext_get_name+0xfc3>
+0x401e6a:5:mov $0xdc6669a0,%eax
+0x401e6f:5:mov $0x47edf567,%ecx
+0x401e74:2:mov $0x1,%dl
+0x401e76:10:movabs $0x4030df,%rsi
+0x401e80:4:mov -0x40(%rbp),%rdi
+0x401e84:3:mov %rsi,(%rdi)
+0x401e87:8:mov 0x405040,%r8d
+0x401e8f:8:mov 0x405050,%r9d
+0x401e97:3:mov %r8d,%r10d
+0x401e9a:7:add $0xd6615843,%r10d
+0x401ea1:4:sub $0x1,%r10d
+0x401ea5:7:sub $0xd6615843,%r10d
+0x401eac:4:imul %r10d,%r8d
+0x401eb0:4:and $0x1,%r8d
+0x401eb4:4:cmp $0x0,%r8d
+0x401eb8:4:sete %r11b
+0x401ebc:4:cmp $0xa,%r9d
+0x401ec0:3:setl %bl
+0x401ec3:3:mov %r11b,%r14b
+0x401ec6:4:xor $0xff,%r14b
+0x401eca:3:mov %bl,%r15b
+0x401ecd:4:xor $0xff,%r15b
+0x401ed1:3:xor $0x0,%dl
+0x401ed4:3:mov %r14b,%r12b
+0x401ed7:4:and $0x0,%r12b
+0x401edb:3:and %dl,%r11b
+0x401ede:3:mov %r15b,%r13b
+0x401ee1:4:and $0x0,%r13b
+0x401ee5:2:and %dl,%bl
+0x401ee7:3:or %r11b,%r12b
+0x401eea:3:or %bl,%r13b
+0x401eed:3:xor %r13b,%r12b
+0x401ef0:3:or %r15b,%r14b
+0x401ef3:4:xor $0xff,%r14b
+0x401ef7:3:or $0x0,%dl
+0x401efa:3:and %dl,%r14b
+0x401efd:3:or %r14b,%r12b
+0x401f00:4:test $0x1,%r12b
+0x401f04:3:cmovne %ecx,%eax
+0x401f07:3:mov %eax,-0x48(%rbp)
+0x401f0a:5:jmp 00000000004024e3 <hdmi_audio_coding_type_ext_get_name+0xfc3>
+0x401f0f:7:movl $0x5c2e414,-0x48(%rbp)
+0x401f16:5:jmp 00000000004024e3 <hdmi_audio_coding_type_ext_get_name+0xfc3>
+0x401f1b:5:mov $0x95f6fd6c,%eax
+0x401f20:5:mov $0xdb337e48,%ecx
+0x401f25:2:mov $0x1,%dl
+0x401f27:7:mov 0x405040,%esi
+0x401f2e:7:mov 0x405050,%edi
+0x401f35:3:mov %esi,%r8d
+0x401f38:7:sub $0xbd186942,%r8d
+0x401f3f:4:sub $0x1,%r8d
+0x401f43:7:add $0xbd186942,%r8d
+0x401f4a:4:imul %r8d,%esi
+0x401f4e:3:and $0x1,%esi
+0x401f51:3:cmp $0x0,%esi
+0x401f54:4:sete %r9b
+0x401f58:3:cmp $0xa,%edi
+0x401f5b:4:setl %r10b
+0x401f5f:3:mov %r9b,%r11b
+0x401f62:4:xor $0xff,%r11b
+0x401f66:3:mov %r10b,%bl
+0x401f69:3:xor $0xff,%bl
+0x401f6c:3:xor $0x0,%dl
+0x401f6f:3:mov %r11b,%r14b
+0x401f72:4:and $0x0,%r14b
+0x401f76:3:and %dl,%r9b
+0x401f79:3:mov %bl,%r15b
+0x401f7c:4:and $0x0,%r15b
+0x401f80:3:and %dl,%r10b
+0x401f83:3:or %r9b,%r14b
+0x401f86:3:or %r10b,%r15b
+0x401f89:3:xor %r15b,%r14b
+0x401f8c:3:or %bl,%r11b
+0x401f8f:4:xor $0xff,%r11b
+0x401f93:3:or $0x0,%dl
+0x401f96:3:and %dl,%r11b
+0x401f99:3:or %r11b,%r14b
+0x401f9c:4:test $0x1,%r14b
+0x401fa0:3:cmovne %ecx,%eax
+0x401fa3:3:mov %eax,-0x48(%rbp)
+0x401fa6:5:jmp 00000000004024e3 <hdmi_audio_coding_type_ext_get_name+0xfc3>
+0x401fab:5:mov $0x95f6fd6c,%eax
+0x401fb0:5:mov $0xa8dc049c,%ecx
+0x401fb5:2:mov $0x1,%dl
+0x401fb7:10:movabs $0x4030ed,%rsi
+0x401fc1:4:mov -0x40(%rbp),%rdi
+0x401fc5:3:mov %rsi,(%rdi)
+0x401fc8:8:mov 0x405040,%r8d
+0x401fd0:8:mov 0x405050,%r9d
+0x401fd8:3:mov %r8d,%r10d
+0x401fdb:7:sub $0x3b3561ed,%r10d
+0x401fe2:4:sub $0x1,%r10d
+0x401fe6:7:add $0x3b3561ed,%r10d
+0x401fed:4:imul %r10d,%r8d
+0x401ff1:4:and $0x1,%r8d
+0x401ff5:4:cmp $0x0,%r8d
+0x401ff9:4:sete %r11b
+0x401ffd:4:cmp $0xa,%r9d
+0x402001:3:setl %bl
+0x402004:3:mov %r11b,%r14b
+0x402007:4:xor $0xff,%r14b
+0x40200b:3:mov %bl,%r15b
+0x40200e:4:xor $0xff,%r15b
+0x402012:3:xor $0x0,%dl
+0x402015:3:mov %r14b,%r12b
+0x402018:4:and $0x0,%r12b
+0x40201c:3:and %dl,%r11b
+0x40201f:3:mov %r15b,%r13b
+0x402022:4:and $0x0,%r13b
+0x402026:2:and %dl,%bl
+0x402028:3:or %r11b,%r12b
+0x40202b:3:or %bl,%r13b
+0x40202e:3:xor %r13b,%r12b
+0x402031:3:or %r15b,%r14b
+0x402034:4:xor $0xff,%r14b
+0x402038:3:or $0x0,%dl
+0x40203b:3:and %dl,%r14b
+0x40203e:3:or %r14b,%r12b
+0x402041:4:test $0x1,%r12b
+0x402045:3:cmovne %ecx,%eax
+0x402048:3:mov %eax,-0x48(%rbp)
+0x40204b:5:jmp 00000000004024e3 <hdmi_audio_coding_type_ext_get_name+0xfc3>
+0x402050:7:movl $0x5c2e414,-0x48(%rbp)
+0x402057:5:jmp 00000000004024e3 <hdmi_audio_coding_type_ext_get_name+0xfc3>
+0x40205c:5:mov $0xc73e486,%eax
+0x402061:5:mov $0x5a194b08,%ecx
+0x402066:2:mov $0x1,%dl
+0x402068:2:xor %esi,%esi
+0x40206a:7:mov 0x405040,%edi
+0x402071:8:mov 0x405050,%r8d
+0x402079:3:sub $0x1,%esi
+0x40207c:3:mov %edi,%r9d
+0x40207f:3:add %esi,%r9d
+0x402082:4:imul %r9d,%edi
+0x402086:3:and $0x1,%edi
+0x402089:3:cmp $0x0,%edi
+0x40208c:4:sete %r10b
+0x402090:4:cmp $0xa,%r8d
+0x402094:4:setl %r11b
+0x402098:3:mov %r10b,%bl
+0x40209b:3:xor $0xff,%bl
+0x40209e:3:mov %r11b,%r14b
+0x4020a1:4:xor $0xff,%r14b
+0x4020a5:3:xor $0x1,%dl
+0x4020a8:3:mov %bl,%r15b
+0x4020ab:4:and $0xff,%r15b
+0x4020af:3:and %dl,%r10b
+0x4020b2:3:mov %r14b,%r12b
+0x4020b5:4:and $0xff,%r12b
+0x4020b9:3:and %dl,%r11b
+0x4020bc:3:or %r10b,%r15b
+0x4020bf:3:or %r11b,%r12b
+0x4020c2:3:xor %r12b,%r15b
+0x4020c5:3:or %r14b,%bl
+0x4020c8:3:xor $0xff,%bl
+0x4020cb:3:or $0x1,%dl
+0x4020ce:2:and %dl,%bl
+0x4020d0:3:or %bl,%r15b
+0x4020d3:4:test $0x1,%r15b
+0x4020d7:3:cmovne %ecx,%eax
+0x4020da:3:mov %eax,-0x48(%rbp)
+0x4020dd:5:jmp 00000000004024e3 <hdmi_audio_coding_type_ext_get_name+0xfc3>
+0x4020e2:5:mov $0xc73e486,%eax
+0x4020e7:5:mov $0xb408d931,%ecx
+0x4020ec:2:mov $0x1,%dl
+0x4020ee:10:movabs $0x4030ca,%rsi
+0x4020f8:4:mov -0x40(%rbp),%rdi
+0x4020fc:3:mov %rsi,(%rdi)
+0x4020ff:8:mov 0x405040,%r8d
+0x402107:8:mov 0x405050,%r9d
+0x40210f:3:mov %r8d,%r10d
+0x402112:7:add $0x69f16ba1,%r10d
+0x402119:4:sub $0x1,%r10d
+0x40211d:7:sub $0x69f16ba1,%r10d
+0x402124:4:imul %r10d,%r8d
+0x402128:4:and $0x1,%r8d
+0x40212c:4:cmp $0x0,%r8d
+0x402130:4:sete %r11b
+0x402134:4:cmp $0xa,%r9d
+0x402138:3:setl %bl
+0x40213b:3:mov %r11b,%r14b
+0x40213e:4:xor $0xff,%r14b
+0x402142:3:mov %bl,%r15b
+0x402145:4:xor $0xff,%r15b
+0x402149:3:xor $0x0,%dl
+0x40214c:3:mov %r14b,%r12b
+0x40214f:4:and $0x0,%r12b
+0x402153:3:and %dl,%r11b
+0x402156:3:mov %r15b,%r13b
+0x402159:4:and $0x0,%r13b
+0x40215d:2:and %dl,%bl
+0x40215f:3:or %r11b,%r12b
+0x402162:3:or %bl,%r13b
+0x402165:3:xor %r13b,%r12b
+0x402168:3:or %r15b,%r14b
+0x40216b:4:xor $0xff,%r14b
+0x40216f:3:or $0x0,%dl
+0x402172:3:and %dl,%r14b
+0x402175:3:or %r14b,%r12b
+0x402178:4:test $0x1,%r12b
+0x40217c:3:cmovne %ecx,%eax
+0x40217f:3:mov %eax,-0x48(%rbp)
+0x402182:5:jmp 00000000004024e3 <hdmi_audio_coding_type_ext_get_name+0xfc3>
+0x402187:7:movl $0x5c2e414,-0x48(%rbp)
+0x40218e:5:jmp 00000000004024e3 <hdmi_audio_coding_type_ext_get_name+0xfc3>
+0x402193:10:movabs $0x4030d8,%rax
+0x40219d:4:mov -0x40(%rbp),%rcx
+0x4021a1:3:mov %rax,(%rcx)
+0x4021a4:7:movl $0x5c2e414,-0x48(%rbp)
+0x4021ab:5:jmp 00000000004024e3 <hdmi_audio_coding_type_ext_get_name+0xfc3>
+0x4021b0:10:movabs $0x4030e6,%rax
+0x4021ba:4:mov -0x40(%rbp),%rcx
+0x4021be:3:mov %rax,(%rcx)
+0x4021c1:7:movl $0x5c2e414,-0x48(%rbp)
+0x4021c8:5:jmp 00000000004024e3 <hdmi_audio_coding_type_ext_get_name+0xfc3>
+0x4021cd:10:movabs $0x4030f7,%rax
+0x4021d7:4:mov -0x40(%rbp),%rcx
+0x4021db:3:mov %rax,(%rcx)
+0x4021de:7:movl $0x5c2e414,-0x48(%rbp)
+0x4021e5:5:jmp 00000000004024e3 <hdmi_audio_coding_type_ext_get_name+0xfc3>
+0x4021ea:5:mov $0x5e7ca75,%eax
+0x4021ef:5:mov $0xda8969e2,%ecx
+0x4021f4:7:mov 0x405040,%edx
+0x4021fb:7:mov 0x405050,%esi
+0x402202:2:mov %edx,%edi
+0x402204:6:sub $0x2ece9ba8,%edi
+0x40220a:3:sub $0x1,%edi
+0x40220d:6:add $0x2ece9ba8,%edi
+0x402213:3:imul %edi,%edx
+0x402216:3:and $0x1,%edx
+0x402219:3:cmp $0x0,%edx
+0x40221c:4:sete %r8b
+0x402220:3:cmp $0xa,%esi
+0x402223:4:setl %r9b
+0x402227:3:mov %r8b,%r10b
+0x40222a:3:and %r9b,%r10b
+0x40222d:3:xor %r9b,%r8b
+0x402230:3:or %r8b,%r10b
+0x402233:4:test $0x1,%r10b
+0x402237:3:cmovne %ecx,%eax
+0x40223a:3:mov %eax,-0x48(%rbp)
+0x40223d:5:jmp 00000000004024e3 <hdmi_audio_coding_type_ext_get_name+0xfc3>
+0x402242:5:mov $0x5e7ca75,%eax
+0x402247:5:mov $0x766b32d,%ecx
+0x40224c:2:mov $0x1,%dl
+0x40224e:10:movabs $0x403105,%rsi
+0x402258:4:mov -0x40(%rbp),%rdi
+0x40225c:3:mov %rsi,(%rdi)
+0x40225f:8:mov 0x405040,%r8d
+0x402267:8:mov 0x405050,%r9d
+0x40226f:3:mov %r8d,%r10d
+0x402272:7:sub $0x2620d396,%r10d
+0x402279:4:sub $0x1,%r10d
+0x40227d:7:add $0x2620d396,%r10d
+0x402284:4:imul %r10d,%r8d
+0x402288:4:and $0x1,%r8d
+0x40228c:4:cmp $0x0,%r8d
+0x402290:4:sete %r11b
+0x402294:4:cmp $0xa,%r9d
+0x402298:3:setl %bl
+0x40229b:3:mov %r11b,%r14b
+0x40229e:4:xor $0xff,%r14b
+0x4022a2:3:mov %bl,%r15b
+0x4022a5:4:xor $0xff,%r15b
+0x4022a9:3:xor $0x0,%dl
+0x4022ac:3:mov %r14b,%r12b
+0x4022af:4:and $0x0,%r12b
+0x4022b3:3:and %dl,%r11b
+0x4022b6:3:mov %r15b,%r13b
+0x4022b9:4:and $0x0,%r13b
+0x4022bd:2:and %dl,%bl
+0x4022bf:3:or %r11b,%r12b
+0x4022c2:3:or %bl,%r13b
+0x4022c5:3:xor %r13b,%r12b
+0x4022c8:3:or %r15b,%r14b
+0x4022cb:4:xor $0xff,%r14b
+0x4022cf:3:or $0x0,%dl
+0x4022d2:3:and %dl,%r14b
+0x4022d5:3:or %r14b,%r12b
+0x4022d8:4:test $0x1,%r12b
+0x4022dc:3:cmovne %ecx,%eax
+0x4022df:3:mov %eax,-0x48(%rbp)
+0x4022e2:5:jmp 00000000004024e3 <hdmi_audio_coding_type_ext_get_name+0xfc3>
+0x4022e7:7:movl $0x5c2e414,-0x48(%rbp)
+0x4022ee:5:jmp 00000000004024e3 <hdmi_audio_coding_type_ext_get_name+0xfc3>
+0x4022f3:5:mov $0xdbe5f63f,%eax
+0x4022f8:5:mov $0x59a96173,%ecx
+0x4022fd:7:mov 0x405040,%edx
+0x402304:7:mov 0x405050,%esi
+0x40230b:2:mov %edx,%edi
+0x40230d:6:add $0xafae2ad1,%edi
+0x402313:3:sub $0x1,%edi
+0x402316:6:sub $0xafae2ad1,%edi
+0x40231c:3:imul %edi,%edx
+0x40231f:3:and $0x1,%edx
+0x402322:3:cmp $0x0,%edx
+0x402325:4:sete %r8b
+0x402329:3:cmp $0xa,%esi
+0x40232c:4:setl %r9b
+0x402330:3:mov %r8b,%r10b
+0x402333:3:and %r9b,%r10b
+0x402336:3:xor %r9b,%r8b
+0x402339:3:or %r8b,%r10b
+0x40233c:4:test $0x1,%r10b
+0x402340:3:cmovne %ecx,%eax
+0x402343:3:mov %eax,-0x48(%rbp)
+0x402346:5:jmp 00000000004024e3 <hdmi_audio_coding_type_ext_get_name+0xfc3>
+0x40234b:5:mov $0xdbe5f63f,%eax
+0x402350:5:mov $0xa82bc199,%ecx
+0x402355:2:xor %edx,%edx
+0x402357:10:movabs $0x403109,%rsi
+0x402361:4:mov -0x40(%rbp),%rdi
+0x402365:3:mov %rsi,(%rdi)
+0x402368:8:mov 0x405040,%r8d
+0x402370:8:mov 0x405050,%r9d
+0x402378:3:sub $0x1,%edx
+0x40237b:3:mov %r8d,%r10d
+0x40237e:3:add %edx,%r10d
+0x402381:4:imul %r10d,%r8d
+0x402385:4:and $0x1,%r8d
+0x402389:4:cmp $0x0,%r8d
+0x40238d:4:sete %r11b
+0x402391:4:cmp $0xa,%r9d
+0x402395:3:setl %bl
+0x402398:3:mov %r11b,%r14b
+0x40239b:3:and %bl,%r14b
+0x40239e:3:xor %bl,%r11b
+0x4023a1:3:or %r11b,%r14b
+0x4023a4:4:test $0x1,%r14b
+0x4023a8:3:cmovne %ecx,%eax
+0x4023ab:3:mov %eax,-0x48(%rbp)
+0x4023ae:5:jmp 00000000004024e3 <hdmi_audio_coding_type_ext_get_name+0xfc3>
+0x4023b3:7:movl $0x5c2e414,-0x48(%rbp)
+0x4023ba:5:jmp 00000000004024e3 <hdmi_audio_coding_type_ext_get_name+0xfc3>
+0x4023bf:10:movabs $0x403127,%rax
+0x4023c9:4:mov -0x40(%rbp),%rcx
+0x4023cd:3:mov %rax,(%rcx)
+0x4023d0:7:movl $0x5c2e414,-0x48(%rbp)
+0x4023d7:5:jmp 00000000004024e3 <hdmi_audio_coding_type_ext_get_name+0xfc3>
+0x4023dc:7:movl $0x64100678,-0x48(%rbp)
+0x4023e3:5:jmp 00000000004024e3 <hdmi_audio_coding_type_ext_get_name+0xfc3>
+0x4023e8:10:movabs $0x403145,%rax
+0x4023f2:4:mov -0x40(%rbp),%rcx
+0x4023f6:3:mov %rax,(%rcx)
+0x4023f9:7:movl $0x5c2e414,-0x48(%rbp)
+0x402400:5:jmp 00000000004024e3 <hdmi_audio_coding_type_ext_get_name+0xfc3>
+0x402405:4:mov -0x40(%rbp),%rax
+0x402409:3:mov (%rax),%rax
+0x40240c:4:lea -0x28(%rbp),%rsp
+0x402410:1:pop %rbx
+0x402411:2:pop %r12
+0x402413:2:pop %r13
+0x402415:2:pop %r14
+0x402417:2:pop %r15
+0x402419:1:pop %rbp
+0x40241a:1:ret
+0x40241b:3:mov %rsp,%rax
+0x40241e:4:add $0xfffffffffffffff0,%rax
+0x402422:3:mov %rax,%rsp
+0x402425:3:mov %rsp,%rax
+0x402428:4:add $0xfffffffffffffff0,%rax
+0x40242c:3:mov %rax,%rsp
+0x40242f:3:mov -0x4c(%rbp),%ecx
+0x402432:2:mov %ecx,(%rax)
+0x402434:7:movl $0xeb362835,-0x48(%rbp)
+0x40243b:5:jmp 00000000004024e3 <hdmi_audio_coding_type_ext_get_name+0xfc3>
+0x402440:4:mov -0x38(%rbp),%rax
+0x402444:7:movl $0x4384c216,-0x48(%rbp)
+0x40244b:7:mov %rax,-0x120(%rbp)
+0x402452:5:jmp 00000000004024e3 <hdmi_audio_coding_type_ext_get_name+0xfc3>
+0x402457:10:movabs $0x4030df,%rax
+0x402461:4:mov -0x40(%rbp),%rcx
+0x402465:3:mov %rax,(%rcx)
+0x402468:7:movl $0x8527ec2e,-0x48(%rbp)
+0x40246f:5:jmp 00000000004024e3 <hdmi_audio_coding_type_ext_get_name+0xfc3>
+0x402474:10:movabs $0x4030ed,%rax
+0x40247e:4:mov -0x40(%rbp),%rcx
+0x402482:3:mov %rax,(%rcx)
+0x402485:7:movl $0xdb337e48,-0x48(%rbp)
+0x40248c:5:jmp 00000000004024e3 <hdmi_audio_coding_type_ext_get_name+0xfc3>
+0x402491:10:movabs $0x4030ca,%rax
+0x40249b:4:mov -0x40(%rbp),%rcx
+0x40249f:3:mov %rax,(%rcx)
+0x4024a2:7:movl $0x5a194b08,-0x48(%rbp)
+0x4024a9:5:jmp 00000000004024e3 <hdmi_audio_coding_type_ext_get_name+0xfc3>
+0x4024ae:10:movabs $0x403105,%rax
+0x4024b8:4:mov -0x40(%rbp),%rcx
+0x4024bc:3:mov %rax,(%rcx)
+0x4024bf:7:movl $0xda8969e2,-0x48(%rbp)
+0x4024c6:5:jmp 00000000004024e3 <hdmi_audio_coding_type_ext_get_name+0xfc3>
+0x4024cb:10:movabs $0x403109,%rax
+0x4024d5:4:mov -0x40(%rbp),%rcx
+0x4024d9:3:mov %rax,(%rcx)
+0x4024dc:7:movl $0x59a96173,-0x48(%rbp)
+0x4024e3:5:jmp 0000000000401581 <hdmi_audio_coding_type_ext_get_name+0x61>
+0x4024e8:8:nopl 0x0(%rax,%rax,1)
+0x4024f0:1:push %rbp
+0x4024f1:3:mov %rsp,%rbp
+0x4024f4:2:push %r15
+0x4024f6:2:push %r14
+0x4024f8:1:push %rbx
+0x4024f9:7:sub $0x88,%rsp
+0x402500:7:movl $0x0,-0x28(%rbp)
+0x402507:3:mov %edi,-0x2c(%rbp)
+0x40250a:4:mov %rsi,-0x38(%rbp)
+0x40250e:3:mov -0x2c(%rbp),%edi
+0x402511:3:mov %edi,-0x24(%rbp)
+0x402514:7:movl $0xc3d3b207,-0x4c(%rbp)
+0x40251b:3:mov -0x4c(%rbp),%eax
+0x40251e:2:mov %eax,%ecx
+0x402520:6:sub $0xa3343cc7,%ecx
+0x402526:3:mov %eax,-0x50(%rbp)
+0x402529:3:mov %ecx,-0x54(%rbp)
+0x40252c:6:je 0000000000402821 <main+0x331>
+0x402532:5:jmp 0000000000402537 <main+0x47>
+0x402537:3:mov -0x50(%rbp),%eax
+0x40253a:5:sub $0xade78f5f,%eax
+0x40253f:3:mov %eax,-0x58(%rbp)
+0x402542:6:je 0000000000402806 <main+0x316>
+0x402548:5:jmp 000000000040254d <main+0x5d>
+0x40254d:3:mov -0x50(%rbp),%eax
+0x402550:5:sub $0xb2c37e31,%eax
+0x402555:3:mov %eax,-0x5c(%rbp)
+0x402558:6:je 0000000000402a57 <main+0x567>
+0x40255e:5:jmp 0000000000402563 <main+0x73>
+0x402563:3:mov -0x50(%rbp),%eax
+0x402566:5:sub $0xb3a39e7c,%eax
+0x40256b:3:mov %eax,-0x60(%rbp)
+0x40256e:6:je 0000000000402ac1 <main+0x5d1>
+0x402574:5:jmp 0000000000402579 <main+0x89>
+0x402579:3:mov -0x50(%rbp),%eax
+0x40257c:5:sub $0xc3d3b207,%eax
+0x402581:3:mov %eax,-0x64(%rbp)
+0x402584:6:je 00000000004026c4 <main+0x1d4>
+0x40258a:5:jmp 000000000040258f <main+0x9f>
+0x40258f:3:mov -0x50(%rbp),%eax
+0x402592:5:sub $0xe2e99569,%eax
+0x402597:3:mov %eax,-0x68(%rbp)
+0x40259a:6:je 00000000004027fa <main+0x30a>
+0x4025a0:5:jmp 00000000004025a5 <main+0xb5>
+0x4025a5:3:mov -0x50(%rbp),%eax
+0x4025a8:5:sub $0xec1cf0ba,%eax
+0x4025ad:3:mov %eax,-0x6c(%rbp)
+0x4025b0:6:je 00000000004026df <main+0x1ef>
+0x4025b6:5:jmp 00000000004025bb <main+0xcb>
+0x4025bb:3:mov -0x50(%rbp),%eax
+0x4025be:5:sub $0xe80ed32,%eax
+0x4025c3:3:mov %eax,-0x70(%rbp)
+0x4025c6:6:je 0000000000402787 <main+0x297>
+0x4025cc:5:jmp 00000000004025d1 <main+0xe1>
+0x4025d1:3:mov -0x50(%rbp),%eax
+0x4025d4:5:sub $0x10eeb313,%eax
+0x4025d9:3:mov %eax,-0x74(%rbp)
+0x4025dc:6:je 00000000004029c7 <main+0x4d7>
+0x4025e2:5:jmp 00000000004025e7 <main+0xf7>
+0x4025e7:3:mov -0x50(%rbp),%eax
+0x4025ea:5:sub $0x15e3e6de,%eax
+0x4025ef:3:mov %eax,-0x78(%rbp)
+0x4025f2:6:je 0000000000402894 <main+0x3a4>
+0x4025f8:5:jmp 00000000004025fd <main+0x10d>
+0x4025fd:3:mov -0x50(%rbp),%eax
+0x402600:5:sub $0x168c8d33,%eax
+0x402605:3:mov %eax,-0x7c(%rbp)
+0x402608:6:je 0000000000402877 <main+0x387>
+0x40260e:5:jmp 0000000000402613 <main+0x123>
+0x402613:3:mov -0x50(%rbp),%eax
+0x402616:5:sub $0x4a813fea,%eax
+0x40261b:3:mov %eax,-0x80(%rbp)
+0x40261e:6:je 0000000000402add <main+0x5ed>
+0x402624:5:jmp 0000000000402629 <main+0x139>
+0x402629:3:mov -0x50(%rbp),%eax
+0x40262c:5:sub $0x5cc18ab8,%eax
+0x402631:6:mov %eax,-0x84(%rbp)
+0x402637:6:je 00000000004029bb <main+0x4cb>
+0x40263d:5:jmp 0000000000402642 <main+0x152>
+0x402642:3:mov -0x50(%rbp),%eax
+0x402645:5:sub $0x63be483f,%eax
+0x40264a:6:mov %eax,-0x88(%rbp)
+0x402650:6:je 00000000004026f7 <main+0x207>
+0x402656:5:jmp 000000000040265b <main+0x16b>
+0x40265b:3:mov -0x50(%rbp),%eax
+0x40265e:5:sub $0x6ef5f0aa,%eax
+0x402663:6:mov %eax,-0x8c(%rbp)
+0x402669:6:je 0000000000402883 <main+0x393>
+0x40266f:5:jmp 0000000000402674 <main+0x184>
+0x402674:3:mov -0x50(%rbp),%eax
+0x402677:5:sub $0x72f29c70,%eax
+0x40267c:6:mov %eax,-0x90(%rbp)
+0x402682:6:je 0000000000402ab0 <main+0x5c0>
+0x402688:5:jmp 000000000040268d <main+0x19d>
+0x40268d:3:mov -0x50(%rbp),%eax
+0x402690:5:sub $0x76c34760,%eax
+0x402695:6:mov %eax,-0x94(%rbp)
+0x40269b:6:je 0000000000402924 <main+0x434>
+0x4026a1:5:jmp 00000000004026a6 <main+0x1b6>
+0x4026a6:3:mov -0x50(%rbp),%eax
+0x4026a9:5:sub $0x7d6ca76d,%eax
+0x4026ae:6:mov %eax,-0x98(%rbp)
+0x4026b4:6:je 0000000000402af0 <main+0x600>
+0x4026ba:5:jmp 00000000004026bf <main+0x1cf>
+0x4026bf:5:jmp 0000000000402af7 <main+0x607>
+0x4026c4:5:mov $0x63be483f,%eax
+0x4026c9:5:mov $0xec1cf0ba,%ecx
+0x4026ce:3:mov -0x24(%rbp),%edx
+0x4026d1:3:cmp $0x2,%edx
+0x4026d4:3:cmovne %ecx,%eax
+0x4026d7:3:mov %eax,-0x4c(%rbp)
+0x4026da:5:jmp 0000000000402af7 <main+0x607>
+0x4026df:5:call 00000000004014f0 <usage>
+0x4026e4:7:movl $0x1,-0x28(%rbp)
+0x4026eb:7:movl $0x10eeb313,-0x4c(%rbp)
+0x4026f2:5:jmp 0000000000402af7 <main+0x607>
+0x4026f7:5:mov $0xb3a39e7c,%eax
+0x4026fc:5:mov $0xe80ed32,%ecx
+0x402701:2:mov $0x1,%dl
+0x402703:7:mov 0x405060,%esi
+0x40270a:7:mov 0x40504c,%edi
+0x402711:3:mov %esi,%r8d
+0x402714:7:sub $0x76f9a67b,%r8d
+0x40271b:4:sub $0x1,%r8d
+0x40271f:7:add $0x76f9a67b,%r8d
+0x402726:4:imul %r8d,%esi
+0x40272a:3:and $0x1,%esi
+0x40272d:3:cmp $0x0,%esi
+0x402730:4:sete %r9b
+0x402734:3:cmp $0xa,%edi
+0x402737:4:setl %r10b
+0x40273b:3:mov %r9b,%r11b
+0x40273e:4:xor $0xff,%r11b
+0x402742:3:mov %r10b,%bl
+0x402745:3:xor $0xff,%bl
+0x402748:3:xor $0x0,%dl
+0x40274b:3:mov %r11b,%r14b
+0x40274e:4:and $0x0,%r14b
+0x402752:3:and %dl,%r9b
+0x402755:3:mov %bl,%r15b
+0x402758:4:and $0x0,%r15b
+0x40275c:3:and %dl,%r10b
+0x40275f:3:or %r9b,%r14b
+0x402762:3:or %r10b,%r15b
+0x402765:3:xor %r15b,%r14b
+0x402768:3:or %bl,%r11b
+0x40276b:4:xor $0xff,%r11b
+0x40276f:3:or $0x0,%dl
+0x402772:3:and %dl,%r11b
+0x402775:3:or %r11b,%r14b
+0x402778:4:test $0x1,%r14b
+0x40277c:3:cmovne %ecx,%eax
+0x40277f:3:mov %eax,-0x4c(%rbp)
+0x402782:5:jmp 0000000000402af7 <main+0x607>
+0x402787:4:mov -0x38(%rbp),%rax
+0x40278b:4:mov 0x8(%rax),%rdi
+0x40278f:5:call 0000000000401040 <atoi@plt>
+0x402794:5:mov $0xb3a39e7c,%ecx
+0x402799:5:mov $0xe2e99569,%edx
+0x40279e:3:mov %eax,-0x3c(%rbp)
+0x4027a1:3:mov -0x3c(%rbp),%eax
+0x4027a4:3:mov %eax,-0x20(%rbp)
+0x4027a7:7:mov 0x405060,%eax
+0x4027ae:7:mov 0x40504c,%esi
+0x4027b5:3:mov %eax,%r8d
+0x4027b8:7:add $0x11ba2045,%r8d
+0x4027bf:4:sub $0x1,%r8d
+0x4027c3:7:sub $0x11ba2045,%r8d
+0x4027ca:4:imul %r8d,%eax
+0x4027ce:3:and $0x1,%eax
+0x4027d1:3:cmp $0x0,%eax
+0x4027d4:4:sete %r9b
+0x4027d8:3:cmp $0xa,%esi
+0x4027db:4:setl %r10b
+0x4027df:3:mov %r9b,%r11b
+0x4027e2:3:and %r10b,%r11b
+0x4027e5:3:xor %r10b,%r9b
+0x4027e8:3:or %r9b,%r11b
+0x4027eb:4:test $0x1,%r11b
+0x4027ef:3:cmovne %edx,%ecx
+0x4027f2:3:mov %ecx,-0x4c(%rbp)
+0x4027f5:5:jmp 0000000000402af7 <main+0x607>
+0x4027fa:7:movl $0xade78f5f,-0x4c(%rbp)
+0x402801:5:jmp 0000000000402af7 <main+0x607>
+0x402806:5:mov $0x168c8d33,%eax
+0x40280b:5:mov $0xa3343cc7,%ecx
+0x402810:3:mov -0x20(%rbp),%edx
+0x402813:3:cmp $0x0,%edx
+0x402816:3:cmove %ecx,%eax
+0x402819:3:mov %eax,-0x4c(%rbp)
+0x40281c:5:jmp 0000000000402af7 <main+0x607>
+0x402821:7:movl $0x0,-0x40(%rbp)
+0x402828:3:mov -0x40(%rbp),%edi
+0x40282b:5:call 0000000000401520 <hdmi_audio_coding_type_ext_get_name>
+0x402830:10:movabs $0x40314e,%rdi
+0x40283a:5:mov $0x1a,%ecx
+0x40283f:4:mov %rax,-0x48(%rbp)
+0x402843:4:mov -0x48(%rbp),%rax
+0x402847:3:movsbl (%rax),%eax
+0x40284a:1:cltd
+0x40284b:2:idiv %ecx
+0x40284d:6:add $0xb0ec9a29,%edx
+0x402853:3:add $0x61,%edx
+0x402856:6:sub $0xb0ec9a29,%edx
+0x40285c:2:mov %edx,%esi
+0x40285e:2:mov $0x0,%al
+0x402860:5:call 0000000000401030 <printf@plt>
+0x402865:7:movl $0x15e3e6de,-0x4c(%rbp)
+0x40286c:6:mov %eax,-0x9c(%rbp)
+0x402872:5:jmp 0000000000402af7 <main+0x607>
+0x402877:7:movl $0x6ef5f0aa,-0x4c(%rbp)
+0x40287e:5:jmp 0000000000402af7 <main+0x607>
+0x402883:5:call 00000000004014f0 <usage>
+0x402888:7:movl $0x15e3e6de,-0x4c(%rbp)
+0x40288f:5:jmp 0000000000402af7 <main+0x607>
+0x402894:5:mov $0x4a813fea,%eax
+0x402899:5:mov $0x76c34760,%ecx
+0x40289e:2:mov $0x1,%dl
+0x4028a0:7:mov 0x405060,%esi
+0x4028a7:7:mov 0x40504c,%edi
+0x4028ae:3:mov %esi,%r8d
+0x4028b1:7:add $0x70c1e21d,%r8d
+0x4028b8:4:sub $0x1,%r8d
+0x4028bc:7:sub $0x70c1e21d,%r8d
+0x4028c3:4:imul %r8d,%esi
+0x4028c7:3:and $0x1,%esi
+0x4028ca:3:cmp $0x0,%esi
+0x4028cd:4:sete %r9b
+0x4028d1:3:cmp $0xa,%edi
+0x4028d4:4:setl %r10b
+0x4028d8:3:mov %r9b,%r11b
+0x4028db:4:xor $0xff,%r11b
+0x4028df:3:mov %r10b,%bl
+0x4028e2:3:xor $0xff,%bl
+0x4028e5:3:xor $0x1,%dl
+0x4028e8:3:mov %r11b,%r14b
+0x4028eb:4:and $0xff,%r14b
+0x4028ef:3:and %dl,%r9b
+0x4028f2:3:mov %bl,%r15b
+0x4028f5:4:and $0xff,%r15b
+0x4028f9:3:and %dl,%r10b
+0x4028fc:3:or %r9b,%r14b
+0x4028ff:3:or %r10b,%r15b
+0x402902:3:xor %r15b,%r14b
+0x402905:3:or %bl,%r11b
+0x402908:4:xor $0xff,%r11b
+0x40290c:3:or $0x1,%dl
+0x40290f:3:and %dl,%r11b
+0x402912:3:or %r11b,%r14b
+0x402915:4:test $0x1,%r14b
+0x402919:3:cmovne %ecx,%eax
+0x40291c:3:mov %eax,-0x4c(%rbp)
+0x40291f:5:jmp 0000000000402af7 <main+0x607>
+0x402924:5:mov $0x4a813fea,%eax
+0x402929:5:mov $0x5cc18ab8,%ecx
+0x40292e:2:mov $0x1,%dl
+0x402930:7:movl $0x0,-0x28(%rbp)
+0x402937:7:mov 0x405060,%esi
+0x40293e:7:mov 0x40504c,%edi
+0x402945:3:mov %esi,%r8d
+0x402948:7:add $0x4a77a9b8,%r8d
+0x40294f:4:sub $0x1,%r8d
+0x402953:7:sub $0x4a77a9b8,%r8d
+0x40295a:4:imul %r8d,%esi
+0x40295e:3:and $0x1,%esi
+0x402961:3:cmp $0x0,%esi
+0x402964:4:sete %r9b
+0x402968:3:cmp $0xa,%edi
+0x40296b:4:setl %r10b
+0x40296f:3:mov %r9b,%r11b
+0x402972:4:xor $0xff,%r11b
+0x402976:3:mov %r10b,%bl
+0x402979:3:xor $0xff,%bl
+0x40297c:3:xor $0x1,%dl
+0x40297f:3:mov %r11b,%r14b
+0x402982:4:and $0xff,%r14b
+0x402986:3:and %dl,%r9b
+0x402989:3:mov %bl,%r15b
+0x40298c:4:and $0xff,%r15b
+0x402990:3:and %dl,%r10b
+0x402993:3:or %r9b,%r14b
+0x402996:3:or %r10b,%r15b
+0x402999:3:xor %r15b,%r14b
+0x40299c:3:or %bl,%r11b
+0x40299f:4:xor $0xff,%r11b
+0x4029a3:3:or $0x1,%dl
+0x4029a6:3:and %dl,%r11b
+0x4029a9:3:or %r11b,%r14b
+0x4029ac:4:test $0x1,%r14b
+0x4029b0:3:cmovne %ecx,%eax
+0x4029b3:3:mov %eax,-0x4c(%rbp)
+0x4029b6:5:jmp 0000000000402af7 <main+0x607>
+0x4029bb:7:movl $0x10eeb313,-0x4c(%rbp)
+0x4029c2:5:jmp 0000000000402af7 <main+0x607>
+0x4029c7:5:mov $0x7d6ca76d,%eax
+0x4029cc:5:mov $0xb2c37e31,%ecx
+0x4029d1:2:mov $0x1,%dl
+0x4029d3:7:mov 0x405060,%esi
+0x4029da:7:mov 0x40504c,%edi
+0x4029e1:3:mov %esi,%r8d
+0x4029e4:7:add $0x5c1bb190,%r8d
+0x4029eb:4:sub $0x1,%r8d
+0x4029ef:7:sub $0x5c1bb190,%r8d
+0x4029f6:4:imul %r8d,%esi
+0x4029fa:3:and $0x1,%esi
+0x4029fd:3:cmp $0x0,%esi
+0x402a00:4:sete %r9b
+0x402a04:3:cmp $0xa,%edi
+0x402a07:4:setl %r10b
+0x402a0b:3:mov %r9b,%r11b
+0x402a0e:4:xor $0xff,%r11b
+0x402a12:3:mov %r10b,%bl
+0x402a15:3:xor $0xff,%bl
+0x402a18:3:xor $0x1,%dl
+0x402a1b:3:mov %r11b,%r14b
+0x402a1e:4:and $0xff,%r14b
+0x402a22:3:and %dl,%r9b
+0x402a25:3:mov %bl,%r15b
+0x402a28:4:and $0xff,%r15b
+0x402a2c:3:and %dl,%r10b
+0x402a2f:3:or %r9b,%r14b
+0x402a32:3:or %r10b,%r15b
+0x402a35:3:xor %r15b,%r14b
+0x402a38:3:or %bl,%r11b
+0x402a3b:4:xor $0xff,%r11b
+0x402a3f:3:or $0x1,%dl
+0x402a42:3:and %dl,%r11b
+0x402a45:3:or %r11b,%r14b
+0x402a48:4:test $0x1,%r14b
+0x402a4c:3:cmovne %ecx,%eax
+0x402a4f:3:mov %eax,-0x4c(%rbp)
+0x402a52:5:jmp 0000000000402af7 <main+0x607>
+0x402a57:5:mov $0x7d6ca76d,%eax
+0x402a5c:5:mov $0x72f29c70,%ecx
+0x402a61:2:xor %edx,%edx
+0x402a63:3:mov -0x28(%rbp),%esi
+0x402a66:3:mov %esi,-0x1c(%rbp)
+0x402a69:7:mov 0x405060,%esi
+0x402a70:7:mov 0x40504c,%edi
+0x402a77:3:sub $0x1,%edx
+0x402a7a:3:mov %esi,%r8d
+0x402a7d:3:add %edx,%r8d
+0x402a80:4:imul %r8d,%esi
+0x402a84:3:and $0x1,%esi
+0x402a87:3:cmp $0x0,%esi
+0x402a8a:4:sete %r9b
+0x402a8e:3:cmp $0xa,%edi
+0x402a91:4:setl %r10b
+0x402a95:3:mov %r9b,%r11b
+0x402a98:3:and %r10b,%r11b
+0x402a9b:3:xor %r10b,%r9b
+0x402a9e:3:or %r9b,%r11b
+0x402aa1:4:test $0x1,%r11b
+0x402aa5:3:cmovne %ecx,%eax
+0x402aa8:3:mov %eax,-0x4c(%rbp)
+0x402aab:5:jmp 0000000000402af7 <main+0x607>
+0x402ab0:3:mov -0x1c(%rbp),%eax
+0x402ab3:7:add $0x88,%rsp
+0x402aba:1:pop %rbx
+0x402abb:2:pop %r14
+0x402abd:2:pop %r15
+0x402abf:1:pop %rbp
+0x402ac0:1:ret
+0x402ac1:4:mov -0x38(%rbp),%rax
+0x402ac5:4:mov 0x8(%rax),%rdi
+0x402ac9:5:call 0000000000401040 <atoi@plt>
+0x402ace:3:mov %eax,-0x3c(%rbp)
+0x402ad1:7:movl $0xe80ed32,-0x4c(%rbp)
+0x402ad8:5:jmp 0000000000402af7 <main+0x607>
+0x402add:7:movl $0x0,-0x28(%rbp)
+0x402ae4:7:movl $0x76c34760,-0x4c(%rbp)
+0x402aeb:5:jmp 0000000000402af7 <main+0x607>
+0x402af0:7:movl $0xb2c37e31,-0x4c(%rbp)
+0x402af7:5:jmp 000000000040251b <main+0x2b>
+0x402afc:4:endbr64
+0x402b00:4:sub $0x8,%rsp
+0x402b04:4:add $0x8,%rsp
+0x402b08:1:ret
