@@ -1,0 +1,1856 @@
+0x401000:4:endbr64
+0x401004:4:sub $0x8,%rsp
+0x401008:7:mov 0x3fe9(%rip),%rax
+0x40100f:3:test %rax,%rax
+0x401012:2:je 0000000000401016 <_init+0x16>
+0x401014:2:call *%rax
+0x401016:4:add $0x8,%rsp
+0x40101a:1:ret
+0x401020:6:push 0x3fe2(%rip)
+0x401026:6:jmp *0x3fe4(%rip)
+0x40102c:4:nopl 0x0(%rax)
+0x401030:6:jmp *0x3fe2(%rip)
+0x401036:5:push $0x0
+0x40103b:5:jmp 0000000000401020 <_init+0x20>
+0x401040:6:jmp *0x3fda(%rip)
+0x401046:5:push $0x1
+0x40104b:5:jmp 0000000000401020 <_init+0x20>
+0x401050:4:endbr64
+0x401054:2:xor %ebp,%ebp
+0x401056:3:mov %rdx,%r9
+0x401059:1:pop %rsi
+0x40105a:3:mov %rsp,%rdx
+0x40105d:4:and $0xfffffffffffffff0,%rsp
+0x401061:1:push %rax
+0x401062:1:push %rsp
+0x401063:3:xor %r8d,%r8d
+0x401066:2:xor %ecx,%ecx
+0x401068:7:mov $0x4029e0,%rdi
+0x40106f:6:call *0x3f7b(%rip)
+0x401075:1:hlt
+0x401076:10:cs nopw 0x0(%rax,%rax,1)
+0x401080:4:endbr64
+0x401084:1:ret
+0x401085:10:cs nopw 0x0(%rax,%rax,1)
+0x40108f:1:nop
+0x401090:5:mov $0x405038,%eax
+0x401095:6:cmp $0x405038,%rax
+0x40109b:2:je 00000000004010b0 <deregister_tm_clones+0x20>
+0x40109d:5:mov $0x0,%eax
+0x4010a2:3:test %rax,%rax
+0x4010a5:2:je 00000000004010b0 <deregister_tm_clones+0x20>
+0x4010a7:5:mov $0x405038,%edi
+0x4010ac:2:jmp *%rax
+0x4010ae:2:xchg %ax,%ax
+0x4010b0:1:ret
+0x4010b1:11:data16 cs nopw 0x0(%rax,%rax,1)
+0x4010bc:4:nopl 0x0(%rax)
+0x4010c0:5:mov $0x405038,%esi
+0x4010c5:7:sub $0x405038,%rsi
+0x4010cc:3:mov %rsi,%rax
+0x4010cf:4:shr $0x3f,%rsi
+0x4010d3:4:sar $0x3,%rax
+0x4010d7:3:add %rax,%rsi
+0x4010da:3:sar %rsi
+0x4010dd:2:je 00000000004010f0 <register_tm_clones+0x30>
+0x4010df:5:mov $0x0,%eax
+0x4010e4:3:test %rax,%rax
+0x4010e7:2:je 00000000004010f0 <register_tm_clones+0x30>
+0x4010e9:5:mov $0x405038,%edi
+0x4010ee:2:jmp *%rax
+0x4010f0:1:ret
+0x4010f1:11:data16 cs nopw 0x0(%rax,%rax,1)
+0x4010fc:4:nopl 0x0(%rax)
+0x401100:4:endbr64
+0x401104:7:cmpb $0x0,0x3f2d(%rip)
+0x40110b:2:jne 0000000000401120 <__do_global_dtors_aux+0x20>
+0x40110d:1:push %rbp
+0x40110e:3:mov %rsp,%rbp
+0x401111:5:call 0000000000401090 <deregister_tm_clones>
+0x401116:7:movb $0x1,0x3f1b(%rip)
+0x40111d:1:pop %rbp
+0x40111e:1:ret
+0x40111f:1:nop
+0x401120:1:ret
+0x401121:11:data16 cs nopw 0x0(%rax,%rax,1)
+0x40112c:4:nopl 0x0(%rax)
+0x401130:4:endbr64
+0x401134:2:jmp 00000000004010c0 <register_tm_clones>
+0x401136:10:cs nopw 0x0(%rax,%rax,1)
+0x401140:1:push %rbp
+0x401141:3:mov %rsp,%rbp
+0x401144:5:mov $0x19,%eax
+0x401149:2:xor %ecx,%ecx
+0x40114b:7:movl $0x0,-0x4(%rbp)
+0x401152:3:mov -0x4(%rbp),%edx
+0x401155:3:sub $0x1,%ecx
+0x401158:2:sub %ecx,%edx
+0x40115a:3:mov %edx,-0x4(%rbp)
+0x40115d:3:mov %eax,-0x8(%rbp)
+0x401160:2:mov %edx,%eax
+0x401162:1:cltd
+0x401163:3:mov -0x8(%rbp),%ecx
+0x401166:2:idiv %ecx
+0x401168:3:movslq %edx,%rsi
+0x40116b:7:mov 0x403010(,%rsi,4),%edx
+0x401172:2:mov %edx,%eax
+0x401174:1:pop %rbp
+0x401175:1:ret
+0x401176:10:cs nopw 0x0(%rax,%rax,1)
+0x401180:1:push %rbp
+0x401181:3:mov %rsp,%rbp
+0x401184:8:movss 0x1e78(%rip),%xmm0
+0x40118c:7:movl $0x0,-0x4(%rbp)
+0x401193:3:mov -0x4(%rbp),%eax
+0x401196:2:neg %eax
+0x401198:5:mov $0x1,%ecx
+0x40119d:2:sub %eax,%ecx
+0x40119f:3:mov %ecx,-0x4(%rbp)
+0x4011a2:3:movslq %ecx,%rdx
+0x4011a5:7:imul $0x51eb851f,%rdx,%rdx
+0x4011ac:3:mov %rdx,%rsi
+0x4011af:4:shr $0x3f,%rsi
+0x4011b3:2:mov %esi,%eax
+0x4011b5:4:sar $0x23,%rdx
+0x4011b9:2:mov %edx,%edi
+0x4011bb:2:add %eax,%edi
+0x4011bd:2:mov %edi,%edx
+0x4011bf:3:lea (%rdx,%rdx,4),%eax
+0x4011c2:2:mov %eax,%edx
+0x4011c4:3:lea (%rdx,%rdx,4),%eax
+0x4011c7:2:sub %eax,%ecx
+0x4011c9:3:movslq %ecx,%rdx
+0x4011cc:7:mov 0x403010(,%rdx,4),%eax
+0x4011d3:2:mov %eax,%edx
+0x4011d5:5:cvtsi2ss %rdx,%xmm1
+0x4011da:4:divss %xmm0,%xmm1
+0x4011de:3:movaps %xmm1,%xmm0
+0x4011e1:1:pop %rbp
+0x4011e2:1:ret
+0x4011e3:13:data16 data16 data16 cs nopw 0x0(%rax,%rax,1)
+0x4011f0:1:push %rbp
+0x4011f1:3:mov %rsp,%rbp
+0x4011f4:4:sub $0x10,%rsp
+0x4011f8:10:movabs $0x403074,%rdi
+0x401202:10:movabs $0x403077,%rsi
+0x40120c:2:mov $0x0,%al
+0x40120e:5:call 0000000000401030 <printf@plt>
+0x401213:3:mov %eax,-0x4(%rbp)
+0x401216:4:add $0x10,%rsp
+0x40121a:1:pop %rbp
+0x40121b:1:ret
+0x40121c:4:nopl 0x0(%rax)
+0x401220:1:push %rbp
+0x401221:3:mov %rsp,%rbp
+0x401224:2:push %r15
+0x401226:2:push %r14
+0x401228:2:push %r13
+0x40122a:2:push %r12
+0x40122c:1:push %rbx
+0x40122d:7:sub $0x1d8,%rsp
+0x401234:7:mov 0x405054,%eax
+0x40123b:7:mov 0x40507c,%ecx
+0x401242:2:mov %eax,%edx
+0x401244:6:sub $0xbd3a85f2,%edx
+0x40124a:3:sub $0x1,%edx
+0x40124d:6:add $0xbd3a85f2,%edx
+0x401253:3:imul %edx,%eax
+0x401256:3:and $0x1,%eax
+0x401259:3:cmp $0x0,%eax
+0x40125c:4:sete %sil
+0x401260:4:and $0x1,%sil
+0x401264:4:mov %sil,-0x3a(%rbp)
+0x401268:3:cmp $0xa,%ecx
+0x40126b:4:setl %sil
+0x40126f:4:and $0x1,%sil
+0x401273:4:mov %sil,-0x39(%rbp)
+0x401277:7:movl $0x3df9ac61,-0x40(%rbp)
+0x40127e:3:mov %edi,-0x44(%rbp)
+0x401281:3:mov -0x40(%rbp),%eax
+0x401284:2:mov %eax,%ecx
+0x401286:6:sub $0x8c2b4793,%ecx
+0x40128c:3:mov %eax,-0x48(%rbp)
+0x40128f:3:mov %ecx,-0x4c(%rbp)
+0x401292:6:je 0000000000401fa7 <wacom_intuos_get_tool_type+0xd87>
+0x401298:5:jmp 000000000040129d <wacom_intuos_get_tool_type+0x7d>
+0x40129d:3:mov -0x48(%rbp),%eax
+0x4012a0:5:sub $0x95c8f3b9,%eax
+0x4012a5:3:mov %eax,-0x50(%rbp)
+0x4012a8:6:je 00000000004022b3 <wacom_intuos_get_tool_type+0x1093>
+0x4012ae:5:jmp 00000000004012b3 <wacom_intuos_get_tool_type+0x93>
+0x4012b3:3:mov -0x48(%rbp),%eax
+0x4012b6:5:sub $0x95f2d511,%eax
+0x4012bb:3:mov %eax,-0x54(%rbp)
+0x4012be:6:je 0000000000402835 <wacom_intuos_get_tool_type+0x1615>
+0x4012c4:5:jmp 00000000004012c9 <wacom_intuos_get_tool_type+0xa9>
+0x4012c9:3:mov -0x48(%rbp),%eax
+0x4012cc:5:sub $0x96deb004,%eax
+0x4012d1:3:mov %eax,-0x58(%rbp)
+0x4012d4:6:je 0000000000402886 <wacom_intuos_get_tool_type+0x1666>
+0x4012da:5:jmp 00000000004012df <wacom_intuos_get_tool_type+0xbf>
+0x4012df:3:mov -0x48(%rbp),%eax
+0x4012e2:5:sub $0x96f9d422,%eax
+0x4012e7:3:mov %eax,-0x5c(%rbp)
+0x4012ea:6:je 00000000004020f1 <wacom_intuos_get_tool_type+0xed1>
+0x4012f0:5:jmp 00000000004012f5 <wacom_intuos_get_tool_type+0xd5>
+0x4012f5:3:mov -0x48(%rbp),%eax
+0x4012f8:5:sub $0x99473498,%eax
+0x4012fd:3:mov %eax,-0x60(%rbp)
+0x401300:6:je 0000000000401e21 <wacom_intuos_get_tool_type+0xc01>
+0x401306:5:jmp 000000000040130b <wacom_intuos_get_tool_type+0xeb>
+0x40130b:3:mov -0x48(%rbp),%eax
+0x40130e:5:sub $0xa2d92ad4,%eax
+0x401313:3:mov %eax,-0x64(%rbp)
+0x401316:6:je 0000000000402484 <wacom_intuos_get_tool_type+0x1264>
+0x40131c:5:jmp 0000000000401321 <wacom_intuos_get_tool_type+0x101>
+0x401321:3:mov -0x48(%rbp),%eax
+0x401324:5:sub $0xa7295268,%eax
+0x401329:3:mov %eax,-0x68(%rbp)
+0x40132c:6:je 0000000000402169 <wacom_intuos_get_tool_type+0xf49>
+0x401332:5:jmp 0000000000401337 <wacom_intuos_get_tool_type+0x117>
+0x401337:3:mov -0x48(%rbp),%eax
+0x40133a:5:sub $0xac858dc1,%eax
+0x40133f:3:mov %eax,-0x6c(%rbp)
+0x401342:6:je 0000000000402187 <wacom_intuos_get_tool_type+0xf67>
+0x401348:5:jmp 000000000040134d <wacom_intuos_get_tool_type+0x12d>
+0x40134d:3:mov -0x48(%rbp),%eax
+0x401350:5:sub $0xad3e2590,%eax
+0x401355:3:mov %eax,-0x70(%rbp)
+0x401358:6:je 00000000004023fd <wacom_intuos_get_tool_type+0x11dd>
+0x40135e:5:jmp 0000000000401363 <wacom_intuos_get_tool_type+0x143>
+0x401363:3:mov -0x48(%rbp),%eax
+0x401366:5:sub $0xb274aa1c,%eax
+0x40136b:3:mov %eax,-0x74(%rbp)
+0x40136e:6:je 00000000004025dd <wacom_intuos_get_tool_type+0x13bd>
+0x401374:5:jmp 0000000000401379 <wacom_intuos_get_tool_type+0x159>
+0x401379:3:mov -0x48(%rbp),%eax
+0x40137c:5:sub $0xb38a5eaa,%eax
+0x401381:3:mov %eax,-0x78(%rbp)
+0x401384:6:je 000000000040241b <wacom_intuos_get_tool_type+0x11fb>
+0x40138a:5:jmp 000000000040138f <wacom_intuos_get_tool_type+0x16f>
+0x40138f:3:mov -0x48(%rbp),%eax
+0x401392:5:sub $0xb3c4339a,%eax
+0x401397:3:mov %eax,-0x7c(%rbp)
+0x40139a:6:je 0000000000402986 <wacom_intuos_get_tool_type+0x1766>
+0x4013a0:5:jmp 00000000004013a5 <wacom_intuos_get_tool_type+0x185>
+0x4013a5:3:mov -0x48(%rbp),%eax
+0x4013a8:5:sub $0xb72bd0dc,%eax
+0x4013ad:3:mov %eax,-0x80(%rbp)
+0x4013b0:6:je 0000000000401f89 <wacom_intuos_get_tool_type+0xd69>
+0x4013b6:5:jmp 00000000004013bb <wacom_intuos_get_tool_type+0x19b>
+0x4013bb:3:mov -0x48(%rbp),%eax
+0x4013be:5:sub $0xb8a8113c,%eax
+0x4013c3:6:mov %eax,-0x84(%rbp)
+0x4013c9:6:je 00000000004024a2 <wacom_intuos_get_tool_type+0x1282>
+0x4013cf:5:jmp 00000000004013d4 <wacom_intuos_get_tool_type+0x1b4>
+0x4013d4:3:mov -0x48(%rbp),%eax
+0x4013d7:5:sub $0xb8ce23bd,%eax
+0x4013dc:6:mov %eax,-0x88(%rbp)
+0x4013e2:6:je 00000000004025a1 <wacom_intuos_get_tool_type+0x1381>
+0x4013e8:5:jmp 00000000004013ed <wacom_intuos_get_tool_type+0x1cd>
+0x4013ed:3:mov -0x48(%rbp),%eax
+0x4013f0:5:sub $0xbf921528,%eax
+0x4013f5:6:mov %eax,-0x8c(%rbp)
+0x4013fb:6:je 0000000000402850 <wacom_intuos_get_tool_type+0x1630>
+0x401401:5:jmp 0000000000401406 <wacom_intuos_get_tool_type+0x1e6>
+0x401406:3:mov -0x48(%rbp),%eax
+0x401409:5:sub $0xc04fb13e,%eax
+0x40140e:6:mov %eax,-0x90(%rbp)
+0x401414:6:je 000000000040214b <wacom_intuos_get_tool_type+0xf2b>
+0x40141a:5:jmp 000000000040141f <wacom_intuos_get_tool_type+0x1ff>
+0x40141f:3:mov -0x48(%rbp),%eax
+0x401422:5:sub $0xc1dafe10,%eax
+0x401427:6:mov %eax,-0x94(%rbp)
+0x40142d:6:je 000000000040286b <wacom_intuos_get_tool_type+0x164b>
+0x401433:5:jmp 0000000000401438 <wacom_intuos_get_tool_type+0x218>
+0x401438:3:mov -0x48(%rbp),%eax
+0x40143b:5:sub $0xc2fb7c20,%eax
+0x401440:6:mov %eax,-0x98(%rbp)
+0x401446:6:je 0000000000402909 <wacom_intuos_get_tool_type+0x16e9>
+0x40144c:5:jmp 0000000000401451 <wacom_intuos_get_tool_type+0x231>
+0x401451:3:mov -0x48(%rbp),%eax
+0x401454:5:sub $0xc3245c95,%eax
+0x401459:6:mov %eax,-0x9c(%rbp)
+0x40145f:6:je 0000000000401dbb <wacom_intuos_get_tool_type+0xb9b>
+0x401465:5:jmp 000000000040146a <wacom_intuos_get_tool_type+0x24a>
+0x40146a:3:mov -0x48(%rbp),%eax
+0x40146d:5:sub $0xc7ad7125,%eax
+0x401472:6:mov %eax,-0xa0(%rbp)
+0x401478:6:je 0000000000402001 <wacom_intuos_get_tool_type+0xde1>
+0x40147e:5:jmp 0000000000401483 <wacom_intuos_get_tool_type+0x263>
+0x401483:3:mov -0x48(%rbp),%eax
+0x401486:5:sub $0xc9d8217a,%eax
+0x40148b:6:mov %eax,-0xa4(%rbp)
+0x401491:6:je 00000000004023df <wacom_intuos_get_tool_type+0x11bf>
+0x401497:5:jmp 000000000040149c <wacom_intuos_get_tool_type+0x27c>
+0x40149c:3:mov -0x48(%rbp),%eax
+0x40149f:5:sub $0xca808429,%eax
+0x4014a4:6:mov %eax,-0xa8(%rbp)
+0x4014aa:6:je 0000000000402583 <wacom_intuos_get_tool_type+0x1363>
+0x4014b0:5:jmp 00000000004014b5 <wacom_intuos_get_tool_type+0x295>
+0x4014b5:3:mov -0x48(%rbp),%eax
+0x4014b8:5:sub $0xcee42142,%eax
+0x4014bd:6:mov %eax,-0xac(%rbp)
+0x4014c3:6:je 00000000004027ff <wacom_intuos_get_tool_type+0x15df>
+0x4014c9:5:jmp 00000000004014ce <wacom_intuos_get_tool_type+0x2ae>
+0x4014ce:3:mov -0x48(%rbp),%eax
+0x4014d1:5:sub $0xd3b3538f,%eax
+0x4014d6:6:mov %eax,-0xb0(%rbp)
+0x4014dc:6:je 0000000000401f11 <wacom_intuos_get_tool_type+0xcf1>
+0x4014e2:5:jmp 00000000004014e7 <wacom_intuos_get_tool_type+0x2c7>
+0x4014e7:3:mov -0x48(%rbp),%eax
+0x4014ea:5:sub $0xd796c35d,%eax
+0x4014ef:6:mov %eax,-0xb4(%rbp)
+0x4014f5:6:je 0000000000402655 <wacom_intuos_get_tool_type+0x1435>
+0x4014fb:5:jmp 0000000000401500 <wacom_intuos_get_tool_type+0x2e0>
+0x401500:3:mov -0x48(%rbp),%eax
+0x401503:5:sub $0xdae8dffe,%eax
+0x401508:6:mov %eax,-0xb8(%rbp)
+0x40150e:6:je 0000000000402637 <wacom_intuos_get_tool_type+0x1417>
+0x401514:5:jmp 0000000000401519 <wacom_intuos_get_tool_type+0x2f9>
+0x401519:3:mov -0x48(%rbp),%eax
+0x40151c:5:sub $0xdd6451f5,%eax
+0x401521:6:mov %eax,-0xbc(%rbp)
+0x401527:6:je 00000000004027c9 <wacom_intuos_get_tool_type+0x15a9>
+0x40152d:5:jmp 0000000000401532 <wacom_intuos_get_tool_type+0x312>
+0x401532:3:mov -0x48(%rbp),%eax
+0x401535:5:sub $0xe1c6d31c,%eax
+0x40153a:6:mov %eax,-0xc0(%rbp)
+0x401540:6:je 0000000000402349 <wacom_intuos_get_tool_type+0x1129>
+0x401546:5:jmp 000000000040154b <wacom_intuos_get_tool_type+0x32b>
+0x40154b:3:mov -0x48(%rbp),%eax
+0x40154e:5:sub $0xe2344d91,%eax
+0x401553:6:mov %eax,-0xc4(%rbp)
+0x401559:6:je 0000000000402367 <wacom_intuos_get_tool_type+0x1147>
+0x40155f:5:jmp 0000000000401564 <wacom_intuos_get_tool_type+0x344>
+0x401564:3:mov -0x48(%rbp),%eax
+0x401567:5:sub $0xe29d21a0,%eax
+0x40156c:6:mov %eax,-0xc8(%rbp)
+0x401572:6:je 0000000000401e03 <wacom_intuos_get_tool_type+0xbe3>
+0x401578:5:jmp 000000000040157d <wacom_intuos_get_tool_type+0x35d>
+0x40157d:3:mov -0x48(%rbp),%eax
+0x401580:5:sub $0xe5b29286,%eax
+0x401585:6:mov %eax,-0xcc(%rbp)
+0x40158b:6:je 0000000000401ed5 <wacom_intuos_get_tool_type+0xcb5>
+0x401591:5:jmp 0000000000401596 <wacom_intuos_get_tool_type+0x376>
+0x401596:3:mov -0x48(%rbp),%eax
+0x401599:5:sub $0xebe905f4,%eax
+0x40159e:6:mov %eax,-0xd0(%rbp)
+0x4015a4:6:je 0000000000402439 <wacom_intuos_get_tool_type+0x1219>
+0x4015aa:5:jmp 00000000004015af <wacom_intuos_get_tool_type+0x38f>
+0x4015af:3:mov -0x48(%rbp),%eax
+0x4015b2:5:sub $0xec5d3db0,%eax
+0x4015b7:6:mov %eax,-0xd4(%rbp)
+0x4015bd:6:je 00000000004025bf <wacom_intuos_get_tool_type+0x139f>
+0x4015c3:5:jmp 00000000004015c8 <wacom_intuos_get_tool_type+0x3a8>
+0x4015c8:3:mov -0x48(%rbp),%eax
+0x4015cb:5:sub $0xef0d5396,%eax
+0x4015d0:6:mov %eax,-0xd8(%rbp)
+0x4015d6:6:je 000000000040223b <wacom_intuos_get_tool_type+0x101b>
+0x4015dc:5:jmp 00000000004015e1 <wacom_intuos_get_tool_type+0x3c1>
+0x4015e1:3:mov -0x48(%rbp),%eax
+0x4015e4:5:sub $0xf65d42e4,%eax
+0x4015e9:6:mov %eax,-0xdc(%rbp)
+0x4015ef:6:je 000000000040250b <wacom_intuos_get_tool_type+0x12eb>
+0x4015f5:5:jmp 00000000004015fa <wacom_intuos_get_tool_type+0x3da>
+0x4015fa:3:mov -0x48(%rbp),%eax
+0x4015fd:5:sub $0xf7b61577,%eax
+0x401602:6:mov %eax,-0xe0(%rbp)
+0x401608:6:je 0000000000401e7b <wacom_intuos_get_tool_type+0xc5b>
+0x40160e:5:jmp 0000000000401613 <wacom_intuos_get_tool_type+0x3f3>
+0x401613:3:mov -0x48(%rbp),%eax
+0x401616:5:sub $0xf9d0a53f,%eax
+0x40161b:6:mov %eax,-0xe4(%rbp)
+0x401621:6:je 0000000000401f2f <wacom_intuos_get_tool_type+0xd0f>
+0x401627:5:jmp 000000000040162c <wacom_intuos_get_tool_type+0x40c>
+0x40162c:3:mov -0x48(%rbp),%eax
+0x40162f:5:sub $0xf9f21551,%eax
+0x401634:6:mov %eax,-0xe8(%rbp)
+0x40163a:6:je 0000000000401e3f <wacom_intuos_get_tool_type+0xc1f>
+0x401640:5:jmp 0000000000401645 <wacom_intuos_get_tool_type+0x425>
+0x401645:3:mov -0x48(%rbp),%eax
+0x401648:5:sub $0xfb06a446,%eax
+0x40164d:6:mov %eax,-0xec(%rbp)
+0x401653:6:je 00000000004021c3 <wacom_intuos_get_tool_type+0xfa3>
+0x401659:5:jmp 000000000040165e <wacom_intuos_get_tool_type+0x43e>
+0x40165e:3:mov -0x48(%rbp),%eax
+0x401661:5:sub $0xfbbf8394,%eax
+0x401666:6:mov %eax,-0xf0(%rbp)
+0x40166c:6:je 00000000004028f0 <wacom_intuos_get_tool_type+0x16d0>
+0x401672:5:jmp 0000000000401677 <wacom_intuos_get_tool_type+0x457>
+0x401677:3:mov -0x48(%rbp),%eax
+0x40167a:5:sub $0xfaf1d1,%eax
+0x40167f:6:mov %eax,-0xf4(%rbp)
+0x401685:6:je 0000000000401f6b <wacom_intuos_get_tool_type+0xd4b>
+0x40168b:5:jmp 0000000000401690 <wacom_intuos_get_tool_type+0x470>
+0x401690:3:mov -0x48(%rbp),%eax
+0x401693:5:sub $0x2ceba8f,%eax
+0x401698:6:mov %eax,-0xf8(%rbp)
+0x40169e:6:je 0000000000402547 <wacom_intuos_get_tool_type+0x1327>
+0x4016a4:5:jmp 00000000004016a9 <wacom_intuos_get_tool_type+0x489>
+0x4016a9:3:mov -0x48(%rbp),%eax
+0x4016ac:5:sub $0x306c12c,%eax
+0x4016b1:6:mov %eax,-0xfc(%rbp)
+0x4016b7:6:je 00000000004021a5 <wacom_intuos_get_tool_type+0xf85>
+0x4016bd:5:jmp 00000000004016c2 <wacom_intuos_get_tool_type+0x4a2>
+0x4016c2:3:mov -0x48(%rbp),%eax
+0x4016c5:5:sub $0x80ea07c,%eax
+0x4016ca:6:mov %eax,-0x100(%rbp)
+0x4016d0:6:je 0000000000401e99 <wacom_intuos_get_tool_type+0xc79>
+0x4016d6:5:jmp 00000000004016db <wacom_intuos_get_tool_type+0x4bb>
+0x4016db:3:mov -0x48(%rbp),%eax
+0x4016de:5:sub $0xaea4fb5,%eax
+0x4016e3:6:mov %eax,-0x104(%rbp)
+0x4016e9:6:je 000000000040201f <wacom_intuos_get_tool_type+0xdff>
+0x4016ef:5:jmp 00000000004016f4 <wacom_intuos_get_tool_type+0x4d4>
+0x4016f4:3:mov -0x48(%rbp),%eax
+0x4016f7:5:sub $0xc2c3e6a,%eax
+0x4016fc:6:mov %eax,-0x108(%rbp)
+0x401702:6:je 00000000004021f0 <wacom_intuos_get_tool_type+0xfd0>
+0x401708:5:jmp 000000000040170d <wacom_intuos_get_tool_type+0x4ed>
+0x40170d:3:mov -0x48(%rbp),%eax
+0x401710:5:sub $0x11294e6b,%eax
+0x401715:6:mov %eax,-0x10c(%rbp)
+0x40171b:6:je 00000000004027e4 <wacom_intuos_get_tool_type+0x15c4>
+0x401721:5:jmp 0000000000401726 <wacom_intuos_get_tool_type+0x506>
+0x401726:3:mov -0x48(%rbp),%eax
+0x401729:5:sub $0x1237b2cc,%eax
+0x40172e:6:mov %eax,-0x110(%rbp)
+0x401734:6:je 000000000040221d <wacom_intuos_get_tool_type+0xffd>
+0x40173a:5:jmp 000000000040173f <wacom_intuos_get_tool_type+0x51f>
+0x40173f:3:mov -0x48(%rbp),%eax
+0x401742:5:sub $0x167c002b,%eax
+0x401747:6:mov %eax,-0x114(%rbp)
+0x40174d:6:je 000000000040232b <wacom_intuos_get_tool_type+0x110b>
+0x401753:5:jmp 0000000000401758 <wacom_intuos_get_tool_type+0x538>
+0x401758:3:mov -0x48(%rbp),%eax
+0x40175b:5:sub $0x1bd12cba,%eax
+0x401760:6:mov %eax,-0x118(%rbp)
+0x401766:6:je 0000000000402565 <wacom_intuos_get_tool_type+0x1345>
+0x40176c:5:jmp 0000000000401771 <wacom_intuos_get_tool_type+0x551>
+0x401771:3:mov -0x48(%rbp),%eax
+0x401774:5:sub $0x1c06d726,%eax
+0x401779:6:mov %eax,-0x11c(%rbp)
+0x40177f:6:je 0000000000401fc5 <wacom_intuos_get_tool_type+0xda5>
+0x401785:5:jmp 000000000040178a <wacom_intuos_get_tool_type+0x56a>
+0x40178a:3:mov -0x48(%rbp),%eax
+0x40178d:5:sub $0x1d37ece2,%eax
+0x401792:6:mov %eax,-0x120(%rbp)
+0x401798:6:je 00000000004022d1 <wacom_intuos_get_tool_type+0x10b1>
+0x40179e:5:jmp 00000000004017a3 <wacom_intuos_get_tool_type+0x583>
+0x4017a3:3:mov -0x48(%rbp),%eax
+0x4017a6:5:sub $0x1e33077a,%eax
+0x4017ab:6:mov %eax,-0x124(%rbp)
+0x4017b1:6:je 00000000004024ed <wacom_intuos_get_tool_type+0x12cd>
+0x4017b7:5:jmp 00000000004017bc <wacom_intuos_get_tool_type+0x59c>
+0x4017bc:3:mov -0x48(%rbp),%eax
+0x4017bf:5:sub $0x1fd3176d,%eax
+0x4017c4:6:mov %eax,-0x128(%rbp)
+0x4017ca:6:je 0000000000402727 <wacom_intuos_get_tool_type+0x1507>
+0x4017d0:5:jmp 00000000004017d5 <wacom_intuos_get_tool_type+0x5b5>
+0x4017d5:3:mov -0x48(%rbp),%eax
+0x4017d8:5:sub $0x22686f50,%eax
+0x4017dd:6:mov %eax,-0x12c(%rbp)
+0x4017e3:6:je 0000000000402763 <wacom_intuos_get_tool_type+0x1543>
+0x4017e9:5:jmp 00000000004017ee <wacom_intuos_get_tool_type+0x5ce>
+0x4017ee:3:mov -0x48(%rbp),%eax
+0x4017f1:5:sub $0x230a2c9a,%eax
+0x4017f6:6:mov %eax,-0x130(%rbp)
+0x4017fc:6:je 00000000004020d3 <wacom_intuos_get_tool_type+0xeb3>
+0x401802:5:jmp 0000000000401807 <wacom_intuos_get_tool_type+0x5e7>
+0x401807:3:mov -0x48(%rbp),%eax
+0x40180a:5:sub $0x2a3ee892,%eax
+0x40180f:6:mov %eax,-0x134(%rbp)
+0x401815:6:je 00000000004023a3 <wacom_intuos_get_tool_type+0x1183>
+0x40181b:5:jmp 0000000000401820 <wacom_intuos_get_tool_type+0x600>
+0x401820:3:mov -0x48(%rbp),%eax
+0x401823:5:sub $0x2d1ca914,%eax
+0x401828:6:mov %eax,-0x138(%rbp)
+0x40182e:6:je 0000000000402790 <wacom_intuos_get_tool_type+0x1570>
+0x401834:5:jmp 0000000000401839 <wacom_intuos_get_tool_type+0x619>
+0x401839:3:mov -0x48(%rbp),%eax
+0x40183c:5:sub $0x2e41138c,%eax
+0x401841:6:mov %eax,-0x13c(%rbp)
+0x401847:6:je 0000000000401d01 <wacom_intuos_get_tool_type+0xae1>
+0x40184d:5:jmp 0000000000401852 <wacom_intuos_get_tool_type+0x632>
+0x401852:3:mov -0x48(%rbp),%eax
+0x401855:5:sub $0x303fe22d,%eax
+0x40185a:6:mov %eax,-0x140(%rbp)
+0x401860:6:je 0000000000401dc7 <wacom_intuos_get_tool_type+0xba7>
+0x401866:5:jmp 000000000040186b <wacom_intuos_get_tool_type+0x64b>
+0x40186b:3:mov -0x48(%rbp),%eax
+0x40186e:5:sub $0x30b5afd7,%eax
+0x401873:6:mov %eax,-0x144(%rbp)
+0x401879:6:je 0000000000402745 <wacom_intuos_get_tool_type+0x1525>
+0x40187f:5:jmp 0000000000401884 <wacom_intuos_get_tool_type+0x664>
+0x401884:3:mov -0x48(%rbp),%eax
+0x401887:5:sub $0x3164d465,%eax
+0x40188c:6:mov %eax,-0x148(%rbp)
+0x401892:6:je 000000000040203d <wacom_intuos_get_tool_type+0xe1d>
+0x401898:5:jmp 000000000040189d <wacom_intuos_get_tool_type+0x67d>
+0x40189d:3:mov -0x48(%rbp),%eax
+0x4018a0:5:sub $0x335f74eb,%eax
+0x4018a5:6:mov %eax,-0x14c(%rbp)
+0x4018ab:6:je 0000000000402954 <wacom_intuos_get_tool_type+0x1734>
+0x4018b1:5:jmp 00000000004018b6 <wacom_intuos_get_tool_type+0x696>
+0x4018b6:3:mov -0x48(%rbp),%eax
+0x4018b9:5:sub $0x350a7b6b,%eax
+0x4018be:6:mov %eax,-0x150(%rbp)
+0x4018c4:6:je 0000000000402097 <wacom_intuos_get_tool_type+0xe77>
+0x4018ca:5:jmp 00000000004018cf <wacom_intuos_get_tool_type+0x6af>
+0x4018cf:3:mov -0x48(%rbp),%eax
+0x4018d2:5:sub $0x36da7fc2,%eax
+0x4018d7:6:mov %eax,-0x154(%rbp)
+0x4018dd:6:je 0000000000401e5d <wacom_intuos_get_tool_type+0xc3d>
+0x4018e3:5:jmp 00000000004018e8 <wacom_intuos_get_tool_type+0x6c8>
+0x4018e8:3:mov -0x48(%rbp),%eax
+0x4018eb:5:sub $0x3875489b,%eax
+0x4018f0:6:mov %eax,-0x158(%rbp)
+0x4018f6:6:je 0000000000402992 <wacom_intuos_get_tool_type+0x1772>
+0x4018fc:5:jmp 0000000000401901 <wacom_intuos_get_tool_type+0x6e1>
+0x401901:3:mov -0x48(%rbp),%eax
+0x401904:5:sub $0x39a428af,%eax
+0x401909:6:mov %eax,-0x15c(%rbp)
+0x40190f:6:je 0000000000401eb7 <wacom_intuos_get_tool_type+0xc97>
+0x401915:5:jmp 000000000040191a <wacom_intuos_get_tool_type+0x6fa>
+0x40191a:3:mov -0x48(%rbp),%eax
+0x40191d:5:sub $0x3b8d889f,%eax
+0x401922:6:mov %eax,-0x160(%rbp)
+0x401928:6:je 0000000000402259 <wacom_intuos_get_tool_type+0x1039>
+0x40192e:5:jmp 0000000000401933 <wacom_intuos_get_tool_type+0x713>
+0x401933:3:mov -0x48(%rbp),%eax
+0x401936:5:sub $0x3d9f5302,%eax
+0x40193b:6:mov %eax,-0x164(%rbp)
+0x401941:6:je 00000000004026af <wacom_intuos_get_tool_type+0x148f>
+0x401947:5:jmp 000000000040194c <wacom_intuos_get_tool_type+0x72c>
+0x40194c:3:mov -0x48(%rbp),%eax
+0x40194f:5:sub $0x3dde81d5,%eax
+0x401954:6:mov %eax,-0x168(%rbp)
+0x40195a:6:je 00000000004024c0 <wacom_intuos_get_tool_type+0x12a0>
+0x401960:5:jmp 0000000000401965 <wacom_intuos_get_tool_type+0x745>
+0x401965:3:mov -0x48(%rbp),%eax
+0x401968:5:sub $0x3df9ac61,%eax
+0x40196d:6:mov %eax,-0x16c(%rbp)
+0x401973:6:je 0000000000401cd5 <wacom_intuos_get_tool_type+0xab5>
+0x401979:5:jmp 000000000040197e <wacom_intuos_get_tool_type+0x75e>
+0x40197e:3:mov -0x48(%rbp),%eax
+0x401981:5:sub $0x3e7df694,%eax
+0x401986:6:mov %eax,-0x170(%rbp)
+0x40198c:6:je 000000000040230d <wacom_intuos_get_tool_type+0x10ed>
+0x401992:5:jmp 0000000000401997 <wacom_intuos_get_tool_type+0x777>
+0x401997:3:mov -0x48(%rbp),%eax
+0x40199a:5:sub $0x409f416d,%eax
+0x40199f:6:mov %eax,-0x174(%rbp)
+0x4019a5:6:je 0000000000401de5 <wacom_intuos_get_tool_type+0xbc5>
+0x4019ab:5:jmp 00000000004019b0 <wacom_intuos_get_tool_type+0x790>
+0x4019b0:3:mov -0x48(%rbp),%eax
+0x4019b3:5:sub $0x4587f3e5,%eax
+0x4019b8:6:mov %eax,-0x178(%rbp)
+0x4019be:6:je 00000000004027ae <wacom_intuos_get_tool_type+0x158e>
+0x4019c4:5:jmp 00000000004019c9 <wacom_intuos_get_tool_type+0x7a9>
+0x4019c9:3:mov -0x48(%rbp),%eax
+0x4019cc:5:sub $0x47eb4f3d,%eax
+0x4019d1:6:mov %eax,-0x17c(%rbp)
+0x4019d7:6:je 00000000004026cd <wacom_intuos_get_tool_type+0x14ad>
+0x4019dd:5:jmp 00000000004019e2 <wacom_intuos_get_tool_type+0x7c2>
+0x4019e2:3:mov -0x48(%rbp),%eax
+0x4019e5:5:sub $0x4a9cab27,%eax
+0x4019ea:6:mov %eax,-0x180(%rbp)
+0x4019f0:6:je 00000000004023c1 <wacom_intuos_get_tool_type+0x11a1>
+0x4019f6:5:jmp 00000000004019fb <wacom_intuos_get_tool_type+0x7db>
+0x4019fb:3:mov -0x48(%rbp),%eax
+0x4019fe:5:sub $0x4e4f90e7,%eax
+0x401a03:6:mov %eax,-0x184(%rbp)
+0x401a09:6:je 00000000004028a1 <wacom_intuos_get_tool_type+0x1681>
+0x401a0f:5:jmp 0000000000401a14 <wacom_intuos_get_tool_type+0x7f4>
+0x401a14:3:mov -0x48(%rbp),%eax
+0x401a17:5:sub $0x4e9218d0,%eax
+0x401a1c:6:mov %eax,-0x188(%rbp)
+0x401a22:6:je 000000000040212d <wacom_intuos_get_tool_type+0xf0d>
+0x401a28:5:jmp 0000000000401a2d <wacom_intuos_get_tool_type+0x80d>
+0x401a2d:3:mov -0x48(%rbp),%eax
+0x401a30:5:sub $0x501caedf,%eax
+0x401a35:6:mov %eax,-0x18c(%rbp)
+0x401a3b:6:je 0000000000402673 <wacom_intuos_get_tool_type+0x1453>
+0x401a41:5:jmp 0000000000401a46 <wacom_intuos_get_tool_type+0x826>
+0x401a46:3:mov -0x48(%rbp),%eax
+0x401a49:5:sub $0x511c2149,%eax
+0x401a4e:6:mov %eax,-0x190(%rbp)
+0x401a54:6:je 0000000000401f4d <wacom_intuos_get_tool_type+0xd2d>
+0x401a5a:5:jmp 0000000000401a5f <wacom_intuos_get_tool_type+0x83f>
+0x401a5f:3:mov -0x48(%rbp),%eax
+0x401a62:5:sub $0x517dc0df,%eax
+0x401a67:6:mov %eax,-0x194(%rbp)
+0x401a6d:6:je 000000000040205b <wacom_intuos_get_tool_type+0xe3b>
+0x401a73:5:jmp 0000000000401a78 <wacom_intuos_get_tool_type+0x858>
+0x401a78:3:mov -0x48(%rbp),%eax
+0x401a7b:5:sub $0x5469ed28,%eax
+0x401a80:6:mov %eax,-0x198(%rbp)
+0x401a86:6:je 00000000004022ef <wacom_intuos_get_tool_type+0x10cf>
+0x401a8c:5:jmp 0000000000401a91 <wacom_intuos_get_tool_type+0x871>
+0x401a91:3:mov -0x48(%rbp),%eax
+0x401a94:5:sub $0x555afe00,%eax
+0x401a99:6:mov %eax,-0x19c(%rbp)
+0x401a9f:6:je 0000000000402295 <wacom_intuos_get_tool_type+0x1075>
+0x401aa5:5:jmp 0000000000401aaa <wacom_intuos_get_tool_type+0x88a>
+0x401aaa:3:mov -0x48(%rbp),%eax
+0x401aad:5:sub $0x58c58682,%eax
+0x401ab2:6:mov %eax,-0x1a0(%rbp)
+0x401ab8:6:je 0000000000402922 <wacom_intuos_get_tool_type+0x1702>
+0x401abe:5:jmp 0000000000401ac3 <wacom_intuos_get_tool_type+0x8a3>
+0x401ac3:3:mov -0x48(%rbp),%eax
+0x401ac6:5:sub $0x5abee5df,%eax
+0x401acb:6:mov %eax,-0x1a4(%rbp)
+0x401ad1:6:je 0000000000402691 <wacom_intuos_get_tool_type+0x1471>
+0x401ad7:5:jmp 0000000000401adc <wacom_intuos_get_tool_type+0x8bc>
+0x401adc:3:mov -0x48(%rbp),%eax
+0x401adf:5:sub $0x5b0021cf,%eax
+0x401ae4:6:mov %eax,-0x1a8(%rbp)
+0x401aea:6:je 000000000040293b <wacom_intuos_get_tool_type+0x171b>
+0x401af0:5:jmp 0000000000401af5 <wacom_intuos_get_tool_type+0x8d5>
+0x401af5:3:mov -0x48(%rbp),%eax
+0x401af8:5:sub $0x617e7362,%eax
+0x401afd:6:mov %eax,-0x1ac(%rbp)
+0x401b03:6:je 000000000040210f <wacom_intuos_get_tool_type+0xeef>
+0x401b09:5:jmp 0000000000401b0e <wacom_intuos_get_tool_type+0x8ee>
+0x401b0e:3:mov -0x48(%rbp),%eax
+0x401b11:5:sub $0x624c6b39,%eax
+0x401b16:6:mov %eax,-0x1b0(%rbp)
+0x401b1c:6:je 0000000000402277 <wacom_intuos_get_tool_type+0x1057>
+0x401b22:5:jmp 0000000000401b27 <wacom_intuos_get_tool_type+0x907>
+0x401b27:3:mov -0x48(%rbp),%eax
+0x401b2a:5:sub $0x64846283,%eax
+0x401b2f:6:mov %eax,-0x1b4(%rbp)
+0x401b35:6:je 0000000000402385 <wacom_intuos_get_tool_type+0x1165>
+0x401b3b:5:jmp 0000000000401b40 <wacom_intuos_get_tool_type+0x920>
+0x401b40:3:mov -0x48(%rbp),%eax
+0x401b43:5:sub $0x67e81056,%eax
+0x401b48:6:mov %eax,-0x1b8(%rbp)
+0x401b4e:6:je 00000000004029ab <wacom_intuos_get_tool_type+0x178b>
+0x401b54:5:jmp 0000000000401b59 <wacom_intuos_get_tool_type+0x939>
+0x401b59:3:mov -0x48(%rbp),%eax
+0x401b5c:5:sub $0x6c5d6c9a,%eax
+0x401b61:6:mov %eax,-0x1bc(%rbp)
+0x401b67:6:je 0000000000402709 <wacom_intuos_get_tool_type+0x14e9>
+0x401b6d:5:jmp 0000000000401b72 <wacom_intuos_get_tool_type+0x952>
+0x401b72:3:mov -0x48(%rbp),%eax
+0x401b75:5:sub $0x6e1bd3c9,%eax
+0x401b7a:6:mov %eax,-0x1c0(%rbp)
+0x401b80:6:je 000000000040281a <wacom_intuos_get_tool_type+0x15fa>
+0x401b86:5:jmp 0000000000401b8b <wacom_intuos_get_tool_type+0x96b>
+0x401b8b:3:mov -0x48(%rbp),%eax
+0x401b8e:5:sub $0x6fcbdf87,%eax
+0x401b93:6:mov %eax,-0x1c4(%rbp)
+0x401b99:6:je 0000000000402529 <wacom_intuos_get_tool_type+0x1309>
+0x401b9f:5:jmp 0000000000401ba4 <wacom_intuos_get_tool_type+0x984>
+0x401ba4:3:mov -0x48(%rbp),%eax
+0x401ba7:5:sub $0x71120e4d,%eax
+0x401bac:6:mov %eax,-0x1c8(%rbp)
+0x401bb2:6:je 0000000000401fe3 <wacom_intuos_get_tool_type+0xdc3>
+0x401bb8:5:jmp 0000000000401bbd <wacom_intuos_get_tool_type+0x99d>
+0x401bbd:3:mov -0x48(%rbp),%eax
+0x401bc0:5:sub $0x716f57d7,%eax
+0x401bc5:6:mov %eax,-0x1cc(%rbp)
+0x401bcb:6:je 00000000004028bc <wacom_intuos_get_tool_type+0x169c>
+0x401bd1:5:jmp 0000000000401bd6 <wacom_intuos_get_tool_type+0x9b6>
+0x401bd6:3:mov -0x48(%rbp),%eax
+0x401bd9:5:sub $0x720e6863,%eax
+0x401bde:6:mov %eax,-0x1d0(%rbp)
+0x401be4:6:je 00000000004020b5 <wacom_intuos_get_tool_type+0xe95>
+0x401bea:5:jmp 0000000000401bef <wacom_intuos_get_tool_type+0x9cf>
+0x401bef:3:mov -0x48(%rbp),%eax
+0x401bf2:5:sub $0x72aa3cd8,%eax
+0x401bf7:6:mov %eax,-0x1d4(%rbp)
+0x401bfd:6:je 00000000004025fb <wacom_intuos_get_tool_type+0x13db>
+0x401c03:5:jmp 0000000000401c08 <wacom_intuos_get_tool_type+0x9e8>
+0x401c08:3:mov -0x48(%rbp),%eax
+0x401c0b:5:sub $0x744515e7,%eax
+0x401c10:6:mov %eax,-0x1d8(%rbp)
+0x401c16:6:je 00000000004026eb <wacom_intuos_get_tool_type+0x14cb>
+0x401c1c:5:jmp 0000000000401c21 <wacom_intuos_get_tool_type+0xa01>
+0x401c21:3:mov -0x48(%rbp),%eax
+0x401c24:5:sub $0x75225319,%eax
+0x401c29:6:mov %eax,-0x1dc(%rbp)
+0x401c2f:6:je 00000000004029c0 <wacom_intuos_get_tool_type+0x17a0>
+0x401c35:5:jmp 0000000000401c3a <wacom_intuos_get_tool_type+0xa1a>
+0x401c3a:3:mov -0x48(%rbp),%eax
+0x401c3d:5:sub $0x77eaeb96,%eax
+0x401c42:6:mov %eax,-0x1e0(%rbp)
+0x401c48:6:je 000000000040296d <wacom_intuos_get_tool_type+0x174d>
+0x401c4e:5:jmp 0000000000401c53 <wacom_intuos_get_tool_type+0xa33>
+0x401c53:3:mov -0x48(%rbp),%eax
+0x401c56:5:sub $0x77f7cfde,%eax
+0x401c5b:6:mov %eax,-0x1e4(%rbp)
+0x401c61:6:je 0000000000402457 <wacom_intuos_get_tool_type+0x1237>
+0x401c67:5:jmp 0000000000401c6c <wacom_intuos_get_tool_type+0xa4c>
+0x401c6c:3:mov -0x48(%rbp),%eax
+0x401c6f:5:sub $0x7bb0681f,%eax
+0x401c74:6:mov %eax,-0x1e8(%rbp)
+0x401c7a:6:je 0000000000401ef3 <wacom_intuos_get_tool_type+0xcd3>
+0x401c80:5:jmp 0000000000401c85 <wacom_intuos_get_tool_type+0xa65>
+0x401c85:3:mov -0x48(%rbp),%eax
+0x401c88:5:sub $0x7c70db5d,%eax
+0x401c8d:6:mov %eax,-0x1ec(%rbp)
+0x401c93:6:je 0000000000402619 <wacom_intuos_get_tool_type+0x13f9>
+0x401c99:5:jmp 0000000000401c9e <wacom_intuos_get_tool_type+0xa7e>
+0x401c9e:3:mov -0x48(%rbp),%eax
+0x401ca1:5:sub $0x7e552c3b,%eax
+0x401ca6:6:mov %eax,-0x1f0(%rbp)
+0x401cac:6:je 0000000000402079 <wacom_intuos_get_tool_type+0xe59>
+0x401cb2:5:jmp 0000000000401cb7 <wacom_intuos_get_tool_type+0xa97>
+0x401cb7:3:mov -0x48(%rbp),%eax
+0x401cba:5:sub $0x7f877b8e,%eax
+0x401cbf:6:mov %eax,-0x1f4(%rbp)
+0x401cc5:6:je 00000000004028d7 <wacom_intuos_get_tool_type+0x16b7>
+0x401ccb:5:jmp 0000000000401cd0 <wacom_intuos_get_tool_type+0xab0>
+0x401cd0:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x401cd5:5:mov $0x75225319,%eax
+0x401cda:5:mov $0x2e41138c,%ecx
+0x401cdf:3:mov -0x3a(%rbp),%dl
+0x401ce2:4:mov -0x39(%rbp),%sil
+0x401ce6:3:mov %dl,%dil
+0x401ce9:3:and %sil,%dil
+0x401cec:3:xor %sil,%dl
+0x401cef:3:or %dl,%dil
+0x401cf2:4:test $0x1,%dil
+0x401cf6:3:cmovne %ecx,%eax
+0x401cf9:3:mov %eax,-0x40(%rbp)
+0x401cfc:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x401d01:5:mov $0x75225319,%eax
+0x401d06:5:mov $0xc3245c95,%ecx
+0x401d0b:2:mov $0x1,%dl
+0x401d0d:3:mov %rsp,%rsi
+0x401d10:4:add $0xfffffffffffffff0,%rsi
+0x401d14:3:mov %rsi,%rsp
+0x401d17:3:mov %rsp,%rdi
+0x401d1a:4:add $0xfffffffffffffff0,%rdi
+0x401d1e:3:mov %rdi,%rsp
+0x401d21:4:mov %rdi,-0x38(%rbp)
+0x401d25:4:mov -0x44(%rbp),%r8d
+0x401d29:3:mov %r8d,(%rsi)
+0x401d2c:3:mov (%rsi),%r9d
+0x401d2f:4:mov %r9d,-0x2c(%rbp)
+0x401d33:8:mov 0x405054,%r9d
+0x401d3b:8:mov 0x40507c,%r10d
+0x401d43:3:mov %r9d,%r11d
+0x401d46:7:sub $0x92f4516a,%r11d
+0x401d4d:4:sub $0x1,%r11d
+0x401d51:7:add $0x92f4516a,%r11d
+0x401d58:4:imul %r11d,%r9d
+0x401d5c:4:and $0x1,%r9d
+0x401d60:4:cmp $0x0,%r9d
+0x401d64:3:sete %bl
+0x401d67:4:cmp $0xa,%r10d
+0x401d6b:4:setl %r14b
+0x401d6f:3:mov %bl,%r15b
+0x401d72:4:xor $0xff,%r15b
+0x401d76:3:mov %r14b,%r12b
+0x401d79:4:xor $0xff,%r12b
+0x401d7d:3:xor $0x0,%dl
+0x401d80:3:mov %r15b,%r13b
+0x401d83:4:and $0x0,%r13b
+0x401d87:2:and %dl,%bl
+0x401d89:3:mov %r12b,%sil
+0x401d8c:4:and $0x0,%sil
+0x401d90:3:and %dl,%r14b
+0x401d93:3:or %bl,%r13b
+0x401d96:3:or %r14b,%sil
+0x401d99:3:xor %sil,%r13b
+0x401d9c:3:or %r12b,%r15b
+0x401d9f:4:xor $0xff,%r15b
+0x401da3:3:or $0x0,%dl
+0x401da6:3:and %dl,%r15b
+0x401da9:3:or %r15b,%r13b
+0x401dac:4:test $0x1,%r13b
+0x401db0:3:cmovne %ecx,%eax
+0x401db3:3:mov %eax,-0x40(%rbp)
+0x401db6:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x401dbb:7:movl $0x303fe22d,-0x40(%rbp)
+0x401dc2:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x401dc7:5:mov $0x409f416d,%eax
+0x401dcc:5:mov $0x64846283,%ecx
+0x401dd1:3:mov -0x2c(%rbp),%edx
+0x401dd4:6:cmp $0x84a,%edx
+0x401dda:3:cmovl %ecx,%eax
+0x401ddd:3:mov %eax,-0x40(%rbp)
+0x401de0:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x401de5:5:mov $0xe29d21a0,%eax
+0x401dea:5:mov $0x720e6863,%ecx
+0x401def:3:mov -0x2c(%rbp),%edx
+0x401df2:6:cmp $0x10804,%edx
+0x401df8:3:cmovl %ecx,%eax
+0x401dfb:3:mov %eax,-0x40(%rbp)
+0x401dfe:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x401e03:5:mov $0x99473498,%eax
+0x401e08:5:mov $0xfaf1d1,%ecx
+0x401e0d:3:mov -0x2c(%rbp),%edx
+0x401e10:6:cmp $0x14802,%edx
+0x401e16:3:cmovl %ecx,%eax
+0x401e19:3:mov %eax,-0x40(%rbp)
+0x401e1c:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x401e21:5:mov $0xf9f21551,%eax
+0x401e26:5:mov $0xe5b29286,%ecx
+0x401e2b:3:mov -0x2c(%rbp),%edx
+0x401e2e:6:cmp $0x1680a,%edx
+0x401e34:3:cmovl %ecx,%eax
+0x401e37:3:mov %eax,-0x40(%rbp)
+0x401e3a:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x401e3f:5:mov $0x36da7fc2,%eax
+0x401e44:5:mov $0x39a428af,%ecx
+0x401e49:3:mov -0x2c(%rbp),%edx
+0x401e4c:6:cmp $0x18802,%edx
+0x401e52:3:cmovl %ecx,%eax
+0x401e55:3:mov %eax,-0x40(%rbp)
+0x401e58:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x401e5d:5:mov $0xf7b61577,%eax
+0x401e62:5:mov $0x80ea07c,%ecx
+0x401e67:3:mov -0x2c(%rbp),%edx
+0x401e6a:6:cmp $0x1880a,%edx
+0x401e70:3:cmovl %ecx,%eax
+0x401e73:3:mov %eax,-0x40(%rbp)
+0x401e76:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x401e7b:5:mov $0xb3c4339a,%eax
+0x401e80:5:mov $0x335f74eb,%ecx
+0x401e85:3:mov -0x2c(%rbp),%edx
+0x401e88:6:cmp $0x1880a,%edx
+0x401e8e:3:cmove %ecx,%eax
+0x401e91:3:mov %eax,-0x40(%rbp)
+0x401e94:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x401e99:5:mov $0xb3c4339a,%eax
+0x401e9e:5:mov $0xfbbf8394,%ecx
+0x401ea3:3:mov -0x2c(%rbp),%edx
+0x401ea6:6:cmp $0x18802,%edx
+0x401eac:3:cmove %ecx,%eax
+0x401eaf:3:mov %eax,-0x40(%rbp)
+0x401eb2:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x401eb7:5:mov $0xb3c4339a,%eax
+0x401ebc:5:mov $0x335f74eb,%ecx
+0x401ec1:3:mov -0x2c(%rbp),%edx
+0x401ec4:6:cmp $0x1680a,%edx
+0x401eca:3:cmove %ecx,%eax
+0x401ecd:3:mov %eax,-0x40(%rbp)
+0x401ed0:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x401ed5:5:mov $0x7bb0681f,%eax
+0x401eda:5:mov $0x511c2149,%ecx
+0x401edf:3:mov -0x2c(%rbp),%edx
+0x401ee2:6:cmp $0x1480a,%edx
+0x401ee8:3:cmovl %ecx,%eax
+0x401eeb:3:mov %eax,-0x40(%rbp)
+0x401eee:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x401ef3:5:mov $0xd3b3538f,%eax
+0x401ef8:5:mov $0xf9d0a53f,%ecx
+0x401efd:3:mov -0x2c(%rbp),%edx
+0x401f00:6:cmp $0x16802,%edx
+0x401f06:3:cmovl %ecx,%eax
+0x401f09:3:mov %eax,-0x40(%rbp)
+0x401f0c:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x401f11:5:mov $0xb3c4339a,%eax
+0x401f16:5:mov $0xfbbf8394,%ecx
+0x401f1b:3:mov -0x2c(%rbp),%edx
+0x401f1e:6:cmp $0x16802,%edx
+0x401f24:3:cmove %ecx,%eax
+0x401f27:3:mov %eax,-0x40(%rbp)
+0x401f2a:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x401f2f:5:mov $0xb3c4339a,%eax
+0x401f34:5:mov $0x335f74eb,%ecx
+0x401f39:3:mov -0x2c(%rbp),%edx
+0x401f3c:6:cmp $0x1480a,%edx
+0x401f42:3:cmove %ecx,%eax
+0x401f45:3:mov %eax,-0x40(%rbp)
+0x401f48:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x401f4d:5:mov $0xb3c4339a,%eax
+0x401f52:5:mov $0xfbbf8394,%ecx
+0x401f57:3:mov -0x2c(%rbp),%edx
+0x401f5a:6:cmp $0x14802,%edx
+0x401f60:3:cmove %ecx,%eax
+0x401f63:3:mov %eax,-0x40(%rbp)
+0x401f66:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x401f6b:5:mov $0xb72bd0dc,%eax
+0x401f70:5:mov $0xaea4fb5,%ecx
+0x401f75:3:mov -0x2c(%rbp),%edx
+0x401f78:6:cmp $0x10902,%edx
+0x401f7e:3:cmovl %ecx,%eax
+0x401f81:3:mov %eax,-0x40(%rbp)
+0x401f84:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x401f89:5:mov $0x8c2b4793,%eax
+0x401f8e:5:mov $0xc7ad7125,%ecx
+0x401f93:3:mov -0x2c(%rbp),%edx
+0x401f96:6:cmp $0x1090a,%edx
+0x401f9c:3:cmovl %ecx,%eax
+0x401f9f:3:mov %eax,-0x40(%rbp)
+0x401fa2:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x401fa7:5:mov $0x1c06d726,%eax
+0x401fac:5:mov $0x71120e4d,%ecx
+0x401fb1:3:mov -0x2c(%rbp),%edx
+0x401fb4:6:cmp $0x12802,%edx
+0x401fba:3:cmovl %ecx,%eax
+0x401fbd:3:mov %eax,-0x40(%rbp)
+0x401fc0:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x401fc5:5:mov $0xb3c4339a,%eax
+0x401fca:5:mov $0x7f877b8e,%ecx
+0x401fcf:3:mov -0x2c(%rbp),%edx
+0x401fd2:6:cmp $0x12802,%edx
+0x401fd8:3:cmove %ecx,%eax
+0x401fdb:3:mov %eax,-0x40(%rbp)
+0x401fde:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x401fe3:5:mov $0xb3c4339a,%eax
+0x401fe8:5:mov $0x335f74eb,%ecx
+0x401fed:3:mov -0x2c(%rbp),%edx
+0x401ff0:6:cmp $0x1090a,%edx
+0x401ff6:3:cmove %ecx,%eax
+0x401ff9:3:mov %eax,-0x40(%rbp)
+0x401ffc:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x402001:5:mov $0xb3c4339a,%eax
+0x402006:5:mov $0x77eaeb96,%ecx
+0x40200b:3:mov -0x2c(%rbp),%edx
+0x40200e:6:cmp $0x10902,%edx
+0x402014:3:cmove %ecx,%eax
+0x402017:3:mov %eax,-0x40(%rbp)
+0x40201a:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x40201f:5:mov $0x3164d465,%eax
+0x402024:5:mov $0x350a7b6b,%ecx
+0x402029:3:mov -0x2c(%rbp),%edx
+0x40202c:6:cmp $0x1080a,%edx
+0x402032:3:cmovl %ecx,%eax
+0x402035:3:mov %eax,-0x40(%rbp)
+0x402038:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x40203d:5:mov $0x517dc0df,%eax
+0x402042:5:mov $0x7e552c3b,%ecx
+0x402047:3:mov -0x2c(%rbp),%edx
+0x40204a:6:cmp $0x1080c,%edx
+0x402050:3:cmovl %ecx,%eax
+0x402053:3:mov %eax,-0x40(%rbp)
+0x402056:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x40205b:5:mov $0xb3c4339a,%eax
+0x402060:5:mov $0x335f74eb,%ecx
+0x402065:3:mov -0x2c(%rbp),%edx
+0x402068:6:cmp $0x1080c,%edx
+0x40206e:3:cmove %ecx,%eax
+0x402071:3:mov %eax,-0x40(%rbp)
+0x402074:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x402079:5:mov $0xb3c4339a,%eax
+0x40207e:5:mov $0x335f74eb,%ecx
+0x402083:3:mov -0x2c(%rbp),%edx
+0x402086:6:cmp $0x1080a,%edx
+0x40208c:3:cmove %ecx,%eax
+0x40208f:3:mov %eax,-0x40(%rbp)
+0x402092:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x402097:5:mov $0xb3c4339a,%eax
+0x40209c:5:mov $0xfbbf8394,%ecx
+0x4020a1:3:mov -0x2c(%rbp),%edx
+0x4020a4:6:cmp $0x10804,%edx
+0x4020aa:3:cmove %ecx,%eax
+0x4020ad:3:mov %eax,-0x40(%rbp)
+0x4020b0:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x4020b5:5:mov $0x230a2c9a,%eax
+0x4020ba:5:mov $0xef0d5396,%ecx
+0x4020bf:3:mov -0x2c(%rbp),%edx
+0x4020c2:6:cmp $0x90a,%edx
+0x4020c8:3:cmovl %ecx,%eax
+0x4020cb:3:mov %eax,-0x40(%rbp)
+0x4020ce:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x4020d3:5:mov $0x96f9d422,%eax
+0x4020d8:5:mov $0xac858dc1,%ecx
+0x4020dd:3:mov -0x2c(%rbp),%edx
+0x4020e0:6:cmp $0xd12,%edx
+0x4020e6:3:cmovl %ecx,%eax
+0x4020e9:3:mov %eax,-0x40(%rbp)
+0x4020ec:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x4020f1:5:mov $0x617e7362,%eax
+0x4020f6:5:mov $0xa7295268,%ecx
+0x4020fb:3:mov -0x2c(%rbp),%edx
+0x4020fe:6:cmp $0xd1a,%edx
+0x402104:3:cmovl %ecx,%eax
+0x402107:3:mov %eax,-0x40(%rbp)
+0x40210a:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x40210f:5:mov $0x4e9218d0,%eax
+0x402114:5:mov $0xc04fb13e,%ecx
+0x402119:3:mov -0x2c(%rbp),%edx
+0x40211c:6:cmp $0x10802,%edx
+0x402122:3:cmovl %ecx,%eax
+0x402125:3:mov %eax,-0x40(%rbp)
+0x402128:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x40212d:5:mov $0xb3c4339a,%eax
+0x402132:5:mov $0xfbbf8394,%ecx
+0x402137:3:mov -0x2c(%rbp),%edx
+0x40213a:6:cmp $0x10802,%edx
+0x402140:3:cmove %ecx,%eax
+0x402143:3:mov %eax,-0x40(%rbp)
+0x402146:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x40214b:5:mov $0xb3c4339a,%eax
+0x402150:5:mov $0x335f74eb,%ecx
+0x402155:3:mov -0x2c(%rbp),%edx
+0x402158:6:cmp $0xd1a,%edx
+0x40215e:3:cmove %ecx,%eax
+0x402161:3:mov %eax,-0x40(%rbp)
+0x402164:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x402169:5:mov $0xb3c4339a,%eax
+0x40216e:5:mov $0x77eaeb96,%ecx
+0x402173:3:mov -0x2c(%rbp),%edx
+0x402176:6:cmp $0xd12,%edx
+0x40217c:3:cmove %ecx,%eax
+0x40217f:3:mov %eax,-0x40(%rbp)
+0x402182:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x402187:5:mov $0x306c12c,%eax
+0x40218c:5:mov $0x1237b2cc,%ecx
+0x402191:3:mov -0x2c(%rbp),%edx
+0x402194:6:cmp $0x912,%edx
+0x40219a:3:cmovl %ecx,%eax
+0x40219d:3:mov %eax,-0x40(%rbp)
+0x4021a0:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x4021a5:5:mov $0xfb06a446,%eax
+0x4021aa:5:mov $0xc2c3e6a,%ecx
+0x4021af:3:mov -0x2c(%rbp),%edx
+0x4021b2:6:cmp $0x91a,%edx
+0x4021b8:3:cmovl %ecx,%eax
+0x4021bb:3:mov %eax,-0x40(%rbp)
+0x4021be:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x4021c3:5:mov $0xb3c4339a,%eax
+0x4021c8:5:mov $0x335f74eb,%ecx
+0x4021cd:2:xor %edx,%edx
+0x4021cf:3:mov -0x2c(%rbp),%esi
+0x4021d2:2:mov %edx,%edi
+0x4021d4:2:sub %esi,%edi
+0x4021d6:2:mov %edx,%esi
+0x4021d8:6:sub $0xfffff6e6,%esi
+0x4021de:2:add %esi,%edi
+0x4021e0:2:sub %edi,%edx
+0x4021e2:3:cmp $0x1,%edx
+0x4021e5:3:cmovbe %ecx,%eax
+0x4021e8:3:mov %eax,-0x40(%rbp)
+0x4021eb:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x4021f0:5:mov $0xb3c4339a,%eax
+0x4021f5:5:mov $0x77eaeb96,%ecx
+0x4021fa:3:mov -0x2c(%rbp),%edx
+0x4021fd:6:add $0xf30d8811,%edx
+0x402203:6:add $0xfffff6ee,%edx
+0x402209:6:sub $0xf30d8811,%edx
+0x40220f:3:cmp $0x1,%edx
+0x402212:3:cmovbe %ecx,%eax
+0x402215:3:mov %eax,-0x40(%rbp)
+0x402218:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x40221d:5:mov $0xb3c4339a,%eax
+0x402222:5:mov $0x335f74eb,%ecx
+0x402227:3:mov -0x2c(%rbp),%edx
+0x40222a:6:cmp $0x90a,%edx
+0x402230:3:cmove %ecx,%eax
+0x402233:3:mov %eax,-0x40(%rbp)
+0x402236:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x40223b:5:mov $0x3b8d889f,%eax
+0x402240:5:mov $0x5469ed28,%ecx
+0x402245:3:mov -0x2c(%rbp),%edx
+0x402248:6:cmp $0x885,%edx
+0x40224e:3:cmovl %ecx,%eax
+0x402251:3:mov %eax,-0x40(%rbp)
+0x402254:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x402259:5:mov $0x624c6b39,%eax
+0x40225e:5:mov $0x1d37ece2,%ecx
+0x402263:3:mov -0x2c(%rbp),%edx
+0x402266:6:cmp $0x8e2,%edx
+0x40226c:3:cmovl %ecx,%eax
+0x40226f:3:mov %eax,-0x40(%rbp)
+0x402272:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x402277:5:mov $0x555afe00,%eax
+0x40227c:5:mov $0x95c8f3b9,%ecx
+0x402281:3:mov -0x2c(%rbp),%edx
+0x402284:6:cmp $0x902,%edx
+0x40228a:3:cmovl %ecx,%eax
+0x40228d:3:mov %eax,-0x40(%rbp)
+0x402290:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x402295:5:mov $0xb3c4339a,%eax
+0x40229a:5:mov $0x77eaeb96,%ecx
+0x40229f:3:mov -0x2c(%rbp),%edx
+0x4022a2:6:cmp $0x902,%edx
+0x4022a8:3:cmove %ecx,%eax
+0x4022ab:3:mov %eax,-0x40(%rbp)
+0x4022ae:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x4022b3:5:mov $0xb3c4339a,%eax
+0x4022b8:5:mov $0xfbbf8394,%ecx
+0x4022bd:3:mov -0x2c(%rbp),%edx
+0x4022c0:6:cmp $0x8e2,%edx
+0x4022c6:3:cmove %ecx,%eax
+0x4022c9:3:mov %eax,-0x40(%rbp)
+0x4022cc:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x4022d1:5:mov $0xb3c4339a,%eax
+0x4022d6:5:mov $0xfbbf8394,%ecx
+0x4022db:3:mov -0x2c(%rbp),%edx
+0x4022de:6:cmp $0x885,%edx
+0x4022e4:3:cmove %ecx,%eax
+0x4022e7:3:mov %eax,-0x40(%rbp)
+0x4022ea:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x4022ef:5:mov $0x3e7df694,%eax
+0x4022f4:5:mov $0xe2344d91,%ecx
+0x4022f9:3:mov -0x2c(%rbp),%edx
+0x4022fc:6:cmp $0x852,%edx
+0x402302:3:cmovl %ecx,%eax
+0x402305:3:mov %eax,-0x40(%rbp)
+0x402308:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x40230d:5:mov $0x167c002b,%eax
+0x402312:5:mov $0xe1c6d31c,%ecx
+0x402317:3:mov -0x2c(%rbp),%edx
+0x40231a:6:cmp $0x85a,%edx
+0x402320:3:cmovl %ecx,%eax
+0x402323:3:mov %eax,-0x40(%rbp)
+0x402326:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x40232b:5:mov $0xb3c4339a,%eax
+0x402330:5:mov $0x335f74eb,%ecx
+0x402335:3:mov -0x2c(%rbp),%edx
+0x402338:6:cmp $0x85a,%edx
+0x40233e:3:cmove %ecx,%eax
+0x402341:3:mov %eax,-0x40(%rbp)
+0x402344:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x402349:5:mov $0xb3c4339a,%eax
+0x40234e:5:mov $0xfbbf8394,%ecx
+0x402353:3:mov -0x2c(%rbp),%edx
+0x402356:6:cmp $0x852,%edx
+0x40235c:3:cmove %ecx,%eax
+0x40235f:3:mov %eax,-0x40(%rbp)
+0x402362:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x402367:5:mov $0xb3c4339a,%eax
+0x40236c:5:mov $0x335f74eb,%ecx
+0x402371:3:mov -0x2c(%rbp),%edx
+0x402374:6:cmp $0x84a,%edx
+0x40237a:3:cmove %ecx,%eax
+0x40237d:3:mov %eax,-0x40(%rbp)
+0x402380:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x402385:5:mov $0x2a3ee892,%eax
+0x40238a:5:mov $0xd796c35d,%ecx
+0x40238f:3:mov -0x2c(%rbp),%edx
+0x402392:6:cmp $0x802,%edx
+0x402398:3:cmovl %ecx,%eax
+0x40239b:3:mov %eax,-0x40(%rbp)
+0x40239e:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x4023a3:5:mov $0x4a9cab27,%eax
+0x4023a8:5:mov $0x6fcbdf87,%ecx
+0x4023ad:3:mov -0x2c(%rbp),%edx
+0x4023b0:6:cmp $0x813,%edx
+0x4023b6:3:cmovl %ecx,%eax
+0x4023b9:3:mov %eax,-0x40(%rbp)
+0x4023bc:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x4023c1:5:mov $0xc9d8217a,%eax
+0x4023c6:5:mov $0xa2d92ad4,%ecx
+0x4023cb:3:mov -0x2c(%rbp),%edx
+0x4023ce:6:cmp $0x82a,%edx
+0x4023d4:3:cmovl %ecx,%eax
+0x4023d7:3:mov %eax,-0x40(%rbp)
+0x4023da:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x4023df:5:mov $0xad3e2590,%eax
+0x4023e4:5:mov $0x77f7cfde,%ecx
+0x4023e9:3:mov -0x2c(%rbp),%edx
+0x4023ec:6:cmp $0x832,%edx
+0x4023f2:3:cmovl %ecx,%eax
+0x4023f5:3:mov %eax,-0x40(%rbp)
+0x4023f8:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x4023fd:5:mov $0xb38a5eaa,%eax
+0x402402:5:mov $0xebe905f4,%ecx
+0x402407:3:mov -0x2c(%rbp),%edx
+0x40240a:6:cmp $0x842,%edx
+0x402410:3:cmovl %ecx,%eax
+0x402413:3:mov %eax,-0x40(%rbp)
+0x402416:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x40241b:5:mov $0xb3c4339a,%eax
+0x402420:5:mov $0xfbbf8394,%ecx
+0x402425:3:mov -0x2c(%rbp),%edx
+0x402428:6:cmp $0x842,%edx
+0x40242e:3:cmove %ecx,%eax
+0x402431:3:mov %eax,-0x40(%rbp)
+0x402434:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x402439:5:mov $0xb3c4339a,%eax
+0x40243e:5:mov $0xc2fb7c20,%ecx
+0x402443:3:mov -0x2c(%rbp),%edx
+0x402446:6:cmp $0x832,%edx
+0x40244c:3:cmove %ecx,%eax
+0x40244f:3:mov %eax,-0x40(%rbp)
+0x402452:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x402457:5:mov $0xb3c4339a,%eax
+0x40245c:5:mov $0x335f74eb,%ecx
+0x402461:3:mov -0x2c(%rbp),%edx
+0x402464:6:add $0x78a364f2,%edx
+0x40246a:6:add $0xfffff7d6,%edx
+0x402470:6:sub $0x78a364f2,%edx
+0x402476:3:cmp $0x1,%edx
+0x402479:3:cmovbe %ecx,%eax
+0x40247c:3:mov %eax,-0x40(%rbp)
+0x40247f:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x402484:5:mov $0xb8a8113c,%eax
+0x402489:5:mov $0xf65d42e4,%ecx
+0x40248e:3:mov -0x2c(%rbp),%edx
+0x402491:6:cmp $0x81b,%edx
+0x402497:3:cmovl %ecx,%eax
+0x40249a:3:mov %eax,-0x40(%rbp)
+0x40249d:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x4024a2:5:mov $0x3dde81d5,%eax
+0x4024a7:5:mov $0x1e33077a,%ecx
+0x4024ac:3:mov -0x2c(%rbp),%edx
+0x4024af:6:cmp $0x822,%edx
+0x4024b5:3:cmovl %ecx,%eax
+0x4024b8:3:mov %eax,-0x40(%rbp)
+0x4024bb:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x4024c0:5:mov $0xb3c4339a,%eax
+0x4024c5:5:mov $0xfbbf8394,%ecx
+0x4024ca:2:xor %edx,%edx
+0x4024cc:3:mov -0x2c(%rbp),%esi
+0x4024cf:2:mov %edx,%edi
+0x4024d1:2:sub %esi,%edi
+0x4024d3:2:mov %edx,%esi
+0x4024d5:6:sub $0xfffff7de,%esi
+0x4024db:2:add %esi,%edi
+0x4024dd:2:sub %edi,%edx
+0x4024df:3:cmp $0x1,%edx
+0x4024e2:3:cmovbe %ecx,%eax
+0x4024e5:3:mov %eax,-0x40(%rbp)
+0x4024e8:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x4024ed:5:mov $0xb3c4339a,%eax
+0x4024f2:5:mov $0x335f74eb,%ecx
+0x4024f7:3:mov -0x2c(%rbp),%edx
+0x4024fa:6:cmp $0x81b,%edx
+0x402500:3:cmove %ecx,%eax
+0x402503:3:mov %eax,-0x40(%rbp)
+0x402506:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x40250b:5:mov $0xb3c4339a,%eax
+0x402510:5:mov $0xfbbf8394,%ecx
+0x402515:3:mov -0x2c(%rbp),%edx
+0x402518:6:cmp $0x813,%edx
+0x40251e:3:cmove %ecx,%eax
+0x402521:3:mov %eax,-0x40(%rbp)
+0x402524:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x402529:5:mov $0x2ceba8f,%eax
+0x40252e:5:mov $0xec5d3db0,%ecx
+0x402533:3:mov -0x2c(%rbp),%edx
+0x402536:6:cmp $0x80a,%edx
+0x40253c:3:cmovl %ecx,%eax
+0x40253f:3:mov %eax,-0x40(%rbp)
+0x402542:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x402547:5:mov $0x1bd12cba,%eax
+0x40254c:5:mov $0xb8ce23bd,%ecx
+0x402551:3:mov -0x2c(%rbp),%edx
+0x402554:6:cmp $0x80c,%edx
+0x40255a:3:cmovl %ecx,%eax
+0x40255d:3:mov %eax,-0x40(%rbp)
+0x402560:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x402565:5:mov $0x7f877b8e,%eax
+0x40256a:5:mov $0xca808429,%ecx
+0x40256f:3:mov -0x2c(%rbp),%edx
+0x402572:6:cmp $0x812,%edx
+0x402578:3:cmovl %ecx,%eax
+0x40257b:3:mov %eax,-0x40(%rbp)
+0x40257e:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x402583:5:mov $0xb3c4339a,%eax
+0x402588:5:mov $0x335f74eb,%ecx
+0x40258d:3:mov -0x2c(%rbp),%edx
+0x402590:6:cmp $0x80c,%edx
+0x402596:3:cmove %ecx,%eax
+0x402599:3:mov %eax,-0x40(%rbp)
+0x40259c:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x4025a1:5:mov $0xb3c4339a,%eax
+0x4025a6:5:mov $0x335f74eb,%ecx
+0x4025ab:3:mov -0x2c(%rbp),%edx
+0x4025ae:6:cmp $0x80a,%edx
+0x4025b4:3:cmove %ecx,%eax
+0x4025b7:3:mov %eax,-0x40(%rbp)
+0x4025ba:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x4025bf:5:mov $0xb274aa1c,%eax
+0x4025c4:5:mov $0xdae8dffe,%ecx
+0x4025c9:3:mov -0x2c(%rbp),%edx
+0x4025cc:6:cmp $0x804,%edx
+0x4025d2:3:cmovl %ecx,%eax
+0x4025d5:3:mov %eax,-0x40(%rbp)
+0x4025d8:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x4025dd:5:mov $0x72aa3cd8,%eax
+0x4025e2:5:mov $0x7c70db5d,%ecx
+0x4025e7:3:mov -0x2c(%rbp),%edx
+0x4025ea:6:cmp $0x806,%edx
+0x4025f0:3:cmovl %ecx,%eax
+0x4025f3:3:mov %eax,-0x40(%rbp)
+0x4025f6:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x4025fb:5:mov $0xb3c4339a,%eax
+0x402600:5:mov $0x58c58682,%ecx
+0x402605:3:mov -0x2c(%rbp),%edx
+0x402608:6:cmp $0x806,%edx
+0x40260e:3:cmove %ecx,%eax
+0x402611:3:mov %eax,-0x40(%rbp)
+0x402614:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x402619:5:mov $0xb3c4339a,%eax
+0x40261e:5:mov $0xfbbf8394,%ecx
+0x402623:3:mov -0x2c(%rbp),%edx
+0x402626:6:cmp $0x804,%edx
+0x40262c:3:cmove %ecx,%eax
+0x40262f:3:mov %eax,-0x40(%rbp)
+0x402632:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x402637:5:mov $0xb3c4339a,%eax
+0x40263c:5:mov $0xfbbf8394,%ecx
+0x402641:3:mov -0x2c(%rbp),%edx
+0x402644:6:cmp $0x802,%edx
+0x40264a:3:cmove %ecx,%eax
+0x40264d:3:mov %eax,-0x40(%rbp)
+0x402650:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x402655:5:mov $0x501caedf,%eax
+0x40265a:5:mov $0x4587f3e5,%ecx
+0x40265f:3:mov -0x2c(%rbp),%edx
+0x402662:6:cmp $0x94,%edx
+0x402668:3:cmovl %ecx,%eax
+0x40266b:3:mov %eax,-0x40(%rbp)
+0x40266e:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x402673:5:mov $0x5abee5df,%eax
+0x402678:5:mov $0x6c5d6c9a,%ecx
+0x40267d:3:mov -0x2c(%rbp),%edx
+0x402680:6:cmp $0xfa,%edx
+0x402686:3:cmovl %ecx,%eax
+0x402689:3:mov %eax,-0x40(%rbp)
+0x40268c:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x402691:5:mov $0x3d9f5302,%eax
+0x402696:5:mov $0x744515e7,%ecx
+0x40269b:3:mov -0x2c(%rbp),%edx
+0x40269e:6:cmp $0x112,%edx
+0x4026a4:3:cmovl %ecx,%eax
+0x4026a7:3:mov %eax,-0x40(%rbp)
+0x4026aa:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x4026af:5:mov $0x7f877b8e,%eax
+0x4026b4:5:mov $0x47eb4f3d,%ecx
+0x4026b9:3:mov -0x2c(%rbp),%edx
+0x4026bc:6:cmp $0x801,%edx
+0x4026c2:3:cmovl %ecx,%eax
+0x4026c5:3:mov %eax,-0x40(%rbp)
+0x4026c8:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x4026cd:5:mov $0xb3c4339a,%eax
+0x4026d2:5:mov $0x77eaeb96,%ecx
+0x4026d7:3:mov -0x2c(%rbp),%edx
+0x4026da:6:cmp $0x112,%edx
+0x4026e0:3:cmove %ecx,%eax
+0x4026e3:3:mov %eax,-0x40(%rbp)
+0x4026e6:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x4026eb:5:mov $0xb3c4339a,%eax
+0x4026f0:5:mov $0x335f74eb,%ecx
+0x4026f5:3:mov -0x2c(%rbp),%edx
+0x4026f8:6:cmp $0xfa,%edx
+0x4026fe:3:cmove %ecx,%eax
+0x402701:3:mov %eax,-0x40(%rbp)
+0x402704:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x402709:5:mov $0x1fd3176d,%eax
+0x40270e:5:mov $0x2d1ca914,%ecx
+0x402713:3:mov -0x2c(%rbp),%edx
+0x402716:6:cmp $0x96,%edx
+0x40271c:3:cmovl %ecx,%eax
+0x40271f:3:mov %eax,-0x40(%rbp)
+0x402722:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x402727:5:mov $0x30b5afd7,%eax
+0x40272c:5:mov $0x22686f50,%ecx
+0x402731:3:mov -0x2c(%rbp),%edx
+0x402734:6:cmp $0x9c,%edx
+0x40273a:3:cmovl %ecx,%eax
+0x40273d:3:mov %eax,-0x40(%rbp)
+0x402740:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x402745:5:mov $0xb3c4339a,%eax
+0x40274a:5:mov $0x58c58682,%ecx
+0x40274f:3:mov -0x2c(%rbp),%edx
+0x402752:6:cmp $0x9c,%edx
+0x402758:3:cmove %ecx,%eax
+0x40275b:3:mov %eax,-0x40(%rbp)
+0x40275e:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x402763:5:mov $0xb3c4339a,%eax
+0x402768:5:mov $0x5b0021cf,%ecx
+0x40276d:3:mov -0x2c(%rbp),%edx
+0x402770:6:add $0x7ce5d8b3,%edx
+0x402776:6:add $0xffffff6a,%edx
+0x40277c:6:sub $0x7ce5d8b3,%edx
+0x402782:3:cmp $0x1,%edx
+0x402785:3:cmovbe %ecx,%eax
+0x402788:3:mov %eax,-0x40(%rbp)
+0x40278b:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x402790:5:mov $0xb3c4339a,%eax
+0x402795:5:mov $0x58c58682,%ecx
+0x40279a:3:mov -0x2c(%rbp),%edx
+0x40279d:6:cmp $0x94,%edx
+0x4027a3:3:cmove %ecx,%eax
+0x4027a6:3:mov %eax,-0x40(%rbp)
+0x4027a9:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x4027ae:5:mov $0xdd6451f5,%eax
+0x4027b3:5:mov $0xbf921528,%ecx
+0x4027b8:3:mov -0x2c(%rbp),%edx
+0x4027bb:3:cmp $0x17,%edx
+0x4027be:3:cmovl %ecx,%eax
+0x4027c1:3:mov %eax,-0x40(%rbp)
+0x4027c4:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x4027c9:5:mov $0x11294e6b,%eax
+0x4027ce:5:mov $0x95f2d511,%ecx
+0x4027d3:3:mov -0x2c(%rbp),%edx
+0x4027d6:3:cmp $0x22,%edx
+0x4027d9:3:cmovl %ecx,%eax
+0x4027dc:3:mov %eax,-0x40(%rbp)
+0x4027df:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x4027e4:5:mov $0xcee42142,%eax
+0x4027e9:5:mov $0x6e1bd3c9,%ecx
+0x4027ee:3:mov -0x2c(%rbp),%edx
+0x4027f1:3:cmp $0x32,%edx
+0x4027f4:3:cmovl %ecx,%eax
+0x4027f7:3:mov %eax,-0x40(%rbp)
+0x4027fa:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x4027ff:5:mov $0xb3c4339a,%eax
+0x402804:5:mov $0xc2fb7c20,%ecx
+0x402809:3:mov -0x2c(%rbp),%edx
+0x40280c:3:cmp $0x32,%edx
+0x40280f:3:cmove %ecx,%eax
+0x402812:3:mov %eax,-0x40(%rbp)
+0x402815:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x40281a:5:mov $0xb3c4339a,%eax
+0x40281f:5:mov $0xfbbf8394,%ecx
+0x402824:3:mov -0x2c(%rbp),%edx
+0x402827:3:cmp $0x22,%edx
+0x40282a:3:cmove %ecx,%eax
+0x40282d:3:mov %eax,-0x40(%rbp)
+0x402830:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x402835:5:mov $0xb3c4339a,%eax
+0x40283a:5:mov $0x58c58682,%ecx
+0x40283f:3:mov -0x2c(%rbp),%edx
+0x402842:3:cmp $0x17,%edx
+0x402845:3:cmove %ecx,%eax
+0x402848:3:mov %eax,-0x40(%rbp)
+0x40284b:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x402850:5:mov $0xc1dafe10,%eax
+0x402855:5:mov $0x716f57d7,%ecx
+0x40285a:3:mov -0x2c(%rbp),%edx
+0x40285d:3:cmp $0x7,%edx
+0x402860:3:cmovl %ecx,%eax
+0x402863:3:mov %eax,-0x40(%rbp)
+0x402866:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x40286b:5:mov $0x96deb004,%eax
+0x402870:5:mov $0x4e4f90e7,%ecx
+0x402875:3:mov -0x2c(%rbp),%edx
+0x402878:3:cmp $0x12,%edx
+0x40287b:3:cmovl %ecx,%eax
+0x40287e:3:mov %eax,-0x40(%rbp)
+0x402881:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x402886:5:mov $0xb3c4339a,%eax
+0x40288b:5:mov $0x7f877b8e,%ecx
+0x402890:3:mov -0x2c(%rbp),%edx
+0x402893:3:cmp $0x12,%edx
+0x402896:3:cmove %ecx,%eax
+0x402899:3:mov %eax,-0x40(%rbp)
+0x40289c:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x4028a1:5:mov $0xb3c4339a,%eax
+0x4028a6:5:mov $0x58c58682,%ecx
+0x4028ab:3:mov -0x2c(%rbp),%edx
+0x4028ae:3:cmp $0x7,%edx
+0x4028b1:3:cmove %ecx,%eax
+0x4028b4:3:mov %eax,-0x40(%rbp)
+0x4028b7:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x4028bc:5:mov $0xb3c4339a,%eax
+0x4028c1:5:mov $0x5b0021cf,%ecx
+0x4028c6:3:mov -0x2c(%rbp),%edx
+0x4028c9:3:cmp $0x6,%edx
+0x4028cc:3:cmove %ecx,%eax
+0x4028cf:3:mov %eax,-0x40(%rbp)
+0x4028d2:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x4028d7:7:mov 0x405060,%eax
+0x4028de:4:mov -0x38(%rbp),%rcx
+0x4028e2:2:mov %eax,(%rcx)
+0x4028e4:7:movl $0x67e81056,-0x40(%rbp)
+0x4028eb:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x4028f0:7:mov 0x405040,%eax
+0x4028f7:4:mov -0x38(%rbp),%rcx
+0x4028fb:2:mov %eax,(%rcx)
+0x4028fd:7:movl $0x67e81056,-0x40(%rbp)
+0x402904:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x402909:7:mov 0x405064,%eax
+0x402910:4:mov -0x38(%rbp),%rcx
+0x402914:2:mov %eax,(%rcx)
+0x402916:7:movl $0x67e81056,-0x40(%rbp)
+0x40291d:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x402922:7:mov 0x405070,%eax
+0x402929:4:mov -0x38(%rbp),%rcx
+0x40292d:2:mov %eax,(%rcx)
+0x40292f:7:movl $0x67e81056,-0x40(%rbp)
+0x402936:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x40293b:7:mov 0x40503c,%eax
+0x402942:4:mov -0x38(%rbp),%rcx
+0x402946:2:mov %eax,(%rcx)
+0x402948:7:movl $0x67e81056,-0x40(%rbp)
+0x40294f:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x402954:7:mov 0x405068,%eax
+0x40295b:4:mov -0x38(%rbp),%rcx
+0x40295f:2:mov %eax,(%rcx)
+0x402961:7:movl $0x67e81056,-0x40(%rbp)
+0x402968:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x40296d:7:mov 0x405044,%eax
+0x402974:4:mov -0x38(%rbp),%rcx
+0x402978:2:mov %eax,(%rcx)
+0x40297a:7:movl $0x67e81056,-0x40(%rbp)
+0x402981:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x402986:7:movl $0x3875489b,-0x40(%rbp)
+0x40298d:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x402992:7:mov 0x405040,%eax
+0x402999:4:mov -0x38(%rbp),%rcx
+0x40299d:2:mov %eax,(%rcx)
+0x40299f:7:movl $0x67e81056,-0x40(%rbp)
+0x4029a6:5:jmp 00000000004029d6 <wacom_intuos_get_tool_type+0x17b6>
+0x4029ab:4:mov -0x38(%rbp),%rax
+0x4029af:2:mov (%rax),%eax
+0x4029b1:4:lea -0x28(%rbp),%rsp
+0x4029b5:1:pop %rbx
+0x4029b6:2:pop %r12
+0x4029b8:2:pop %r13
+0x4029ba:2:pop %r14
+0x4029bc:2:pop %r15
+0x4029be:1:pop %rbp
+0x4029bf:1:ret
+0x4029c0:3:mov %rsp,%rax
+0x4029c3:4:add $0xfffffffffffffff0,%rax
+0x4029c7:3:mov %rax,%rsp
+0x4029ca:3:mov -0x44(%rbp),%ecx
+0x4029cd:2:mov %ecx,(%rax)
+0x4029cf:7:movl $0x2e41138c,-0x40(%rbp)
+0x4029d6:5:jmp 0000000000401281 <wacom_intuos_get_tool_type+0x61>
+0x4029db:5:nopl 0x0(%rax,%rax,1)
+0x4029e0:1:push %rbp
+0x4029e1:3:mov %rsp,%rbp
+0x4029e4:2:push %r15
+0x4029e6:2:push %r14
+0x4029e8:2:push %r12
+0x4029ea:1:push %rbx
+0x4029eb:7:sub $0xa0,%rsp
+0x4029f2:7:movl $0x0,-0x2c(%rbp)
+0x4029f9:3:mov %edi,-0x30(%rbp)
+0x4029fc:4:mov %rsi,-0x38(%rbp)
+0x402a00:3:mov -0x30(%rbp),%edi
+0x402a03:3:mov %edi,-0x28(%rbp)
+0x402a06:7:movl $0x69bc1678,-0x58(%rbp)
+0x402a0d:3:mov -0x58(%rbp),%eax
+0x402a10:2:mov %eax,%ecx
+0x402a12:6:sub $0x811baaec,%ecx
+0x402a18:3:mov %eax,-0x5c(%rbp)
+0x402a1b:3:mov %ecx,-0x60(%rbp)
+0x402a1e:6:je 0000000000402f93 <main+0x5b3>
+0x402a24:5:jmp 0000000000402a29 <main+0x49>
+0x402a29:3:mov -0x5c(%rbp),%eax
+0x402a2c:5:sub $0x8154c948,%eax
+0x402a31:3:mov %eax,-0x64(%rbp)
+0x402a34:6:je 0000000000402d6a <main+0x38a>
+0x402a3a:5:jmp 0000000000402a3f <main+0x5f>
+0x402a3f:3:mov -0x5c(%rbp),%eax
+0x402a42:5:sub $0x8a8d8b6b,%eax
+0x402a47:3:mov %eax,-0x68(%rbp)
+0x402a4a:6:je 0000000000402f77 <main+0x597>
+0x402a50:5:jmp 0000000000402a55 <main+0x75>
+0x402a55:3:mov -0x5c(%rbp),%eax
+0x402a58:5:sub $0x9b0dd752,%eax
+0x402a5d:3:mov %eax,-0x6c(%rbp)
+0x402a60:6:je 0000000000402cb4 <main+0x2d4>
+0x402a66:5:jmp 0000000000402a6b <main+0x8b>
+0x402a6b:3:mov -0x5c(%rbp),%eax
+0x402a6e:5:sub $0x9de53887,%eax
+0x402a73:3:mov %eax,-0x70(%rbp)
+0x402a76:6:je 0000000000402c0c <main+0x22c>
+0x402a7c:5:jmp 0000000000402a81 <main+0xa1>
+0x402a81:3:mov -0x5c(%rbp),%eax
+0x402a84:5:sub $0xbc15957d,%eax
+0x402a89:3:mov %eax,-0x74(%rbp)
+0x402a8c:6:je 0000000000402f34 <main+0x554>
+0x402a92:5:jmp 0000000000402a97 <main+0xb7>
+0x402a97:3:mov -0x5c(%rbp),%eax
+0x402a9a:5:sub $0xbda50a5f,%eax
+0x402a9f:3:mov %eax,-0x78(%rbp)
+0x402aa2:6:je 0000000000402f40 <main+0x560>
+0x402aa8:5:jmp 0000000000402aad <main+0xcd>
+0x402aad:3:mov -0x5c(%rbp),%eax
+0x402ab0:5:sub $0xc77696b7,%eax
+0x402ab5:3:mov %eax,-0x7c(%rbp)
+0x402ab8:6:je 0000000000402d85 <main+0x3a5>
+0x402abe:5:jmp 0000000000402ac3 <main+0xe3>
+0x402ac3:3:mov -0x5c(%rbp),%eax
+0x402ac6:5:sub $0xe4537c6e,%eax
+0x402acb:3:mov %eax,-0x80(%rbp)
+0x402ace:6:je 0000000000402f64 <main+0x584>
+0x402ad4:5:jmp 0000000000402ad9 <main+0xf9>
+0x402ad9:3:mov -0x5c(%rbp),%eax
+0x402adc:5:sub $0xee41be38,%eax
+0x402ae1:6:mov %eax,-0x84(%rbp)
+0x402ae7:6:je 0000000000402d5e <main+0x37e>
+0x402aed:5:jmp 0000000000402af2 <main+0x112>
+0x402af2:3:mov -0x5c(%rbp),%eax
+0x402af5:5:sub $0xf47b8919,%eax
+0x402afa:6:mov %eax,-0x88(%rbp)
+0x402b00:6:je 0000000000402da0 <main+0x3c0>
+0x402b06:5:jmp 0000000000402b0b <main+0x12b>
+0x402b0b:3:mov -0x5c(%rbp),%eax
+0x402b0e:5:sub $0x1e823443,%eax
+0x402b13:6:mov %eax,-0x8c(%rbp)
+0x402b19:6:je 0000000000402dd6 <main+0x3f6>
+0x402b1f:5:jmp 0000000000402b24 <main+0x144>
+0x402b24:3:mov -0x5c(%rbp),%eax
+0x402b27:5:sub $0x2d8dd2d1,%eax
+0x402b2c:6:mov %eax,-0x90(%rbp)
+0x402b32:6:je 0000000000402f51 <main+0x571>
+0x402b38:5:jmp 0000000000402b3d <main+0x15d>
+0x402b3d:3:mov -0x5c(%rbp),%eax
+0x402b40:5:sub $0x365a21c4,%eax
+0x402b45:6:mov %eax,-0x94(%rbp)
+0x402b4b:6:je 0000000000402dbb <main+0x3db>
+0x402b51:5:jmp 0000000000402b56 <main+0x176>
+0x402b56:3:mov -0x5c(%rbp),%eax
+0x402b59:5:sub $0x3a3a9eca,%eax
+0x402b5e:6:mov %eax,-0x98(%rbp)
+0x402b64:6:je 0000000000402eb8 <main+0x4d8>
+0x402b6a:5:jmp 0000000000402b6f <main+0x18f>
+0x402b6f:3:mov -0x5c(%rbp),%eax
+0x402b72:5:sub $0x4289aa6c,%eax
+0x402b77:6:mov %eax,-0x9c(%rbp)
+0x402b7d:6:je 0000000000402efc <main+0x51c>
+0x402b83:5:jmp 0000000000402b88 <main+0x1a8>
+0x402b88:3:mov -0x5c(%rbp),%eax
+0x402b8b:5:sub $0x4ce73c15,%eax
+0x402b90:6:mov %eax,-0xa0(%rbp)
+0x402b96:6:je 0000000000402e2e <main+0x44e>
+0x402b9c:5:jmp 0000000000402ba1 <main+0x1c1>
+0x402ba1:3:mov -0x5c(%rbp),%eax
+0x402ba4:5:sub $0x5151e621,%eax
+0x402ba9:6:mov %eax,-0xa4(%rbp)
+0x402baf:6:je 0000000000402ec4 <main+0x4e4>
+0x402bb5:5:jmp 0000000000402bba <main+0x1da>
+0x402bba:3:mov -0x5c(%rbp),%eax
+0x402bbd:5:sub $0x69bc1678,%eax
+0x402bc2:6:mov %eax,-0xa8(%rbp)
+0x402bc8:6:je 0000000000402bf1 <main+0x211>
+0x402bce:5:jmp 0000000000402bd3 <main+0x1f3>
+0x402bd3:3:mov -0x5c(%rbp),%eax
+0x402bd6:5:sub $0x7e438501,%eax
+0x402bdb:6:mov %eax,-0xac(%rbp)
+0x402be1:6:je 0000000000402c24 <main+0x244>
+0x402be7:5:jmp 0000000000402bec <main+0x20c>
+0x402bec:5:jmp 0000000000402fc6 <main+0x5e6>
+0x402bf1:5:mov $0x7e438501,%eax
+0x402bf6:5:mov $0x9de53887,%ecx
+0x402bfb:3:mov -0x28(%rbp),%edx
+0x402bfe:3:cmp $0x2,%edx
+0x402c01:3:cmovne %ecx,%eax
+0x402c04:3:mov %eax,-0x58(%rbp)
+0x402c07:5:jmp 0000000000402fc6 <main+0x5e6>
+0x402c0c:5:call 00000000004011f0 <usage>
+0x402c11:7:movl $0x1,-0x2c(%rbp)
+0x402c18:7:movl $0xe4537c6e,-0x58(%rbp)
+0x402c1f:5:jmp 0000000000402fc6 <main+0x5e6>
+0x402c24:5:mov $0x8a8d8b6b,%eax
+0x402c29:5:mov $0x9b0dd752,%ecx
+0x402c2e:2:mov $0x1,%dl
+0x402c30:7:mov 0x405058,%esi
+0x402c37:7:mov 0x40505c,%edi
+0x402c3e:3:mov %esi,%r8d
+0x402c41:7:sub $0x22a8bd47,%r8d
+0x402c48:4:sub $0x1,%r8d
+0x402c4c:7:add $0x22a8bd47,%r8d
+0x402c53:4:imul %r8d,%esi
+0x402c57:3:and $0x1,%esi
+0x402c5a:3:cmp $0x0,%esi
+0x402c5d:4:sete %r9b
+0x402c61:3:cmp $0xa,%edi
+0x402c64:4:setl %r10b
+0x402c68:3:mov %r9b,%r11b
+0x402c6b:4:xor $0xff,%r11b
+0x402c6f:3:mov %r10b,%bl
+0x402c72:3:xor $0xff,%bl
+0x402c75:3:xor $0x0,%dl
+0x402c78:3:mov %r11b,%r14b
+0x402c7b:4:and $0x0,%r14b
+0x402c7f:3:and %dl,%r9b
+0x402c82:3:mov %bl,%r15b
+0x402c85:4:and $0x0,%r15b
+0x402c89:3:and %dl,%r10b
+0x402c8c:3:or %r9b,%r14b
+0x402c8f:3:or %r10b,%r15b
+0x402c92:3:xor %r15b,%r14b
+0x402c95:3:or %bl,%r11b
+0x402c98:4:xor $0xff,%r11b
+0x402c9c:3:or $0x0,%dl
+0x402c9f:3:and %dl,%r11b
+0x402ca2:3:or %r11b,%r14b
+0x402ca5:4:test $0x1,%r14b
+0x402ca9:3:cmovne %ecx,%eax
+0x402cac:3:mov %eax,-0x58(%rbp)
+0x402caf:5:jmp 0000000000402fc6 <main+0x5e6>
+0x402cb4:4:mov -0x38(%rbp),%rax
+0x402cb8:4:mov 0x8(%rax),%rdi
+0x402cbc:5:call 0000000000401040 <atoi@plt>
+0x402cc1:5:mov $0x8a8d8b6b,%ecx
+0x402cc6:5:mov $0xee41be38,%edx
+0x402ccb:3:mov $0x1,%sil
+0x402cce:3:mov %eax,-0x3c(%rbp)
+0x402cd1:3:mov -0x3c(%rbp),%eax
+0x402cd4:3:mov %eax,-0x24(%rbp)
+0x402cd7:7:mov 0x405058,%eax
+0x402cde:8:mov 0x40505c,%r8d
+0x402ce6:3:mov %eax,%r9d
+0x402ce9:7:sub $0x70ae6d34,%r9d
+0x402cf0:4:sub $0x1,%r9d
+0x402cf4:7:add $0x70ae6d34,%r9d
+0x402cfb:4:imul %r9d,%eax
+0x402cff:3:and $0x1,%eax
+0x402d02:3:cmp $0x0,%eax
+0x402d05:4:sete %r10b
+0x402d09:4:cmp $0xa,%r8d
+0x402d0d:4:setl %r11b
+0x402d11:3:mov %r10b,%bl
+0x402d14:3:xor $0xff,%bl
+0x402d17:3:mov %r11b,%r14b
+0x402d1a:4:xor $0xff,%r14b
+0x402d1e:4:xor $0x0,%sil
+0x402d22:3:mov %bl,%r15b
+0x402d25:4:and $0x0,%r15b
+0x402d29:3:and %sil,%r10b
+0x402d2c:3:mov %r14b,%r12b
+0x402d2f:4:and $0x0,%r12b
+0x402d33:3:and %sil,%r11b
+0x402d36:3:or %r10b,%r15b
+0x402d39:3:or %r11b,%r12b
+0x402d3c:3:xor %r12b,%r15b
+0x402d3f:3:or %r14b,%bl
+0x402d42:3:xor $0xff,%bl
+0x402d45:4:or $0x0,%sil
+0x402d49:3:and %sil,%bl
+0x402d4c:3:or %bl,%r15b
+0x402d4f:4:test $0x1,%r15b
+0x402d53:3:cmovne %edx,%ecx
+0x402d56:3:mov %ecx,-0x58(%rbp)
+0x402d59:5:jmp 0000000000402fc6 <main+0x5e6>
+0x402d5e:7:movl $0x8154c948,-0x58(%rbp)
+0x402d65:5:jmp 0000000000402fc6 <main+0x5e6>
+0x402d6a:5:mov $0xc77696b7,%eax
+0x402d6f:5:mov $0x365a21c4,%ecx
+0x402d74:3:mov -0x24(%rbp),%edx
+0x402d77:3:cmp $0x1,%edx
+0x402d7a:3:cmovl %ecx,%eax
+0x402d7d:3:mov %eax,-0x58(%rbp)
+0x402d80:5:jmp 0000000000402fc6 <main+0x5e6>
+0x402d85:5:mov $0xf47b8919,%eax
+0x402d8a:5:mov $0x5151e621,%ecx
+0x402d8f:3:mov -0x24(%rbp),%edx
+0x402d92:3:cmp $0x2,%edx
+0x402d95:3:cmovl %ecx,%eax
+0x402d98:3:mov %eax,-0x58(%rbp)
+0x402d9b:5:jmp 0000000000402fc6 <main+0x5e6>
+0x402da0:5:mov $0xbc15957d,%eax
+0x402da5:5:mov $0x4289aa6c,%ecx
+0x402daa:3:mov -0x24(%rbp),%edx
+0x402dad:3:cmp $0x2,%edx
+0x402db0:3:cmove %ecx,%eax
+0x402db3:3:mov %eax,-0x58(%rbp)
+0x402db6:5:jmp 0000000000402fc6 <main+0x5e6>
+0x402dbb:5:mov $0xbc15957d,%eax
+0x402dc0:5:mov $0x1e823443,%ecx
+0x402dc5:3:mov -0x24(%rbp),%edx
+0x402dc8:3:cmp $0x0,%edx
+0x402dcb:3:cmove %ecx,%eax
+0x402dce:3:mov %eax,-0x58(%rbp)
+0x402dd1:5:jmp 0000000000402fc6 <main+0x5e6>
+0x402dd6:5:mov $0x811baaec,%eax
+0x402ddb:5:mov $0x4ce73c15,%ecx
+0x402de0:7:mov 0x405058,%edx
+0x402de7:7:mov 0x40505c,%esi
+0x402dee:2:mov %edx,%edi
+0x402df0:6:sub $0xb5f654a6,%edi
+0x402df6:3:sub $0x1,%edi
+0x402df9:6:add $0xb5f654a6,%edi
+0x402dff:3:imul %edi,%edx
+0x402e02:3:and $0x1,%edx
+0x402e05:3:cmp $0x0,%edx
+0x402e08:4:sete %r8b
+0x402e0c:3:cmp $0xa,%esi
+0x402e0f:4:setl %r9b
+0x402e13:3:mov %r8b,%r10b
+0x402e16:3:and %r9b,%r10b
+0x402e19:3:xor %r9b,%r8b
+0x402e1c:3:or %r8b,%r10b
+0x402e1f:4:test $0x1,%r10b
+0x402e23:3:cmovne %ecx,%eax
+0x402e26:3:mov %eax,-0x58(%rbp)
+0x402e29:5:jmp 0000000000402fc6 <main+0x5e6>
+0x402e2e:7:movl $0x64,-0x40(%rbp)
+0x402e35:3:mov -0x40(%rbp),%edi
+0x402e38:5:call 0000000000401220 <wacom_intuos_get_tool_type>
+0x402e3d:10:movabs $0x4030f2,%rdi
+0x402e47:3:mov %eax,-0x44(%rbp)
+0x402e4a:3:mov -0x44(%rbp),%esi
+0x402e4d:2:mov $0x0,%al
+0x402e4f:5:call 0000000000401030 <printf@plt>
+0x402e54:5:mov $0x811baaec,%esi
+0x402e59:5:mov $0x3a3a9eca,%ecx
+0x402e5e:7:mov 0x405058,%edx
+0x402e65:8:mov 0x40505c,%r8d
+0x402e6d:3:mov %edx,%r9d
+0x402e70:7:sub $0xf6a483cf,%r9d
+0x402e77:4:sub $0x1,%r9d
+0x402e7b:7:add $0xf6a483cf,%r9d
+0x402e82:4:imul %r9d,%edx
+0x402e86:3:and $0x1,%edx
+0x402e89:3:cmp $0x0,%edx
+0x402e8c:4:sete %r10b
+0x402e90:4:cmp $0xa,%r8d
+0x402e94:4:setl %r11b
+0x402e98:3:mov %r10b,%bl
+0x402e9b:3:and %r11b,%bl
+0x402e9e:3:xor %r11b,%r10b
+0x402ea1:3:or %r10b,%bl
+0x402ea4:3:test $0x1,%bl
+0x402ea7:3:cmovne %ecx,%esi
+0x402eaa:3:mov %esi,-0x58(%rbp)
+0x402ead:6:mov %eax,-0xb0(%rbp)
+0x402eb3:5:jmp 0000000000402fc6 <main+0x5e6>
+0x402eb8:7:movl $0x2d8dd2d1,-0x58(%rbp)
+0x402ebf:5:jmp 0000000000402fc6 <main+0x5e6>
+0x402ec4:7:movl $0xff,-0x48(%rbp)
+0x402ecb:3:mov -0x48(%rbp),%edi
+0x402ece:5:call 0000000000401220 <wacom_intuos_get_tool_type>
+0x402ed3:10:movabs $0x4030f2,%rdi
+0x402edd:3:mov %eax,-0x4c(%rbp)
+0x402ee0:3:mov -0x4c(%rbp),%esi
+0x402ee3:2:mov $0x0,%al
+0x402ee5:5:call 0000000000401030 <printf@plt>
+0x402eea:7:movl $0x2d8dd2d1,-0x58(%rbp)
+0x402ef1:6:mov %eax,-0xb4(%rbp)
+0x402ef7:5:jmp 0000000000402fc6 <main+0x5e6>
+0x402efc:7:movl $0xa,-0x50(%rbp)
+0x402f03:3:mov -0x50(%rbp),%edi
+0x402f06:5:call 0000000000401220 <wacom_intuos_get_tool_type>
+0x402f0b:10:movabs $0x4030f2,%rdi
+0x402f15:3:mov %eax,-0x54(%rbp)
+0x402f18:3:mov -0x54(%rbp),%esi
+0x402f1b:2:mov $0x0,%al
+0x402f1d:5:call 0000000000401030 <printf@plt>
+0x402f22:7:movl $0x2d8dd2d1,-0x58(%rbp)
+0x402f29:6:mov %eax,-0xb8(%rbp)
+0x402f2f:5:jmp 0000000000402fc6 <main+0x5e6>
+0x402f34:7:movl $0xbda50a5f,-0x58(%rbp)
+0x402f3b:5:jmp 0000000000402fc6 <main+0x5e6>
+0x402f40:5:call 00000000004011f0 <usage>
+0x402f45:7:movl $0x2d8dd2d1,-0x58(%rbp)
+0x402f4c:5:jmp 0000000000402fc6 <main+0x5e6>
+0x402f51:7:movl $0x0,-0x2c(%rbp)
+0x402f58:7:movl $0xe4537c6e,-0x58(%rbp)
+0x402f5f:5:jmp 0000000000402fc6 <main+0x5e6>
+0x402f64:3:mov -0x2c(%rbp),%eax
+0x402f67:7:add $0xa0,%rsp
+0x402f6e:1:pop %rbx
+0x402f6f:2:pop %r12
+0x402f71:2:pop %r14
+0x402f73:2:pop %r15
+0x402f75:1:pop %rbp
+0x402f76:1:ret
+0x402f77:4:mov -0x38(%rbp),%rax
+0x402f7b:4:mov 0x8(%rax),%rdi
+0x402f7f:5:call 0000000000401040 <atoi@plt>
+0x402f84:3:mov %eax,-0x3c(%rbp)
+0x402f87:7:movl $0x9b0dd752,-0x58(%rbp)
+0x402f8e:5:jmp 0000000000402fc6 <main+0x5e6>
+0x402f93:7:movl $0x64,-0x40(%rbp)
+0x402f9a:3:mov -0x40(%rbp),%edi
+0x402f9d:5:call 0000000000401220 <wacom_intuos_get_tool_type>
+0x402fa2:10:movabs $0x4030f2,%rdi
+0x402fac:3:mov %eax,-0x44(%rbp)
+0x402faf:3:mov -0x44(%rbp),%esi
+0x402fb2:2:mov $0x0,%al
+0x402fb4:5:call 0000000000401030 <printf@plt>
+0x402fb9:7:movl $0x4ce73c15,-0x58(%rbp)
+0x402fc0:6:mov %eax,-0xbc(%rbp)
+0x402fc6:5:jmp 0000000000402a0d <main+0x2d>
+0x402fcc:4:endbr64
+0x402fd0:4:sub $0x8,%rsp
+0x402fd4:4:add $0x8,%rsp
+0x402fd8:1:ret

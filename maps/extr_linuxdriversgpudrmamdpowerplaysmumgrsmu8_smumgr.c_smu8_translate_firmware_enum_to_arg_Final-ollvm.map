@@ -1,0 +1,2074 @@
+0x401000:4:endbr64
+0x401004:4:sub $0x8,%rsp
+0x401008:7:mov 0x4fe9(%rip),%rax
+0x40100f:3:test %rax,%rax
+0x401012:2:je 0000000000401016 <_init+0x16>
+0x401014:2:call *%rax
+0x401016:4:add $0x8,%rsp
+0x40101a:1:ret
+0x401020:6:push 0x4fe2(%rip)
+0x401026:6:jmp *0x4fe4(%rip)
+0x40102c:4:nopl 0x0(%rax)
+0x401030:6:jmp *0x4fe2(%rip)
+0x401036:5:push $0x0
+0x40103b:5:jmp 0000000000401020 <_init+0x20>
+0x401040:6:jmp *0x4fda(%rip)
+0x401046:5:push $0x1
+0x40104b:5:jmp 0000000000401020 <_init+0x20>
+0x401050:6:jmp *0x4fd2(%rip)
+0x401056:5:push $0x2
+0x40105b:5:jmp 0000000000401020 <_init+0x20>
+0x401060:6:jmp *0x4fca(%rip)
+0x401066:5:push $0x3
+0x40106b:5:jmp 0000000000401020 <_init+0x20>
+0x401070:4:endbr64
+0x401074:2:xor %ebp,%ebp
+0x401076:3:mov %rdx,%r9
+0x401079:1:pop %rsi
+0x40107a:3:mov %rsp,%rdx
+0x40107d:4:and $0xfffffffffffffff0,%rsp
+0x401081:1:push %rax
+0x401082:1:push %rsp
+0x401083:3:xor %r8d,%r8d
+0x401086:2:xor %ecx,%ecx
+0x401088:7:mov $0x402650,%rdi
+0x40108f:6:call *0x4f5b(%rip)
+0x401095:1:hlt
+0x401096:10:cs nopw 0x0(%rax,%rax,1)
+0x4010a0:4:endbr64
+0x4010a4:1:ret
+0x4010a5:10:cs nopw 0x0(%rax,%rax,1)
+0x4010af:1:nop
+0x4010b0:5:mov $0x406048,%eax
+0x4010b5:6:cmp $0x406048,%rax
+0x4010bb:2:je 00000000004010d0 <deregister_tm_clones+0x20>
+0x4010bd:5:mov $0x0,%eax
+0x4010c2:3:test %rax,%rax
+0x4010c5:2:je 00000000004010d0 <deregister_tm_clones+0x20>
+0x4010c7:5:mov $0x406048,%edi
+0x4010cc:2:jmp *%rax
+0x4010ce:2:xchg %ax,%ax
+0x4010d0:1:ret
+0x4010d1:11:data16 cs nopw 0x0(%rax,%rax,1)
+0x4010dc:4:nopl 0x0(%rax)
+0x4010e0:5:mov $0x406048,%esi
+0x4010e5:7:sub $0x406048,%rsi
+0x4010ec:3:mov %rsi,%rax
+0x4010ef:4:shr $0x3f,%rsi
+0x4010f3:4:sar $0x3,%rax
+0x4010f7:3:add %rax,%rsi
+0x4010fa:3:sar %rsi
+0x4010fd:2:je 0000000000401110 <register_tm_clones+0x30>
+0x4010ff:5:mov $0x0,%eax
+0x401104:3:test %rax,%rax
+0x401107:2:je 0000000000401110 <register_tm_clones+0x30>
+0x401109:5:mov $0x406048,%edi
+0x40110e:2:jmp *%rax
+0x401110:1:ret
+0x401111:11:data16 cs nopw 0x0(%rax,%rax,1)
+0x40111c:4:nopl 0x0(%rax)
+0x401120:4:endbr64
+0x401124:7:cmpb $0x0,0x4f1d(%rip)
+0x40112b:2:jne 0000000000401140 <__do_global_dtors_aux+0x20>
+0x40112d:1:push %rbp
+0x40112e:3:mov %rsp,%rbp
+0x401131:5:call 00000000004010b0 <deregister_tm_clones>
+0x401136:7:movb $0x1,0x4f0b(%rip)
+0x40113d:1:pop %rbp
+0x40113e:1:ret
+0x40113f:1:nop
+0x401140:1:ret
+0x401141:11:data16 cs nopw 0x0(%rax,%rax,1)
+0x40114c:4:nopl 0x0(%rax)
+0x401150:4:endbr64
+0x401154:2:jmp 00000000004010e0 <register_tm_clones>
+0x401156:10:cs nopw 0x0(%rax,%rax,1)
+0x401160:1:push %rbp
+0x401161:3:mov %rsp,%rbp
+0x401164:5:mov $0x19,%eax
+0x401169:2:xor %ecx,%ecx
+0x40116b:7:movl $0x0,-0x4(%rbp)
+0x401172:3:mov -0x4(%rbp),%edx
+0x401175:3:sub $0x1,%ecx
+0x401178:2:sub %ecx,%edx
+0x40117a:3:mov %edx,-0x4(%rbp)
+0x40117d:3:mov %eax,-0x8(%rbp)
+0x401180:2:mov %edx,%eax
+0x401182:1:cltd
+0x401183:3:mov -0x8(%rbp),%ecx
+0x401186:2:idiv %ecx
+0x401188:3:movslq %edx,%rsi
+0x40118b:7:mov 0x404010(,%rsi,4),%edx
+0x401192:2:mov %edx,%eax
+0x401194:1:pop %rbp
+0x401195:1:ret
+0x401196:10:cs nopw 0x0(%rax,%rax,1)
+0x4011a0:1:push %rbp
+0x4011a1:3:mov %rsp,%rbp
+0x4011a4:1:push %rbx
+0x4011a5:4:sub $0x28,%rsp
+0x4011a9:7:mov 0x406064,%eax
+0x4011b0:7:mov 0x4060a8,%ecx
+0x4011b7:2:mov %eax,%edx
+0x4011b9:6:add $0xb4685417,%edx
+0x4011bf:3:sub $0x1,%edx
+0x4011c2:6:sub $0xb4685417,%edx
+0x4011c8:3:imul %edx,%eax
+0x4011cb:3:and $0x1,%eax
+0x4011ce:3:cmp $0x0,%eax
+0x4011d1:4:sete %sil
+0x4011d5:4:and $0x1,%sil
+0x4011d9:4:mov %sil,-0xe(%rbp)
+0x4011dd:3:cmp $0xa,%ecx
+0x4011e0:4:setl %sil
+0x4011e4:4:and $0x1,%sil
+0x4011e8:4:mov %sil,-0xd(%rbp)
+0x4011ec:7:movl $0xa78876c7,-0x14(%rbp)
+0x4011f3:3:mov -0x14(%rbp),%eax
+0x4011f6:2:mov %eax,%ecx
+0x4011f8:6:sub $0x9cc37e8b,%ecx
+0x4011fe:3:mov %eax,-0x18(%rbp)
+0x401201:3:mov %ecx,-0x1c(%rbp)
+0x401204:6:je 0000000000401367 <next_f+0x1c7>
+0x40120a:5:jmp 000000000040120f <next_f+0x6f>
+0x40120f:3:mov -0x18(%rbp),%eax
+0x401212:5:sub $0xa1637bf8,%eax
+0x401217:3:mov %eax,-0x20(%rbp)
+0x40121a:6:je 0000000000401282 <next_f+0xe2>
+0x401220:5:jmp 0000000000401225 <next_f+0x85>
+0x401225:3:mov -0x18(%rbp),%eax
+0x401228:5:sub $0xa78876c7,%eax
+0x40122d:3:mov %eax,-0x24(%rbp)
+0x401230:6:je 0000000000401256 <next_f+0xb6>
+0x401236:5:jmp 000000000040123b <next_f+0x9b>
+0x40123b:3:mov -0x18(%rbp),%eax
+0x40123e:5:sub $0xe9fe5337,%eax
+0x401243:3:mov %eax,-0x28(%rbp)
+0x401246:6:je 000000000040135b <next_f+0x1bb>
+0x40124c:5:jmp 0000000000401251 <next_f+0xb1>
+0x401251:5:jmp 0000000000401391 <next_f+0x1f1>
+0x401256:5:mov $0x9cc37e8b,%eax
+0x40125b:5:mov $0xa1637bf8,%ecx
+0x401260:3:mov -0xe(%rbp),%dl
+0x401263:4:mov -0xd(%rbp),%sil
+0x401267:3:mov %dl,%dil
+0x40126a:3:and %sil,%dil
+0x40126d:3:xor %sil,%dl
+0x401270:3:or %dl,%dil
+0x401273:4:test $0x1,%dil
+0x401277:3:cmovne %ecx,%eax
+0x40127a:3:mov %eax,-0x14(%rbp)
+0x40127d:5:jmp 0000000000401391 <next_f+0x1f1>
+0x401282:5:mov $0x9cc37e8b,%eax
+0x401287:5:mov $0xe9fe5337,%ecx
+0x40128c:8:movss 0x2d70(%rip),%xmm0
+0x401294:3:mov %rsp,%rdx
+0x401297:3:mov %rdx,%rsi
+0x40129a:4:add $0xfffffffffffffff0,%rsi
+0x40129e:3:mov %rsi,%rsp
+0x4012a1:7:movl $0x0,-0x10(%rdx)
+0x4012a8:3:mov -0x10(%rdx),%edi
+0x4012ab:3:mov %edi,%r8d
+0x4012ae:3:inc %r8d
+0x4012b1:4:mov %r8d,-0x10(%rdx)
+0x4012b5:3:movslq %r8d,%rdx
+0x4012b8:7:imul $0x51eb851f,%rdx,%rdx
+0x4012bf:3:mov %rdx,%rsi
+0x4012c2:4:shr $0x3f,%rsi
+0x4012c6:3:mov %esi,%r8d
+0x4012c9:4:sar $0x23,%rdx
+0x4012cd:3:mov %edx,%r9d
+0x4012d0:3:add %r8d,%r9d
+0x4012d3:3:mov %r9d,%edx
+0x4012d6:4:lea (%rdx,%rdx,4),%r8d
+0x4012da:3:mov %r8d,%edx
+0x4012dd:4:lea (%rdx,%rdx,4),%r8d
+0x4012e1:3:neg %r8d
+0x4012e4:3:mov %r8d,%edx
+0x4012e7:2:mov %edi,%esi
+0x4012e9:4:lea 0x1(%rsi,%rdx,1),%edi
+0x4012ed:3:movslq %edi,%rdx
+0x4012f0:7:mov 0x404010(,%rdx,4),%edi
+0x4012f7:2:mov %edi,%edx
+0x4012f9:5:cvtsi2ss %rdx,%xmm1
+0x4012fe:4:divss %xmm0,%xmm1
+0x401302:5:movss %xmm1,-0xc(%rbp)
+0x401307:7:mov 0x406064,%edi
+0x40130e:8:mov 0x4060a8,%r8d
+0x401316:3:mov %edi,%r9d
+0x401319:7:add $0x6ab213a7,%r9d
+0x401320:4:sub $0x1,%r9d
+0x401324:7:sub $0x6ab213a7,%r9d
+0x40132b:4:imul %r9d,%edi
+0x40132f:3:and $0x1,%edi
+0x401332:3:cmp $0x0,%edi
+0x401335:4:sete %r10b
+0x401339:4:cmp $0xa,%r8d
+0x40133d:4:setl %r11b
+0x401341:3:mov %r10b,%bl
+0x401344:3:and %r11b,%bl
+0x401347:3:xor %r11b,%r10b
+0x40134a:3:or %r10b,%bl
+0x40134d:3:test $0x1,%bl
+0x401350:3:cmovne %ecx,%eax
+0x401353:3:mov %eax,-0x14(%rbp)
+0x401356:5:jmp 0000000000401391 <next_f+0x1f1>
+0x40135b:5:movss -0xc(%rbp),%xmm0
+0x401360:4:lea -0x8(%rbp),%rsp
+0x401364:1:pop %rbx
+0x401365:1:pop %rbp
+0x401366:1:ret
+0x401367:2:xor %eax,%eax
+0x401369:3:mov %rsp,%rcx
+0x40136c:4:add $0xfffffffffffffff0,%rcx
+0x401370:3:mov %rcx,%rsp
+0x401373:6:movl $0x0,(%rcx)
+0x401379:2:mov (%rcx),%edx
+0x40137b:2:mov %eax,%esi
+0x40137d:2:sub %edx,%esi
+0x40137f:2:mov %eax,%edx
+0x401381:3:sub $0x1,%edx
+0x401384:2:add %edx,%esi
+0x401386:2:sub %esi,%eax
+0x401388:2:mov %eax,(%rcx)
+0x40138a:7:movl $0xa1637bf8,-0x14(%rbp)
+0x401391:5:jmp 00000000004011f3 <next_f+0x53>
+0x401396:10:cs nopw 0x0(%rax,%rax,1)
+0x4013a0:1:push %rbp
+0x4013a1:3:mov %rsp,%rbp
+0x4013a4:4:sub $0x10,%rsp
+0x4013a8:10:movabs $0x404074,%rdi
+0x4013b2:10:movabs $0x404077,%rsi
+0x4013bc:2:mov $0x0,%al
+0x4013be:5:call 0000000000401040 <printf@plt>
+0x4013c3:3:mov %eax,-0x4(%rbp)
+0x4013c6:4:add $0x10,%rsp
+0x4013ca:1:pop %rbp
+0x4013cb:1:ret
+0x4013cc:4:nopl 0x0(%rax)
+0x4013d0:1:push %rbp
+0x4013d1:3:mov %rsp,%rbp
+0x4013d4:2:push %r15
+0x4013d6:2:push %r14
+0x4013d8:2:push %r13
+0x4013da:2:push %r12
+0x4013dc:1:push %rbx
+0x4013dd:7:sub $0x138,%rsp
+0x4013e4:7:mov 0x40606c,%eax
+0x4013eb:7:mov 0x4060b0,%ecx
+0x4013f2:2:mov %eax,%edx
+0x4013f4:6:sub $0x8af6a016,%edx
+0x4013fa:3:sub $0x1,%edx
+0x4013fd:6:add $0x8af6a016,%edx
+0x401403:3:imul %edx,%eax
+0x401406:3:and $0x1,%eax
+0x401409:3:cmp $0x0,%eax
+0x40140c:4:sete %r8b
+0x401410:4:and $0x1,%r8b
+0x401414:4:mov %r8b,-0x42(%rbp)
+0x401418:3:cmp $0xa,%ecx
+0x40141b:4:setl %r8b
+0x40141f:4:and $0x1,%r8b
+0x401423:4:mov %r8b,-0x41(%rbp)
+0x401427:7:movl $0x5ef22d62,-0x48(%rbp)
+0x40142e:4:mov %rdi,-0x50(%rbp)
+0x401432:3:mov %esi,-0x54(%rbp)
+0x401435:3:mov -0x48(%rbp),%eax
+0x401438:2:mov %eax,%ecx
+0x40143a:6:sub $0x81f43185,%ecx
+0x401440:3:mov %eax,-0x58(%rbp)
+0x401443:3:mov %ecx,-0x5c(%rbp)
+0x401446:6:je 0000000000401be9 <smu8_translate_firmware_enum_to_arg+0x819>
+0x40144c:5:jmp 0000000000401451 <smu8_translate_firmware_enum_to_arg+0x81>
+0x401451:3:mov -0x58(%rbp),%eax
+0x401454:5:sub $0x8447507f,%eax
+0x401459:3:mov %eax,-0x60(%rbp)
+0x40145c:6:je 0000000000401c4a <smu8_translate_firmware_enum_to_arg+0x87a>
+0x401462:5:jmp 0000000000401467 <smu8_translate_firmware_enum_to_arg+0x97>
+0x401467:3:mov -0x58(%rbp),%eax
+0x40146a:5:sub $0x84de36cb,%eax
+0x40146f:3:mov %eax,-0x64(%rbp)
+0x401472:6:je 0000000000401d58 <smu8_translate_firmware_enum_to_arg+0x988>
+0x401478:5:jmp 000000000040147d <smu8_translate_firmware_enum_to_arg+0xad>
+0x40147d:3:mov -0x58(%rbp),%eax
+0x401480:5:sub $0x87329d84,%eax
+0x401485:3:mov %eax,-0x68(%rbp)
+0x401488:6:je 0000000000401d76 <smu8_translate_firmware_enum_to_arg+0x9a6>
+0x40148e:5:jmp 0000000000401493 <smu8_translate_firmware_enum_to_arg+0xc3>
+0x401493:3:mov -0x58(%rbp),%eax
+0x401496:5:sub $0x88e86db3,%eax
+0x40149b:3:mov %eax,-0x6c(%rbp)
+0x40149e:6:je 0000000000401c68 <smu8_translate_firmware_enum_to_arg+0x898>
+0x4014a4:5:jmp 00000000004014a9 <smu8_translate_firmware_enum_to_arg+0xd9>
+0x4014a9:3:mov -0x58(%rbp),%eax
+0x4014ac:5:sub $0x89c27688,%eax
+0x4014b1:3:mov %eax,-0x70(%rbp)
+0x4014b4:6:je 0000000000402603 <smu8_translate_firmware_enum_to_arg+0x1233>
+0x4014ba:5:jmp 00000000004014bf <smu8_translate_firmware_enum_to_arg+0xef>
+0x4014bf:3:mov -0x58(%rbp),%eax
+0x4014c2:5:sub $0x8ccdf30b,%eax
+0x4014c7:3:mov %eax,-0x74(%rbp)
+0x4014ca:6:je 000000000040254f <smu8_translate_firmware_enum_to_arg+0x117f>
+0x4014d0:5:jmp 00000000004014d5 <smu8_translate_firmware_enum_to_arg+0x105>
+0x4014d5:3:mov -0x58(%rbp),%eax
+0x4014d8:5:sub $0x976d4572,%eax
+0x4014dd:3:mov %eax,-0x78(%rbp)
+0x4014e0:6:je 0000000000402048 <smu8_translate_firmware_enum_to_arg+0xc78>
+0x4014e6:5:jmp 00000000004014eb <smu8_translate_firmware_enum_to_arg+0x11b>
+0x4014eb:3:mov -0x58(%rbp),%eax
+0x4014ee:5:sub $0x988d4cc1,%eax
+0x4014f3:3:mov %eax,-0x7c(%rbp)
+0x4014f6:6:je 00000000004025d1 <smu8_translate_firmware_enum_to_arg+0x1201>
+0x4014fc:5:jmp 0000000000401501 <smu8_translate_firmware_enum_to_arg+0x131>
+0x401501:3:mov -0x58(%rbp),%eax
+0x401504:5:sub $0x9a55b32b,%eax
+0x401509:3:mov %eax,-0x80(%rbp)
+0x40150c:6:je 0000000000401cfe <smu8_translate_firmware_enum_to_arg+0x92e>
+0x401512:5:jmp 0000000000401517 <smu8_translate_firmware_enum_to_arg+0x147>
+0x401517:3:mov -0x58(%rbp),%eax
+0x40151a:5:sub $0x9cf9f71e,%eax
+0x40151f:6:mov %eax,-0x84(%rbp)
+0x401525:6:je 0000000000401bcb <smu8_translate_firmware_enum_to_arg+0x7fb>
+0x40152b:5:jmp 0000000000401530 <smu8_translate_firmware_enum_to_arg+0x160>
+0x401530:3:mov -0x58(%rbp),%eax
+0x401533:5:sub $0xa93a0243,%eax
+0x401538:6:mov %eax,-0x88(%rbp)
+0x40153e:6:je 000000000040223e <smu8_translate_firmware_enum_to_arg+0xe6e>
+0x401544:5:jmp 0000000000401549 <smu8_translate_firmware_enum_to_arg+0x179>
+0x401549:3:mov -0x58(%rbp),%eax
+0x40154c:5:sub $0xb1175f8b,%eax
+0x401551:6:mov %eax,-0x8c(%rbp)
+0x401557:6:je 000000000040209f <smu8_translate_firmware_enum_to_arg+0xccf>
+0x40155d:5:jmp 0000000000401562 <smu8_translate_firmware_enum_to_arg+0x192>
+0x401562:3:mov -0x58(%rbp),%eax
+0x401565:5:sub $0xb350576b,%eax
+0x40156a:6:mov %eax,-0x90(%rbp)
+0x401570:6:je 0000000000401ca4 <smu8_translate_firmware_enum_to_arg+0x8d4>
+0x401576:5:jmp 000000000040157b <smu8_translate_firmware_enum_to_arg+0x1ab>
+0x40157b:3:mov -0x58(%rbp),%eax
+0x40157e:5:sub $0xb37a8734,%eax
+0x401583:6:mov %eax,-0x94(%rbp)
+0x401589:6:je 0000000000402567 <smu8_translate_firmware_enum_to_arg+0x1197>
+0x40158f:5:jmp 0000000000401594 <smu8_translate_firmware_enum_to_arg+0x1c4>
+0x401594:3:mov -0x58(%rbp),%eax
+0x401597:5:sub $0xb5363a84,%eax
+0x40159c:6:mov %eax,-0x98(%rbp)
+0x4015a2:6:je 0000000000401e09 <smu8_translate_firmware_enum_to_arg+0xa39>
+0x4015a8:5:jmp 00000000004015ad <smu8_translate_firmware_enum_to_arg+0x1dd>
+0x4015ad:3:mov -0x58(%rbp),%eax
+0x4015b0:5:sub $0xb55945ae,%eax
+0x4015b5:6:mov %eax,-0x9c(%rbp)
+0x4015bb:6:je 00000000004023b0 <smu8_translate_firmware_enum_to_arg+0xfe0>
+0x4015c1:5:jmp 00000000004015c6 <smu8_translate_firmware_enum_to_arg+0x1f6>
+0x4015c6:3:mov -0x58(%rbp),%eax
+0x4015c9:5:sub $0xb79552f9,%eax
+0x4015ce:6:mov %eax,-0xa0(%rbp)
+0x4015d4:6:je 000000000040242d <smu8_translate_firmware_enum_to_arg+0x105d>
+0x4015da:5:jmp 00000000004015df <smu8_translate_firmware_enum_to_arg+0x20f>
+0x4015df:3:mov -0x58(%rbp),%eax
+0x4015e2:5:sub $0xb85cae4a,%eax
+0x4015e7:6:mov %eax,-0xa4(%rbp)
+0x4015ed:6:je 0000000000401aa7 <smu8_translate_firmware_enum_to_arg+0x6d7>
+0x4015f3:5:jmp 00000000004015f8 <smu8_translate_firmware_enum_to_arg+0x228>
+0x4015f8:3:mov -0x58(%rbp),%eax
+0x4015fb:5:sub $0xb9fc8ace,%eax
+0x401600:6:mov %eax,-0xa8(%rbp)
+0x401606:6:je 00000000004023c9 <smu8_translate_firmware_enum_to_arg+0xff9>
+0x40160c:5:jmp 0000000000401611 <smu8_translate_firmware_enum_to_arg+0x241>
+0x401611:3:mov -0x58(%rbp),%eax
+0x401614:5:sub $0xbc699afe,%eax
+0x401619:6:mov %eax,-0xac(%rbp)
+0x40161f:6:je 00000000004022db <smu8_translate_firmware_enum_to_arg+0xf0b>
+0x401625:5:jmp 000000000040162a <smu8_translate_firmware_enum_to_arg+0x25a>
+0x40162a:3:mov -0x58(%rbp),%eax
+0x40162d:5:sub $0xc691a1ca,%eax
+0x401632:6:mov %eax,-0xb0(%rbp)
+0x401638:6:je 0000000000402189 <smu8_translate_firmware_enum_to_arg+0xdb9>
+0x40163e:5:jmp 0000000000401643 <smu8_translate_firmware_enum_to_arg+0x273>
+0x401643:3:mov -0x58(%rbp),%eax
+0x401646:5:sub $0xc83d21ba,%eax
+0x40164b:6:mov %eax,-0xb4(%rbp)
+0x401651:6:je 0000000000401b8f <smu8_translate_firmware_enum_to_arg+0x7bf>
+0x401657:5:jmp 000000000040165c <smu8_translate_firmware_enum_to_arg+0x28c>
+0x40165c:3:mov -0x58(%rbp),%eax
+0x40165f:5:sub $0xc83f6e33,%eax
+0x401664:6:mov %eax,-0xb8(%rbp)
+0x40166a:6:je 0000000000401fde <smu8_translate_firmware_enum_to_arg+0xc0e>
+0x401670:5:jmp 0000000000401675 <smu8_translate_firmware_enum_to_arg+0x2a5>
+0x401675:3:mov -0x58(%rbp),%eax
+0x401678:5:sub $0xd144b6fd,%eax
+0x40167d:6:mov %eax,-0xbc(%rbp)
+0x401683:6:je 0000000000401b83 <smu8_translate_firmware_enum_to_arg+0x7b3>
+0x401689:5:jmp 000000000040168e <smu8_translate_firmware_enum_to_arg+0x2be>
+0x40168e:3:mov -0x58(%rbp),%eax
+0x401691:5:sub $0xd1e60c93,%eax
+0x401696:6:mov %eax,-0xc0(%rbp)
+0x40169c:6:je 00000000004021a2 <smu8_translate_firmware_enum_to_arg+0xdd2>
+0x4016a2:5:jmp 00000000004016a7 <smu8_translate_firmware_enum_to_arg+0x2d7>
+0x4016a7:3:mov -0x58(%rbp),%eax
+0x4016aa:5:sub $0xd3df2c0b,%eax
+0x4016af:6:mov %eax,-0xc4(%rbp)
+0x4016b5:6:je 0000000000402414 <smu8_translate_firmware_enum_to_arg+0x1044>
+0x4016bb:5:jmp 00000000004016c0 <smu8_translate_firmware_enum_to_arg+0x2f0>
+0x4016c0:3:mov -0x58(%rbp),%eax
+0x4016c3:5:sub $0xda8f191d,%eax
+0x4016c8:6:mov %eax,-0xc8(%rbp)
+0x4016ce:6:je 0000000000401c25 <smu8_translate_firmware_enum_to_arg+0x855>
+0x4016d4:5:jmp 00000000004016d9 <smu8_translate_firmware_enum_to_arg+0x309>
+0x4016d9:3:mov -0x58(%rbp),%eax
+0x4016dc:5:sub $0xdd52e94b,%eax
+0x4016e1:6:mov %eax,-0xcc(%rbp)
+0x4016e7:6:je 0000000000401db2 <smu8_translate_firmware_enum_to_arg+0x9e2>
+0x4016ed:5:jmp 00000000004016f2 <smu8_translate_firmware_enum_to_arg+0x322>
+0x4016f2:3:mov -0x58(%rbp),%eax
+0x4016f5:5:sub $0xdec4ddd4,%eax
+0x4016fa:6:mov %eax,-0xd0(%rbp)
+0x401700:6:je 000000000040255b <smu8_translate_firmware_enum_to_arg+0x118b>
+0x401706:5:jmp 000000000040170b <smu8_translate_firmware_enum_to_arg+0x33b>
+0x40170b:3:mov -0x58(%rbp),%eax
+0x40170e:5:sub $0xe2ae1cd3,%eax
+0x401713:6:mov %eax,-0xd4(%rbp)
+0x401719:6:je 00000000004023fb <smu8_translate_firmware_enum_to_arg+0x102b>
+0x40171f:5:jmp 0000000000401724 <smu8_translate_firmware_enum_to_arg+0x354>
+0x401724:3:mov -0x58(%rbp),%eax
+0x401727:5:sub $0xe881ee65,%eax
+0x40172c:6:mov %eax,-0xd8(%rbp)
+0x401732:6:je 0000000000401d94 <smu8_translate_firmware_enum_to_arg+0x9c4>
+0x401738:5:jmp 000000000040173d <smu8_translate_firmware_enum_to_arg+0x36d>
+0x40173d:3:mov -0x58(%rbp),%eax
+0x401740:5:sub $0xed575ac4,%eax
+0x401745:6:mov %eax,-0xdc(%rbp)
+0x40174b:6:je 0000000000402086 <smu8_translate_firmware_enum_to_arg+0xcb6>
+0x401751:5:jmp 0000000000401756 <smu8_translate_firmware_enum_to_arg+0x386>
+0x401756:3:mov -0x58(%rbp),%eax
+0x401759:5:sub $0xf0d8e9ae,%eax
+0x40175e:6:mov %eax,-0xe0(%rbp)
+0x401764:6:je 000000000040245f <smu8_translate_firmware_enum_to_arg+0x108f>
+0x40176a:5:jmp 000000000040176f <smu8_translate_firmware_enum_to_arg+0x39f>
+0x40176f:3:mov -0x58(%rbp),%eax
+0x401772:5:sub $0xf5cc9be9,%eax
+0x401777:6:mov %eax,-0xe4(%rbp)
+0x40177d:6:je 0000000000401ce0 <smu8_translate_firmware_enum_to_arg+0x910>
+0x401783:5:jmp 0000000000401788 <smu8_translate_firmware_enum_to_arg+0x3b8>
+0x401788:3:mov -0x58(%rbp),%eax
+0x40178b:5:sub $0xfb06801c,%eax
+0x401790:6:mov %eax,-0xe8(%rbp)
+0x401796:6:je 0000000000401cc2 <smu8_translate_firmware_enum_to_arg+0x8f2>
+0x40179c:5:jmp 00000000004017a1 <smu8_translate_firmware_enum_to_arg+0x3d1>
+0x4017a1:3:mov -0x58(%rbp),%eax
+0x4017a4:5:sub $0xd1eda0,%eax
+0x4017a9:6:mov %eax,-0xec(%rbp)
+0x4017af:6:je 000000000040206d <smu8_translate_firmware_enum_to_arg+0xc9d>
+0x4017b5:5:jmp 00000000004017ba <smu8_translate_firmware_enum_to_arg+0x3ea>
+0x4017ba:3:mov -0x58(%rbp),%eax
+0x4017bd:5:sub $0x4233bb7,%eax
+0x4017c2:6:mov %eax,-0xf0(%rbp)
+0x4017c8:6:je 00000000004025ea <smu8_translate_firmware_enum_to_arg+0x121a>
+0x4017ce:5:jmp 00000000004017d3 <smu8_translate_firmware_enum_to_arg+0x403>
+0x4017d3:3:mov -0x58(%rbp),%eax
+0x4017d6:5:sub $0x54a9046,%eax
+0x4017db:6:mov %eax,-0xf4(%rbp)
+0x4017e1:6:je 0000000000401f4e <smu8_translate_firmware_enum_to_arg+0xb7e>
+0x4017e7:5:jmp 00000000004017ec <smu8_translate_firmware_enum_to_arg+0x41c>
+0x4017ec:3:mov -0x58(%rbp),%eax
+0x4017ef:5:sub $0xa7d2e34,%eax
+0x4017f4:6:mov %eax,-0xf8(%rbp)
+0x4017fa:6:je 0000000000401d3a <smu8_translate_firmware_enum_to_arg+0x96a>
+0x401800:5:jmp 0000000000401805 <smu8_translate_firmware_enum_to_arg+0x435>
+0x401805:3:mov -0x58(%rbp),%eax
+0x401808:5:sub $0xd616fee,%eax
+0x40180d:6:mov %eax,-0xfc(%rbp)
+0x401813:6:je 00000000004021ae <smu8_translate_firmware_enum_to_arg+0xdde>
+0x401819:5:jmp 000000000040181e <smu8_translate_firmware_enum_to_arg+0x44e>
+0x40181e:3:mov -0x58(%rbp),%eax
+0x401821:5:sub $0x10ff622e,%eax
+0x401826:6:mov %eax,-0x100(%rbp)
+0x40182c:6:je 0000000000402054 <smu8_translate_firmware_enum_to_arg+0xc84>
+0x401832:5:jmp 0000000000401837 <smu8_translate_firmware_enum_to_arg+0x467>
+0x401837:3:mov -0x58(%rbp),%eax
+0x40183a:5:sub $0x171df5a4,%eax
+0x40183f:6:mov %eax,-0x104(%rbp)
+0x401845:6:je 0000000000401df0 <smu8_translate_firmware_enum_to_arg+0xa20>
+0x40184b:5:jmp 0000000000401850 <smu8_translate_firmware_enum_to_arg+0x480>
+0x401850:3:mov -0x58(%rbp),%eax
+0x401853:5:sub $0x1ae96760,%eax
+0x401858:6:mov %eax,-0x108(%rbp)
+0x40185e:6:je 0000000000401e99 <smu8_translate_firmware_enum_to_arg+0xac9>
+0x401864:5:jmp 0000000000401869 <smu8_translate_firmware_enum_to_arg+0x499>
+0x401869:3:mov -0x58(%rbp),%eax
+0x40186c:5:sub $0x1e5185c3,%eax
+0x401871:6:mov %eax,-0x10c(%rbp)
+0x401877:6:je 000000000040233a <smu8_translate_firmware_enum_to_arg+0xf6a>
+0x40187d:5:jmp 0000000000401882 <smu8_translate_firmware_enum_to_arg+0x4b2>
+0x401882:3:mov -0x58(%rbp),%eax
+0x401885:5:sub $0x20e01f45,%eax
+0x40188a:6:mov %eax,-0x110(%rbp)
+0x401890:6:je 0000000000402635 <smu8_translate_firmware_enum_to_arg+0x1265>
+0x401896:5:jmp 000000000040189b <smu8_translate_firmware_enum_to_arg+0x4cb>
+0x40189b:3:mov -0x58(%rbp),%eax
+0x40189e:5:sub $0x21aa1d47,%eax
+0x4018a3:6:mov %eax,-0x114(%rbp)
+0x4018a9:6:je 00000000004022e7 <smu8_translate_firmware_enum_to_arg+0xf17>
+0x4018af:5:jmp 00000000004018b4 <smu8_translate_firmware_enum_to_arg+0x4e4>
+0x4018b4:3:mov -0x58(%rbp),%eax
+0x4018b7:5:sub $0x27aeedf1,%eax
+0x4018bc:6:mov %eax,-0x118(%rbp)
+0x4018c2:6:je 000000000040217d <smu8_translate_firmware_enum_to_arg+0xdad>
+0x4018c8:5:jmp 00000000004018cd <smu8_translate_firmware_enum_to_arg+0x4fd>
+0x4018cd:3:mov -0x58(%rbp),%eax
+0x4018d0:5:sub $0x3b661153,%eax
+0x4018d5:6:mov %eax,-0x11c(%rbp)
+0x4018db:6:je 00000000004020c4 <smu8_translate_firmware_enum_to_arg+0xcf4>
+0x4018e1:5:jmp 00000000004018e6 <smu8_translate_firmware_enum_to_arg+0x516>
+0x4018e6:3:mov -0x58(%rbp),%eax
+0x4018e9:5:sub $0x3e4bdac3,%eax
+0x4018ee:6:mov %eax,-0x120(%rbp)
+0x4018f4:6:je 000000000040211c <smu8_translate_firmware_enum_to_arg+0xd4c>
+0x4018fa:5:jmp 00000000004018ff <smu8_translate_firmware_enum_to_arg+0x52f>
+0x4018ff:3:mov -0x58(%rbp),%eax
+0x401902:5:sub $0x3fa071d8,%eax
+0x401907:6:mov %eax,-0x124(%rbp)
+0x40190d:6:je 00000000004025b8 <smu8_translate_firmware_enum_to_arg+0x11e8>
+0x401913:5:jmp 0000000000401918 <smu8_translate_firmware_enum_to_arg+0x548>
+0x401918:3:mov -0x58(%rbp),%eax
+0x40191b:5:sub $0x411386b3,%eax
+0x401920:6:mov %eax,-0x128(%rbp)
+0x401926:6:je 00000000004024e5 <smu8_translate_firmware_enum_to_arg+0x1115>
+0x40192c:5:jmp 0000000000401931 <smu8_translate_firmware_enum_to_arg+0x561>
+0x401931:3:mov -0x58(%rbp),%eax
+0x401934:5:sub $0x4661c1db,%eax
+0x401939:6:mov %eax,-0x12c(%rbp)
+0x40193f:6:je 00000000004023e2 <smu8_translate_firmware_enum_to_arg+0x1012>
+0x401945:5:jmp 000000000040194a <smu8_translate_firmware_enum_to_arg+0x57a>
+0x40194a:3:mov -0x58(%rbp),%eax
+0x40194d:5:sub $0x4c197ba5,%eax
+0x401952:6:mov %eax,-0x130(%rbp)
+0x401958:6:je 0000000000402446 <smu8_translate_firmware_enum_to_arg+0x1076>
+0x40195e:5:jmp 0000000000401963 <smu8_translate_firmware_enum_to_arg+0x593>
+0x401963:3:mov -0x58(%rbp),%eax
+0x401966:5:sub $0x4e2887a3,%eax
+0x40196b:6:mov %eax,-0x134(%rbp)
+0x401971:6:je 0000000000401c86 <smu8_translate_firmware_enum_to_arg+0x8b6>
+0x401977:5:jmp 000000000040197c <smu8_translate_firmware_enum_to_arg+0x5ac>
+0x40197c:3:mov -0x58(%rbp),%eax
+0x40197f:5:sub $0x4e41b801,%eax
+0x401984:6:mov %eax,-0x138(%rbp)
+0x40198a:6:je 0000000000401bad <smu8_translate_firmware_enum_to_arg+0x7dd>
+0x401990:5:jmp 0000000000401995 <smu8_translate_firmware_enum_to_arg+0x5c5>
+0x401995:3:mov -0x58(%rbp),%eax
+0x401998:5:sub $0x51ebd716,%eax
+0x40199d:6:mov %eax,-0x13c(%rbp)
+0x4019a3:6:je 00000000004023a4 <smu8_translate_firmware_enum_to_arg+0xfd4>
+0x4019a9:5:jmp 00000000004019ae <smu8_translate_firmware_enum_to_arg+0x5de>
+0x4019ae:3:mov -0x58(%rbp),%eax
+0x4019b1:5:sub $0x543b28fe,%eax
+0x4019b6:6:mov %eax,-0x140(%rbp)
+0x4019bc:6:je 0000000000401f42 <smu8_translate_firmware_enum_to_arg+0xb72>
+0x4019c2:5:jmp 00000000004019c7 <smu8_translate_firmware_enum_to_arg+0x5f7>
+0x4019c7:3:mov -0x58(%rbp),%eax
+0x4019ca:5:sub $0x554d88ea,%eax
+0x4019cf:6:mov %eax,-0x144(%rbp)
+0x4019d5:6:je 000000000040261c <smu8_translate_firmware_enum_to_arg+0x124c>
+0x4019db:5:jmp 00000000004019e0 <smu8_translate_firmware_enum_to_arg+0x610>
+0x4019e0:3:mov -0x58(%rbp),%eax
+0x4019e3:5:sub $0x57f5d274,%eax
+0x4019e8:6:mov %eax,-0x148(%rbp)
+0x4019ee:6:je 000000000040257c <smu8_translate_firmware_enum_to_arg+0x11ac>
+0x4019f4:5:jmp 00000000004019f9 <smu8_translate_firmware_enum_to_arg+0x629>
+0x4019f9:3:mov -0x58(%rbp),%eax
+0x4019fc:5:sub $0x5ef22d62,%eax
+0x401a01:6:mov %eax,-0x14c(%rbp)
+0x401a07:6:je 0000000000401a7b <smu8_translate_firmware_enum_to_arg+0x6ab>
+0x401a0d:5:jmp 0000000000401a12 <smu8_translate_firmware_enum_to_arg+0x642>
+0x401a12:3:mov -0x58(%rbp),%eax
+0x401a15:5:sub $0x67697840,%eax
+0x401a1a:6:mov %eax,-0x150(%rbp)
+0x401a20:6:je 0000000000401c07 <smu8_translate_firmware_enum_to_arg+0x837>
+0x401a26:5:jmp 0000000000401a2b <smu8_translate_firmware_enum_to_arg+0x65b>
+0x401a2b:3:mov -0x58(%rbp),%eax
+0x401a2e:5:sub $0x69b2f339,%eax
+0x401a33:6:mov %eax,-0x154(%rbp)
+0x401a39:6:je 0000000000401d1c <smu8_translate_firmware_enum_to_arg+0x94c>
+0x401a3f:5:jmp 0000000000401a44 <smu8_translate_firmware_enum_to_arg+0x674>
+0x401a44:3:mov -0x58(%rbp),%eax
+0x401a47:5:sub $0x7a9718c2,%eax
+0x401a4c:6:mov %eax,-0x158(%rbp)
+0x401a52:6:je 0000000000401dcb <smu8_translate_firmware_enum_to_arg+0x9fb>
+0x401a58:5:jmp 0000000000401a5d <smu8_translate_firmware_enum_to_arg+0x68d>
+0x401a5d:3:mov -0x58(%rbp),%eax
+0x401a60:5:sub $0x7b99e582,%eax
+0x401a65:6:mov %eax,-0x15c(%rbp)
+0x401a6b:6:je 0000000000401f36 <smu8_translate_firmware_enum_to_arg+0xb66>
+0x401a71:5:jmp 0000000000401a76 <smu8_translate_firmware_enum_to_arg+0x6a6>
+0x401a76:5:jmp 0000000000402649 <smu8_translate_firmware_enum_to_arg+0x1279>
+0x401a7b:5:mov $0x57f5d274,%eax
+0x401a80:5:mov $0xb85cae4a,%ecx
+0x401a85:3:mov -0x42(%rbp),%dl
+0x401a88:4:mov -0x41(%rbp),%sil
+0x401a8c:3:mov %dl,%dil
+0x401a8f:3:and %sil,%dil
+0x401a92:3:xor %sil,%dl
+0x401a95:3:or %dl,%dil
+0x401a98:4:test $0x1,%dil
+0x401a9c:3:cmovne %ecx,%eax
+0x401a9f:3:mov %eax,-0x48(%rbp)
+0x401aa2:5:jmp 0000000000402649 <smu8_translate_firmware_enum_to_arg+0x1279>
+0x401aa7:5:mov $0x57f5d274,%eax
+0x401aac:5:mov $0xd144b6fd,%ecx
+0x401ab1:2:mov $0x1,%dl
+0x401ab3:3:mov %rsp,%rsi
+0x401ab6:4:add $0xfffffffffffffff0,%rsi
+0x401aba:3:mov %rsi,%rsp
+0x401abd:4:mov %rsi,-0x40(%rbp)
+0x401ac1:3:mov %rsp,%rsi
+0x401ac4:4:add $0xfffffffffffffff0,%rsi
+0x401ac8:3:mov %rsi,%rsp
+0x401acb:3:mov %rsp,%rdi
+0x401ace:4:add $0xfffffffffffffff0,%rdi
+0x401ad2:3:mov %rdi,%rsp
+0x401ad5:4:mov %rdi,-0x38(%rbp)
+0x401ad9:4:mov -0x40(%rbp),%rdi
+0x401add:4:mov -0x50(%rbp),%r8
+0x401ae1:3:mov %r8,(%rdi)
+0x401ae4:4:mov -0x54(%rbp),%r9d
+0x401ae8:3:mov %r9d,(%rsi)
+0x401aeb:4:mov -0x38(%rbp),%rdi
+0x401aef:6:movl $0x0,(%rdi)
+0x401af5:3:mov (%rsi),%r10d
+0x401af8:4:mov %r10d,-0x2c(%rbp)
+0x401afc:8:mov 0x40606c,%r10d
+0x401b04:8:mov 0x4060b0,%r11d
+0x401b0c:3:mov %r10d,%ebx
+0x401b0f:6:add $0x3809372a,%ebx
+0x401b15:3:sub $0x1,%ebx
+0x401b18:6:sub $0x3809372a,%ebx
+0x401b1e:4:imul %ebx,%r10d
+0x401b22:4:and $0x1,%r10d
+0x401b26:4:cmp $0x0,%r10d
+0x401b2a:4:sete %r14b
+0x401b2e:4:cmp $0xa,%r11d
+0x401b32:4:setl %r15b
+0x401b36:3:mov %r14b,%r12b
+0x401b39:4:xor $0xff,%r12b
+0x401b3d:3:mov %r15b,%r13b
+0x401b40:4:xor $0xff,%r13b
+0x401b44:3:xor $0x1,%dl
+0x401b47:3:mov %r12b,%sil
+0x401b4a:4:and $0xff,%sil
+0x401b4e:3:and %dl,%r14b
+0x401b51:3:mov %r13b,%dil
+0x401b54:4:and $0xff,%dil
+0x401b58:3:and %dl,%r15b
+0x401b5b:3:or %r14b,%sil
+0x401b5e:3:or %r15b,%dil
+0x401b61:3:xor %dil,%sil
+0x401b64:3:or %r13b,%r12b
+0x401b67:4:xor $0xff,%r12b
+0x401b6b:3:or $0x1,%dl
+0x401b6e:3:and %dl,%r12b
+0x401b71:3:or %r12b,%sil
+0x401b74:4:test $0x1,%sil
+0x401b78:3:cmovne %ecx,%eax
+0x401b7b:3:mov %eax,-0x48(%rbp)
+0x401b7e:5:jmp 0000000000402649 <smu8_translate_firmware_enum_to_arg+0x1279>
+0x401b83:7:movl $0xc83d21ba,-0x48(%rbp)
+0x401b8a:5:jmp 0000000000402649 <smu8_translate_firmware_enum_to_arg+0x1279>
+0x401b8f:5:mov $0x4e41b801,%eax
+0x401b94:5:mov $0xfb06801c,%ecx
+0x401b99:3:mov -0x2c(%rbp),%edx
+0x401b9c:6:cmp $0x88,%edx
+0x401ba2:3:cmovl %ecx,%eax
+0x401ba5:3:mov %eax,-0x48(%rbp)
+0x401ba8:5:jmp 0000000000402649 <smu8_translate_firmware_enum_to_arg+0x1279>
+0x401bad:5:mov $0x9cf9f71e,%eax
+0x401bb2:5:mov $0x88e86db3,%ecx
+0x401bb7:3:mov -0x2c(%rbp),%edx
+0x401bba:6:cmp $0x8c,%edx
+0x401bc0:3:cmovl %ecx,%eax
+0x401bc3:3:mov %eax,-0x48(%rbp)
+0x401bc6:5:jmp 0000000000402649 <smu8_translate_firmware_enum_to_arg+0x1279>
+0x401bcb:5:mov $0x81f43185,%eax
+0x401bd0:5:mov $0x8447507f,%ecx
+0x401bd5:3:mov -0x2c(%rbp),%edx
+0x401bd8:6:cmp $0x8e,%edx
+0x401bde:3:cmovl %ecx,%eax
+0x401be1:3:mov %eax,-0x48(%rbp)
+0x401be4:5:jmp 0000000000402649 <smu8_translate_firmware_enum_to_arg+0x1279>
+0x401be9:5:mov $0x67697840,%eax
+0x401bee:5:mov $0x54a9046,%ecx
+0x401bf3:3:mov -0x2c(%rbp),%edx
+0x401bf6:6:cmp $0x8f,%edx
+0x401bfc:3:cmovl %ecx,%eax
+0x401bff:3:mov %eax,-0x48(%rbp)
+0x401c02:5:jmp 0000000000402649 <smu8_translate_firmware_enum_to_arg+0x1279>
+0x401c07:5:mov $0xda8f191d,%eax
+0x401c0c:5:mov $0xf0d8e9ae,%ecx
+0x401c11:3:mov -0x2c(%rbp),%edx
+0x401c14:6:cmp $0x90,%edx
+0x401c1a:3:cmovl %ecx,%eax
+0x401c1d:3:mov %eax,-0x48(%rbp)
+0x401c20:5:jmp 0000000000402649 <smu8_translate_firmware_enum_to_arg+0x1279>
+0x401c25:5:mov $0xdec4ddd4,%eax
+0x401c2a:5:mov $0x4c197ba5,%ecx
+0x401c2f:2:xor %edx,%edx
+0x401c31:3:mov -0x2c(%rbp),%esi
+0x401c34:6:sub $0xffffff70,%edx
+0x401c3a:2:sub %edx,%esi
+0x401c3c:3:cmp $0x5,%esi
+0x401c3f:3:cmovbe %ecx,%eax
+0x401c42:3:mov %eax,-0x48(%rbp)
+0x401c45:5:jmp 0000000000402649 <smu8_translate_firmware_enum_to_arg+0x1279>
+0x401c4a:5:mov $0xd1eda0,%eax
+0x401c4f:5:mov $0xed575ac4,%ecx
+0x401c54:3:mov -0x2c(%rbp),%edx
+0x401c57:6:cmp $0x8d,%edx
+0x401c5d:3:cmovl %ecx,%eax
+0x401c60:3:mov %eax,-0x48(%rbp)
+0x401c63:5:jmp 0000000000402649 <smu8_translate_firmware_enum_to_arg+0x1279>
+0x401c68:5:mov $0x4e2887a3,%eax
+0x401c6d:5:mov $0xb350576b,%ecx
+0x401c72:3:mov -0x2c(%rbp),%edx
+0x401c75:6:cmp $0x8a,%edx
+0x401c7b:3:cmovl %ecx,%eax
+0x401c7e:3:mov %eax,-0x48(%rbp)
+0x401c81:5:jmp 0000000000402649 <smu8_translate_firmware_enum_to_arg+0x1279>
+0x401c86:5:mov $0xb1175f8b,%eax
+0x401c8b:5:mov $0x10ff622e,%ecx
+0x401c90:3:mov -0x2c(%rbp),%edx
+0x401c93:6:cmp $0x8b,%edx
+0x401c99:3:cmovl %ecx,%eax
+0x401c9c:3:mov %eax,-0x48(%rbp)
+0x401c9f:5:jmp 0000000000402649 <smu8_translate_firmware_enum_to_arg+0x1279>
+0x401ca4:5:mov $0xe2ae1cd3,%eax
+0x401ca9:5:mov $0xd3df2c0b,%ecx
+0x401cae:3:mov -0x2c(%rbp),%edx
+0x401cb1:6:cmp $0x89,%edx
+0x401cb7:3:cmovl %ecx,%eax
+0x401cba:3:mov %eax,-0x48(%rbp)
+0x401cbd:5:jmp 0000000000402649 <smu8_translate_firmware_enum_to_arg+0x1279>
+0x401cc2:5:mov $0xf5cc9be9,%eax
+0x401cc7:5:mov $0xa7d2e34,%ecx
+0x401ccc:3:mov -0x2c(%rbp),%edx
+0x401ccf:6:cmp $0x84,%edx
+0x401cd5:3:cmovl %ecx,%eax
+0x401cd8:3:mov %eax,-0x48(%rbp)
+0x401cdb:5:jmp 0000000000402649 <smu8_translate_firmware_enum_to_arg+0x1279>
+0x401ce0:5:mov $0x9a55b32b,%eax
+0x401ce5:5:mov $0x69b2f339,%ecx
+0x401cea:3:mov -0x2c(%rbp),%edx
+0x401ced:6:cmp $0x86,%edx
+0x401cf3:3:cmovl %ecx,%eax
+0x401cf6:3:mov %eax,-0x48(%rbp)
+0x401cf9:5:jmp 0000000000402649 <smu8_translate_firmware_enum_to_arg+0x1279>
+0x401cfe:5:mov $0xd616fee,%eax
+0x401d03:5:mov $0xb79552f9,%ecx
+0x401d08:3:mov -0x2c(%rbp),%edx
+0x401d0b:6:cmp $0x87,%edx
+0x401d11:3:cmovl %ecx,%eax
+0x401d14:3:mov %eax,-0x48(%rbp)
+0x401d17:5:jmp 0000000000402649 <smu8_translate_firmware_enum_to_arg+0x1279>
+0x401d1c:5:mov $0x21aa1d47,%eax
+0x401d21:5:mov $0xb55945ae,%ecx
+0x401d26:3:mov -0x2c(%rbp),%edx
+0x401d29:6:cmp $0x85,%edx
+0x401d2f:3:cmovl %ecx,%eax
+0x401d32:3:mov %eax,-0x48(%rbp)
+0x401d35:5:jmp 0000000000402649 <smu8_translate_firmware_enum_to_arg+0x1279>
+0x401d3a:5:mov $0x84de36cb,%eax
+0x401d3f:5:mov $0x87329d84,%ecx
+0x401d44:3:mov -0x2c(%rbp),%edx
+0x401d47:6:cmp $0x82,%edx
+0x401d4d:3:cmovl %ecx,%eax
+0x401d50:3:mov %eax,-0x48(%rbp)
+0x401d53:5:jmp 0000000000402649 <smu8_translate_firmware_enum_to_arg+0x1279>
+0x401d58:5:mov $0xb9fc8ace,%eax
+0x401d5d:5:mov $0x4661c1db,%ecx
+0x401d62:3:mov -0x2c(%rbp),%edx
+0x401d65:6:cmp $0x83,%edx
+0x401d6b:3:cmovl %ecx,%eax
+0x401d6e:3:mov %eax,-0x48(%rbp)
+0x401d71:5:jmp 0000000000402649 <smu8_translate_firmware_enum_to_arg+0x1279>
+0x401d76:5:mov $0xdd52e94b,%eax
+0x401d7b:5:mov $0xe881ee65,%ecx
+0x401d80:3:mov -0x2c(%rbp),%edx
+0x401d83:6:cmp $0x81,%edx
+0x401d89:3:cmovl %ecx,%eax
+0x401d8c:3:mov %eax,-0x48(%rbp)
+0x401d8f:5:jmp 0000000000402649 <smu8_translate_firmware_enum_to_arg+0x1279>
+0x401d94:5:mov $0xdec4ddd4,%eax
+0x401d99:5:mov $0x7a9718c2,%ecx
+0x401d9e:3:mov -0x2c(%rbp),%edx
+0x401da1:6:cmp $0x80,%edx
+0x401da7:3:cmove %ecx,%eax
+0x401daa:3:mov %eax,-0x48(%rbp)
+0x401dad:5:jmp 0000000000402649 <smu8_translate_firmware_enum_to_arg+0x1279>
+0x401db2:7:mov 0x406078,%eax
+0x401db9:4:mov -0x38(%rbp),%rcx
+0x401dbd:2:mov %eax,(%rcx)
+0x401dbf:7:movl $0xb37a8734,-0x48(%rbp)
+0x401dc6:5:jmp 0000000000402649 <smu8_translate_firmware_enum_to_arg+0x1279>
+0x401dcb:5:mov $0xb5363a84,%eax
+0x401dd0:5:mov $0x171df5a4,%ecx
+0x401dd5:4:mov -0x40(%rbp),%rdx
+0x401dd9:3:mov (%rdx),%rdx
+0x401ddc:2:mov (%rdx),%esi
+0x401dde:7:cmp 0x40608c,%esi
+0x401de5:3:cmove %ecx,%eax
+0x401de8:3:mov %eax,-0x48(%rbp)
+0x401deb:5:jmp 0000000000402649 <smu8_translate_firmware_enum_to_arg+0x1279>
+0x401df0:7:mov 0x406078,%eax
+0x401df7:4:mov -0x38(%rbp),%rcx
+0x401dfb:2:mov %eax,(%rcx)
+0x401dfd:7:movl $0x543b28fe,-0x48(%rbp)
+0x401e04:5:jmp 0000000000402649 <smu8_translate_firmware_enum_to_arg+0x1279>
+0x401e09:5:mov $0x3fa071d8,%eax
+0x401e0e:5:mov $0x1ae96760,%ecx
+0x401e13:2:mov $0x1,%dl
+0x401e15:7:mov 0x40606c,%esi
+0x401e1c:7:mov 0x4060b0,%edi
+0x401e23:3:mov %esi,%r8d
+0x401e26:7:sub $0xeaeedb05,%r8d
+0x401e2d:4:sub $0x1,%r8d
+0x401e31:7:add $0xeaeedb05,%r8d
+0x401e38:4:imul %r8d,%esi
+0x401e3c:3:and $0x1,%esi
+0x401e3f:3:cmp $0x0,%esi
+0x401e42:4:sete %r9b
+0x401e46:3:cmp $0xa,%edi
+0x401e49:4:setl %r10b
+0x401e4d:3:mov %r9b,%r11b
+0x401e50:4:xor $0xff,%r11b
+0x401e54:3:mov %r10b,%bl
+0x401e57:3:xor $0xff,%bl
+0x401e5a:3:xor $0x1,%dl
+0x401e5d:3:mov %r11b,%r14b
+0x401e60:4:and $0xff,%r14b
+0x401e64:3:and %dl,%r9b
+0x401e67:3:mov %bl,%r15b
+0x401e6a:4:and $0xff,%r15b
+0x401e6e:3:and %dl,%r10b
+0x401e71:3:or %r9b,%r14b
+0x401e74:3:or %r10b,%r15b
+0x401e77:3:xor %r15b,%r14b
+0x401e7a:3:or %bl,%r11b
+0x401e7d:4:xor $0xff,%r11b
+0x401e81:3:or $0x1,%dl
+0x401e84:3:and %dl,%r11b
+0x401e87:3:or %r11b,%r14b
+0x401e8a:4:test $0x1,%r14b
+0x401e8e:3:cmovne %ecx,%eax
+0x401e91:3:mov %eax,-0x48(%rbp)
+0x401e94:5:jmp 0000000000402649 <smu8_translate_firmware_enum_to_arg+0x1279>
+0x401e99:5:mov $0x3fa071d8,%eax
+0x401e9e:5:mov $0x7b99e582,%ecx
+0x401ea3:2:mov $0x1,%dl
+0x401ea5:7:mov 0x4060b8,%esi
+0x401eac:4:mov -0x38(%rbp),%rdi
+0x401eb0:2:mov %esi,(%rdi)
+0x401eb2:7:mov 0x40606c,%esi
+0x401eb9:8:mov 0x4060b0,%r8d
+0x401ec1:3:mov %esi,%r9d
+0x401ec4:7:sub $0xf48eeaf8,%r9d
+0x401ecb:4:sub $0x1,%r9d
+0x401ecf:7:add $0xf48eeaf8,%r9d
+0x401ed6:4:imul %r9d,%esi
+0x401eda:3:and $0x1,%esi
+0x401edd:3:cmp $0x0,%esi
+0x401ee0:4:sete %r10b
+0x401ee4:4:cmp $0xa,%r8d
+0x401ee8:4:setl %r11b
+0x401eec:3:mov %r10b,%bl
+0x401eef:3:xor $0xff,%bl
+0x401ef2:3:mov %r11b,%r14b
+0x401ef5:4:xor $0xff,%r14b
+0x401ef9:3:xor $0x0,%dl
+0x401efc:3:mov %bl,%r15b
+0x401eff:4:and $0x0,%r15b
+0x401f03:3:and %dl,%r10b
+0x401f06:3:mov %r14b,%r12b
+0x401f09:4:and $0x0,%r12b
+0x401f0d:3:and %dl,%r11b
+0x401f10:3:or %r10b,%r15b
+0x401f13:3:or %r11b,%r12b
+0x401f16:3:xor %r12b,%r15b
+0x401f19:3:or %r14b,%bl
+0x401f1c:3:xor $0xff,%bl
+0x401f1f:3:or $0x0,%dl
+0x401f22:2:and %dl,%bl
+0x401f24:3:or %bl,%r15b
+0x401f27:4:test $0x1,%r15b
+0x401f2b:3:cmovne %ecx,%eax
+0x401f2e:3:mov %eax,-0x48(%rbp)
+0x401f31:5:jmp 0000000000402649 <smu8_translate_firmware_enum_to_arg+0x1279>
+0x401f36:7:movl $0x543b28fe,-0x48(%rbp)
+0x401f3d:5:jmp 0000000000402649 <smu8_translate_firmware_enum_to_arg+0x1279>
+0x401f42:7:movl $0xb37a8734,-0x48(%rbp)
+0x401f49:5:jmp 0000000000402649 <smu8_translate_firmware_enum_to_arg+0x1279>
+0x401f4e:5:mov $0x988d4cc1,%eax
+0x401f53:5:mov $0xc83f6e33,%ecx
+0x401f58:2:mov $0x1,%dl
+0x401f5a:7:mov 0x40606c,%esi
+0x401f61:7:mov 0x4060b0,%edi
+0x401f68:3:mov %esi,%r8d
+0x401f6b:7:sub $0x6ff561d4,%r8d
+0x401f72:4:sub $0x1,%r8d
+0x401f76:7:add $0x6ff561d4,%r8d
+0x401f7d:4:imul %r8d,%esi
+0x401f81:3:and $0x1,%esi
+0x401f84:3:cmp $0x0,%esi
+0x401f87:4:sete %r9b
+0x401f8b:3:cmp $0xa,%edi
+0x401f8e:4:setl %r10b
+0x401f92:3:mov %r9b,%r11b
+0x401f95:4:xor $0xff,%r11b
+0x401f99:3:mov %r10b,%bl
+0x401f9c:3:xor $0xff,%bl
+0x401f9f:3:xor $0x0,%dl
+0x401fa2:3:mov %r11b,%r14b
+0x401fa5:4:and $0x0,%r14b
+0x401fa9:3:and %dl,%r9b
+0x401fac:3:mov %bl,%r15b
+0x401faf:4:and $0x0,%r15b
+0x401fb3:3:and %dl,%r10b
+0x401fb6:3:or %r9b,%r14b
+0x401fb9:3:or %r10b,%r15b
+0x401fbc:3:xor %r15b,%r14b
+0x401fbf:3:or %bl,%r11b
+0x401fc2:4:xor $0xff,%r11b
+0x401fc6:3:or $0x0,%dl
+0x401fc9:3:and %dl,%r11b
+0x401fcc:3:or %r11b,%r14b
+0x401fcf:4:test $0x1,%r14b
+0x401fd3:3:cmovne %ecx,%eax
+0x401fd6:3:mov %eax,-0x48(%rbp)
+0x401fd9:5:jmp 0000000000402649 <smu8_translate_firmware_enum_to_arg+0x1279>
+0x401fde:5:mov $0x988d4cc1,%eax
+0x401fe3:5:mov $0x976d4572,%ecx
+0x401fe8:7:mov 0x406060,%edx
+0x401fef:4:mov -0x38(%rbp),%rsi
+0x401ff3:2:mov %edx,(%rsi)
+0x401ff5:7:mov 0x40606c,%edx
+0x401ffc:7:mov 0x4060b0,%edi
+0x402003:3:mov %edx,%r8d
+0x402006:7:add $0xa45fdd8e,%r8d
+0x40200d:4:sub $0x1,%r8d
+0x402011:7:sub $0xa45fdd8e,%r8d
+0x402018:4:imul %r8d,%edx
+0x40201c:3:and $0x1,%edx
+0x40201f:3:cmp $0x0,%edx
+0x402022:4:sete %r9b
+0x402026:3:cmp $0xa,%edi
+0x402029:4:setl %r10b
+0x40202d:3:mov %r9b,%r11b
+0x402030:3:and %r10b,%r11b
+0x402033:3:xor %r10b,%r9b
+0x402036:3:or %r9b,%r11b
+0x402039:4:test $0x1,%r11b
+0x40203d:3:cmovne %ecx,%eax
+0x402040:3:mov %eax,-0x48(%rbp)
+0x402043:5:jmp 0000000000402649 <smu8_translate_firmware_enum_to_arg+0x1279>
+0x402048:7:movl $0xb37a8734,-0x48(%rbp)
+0x40204f:5:jmp 0000000000402649 <smu8_translate_firmware_enum_to_arg+0x1279>
+0x402054:7:mov 0x40605c,%eax
+0x40205b:4:mov -0x38(%rbp),%rcx
+0x40205f:2:mov %eax,(%rcx)
+0x402061:7:movl $0xb37a8734,-0x48(%rbp)
+0x402068:5:jmp 0000000000402649 <smu8_translate_firmware_enum_to_arg+0x1279>
+0x40206d:7:mov 0x406084,%eax
+0x402074:4:mov -0x38(%rbp),%rcx
+0x402078:2:mov %eax,(%rcx)
+0x40207a:7:movl $0xb37a8734,-0x48(%rbp)
+0x402081:5:jmp 0000000000402649 <smu8_translate_firmware_enum_to_arg+0x1279>
+0x402086:7:mov 0x406054,%eax
+0x40208d:4:mov -0x38(%rbp),%rcx
+0x402091:2:mov %eax,(%rcx)
+0x402093:7:movl $0xb37a8734,-0x48(%rbp)
+0x40209a:5:jmp 0000000000402649 <smu8_translate_firmware_enum_to_arg+0x1279>
+0x40209f:5:mov $0xc691a1ca,%eax
+0x4020a4:5:mov $0x3b661153,%ecx
+0x4020a9:4:mov -0x40(%rbp),%rdx
+0x4020ad:3:mov (%rdx),%rdx
+0x4020b0:2:mov (%rdx),%esi
+0x4020b2:7:cmp 0x40608c,%esi
+0x4020b9:3:cmove %ecx,%eax
+0x4020bc:3:mov %eax,-0x48(%rbp)
+0x4020bf:5:jmp 0000000000402649 <smu8_translate_firmware_enum_to_arg+0x1279>
+0x4020c4:5:mov $0x4233bb7,%eax
+0x4020c9:5:mov $0x3e4bdac3,%ecx
+0x4020ce:7:mov 0x40606c,%edx
+0x4020d5:7:mov 0x4060b0,%esi
+0x4020dc:2:mov %edx,%edi
+0x4020de:6:sub $0x1f33a500,%edi
+0x4020e4:3:sub $0x1,%edi
+0x4020e7:6:add $0x1f33a500,%edi
+0x4020ed:3:imul %edi,%edx
+0x4020f0:3:and $0x1,%edx
+0x4020f3:3:cmp $0x0,%edx
+0x4020f6:4:sete %r8b
+0x4020fa:3:cmp $0xa,%esi
+0x4020fd:4:setl %r9b
+0x402101:3:mov %r8b,%r10b
+0x402104:3:and %r9b,%r10b
+0x402107:3:xor %r9b,%r8b
+0x40210a:3:or %r8b,%r10b
+0x40210d:4:test $0x1,%r10b
+0x402111:3:cmovne %ecx,%eax
+0x402114:3:mov %eax,-0x48(%rbp)
+0x402117:5:jmp 0000000000402649 <smu8_translate_firmware_enum_to_arg+0x1279>
+0x40211c:5:mov $0x4233bb7,%eax
+0x402121:5:mov $0x27aeedf1,%ecx
+0x402126:2:xor %edx,%edx
+0x402128:7:mov 0x406054,%esi
+0x40212f:4:mov -0x38(%rbp),%rdi
+0x402133:2:mov %esi,(%rdi)
+0x402135:7:mov 0x40606c,%esi
+0x40213c:8:mov 0x4060b0,%r8d
+0x402144:3:sub $0x1,%edx
+0x402147:3:mov %esi,%r9d
+0x40214a:3:add %edx,%r9d
+0x40214d:4:imul %r9d,%esi
+0x402151:3:and $0x1,%esi
+0x402154:3:cmp $0x0,%esi
+0x402157:4:sete %r10b
+0x40215b:4:cmp $0xa,%r8d
+0x40215f:4:setl %r11b
+0x402163:3:mov %r10b,%bl
+0x402166:3:and %r11b,%bl
+0x402169:3:xor %r11b,%r10b
+0x40216c:3:or %r10b,%bl
+0x40216f:3:test $0x1,%bl
+0x402172:3:cmovne %ecx,%eax
+0x402175:3:mov %eax,-0x48(%rbp)
+0x402178:5:jmp 0000000000402649 <smu8_translate_firmware_enum_to_arg+0x1279>
+0x40217d:7:movl $0xd1e60c93,-0x48(%rbp)
+0x402184:5:jmp 0000000000402649 <smu8_translate_firmware_enum_to_arg+0x1279>
+0x402189:7:mov 0x40609c,%eax
+0x402190:4:mov -0x38(%rbp),%rcx
+0x402194:2:mov %eax,(%rcx)
+0x402196:7:movl $0xd1e60c93,-0x48(%rbp)
+0x40219d:5:jmp 0000000000402649 <smu8_translate_firmware_enum_to_arg+0x1279>
+0x4021a2:7:movl $0xb37a8734,-0x48(%rbp)
+0x4021a9:5:jmp 0000000000402649 <smu8_translate_firmware_enum_to_arg+0x1279>
+0x4021ae:5:mov $0x89c27688,%eax
+0x4021b3:5:mov $0xa93a0243,%ecx
+0x4021b8:2:mov $0x1,%dl
+0x4021ba:7:mov 0x40606c,%esi
+0x4021c1:7:mov 0x4060b0,%edi
+0x4021c8:3:mov %esi,%r8d
+0x4021cb:7:add $0x54840909,%r8d
+0x4021d2:4:sub $0x1,%r8d
+0x4021d6:7:sub $0x54840909,%r8d
+0x4021dd:4:imul %r8d,%esi
+0x4021e1:3:and $0x1,%esi
+0x4021e4:3:cmp $0x0,%esi
+0x4021e7:4:sete %r9b
+0x4021eb:3:cmp $0xa,%edi
+0x4021ee:4:setl %r10b
+0x4021f2:3:mov %r9b,%r11b
+0x4021f5:4:xor $0xff,%r11b
+0x4021f9:3:mov %r10b,%bl
+0x4021fc:3:xor $0xff,%bl
+0x4021ff:3:xor $0x0,%dl
+0x402202:3:mov %r11b,%r14b
+0x402205:4:and $0x0,%r14b
+0x402209:3:and %dl,%r9b
+0x40220c:3:mov %bl,%r15b
+0x40220f:4:and $0x0,%r15b
+0x402213:3:and %dl,%r10b
+0x402216:3:or %r9b,%r14b
+0x402219:3:or %r10b,%r15b
+0x40221c:3:xor %r15b,%r14b
+0x40221f:3:or %bl,%r11b
+0x402222:4:xor $0xff,%r11b
+0x402226:3:or $0x0,%dl
+0x402229:3:and %dl,%r11b
+0x40222c:3:or %r11b,%r14b
+0x40222f:4:test $0x1,%r14b
+0x402233:3:cmovne %ecx,%eax
+0x402236:3:mov %eax,-0x48(%rbp)
+0x402239:5:jmp 0000000000402649 <smu8_translate_firmware_enum_to_arg+0x1279>
+0x40223e:5:mov $0x89c27688,%eax
+0x402243:5:mov $0xbc699afe,%ecx
+0x402248:2:mov $0x1,%dl
+0x40224a:7:mov 0x406094,%esi
+0x402251:4:mov -0x38(%rbp),%rdi
+0x402255:2:mov %esi,(%rdi)
+0x402257:7:mov 0x40606c,%esi
+0x40225e:8:mov 0x4060b0,%r8d
+0x402266:3:mov %esi,%r9d
+0x402269:7:sub $0xc3225fdb,%r9d
+0x402270:4:sub $0x1,%r9d
+0x402274:7:add $0xc3225fdb,%r9d
+0x40227b:4:imul %r9d,%esi
+0x40227f:3:and $0x1,%esi
+0x402282:3:cmp $0x0,%esi
+0x402285:4:sete %r10b
+0x402289:4:cmp $0xa,%r8d
+0x40228d:4:setl %r11b
+0x402291:3:mov %r10b,%bl
+0x402294:3:xor $0xff,%bl
+0x402297:3:mov %r11b,%r14b
+0x40229a:4:xor $0xff,%r14b
+0x40229e:3:xor $0x1,%dl
+0x4022a1:3:mov %bl,%r15b
+0x4022a4:4:and $0xff,%r15b
+0x4022a8:3:and %dl,%r10b
+0x4022ab:3:mov %r14b,%r12b
+0x4022ae:4:and $0xff,%r12b
+0x4022b2:3:and %dl,%r11b
+0x4022b5:3:or %r10b,%r15b
+0x4022b8:3:or %r11b,%r12b
+0x4022bb:3:xor %r12b,%r15b
+0x4022be:3:or %r14b,%bl
+0x4022c1:3:xor $0xff,%bl
+0x4022c4:3:or $0x1,%dl
+0x4022c7:2:and %dl,%bl
+0x4022c9:3:or %bl,%r15b
+0x4022cc:4:test $0x1,%r15b
+0x4022d0:3:cmovne %ecx,%eax
+0x4022d3:3:mov %eax,-0x48(%rbp)
+0x4022d6:5:jmp 0000000000402649 <smu8_translate_firmware_enum_to_arg+0x1279>
+0x4022db:7:movl $0xb37a8734,-0x48(%rbp)
+0x4022e2:5:jmp 0000000000402649 <smu8_translate_firmware_enum_to_arg+0x1279>
+0x4022e7:5:mov $0x554d88ea,%eax
+0x4022ec:5:mov $0x1e5185c3,%ecx
+0x4022f1:2:xor %edx,%edx
+0x4022f3:7:mov 0x40606c,%esi
+0x4022fa:7:mov 0x4060b0,%edi
+0x402301:3:sub $0x1,%edx
+0x402304:3:mov %esi,%r8d
+0x402307:3:add %edx,%r8d
+0x40230a:4:imul %r8d,%esi
+0x40230e:3:and $0x1,%esi
+0x402311:3:cmp $0x0,%esi
+0x402314:4:sete %r9b
+0x402318:3:cmp $0xa,%edi
+0x40231b:4:setl %r10b
+0x40231f:3:mov %r9b,%r11b
+0x402322:3:and %r10b,%r11b
+0x402325:3:xor %r10b,%r9b
+0x402328:3:or %r9b,%r11b
+0x40232b:4:test $0x1,%r11b
+0x40232f:3:cmovne %ecx,%eax
+0x402332:3:mov %eax,-0x48(%rbp)
+0x402335:5:jmp 0000000000402649 <smu8_translate_firmware_enum_to_arg+0x1279>
+0x40233a:5:mov $0x554d88ea,%eax
+0x40233f:5:mov $0x51ebd716,%ecx
+0x402344:7:mov 0x4060b4,%edx
+0x40234b:4:mov -0x38(%rbp),%rsi
+0x40234f:2:mov %edx,(%rsi)
+0x402351:7:mov 0x40606c,%edx
+0x402358:7:mov 0x4060b0,%edi
+0x40235f:3:mov %edx,%r8d
+0x402362:7:sub $0x6a9aad1e,%r8d
+0x402369:4:sub $0x1,%r8d
+0x40236d:7:add $0x6a9aad1e,%r8d
+0x402374:4:imul %r8d,%edx
+0x402378:3:and $0x1,%edx
+0x40237b:3:cmp $0x0,%edx
+0x40237e:4:sete %r9b
+0x402382:3:cmp $0xa,%edi
+0x402385:4:setl %r10b
+0x402389:3:mov %r9b,%r11b
+0x40238c:3:and %r10b,%r11b
+0x40238f:3:xor %r10b,%r9b
+0x402392:3:or %r9b,%r11b
+0x402395:4:test $0x1,%r11b
+0x402399:3:cmovne %ecx,%eax
+0x40239c:3:mov %eax,-0x48(%rbp)
+0x40239f:5:jmp 0000000000402649 <smu8_translate_firmware_enum_to_arg+0x1279>
+0x4023a4:7:movl $0xb37a8734,-0x48(%rbp)
+0x4023ab:5:jmp 0000000000402649 <smu8_translate_firmware_enum_to_arg+0x1279>
+0x4023b0:7:mov 0x4060a0,%eax
+0x4023b7:4:mov -0x38(%rbp),%rcx
+0x4023bb:2:mov %eax,(%rcx)
+0x4023bd:7:movl $0xb37a8734,-0x48(%rbp)
+0x4023c4:5:jmp 0000000000402649 <smu8_translate_firmware_enum_to_arg+0x1279>
+0x4023c9:7:mov 0x406088,%eax
+0x4023d0:4:mov -0x38(%rbp),%rcx
+0x4023d4:2:mov %eax,(%rcx)
+0x4023d6:7:movl $0xb37a8734,-0x48(%rbp)
+0x4023dd:5:jmp 0000000000402649 <smu8_translate_firmware_enum_to_arg+0x1279>
+0x4023e2:7:mov 0x406098,%eax
+0x4023e9:4:mov -0x38(%rbp),%rcx
+0x4023ed:2:mov %eax,(%rcx)
+0x4023ef:7:movl $0xb37a8734,-0x48(%rbp)
+0x4023f6:5:jmp 0000000000402649 <smu8_translate_firmware_enum_to_arg+0x1279>
+0x4023fb:7:mov 0x4060a4,%eax
+0x402402:4:mov -0x38(%rbp),%rcx
+0x402406:2:mov %eax,(%rcx)
+0x402408:7:movl $0xb37a8734,-0x48(%rbp)
+0x40240f:5:jmp 0000000000402649 <smu8_translate_firmware_enum_to_arg+0x1279>
+0x402414:7:mov 0x406058,%eax
+0x40241b:4:mov -0x38(%rbp),%rcx
+0x40241f:2:mov %eax,(%rcx)
+0x402421:7:movl $0xb37a8734,-0x48(%rbp)
+0x402428:5:jmp 0000000000402649 <smu8_translate_firmware_enum_to_arg+0x1279>
+0x40242d:7:mov 0x406080,%eax
+0x402434:4:mov -0x38(%rbp),%rcx
+0x402438:2:mov %eax,(%rcx)
+0x40243a:7:movl $0xb37a8734,-0x48(%rbp)
+0x402441:5:jmp 0000000000402649 <smu8_translate_firmware_enum_to_arg+0x1279>
+0x402446:7:mov 0x40604c,%eax
+0x40244d:4:mov -0x38(%rbp),%rcx
+0x402451:2:mov %eax,(%rcx)
+0x402453:7:movl $0xb37a8734,-0x48(%rbp)
+0x40245a:5:jmp 0000000000402649 <smu8_translate_firmware_enum_to_arg+0x1279>
+0x40245f:5:mov $0x20e01f45,%eax
+0x402464:5:mov $0x411386b3,%ecx
+0x402469:2:mov $0x1,%dl
+0x40246b:2:xor %esi,%esi
+0x40246d:7:mov 0x40606c,%edi
+0x402474:8:mov 0x4060b0,%r8d
+0x40247c:3:sub $0x1,%esi
+0x40247f:3:mov %edi,%r9d
+0x402482:3:add %esi,%r9d
+0x402485:4:imul %r9d,%edi
+0x402489:3:and $0x1,%edi
+0x40248c:3:cmp $0x0,%edi
+0x40248f:4:sete %r10b
+0x402493:4:cmp $0xa,%r8d
+0x402497:4:setl %r11b
+0x40249b:3:mov %r10b,%bl
+0x40249e:3:xor $0xff,%bl
+0x4024a1:3:mov %r11b,%r14b
+0x4024a4:4:xor $0xff,%r14b
+0x4024a8:3:xor $0x0,%dl
+0x4024ab:3:mov %bl,%r15b
+0x4024ae:4:and $0x0,%r15b
+0x4024b2:3:and %dl,%r10b
+0x4024b5:3:mov %r14b,%r12b
+0x4024b8:4:and $0x0,%r12b
+0x4024bc:3:and %dl,%r11b
+0x4024bf:3:or %r10b,%r15b
+0x4024c2:3:or %r11b,%r12b
+0x4024c5:3:xor %r12b,%r15b
+0x4024c8:3:or %r14b,%bl
+0x4024cb:3:xor $0xff,%bl
+0x4024ce:3:or $0x0,%dl
+0x4024d1:2:and %dl,%bl
+0x4024d3:3:or %bl,%r15b
+0x4024d6:4:test $0x1,%r15b
+0x4024da:3:cmovne %ecx,%eax
+0x4024dd:3:mov %eax,-0x48(%rbp)
+0x4024e0:5:jmp 0000000000402649 <smu8_translate_firmware_enum_to_arg+0x1279>
+0x4024e5:5:mov $0x20e01f45,%eax
+0x4024ea:5:mov $0x8ccdf30b,%ecx
+0x4024ef:7:mov 0x406074,%edx
+0x4024f6:4:mov -0x38(%rbp),%rsi
+0x4024fa:2:mov %edx,(%rsi)
+0x4024fc:7:mov 0x40606c,%edx
+0x402503:7:mov 0x4060b0,%edi
+0x40250a:3:mov %edx,%r8d
+0x40250d:7:add $0x64d45c3f,%r8d
+0x402514:4:sub $0x1,%r8d
+0x402518:7:sub $0x64d45c3f,%r8d
+0x40251f:4:imul %r8d,%edx
+0x402523:3:and $0x1,%edx
+0x402526:3:cmp $0x0,%edx
+0x402529:4:sete %r9b
+0x40252d:3:cmp $0xa,%edi
+0x402530:4:setl %r10b
+0x402534:3:mov %r9b,%r11b
+0x402537:3:and %r10b,%r11b
+0x40253a:3:xor %r10b,%r9b
+0x40253d:3:or %r9b,%r11b
+0x402540:4:test $0x1,%r11b
+0x402544:3:cmovne %ecx,%eax
+0x402547:3:mov %eax,-0x48(%rbp)
+0x40254a:5:jmp 0000000000402649 <smu8_translate_firmware_enum_to_arg+0x1279>
+0x40254f:7:movl $0xb37a8734,-0x48(%rbp)
+0x402556:5:jmp 0000000000402649 <smu8_translate_firmware_enum_to_arg+0x1279>
+0x40255b:7:movl $0xb37a8734,-0x48(%rbp)
+0x402562:5:jmp 0000000000402649 <smu8_translate_firmware_enum_to_arg+0x1279>
+0x402567:4:mov -0x38(%rbp),%rax
+0x40256b:2:mov (%rax),%eax
+0x40256d:4:lea -0x28(%rbp),%rsp
+0x402571:1:pop %rbx
+0x402572:2:pop %r12
+0x402574:2:pop %r13
+0x402576:2:pop %r14
+0x402578:2:pop %r15
+0x40257a:1:pop %rbp
+0x40257b:1:ret
+0x40257c:3:mov %rsp,%rax
+0x40257f:4:add $0xfffffffffffffff0,%rax
+0x402583:3:mov %rax,%rsp
+0x402586:3:mov %rsp,%rcx
+0x402589:4:add $0xfffffffffffffff0,%rcx
+0x40258d:3:mov %rcx,%rsp
+0x402590:3:mov %rsp,%rdx
+0x402593:4:add $0xfffffffffffffff0,%rdx
+0x402597:3:mov %rdx,%rsp
+0x40259a:4:mov -0x50(%rbp),%rsi
+0x40259e:3:mov %rsi,(%rax)
+0x4025a1:3:mov -0x54(%rbp),%edi
+0x4025a4:2:mov %edi,(%rcx)
+0x4025a6:6:movl $0x0,(%rdx)
+0x4025ac:7:movl $0xb85cae4a,-0x48(%rbp)
+0x4025b3:5:jmp 0000000000402649 <smu8_translate_firmware_enum_to_arg+0x1279>
+0x4025b8:7:mov 0x4060b8,%eax
+0x4025bf:4:mov -0x38(%rbp),%rcx
+0x4025c3:2:mov %eax,(%rcx)
+0x4025c5:7:movl $0x1ae96760,-0x48(%rbp)
+0x4025cc:5:jmp 0000000000402649 <smu8_translate_firmware_enum_to_arg+0x1279>
+0x4025d1:7:mov 0x406060,%eax
+0x4025d8:4:mov -0x38(%rbp),%rcx
+0x4025dc:2:mov %eax,(%rcx)
+0x4025de:7:movl $0xc83f6e33,-0x48(%rbp)
+0x4025e5:5:jmp 0000000000402649 <smu8_translate_firmware_enum_to_arg+0x1279>
+0x4025ea:7:mov 0x406054,%eax
+0x4025f1:4:mov -0x38(%rbp),%rcx
+0x4025f5:2:mov %eax,(%rcx)
+0x4025f7:7:movl $0x3e4bdac3,-0x48(%rbp)
+0x4025fe:5:jmp 0000000000402649 <smu8_translate_firmware_enum_to_arg+0x1279>
+0x402603:7:mov 0x406094,%eax
+0x40260a:4:mov -0x38(%rbp),%rcx
+0x40260e:2:mov %eax,(%rcx)
+0x402610:7:movl $0xa93a0243,-0x48(%rbp)
+0x402617:5:jmp 0000000000402649 <smu8_translate_firmware_enum_to_arg+0x1279>
+0x40261c:7:mov 0x4060b4,%eax
+0x402623:4:mov -0x38(%rbp),%rcx
+0x402627:2:mov %eax,(%rcx)
+0x402629:7:movl $0x1e5185c3,-0x48(%rbp)
+0x402630:5:jmp 0000000000402649 <smu8_translate_firmware_enum_to_arg+0x1279>
+0x402635:7:mov 0x406074,%eax
+0x40263c:4:mov -0x38(%rbp),%rcx
+0x402640:2:mov %eax,(%rcx)
+0x402642:7:movl $0x411386b3,-0x48(%rbp)
+0x402649:5:jmp 0000000000401435 <smu8_translate_firmware_enum_to_arg+0x65>
+0x40264e:2:xchg %ax,%ax
+0x402650:1:push %rbp
+0x402651:3:mov %rsp,%rbp
+0x402654:2:push %r15
+0x402656:2:push %r14
+0x402658:2:push %r13
+0x40265a:2:push %r12
+0x40265c:1:push %rbx
+0x40265d:7:sub $0x128,%rsp
+0x402664:7:mov 0x406070,%eax
+0x40266b:7:mov 0x40607c,%ecx
+0x402672:2:mov %eax,%edx
+0x402674:6:sub $0x8fdae7a1,%edx
+0x40267a:3:sub $0x1,%edx
+0x40267d:6:add $0x8fdae7a1,%edx
+0x402683:3:imul %edx,%eax
+0x402686:3:and $0x1,%eax
+0x402689:3:cmp $0x0,%eax
+0x40268c:4:sete %r8b
+0x402690:4:and $0x1,%r8b
+0x402694:7:mov %r8b,-0x9a(%rbp)
+0x40269b:3:cmp $0xa,%ecx
+0x40269e:4:setl %r8b
+0x4026a2:4:and $0x1,%r8b
+0x4026a6:7:mov %r8b,-0x99(%rbp)
+0x4026ad:10:movl $0x8d70e42c,-0xa0(%rbp)
+0x4026b7:6:mov %edi,-0xa4(%rbp)
+0x4026bd:7:mov %rsi,-0xb0(%rbp)
+0x4026c4:6:mov -0xa0(%rbp),%eax
+0x4026ca:2:mov %eax,%ecx
+0x4026cc:6:sub $0x88f893e9,%ecx
+0x4026d2:6:mov %eax,-0xb4(%rbp)
+0x4026d8:6:mov %ecx,-0xb8(%rbp)
+0x4026de:6:je 0000000000402d59 <main+0x709>
+0x4026e4:5:jmp 00000000004026e9 <main+0x99>
+0x4026e9:6:mov -0xb4(%rbp),%eax
+0x4026ef:5:sub $0x88fc664d,%eax
+0x4026f4:6:mov %eax,-0xbc(%rbp)
+0x4026fa:6:je 000000000040323c <main+0xbec>
+0x402700:5:jmp 0000000000402705 <main+0xb5>
+0x402705:6:mov -0xb4(%rbp),%eax
+0x40270b:5:sub $0x8d70e42c,%eax
+0x402710:6:mov %eax,-0xc0(%rbp)
+0x402716:6:je 0000000000402a52 <main+0x402>
+0x40271c:5:jmp 0000000000402721 <main+0xd1>
+0x402721:6:mov -0xb4(%rbp),%eax
+0x402727:5:sub $0xa0db64bf,%eax
+0x40272c:6:mov %eax,-0xc4(%rbp)
+0x402732:6:je 0000000000403119 <main+0xac9>
+0x402738:5:jmp 000000000040273d <main+0xed>
+0x40273d:6:mov -0xb4(%rbp),%eax
+0x402743:5:sub $0xa4e87715,%eax
+0x402748:6:mov %eax,-0xc8(%rbp)
+0x40274e:6:je 00000000004032ec <main+0xc9c>
+0x402754:5:jmp 0000000000402759 <main+0x109>
+0x402759:6:mov -0xb4(%rbp),%eax
+0x40275f:5:sub $0xc80103dd,%eax
+0x402764:6:mov %eax,-0xcc(%rbp)
+0x40276a:6:je 0000000000402f34 <main+0x8e4>
+0x402770:5:jmp 0000000000402775 <main+0x125>
+0x402775:6:mov -0xb4(%rbp),%eax
+0x40277b:5:sub $0xcc910ca2,%eax
+0x402780:6:mov %eax,-0xd0(%rbp)
+0x402786:6:je 00000000004030c6 <main+0xa76>
+0x40278c:5:jmp 0000000000402791 <main+0x141>
+0x402791:6:mov -0xb4(%rbp),%eax
+0x402797:5:sub $0xcce2caad,%eax
+0x40279c:6:mov %eax,-0xd4(%rbp)
+0x4027a2:6:je 0000000000402ede <main+0x88e>
+0x4027a8:5:jmp 00000000004027ad <main+0x15d>
+0x4027ad:6:mov -0xb4(%rbp),%eax
+0x4027b3:5:sub $0xd1f89c12,%eax
+0x4027b8:6:mov %eax,-0xd8(%rbp)
+0x4027be:6:je 0000000000402cd0 <main+0x680>
+0x4027c4:5:jmp 00000000004027c9 <main+0x179>
+0x4027c9:6:mov -0xb4(%rbp),%eax
+0x4027cf:5:sub $0xd6b75eed,%eax
+0x4027d4:6:mov %eax,-0xdc(%rbp)
+0x4027da:6:je 0000000000402db4 <main+0x764>
+0x4027e0:5:jmp 00000000004027e5 <main+0x195>
+0x4027e5:6:mov -0xb4(%rbp),%eax
+0x4027eb:5:sub $0xe7a2e649,%eax
+0x4027f0:6:mov %eax,-0xe0(%rbp)
+0x4027f6:6:je 0000000000403128 <main+0xad8>
+0x4027fc:5:jmp 0000000000402801 <main+0x1b1>
+0x402801:6:mov -0xb4(%rbp),%eax
+0x402807:5:sub $0xed612015,%eax
+0x40280c:6:mov %eax,-0xe4(%rbp)
+0x402812:6:je 0000000000403220 <main+0xbd0>
+0x402818:5:jmp 000000000040281d <main+0x1cd>
+0x40281d:6:mov -0xb4(%rbp),%eax
+0x402823:5:sub $0xf337a0c5,%eax
+0x402828:6:mov %eax,-0xe8(%rbp)
+0x40282e:6:je 00000000004030b7 <main+0xa67>
+0x402834:5:jmp 0000000000402839 <main+0x1e9>
+0x402839:6:mov -0xb4(%rbp),%eax
+0x40283f:5:sub $0x6e2ce8c,%eax
+0x402844:6:mov %eax,-0xec(%rbp)
+0x40284a:6:je 0000000000402c3c <main+0x5ec>
+0x402850:5:jmp 0000000000402855 <main+0x205>
+0x402855:6:mov -0xb4(%rbp),%eax
+0x40285b:5:sub $0x91a4af0,%eax
+0x402860:6:mov %eax,-0xf0(%rbp)
+0x402866:6:je 0000000000403254 <main+0xc04>
+0x40286c:5:jmp 0000000000402871 <main+0x221>
+0x402871:6:mov -0xb4(%rbp),%eax
+0x402877:5:sub $0x9407f81,%eax
+0x40287c:6:mov %eax,-0xf4(%rbp)
+0x402882:6:je 0000000000403211 <main+0xbc1>
+0x402888:5:jmp 000000000040288d <main+0x23d>
+0x40288d:6:mov -0xb4(%rbp),%eax
+0x402893:5:sub $0x9f86a8d,%eax
+0x402898:6:mov %eax,-0xf8(%rbp)
+0x40289e:6:je 0000000000402e39 <main+0x7e9>
+0x4028a4:5:jmp 00000000004028a9 <main+0x259>
+0x4028a9:6:mov -0xb4(%rbp),%eax
+0x4028af:5:sub $0x1ba630d6,%eax
+0x4028b4:6:mov %eax,-0xfc(%rbp)
+0x4028ba:6:je 0000000000402eed <main+0x89d>
+0x4028c0:5:jmp 00000000004028c5 <main+0x275>
+0x4028c5:6:mov -0xb4(%rbp),%eax
+0x4028cb:5:sub $0x2225ce85,%eax
+0x4028d0:6:mov %eax,-0x100(%rbp)
+0x4028d6:6:je 0000000000402dde <main+0x78e>
+0x4028dc:5:jmp 00000000004028e1 <main+0x291>
+0x4028e1:6:mov -0xb4(%rbp),%eax
+0x4028e7:5:sub $0x233a2ca9,%eax
+0x4028ec:6:mov %eax,-0x104(%rbp)
+0x4028f2:6:je 000000000040300e <main+0x9be>
+0x4028f8:5:jmp 00000000004028fd <main+0x2ad>
+0x4028fd:6:mov -0xb4(%rbp),%eax
+0x402903:5:sub $0x262983fd,%eax
+0x402908:6:mov %eax,-0x108(%rbp)
+0x40290e:6:je 0000000000402c1e <main+0x5ce>
+0x402914:5:jmp 0000000000402919 <main+0x2c9>
+0x402919:6:mov -0xb4(%rbp),%eax
+0x40291f:5:sub $0x29fe3556,%eax
+0x402924:6:mov %eax,-0x10c(%rbp)
+0x40292a:6:je 0000000000402f58 <main+0x908>
+0x402930:5:jmp 0000000000402935 <main+0x2e5>
+0x402935:6:mov -0xb4(%rbp),%eax
+0x40293b:5:sub $0x2c95e244,%eax
+0x402940:6:mov %eax,-0x110(%rbp)
+0x402946:6:je 0000000000402a87 <main+0x437>
+0x40294c:5:jmp 0000000000402951 <main+0x301>
+0x402951:6:mov -0xb4(%rbp),%eax
+0x402957:5:sub $0x30fa4f57,%eax
+0x40295c:6:mov %eax,-0x114(%rbp)
+0x402962:6:je 0000000000403183 <main+0xb33>
+0x402968:5:jmp 000000000040296d <main+0x31d>
+0x40296d:6:mov -0xb4(%rbp),%eax
+0x402973:5:sub $0x47f00ce5,%eax
+0x402978:6:mov %eax,-0x118(%rbp)
+0x40297e:6:je 0000000000402fb3 <main+0x963>
+0x402984:5:jmp 0000000000402989 <main+0x339>
+0x402989:6:mov -0xb4(%rbp),%eax
+0x40298f:5:sub $0x51875f4c,%eax
+0x402994:6:mov %eax,-0x11c(%rbp)
+0x40299a:6:je 0000000000402c94 <main+0x644>
+0x4029a0:5:jmp 00000000004029a5 <main+0x355>
+0x4029a5:6:mov -0xb4(%rbp),%eax
+0x4029ab:5:sub $0x527f35e7,%eax
+0x4029b0:6:mov %eax,-0x120(%rbp)
+0x4029b6:6:je 0000000000402cb2 <main+0x662>
+0x4029bc:5:jmp 00000000004029c1 <main+0x371>
+0x4029c1:6:mov -0xb4(%rbp),%eax
+0x4029c7:5:sub $0x62757aee,%eax
+0x4029cc:6:mov %eax,-0x124(%rbp)
+0x4029d2:6:je 0000000000402d35 <main+0x6e5>
+0x4029d8:5:jmp 00000000004029dd <main+0x38d>
+0x4029dd:6:mov -0xb4(%rbp),%eax
+0x4029e3:5:sub $0x6925d1b3,%eax
+0x4029e8:6:mov %eax,-0x128(%rbp)
+0x4029ee:6:je 0000000000402c5d <main+0x60d>
+0x4029f4:5:jmp 00000000004029f9 <main+0x3a9>
+0x4029f9:6:mov -0xb4(%rbp),%eax
+0x4029ff:5:sub $0x6addb438,%eax
+0x402a04:6:mov %eax,-0x12c(%rbp)
+0x402a0a:6:je 0000000000403316 <main+0xcc6>
+0x402a10:5:jmp 0000000000402a15 <main+0x3c5>
+0x402a15:6:mov -0xb4(%rbp),%eax
+0x402a1b:5:sub $0x73570fdf,%eax
+0x402a20:6:mov %eax,-0x130(%rbp)
+0x402a26:6:je 0000000000402cee <main+0x69e>
+0x402a2c:5:jmp 0000000000402a31 <main+0x3e1>
+0x402a31:6:mov -0xb4(%rbp),%eax
+0x402a37:5:sub $0x7530a262,%eax
+0x402a3c:6:mov %eax,-0x134(%rbp)
+0x402a42:6:je 0000000000403299 <main+0xc49>
+0x402a48:5:jmp 0000000000402a4d <main+0x3fd>
+0x402a4d:5:jmp 0000000000403325 <main+0xcd5>
+0x402a52:5:mov $0x91a4af0,%eax
+0x402a57:5:mov $0x2c95e244,%ecx
+0x402a5c:6:mov -0x9a(%rbp),%dl
+0x402a62:7:mov -0x99(%rbp),%sil
+0x402a69:3:mov %dl,%dil
+0x402a6c:3:and %sil,%dil
+0x402a6f:3:xor %sil,%dl
+0x402a72:3:or %dl,%dil
+0x402a75:4:test $0x1,%dil
+0x402a79:3:cmovne %ecx,%eax
+0x402a7c:6:mov %eax,-0xa0(%rbp)
+0x402a82:5:jmp 0000000000403325 <main+0xcd5>
+0x402a87:5:mov $0x91a4af0,%eax
+0x402a8c:5:mov $0x262983fd,%ecx
+0x402a91:2:mov $0x1,%dl
+0x402a93:3:mov %rsp,%rsi
+0x402a96:4:add $0xfffffffffffffff0,%rsi
+0x402a9a:3:mov %rsi,%rsp
+0x402a9d:7:mov %rsi,-0x98(%rbp)
+0x402aa4:3:mov %rsp,%rsi
+0x402aa7:4:add $0xfffffffffffffff0,%rsi
+0x402aab:3:mov %rsi,%rsp
+0x402aae:3:mov %rsp,%rdi
+0x402ab1:4:add $0xfffffffffffffff0,%rdi
+0x402ab5:3:mov %rdi,%rsp
+0x402ab8:7:mov %rdi,-0x90(%rbp)
+0x402abf:3:mov %rsp,%rdi
+0x402ac2:4:add $0xfffffffffffffff0,%rdi
+0x402ac6:3:mov %rdi,%rsp
+0x402ac9:7:mov %rdi,-0x88(%rbp)
+0x402ad0:3:mov %rsp,%rdi
+0x402ad3:4:add $0xfffffffffffffff0,%rdi
+0x402ad7:3:mov %rdi,%rsp
+0x402ada:4:mov %rdi,-0x80(%rbp)
+0x402ade:3:mov %rsp,%rdi
+0x402ae1:4:add $0xfffffffffffffff0,%rdi
+0x402ae5:3:mov %rdi,%rsp
+0x402ae8:4:mov %rdi,-0x78(%rbp)
+0x402aec:3:mov %rsp,%rdi
+0x402aef:4:add $0xfffffffffffffff0,%rdi
+0x402af3:3:mov %rdi,%rsp
+0x402af6:4:mov %rdi,-0x70(%rbp)
+0x402afa:3:mov %rsp,%rdi
+0x402afd:4:add $0xfffffffffffffff0,%rdi
+0x402b01:3:mov %rdi,%rsp
+0x402b04:4:mov %rdi,-0x68(%rbp)
+0x402b08:3:mov %rsp,%rdi
+0x402b0b:4:add $0xfffffffffffffff0,%rdi
+0x402b0f:3:mov %rdi,%rsp
+0x402b12:4:mov %rdi,-0x60(%rbp)
+0x402b16:3:mov %rsp,%rdi
+0x402b19:4:add $0xfffffffffffffff0,%rdi
+0x402b1d:3:mov %rdi,%rsp
+0x402b20:4:mov %rdi,-0x58(%rbp)
+0x402b24:3:mov %rsp,%rdi
+0x402b27:4:add $0xfffffffffffffff0,%rdi
+0x402b2b:3:mov %rdi,%rsp
+0x402b2e:4:mov %rdi,-0x50(%rbp)
+0x402b32:3:mov %rsp,%rdi
+0x402b35:4:add $0xfffffffffffffff0,%rdi
+0x402b39:3:mov %rdi,%rsp
+0x402b3c:4:mov %rdi,-0x48(%rbp)
+0x402b40:3:mov %rsp,%rdi
+0x402b43:4:add $0xfffffffffffffff0,%rdi
+0x402b47:3:mov %rdi,%rsp
+0x402b4a:4:mov %rdi,-0x40(%rbp)
+0x402b4e:3:mov %rsp,%rdi
+0x402b51:4:add $0xfffffffffffffff0,%rdi
+0x402b55:3:mov %rdi,%rsp
+0x402b58:4:mov %rdi,-0x38(%rbp)
+0x402b5c:7:mov -0x98(%rbp),%rdi
+0x402b63:6:movl $0x0,(%rdi)
+0x402b69:7:mov -0xa4(%rbp),%r8d
+0x402b70:3:mov %r8d,(%rsi)
+0x402b73:7:mov -0x90(%rbp),%rdi
+0x402b7a:7:mov -0xb0(%rbp),%r9
+0x402b81:3:mov %r9,(%rdi)
+0x402b84:3:cmpl $0x2,(%rsi)
+0x402b87:4:setne %r10b
+0x402b8b:4:and $0x1,%r10b
+0x402b8f:4:mov %r10b,-0x2d(%rbp)
+0x402b93:8:mov 0x406070,%r11d
+0x402b9b:7:mov 0x40607c,%ebx
+0x402ba2:3:mov %r11d,%r14d
+0x402ba5:7:sub $0x550fdadc,%r14d
+0x402bac:4:sub $0x1,%r14d
+0x402bb0:7:add $0x550fdadc,%r14d
+0x402bb7:4:imul %r14d,%r11d
+0x402bbb:4:and $0x1,%r11d
+0x402bbf:4:cmp $0x0,%r11d
+0x402bc3:4:sete %r10b
+0x402bc7:3:cmp $0xa,%ebx
+0x402bca:4:setl %r15b
+0x402bce:3:mov %r10b,%r12b
+0x402bd1:4:xor $0xff,%r12b
+0x402bd5:3:mov %r15b,%r13b
+0x402bd8:4:xor $0xff,%r13b
+0x402bdc:3:xor $0x1,%dl
+0x402bdf:3:mov %r12b,%sil
+0x402be2:4:and $0xff,%sil
+0x402be6:3:and %dl,%r10b
+0x402be9:3:mov %r13b,%dil
+0x402bec:4:and $0xff,%dil
+0x402bf0:3:and %dl,%r15b
+0x402bf3:3:or %r10b,%sil
+0x402bf6:3:or %r15b,%dil
+0x402bf9:3:xor %dil,%sil
+0x402bfc:3:or %r13b,%r12b
+0x402bff:4:xor $0xff,%r12b
+0x402c03:3:or $0x1,%dl
+0x402c06:3:and %dl,%r12b
+0x402c09:3:or %r12b,%sil
+0x402c0c:4:test $0x1,%sil
+0x402c10:3:cmovne %ecx,%eax
+0x402c13:6:mov %eax,-0xa0(%rbp)
+0x402c19:5:jmp 0000000000403325 <main+0xcd5>
+0x402c1e:5:mov $0x6925d1b3,%eax
+0x402c23:5:mov $0x6e2ce8c,%ecx
+0x402c28:3:mov -0x2d(%rbp),%dl
+0x402c2b:3:test $0x1,%dl
+0x402c2e:3:cmovne %ecx,%eax
+0x402c31:6:mov %eax,-0xa0(%rbp)
+0x402c37:5:jmp 0000000000403325 <main+0xcd5>
+0x402c3c:5:call 00000000004013a0 <usage>
+0x402c41:7:mov -0x98(%rbp),%rax
+0x402c48:6:movl $0x1,(%rax)
+0x402c4e:10:movl $0x88fc664d,-0xa0(%rbp)
+0x402c58:5:jmp 0000000000403325 <main+0xcd5>
+0x402c5d:7:mov -0x90(%rbp),%rax
+0x402c64:3:mov (%rax),%rax
+0x402c67:4:mov 0x8(%rax),%rdi
+0x402c6b:5:call 0000000000401060 <atoi@plt>
+0x402c70:7:mov -0x88(%rbp),%rdi
+0x402c77:2:mov %eax,(%rdi)
+0x402c79:7:mov -0x88(%rbp),%rdi
+0x402c80:2:mov (%rdi),%eax
+0x402c82:3:mov %eax,-0x2c(%rbp)
+0x402c85:10:movl $0x51875f4c,-0xa0(%rbp)
+0x402c8f:5:jmp 0000000000403325 <main+0xcd5>
+0x402c94:5:mov $0x527f35e7,%eax
+0x402c99:5:mov $0xd1f89c12,%ecx
+0x402c9e:3:mov -0x2c(%rbp),%edx
+0x402ca1:3:cmp $0x1,%edx
+0x402ca4:3:cmovl %ecx,%eax
+0x402ca7:6:mov %eax,-0xa0(%rbp)
+0x402cad:5:jmp 0000000000403325 <main+0xcd5>
+0x402cb2:5:mov $0xa0db64bf,%eax
+0x402cb7:5:mov $0x1ba630d6,%ecx
+0x402cbc:3:mov -0x2c(%rbp),%edx
+0x402cbf:3:cmp $0x1,%edx
+0x402cc2:3:cmove %ecx,%eax
+0x402cc5:6:mov %eax,-0xa0(%rbp)
+0x402ccb:5:jmp 0000000000403325 <main+0xcd5>
+0x402cd0:5:mov $0xa0db64bf,%eax
+0x402cd5:5:mov $0x73570fdf,%ecx
+0x402cda:3:mov -0x2c(%rbp),%edx
+0x402cdd:3:cmp $0x0,%edx
+0x402ce0:3:cmove %ecx,%eax
+0x402ce3:6:mov %eax,-0xa0(%rbp)
+0x402ce9:5:jmp 0000000000403325 <main+0xcd5>
+0x402cee:4:mov -0x80(%rbp),%rax
+0x402cf2:6:movl $0x0,(%rax)
+0x402cf8:4:mov -0x78(%rbp),%rax
+0x402cfc:6:movl $0x1,(%rax)
+0x402d02:4:mov -0x78(%rbp),%rax
+0x402d06:3:movslq (%rax),%rax
+0x402d09:4:shl $0x2,%rax
+0x402d0d:3:mov %rax,%rdi
+0x402d10:5:call 0000000000401050 <malloc@plt>
+0x402d15:4:mov -0x70(%rbp),%rdi
+0x402d19:3:mov %rax,(%rdi)
+0x402d1c:4:mov -0x68(%rbp),%rax
+0x402d20:6:movl $0x0,(%rax)
+0x402d26:10:movl $0x62757aee,-0xa0(%rbp)
+0x402d30:5:jmp 0000000000403325 <main+0xcd5>
+0x402d35:5:mov $0x2225ce85,%eax
+0x402d3a:5:mov $0x88f893e9,%ecx
+0x402d3f:4:mov -0x68(%rbp),%rdx
+0x402d43:2:mov (%rdx),%esi
+0x402d45:4:mov -0x78(%rbp),%rdx
+0x402d49:2:cmp (%rdx),%esi
+0x402d4b:3:cmovl %ecx,%eax
+0x402d4e:6:mov %eax,-0xa0(%rbp)
+0x402d54:5:jmp 0000000000403325 <main+0xcd5>
+0x402d59:5:call 0000000000401160 <next_i>
+0x402d5e:2:xor %ecx,%ecx
+0x402d60:5:mov $0x2,%edx
+0x402d65:6:mov %edx,-0x138(%rbp)
+0x402d6b:1:cltd
+0x402d6c:6:mov -0x138(%rbp),%esi
+0x402d72:2:idiv %esi
+0x402d74:6:imul $0xfffffffe,%edx,%edx
+0x402d7a:3:sub $0x1,%ecx
+0x402d7d:2:sub %ecx,%edx
+0x402d7f:6:mov %edx,-0x13c(%rbp)
+0x402d85:5:call 0000000000401160 <next_i>
+0x402d8a:6:mov -0x13c(%rbp),%ecx
+0x402d90:3:imul %eax,%ecx
+0x402d93:4:mov -0x70(%rbp),%rdi
+0x402d97:3:mov (%rdi),%rdi
+0x402d9a:4:mov -0x68(%rbp),%r8
+0x402d9e:3:movslq (%r8),%r8
+0x402da1:4:mov %ecx,(%rdi,%r8,4)
+0x402da5:10:movl $0xd6b75eed,-0xa0(%rbp)
+0x402daf:5:jmp 0000000000403325 <main+0xcd5>
+0x402db4:4:mov -0x68(%rbp),%rax
+0x402db8:2:mov (%rax),%ecx
+0x402dba:6:add $0x80f6405e,%ecx
+0x402dc0:3:add $0x1,%ecx
+0x402dc3:6:sub $0x80f6405e,%ecx
+0x402dc9:4:mov -0x68(%rbp),%rax
+0x402dcd:2:mov %ecx,(%rax)
+0x402dcf:10:movl $0x62757aee,-0xa0(%rbp)
+0x402dd9:5:jmp 0000000000403325 <main+0xcd5>
+0x402dde:5:mov $0x7530a262,%eax
+0x402de3:5:mov $0x9f86a8d,%ecx
+0x402de8:7:mov 0x406070,%edx
+0x402def:7:mov 0x40607c,%esi
+0x402df6:2:mov %edx,%edi
+0x402df8:6:sub $0xac46791a,%edi
+0x402dfe:3:sub $0x1,%edi
+0x402e01:6:add $0xac46791a,%edi
+0x402e07:3:imul %edi,%edx
+0x402e0a:3:and $0x1,%edx
+0x402e0d:3:cmp $0x0,%edx
+0x402e10:4:sete %r8b
+0x402e14:3:cmp $0xa,%esi
+0x402e17:4:setl %r9b
+0x402e1b:3:mov %r8b,%r10b
+0x402e1e:3:and %r9b,%r10b
+0x402e21:3:xor %r9b,%r8b
+0x402e24:3:or %r8b,%r10b
+0x402e27:4:test $0x1,%r10b
+0x402e2b:3:cmovne %ecx,%eax
+0x402e2e:6:mov %eax,-0xa0(%rbp)
+0x402e34:5:jmp 0000000000403325 <main+0xcd5>
+0x402e39:4:mov -0x70(%rbp),%rax
+0x402e3d:3:mov (%rax),%rdi
+0x402e40:4:mov -0x80(%rbp),%rax
+0x402e44:2:mov (%rax),%esi
+0x402e46:5:call 00000000004013d0 <smu8_translate_firmware_enum_to_arg>
+0x402e4b:10:movabs $0x4040d6,%rdi
+0x402e55:4:mov -0x60(%rbp),%rcx
+0x402e59:2:mov %eax,(%rcx)
+0x402e5b:4:mov -0x60(%rbp),%rcx
+0x402e5f:2:mov (%rcx),%esi
+0x402e61:2:mov $0x0,%al
+0x402e63:5:call 0000000000401040 <printf@plt>
+0x402e68:4:mov -0x70(%rbp),%rcx
+0x402e6c:3:mov (%rcx),%rcx
+0x402e6f:3:mov %rcx,%rdi
+0x402e72:6:mov %eax,-0x140(%rbp)
+0x402e78:5:call 0000000000401030 <free@plt>
+0x402e7d:5:mov $0x7530a262,%eax
+0x402e82:5:mov $0xcce2caad,%esi
+0x402e87:7:mov 0x406070,%edx
+0x402e8e:8:mov 0x40607c,%r8d
+0x402e96:3:mov %edx,%r9d
+0x402e99:7:add $0x81019810,%r9d
+0x402ea0:4:sub $0x1,%r9d
+0x402ea4:7:sub $0x81019810,%r9d
+0x402eab:4:imul %r9d,%edx
+0x402eaf:3:and $0x1,%edx
+0x402eb2:3:cmp $0x0,%edx
+0x402eb5:4:sete %r10b
+0x402eb9:4:cmp $0xa,%r8d
+0x402ebd:4:setl %r11b
+0x402ec1:3:mov %r10b,%bl
+0x402ec4:3:and %r11b,%bl
+0x402ec7:3:xor %r11b,%r10b
+0x402eca:3:or %r10b,%bl
+0x402ecd:3:test $0x1,%bl
+0x402ed0:3:cmovne %esi,%eax
+0x402ed3:6:mov %eax,-0xa0(%rbp)
+0x402ed9:5:jmp 0000000000403325 <main+0xcd5>
+0x402ede:10:movl $0xed612015,-0xa0(%rbp)
+0x402ee8:5:jmp 0000000000403325 <main+0xcd5>
+0x402eed:4:mov -0x58(%rbp),%rax
+0x402ef1:6:movl $0x0,(%rax)
+0x402ef7:4:mov -0x50(%rbp),%rax
+0x402efb:6:movl $0x64,(%rax)
+0x402f01:4:mov -0x50(%rbp),%rax
+0x402f05:3:movslq (%rax),%rax
+0x402f08:4:shl $0x2,%rax
+0x402f0c:3:mov %rax,%rdi
+0x402f0f:5:call 0000000000401050 <malloc@plt>
+0x402f14:4:mov -0x48(%rbp),%rdi
+0x402f18:3:mov %rax,(%rdi)
+0x402f1b:4:mov -0x40(%rbp),%rax
+0x402f1f:6:movl $0x0,(%rax)
+0x402f25:10:movl $0xc80103dd,-0xa0(%rbp)
+0x402f2f:5:jmp 0000000000403325 <main+0xcd5>
+0x402f34:5:mov $0xcc910ca2,%eax
+0x402f39:5:mov $0x29fe3556,%ecx
+0x402f3e:4:mov -0x40(%rbp),%rdx
+0x402f42:2:mov (%rdx),%esi
+0x402f44:4:mov -0x50(%rbp),%rdx
+0x402f48:2:cmp (%rdx),%esi
+0x402f4a:3:cmovl %ecx,%eax
+0x402f4d:6:mov %eax,-0xa0(%rbp)
+0x402f53:5:jmp 0000000000403325 <main+0xcd5>
+0x402f58:5:call 0000000000401160 <next_i>
+0x402f5d:2:xor %ecx,%ecx
+0x402f5f:5:mov $0x2,%edx
+0x402f64:6:mov %edx,-0x144(%rbp)
+0x402f6a:1:cltd
+0x402f6b:6:mov -0x144(%rbp),%esi
+0x402f71:2:idiv %esi
+0x402f73:6:imul $0xfffffffe,%edx,%edx
+0x402f79:3:sub $0x1,%ecx
+0x402f7c:2:sub %ecx,%edx
+0x402f7e:6:mov %edx,-0x148(%rbp)
+0x402f84:5:call 0000000000401160 <next_i>
+0x402f89:6:mov -0x148(%rbp),%ecx
+0x402f8f:3:imul %eax,%ecx
+0x402f92:4:mov -0x48(%rbp),%rdi
+0x402f96:3:mov (%rdi),%rdi
+0x402f99:4:mov -0x40(%rbp),%r8
+0x402f9d:3:movslq (%r8),%r8
+0x402fa0:4:mov %ecx,(%rdi,%r8,4)
+0x402fa4:10:movl $0x47f00ce5,-0xa0(%rbp)
+0x402fae:5:jmp 0000000000403325 <main+0xcd5>
+0x402fb3:5:mov $0xa4e87715,%eax
+0x402fb8:5:mov $0x233a2ca9,%ecx
+0x402fbd:7:mov 0x406070,%edx
+0x402fc4:7:mov 0x40607c,%esi
+0x402fcb:2:mov %edx,%edi
+0x402fcd:6:add $0x5f8eb7c2,%edi
+0x402fd3:3:sub $0x1,%edi
+0x402fd6:6:sub $0x5f8eb7c2,%edi
+0x402fdc:3:imul %edi,%edx
+0x402fdf:3:and $0x1,%edx
+0x402fe2:3:cmp $0x0,%edx
+0x402fe5:4:sete %r8b
+0x402fe9:3:cmp $0xa,%esi
+0x402fec:4:setl %r9b
+0x402ff0:3:mov %r8b,%r10b
+0x402ff3:3:and %r9b,%r10b
+0x402ff6:3:xor %r9b,%r8b
+0x402ff9:3:or %r8b,%r10b
+0x402ffc:4:test $0x1,%r10b
+0x403000:3:cmovne %ecx,%eax
+0x403003:6:mov %eax,-0xa0(%rbp)
+0x403009:5:jmp 0000000000403325 <main+0xcd5>
+0x40300e:5:mov $0xa4e87715,%eax
+0x403013:5:mov $0xf337a0c5,%ecx
+0x403018:2:mov $0x1,%dl
+0x40301a:2:xor %esi,%esi
+0x40301c:4:mov -0x40(%rbp),%rdi
+0x403020:3:mov (%rdi),%r8d
+0x403023:3:sub $0x1,%esi
+0x403026:3:sub %esi,%r8d
+0x403029:4:mov -0x40(%rbp),%rdi
+0x40302d:3:mov %r8d,(%rdi)
+0x403030:7:mov 0x406070,%esi
+0x403037:8:mov 0x40607c,%r8d
+0x40303f:3:mov %esi,%r9d
+0x403042:7:add $0x9b8be690,%r9d
+0x403049:4:sub $0x1,%r9d
+0x40304d:7:sub $0x9b8be690,%r9d
+0x403054:4:imul %r9d,%esi
+0x403058:3:and $0x1,%esi
+0x40305b:3:cmp $0x0,%esi
+0x40305e:4:sete %r10b
+0x403062:4:cmp $0xa,%r8d
+0x403066:4:setl %r11b
+0x40306a:3:mov %r10b,%bl
+0x40306d:3:xor $0xff,%bl
+0x403070:3:mov %r11b,%r14b
+0x403073:4:xor $0xff,%r14b
+0x403077:3:xor $0x1,%dl
+0x40307a:3:mov %bl,%r15b
+0x40307d:4:and $0xff,%r15b
+0x403081:3:and %dl,%r10b
+0x403084:3:mov %r14b,%r12b
+0x403087:4:and $0xff,%r12b
+0x40308b:3:and %dl,%r11b
+0x40308e:3:or %r10b,%r15b
+0x403091:3:or %r11b,%r12b
+0x403094:3:xor %r12b,%r15b
+0x403097:3:or %r14b,%bl
+0x40309a:3:xor $0xff,%bl
+0x40309d:3:or $0x1,%dl
+0x4030a0:2:and %dl,%bl
+0x4030a2:3:or %bl,%r15b
+0x4030a5:4:test $0x1,%r15b
+0x4030a9:3:cmovne %ecx,%eax
+0x4030ac:6:mov %eax,-0xa0(%rbp)
+0x4030b2:5:jmp 0000000000403325 <main+0xcd5>
+0x4030b7:10:movl $0xc80103dd,-0xa0(%rbp)
+0x4030c1:5:jmp 0000000000403325 <main+0xcd5>
+0x4030c6:4:mov -0x48(%rbp),%rax
+0x4030ca:3:mov (%rax),%rdi
+0x4030cd:4:mov -0x58(%rbp),%rax
+0x4030d1:2:mov (%rax),%esi
+0x4030d3:5:call 00000000004013d0 <smu8_translate_firmware_enum_to_arg>
+0x4030d8:10:movabs $0x4040d6,%rdi
+0x4030e2:4:mov -0x38(%rbp),%rcx
+0x4030e6:2:mov %eax,(%rcx)
+0x4030e8:4:mov -0x38(%rbp),%rcx
+0x4030ec:2:mov (%rcx),%esi
+0x4030ee:2:mov $0x0,%al
+0x4030f0:5:call 0000000000401040 <printf@plt>
+0x4030f5:4:mov -0x48(%rbp),%rcx
+0x4030f9:3:mov (%rcx),%rcx
+0x4030fc:3:mov %rcx,%rdi
+0x4030ff:6:mov %eax,-0x14c(%rbp)
+0x403105:5:call 0000000000401030 <free@plt>
+0x40310a:10:movl $0xed612015,-0xa0(%rbp)
+0x403114:5:jmp 0000000000403325 <main+0xcd5>
+0x403119:10:movl $0xe7a2e649,-0xa0(%rbp)
+0x403123:5:jmp 0000000000403325 <main+0xcd5>
+0x403128:5:mov $0x6addb438,%eax
+0x40312d:5:mov $0x30fa4f57,%ecx
+0x403132:7:mov 0x406070,%edx
+0x403139:7:mov 0x40607c,%esi
+0x403140:2:mov %edx,%edi
+0x403142:6:add $0xe2bcd184,%edi
+0x403148:3:sub $0x1,%edi
+0x40314b:6:sub $0xe2bcd184,%edi
+0x403151:3:imul %edi,%edx
+0x403154:3:and $0x1,%edx
+0x403157:3:cmp $0x0,%edx
+0x40315a:4:sete %r8b
+0x40315e:3:cmp $0xa,%esi
+0x403161:4:setl %r9b
+0x403165:3:mov %r8b,%r10b
+0x403168:3:and %r9b,%r10b
+0x40316b:3:xor %r9b,%r8b
+0x40316e:3:or %r8b,%r10b
+0x403171:4:test $0x1,%r10b
+0x403175:3:cmovne %ecx,%eax
+0x403178:6:mov %eax,-0xa0(%rbp)
+0x40317e:5:jmp 0000000000403325 <main+0xcd5>
+0x403183:5:call 00000000004013a0 <usage>
+0x403188:5:mov $0x6addb438,%eax
+0x40318d:5:mov $0x9407f81,%ecx
+0x403192:2:mov $0x1,%dl
+0x403194:2:xor %esi,%esi
+0x403196:7:mov 0x406070,%edi
+0x40319d:8:mov 0x40607c,%r8d
+0x4031a5:3:sub $0x1,%esi
+0x4031a8:3:mov %edi,%r9d
+0x4031ab:3:add %esi,%r9d
+0x4031ae:4:imul %r9d,%edi
+0x4031b2:3:and $0x1,%edi
+0x4031b5:3:cmp $0x0,%edi
+0x4031b8:4:sete %r10b
+0x4031bc:4:cmp $0xa,%r8d
+0x4031c0:4:setl %r11b
+0x4031c4:3:mov %r10b,%bl
+0x4031c7:3:xor $0xff,%bl
+0x4031ca:3:mov %r11b,%r14b
+0x4031cd:4:xor $0xff,%r14b
+0x4031d1:3:xor $0x0,%dl
+0x4031d4:3:mov %bl,%r15b
+0x4031d7:4:and $0x0,%r15b
+0x4031db:3:and %dl,%r10b
+0x4031de:3:mov %r14b,%r12b
+0x4031e1:4:and $0x0,%r12b
+0x4031e5:3:and %dl,%r11b
+0x4031e8:3:or %r10b,%r15b
+0x4031eb:3:or %r11b,%r12b
+0x4031ee:3:xor %r12b,%r15b
+0x4031f1:3:or %r14b,%bl
+0x4031f4:3:xor $0xff,%bl
+0x4031f7:3:or $0x0,%dl
+0x4031fa:2:and %dl,%bl
+0x4031fc:3:or %bl,%r15b
+0x4031ff:4:test $0x1,%r15b
+0x403203:3:cmovne %ecx,%eax
+0x403206:6:mov %eax,-0xa0(%rbp)
+0x40320c:5:jmp 0000000000403325 <main+0xcd5>
+0x403211:10:movl $0xed612015,-0xa0(%rbp)
+0x40321b:5:jmp 0000000000403325 <main+0xcd5>
+0x403220:7:mov -0x98(%rbp),%rax
+0x403227:6:movl $0x0,(%rax)
+0x40322d:10:movl $0x88fc664d,-0xa0(%rbp)
+0x403237:5:jmp 0000000000403325 <main+0xcd5>
+0x40323c:7:mov -0x98(%rbp),%rax
+0x403243:2:mov (%rax),%eax
+0x403245:4:lea -0x28(%rbp),%rsp
+0x403249:1:pop %rbx
+0x40324a:2:pop %r12
+0x40324c:2:pop %r13
+0x40324e:2:pop %r14
+0x403250:2:pop %r15
+0x403252:1:pop %rbp
+0x403253:1:ret
+0x403254:3:mov %rsp,%rax
+0x403257:4:add $0xfffffffffffffff0,%rax
+0x40325b:3:mov %rax,%rsp
+0x40325e:3:mov %rsp,%rcx
+0x403261:4:add $0xfffffffffffffff0,%rcx
+0x403265:3:mov %rcx,%rsp
+0x403268:3:mov %rsp,%rdx
+0x40326b:4:add $0xfffffffffffffff0,%rdx
+0x40326f:3:mov %rdx,%rsp
+0x403272:6:movl $0x0,(%rax)
+0x403278:6:mov -0xa4(%rbp),%esi
+0x40327e:2:mov %esi,(%rcx)
+0x403280:7:mov -0xb0(%rbp),%rax
+0x403287:3:mov %rax,(%rdx)
+0x40328a:10:movl $0x2c95e244,-0xa0(%rbp)
+0x403294:5:jmp 0000000000403325 <main+0xcd5>
+0x403299:4:mov -0x70(%rbp),%rax
+0x40329d:3:mov (%rax),%rdi
+0x4032a0:4:mov -0x80(%rbp),%rax
+0x4032a4:2:mov (%rax),%esi
+0x4032a6:5:call 00000000004013d0 <smu8_translate_firmware_enum_to_arg>
+0x4032ab:10:movabs $0x4040d6,%rdi
+0x4032b5:4:mov -0x60(%rbp),%rcx
+0x4032b9:2:mov %eax,(%rcx)
+0x4032bb:4:mov -0x60(%rbp),%rcx
+0x4032bf:2:mov (%rcx),%esi
+0x4032c1:2:mov $0x0,%al
+0x4032c3:5:call 0000000000401040 <printf@plt>
+0x4032c8:4:mov -0x70(%rbp),%rcx
+0x4032cc:3:mov (%rcx),%rcx
+0x4032cf:3:mov %rcx,%rdi
+0x4032d2:6:mov %eax,-0x150(%rbp)
+0x4032d8:5:call 0000000000401030 <free@plt>
+0x4032dd:10:movl $0x9f86a8d,-0xa0(%rbp)
+0x4032e7:5:jmp 0000000000403325 <main+0xcd5>
+0x4032ec:2:xor %eax,%eax
+0x4032ee:4:mov -0x40(%rbp),%rcx
+0x4032f2:2:mov (%rcx),%edx
+0x4032f4:2:mov %eax,%esi
+0x4032f6:2:sub %edx,%esi
+0x4032f8:2:mov %eax,%edx
+0x4032fa:3:sub $0x1,%edx
+0x4032fd:2:add %edx,%esi
+0x4032ff:2:sub %esi,%eax
+0x403301:4:mov -0x40(%rbp),%rcx
+0x403305:2:mov %eax,(%rcx)
+0x403307:10:movl $0x233a2ca9,-0xa0(%rbp)
+0x403311:5:jmp 0000000000403325 <main+0xcd5>
+0x403316:5:call 00000000004013a0 <usage>
+0x40331b:10:movl $0x30fa4f57,-0xa0(%rbp)
+0x403325:5:jmp 00000000004026c4 <main+0x74>
+0x40332c:4:endbr64
+0x403330:4:sub $0x8,%rsp
+0x403334:4:add $0x8,%rsp
+0x403338:1:ret
