@@ -1,0 +1,735 @@
+digraph "0x4012e0" {
+  label = "0x4012e0 (/mnt/c/Users/mathe/Desktop/tcc/POCII/binaries/extr_rufussrcext2fsbitops.c_popcount8_Final-ollvm.out::main(0))"
+  labelloc = "t"
+  node[shape=record]
+
+  Entry [label="",width=0.3,height=0.3,shape=circle,fillcolor=black,style=filled]
+  "0x401354" [label="{
+     0x401354 [32]\l
+     | [instrs]\l
+     &nbsp;&nbsp;0x401354 \<+6\>: mov -0x88(%rbp),%eax\l
+     &nbsp;&nbsp;0x40135a \<+2\>: mov %eax,%ecx\l
+     &nbsp;&nbsp;0x40135c \<+6\>: sub $0x8d12daaf,%ecx\l
+     &nbsp;&nbsp;0x401362 \<+6\>: mov %eax,-0x9c(%rbp)\l
+     &nbsp;&nbsp;0x401368 \<+6\>: mov %ecx,-0xa0(%rbp)\l
+     &nbsp;&nbsp;0x40136e \<+6\>: je 000000000040179e \<main+0x4be\>\l
+  }"]
+  "0x40179e" [label="{
+     0x40179e [16]\l
+     | [instrs]\l
+     &nbsp;&nbsp;0x40179e \<+4\>: mov -0x78(%rbp),%rax\l
+     &nbsp;&nbsp;0x4017a2 \<+3\>: mov (%rax),%rax\l
+     &nbsp;&nbsp;0x4017a5 \<+4\>: mov 0x8(%rax),%rdi\l
+     &nbsp;&nbsp;0x4017a9 \<+5\>: call 0000000000401040 \<atoi@plt\>\l
+     | [calls]\l
+     &nbsp;&nbsp;0x401040 \{1\} (unknown)\l
+  }"]
+  "0x401374" [label="{
+     0x401374 [28]\l
+     | [instrs]\l
+     &nbsp;&nbsp;0x401374 \<+5\>: jmp 0000000000401379 \<main+0x99\>\l
+     &nbsp;&nbsp;0x401379 \<+6\>: mov -0x9c(%rbp),%eax\l
+     &nbsp;&nbsp;0x40137f \<+5\>: sub $0x92d0e8e2,%eax\l
+     &nbsp;&nbsp;0x401384 \<+6\>: mov %eax,-0xa4(%rbp)\l
+     &nbsp;&nbsp;0x40138a \<+6\>: je 0000000000401a55 \<main+0x775\>\l
+  }"]
+  Exit [label="",width=0.3,height=0.3,shape=circle,fillcolor=black,style=filled,peripheries=2]
+  "0x401a55" [label="{
+     0x401a55\l
+  }", style=dashed]
+  "0x401390" [label="{
+     0x401390 [28]\l
+     | [instrs]\l
+     &nbsp;&nbsp;0x401390 \<+5\>: jmp 0000000000401395 \<main+0xb5\>\l
+     &nbsp;&nbsp;0x401395 \<+6\>: mov -0x9c(%rbp),%eax\l
+     &nbsp;&nbsp;0x40139b \<+5\>: sub $0x93bd145c,%eax\l
+     &nbsp;&nbsp;0x4013a0 \<+6\>: mov %eax,-0xa8(%rbp)\l
+     &nbsp;&nbsp;0x4013a6 \<+6\>: je 0000000000401780 \<main+0x4a0\>\l
+  }"]
+  "0x401909" [label="{
+     0x401909 [160]\l
+     | [instrs]\l
+     &nbsp;&nbsp;0x401909 \<+5\>: mov $0xd496df75,%esi\l
+     &nbsp;&nbsp;0x40190e \<+5\>: mov $0x578da549,%edx\l
+     &nbsp;&nbsp;0x401913 \<+3\>: mov $0x1,%r8b\l
+     &nbsp;&nbsp;0x401916 \<+8\>: mov 0x40404c,%r9d\l
+     &nbsp;&nbsp;0x40191e \<+8\>: mov 0x404050,%r10d\l
+     &nbsp;&nbsp;0x401926 \<+3\>: mov %r9d,%r11d\l
+     &nbsp;&nbsp;0x401929 \<+7\>: sub $0xbfc35979,%r11d\l
+     &nbsp;&nbsp;0x401930 \<+4\>: sub $0x1,%r11d\l
+     &nbsp;&nbsp;0x401934 \<+7\>: add $0xbfc35979,%r11d\l
+     &nbsp;&nbsp;0x40193b \<+4\>: imul %r11d,%r9d\l
+     &nbsp;&nbsp;0x40193f \<+4\>: and $0x1,%r9d\l
+     &nbsp;&nbsp;0x401943 \<+4\>: cmp $0x0,%r9d\l
+     &nbsp;&nbsp;0x401947 \<+3\>: sete %bl\l
+     &nbsp;&nbsp;0x40194a \<+4\>: cmp $0xa,%r10d\l
+     &nbsp;&nbsp;0x40194e \<+4\>: setl %r14b\l
+     &nbsp;&nbsp;0x401952 \<+3\>: mov %bl,%r15b\l
+     &nbsp;&nbsp;0x401955 \<+4\>: xor $0xff,%r15b\l
+     &nbsp;&nbsp;0x401959 \<+3\>: mov %r14b,%r12b\l
+     &nbsp;&nbsp;0x40195c \<+4\>: xor $0xff,%r12b\l
+     &nbsp;&nbsp;0x401960 \<+4\>: xor $0x0,%r8b\l
+     &nbsp;&nbsp;0x401964 \<+3\>: mov %r15b,%r13b\l
+     &nbsp;&nbsp;0x401967 \<+4\>: and $0x0,%r13b\l
+     &nbsp;&nbsp;0x40196b \<+3\>: and %r8b,%bl\l
+     &nbsp;&nbsp;0x40196e \<+3\>: mov %r12b,%cl\l
+     &nbsp;&nbsp;0x401971 \<+3\>: and $0x0,%cl\l
+     &nbsp;&nbsp;0x401974 \<+3\>: and %r8b,%r14b\l
+     &nbsp;&nbsp;0x401977 \<+3\>: or %bl,%r13b\l
+     &nbsp;&nbsp;0x40197a \<+3\>: or %r14b,%cl\l
+     &nbsp;&nbsp;0x40197d \<+3\>: xor %cl,%r13b\l
+     &nbsp;&nbsp;0x401980 \<+3\>: or %r12b,%r15b\l
+     &nbsp;&nbsp;0x401983 \<+4\>: xor $0xff,%r15b\l
+     &nbsp;&nbsp;0x401987 \<+4\>: or $0x0,%r8b\l
+     &nbsp;&nbsp;0x40198b \<+3\>: and %r8b,%r15b\l
+     &nbsp;&nbsp;0x40198e \<+3\>: or %r15b,%r13b\l
+     &nbsp;&nbsp;0x401991 \<+4\>: test $0x1,%r13b\l
+     &nbsp;&nbsp;0x401995 \<+3\>: cmovne %edx,%esi\l
+     &nbsp;&nbsp;0x401998 \<+6\>: mov %esi,-0x88(%rbp)\l
+     &nbsp;&nbsp;0x40199e \<+6\>: mov %eax,-0xfc(%rbp)\l
+     &nbsp;&nbsp;0x4019a4 \<+5\>: jmp 0000000000401c5a \<main+0x97a\>\l
+  }"]
+  "0x401780" [label="{
+     0x401780\l
+  }", style=dashed]
+  "0x4013ac" [label="{
+     0x4013ac [28]\l
+     | [instrs]\l
+     &nbsp;&nbsp;0x4013ac \<+5\>: jmp 00000000004013b1 \<main+0xd1\>\l
+     &nbsp;&nbsp;0x4013b1 \<+6\>: mov -0x9c(%rbp),%eax\l
+     &nbsp;&nbsp;0x4013b7 \<+5\>: sub $0xb21579c5,%eax\l
+     &nbsp;&nbsp;0x4013bc \<+6\>: mov %eax,-0xac(%rbp)\l
+     &nbsp;&nbsp;0x4013c2 \<+6\>: je 0000000000401762 \<main+0x482\>\l
+  }"]
+  "0x4018ec" [label="{
+     0x4018ec [29]\l
+     | [instrs]\l
+     &nbsp;&nbsp;0x4018ec \<+10\>: movabs $0x4020f2,%rdi\l
+     &nbsp;&nbsp;0x4018f6 \<+4\>: mov -0x60(%rbp),%rcx\l
+     &nbsp;&nbsp;0x4018fa \<+2\>: mov %eax,(%rcx)\l
+     &nbsp;&nbsp;0x4018fc \<+4\>: mov -0x60(%rbp),%rcx\l
+     &nbsp;&nbsp;0x401900 \<+2\>: mov (%rcx),%esi\l
+     &nbsp;&nbsp;0x401902 \<+2\>: mov $0x0,%al\l
+     &nbsp;&nbsp;0x401904 \<+5\>: call 0000000000401030 \<printf@plt\>\l
+     | [calls]\l
+     &nbsp;&nbsp;0x401030 \{1\} (unknown)\l
+  }"]
+  "0x401762" [label="{
+     0x401762 [30]\l
+     | [instrs]\l
+     &nbsp;&nbsp;0x401762 \<+5\>: mov $0x8d12daaf,%eax\l
+     &nbsp;&nbsp;0x401767 \<+5\>: mov $0x93bd145c,%ecx\l
+     &nbsp;&nbsp;0x40176c \<+3\>: mov -0x31(%rbp),%dl\l
+     &nbsp;&nbsp;0x40176f \<+3\>: test $0x1,%dl\l
+     &nbsp;&nbsp;0x401772 \<+3\>: cmovne %ecx,%eax\l
+     &nbsp;&nbsp;0x401775 \<+6\>: mov %eax,-0x88(%rbp)\l
+     &nbsp;&nbsp;0x40177b \<+5\>: jmp 0000000000401c5a \<main+0x97a\>\l
+  }"]
+  "0x4013c8" [label="{
+     0x4013c8 [28]\l
+     | [instrs]\l
+     &nbsp;&nbsp;0x4013c8 \<+5\>: jmp 00000000004013cd \<main+0xed\>\l
+     &nbsp;&nbsp;0x4013cd \<+6\>: mov -0x9c(%rbp),%eax\l
+     &nbsp;&nbsp;0x4013d3 \<+5\>: sub $0xb3c4f38c,%eax\l
+     &nbsp;&nbsp;0x4013d8 \<+6\>: mov %eax,-0xb0(%rbp)\l
+     &nbsp;&nbsp;0x4013de \<+6\>: je 0000000000401a46 \<main+0x766\>\l
+  }"]
+  "0x4015dc" [label="{
+     0x4015dc\l
+  }", style=dashed]
+  "0x401a46" [label="{
+     0x401a46\l
+  }", style=dashed]
+  "0x4013e4" [label="{
+     0x4013e4 [28]\l
+     | [instrs]\l
+     &nbsp;&nbsp;0x4013e4 \<+5\>: jmp 00000000004013e9 \<main+0x109\>\l
+     &nbsp;&nbsp;0x4013e9 \<+6\>: mov -0x9c(%rbp),%eax\l
+     &nbsp;&nbsp;0x4013ef \<+5\>: sub $0xb7cd229b,%eax\l
+     &nbsp;&nbsp;0x4013f4 \<+6\>: mov %eax,-0xb4(%rbp)\l
+     &nbsp;&nbsp;0x4013fa \<+6\>: je 0000000000401826 \<main+0x546\>\l
+  }"]
+  "0x401844" [label="{
+     0x401844 [147]\l
+     | [instrs]\l
+     &nbsp;&nbsp;0x401844 \<+5\>: mov $0xd496df75,%eax\l
+     &nbsp;&nbsp;0x401849 \<+5\>: mov $0xda98c59f,%ecx\l
+     &nbsp;&nbsp;0x40184e \<+2\>: mov $0x1,%dl\l
+     &nbsp;&nbsp;0x401850 \<+7\>: mov 0x40404c,%esi\l
+     &nbsp;&nbsp;0x401857 \<+7\>: mov 0x404050,%edi\l
+     &nbsp;&nbsp;0x40185e \<+3\>: mov %esi,%r8d\l
+     &nbsp;&nbsp;0x401861 \<+7\>: add $0xc9067074,%r8d\l
+     &nbsp;&nbsp;0x401868 \<+4\>: sub $0x1,%r8d\l
+     &nbsp;&nbsp;0x40186c \<+7\>: sub $0xc9067074,%r8d\l
+     &nbsp;&nbsp;0x401873 \<+4\>: imul %r8d,%esi\l
+     &nbsp;&nbsp;0x401877 \<+3\>: and $0x1,%esi\l
+     &nbsp;&nbsp;0x40187a \<+3\>: cmp $0x0,%esi\l
+     &nbsp;&nbsp;0x40187d \<+4\>: sete %r9b\l
+     &nbsp;&nbsp;0x401881 \<+3\>: cmp $0xa,%edi\l
+     &nbsp;&nbsp;0x401884 \<+4\>: setl %r10b\l
+     &nbsp;&nbsp;0x401888 \<+3\>: mov %r9b,%r11b\l
+     &nbsp;&nbsp;0x40188b \<+4\>: xor $0xff,%r11b\l
+     &nbsp;&nbsp;0x40188f \<+3\>: mov %r10b,%bl\l
+     &nbsp;&nbsp;0x401892 \<+3\>: xor $0xff,%bl\l
+     &nbsp;&nbsp;0x401895 \<+3\>: xor $0x0,%dl\l
+     &nbsp;&nbsp;0x401898 \<+3\>: mov %r11b,%r14b\l
+     &nbsp;&nbsp;0x40189b \<+4\>: and $0x0,%r14b\l
+     &nbsp;&nbsp;0x40189f \<+3\>: and %dl,%r9b\l
+     &nbsp;&nbsp;0x4018a2 \<+3\>: mov %bl,%r15b\l
+     &nbsp;&nbsp;0x4018a5 \<+4\>: and $0x0,%r15b\l
+     &nbsp;&nbsp;0x4018a9 \<+3\>: and %dl,%r10b\l
+     &nbsp;&nbsp;0x4018ac \<+3\>: or %r9b,%r14b\l
+     &nbsp;&nbsp;0x4018af \<+3\>: or %r10b,%r15b\l
+     &nbsp;&nbsp;0x4018b2 \<+3\>: xor %r15b,%r14b\l
+     &nbsp;&nbsp;0x4018b5 \<+3\>: or %bl,%r11b\l
+     &nbsp;&nbsp;0x4018b8 \<+4\>: xor $0xff,%r11b\l
+     &nbsp;&nbsp;0x4018bc \<+3\>: or $0x0,%dl\l
+     &nbsp;&nbsp;0x4018bf \<+3\>: and %dl,%r11b\l
+     &nbsp;&nbsp;0x4018c2 \<+3\>: or %r11b,%r14b\l
+     &nbsp;&nbsp;0x4018c5 \<+4\>: test $0x1,%r14b\l
+     &nbsp;&nbsp;0x4018c9 \<+3\>: cmovne %ecx,%eax\l
+     &nbsp;&nbsp;0x4018cc \<+6\>: mov %eax,-0x88(%rbp)\l
+     &nbsp;&nbsp;0x4018d2 \<+5\>: jmp 0000000000401c5a \<main+0x97a\>\l
+  }"]
+  "0x401826" [label="{
+     0x401826 [30]\l
+     | [instrs]\l
+     &nbsp;&nbsp;0x401826 \<+5\>: mov $0xb3c4f38c,%eax\l
+     &nbsp;&nbsp;0x40182b \<+5\>: mov $0x7d435c60,%ecx\l
+     &nbsp;&nbsp;0x401830 \<+3\>: mov -0x30(%rbp),%edx\l
+     &nbsp;&nbsp;0x401833 \<+3\>: cmp $0x0,%edx\l
+     &nbsp;&nbsp;0x401836 \<+3\>: cmove %ecx,%eax\l
+     &nbsp;&nbsp;0x401839 \<+6\>: mov %eax,-0x88(%rbp)\l
+     &nbsp;&nbsp;0x40183f \<+5\>: jmp 0000000000401c5a \<main+0x97a\>\l
+  }"]
+  "0x401400" [label="{
+     0x401400 [28]\l
+     | [instrs]\l
+     &nbsp;&nbsp;0x401400 \<+5\>: jmp 0000000000401405 \<main+0x125\>\l
+     &nbsp;&nbsp;0x401405 \<+6\>: mov -0x9c(%rbp),%eax\l
+     &nbsp;&nbsp;0x40140b \<+5\>: sub $0xcac477bb,%eax\l
+     &nbsp;&nbsp;0x401410 \<+6\>: mov %eax,-0xb8(%rbp)\l
+     &nbsp;&nbsp;0x401416 \<+6\>: je 0000000000401b0b \<main+0x82b\>\l
+  }"]
+  "0x4015c0" [label="{
+     0x4015c0 [28]\l
+     | [instrs]\l
+     &nbsp;&nbsp;0x4015c0 \<+5\>: jmp 00000000004015c5 \<main+0x2e5\>\l
+     &nbsp;&nbsp;0x4015c5 \<+6\>: mov -0x9c(%rbp),%eax\l
+     &nbsp;&nbsp;0x4015cb \<+5\>: sub $0x7d435c60,%eax\l
+     &nbsp;&nbsp;0x4015d0 \<+6\>: mov %eax,-0xf8(%rbp)\l
+     &nbsp;&nbsp;0x4015d6 \<+6\>: je 0000000000401844 \<main+0x564\>\l
+  }"]
+  "0x401b0b" [label="{
+     0x401b0b [156]\l
+     | [instrs]\l
+     &nbsp;&nbsp;0x401b0b \<+5\>: mov $0xd1dfd685,%eax\l
+     &nbsp;&nbsp;0x401b10 \<+5\>: mov $0xdf39b485,%ecx\l
+     &nbsp;&nbsp;0x401b15 \<+2\>: mov $0x1,%dl\l
+     &nbsp;&nbsp;0x401b17 \<+4\>: mov -0x80(%rbp),%rsi\l
+     &nbsp;&nbsp;0x401b1b \<+2\>: mov (%rsi),%edi\l
+     &nbsp;&nbsp;0x401b1d \<+3\>: mov %edi,-0x2c(%rbp)\l
+     &nbsp;&nbsp;0x401b20 \<+7\>: mov 0x40404c,%edi\l
+     &nbsp;&nbsp;0x401b27 \<+8\>: mov 0x404050,%r8d\l
+     &nbsp;&nbsp;0x401b2f \<+3\>: mov %edi,%r9d\l
+     &nbsp;&nbsp;0x401b32 \<+7\>: sub $0x7f0da4fb,%r9d\l
+     &nbsp;&nbsp;0x401b39 \<+4\>: sub $0x1,%r9d\l
+     &nbsp;&nbsp;0x401b3d \<+7\>: add $0x7f0da4fb,%r9d\l
+     &nbsp;&nbsp;0x401b44 \<+4\>: imul %r9d,%edi\l
+     &nbsp;&nbsp;0x401b48 \<+3\>: and $0x1,%edi\l
+     &nbsp;&nbsp;0x401b4b \<+3\>: cmp $0x0,%edi\l
+     &nbsp;&nbsp;0x401b4e \<+4\>: sete %r10b\l
+     &nbsp;&nbsp;0x401b52 \<+4\>: cmp $0xa,%r8d\l
+     &nbsp;&nbsp;0x401b56 \<+4\>: setl %r11b\l
+     &nbsp;&nbsp;0x401b5a \<+3\>: mov %r10b,%bl\l
+     &nbsp;&nbsp;0x401b5d \<+3\>: xor $0xff,%bl\l
+     &nbsp;&nbsp;0x401b60 \<+3\>: mov %r11b,%r14b\l
+     &nbsp;&nbsp;0x401b63 \<+4\>: xor $0xff,%r14b\l
+     &nbsp;&nbsp;0x401b67 \<+3\>: xor $0x1,%dl\l
+     &nbsp;&nbsp;0x401b6a \<+3\>: mov %bl,%r15b\l
+     &nbsp;&nbsp;0x401b6d \<+4\>: and $0xff,%r15b\l
+     &nbsp;&nbsp;0x401b71 \<+3\>: and %dl,%r10b\l
+     &nbsp;&nbsp;0x401b74 \<+3\>: mov %r14b,%r12b\l
+     &nbsp;&nbsp;0x401b77 \<+4\>: and $0xff,%r12b\l
+     &nbsp;&nbsp;0x401b7b \<+3\>: and %dl,%r11b\l
+     &nbsp;&nbsp;0x401b7e \<+3\>: or %r10b,%r15b\l
+     &nbsp;&nbsp;0x401b81 \<+3\>: or %r11b,%r12b\l
+     &nbsp;&nbsp;0x401b84 \<+3\>: xor %r12b,%r15b\l
+     &nbsp;&nbsp;0x401b87 \<+3\>: or %r14b,%bl\l
+     &nbsp;&nbsp;0x401b8a \<+3\>: xor $0xff,%bl\l
+     &nbsp;&nbsp;0x401b8d \<+3\>: or $0x1,%dl\l
+     &nbsp;&nbsp;0x401b90 \<+2\>: and %dl,%bl\l
+     &nbsp;&nbsp;0x401b92 \<+3\>: or %bl,%r15b\l
+     &nbsp;&nbsp;0x401b95 \<+4\>: test $0x1,%r15b\l
+     &nbsp;&nbsp;0x401b99 \<+3\>: cmovne %ecx,%eax\l
+     &nbsp;&nbsp;0x401b9c \<+6\>: mov %eax,-0x88(%rbp)\l
+     &nbsp;&nbsp;0x401ba2 \<+5\>: jmp 0000000000401c5a \<main+0x97a\>\l
+  }"]
+  "0x40141c" [label="{
+     0x40141c [28]\l
+     | [instrs]\l
+     &nbsp;&nbsp;0x40141c \<+5\>: jmp 0000000000401421 \<main+0x141\>\l
+     &nbsp;&nbsp;0x401421 \<+6\>: mov -0x9c(%rbp),%eax\l
+     &nbsp;&nbsp;0x401427 \<+5\>: sub $0xd1dfd685,%eax\l
+     &nbsp;&nbsp;0x40142c \<+6\>: mov %eax,-0xbc(%rbp)\l
+     &nbsp;&nbsp;0x401432 \<+6\>: je 0000000000401c45 \<main+0x965\>\l
+  }"]
+  "0x401a69" [label="{
+     0x401a69 [25]\l
+     | [instrs]\l
+     &nbsp;&nbsp;0x401a69 \<+4\>: mov -0x80(%rbp),%rax\l
+     &nbsp;&nbsp;0x401a6d \<+6\>: movl $0x0,(%rax)\l
+     &nbsp;&nbsp;0x401a73 \<+10\>: movl $0x3f7f2576,-0x88(%rbp)\l
+     &nbsp;&nbsp;0x401a7d \<+5\>: jmp 0000000000401c5a \<main+0x97a\>\l
+  }"]
+  "0x401c45" [label="{
+     0x401c45\l
+  }", style=dashed]
+  "0x401438" [label="{
+     0x401438 [28]\l
+     | [instrs]\l
+     &nbsp;&nbsp;0x401438 \<+5\>: jmp 000000000040143d \<main+0x15d\>\l
+     &nbsp;&nbsp;0x40143d \<+6\>: mov -0x9c(%rbp),%eax\l
+     &nbsp;&nbsp;0x401443 \<+5\>: sub $0xd496df75,%eax\l
+     &nbsp;&nbsp;0x401448 \<+6\>: mov %eax,-0xc0(%rbp)\l
+     &nbsp;&nbsp;0x40144e \<+6\>: je 0000000000401bfe \<main+0x91e\>\l
+  }"]
+  "0x4015a4" [label="{
+     0x4015a4 [28]\l
+     | [instrs]\l
+     &nbsp;&nbsp;0x4015a4 \<+5\>: jmp 00000000004015a9 \<main+0x2c9\>\l
+     &nbsp;&nbsp;0x4015a9 \<+6\>: mov -0x9c(%rbp),%eax\l
+     &nbsp;&nbsp;0x4015af \<+5\>: sub $0x74e60bc3,%eax\l
+     &nbsp;&nbsp;0x4015b4 \<+6\>: mov %eax,-0xf4(%rbp)\l
+     &nbsp;&nbsp;0x4015ba \<+6\>: je 0000000000401a69 \<main+0x789\>\l
+  }"]
+  "0x401bfe" [label="{
+     0x401bfe\l
+  }", style=dashed]
+  "0x401454" [label="{
+     0x401454 [28]\l
+     | [instrs]\l
+     &nbsp;&nbsp;0x401454 \<+5\>: jmp 0000000000401459 \<main+0x179\>\l
+     &nbsp;&nbsp;0x401459 \<+6\>: mov -0x9c(%rbp),%eax\l
+     &nbsp;&nbsp;0x40145f \<+5\>: sub $0xda98c59f,%eax\l
+     &nbsp;&nbsp;0x401464 \<+6\>: mov %eax,-0xc4(%rbp)\l
+     &nbsp;&nbsp;0x40146a \<+6\>: je 00000000004018d7 \<main+0x5f7\>\l
+  }"]
+  "0x4019a9" [label="{
+     0x4019a9 [15]\l
+     | [instrs]\l
+     &nbsp;&nbsp;0x4019a9 \<+10\>: movl $0x74e60bc3,-0x88(%rbp)\l
+     &nbsp;&nbsp;0x4019b3 \<+5\>: jmp 0000000000401c5a \<main+0x97a\>\l
+  }"]
+  "0x4018d7" [label="{
+     0x4018d7 [21]\l
+     | [instrs]\l
+     &nbsp;&nbsp;0x4018d7 \<+4\>: mov -0x68(%rbp),%rax\l
+     &nbsp;&nbsp;0x4018db \<+6\>: movl $0x64,(%rax)\l
+     &nbsp;&nbsp;0x4018e1 \<+4\>: mov -0x68(%rbp),%rax\l
+     &nbsp;&nbsp;0x4018e5 \<+2\>: mov (%rax),%edi\l
+     &nbsp;&nbsp;0x4018e7 \<+5\>: call 0000000000401220 \<popcount8\>\l
+     | [calls]\l
+     &nbsp;&nbsp;0x401220 \{1\} (/mnt/c/Users/mathe/Desktop/tcc/POCII/binaries/extr_rufussrcext2fsbitops.c_popcount8_Final-ollvm.out::popcount8)\l
+  }"]
+  "0x401470" [label="{
+     0x401470 [28]\l
+     | [instrs]\l
+     &nbsp;&nbsp;0x401470 \<+5\>: jmp 0000000000401475 \<main+0x195\>\l
+     &nbsp;&nbsp;0x401475 \<+6\>: mov -0x9c(%rbp),%eax\l
+     &nbsp;&nbsp;0x40147b \<+5\>: sub $0xdf39b485,%eax\l
+     &nbsp;&nbsp;0x401480 \<+6\>: mov %eax,-0xc8(%rbp)\l
+     &nbsp;&nbsp;0x401486 \<+6\>: je 0000000000401ba7 \<main+0x8c7\>\l
+  }"]
+  "0x401588" [label="{
+     0x401588 [28]\l
+     | [instrs]\l
+     &nbsp;&nbsp;0x401588 \<+5\>: jmp 000000000040158d \<main+0x2ad\>\l
+     &nbsp;&nbsp;0x40158d \<+6\>: mov -0x9c(%rbp),%eax\l
+     &nbsp;&nbsp;0x401593 \<+5\>: sub $0x578da549,%eax\l
+     &nbsp;&nbsp;0x401598 \<+6\>: mov %eax,-0xf0(%rbp)\l
+     &nbsp;&nbsp;0x40159e \<+6\>: je 00000000004019a9 \<main+0x6c9\>\l
+  }"]
+  "0x401ba7" [label="{
+     0x401ba7 [18]\l
+     | [instrs]\l
+     &nbsp;&nbsp;0x401ba7 \<+3\>: mov -0x2c(%rbp),%eax\l
+     &nbsp;&nbsp;0x401baa \<+4\>: lea -0x28(%rbp),%rsp\l
+     &nbsp;&nbsp;0x401bae \<+1\>: pop %rbx\l
+     &nbsp;&nbsp;0x401baf \<+2\>: pop %r12\l
+     &nbsp;&nbsp;0x401bb1 \<+2\>: pop %r13\l
+     &nbsp;&nbsp;0x401bb3 \<+2\>: pop %r14\l
+     &nbsp;&nbsp;0x401bb5 \<+2\>: pop %r15\l
+     &nbsp;&nbsp;0x401bb7 \<+1\>: pop %rbp\l
+     &nbsp;&nbsp;0x401bb8 \<+1\>: ret\l
+  }"]
+  "0x40148c" [label="{
+     0x40148c [28]\l
+     | [instrs]\l
+     &nbsp;&nbsp;0x40148c \<+5\>: jmp 0000000000401491 \<main+0x1b1\>\l
+     &nbsp;&nbsp;0x401491 \<+6\>: mov -0x9c(%rbp),%eax\l
+     &nbsp;&nbsp;0x401497 \<+5\>: sub $0xe2412081,%eax\l
+     &nbsp;&nbsp;0x40149c \<+6\>: mov %eax,-0xcc(%rbp)\l
+     &nbsp;&nbsp;0x4014a2 \<+6\>: je 0000000000401bb9 \<main+0x8d9\>\l
+  }"]
+  "0x401a82" [label="{
+     0x401a82 [137]\l
+     | [instrs]\l
+     &nbsp;&nbsp;0x401a82 \<+5\>: mov $0xd1dfd685,%eax\l
+     &nbsp;&nbsp;0x401a87 \<+5\>: mov $0xcac477bb,%ecx\l
+     &nbsp;&nbsp;0x401a8c \<+2\>: mov $0x1,%dl\l
+     &nbsp;&nbsp;0x401a8e \<+2\>: xor %esi,%esi\l
+     &nbsp;&nbsp;0x401a90 \<+7\>: mov 0x40404c,%edi\l
+     &nbsp;&nbsp;0x401a97 \<+8\>: mov 0x404050,%r8d\l
+     &nbsp;&nbsp;0x401a9f \<+3\>: sub $0x1,%esi\l
+     &nbsp;&nbsp;0x401aa2 \<+3\>: mov %edi,%r9d\l
+     &nbsp;&nbsp;0x401aa5 \<+3\>: add %esi,%r9d\l
+     &nbsp;&nbsp;0x401aa8 \<+4\>: imul %r9d,%edi\l
+     &nbsp;&nbsp;0x401aac \<+3\>: and $0x1,%edi\l
+     &nbsp;&nbsp;0x401aaf \<+3\>: cmp $0x0,%edi\l
+     &nbsp;&nbsp;0x401ab2 \<+4\>: sete %r10b\l
+     &nbsp;&nbsp;0x401ab6 \<+4\>: cmp $0xa,%r8d\l
+     &nbsp;&nbsp;0x401aba \<+4\>: setl %r11b\l
+     &nbsp;&nbsp;0x401abe \<+3\>: mov %r10b,%bl\l
+     &nbsp;&nbsp;0x401ac1 \<+3\>: xor $0xff,%bl\l
+     &nbsp;&nbsp;0x401ac4 \<+3\>: mov %r11b,%r14b\l
+     &nbsp;&nbsp;0x401ac7 \<+4\>: xor $0xff,%r14b\l
+     &nbsp;&nbsp;0x401acb \<+3\>: xor $0x1,%dl\l
+     &nbsp;&nbsp;0x401ace \<+3\>: mov %bl,%r15b\l
+     &nbsp;&nbsp;0x401ad1 \<+4\>: and $0xff,%r15b\l
+     &nbsp;&nbsp;0x401ad5 \<+3\>: and %dl,%r10b\l
+     &nbsp;&nbsp;0x401ad8 \<+3\>: mov %r14b,%r12b\l
+     &nbsp;&nbsp;0x401adb \<+4\>: and $0xff,%r12b\l
+     &nbsp;&nbsp;0x401adf \<+3\>: and %dl,%r11b\l
+     &nbsp;&nbsp;0x401ae2 \<+3\>: or %r10b,%r15b\l
+     &nbsp;&nbsp;0x401ae5 \<+3\>: or %r11b,%r12b\l
+     &nbsp;&nbsp;0x401ae8 \<+3\>: xor %r12b,%r15b\l
+     &nbsp;&nbsp;0x401aeb \<+3\>: or %r14b,%bl\l
+     &nbsp;&nbsp;0x401aee \<+3\>: xor $0xff,%bl\l
+     &nbsp;&nbsp;0x401af1 \<+3\>: or $0x1,%dl\l
+     &nbsp;&nbsp;0x401af4 \<+2\>: and %dl,%bl\l
+     &nbsp;&nbsp;0x401af6 \<+3\>: or %bl,%r15b\l
+     &nbsp;&nbsp;0x401af9 \<+4\>: test $0x1,%r15b\l
+     &nbsp;&nbsp;0x401afd \<+3\>: cmovne %ecx,%eax\l
+     &nbsp;&nbsp;0x401b00 \<+6\>: mov %eax,-0x88(%rbp)\l
+     &nbsp;&nbsp;0x401b06 \<+5\>: jmp 0000000000401c5a \<main+0x97a\>\l
+  }"]
+  "0x401bb9" [label="{
+     0x401bb9\l
+  }", style=dashed]
+  "0x4014a8" [label="{
+     0x4014a8 [28]\l
+     | [instrs]\l
+     &nbsp;&nbsp;0x4014a8 \<+5\>: jmp 00000000004014ad \<main+0x1cd\>\l
+     &nbsp;&nbsp;0x4014ad \<+6\>: mov -0x9c(%rbp),%eax\l
+     &nbsp;&nbsp;0x4014b3 \<+5\>: sub $0xf0848696,%eax\l
+     &nbsp;&nbsp;0x4014b8 \<+6\>: mov %eax,-0xd0(%rbp)\l
+     &nbsp;&nbsp;0x4014be \<+6\>: je 00000000004019ff \<main+0x71f\>\l
+  }"]
+  "0x40156c" [label="{
+     0x40156c [28]\l
+     | [instrs]\l
+     &nbsp;&nbsp;0x40156c \<+5\>: jmp 0000000000401571 \<main+0x291\>\l
+     &nbsp;&nbsp;0x401571 \<+6\>: mov -0x9c(%rbp),%eax\l
+     &nbsp;&nbsp;0x401577 \<+5\>: sub $0x3f7f2576,%eax\l
+     &nbsp;&nbsp;0x40157c \<+6\>: mov %eax,-0xec(%rbp)\l
+     &nbsp;&nbsp;0x401582 \<+6\>: je 0000000000401a82 \<main+0x7a2\>\l
+  }"]
+  "0x4019ff" [label="{
+     0x4019ff\l
+  }", style=dashed]
+  "0x4014c4" [label="{
+     0x4014c4 [28]\l
+     | [instrs]\l
+     &nbsp;&nbsp;0x4014c4 \<+5\>: jmp 00000000004014c9 \<main+0x1e9\>\l
+     &nbsp;&nbsp;0x4014c9 \<+6\>: mov -0x9c(%rbp),%eax\l
+     &nbsp;&nbsp;0x4014cf \<+5\>: sub $0xf6380be7,%eax\l
+     &nbsp;&nbsp;0x4014d4 \<+6\>: mov %eax,-0xd4(%rbp)\l
+     &nbsp;&nbsp;0x4014da \<+6\>: je 0000000000401650 \<main+0x370\>\l
+  }"]
+  "0x4019b8" [label="{
+     0x4019b8\l
+  }", style=dashed]
+  "0x401650" [label="{
+     0x401650 [274]\l
+     | [instrs]\l
+     &nbsp;&nbsp;0x401650 \<+5\>: mov $0xe2412081,%eax\l
+     &nbsp;&nbsp;0x401655 \<+5\>: mov $0xb21579c5,%ecx\l
+     &nbsp;&nbsp;0x40165a \<+2\>: xor %edx,%edx\l
+     &nbsp;&nbsp;0x40165c \<+3\>: mov %rsp,%rsi\l
+     &nbsp;&nbsp;0x40165f \<+4\>: add $0xfffffffffffffff0,%rsi\l
+     &nbsp;&nbsp;0x401663 \<+3\>: mov %rsi,%rsp\l
+     &nbsp;&nbsp;0x401666 \<+4\>: mov %rsi,-0x80(%rbp)\l
+     &nbsp;&nbsp;0x40166a \<+3\>: mov %rsp,%rsi\l
+     &nbsp;&nbsp;0x40166d \<+4\>: add $0xfffffffffffffff0,%rsi\l
+     &nbsp;&nbsp;0x401671 \<+3\>: mov %rsi,%rsp\l
+     &nbsp;&nbsp;0x401674 \<+3\>: mov %rsp,%rdi\l
+     &nbsp;&nbsp;0x401677 \<+4\>: add $0xfffffffffffffff0,%rdi\l
+     &nbsp;&nbsp;0x40167b \<+3\>: mov %rdi,%rsp\l
+     &nbsp;&nbsp;0x40167e \<+4\>: mov %rdi,-0x78(%rbp)\l
+     &nbsp;&nbsp;0x401682 \<+3\>: mov %rsp,%rdi\l
+     &nbsp;&nbsp;0x401685 \<+4\>: add $0xfffffffffffffff0,%rdi\l
+     &nbsp;&nbsp;0x401689 \<+3\>: mov %rdi,%rsp\l
+     &nbsp;&nbsp;0x40168c \<+4\>: mov %rdi,-0x70(%rbp)\l
+     &nbsp;&nbsp;0x401690 \<+3\>: mov %rsp,%rdi\l
+     &nbsp;&nbsp;0x401693 \<+4\>: add $0xfffffffffffffff0,%rdi\l
+     &nbsp;&nbsp;0x401697 \<+3\>: mov %rdi,%rsp\l
+     &nbsp;&nbsp;0x40169a \<+4\>: mov %rdi,-0x68(%rbp)\l
+     &nbsp;&nbsp;0x40169e \<+3\>: mov %rsp,%rdi\l
+     &nbsp;&nbsp;0x4016a1 \<+4\>: add $0xfffffffffffffff0,%rdi\l
+     &nbsp;&nbsp;0x4016a5 \<+3\>: mov %rdi,%rsp\l
+     &nbsp;&nbsp;0x4016a8 \<+4\>: mov %rdi,-0x60(%rbp)\l
+     &nbsp;&nbsp;0x4016ac \<+3\>: mov %rsp,%rdi\l
+     &nbsp;&nbsp;0x4016af \<+4\>: add $0xfffffffffffffff0,%rdi\l
+     &nbsp;&nbsp;0x4016b3 \<+3\>: mov %rdi,%rsp\l
+     &nbsp;&nbsp;0x4016b6 \<+4\>: mov %rdi,-0x58(%rbp)\l
+     &nbsp;&nbsp;0x4016ba \<+3\>: mov %rsp,%rdi\l
+     &nbsp;&nbsp;0x4016bd \<+4\>: add $0xfffffffffffffff0,%rdi\l
+     &nbsp;&nbsp;0x4016c1 \<+3\>: mov %rdi,%rsp\l
+     &nbsp;&nbsp;0x4016c4 \<+4\>: mov %rdi,-0x50(%rbp)\l
+     &nbsp;&nbsp;0x4016c8 \<+3\>: mov %rsp,%rdi\l
+     &nbsp;&nbsp;0x4016cb \<+4\>: add $0xfffffffffffffff0,%rdi\l
+     &nbsp;&nbsp;0x4016cf \<+3\>: mov %rdi,%rsp\l
+     &nbsp;&nbsp;0x4016d2 \<+4\>: mov %rdi,-0x48(%rbp)\l
+     &nbsp;&nbsp;0x4016d6 \<+3\>: mov %rsp,%rdi\l
+     &nbsp;&nbsp;0x4016d9 \<+4\>: add $0xfffffffffffffff0,%rdi\l
+     &nbsp;&nbsp;0x4016dd \<+3\>: mov %rdi,%rsp\l
+     &nbsp;&nbsp;0x4016e0 \<+4\>: mov %rdi,-0x40(%rbp)\l
+     &nbsp;&nbsp;0x4016e4 \<+4\>: mov -0x80(%rbp),%rdi\l
+     &nbsp;&nbsp;0x4016e8 \<+6\>: movl $0x0,(%rdi)\l
+     &nbsp;&nbsp;0x4016ee \<+7\>: mov -0x8c(%rbp),%r8d\l
+     &nbsp;&nbsp;0x4016f5 \<+3\>: mov %r8d,(%rsi)\l
+     &nbsp;&nbsp;0x4016f8 \<+4\>: mov -0x78(%rbp),%rdi\l
+     &nbsp;&nbsp;0x4016fc \<+7\>: mov -0x98(%rbp),%r9\l
+     &nbsp;&nbsp;0x401703 \<+3\>: mov %r9,(%rdi)\l
+     &nbsp;&nbsp;0x401706 \<+3\>: cmpl $0x2,(%rsi)\l
+     &nbsp;&nbsp;0x401709 \<+4\>: setne %r10b\l
+     &nbsp;&nbsp;0x40170d \<+4\>: and $0x1,%r10b\l
+     &nbsp;&nbsp;0x401711 \<+4\>: mov %r10b,-0x31(%rbp)\l
+     &nbsp;&nbsp;0x401715 \<+8\>: mov 0x40404c,%r11d\l
+     &nbsp;&nbsp;0x40171d \<+7\>: mov 0x404050,%ebx\l
+     &nbsp;&nbsp;0x401724 \<+3\>: sub $0x1,%edx\l
+     &nbsp;&nbsp;0x401727 \<+3\>: mov %r11d,%r14d\l
+     &nbsp;&nbsp;0x40172a \<+3\>: add %edx,%r14d\l
+     &nbsp;&nbsp;0x40172d \<+4\>: imul %r14d,%r11d\l
+     &nbsp;&nbsp;0x401731 \<+4\>: and $0x1,%r11d\l
+     &nbsp;&nbsp;0x401735 \<+4\>: cmp $0x0,%r11d\l
+     &nbsp;&nbsp;0x401739 \<+4\>: sete %r10b\l
+     &nbsp;&nbsp;0x40173d \<+3\>: cmp $0xa,%ebx\l
+     &nbsp;&nbsp;0x401740 \<+4\>: setl %r15b\l
+     &nbsp;&nbsp;0x401744 \<+3\>: mov %r10b,%r12b\l
+     &nbsp;&nbsp;0x401747 \<+3\>: and %r15b,%r12b\l
+     &nbsp;&nbsp;0x40174a \<+3\>: xor %r15b,%r10b\l
+     &nbsp;&nbsp;0x40174d \<+3\>: or %r10b,%r12b\l
+     &nbsp;&nbsp;0x401750 \<+4\>: test $0x1,%r12b\l
+     &nbsp;&nbsp;0x401754 \<+3\>: cmovne %ecx,%eax\l
+     &nbsp;&nbsp;0x401757 \<+6\>: mov %eax,-0x88(%rbp)\l
+     &nbsp;&nbsp;0x40175d \<+5\>: jmp 0000000000401c5a \<main+0x97a\>\l
+  }"]
+  "0x4014e0" [label="{
+     0x4014e0 [28]\l
+     | [instrs]\l
+     &nbsp;&nbsp;0x4014e0 \<+5\>: jmp 00000000004014e5 \<main+0x205\>\l
+     &nbsp;&nbsp;0x4014e5 \<+6\>: mov -0x9c(%rbp),%eax\l
+     &nbsp;&nbsp;0x4014eb \<+5\>: sub $0xbe89bc6,%eax\l
+     &nbsp;&nbsp;0x4014f0 \<+6\>: mov %eax,-0xd8(%rbp)\l
+     &nbsp;&nbsp;0x4014f6 \<+6\>: je 00000000004015e6 \<main+0x306\>\l
+  }"]
+  "0x401550" [label="{
+     0x401550 [28]\l
+     | [instrs]\l
+     &nbsp;&nbsp;0x401550 \<+5\>: jmp 0000000000401555 \<main+0x275\>\l
+     &nbsp;&nbsp;0x401555 \<+6\>: mov -0x9c(%rbp),%eax\l
+     &nbsp;&nbsp;0x40155b \<+5\>: sub $0x3ebfbf1f,%eax\l
+     &nbsp;&nbsp;0x401560 \<+6\>: mov %eax,-0xe8(%rbp)\l
+     &nbsp;&nbsp;0x401566 \<+6\>: je 00000000004019b8 \<main+0x6d8\>\l
+  }"]
+  "0x4015e6" [label="{
+     0x4015e6 [106]\l
+     | [instrs]\l
+     &nbsp;&nbsp;0x4015e6 \<+5\>: mov $0xe2412081,%eax\l
+     &nbsp;&nbsp;0x4015eb \<+5\>: mov $0xf6380be7,%ecx\l
+     &nbsp;&nbsp;0x4015f0 \<+2\>: mov $0x1,%dl\l
+     &nbsp;&nbsp;0x4015f2 \<+7\>: mov -0x82(%rbp),%sil\l
+     &nbsp;&nbsp;0x4015f9 \<+7\>: mov -0x81(%rbp),%dil\l
+     &nbsp;&nbsp;0x401600 \<+3\>: mov %sil,%r8b\l
+     &nbsp;&nbsp;0x401603 \<+4\>: xor $0xff,%r8b\l
+     &nbsp;&nbsp;0x401607 \<+3\>: mov %dil,%r9b\l
+     &nbsp;&nbsp;0x40160a \<+4\>: xor $0xff,%r9b\l
+     &nbsp;&nbsp;0x40160e \<+3\>: xor $0x1,%dl\l
+     &nbsp;&nbsp;0x401611 \<+3\>: mov %r8b,%r10b\l
+     &nbsp;&nbsp;0x401614 \<+4\>: and $0xff,%r10b\l
+     &nbsp;&nbsp;0x401618 \<+3\>: and %dl,%sil\l
+     &nbsp;&nbsp;0x40161b \<+3\>: mov %r9b,%r11b\l
+     &nbsp;&nbsp;0x40161e \<+4\>: and $0xff,%r11b\l
+     &nbsp;&nbsp;0x401622 \<+3\>: and %dl,%dil\l
+     &nbsp;&nbsp;0x401625 \<+3\>: or %sil,%r10b\l
+     &nbsp;&nbsp;0x401628 \<+3\>: or %dil,%r11b\l
+     &nbsp;&nbsp;0x40162b \<+3\>: xor %r11b,%r10b\l
+     &nbsp;&nbsp;0x40162e \<+3\>: or %r9b,%r8b\l
+     &nbsp;&nbsp;0x401631 \<+4\>: xor $0xff,%r8b\l
+     &nbsp;&nbsp;0x401635 \<+3\>: or $0x1,%dl\l
+     &nbsp;&nbsp;0x401638 \<+3\>: and %dl,%r8b\l
+     &nbsp;&nbsp;0x40163b \<+3\>: or %r8b,%r10b\l
+     &nbsp;&nbsp;0x40163e \<+4\>: test $0x1,%r10b\l
+     &nbsp;&nbsp;0x401642 \<+3\>: cmovne %ecx,%eax\l
+     &nbsp;&nbsp;0x401645 \<+6\>: mov %eax,-0x88(%rbp)\l
+     &nbsp;&nbsp;0x40164b \<+5\>: jmp 0000000000401c5a \<main+0x97a\>\l
+  }"]
+  "0x4014fc" [label="{
+     0x4014fc [28]\l
+     | [instrs]\l
+     &nbsp;&nbsp;0x4014fc \<+5\>: jmp 0000000000401501 \<main+0x221\>\l
+     &nbsp;&nbsp;0x401501 \<+6\>: mov -0x9c(%rbp),%eax\l
+     &nbsp;&nbsp;0x401507 \<+5\>: sub $0x1029ad12,%eax\l
+     &nbsp;&nbsp;0x40150c \<+6\>: mov %eax,-0xdc(%rbp)\l
+     &nbsp;&nbsp;0x401512 \<+6\>: je 0000000000401808 \<main+0x528\>\l
+  }"]
+  "0x401c5a" [label="{
+     0x401c5a [5]\l
+     | [instrs]\l
+     &nbsp;&nbsp;0x401c5a \<+5\>: jmp 0000000000401354 \<main+0x74\>\l
+  }"]
+  "0x4012e0" [label="{
+     0x4012e0 [116]\l
+     | [instrs]\l
+     &nbsp;&nbsp;0x4012e0 \<+1\>: push %rbp\l
+     &nbsp;&nbsp;0x4012e1 \<+3\>: mov %rsp,%rbp\l
+     &nbsp;&nbsp;0x4012e4 \<+2\>: push %r15\l
+     &nbsp;&nbsp;0x4012e6 \<+2\>: push %r14\l
+     &nbsp;&nbsp;0x4012e8 \<+2\>: push %r13\l
+     &nbsp;&nbsp;0x4012ea \<+2\>: push %r12\l
+     &nbsp;&nbsp;0x4012ec \<+1\>: push %rbx\l
+     &nbsp;&nbsp;0x4012ed \<+7\>: sub $0xe8,%rsp\l
+     &nbsp;&nbsp;0x4012f4 \<+7\>: mov 0x40404c,%eax\l
+     &nbsp;&nbsp;0x4012fb \<+7\>: mov 0x404050,%ecx\l
+     &nbsp;&nbsp;0x401302 \<+2\>: mov %eax,%edx\l
+     &nbsp;&nbsp;0x401304 \<+6\>: sub $0x150bb112,%edx\l
+     &nbsp;&nbsp;0x40130a \<+3\>: sub $0x1,%edx\l
+     &nbsp;&nbsp;0x40130d \<+6\>: add $0x150bb112,%edx\l
+     &nbsp;&nbsp;0x401313 \<+3\>: imul %edx,%eax\l
+     &nbsp;&nbsp;0x401316 \<+3\>: and $0x1,%eax\l
+     &nbsp;&nbsp;0x401319 \<+3\>: cmp $0x0,%eax\l
+     &nbsp;&nbsp;0x40131c \<+4\>: sete %r8b\l
+     &nbsp;&nbsp;0x401320 \<+4\>: and $0x1,%r8b\l
+     &nbsp;&nbsp;0x401324 \<+7\>: mov %r8b,-0x82(%rbp)\l
+     &nbsp;&nbsp;0x40132b \<+3\>: cmp $0xa,%ecx\l
+     &nbsp;&nbsp;0x40132e \<+4\>: setl %r8b\l
+     &nbsp;&nbsp;0x401332 \<+4\>: and $0x1,%r8b\l
+     &nbsp;&nbsp;0x401336 \<+7\>: mov %r8b,-0x81(%rbp)\l
+     &nbsp;&nbsp;0x40133d \<+10\>: movl $0xbe89bc6,-0x88(%rbp)\l
+     &nbsp;&nbsp;0x401347 \<+6\>: mov %edi,-0x8c(%rbp)\l
+     &nbsp;&nbsp;0x40134d \<+7\>: mov %rsi,-0x98(%rbp)\l
+  }"]
+  "0x4017cc" [label="{
+     0x4017cc [30]\l
+     | [instrs]\l
+     &nbsp;&nbsp;0x4017cc \<+5\>: mov $0x16c31dee,%eax\l
+     &nbsp;&nbsp;0x4017d1 \<+5\>: mov $0xb7cd229b,%ecx\l
+     &nbsp;&nbsp;0x4017d6 \<+3\>: mov -0x30(%rbp),%edx\l
+     &nbsp;&nbsp;0x4017d9 \<+3\>: cmp $0x1,%edx\l
+     &nbsp;&nbsp;0x4017dc \<+3\>: cmovl %ecx,%eax\l
+     &nbsp;&nbsp;0x4017df \<+6\>: mov %eax,-0x88(%rbp)\l
+     &nbsp;&nbsp;0x4017e5 \<+5\>: jmp 0000000000401c5a \<main+0x97a\>\l
+  }"]
+  "0x4017ae" [label="{
+     0x4017ae [30]\l
+     | [instrs]\l
+     &nbsp;&nbsp;0x4017ae \<+4\>: mov -0x70(%rbp),%rdi\l
+     &nbsp;&nbsp;0x4017b2 \<+2\>: mov %eax,(%rdi)\l
+     &nbsp;&nbsp;0x4017b4 \<+4\>: mov -0x70(%rbp),%rdi\l
+     &nbsp;&nbsp;0x4017b8 \<+2\>: mov (%rdi),%eax\l
+     &nbsp;&nbsp;0x4017ba \<+3\>: mov %eax,-0x30(%rbp)\l
+     &nbsp;&nbsp;0x4017bd \<+10\>: movl $0x3dd6d8d7,-0x88(%rbp)\l
+     &nbsp;&nbsp;0x4017c7 \<+5\>: jmp 0000000000401c5a \<main+0x97a\>\l
+  }"]
+  "0x401534" [label="{
+     0x401534 [28]\l
+     | [instrs]\l
+     &nbsp;&nbsp;0x401534 \<+5\>: jmp 0000000000401539 \<main+0x259\>\l
+     &nbsp;&nbsp;0x401539 \<+6\>: mov -0x9c(%rbp),%eax\l
+     &nbsp;&nbsp;0x40153f \<+5\>: sub $0x3dd6d8d7,%eax\l
+     &nbsp;&nbsp;0x401544 \<+6\>: mov %eax,-0xe4(%rbp)\l
+     &nbsp;&nbsp;0x40154a \<+6\>: je 00000000004017cc \<main+0x4ec\>\l
+  }"]
+  "0x401808" [label="{
+     0x401808\l
+  }", style=dashed]
+  "0x401518" [label="{
+     0x401518 [28]\l
+     | [instrs]\l
+     &nbsp;&nbsp;0x401518 \<+5\>: jmp 000000000040151d \<main+0x23d\>\l
+     &nbsp;&nbsp;0x40151d \<+6\>: mov -0x9c(%rbp),%eax\l
+     &nbsp;&nbsp;0x401523 \<+5\>: sub $0x16c31dee,%eax\l
+     &nbsp;&nbsp;0x401528 \<+6\>: mov %eax,-0xe0(%rbp)\l
+     &nbsp;&nbsp;0x40152e \<+6\>: je 00000000004017ea \<main+0x50a\>\l
+  }"]
+  "0x4017ea" [label="{
+     0x4017ea\l
+  }", style=dashed]
+  Entry -> "0x4012e0" [label=" 1"]
+  "0x401354" -> "0x40179e" [label=" 1"]
+  "0x401354" -> "0x401374" [label=" 12"]
+  "0x401ba7" -> Exit [label=" 1"]
+  "0x401374" -> "0x401a55" [label=" 0"]
+  "0x401374" -> "0x401390" [label=" 12"]
+  "0x401b0b" -> "0x401c5a" [label=" 1"]
+  "0x401390" -> "0x401780" [label=" 0"]
+  "0x401390" -> "0x4013ac" [label=" 12"]
+  "0x401a82" -> "0x401c5a" [label=" 1"]
+  "0x4013ac" -> "0x401762" [label=" 1"]
+  "0x4013ac" -> "0x4013c8" [label=" 11"]
+  "0x401a69" -> "0x401c5a" [label=" 1"]
+  "0x4013c8" -> "0x401a46" [label=" 0"]
+  "0x4013c8" -> "0x4013e4" [label=" 11"]
+  "0x4019a9" -> "0x401c5a" [label=" 1"]
+  "0x4013e4" -> "0x401826" [label=" 1"]
+  "0x4013e4" -> "0x401400" [label=" 10"]
+  "0x401909" -> "0x401c5a" [label=" 1"]
+  "0x401400" -> "0x401b0b" [label=" 1"]
+  "0x401400" -> "0x40141c" [label=" 9"]
+  "0x4018d7" -> "0x4018ec" [label=" 1"]
+  "0x40141c" -> "0x401c45" [label=" 0"]
+  "0x40141c" -> "0x401438" [label=" 9"]
+  "0x401844" -> "0x401c5a" [label=" 1"]
+  "0x401438" -> "0x401bfe" [label=" 0"]
+  "0x401438" -> "0x401454" [label=" 9"]
+  "0x4015c0" -> "0x401844" [label=" 1"]
+  "0x401454" -> "0x4018d7" [label=" 1"]
+  "0x401454" -> "0x401470" [label=" 8"]
+  "0x4018ec" -> "0x401909" [label=" 1"]
+  "0x401470" -> "0x401ba7" [label=" 1"]
+  "0x401470" -> "0x40148c" [label=" 7"]
+  "0x4015a4" -> "0x401a69" [label=" 1"]
+  "0x40148c" -> "0x401bb9" [label=" 0"]
+  "0x40148c" -> "0x4014a8" [label=" 7"]
+  "0x4015c0" -> "0x4015dc" [label=" 0"]
+  "0x4014a8" -> "0x4019ff" [label=" 0"]
+  "0x4014a8" -> "0x4014c4" [label=" 7"]
+  "0x401588" -> "0x4019a9" [label=" 1"]
+  "0x4014c4" -> "0x401650" [label=" 1"]
+  "0x4014c4" -> "0x4014e0" [label=" 6"]
+  "0x4015a4" -> "0x4015c0" [label=" 1"]
+  "0x4014e0" -> "0x4015e6" [label=" 1"]
+  "0x4014e0" -> "0x4014fc" [label=" 5"]
+  "0x4015e6" -> "0x401c5a" [label=" 1"]
+  "0x4012e0" -> "0x401354" [label=" 1"]
+  "0x401c5a" -> "0x401354" [label=" 12"]
+  "0x40156c" -> "0x401a82" [label=" 1"]
+  "0x401650" -> "0x401c5a" [label=" 1"]
+  "0x401762" -> "0x401c5a" [label=" 1"]
+  "0x40179e" -> "0x4017ae" [label=" 1"]
+  "0x4017ae" -> "0x401c5a" [label=" 1"]
+  "0x401588" -> "0x4015a4" [label=" 2"]
+  "0x4014fc" -> "0x401808" [label=" 0"]
+  "0x4014fc" -> "0x401518" [label=" 5"]
+  "0x401550" -> "0x4019b8" [label=" 0"]
+  "0x401518" -> "0x4017ea" [label=" 0"]
+  "0x401518" -> "0x401534" [label=" 5"]
+  "0x401550" -> "0x40156c" [label=" 4"]
+  "0x401534" -> "0x4017cc" [label=" 1"]
+  "0x401534" -> "0x401550" [label=" 4"]
+  "0x4017cc" -> "0x401c5a" [label=" 1"]
+  "0x401826" -> "0x401c5a" [label=" 1"]
+  "0x40156c" -> "0x401588" [label=" 3"]
+}
