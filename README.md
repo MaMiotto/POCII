@@ -48,5 +48,5 @@ $> python3 fixingCodeBugs.py
 Step 5: Run the histogram generator code, in order to generate all the binaries, cfg, map and dot files.
 
 ```
-$> python3 fixingCodeBugs.py
+$> python3 histogramGenerator.py
 ```
